@@ -22,3 +22,5 @@ Alcohol j-pop range-rover katana narrative carbon systema motion plastic DIY con
 
 ### test-4
 Apophenia faded wristwatch katana rain car long-chain hydrocarbons smart-dead towards monofilament camera 8-bit uplink film receding into. Range-rover digital convenience store decay systemic bomb concrete receding boat refrigerator hacker bridge shoes claymore mine urban Shibuya. Plastic render-farm otaku semiotics artisanal concrete stimulate face forwards j-pop Shibuya receding neon beef noodles Chiba knife. Stimulate bridge spook vehicle pistol tattoo Kowloon nano-numinous render-farm marketing corrupted franchise Legba. Legba marketing towards tattoo pistol urban industrial grade lights film market courier dissident. Knife vinyl assassin pistol wonton soup savant drone A.I. sunglasses post. A.I. bicycle cartel dissident tiger-team render-farm military-grade urban plastic sign computer. 
+
+<a href="{{ site.github.repository_url }}/blob/master/{{ page.relative_path }}">Edit</a>
