@@ -1,0 +1,23 @@
+# main links
+# main:
+  # - title: "Quick-Start Guide"
+  #   url: /docs/quick-start-guide/
+
+# - title: "Parent Link 2"
+#   url: /parent-2-page-url/
+#   children:
+#     - title: "Child Link 1"
+#       url: /child-1-page-url/
+#     - title: "Child Link 2"
+#       url: /child-2-page-url/
+#     - title: "Child Link 3"
+#       url: /child-3-page-url/
+docs_1:
+  - title: Getting Started
+    children:
+      - title: "01"
+        url: /
+      - title: "02"
+        url: /02
+      - title: "03"
+        url: /03

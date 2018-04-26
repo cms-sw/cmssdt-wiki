@@ -7,7 +7,7 @@
 
 # theme                  : "minimal-mistakes-jekyll"
 remote_theme           : "mmistakes/minimal-mistakes"
-minimal_mistakes_skin    : 'contrast' #"default" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
+minimal_mistakes_skin    : 'default' #"default" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
 
 # Site Settings
 locale                   : "EN"
@@ -53,8 +53,8 @@ reCaptcha:
   secret                 :
 atom_feed:
   path                   : # blank (default) uses feed.xml
-search                   : # true, false (default)
-search_full_content      : # true, false (default)
+search                   : true # true, false (default)
+search_full_content      : true # true, false (default)
 search_provider          : # lunr (default), algolia
 algolia:
   application_id         : # YOUR_APPLICATION_ID
@@ -258,14 +258,7 @@ defaults:
       layout: single
       author_profile: false
       read_time: true
-      comments: # trueß
-      share: true
-      related: true
-      header:
-        show_overlay_excerpt: false
-        image: /assets/images/Lithuanians.jpg
-        caption: 
-        cta_url: 
+
   # _pages
   - scope:
       path: "_pages"
@@ -273,8 +266,23 @@ defaults:
     values:
       layout: single
       author_profile: false
-      # header:
-      #   overlay_image: /assets/images/unsplash-image-1.jpg
-      #   og_image: /assets/images/page-header-og-image.png
-      #   caption: "Photo credit: [**Unsplash**](https://unsplash.com)"
-      #   cta_url: ß"https://unsplash.com"
+  
+  # doc_1
+  - scope:
+      path: ""
+      type: doc_1
+    values:
+      layout: single
+      classes: wide
+      author_profile: false
+      read_time: false
+      toc: true
+      sidebar:
+        nav: docs_1
+      search: true # false      
+
+collections_dir: _collections
+collections:
+  doc_1:
+    output: true
+    permalink: /doc_1/:path/
