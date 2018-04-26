@@ -32,7 +32,7 @@ layout: default
           {% endif %}
         </header>
       {% endunless %}
-      <a href="{{ site.github.repository_url }}/blob/master/{{ page.relative_path }}">Edit</a>
+      
       <section class="page__content" itemprop="text">
         {% if page.toc %}
           <aside class="sidebar__right">
@@ -42,6 +42,14 @@ layout: default
             </nav>
           </aside>
         {% endif %}
+
+          <a 
+          class="btn btn--primary" target="_blank"
+          href="{{ site.github.repository_url }}/blob/master/{% if page.collection %}_collections/{% endif %}{{ page.relative_path }}"
+          <span><i class="fab fa-fw fa-github" aria-hidden="true"></i>Edit on Github</span>
+
+        </a>
+
         {{ content }}
         {% if page.link %}<div><a href="{{ page.link }}" class="btn btn--primary">{{ site.data.ui-text[site.locale].ext_link_label | default: "Direct Link" }}</a></div>{% endif %}
       </section>
