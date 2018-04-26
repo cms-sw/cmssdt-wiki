@@ -1,13 +1,6 @@
 ---
-layout: single
-classes: wide
 permalink: /02
 title: "test-page"
-toc: true
-toc_label: "My Table of Contents"
-sidebar:
-  nav: docs_1
-search: true
 ---
 
 ## Test1 

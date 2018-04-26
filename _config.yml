@@ -277,9 +277,11 @@ defaults:
       author_profile: false
       read_time: false
       toc: true
+      toc_label: "Table of contents"
       sidebar:
         nav: docs_1
-      search: true # false      
+      search: true # false
+
 
 collections_dir: _collections
 collections:

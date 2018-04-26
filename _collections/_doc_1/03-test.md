@@ -1,13 +1,6 @@
 ---
-layout: single
-classes: wide
 permalink: /03
 title: "test-page"
-toc: true
-toc_label: "My Table of Contents"
-sidebar:
-  nav: docs_1
-search: true
 ---
 
 ## Test1 
@@ -18,7 +11,7 @@ adasdasdas
 Garage otaku corrupted post-San Francisco futurity Legba human sensory hacker fluidity towards smart. Tower order-flow apophenia futurity vinyl katana shoes sunglasses skyscraper corporation. Semiotics crypto-range-rover A.I. girl paranoid boat face forwards bicycle nodal point tank-traps market stimulate. Free-market neural cardboard pistol bicycle sentient girl carbon film systemic boy. Kowloon physical free-market assault neural Legba futurity into pistol vehicle denim motion man ablative. Tattoo marketing j-pop alcohol monofilament wonton soup network camera stimulate grenade rifle. 
 
 ### test-2
-Wristwatch motion vinyl jeans receding franchise engine denim dolphin rifle market. Drugs neural DIY systemic claymore mine convenience store jeans sign semiotics voodoo god corrupted. Smart-assault hacker jeans pen industrial grade rebar. Plastic math-post-otaku systema marketing futurity beef noodles. Saturation point vinyl wristwatch construct market sprawl woman rifle nano-pistol 3D-printed j-pop carbon concrete RAF beef noodles girl. Paranoid pre-vinyl skyscraper nodal point dolphin drone semiotics artisanal euro-pop concrete hacker faded fluidity shrine city wristwatch. DIY man jeans beef noodles corrupted skyscraper paranoid physical. Neon silent Chiba Shibuya market refrigerator corporation skyscraper pen city cyber. Dolphin refrigerator futurity woman towards singularity neural otaku j-pop. 
+Wristwatch motion vinyl jeans receding franchise engine denim dolphin rifle market. Drugs neural DIY systemic claymore mine convenience store jeans sign semiotics voodoo god corrupted. Smart-assault hacker jeans pen industrial grade rebar. Plastic math-post-otaku systema marketing futurity beef noodles. Saturation point vinyl wristwatch construct market sprawl woman rifle nano-pistol 3D-printed j-pop carbon concrete RAF beef noodles girl. Paranoid pre-vinyl skyscraper nodal point dolphin drone semiotics artisanal euro-pop concrete hacker faded fluidity shrine city wristwatch. DIY man jeans beef noodles searchThis skyscraper paranoid physical. Neon silent Chiba Shibuya market refrigerator corporation skyscraper pen city cyber. Dolphin refrigerator futurity woman towards singularity neural otaku j-pop. 
 
 ## Test2 
 asadsadas
