@@ -1,12 +1,3 @@
----
-title: CMS Offline Software
-layout: default
-related:
- - { name: Project page, link: 'https://github.com/cms-sw/cmssw' }
- - { name: Feedback, link: 'https://github.com/cms-sw/cmssw/issues/new' }
-redirect_from:
- - /cmssw/tutorial.html
----
 
 ## Tutorial: proposing changes to CMSSW.
 
@@ -125,22 +116,22 @@ to a branch in the official CMSSW repository.  **Think of it as publishing a
 tagset in Tag Collector.** To start one click on the "Pull request" button which
 find on your personal repository.
 
-![Pull request](images/pull-request.png)
+![Pull request](../images/pull-request.png)
 
 ### Select the topic branch which you want to propose and its target.
 
 The GUI for doing "Pull requests" looks like below:
 
-![Pull request](images/pull-request-gui.png)
+![Pull request](../images/pull-request-gui.png)
 
 If you click on the "Edit" button in the top right corner, you can select the
 "head branch" i.e. your addition on to of the official CMSSW.
 
-![Pull request](images/head-branch.png)
+![Pull request](../images/head-branch.png)
 
 Or change the "base branch", i.e. the one to which you want to have your changes merged. Starting from CMSSW_9_1_X and later the base branch for the latest development release is the master branch.
 
-![Pull requests GUI](images/base-branch.png)
+![Pull requests GUI](../images/base-branch.png)
 
 Remember to *write a sensible comment*, check that gitHubs summary of your changes are as expected,
 and click on Send Pull Request. There are several issues to consider before *clicking*

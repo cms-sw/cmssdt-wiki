@@ -1,12 +1,3 @@
----
-title: CMS Offline Software
-layout: default
-related:
- - { name: Project page, link: 'https://github.com/cms-sw/cmssw' }
- - { name: Feedback, link: 'https://github.com/cms-sw/cmssw/issues/new' }
-redirect_from:
- - /cmssw/resolve-conflicts.html
----
 
 ## Tutorial: resolve conflicts & port features
 
@@ -53,7 +44,7 @@ rebased commits will have different hashes than the old versions of the commits,
 history (and potentially the content) has changed. To visualize this process, consult the 
 following diagram:
 
-![rebase_diagram](images/rebase_diagram.png)
+![rebase_diagram](../images/rebase_diagram.png)
 
 If there is a conflict when applying a certain commit during the rebase,
 git will pause so you can edit the conflicting files to resolve the conflict.

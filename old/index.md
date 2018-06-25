@@ -1,18 +1,8 @@
----
-title: CMS Offline Software
-layout: default
-related:
- - { name: Project page, link: "https://github.com/cms-sw/cmssw" }
- - { name: Feedback, link: "https://github.com/cms-sw/cmssw/issues/new" }
-redirect_from:
-  - /cmssw/ 
-  - /cmssw/index.html
----
 
 # Welcome to CMS and CMSSW
 
 <tr>
-    <td> <img src="images/jets_v1.png" alt="Drawing" width="50%" align="center"/> </td>
+    <td> <img src="../images/jets_v1.png" alt="Drawing" width="50%" align="center"/> </td>
 </tr> 
 
 The LHC smashes groups of protons together at close to the speed of light: 40

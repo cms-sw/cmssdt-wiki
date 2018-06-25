@@ -1,16 +1,3 @@
----
-title: CMS Offline Software
-layout: default
-related:
- - { name: "Project page", link: "https://github.com/cms-sw/cmssw" }
- - { name: "Feedback", link: "https://github.com/cms-sw/cmssw/issues/new" }
-redirect_from:
- - /cmssw/faq.html
----
-# FAQs
-
-* auto-gen TOC:
-{:toc}
 
 # General questions
 
@@ -352,7 +339,7 @@ github page for CMSSW: <https://github.com/cms-sw/cmssw>.
 Branches and tags are available by clicking on the "branches" combo box in the
 top left part of the page:
 
-![branches-dialog](images/branches-dialog.png)
+![branches-dialog](../images/branches-dialog.png)
 
 The source code of the official CMSSW can be searched by using <https://github.com/cms-sw/cmssw/search>.
 
@@ -392,7 +379,7 @@ Then click on the "Blame" button (again [click
 here](https://github.com/cms-sw/cmssw/blame/master/FWCore/Framework/BuildFile.xml)
 for the particular example).
 
-![blame button](images/blame-button.png)
+![blame button](../images/blame-button.png)
 
 You can get the full information about a given change
 (including which files changed in the same commit) by clicking on the

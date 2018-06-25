@@ -1,16 +1,4 @@
----
-title: CMS Offline Software
-layout: default
-related:
- - { name: "Project page", link: "https://github.com/cms-sw/cmssw" }
- - { name: "Feedback", link: "https://github.com/cms-sw/cmssw/issues/new" }
-redirect_from:
- - /cmssw/usercode-faq.html
----
 # CMS UserCode Migration FAQs
-
-* auto-gen TOC:
-{:toc}
 
 ### What is happening?
 
@@ -57,7 +45,7 @@ probably a good idea if you stick with it too.
 Once you have done that create a new repository to hold your usercode.
 This can be done by simply going to [https://github.com/new](https://github.com/new).
 
-![https://github.com/new](images/create-new-repository.png)
+![https://github.com/new](../images/create-new-repository.png)
 
 Click on "Create Repository" and note down the URL of your newly created
 repository.
