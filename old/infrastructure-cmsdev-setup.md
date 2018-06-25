@@ -1,39 +1,42 @@
+# infrastructure-cmsdev-setup
 
-<b>To setup your own SLC6 ( tested on SLC6 - x86_64 [2017-01-24] ) based CMSDEV machine , please follow these instructions:</b>   
+**To setup your own SLC6 \( tested on SLC6 - x86\_64 \[2017-01-24\] \) based CMSDEV machine , please follow these instructions:**
 
 After creating/installing slc6 on your virtual/physical machine run the following commands either as root or using sudo:
 
-    cat <<EOF > /etc/yum.repos.d/carepo.repo 
-    [carepo]
-    gpgkey=file:///etc/pki/rpm-gpg/GPG-KEY-EUGridPMA-RPM-3
-    name=IGTF CA Repository
-    baseurl=http://linuxsoft.cern.ch/mirror/repository.egi.eu/sw/production/cas/1/current/
-    gpgcheck=1
-    enabled=1
-    EOF
-       
-    cat <<EOF > /etc/yum.repos.d/cvmfs.repo 
-    [cvmfs]
-    gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-CernVM
-    name=CVMFS yum repository for el6
-    baseurl=http://cern.ch/cvmrepo/yum/cvmfs/EL/6/x86_64
-    includepkgs=cvmfs,cvmfs-keys,cvmfs-server,cvmfs-config-default
-    gpgcheck=1
-    enabled=1
-    EOF
-      
-    cat <<EOF > /etc/yum.repos.d/cvmfs-config.repo 
-    [cvmfs-config]
-    gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-CernVM
-    name=CVMFS config yum repository for el6
-    baseurl=http://cern.ch/cvmrepo/yum/cvmfs-config/EL/6/x86_64
-    gpgcheck=1
-    enabled=1
-    EOF
-    
+```text
+cat <<EOF > /etc/yum.repos.d/carepo.repo 
+[carepo]
+gpgkey=file:///etc/pki/rpm-gpg/GPG-KEY-EUGridPMA-RPM-3
+name=IGTF CA Repository
+baseurl=http://linuxsoft.cern.ch/mirror/repository.egi.eu/sw/production/cas/1/current/
+gpgcheck=1
+enabled=1
+EOF
+
+cat <<EOF > /etc/yum.repos.d/cvmfs.repo 
+[cvmfs]
+gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-CernVM
+name=CVMFS yum repository for el6
+baseurl=http://cern.ch/cvmrepo/yum/cvmfs/EL/6/x86_64
+includepkgs=cvmfs,cvmfs-keys,cvmfs-server,cvmfs-config-default
+gpgcheck=1
+enabled=1
+EOF
+
+cat <<EOF > /etc/yum.repos.d/cvmfs-config.repo 
+[cvmfs-config]
+gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-CernVM
+name=CVMFS config yum repository for el6
+baseurl=http://cern.ch/cvmrepo/yum/cvmfs-config/EL/6/x86_64
+gpgcheck=1
+enabled=1
+EOF
+```
+
 Setup GPG keys:
 
-```
+```text
 cat <<EOF > /etc/pki/rpm-gpg/RPM-GPG-KEY-CernVM 
 -----BEGIN PGP PUBLIC KEY BLOCK-----
 Version: GnuPG v2.0.14 (GNU/Linux)
@@ -67,7 +70,7 @@ AJ9e1y70yIKwx6YmpDnwqWSE07Q6lACdEnem0DbLg9t+gkX/98driCP9Ifg=
 -----END PGP PUBLIC KEY BLOCK-----
 EOF
 
-              
+
 cat <<EOF > /etc/pki/rpm-gpg/GPG-KEY-EUGridPMA-RPM-3 
 -----BEGIN PGP PUBLIC KEY BLOCK-----
 Version: GnuPG v1.2.1 (GNU/Linux)
@@ -89,57 +92,59 @@ oON2EH0dqfwNjGr1GlGyt1o5bWkzAJ0Y4QOPWaCIJFABoluX5nifjKWV9w==
 EOF
 ```
 
-
 Install and configure CVMFS:
 
-    yum -y install cvmfs cvmfs-config-default
-     
-    cat <<EOF > /etc/cvmfs/default.local
-    CVMFS_REPOSITORIES=cms.cern.ch,grid.cern.ch,cms-ib.cern.ch
-    CVMFS_HTTP_PROXY='DIRECT'
-    EOF
-    
-    cat <<EOF > /etc/cvmfs/config.d/cms.cern.ch.local
-    export CMS_LOCAL_SITE=T2_CH_CERN
-    EOF
-  
-    cvmfs_config chksetup
-    cvmfs_config probe
-    
-    
-    cat <<EOF > /etc/profile.d/scram.sh 
-    source /cvmfs/cms.cern.ch/cmsset_default.sh
-    EOF
-    
-    cat <<EOF > /etc/profile.d/scram.csh 
-    source /cvmfs/cms.cern.ch/cmsset_default.csh
-    EOF
-     
+```text
+yum -y install cvmfs cvmfs-config-default
+
+cat <<EOF > /etc/cvmfs/default.local
+CVMFS_REPOSITORIES=cms.cern.ch,grid.cern.ch,cms-ib.cern.ch
+CVMFS_HTTP_PROXY='DIRECT'
+EOF
+
+cat <<EOF > /etc/cvmfs/config.d/cms.cern.ch.local
+export CMS_LOCAL_SITE=T2_CH_CERN
+EOF
+
+cvmfs_config chksetup
+cvmfs_config probe
+
+
+cat <<EOF > /etc/profile.d/scram.sh 
+source /cvmfs/cms.cern.ch/cmsset_default.sh
+EOF
+
+cat <<EOF > /etc/profile.d/scram.csh 
+source /cvmfs/cms.cern.ch/cmsset_default.csh
+EOF
+```
 
 Install osg client and other stuff:
 
-    yum clean all
-    yum -y install https://repo.grid.iu.edu/osg/3.3/osg-3.3-el6-release-latest.rpm
-    yum -y install yum-plugin-priorities
-    yum -y install osg-wn-client
-    yum -y install HEP_OSlibs_SL6 CERN-CA-certs git zip
-    df -h
-    
-   
-     
+```text
+yum clean all
+yum -y install https://repo.grid.iu.edu/osg/3.3/osg-3.3-el6-release-latest.rpm
+yum -y install yum-plugin-priorities
+yum -y install osg-wn-client
+yum -y install HEP_OSlibs_SL6 CERN-CA-certs git zip
+df -h
+```
+
 Install some add on tools:
 
-
-    yum install gdb
-    yum install git
-    yum install python-pip
-    pip install --upgrade pip
-    yum install finger screen libXpm-devel libXft-devel krb5-devel subversion telnet readline-devel wget tk-devel tcl-devel
-  
+```text
+yum install gdb
+yum install git
+yum install python-pip
+pip install --upgrade pip
+yum install finger screen libXpm-devel libXft-devel krb5-devel subversion telnet readline-devel wget tk-devel tcl-devel
+```
 
 For testing , please create a release area by doing `scam project <CMSSW_9_0_0_pre4>` and then `cd` into that directory , run `cmsenv` and `voms-proxy-init` , followed by `runTheMatrix.py -i all -s`
 
 For CVMFS documentation , see also:
 
-    http://cvmfs.readthedocs.io/en/stable/cpt-quickstart.html
-    
+```text
+http://cvmfs.readthedocs.io/en/stable/cpt-quickstart.html
+```
+

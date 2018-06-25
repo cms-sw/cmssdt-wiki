@@ -2,35 +2,37 @@
 title: CMS Offline Software
 layout: default
 related:
- - { name: Project page, link: 'https://github.com/cms-sw/cmssw' }
- - { name: Feedback, link: 'https://github.com/cms-sw/cmssw/issues/new' }
+  - name: Project page
+    link: 'https://github.com/cms-sw/cmssw'
+  - name: Feedback
+    link: 'https://github.com/cms-sw/cmssw/issues/new'
 ---
 
-Managing secrets using CERN puppet infrastructure is well documented at
-<http://configdocs.web.cern.ch/configdocs/secrets/README.html> and related
-pages. One thing we will assume is that you are logged in to a machine where
-you have access to the `tbag` command, e.g. `aiadm`.
+# infrastructure-secrets
 
-Secrets get stored in a secure database inside the CERN network and will be
-available to the puppet manifest using the `teigi` puppet resource class.
+Managing secrets using CERN puppet infrastructure is well documented at [http://configdocs.web.cern.ch/configdocs/secrets/README.html](http://configdocs.web.cern.ch/configdocs/secrets/README.html) and related pages. One thing we will assume is that you are logged in to a machine where you have access to the `tbag` command, e.g. `aiadm`.
 
-For example if you want to store a secret file `secret.txt` for the hostgroup
-`myhostgroup` you can do on the command line:
+Secrets get stored in a secure database inside the CERN network and will be available to the puppet manifest using the `teigi` puppet resource class.
 
-    tbag set --hg myhostgroup secretname --file secret.txt
+For example if you want to store a secret file `secret.txt` for the hostgroup `myhostgroup` you can do on the command line:
 
-This will store the secret in the secure storage. You can then deploy it in
-`/some/secret/path` by adding:
+```text
+tbag set --hg myhostgroup secretname --file secret.txt
+```
 
-    teigi::secret {"unique_resource_name":
-      key => "secretname",
-      path => "/some/secret/path/secret.txt",
-      owner => "root",
-      group => "root",
-      mode  => "0400"
-    }
+This will store the secret in the secure storage. You can then deploy it in `/some/secret/path` by adding:
+
+```text
+teigi::secret {"unique_resource_name":
+  key => "secretname",
+  path => "/some/secret/path/secret.txt",
+  owner => "root",
+  group => "root",
+  mode  => "0400"
+}
+```
 
 to your puppet manifest.
 
-Make sure you have proper user, group and permissions set to make sure no one
-unexpected can access the secret.
+Make sure you have proper user, group and permissions set to make sure no one unexpected can access the secret.
+
