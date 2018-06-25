@@ -4,6 +4,7 @@
 * [\_snippets](_snippets/README.md)
   * [Getting started](_snippets/getting-started.md)
   * [Updating root](_snippets/updating-root.md)
-* [FAQs](faqs/README.md)
-  * [Untitled](faqs/untitled.md)
+* [FAQs](faqs.md)
+* [Untitled](untitled/README.md)
+  * [ReleaseNotes](https://cmssdt.cern.ch/SDT/ReleaseNotes/)
 
