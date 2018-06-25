@@ -8,7 +8,7 @@
 * [Untitled](untitled/README.md)
   * [ReleaseNotes](https://cmssdt.cern.ch/SDT/ReleaseNotes/)
   * [test1](untitled/test1.md)
-*[old](old/REAME.md)
+* [old](old/REAME.md)
   * [advanced-usage](old/advanced-usage.md)
   * [arm64-cmsbuilder](old/arm64-cmsbuilder.md)
   * [build-release](old/build-release.md)
