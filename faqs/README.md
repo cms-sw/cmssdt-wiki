@@ -1,46 +1,5 @@
 # FAQs
 
-##  {#faqs}
-
-* [FAQs](http://cms-sw.github.io/faq.html#faqs)
-* [General questions](http://cms-sw.github.io/faq.html#general-questions)
-  * [Where can I learn about git, github in general?](http://cms-sw.github.io/faq.html#where-can-i-learn-about-git-github-in-general)
-  * [How do I subscribe to github?](http://cms-sw.github.io/faq.html#how-do-i-subscribe-to-github)
-* [Working with CMSSW on github](http://cms-sw.github.io/faq.html#working-with-cmssw-on-github)
-  * [How do I checkout one or more packages?](http://cms-sw.github.io/faq.html#how-do-i-checkout-one-or-more-packages)
-  * [How do I develop a new feature using git?](http://cms-sw.github.io/faq.html#how-do-i-develop-a-new-feature-using-git)
-  * [How do I check the status of my pull request\(s\).](http://cms-sw.github.io/faq.html#how-do-i-check-the-status-of-my-pull-requests)
-  * [How do I make sure my topic branch is updated with the latest developments?](http://cms-sw.github.io/faq.html#how-do-i-make-sure-my-topic-branch-is-updated-with-the-latest-developments)
-  * [How do I synchronise my personal repository with the official one ?](http://cms-sw.github.io/faq.html#how-do-i-synchronise-my-personal-repository-with-the-official-one-)
-  * [What about UserCode?](http://cms-sw.github.io/faq.html#what-about-usercode)
-  * [I used to do X in CVS how do I do the same in git?](http://cms-sw.github.io/faq.html#i-used-to-do-x-in-cvs-how-do-i-do-the-same-in-git)
-  * [How do I tag a single package?](http://cms-sw.github.io/faq.html#how-do-i-tag-a-single-package)
-  * [How can I limit the diff between two tags to one single package?](http://cms-sw.github.io/faq.html#how-can-i-limit-the-diff-between-two-tags-to-one-single-package)
-  * [How do you delete a branch in git?](http://cms-sw.github.io/faq.html#how-do-you-delete-a-branch-in-git)
-  * [Will you migrate all the release tags we used to have for `CMSSW`?](http://cms-sw.github.io/faq.html#will-you-migrate-all-the-release-tags-we-used-to-have-for-cmssw)
-  * [Will you migrate all the per package tags?](http://cms-sw.github.io/faq.html#will-you-migrate-all-the-per-package-tags)
-  * [What is the policy for tagging?](http://cms-sw.github.io/faq.html#what-is-the-policy-for-tagging)
-  * [Is it possible to display a graphical view of my branches?](http://cms-sw.github.io/faq.html#is-it-possible-to-display-a-graphical-view-of-my-branches)
-  * [How can I do showtags?](http://cms-sw.github.io/faq.html#how-can-i-do-showtags)
-  * [How to I retract my own pull request?](http://cms-sw.github.io/faq.html#how-to-i-retract-my-own-pull-request)
-  * [How do I receive notifications about pull requests for a given package / subsystem?](http://cms-sw.github.io/faq.html#how-do-i-receive-notifications-about-pull-requests-for-a-given-package--subsystem)
-  * [Do you have a nice tutorial on how to develop CMSSW on git?](http://cms-sw.github.io/faq.html#do-you-have-a-nice-tutorial-on-how-to-develop-cmssw-on-git)
-  * [How do I access the old CVS repository to check what was really there?](http://cms-sw.github.io/faq.html#how-do-i-access-the-old-cvs-repository-to-check-what-was-really-there)
-  * [How do I ask a question?](http://cms-sw.github.io/faq.html#how-do-i-ask-a-question)
-  * [How do I contribute to these pages?](http://cms-sw.github.io/faq.html#how-do-i-contribute-to-these-pages)
-* [Advanced usage](http://cms-sw.github.io/faq.html#advanced-usage)
-  * [How do I checkout the full CMSSW repository locally?](http://cms-sw.github.io/faq.html#how-do-i-checkout-the-full-cmssw-repository-locally)
-  * [How do I browse / search the code?](http://cms-sw.github.io/faq.html#how-do-i-browse--search-the-code)
-  * [How do I tell who is responsible for a given change?](http://cms-sw.github.io/faq.html#how-do-i-tell-who-is-responsible-for-a-given-change)
-  * [How can I find out who is developing in a given package?](http://cms-sw.github.io/faq.html#how-can-i-find-out-who-is-developing-in-a-given-package)
-  * [Downloading from github is painfully slow, how can I improve the situation?](http://cms-sw.github.io/faq.html#downloading-from-github-is-painfully-slow-how-can-i-improve-the-situation)
-  * [How do I setup a local mirror?](http://cms-sw.github.io/faq.html#how-do-i-setup-a-local-mirror)
-  * [How do I collapse multiple commits into one?](http://cms-sw.github.io/faq.html#how-do-i-collapse-multiple-commits-into-one)
-  * [How do I pick up a commit from a branch and apply it to another branch?](http://cms-sw.github.io/faq.html#how-do-i-pick-up-a-commit-from-a-branch-and-apply-it-to-another-branch)
-  * [I need to checkout a file from the old CVS HEAD / a release tag, how can I do it?](http://cms-sw.github.io/faq.html#i-need-to-checkout-a-file-from-the-old-cvs-head--a-release-tag-how-can-i-do-it)
-  * [I made a mess and I do not know what I’ve currently checked out!](http://cms-sw.github.io/faq.html#i-made-a-mess-and-i-do-not-know-what-ive-currently-checked-out)
-  * [How do I ask a question?](http://cms-sw.github.io/faq.html#how-do-i-ask-a-question-1)
-
 ## General questions
 
 ### Where can I learn about git, github in general?
