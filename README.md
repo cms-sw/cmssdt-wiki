@@ -1,6 +1,8 @@
-# Updating readme
-
 # New newcomer's guide
+
+## Updating readme
+
+## New newcomer's guide
 
 ```text
 - e-group:
@@ -65,7 +67,7 @@
 5. Puppet configurations for our host groups are maintain in gitlab:
     https://gitlab.cern.ch/ai/it-puppet-hostgroup-vocmssdt
     https://gitlab.cern.ch/ai/it-puppet-module-cmssw
- 
+
    We use devel branch of these repos.
 
 -------------------------
@@ -96,6 +98,5 @@ git clone git@github.com:cms-sw/pkgtools
 After this you should have RPMs build/install in `pwd`/build directory. The logs of the build are available under `pwd`/build/BUILD/slc6_amd64_gcc530/xxxx directories.
 
   Once have some time then try to ply with it. For example just add a empty line in root.spec and try to build. Ideally when we test by hand then we build cmssw-tool-conf package (which depends on every thing). So if root package is changed then update root.spec and build cmssw-tool-conf to get every package rebuilt due to root.spec update.
-
 ```
 

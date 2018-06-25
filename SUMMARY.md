@@ -7,4 +7,5 @@
 * [FAQs](faqs.md)
 * [Untitled](untitled/README.md)
   * [ReleaseNotes](https://cmssdt.cern.ch/SDT/ReleaseNotes/)
-  * [test1](untitled/Test1.md)
+  * [test1](untitled/test1.md)
+
