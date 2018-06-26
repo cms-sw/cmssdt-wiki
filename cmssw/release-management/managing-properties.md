@@ -8,7 +8,7 @@ related:
     link: 'https://github.com/cms-sw/cmssw/issues/new'
 ---
 
-# managing-properties
+# Managing users and categories
 
 ## Managing categories
 

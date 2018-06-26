@@ -8,7 +8,7 @@ related:
     link: 'https://github.com/cms-sw/cmssw/issues/new'
 ---
 
-# build-release
+# Building a CMSSW release
 
 ## Create CMSSW Github Issue:
 

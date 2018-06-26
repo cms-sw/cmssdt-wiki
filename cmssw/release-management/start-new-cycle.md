@@ -8,7 +8,7 @@ related:
     link: 'https://github.com/cms-sw/cmssw/issues/new'
 ---
 
-# start-new-cycle
+# Starting a new release cycle
 
 In order to start a new release cycle you need to be an administrator of `cms-sw/cmssw`, `cms-sw/cmsdist` and `cms-sw/cms-bot`
 

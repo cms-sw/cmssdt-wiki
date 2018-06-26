@@ -8,7 +8,7 @@ related:
     link: 'https://github.com/cms-sw/cmssw/issues/new'
 ---
 
-# forward-ports
+# Forward ports
 
 ## Manual Forward Ports
 
