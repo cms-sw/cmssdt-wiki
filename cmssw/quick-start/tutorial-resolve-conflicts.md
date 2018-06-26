@@ -1,4 +1,4 @@
-# tutorial-resolve-conflicts
+# Resolving conflicts & porting features
 
 One of the greatest advantages of _git_ is that it is much smarter at handling conflicts between different contribution to the same repository. In particular it automatically handles the case of two parallel developments, both changing the same package in orthogonal ways. As smart as it can be, however, git does not know about the mass of the Higgs or how to resolve conflicts where two people modified the same line in different ways. This latter case is however automatically detected by GitHub, which will point out that your changes cannot be merged automatically.
 

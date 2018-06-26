@@ -10,7 +10,7 @@ redirect_from:
   - /cmssw/tutorial-proxy.html
 ---
 
-# tutorial-proxy
+# How to use git through a proxy
 
 This tuturial will explain how to use git through a proxy, for example if you are behind a firewall or on a private network.
 

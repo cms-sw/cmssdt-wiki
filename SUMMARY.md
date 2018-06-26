@@ -10,6 +10,8 @@
     * [Proposing changes to CMSSW](cmssw/quick-start/tutorial.md)
     * [CMSSW pull request approval workflow](cmssw/quick-start/prworkflow.md)
     * [Collaborating with peers](cmssw/quick-start/tutorial-collaborating-with-peers.md)
+    * [Resolving conflicts & porting features](cmssw/quick-start/tutorial-resolve-conflicts.md)
+    * [How to use git through a proxy](cmssw/quick-start/tutorial-proxy.md)
   * [Release Management](cmssw/release-management/README.md)
     * [CMSSW release notes](https://cmssdt.cern.ch/SDT/ReleaseNotes/)
   * [Infrastructure setup](cmssw/infrastructure-setup.md)
@@ -43,8 +45,6 @@
     * [tutorial-analysis-recipe](cmssw/old/tutorial-analysis-recipe.md)
     * [tutorial-forward-port](cmssw/old/tutorial-forward-port.md)
     * [tutorial-merge-usercode-repository-in-cmssw](cmssw/old/tutorial-merge-usercode-repository-in-cmssw.md)
-    * [tutorial-proxy](cmssw/old/tutorial-proxy.md)
-    * [tutorial-resolve-conflicts](cmssw/old/tutorial-resolve-conflicts.md)
     * [update-externals](cmssw/old/update-externals.md)
     * [usercode-faq](cmssw/old/usercode-faq.md)
 
