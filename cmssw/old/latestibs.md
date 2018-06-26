@@ -18,3 +18,5 @@ related:
 |  {{ releaseQueue\[0\] }} {% for arch in sortedArchs %} |  {% if releaseQueue\[1\] contains arch %} {% assign ib\_name\_parts = releaseQueue\[1\]\[arch\]\['latest\_IB'\] \| split:"\_201" %} {% if releaseQueue\[1\]\[arch\]\['status'\] == 'ok' %} {% assign text\_color = 'green' %} {% elsif releaseQueue\[1\]\[arch\]\['status'\] == 'unknown' %} {% assign text\_color = 'gray' %} {% elsif releaseQueue\[1\]\[arch\]\['status'\] == 'warning' %} {% assign text\_color = 'GoldenRod' %} {% else %} {% assign text\_color = 'red' %} {% endif %} [201{{ ib\_name\_parts\[1\] }}](http://cms-sw.github.io/showIB.html#{{%20releaseQueue[1][arch]['latest_IB']%20}}) {% endif %} {% endfor %} |
 |  {% endif %} {% endfor %} |  |
 
+
+

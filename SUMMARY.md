@@ -21,7 +21,7 @@
     * [Forward ports](cmssw/release-management/forward-ports.md)
     * [Managing users and categories](cmssw/release-management/managing-properties.md)
     * [List categories and packages](http://cms-sw.github.io/categories.html)
-    * [Latest available IBs](http://cms-sw.github.io/categories.html)
+    * [Latest available IBs](http://cms-sw.github.io/latestIBs.html)
     * [List of pending PRs](http://cms-sw.github.io/stats/pending-prs.html)
     * [CMS-bot documentation](http://cms-sw.github.io/cms-bot/index.html)
   * [Infrastructure setup](cmssw/infrastructure-setup/README.md)
