@@ -26,7 +26,7 @@ The [ssh command](http://www.openssh.com/) distributed with most Unix-like syste
 
 For example
 
-```text
+```bash
 ssh -f -N -D 1080 cmsusr.cms
 ```
 
