@@ -19,7 +19,7 @@ Confirm that you have checked out all dependencies, have a clean build, and all 
 cd src
 scram b distclean 
 git cms-checkdeps -a
-scram b -j 8
+scram b -j $(nproc) -k -v
 scram b runtests
 ```
 
