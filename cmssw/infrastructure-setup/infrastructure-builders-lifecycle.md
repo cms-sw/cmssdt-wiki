@@ -8,7 +8,7 @@ related:
     link: 'https://github.com/cms-sw/cmssw/issues/new'
 ---
 
-# infrastructure-builders-lifecycle
+# Setting up builder machines
 
 ## Cluster architecture description:
 

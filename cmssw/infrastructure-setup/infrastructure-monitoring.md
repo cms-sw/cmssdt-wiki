@@ -8,7 +8,7 @@ related:
     link: 'https://github.com/cms-sw/cmssw/issues/new'
 ---
 
-# infrastructure-monitoring
+# Monitoring
 
 Following Diego advice I started implementing service metrics for the CMS SDT related services, like Mesos and similar, so that they are integrated in the CERN/IT provided monitoring infrastructure. Metrics and alarms are defined using:
 

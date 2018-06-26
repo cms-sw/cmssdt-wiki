@@ -8,7 +8,7 @@ related:
     link: 'https://github.com/cms-sw/cmssw/issues/new'
 ---
 
-# infrastructure-secrets
+# Managing secrets with puppet
 
 Managing secrets using CERN puppet infrastructure is well documented at [http://configdocs.web.cern.ch/configdocs/secrets/README.html](http://configdocs.web.cern.ch/configdocs/secrets/README.html) and related pages. One thing we will assume is that you are logged in to a machine where you have access to the `tbag` command, e.g. `aiadm`.
 

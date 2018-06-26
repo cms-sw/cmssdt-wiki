@@ -8,7 +8,7 @@ related:
     link: 'https://github.com/cms-sw/cmssw/issues/new'
 ---
 
-# infrastructure-mesos
+# Troubleshooting Mesos setup
 
 Attaching attributes to Mesos slaves can be done by adding a file named as the attribute in `/etc/mesos-slave/attributes` containing the value of the attribute. E.g.:
 
@@ -28,4 +28,6 @@ file {'/etc/mesos-slave/attributes/my-attribute':
   content => 'true',
 }
 ```
+
+
 

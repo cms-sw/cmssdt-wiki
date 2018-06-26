@@ -1,4 +1,4 @@
-# arm64-cmsbuilder
+# Setting up builder machines \[aarch64\]
 
 ```text
    su - cmsbuild

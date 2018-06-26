@@ -1,4 +1,4 @@
-# power8-cmsbuilder
+# Setting up builder machines \[power8\]
 
 ```text
   scp -r cmsbuild@techlab-arm64-thunderx-02.cern.ch:/etc/pki/rpm-gpg /etc/pki

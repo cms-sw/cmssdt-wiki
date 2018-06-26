@@ -1,4 +1,4 @@
-# infrastructure-cmsdev-setup
+# Setting up cmsdev machines
 
 **To setup your own SLC6 \( tested on SLC6 - x86\_64 \[2017-01-24\] \) based CMSDEV machine , please follow these instructions:**
 
