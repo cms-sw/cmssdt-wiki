@@ -1,4 +1,4 @@
-# tutorial
+# Proposing changes to CMSSW
 
 This tutorial wil guide you step to step from an empty directory to a new feature being proposed in the official GitHub repository. For more general questions please have a look at the [FAQ](https://github.com/cms-sw/cmssdt-wiki/tree/5f65d2b908feff590dc3bd7f02a8335b478c31db/old/faq.html) pages.
 

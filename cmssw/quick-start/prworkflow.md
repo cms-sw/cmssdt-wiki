@@ -1,4 +1,4 @@
-# PRWorkflow
+# CMSSW pull request approval workflow
 
 This page is a short summary of the process we use for accepting code changes from CMS developers into CMSSW. It assumes knowledge of the CMSSW software and computing environment.
 

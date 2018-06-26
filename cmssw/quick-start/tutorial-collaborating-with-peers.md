@@ -10,7 +10,7 @@ redirect_from:
   - /cmssw/tutorial-collaborating-with-peers.html
 ---
 
-# tutorial-collaborating-with-peers
+# Collaborating with peers
 
 This tutorial will guide you through the process of collaborating with other people.
 
