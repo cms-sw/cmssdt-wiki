@@ -31,7 +31,7 @@ Rebasing means changing the base for a group of commits. The most general way to
 
 The `git rebase` command takes the new changes from the branch, which were previously made on top of the old base, and applies each commit, one by one, in order, to the new base. The rebased commits will have different hashes than the old versions of the commits, because the history \(and potentially the content\) has changed. To visualize this process, consult the following diagram:
 
-![rebase\_diagram](../.gitbook/assets/rebase_diagram.png)
+![rebase\_diagram](../../.gitbook/assets/rebase_diagram.png)
 
 If there is a conflict when applying a certain commit during the rebase, git will pause so you can edit the conflicting files to resolve the conflict. You can then continue the rebase. \(An example of this process will be shown in the tutorial.\)
 

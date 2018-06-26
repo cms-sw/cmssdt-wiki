@@ -28,7 +28,7 @@ The source code for the official CMSSW repository can be found in the main githu
 
 Branches and tags are available by clicking on the "branches" combo box in the top left part of the page:
 
-![branches-dialog](../.gitbook/assets/branches-dialog.png)
+![branches-dialog](../../.gitbook/assets/branches-dialog.png)
 
 The source-code of the official CMSSW can be searched by using [https://github.com/cms-sw/cmssw/search](https://github.com/cms-sw/cmssw/search) .
 
@@ -67,7 +67,7 @@ Let's say you want to find out who is responsible for a given change in `FWCore/
 
 Then click on the "Blame" button \(again [click here](https://github.com/cms-sw/cmssw/blame/master/FWCore/Framework/BuildFile.xml) for the particular example\).
 
-![blame button](../.gitbook/assets/blame-button.png)
+![blame button](../../.gitbook/assets/blame-button.png)
 
 You can get the full information about a given change \(including which files changed in the same commit\) by clicking on the specific commit-id \(the hash in the left column, [for example bd2fd326](https://github.com/cms-sw/cmssw/commit/bd2fd32657121cda0cc132a98b3b0d68773788b8)\).
 

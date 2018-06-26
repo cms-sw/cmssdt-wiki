@@ -1,11 +1,15 @@
-# FAQs
+# FAQ: CMSSW on Github
+
+```text
+request #89 from ianna/mf-geometry-pay
+```
 
 ## General questions
 
 ### Where can I learn about git, github in general?
 
 * Generic git help can be found at [http://git-scm.com/book/](http://git-scm.com/book/).
-* github.com specific help can be found at [https://help.github.com](https://help.github.com/).
+* github.com specific help can be found at [https://help.github.com](https://help.github.com).
 * A 15 minutes, interactive, git tutorial [http://try.github.com/levels/1/challenges/1](http://try.github.com/levels/1/challenges/1)
 * A nice video tutorial about git [http://www.youtube.com/watch?v=ZDR433b0HJY](http://www.youtube.com/watch?v=ZDR433b0HJY)
 * A nice interactive tutorial about branches in git [http://pcottle.github.io/learnGitBranching/](http://pcottle.github.io/learnGitBranching/)
@@ -15,15 +19,15 @@
 
 In order to develop CMSSW you will need a github account.
 
-* In case you don’t have one already, simply go to:
+* In case you don't have one already, simply go to:
 
-  [https://github.com/join](http://cms-sw.github.io/faq.html)
+  [https://github.com/join](faq.md)
 
   and follow the instructions to create a new account. Make sure you use a username people can recognize you easily or to specify your real name.
 
-* In case you already have an account you can simply use “the Sign in” dialog and put your username and password.
+* In case you already have an account you can simply use "the Sign in" dialog and put your username and password.
 
-  [https://github.com/login](http://cms-sw.github.io/faq.html)
+  [https://github.com/login](faq.md)
 
 Once you are done you should also setup your personal information:
 
@@ -37,7 +41,7 @@ Keep also in mind that git uses `$VISUAL` not `$CVS_EDITOR` for edit commit mess
 
 Finally, make sure you [register in github your ssh key](https://help.github.com/articles/generating-ssh-keys).
 
-## Working with CMSSW on github {#working-with-cmssw-on-github}
+## Working with CMSSW on github
 
 ### How do I checkout one or more packages?
 
@@ -59,13 +63,13 @@ once you have developments you can checkout dependent packages by doing.
 git cms-checkdeps
 ```
 
-[To learn more about git cms-addpkg click here](http://cms-sw.github.io/git-cms-addpkg.html).
+[To learn more about git cms-addpkg click here](https://github.com/cms-sw/cmssdt-wiki/tree/5f65d2b908feff590dc3bd7f02a8335b478c31db/old/git-cms-addpkg.html).
 
-You can also find a complete tutorial [here](http://cms-sw.github.io/tutorial.html).
+You can also find a complete tutorial [here](https://github.com/cms-sw/cmssdt-wiki/tree/5f65d2b908feff590dc3bd7f02a8335b478c31db/old/tutorial.html).
 
 ### How do I develop a new feature using git?
 
-Please have a look at the [full blown tutorial about proposing new changes in CMSSW](http://cms-sw.github.io/tutorial.html).
+Please have a look at the [full blown tutorial about proposing new changes in CMSSW](https://github.com/cms-sw/cmssdt-wiki/tree/5f65d2b908feff590dc3bd7f02a8335b478c31db/old/tutorial.html).
 
 ### How do I check the status of my pull request\(s\).
 
@@ -73,11 +77,11 @@ Go to the [Pull request](https://github.com/cms-sw/cmssw/issues) to have an over
 
 ### How do I make sure my topic branch is updated with the latest developments?
 
-Follow the tutorial [Resolving conflicts & porting features](http://cms-sw.github.io/tutorial-resolve-conflicts.html).
+Follow the tutorial [Resolving conflicts & porting features](https://github.com/cms-sw/cmssdt-wiki/tree/5f65d2b908feff590dc3bd7f02a8335b478c31db/old/tutorial-resolve-conflicts.html).
 
 ### How do I synchronise my personal repository with the official one ?
 
-In general you shouldn’t need to do it, but if you really want to, you can do it from any CMSSW working area:
+In general you shouldn't need to do it, but if you really want to, you can do it from any CMSSW working area:
 
 ```text
 git fetch --all
@@ -88,15 +92,15 @@ You need to repeat the last command for each branch \(CMSSW\_7\_1\_X, CMSSW\_7\_
 
 ### What about UserCode?
 
-Please have a look at the [UserCode FAQ](http://cms-sw.github.io/usercode-faq).
+Please have a look at the [UserCode FAQ](https://github.com/cms-sw/cmssdt-wiki/tree/5f65d2b908feff590dc3bd7f02a8335b478c31db/old/usercode-faq/README.md).
 
 ### I used to do X in CVS how do I do the same in git?
 
-Please have a look at the [Rosetta Stone](http://cms-sw.github.io/rosetta.html) page which has a few conversions from CVS-speak to git-speak. Keep in mind that due to different designs not all the things which you do in one are possible in the other.
+Please have a look at the [Rosetta Stone](https://github.com/cms-sw/cmssdt-wiki/tree/5f65d2b908feff590dc3bd7f02a8335b478c31db/old/rosetta.html) page which has a few conversions from CVS-speak to git-speak. Keep in mind that due to different designs not all the things which you do in one are possible in the other.
 
 ### How do I tag a single package?
 
-Tagging a single package is not possible with git, when you tag something you’ll always tag the full repository, tags are only aliases to commits. However tags are cheap, so we can afford to tag a single integration build.
+Tagging a single package is not possible with git, when you tag something you'll always tag the full repository, tags are only aliases to commits. However tags are cheap, so we can afford to tag a single integration build.
 
 ### How can I limit the diff between two tags to one single package?
 
@@ -122,15 +126,15 @@ Yes, all release \(`CMSSW_X_Y_Z`\) tags currently in CVS will be available in gi
 
 ### Will you migrate all the per package tags?
 
-No. Per package tags will not be migrated. You can however have a look at the [Dealing with CVS History page](http://cms-sw.github.io/cvs-interaction.html) to see how you can get old tags which were not in any release. This will also be useful to import packages which did not end up in any release.
+No. Per package tags will not be migrated. You can however have a look at the [Dealing with CVS History page](https://github.com/cms-sw/cmssdt-wiki/tree/5f65d2b908feff590dc3bd7f02a8335b478c31db/old/cvs-interaction.html) to see how you can get old tags which were not in any release. This will also be useful to import packages which did not end up in any release.
 
 ### What is the policy for tagging?
 
-No tags other than “release tags” will be allowed inside the _official-cmssw_ repository, so there is not a particular need for a convention for tags.
+No tags other than "release tags" will be allowed inside the _official-cmssw_ repository, so there is not a particular need for a convention for tags.
 
 In the git model, changes are proposed via private branches which are made into Pull Requests. Given a Pull Request gets automatically assigned a unique ID \(like for tagsets\), we will not have a particular convention, treating them as private tags in the CVS model.
 
-The only recommendation so far has been use “use a somewhat descriptive names of the actual content”.
+The only recommendation so far has been use "use a somewhat descriptive names of the actual content".
 
 ### Is it possible to display a graphical view of my branches?
 
@@ -146,7 +150,7 @@ or
 git log --graph --abbrev-commit <branch-1> <branch-2> ... <branch-n>
 ```
 
-Moreover there are a number of graphical GUIs including gitk \(Linux, Mac, Windows, included in git\) or [SourceTree](http://www.sourcetreeapp.com/) \(Mac, Windows\).
+Moreover there are a number of graphical GUIs including gitk \(Linux, Mac, Windows, included in git\) or [SourceTree](http://www.sourcetreeapp.com) \(Mac, Windows\).
 
 ### How can I do showtags?
 
@@ -158,7 +162,7 @@ To replace it, you can get the modified files with raw git commands by doing:
  git diff --name-only $CMSSW_VERSION
 ```
 
-\(of course, drop –name-only if you want the full diff\).
+\(of course, drop --name-only if you want the full diff\).
 
 A slightly more elaborate way of getting the modified packages is:
 
@@ -244,7 +248,7 @@ Simply close it using the standard GitHub GUI when looking at it.
 
 * Go to the Pull Request page, either by clinking on the list on GitHub.
 * Scroll down to the bottom of the discussion related to your pull request.
-* Click on “Close”
+* Click on "Close"
 
 ### How do I receive notifications about pull requests for a given package / subsystem?
 
@@ -255,7 +259,7 @@ Please make a Pull Request to [https://github.com/cms-sw/cms-bot](https://github
 
 ### Do you have a nice tutorial on how to develop CMSSW on git?
 
-Yes, please have a look at the [CMSSW git tutorial pages](http://cms-sw.github.io/tutorial.html).
+Yes, please have a look at the [CMSSW git tutorial pages](https://github.com/cms-sw/cmssdt-wiki/tree/5f65d2b908feff590dc3bd7f02a8335b478c31db/old/tutorial.html).
 
 For those of you with CERN access there are also a couple of presentations about git / github in CMS you might find useful:
 
@@ -285,10 +289,13 @@ If you have more questions about git and CMSSW on git, please use [this form](ht
 
 ### How do I contribute to these pages?
 
-The documentation you are reading uses [GitHub Pages](http://pages.github.com/) to publish web pages. To contribute to it you need to:
+The documentation you are reading uses [GitHub Pages](http://pages.github.com) to publish web pages. To contribute to it you need to:
 
 * Register to github.
-* Fork the cms-sw.github.io repository under your account \([click here to do it](https://github.com/cms-sw/cms-sw.github.io/fork)\).
+* Fork the cms-sw.github.io repository under your account \(\[click here to do
+
+  it\]\([https://github.com/cms-sw/cms-sw.github.io/fork](https://github.com/cms-sw/cms-sw.github.io/fork)\)\).
+
 * Edit the documentation and push it to your repository:
 
   ```text
@@ -297,18 +304,20 @@ The documentation you are reading uses [GitHub Pages](http://pages.github.com/) 
   git push
   ```
 
-* Create a “pull request” for you changes by going [here](https://github.com/cms-sw/cms-sw.github.io/pull/new/master).
+* Create a "pull request" for you changes by going [here](https://github.com/cms-sw/cms-sw.github.io/pull/new/master).
 
 Alternatively, you can edit the pages directly with the github.com web editor:
 
 * go to [https://github.com/cms-sw/cms-sw.github.io](https://github.com/cms-sw/cms-sw.github.io)
 * find for the page you want to modify
 * use the Edit button to automatically fork the repository and open the editor
-* once you are done, use the “Propose file change” button to automatically make a branch and create a pull request
+* once you are done, use the "Propose file change" button to automatically make
+
+  a branch and create a pull request
 
 This will trigger a discussion \(and most likely immediate approval\) of your documentation changes.
 
-## Advanced usage {#advanced-usage}
+## Advanced usage
 
 ### How do I checkout the full CMSSW repository locally?
 
@@ -318,7 +327,7 @@ To checkout the full CMSSW repository locally you can do:
 git clone cmssw-main src
 ```
 
-in your SCRAM work area. Notice this will require a github account \(see [here](http://cms-sw.github.io/faq.html) for the relevant FAQ\). Alternatively you can do:
+in your SCRAM work area. Notice this will require a github account \(see [here](faq.md) for the relevant FAQ\). Alternatively you can do:
 
 ```text
 git clone cmssw-main-ro src
@@ -336,9 +345,9 @@ See [here](http://git-scm.com/book/en/Git-Basics-Getting-a-Git-Repository#Clonin
 
 The source code for the official CMSSW repository can be found in the main github page for CMSSW: [https://github.com/cms-sw/cmssw](https://github.com/cms-sw/cmssw).
 
-Branches and tags are available by clicking on the “branches” combo box in the top left part of the page:
+Branches and tags are available by clicking on the "branches" combo box in the top left part of the page:
 
-![branches-dialog](http://cms-sw.github.io/images/branches-dialog.png)
+![branches-dialog](../../.gitbook/assets/branches-dialog.png)
 
 The source code of the official CMSSW can be searched by using [https://github.com/cms-sw/cmssw/search](https://github.com/cms-sw/cmssw/search).
 
@@ -373,19 +382,17 @@ for more information about `git grep` click [here](http://git-scm.com/docs/git-g
 
 ### How do I tell who is responsible for a given change?
 
-Let’s say you want to find out who is responsible for a given change in `FWCore/Framework/BuildFile.xml`. If you are happy with using the web based GUI you can simply browse to the given file \([click here](https://github.com/cms-sw/cmssw/blob/master/FWCore/Framework/BuildFile.xml) for this particular example\).
+Let's say you want to find out who is responsible for a given change in `FWCore/Framework/BuildFile.xml`. If you are happy with using the web based GUI you can simply browse to the given file \([click here](https://github.com/cms-sw/cmssw/blob/master/FWCore/Framework/BuildFile.xml) for this particular example\).
 
-Then click on the “Blame” button \(again [click here](https://github.com/cms-sw/cmssw/blame/master/FWCore/Framework/BuildFile.xml) for the particular example\).
+Then click on the "Blame" button \(again [click here](https://github.com/cms-sw/cmssw/blame/master/FWCore/Framework/BuildFile.xml) for the particular example\).
 
-![blame button](http://cms-sw.github.io/images/blame-button.png)
+![blame button](../../.gitbook/assets/blame-button.png)
 
 You can get the full information about a given change \(including which files changed in the same commit\) by clicking on the specific commit-id \(the hash in the left column, [for example bd2fd326](https://github.com/cms-sw/cmssw/commit/bd2fd32657121cda0cc132a98b3b0d68773788b8)\).
 
 Alternatively if you prefer doing it from the command line, you can use the `git blame` command to find out for each line which `commit-id` is responsible for a given change.
 
-```text
 > git blame FWCore/Framework/BuildFile.xml
-```
 
 which returns:
 
@@ -408,7 +415,7 @@ f4330d28 (wmtan 2010-02-18 23:10:32 +0000 15)   <lib   name="1"/>
 f4330d28 (wmtan 2010-02-18 23:10:32 +0000 16) </export>
 ```
 
-Let’s say we are interested in line 12, i.e. `<use name="rootcintex"/>`. The first column gives us the `commit-id` \(`bd2fd326` in this case\). To find out everything about that commit you can use the `git show` command:
+Let's say we are interested in line 12, i.e. `<use name="rootcintex"/>`. The first column gives us the `commit-id` \(`bd2fd326` in this case\). To find out everything about that commit you can use the `git show` command:
 
 ```text
 git show bd2fd326
@@ -521,20 +528,29 @@ git remote update
 
 A very common pattern when developing a feature with git is to commit very often, to keep track of even small set of changes and once one is happy with the feature branch to go back, collapse all the minor changes and write a nice commit message.
 
-Let’s assume for example you have a very long commit history for a topic branch `my-topic`.
+Let's assume for example you have a very long commit history for a topic branch `my-topic`.
 
-```text
-* 00b32e7 - Sat, 6 Apr 2013 11:07:19 +0200 (10 minutes ago) (HEAD, my-topic)
-|           A typo.  Giulio Eulisse
-* 6ed6e45 - Sat, 6 Apr 2013 11:06:49 +0200 (11 minutes ago)
-|           Some documentation added.  Giulio Eulisse
-* 74f8fd0 - Sat, 6 Apr 2013 11:06:34 +0200 (11 minutes ago)
-|           Some more bug fixes.  Giulio Eulisse
-* 39165d9 - Sat, 6 Apr 2013 11:06:00 +0200 (12 minutes ago)
-|           Some bugfix.  Giulio Eulisse
-* 3a775f1 - Sat, 6 Apr 2013 11:05:21 +0200 (12 minutes ago)
-            Initial commit for topic.  Giulio Eulisse
-```
+* 00b32e7 - Sat, 6 Apr 2013 11:07:19 +0200 \(10 minutes ago\) \(HEAD, my-topic\)
+
+  \|           A typo.  Giulio Eulisse
+
+* 6ed6e45 - Sat, 6 Apr 2013 11:06:49 +0200 \(11 minutes ago\)
+
+  \|           Some documentation added.  Giulio Eulisse
+
+* 74f8fd0 - Sat, 6 Apr 2013 11:06:34 +0200 \(11 minutes ago\)
+
+  \|           Some more bug fixes.  Giulio Eulisse
+
+* 39165d9 - Sat, 6 Apr 2013 11:06:00 +0200 \(12 minutes ago\)
+
+  \|           Some bugfix.  Giulio Eulisse
+
+* 3a775f1 - Sat, 6 Apr 2013 11:05:21 +0200 \(12 minutes ago\)
+
+  ```text
+        Initial commit for topic.  Giulio Eulisse
+  ```
 
 once you are completely happy with your topic branch, you might not particularly care about all the intermediate steps, and you might want to squash all of them into one. This is done by using the `git reset` command: it will rever you back to a given commit, but it will keep your changes in the working tree, ready to be committed. E.g.:
 
@@ -542,7 +558,7 @@ once you are completely happy with your topic branch, you might not particularly
 git reset --soft 3a775f1
 ```
 
-will reset the commit index to the “Initial commit for topic.” but it will leave all code changes ready to be committed. You can then amend the initial commit with all the changes you previously did by simply doing:
+will reset the commit index to the "Initial commit for topic." but it will leave all code changes ready to be committed. You can then amend the initial commit with all the changes you previously did by simply doing:
 
 ```text
 git commit --amend
@@ -550,12 +566,13 @@ git commit --amend
 
 which will prompt for an updated message and will results in one single commit:
 
-```text
-* f7400d3 - Sat, 6 Apr 2013 11:05:21 +0200 (19 minutes ago) (HEAD, master)
-            Some Feature added and tested.  Giulio Eulisse
-```
+* f7400d3 - Sat, 6 Apr 2013 11:05:21 +0200 \(19 minutes ago\) \(HEAD, master\)
 
-For more information about how to rewrite history, you can have a look at the [git guide](http://git-scm.com/book/en/Git-Tools-Rewriting-History). In particular once you are familiar with the concept you might want to look at [`git rebase --interactive`](http://git-scm.com/book/en/Git-Tools-Rewriting-History#Changing-Multiple-Commit-Messages)which provides more flexibility when you want to do more that simply merge a set of commits into one. There is also a good discussion of different squashing methods on [Stack Overflow](http://stackoverflow.com/questions/5189560/squash-my-last-x-commits-together-using-git).
+  ```text
+        Some Feature added and tested.  Giulio Eulisse
+  ```
+
+For more information about how to rewrite history, you can have a look at the [git guide](http://git-scm.com/book/en/Git-Tools-Rewriting-History). In particular once you are familiar with the concept you might want to look at [`git rebase --interactive`](http://git-scm.com/book/en/Git-Tools-Rewriting-History#Changing-Multiple-Commit-Messages) which provides more flexibility when you want to do more that simply merge a set of commits into one. There is also a good discussion of different squashing methods on [Stack Overflow](http://stackoverflow.com/questions/5189560/squash-my-last-x-commits-together-using-git).
 
 ### How do I pick up a commit from a branch and apply it to another branch?
 
@@ -589,7 +606,7 @@ git checkout imported-CVS-HEAD -- PhysicsTools/Configuration/test/SUSY_pattuple_
 
 Notice the `git cms-addpkg` is needed to bring in the package \(i.e. make the sparse checkout\). Finally notice you can use the same recipe to checkout files in different release tags \(e.g. CMSSW\_5\_3\_11\).
 
-### I made a mess and I do not know what I’ve currently checked out!
+### I made a mess and I do not know what I've currently checked out!
 
 It can happen that due to wrong manipulations of the history, merging or rebasing, one finds itself with the current branch ref pointing to something unexpected. In order to view the history of the actions done, one can use the
 
@@ -619,39 +636,4 @@ To learn more about git reflog you can look at [its man page](https://www.kernel
 ### How do I ask a question?
 
 If you have more questions about git and CMSSW on git, please use [this form](https://github.com/cms-sw/cmssw/issues/new).
-
-### Quick start
-
-* [Main page](http://cms-sw.github.io/index.html)
-* [FAQ: CMSSW on Github](http://cms-sw.github.io/faq.html)
-* [Proposing changes to CMSSW](http://cms-sw.github.io/tutorial.html)
-* [CMSSW pull request approval workflow](http://cms-sw.github.io/PRWorkflow.html)
-* [Collaborating with peers](http://cms-sw.github.io/tutorial-collaborating-with-peers.html)
-* [Working with CMSSW and UserCode](http://cms-sw.github.io/tutorial-merge-usercode-repository-in-cmssw.html)
-* [Resolving conflicts & porting features](http://cms-sw.github.io/tutorial-resolve-conflicts.html)
-* [How to use git through a proxy](http://cms-sw.github.io/tutorial-proxy.html)
-
-### Release Management
-
-* [CMSSW release notes](https://cmssdt.cern.ch/SDT/ReleaseNotes)
-* [Building a CMSSW release](http://cms-sw.github.io/build-release.html)
-* [Integration Builds results](http://cms-sw.github.io/showIB.html)
-* [Historical plots](https://cmsgraph.cern.ch/)
-* [Starting a new release cycle](http://cms-sw.github.io/start-new-cycle.html)
-* [Forward ports](http://cms-sw.github.io/forward-ports.html)
-* [Managing users and categories](http://cms-sw.github.io/managing-properties.html)
-* [List categories and packages](http://cms-sw.github.io/categories.html)
-* [Latest available IBs](http://cms-sw.github.io/latestIBs.html)
-* [List of pending PRs](http://cms-sw.github.io/stats/pending-prs.html)
-* [CMS-bot documentation](http://cms-sw.github.io/cms-bot/index.html)
-
-### Infrastructure setup
-
-* [Monitoring](http://cms-sw.github.io/infrastructure-monitoring.html)
-* [Managing secrets with puppet](http://cms-sw.github.io/infrastructure-secrets.html)
-* [Setting up builder machines](http://cms-sw.github.io/infrastructure-builders-lifecycle.html)
-* [Setting up builder machines \[aarch64\]](http://cms-sw.github.io/arm64-cmsbuilder.html)
-* [Setting up builder machines \[power8\]](http://cms-sw.github.io/power8-cmsbuilder.html)
-* [Setting up cmsdev machines](http://cms-sw.github.io/infrastructure-cmsdev-setup.html)
-* [Troubleshooting Mesos setup](http://cms-sw.github.io/infrastructure-mesos.html)
 

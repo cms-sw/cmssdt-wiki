@@ -55,32 +55,32 @@ In either case, simply apply these changes, commit and update your github branch
 
 * Once your pull request is submitted, it is assigned a set of categories \(e.g., "reconstruction"\) based on which packages have been changed. The mapping of code package to group is [here](https://github.com/cms-sw/cms-bot/blob/master/categories.py). Here is an example showing a new pull request with labels added and its milestone release \(e.g., "CMSSW\_8\_0\_X"\)
 
-  ![PR](../.gitbook/assets/pr_addlabels.png)
+  ![PR](../../.gitbook/assets/pr_addlabels.png)
 
 * The [category managers](https://github.com/cms-sw/cms-bot/blob/master/categories.py) for those categories get an automatic email asking them to review the proposed changes. Until their review is complete, your pull request has a label that indicates it is waiting for their signature \(e.g., "reconstruction-pending"\)
 * In addition, your PR will get labels for "tests-pending", "comparisons-pending" and "orp-pending". These are explained in the following steps.
 * Category managers can trigger a set of standard pull request tests by responding to the pull request issue in github with "please test"
 
-  ![PR](../.gitbook/assets/pr_pleasetest.png)
+  ![PR](../../.gitbook/assets/pr_pleasetest.png)
 
 * After a few hours, the results of these tests are available \("tests-approved" label\), including some low statistics physics comparisons \("comparisons-available" label\). You might find it useful to check these results in case of problems. Sometimes these tests are affected by problems in the underlying integration build or computing infrastructure. If the errors do not appear to be from your pull request, do not worry. 
 
-  ![PR](../.gitbook/assets/pr_comparisondone.png)
+  ![PR](../../.gitbook/assets/pr_comparisondone.png)
 
 * Code review can come via comments on the proposed changes or other discussion \(typically in your github issue\). Once each category manager is satisfied, they will sign your pull request \("+1"\), and the corresponding label changes from "pending" to "approved" \(e.g., "reconstruction-approved"\)
 
-  ![PR](../.gitbook/assets/pr_reviewercomplete.png)
+  ![PR](../../.gitbook/assets/pr_reviewercomplete.png)
 
 * In case of no answers or slow answers from groups, it is useful to follow up either in your github issue, via mail or via the groups regular meeting
 * The last approval is from the release management team \("orp-approved"\), after which your pull request will enter the CMSSW repository.
 
-  ![PR](../.gitbook/assets/pr_orpapproval.png)
+  ![PR](../../.gitbook/assets/pr_orpapproval.png)
 
 ## Check the Integration Build
 
 * Twice per day, we run a more complete set of tests. The main web page for these results is [here](https://cmssdt.cern.ch/SDT/html/showIB.html). You can check this page a day after your pull request is accepted to check for issues with your pull request. 
 
-  ![PR](../.gitbook/assets/pr_integrationbuilds.png)
+  ![PR](../../.gitbook/assets/pr_integrationbuilds.png)
 
 * As with the IB tests, there can be existing problems in the integration builds that will not be related to your pull request or other recently accepted pull requests. You can look at how the test results have changed from day to day to help decide if there are problems created by your pull request.
 

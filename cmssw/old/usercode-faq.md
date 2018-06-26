@@ -30,7 +30,7 @@ You are free of hosting your repository on any git / SVN hosting site you prefer
 
 **First of all follow the account creation instructions** [**here**](http://cms-sw.github.io/cmssw/faq.html#how_do_i_subscribe_to_github). Once you have done that create a new repository to hold your usercode. This can be done by simply going to [https://github.com/new](https://github.com/new).
 
-![https://github.com/new](../.gitbook/assets/create-new-repository.png)
+![https://github.com/new](../../.gitbook/assets/create-new-repository.png)
 
 Click on "Create Repository" and note down the URL of your newly created repository.
 

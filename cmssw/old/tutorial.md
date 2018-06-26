@@ -81,21 +81,21 @@ in this case:
 
 A **pull request** is a request to merge a given addition in your local repository to a branch in the official CMSSW repository. **Think of it as publishing a tagset in Tag Collector.** To start one click on the "Pull request" button which find on your personal repository.
 
-![Pull request](../.gitbook/assets/pull-request.png)
+![Pull request](../../.gitbook/assets/pull-request.png)
 
 ## Select the topic branch which you want to propose and its target.
 
 The GUI for doing "Pull requests" looks like below:
 
-![Pull request](../.gitbook/assets/pull-request-gui.png)
+![Pull request](../../.gitbook/assets/pull-request-gui.png)
 
 If you click on the "Edit" button in the top right corner, you can select the "head branch" i.e. your addition on to of the official CMSSW.
 
-![Pull request](../.gitbook/assets/head-branch.png)
+![Pull request](../../.gitbook/assets/head-branch.png)
 
 Or change the "base branch", i.e. the one to which you want to have your changes merged. Starting from CMSSW\_9\_1\_X and later the base branch for the latest development release is the master branch.
 
-![Pull requests GUI](../.gitbook/assets/base-branch.png)
+![Pull requests GUI](../../.gitbook/assets/base-branch.png)
 
 Remember to _write a sensible comment_, check that gitHubs summary of your changes are as expected, and click on Send Pull Request. There are several issues to consider before _clicking_
 
