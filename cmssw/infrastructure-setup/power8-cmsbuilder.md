@@ -1,6 +1,6 @@
 # Setting up builder machines \[power8\]
 
-```text
+```bash
   scp -r cmsbuild@techlab-arm64-thunderx-02.cern.ch:/etc/pki/rpm-gpg /etc/pki
   cd /etc/pki/rpm-gpg/
   mv rpm-gpg/RPM-GPG-KEY-CernVM .
