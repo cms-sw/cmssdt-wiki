@@ -1,8 +1,8 @@
 # Untitled
 
-[Foo](#foo)
+## Untitled
 
-# Foo
+[Foo](untitled.md#foo)
 
-
+## Foo
 

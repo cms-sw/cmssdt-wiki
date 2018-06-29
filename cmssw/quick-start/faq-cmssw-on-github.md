@@ -21,13 +21,13 @@ In order to develop CMSSW you will need a github account.
 
 * In case you don't have one already, simply go to:
 
-  [https://github.com/join](faq.md)
+  [https://github.com/join](faq-cmssw-on-github.md)
 
   and follow the instructions to create a new account. Make sure you use a username people can recognize you easily or to specify your real name.
 
 * In case you already have an account you can simply use "the Sign in" dialog and put your username and password.
 
-  [https://github.com/login](faq.md)
+  [https://github.com/login](faq-cmssw-on-github.md)
 
 Once you are done you should also setup your personal information:
 
@@ -327,7 +327,7 @@ To checkout the full CMSSW repository locally you can do:
 git clone cmssw-main src
 ```
 
-in your SCRAM work area. Notice this will require a github account \(see [here](faq.md) for the relevant FAQ\). Alternatively you can do:
+in your SCRAM work area. Notice this will require a github account \(see [here](faq-cmssw-on-github.md) for the relevant FAQ\). Alternatively you can do:
 
 ```text
 git clone cmssw-main-ro src
