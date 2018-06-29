@@ -4,6 +4,7 @@
 * [\_snippets](_snippets/README.md)
   * [Getting started](_snippets/getting-started.md)
   * [Updating root](_snippets/updating-root.md)
+  * [Untitled](_snippets/untitled.md)
 * [CMSSW](cmssw/README.md)
   * [Quick start](cmssw/quick-start/README.md)
     * [FAQ: CMSSW on Github](cmssw/quick-start/faq.md)
