@@ -518,6 +518,21 @@ This is to process bot commands for cmsdist comp branches
 
 **Triggers from:** []
 
+## [es-close-indexes](https://cmssdt.cern.ch/jenkins/job/es-close-indexes)
+
+**Description:** None
+
+**Upstream projects:**
+
+
+**Downstream projects:**
+
+
+**Sub-projects:**
+
+
+**Triggers from:** []
+
 ## [external-deploy-afs](https://cmssdt.cern.ch/jenkins/job/external-deploy-afs)
 
 **Description:** This job deployes any external tool on afs that is required. 

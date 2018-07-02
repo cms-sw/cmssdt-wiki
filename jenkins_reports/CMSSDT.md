@@ -502,6 +502,21 @@ This is to process bot commands for cmsdist comp branches
 
 **Triggers from:** []
 
+## [es-close-indexes](https://cmssdt.cern.ch/jenkins/job/es-close-indexes)
+
+**Description:** None
+
+**Upstream projects:**
+
+
+**Downstream projects:**
+
+
+**Sub-projects:**
+
+
+**Triggers from:** []
+
 ## [fix-backport-prs](https://cmssdt.cern.ch/jenkins/job/fix-backport-prs)
 
 **Description:** None
