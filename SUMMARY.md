@@ -29,6 +29,12 @@
     * [Monitoring](cmssw/infrastructure-setup/monitoring.md)
     * [Managing secrets with puppet](cmssw/infrastructure-setup/managing-secrets-with-puppet.md)
     * [Setting up builder machines](cmssw/infrastructure-setup/setting-up-builder-machines.md)
+      * [Jenkins Projects](jenkins_reports/README.md)
+        * [CMSSDT](jenkins_reports/CMSSDT)
+        * [Jenkins Tests](jenkins_reports/Jenkins-Tests)
+        * [All](jenkins_reports/All)
+        * [Openstack](jenkins_reports/Openstack)
+
     * [Setting up builder machines \[aarch64\]](cmssw/infrastructure-setup/setting-up-builder-machines-aarch64.md)
     * [Setting up builder machines \[power8\]](cmssw/infrastructure-setup/setting-up-builder-machines-power8.md)
     * [Setting up cmsdev machines](cmssw/infrastructure-setup/setting-up-cmsdev-machines.md)
@@ -53,4 +59,3 @@
     * [update-externals](cmssw/old/update-externals.md)
     * [usercode-faq](cmssw/old/usercode-faq.md)
 * [Jenkins Jobs](https://cmssdt.cern.ch/SDT/html/jreports.html)
-
