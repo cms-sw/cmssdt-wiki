@@ -1343,9 +1343,8 @@ display it in html form. The current page you are viewing is generated and updat
 
 ## [jenkins-projects-wiki-update](https://cmssdt.cern.ch/jenkins/job/jenkins-projects-wiki-update)
 
-**Description:** This job runs a groovy script to dump jenkins
-projects info , which is further read by python to 
-display it in html form. The current page you are viewing is generated and updated by this job.
+**Description:** This job runs a groovy script to dump jenkinsprojects info , which is further read by python to 
+display it in markdown form. It is later imported to CMSSDT wiki.
 
 
 
