@@ -8,9 +8,25 @@
 
 # Projects:
 
+## [jenkins-add-job-to-anthoer-server](https://cmssdt.cern.ch/jenkins/job/jenkins-add-job-to-anthoer-server)
+
+**Description:** This is a helper job to copy a Jenkins Project from this Jenkins master to another Jenkins master.
+
+**Upstream projects:**
+
+
+**Downstream projects:**
+
+
+**Sub-projects:**
+
+
+**Triggers from:** []
+
 ## [jenkins-backup](https://cmssdt.cern.ch/jenkins/job/jenkins-backup)
 
-**Description:** None
+**Description:** This job takes the backup of Jenkins master configuration (which includes projects, jenkins configuration, slaves, secrets etc.)
+Backups jenkins scripts on https://github.com/cms-sw/jenkins-backup.git
 
 **Upstream projects:**
 
@@ -25,7 +41,10 @@
 
 ## [jenkins-disable-jobs](https://cmssdt.cern.ch/jenkins/job/jenkins-disable-jobs)
 
-**Description:** None
+**Description:** Disable all nodes that started with the provided wildcard string,
+example parameter
+cmsbuild* 
+would enable all cmsbuild machines found
 
 **Upstream projects:**
 
@@ -40,7 +59,7 @@
 
 ## [jenkins-disable-nodes](https://cmssdt.cern.ch/jenkins/job/jenkins-disable-nodes)
 
-**Description:** None
+**Description:** Disable all jenkins slaves based on the slave wildcard filter.
 
 **Upstream projects:**
 
@@ -55,7 +74,7 @@
 
 ## [jenkins-elasticsearch-monitor](https://cmssdt.cern.ch/jenkins/job/jenkins-elasticsearch-monitor)
 
-**Description:** This job runs a pthon script to push useful info from jenkins build logs to elasticsearch and kibana viewing
+**Description:** This job runs a python script to push useful info from jenkins build logs to elasticsearch
 
 
 
@@ -72,7 +91,7 @@
 
 ## [jenkins-enable-jobs](https://cmssdt.cern.ch/jenkins/job/jenkins-enable-jobs)
 
-**Description:** None
+**Description:** Enable all Jenkins projects based on the wildcard filter.
 
 **Upstream projects:**
 
@@ -88,7 +107,10 @@
 
 ## [jenkins-enable-nodes](https://cmssdt.cern.ch/jenkins/job/jenkins-enable-nodes)
 
-**Description:** None
+**Description:** Enables all nodes that started with the provided wildcard string,
+example parameter
+cmsbuild* 
+would enable all cmsbuild machines found
 
 **Upstream projects:**
 
@@ -103,7 +125,8 @@
 
 ## [jenkins-initialize](https://cmssdt.cern.ch/jenkins/job/jenkins-initialize)
 
-**Description:** None
+**Description:** This project is run once a new Jenkins instance is setup or upgrated to a new version.
+This runs some sub-projects to check if basic functionality of jenkins is working.
 
 **Upstream projects:**
 
@@ -125,7 +148,7 @@
 
 ## [jenkins-installation-cli-test](https://cmssdt.cern.ch/jenkins/job/jenkins-installation-cli-test)
 
-**Description:** None
+**Description:** This is Jenkins installation tests project. It tests if various Jenkins Command-line interface service are working.
 
 **Upstream projects:**
 
@@ -141,7 +164,7 @@
 
 ## [jenkins-installation-trigger-cli](https://cmssdt.cern.ch/jenkins/job/jenkins-installation-trigger-cli)
 
-**Description:** None
+**Description:** Jenkins installaton test job to test the triggering of a sub-project via Command-line-interface.
 
 **Upstream projects:**
 
@@ -156,7 +179,7 @@
 
 ## [jenkins-installation-trigger-test](https://cmssdt.cern.ch/jenkins/job/jenkins-installation-trigger-test)
 
-**Description:** None
+**Description:** This is Jenkins installation test project. This tests the triggering of a sub-project.
 
 **Upstream projects:**
 
@@ -171,6 +194,25 @@
 **Triggers from:** []
 
 ## [jenkins-projects-report](https://cmssdt.cern.ch/jenkins/job/jenkins-projects-report)
+
+**Description:** This job runs a groovy script to dump jenkins
+projects info , which is further read by python to 
+display it in html form. The current page you are viewing is generated and updated by this job.
+
+
+
+**Upstream projects:**
+
+
+**Downstream projects:**
+
+
+**Sub-projects:**
+
+
+**Triggers from:** []
+
+## [jenkins-projects-wiki-update](https://cmssdt.cern.ch/jenkins/job/jenkins-projects-wiki-update)
 
 **Description:** This job runs a groovy script to dump jenkins
 projects info , which is further read by python to 
@@ -205,25 +247,9 @@ display it in html form. The current page you are viewing is generated and updat
 
 **Triggers from:** []
 
-## [jenkins-stop-job](https://cmssdt.cern.ch/jenkins/job/jenkins-stop-job)
-
-**Description:** Kill a running 
-
-**Upstream projects:**
-
-* [abort-tests](#abort-tests):
-
-**Downstream projects:**
-
-
-**Sub-projects:**
-
-
-**Triggers from:** []
-
 ## [jenkins-test-job1](https://cmssdt.cern.ch/jenkins/job/jenkins-test-job1)
 
-**Description:** None
+**Description:** Jenkins installation test job 1 to check for the parameters passed from a parent job.
 
 **Upstream projects:**
 
@@ -233,28 +259,12 @@ display it in html form. The current page you are viewing is generated and updat
 
 **Sub-projects:**
 
-* [${SUB_JOB}](#${SUB_JOB}):
 
 **Triggers from:** []
 
 ## [jenkins-test-job2](https://cmssdt.cern.ch/jenkins/job/jenkins-test-job2)
 
-**Description:** None
-
-**Upstream projects:**
-
-
-**Downstream projects:**
-
-
-**Sub-projects:**
-
-
-**Triggers from:** []
-
-## [jenkins-test-job3](https://cmssdt.cern.ch/jenkins/job/jenkins-test-job3)
-
-**Description:** None
+**Description:** Jenkins tests Project to test jenkins functionality.
 
 **Upstream projects:**
 
@@ -269,7 +279,8 @@ display it in html form. The current page you are viewing is generated and updat
 
 ## [jenkins-test-slave](https://cmssdt.cern.ch/jenkins/job/jenkins-test-slave)
 
-**Description:** None
+**Description:** This Jenkins project test various CMS Jenkins slaves and makes sure that various communication channels 
+between Jenkins Master/slave  and slave and various services are working.
 
 **Upstream projects:**
 
@@ -285,7 +296,7 @@ display it in html form. The current page you are viewing is generated and updat
 
 ## [jenkins-test-slaves](https://cmssdt.cern.ch/jenkins/job/jenkins-test-slaves)
 
-**Description:** None
+**Description:** Jenkins project to trigger the jenkins slave test job for each selected slave
 
 **Upstream projects:**
 
