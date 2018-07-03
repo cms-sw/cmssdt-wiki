@@ -20,7 +20,13 @@
 
 **Triggers from:** []
 
-**Periodic builds:** Not periodically build
+**Periodic builds:**
+ 
+**Periodic builds:**
+```bash
+Not periodically build
+```
+            
 
 ## [jenkins-backup](https://cmssdt.cern.ch/jenkins/job/jenkins-backup)
 
@@ -35,7 +41,13 @@ Backups jenkins scripts on https://github.com/cms-sw/jenkins-backup.git
 
 **Triggers from:** []
 
-**Periodic builds:** H/5 * * * *
+**Periodic builds:**
+ 
+**Periodic builds:**
+```bash
+H/5 * * * *
+```
+            
 
 ## [jenkins-disable-jobs](https://cmssdt.cern.ch/jenkins/job/jenkins-disable-jobs)
 
@@ -52,7 +64,13 @@ would enable all cmsbuild machines found
 
 **Triggers from:** []
 
-**Periodic builds:** Not periodically build
+**Periodic builds:**
+ 
+**Periodic builds:**
+```bash
+Not periodically build
+```
+            
 
 ## [jenkins-disable-nodes](https://cmssdt.cern.ch/jenkins/job/jenkins-disable-nodes)
 
@@ -66,7 +84,13 @@ would enable all cmsbuild machines found
 
 **Triggers from:** []
 
-**Periodic builds:** Not periodically build
+**Periodic builds:**
+ 
+**Periodic builds:**
+```bash
+Not periodically build
+```
+            
 
 ## [jenkins-elasticsearch-monitor](https://cmssdt.cern.ch/jenkins/job/jenkins-elasticsearch-monitor)
 
@@ -82,7 +106,13 @@ would enable all cmsbuild machines found
 
 **Triggers from:** []
 
-**Periodic builds:** H/5 * * * *
+**Periodic builds:**
+ 
+**Periodic builds:**
+```bash
+H/5 * * * *
+```
+            
 
 ## [jenkins-enable-jobs](https://cmssdt.cern.ch/jenkins/job/jenkins-enable-jobs)
 
@@ -97,7 +127,13 @@ would enable all cmsbuild machines found
 
 **Triggers from:** []
 
-**Periodic builds:** Not periodically build
+**Periodic builds:**
+ 
+**Periodic builds:**
+```bash
+Not periodically build
+```
+            
 
 ## [jenkins-enable-nodes](https://cmssdt.cern.ch/jenkins/job/jenkins-enable-nodes)
 
@@ -114,7 +150,13 @@ would enable all cmsbuild machines found
 
 **Triggers from:** []
 
-**Periodic builds:** Not periodically build
+**Periodic builds:**
+ 
+**Periodic builds:**
+```bash
+Not periodically build
+```
+            
 
 ## [jenkins-initialize](https://cmssdt.cern.ch/jenkins/job/jenkins-initialize)
 
@@ -136,7 +178,13 @@ This runs some sub-projects to check if basic functionality of jenkins is workin
 
 **Triggers from:** []
 
-**Periodic builds:** H H * * *
+**Periodic builds:**
+ 
+**Periodic builds:**
+```bash
+H H * * *
+```
+            
 
 ## [jenkins-installation-cli-test](https://cmssdt.cern.ch/jenkins/job/jenkins-installation-cli-test)
 
@@ -151,7 +199,13 @@ This runs some sub-projects to check if basic functionality of jenkins is workin
 
 **Triggers from:** []
 
-**Periodic builds:** Not periodically build
+**Periodic builds:**
+ 
+**Periodic builds:**
+```bash
+Not periodically build
+```
+            
 
 ## [jenkins-installation-trigger-cli](https://cmssdt.cern.ch/jenkins/job/jenkins-installation-trigger-cli)
 
@@ -165,7 +219,13 @@ This runs some sub-projects to check if basic functionality of jenkins is workin
 
 **Triggers from:** []
 
-**Periodic builds:** Not periodically build
+**Periodic builds:**
+ 
+**Periodic builds:**
+```bash
+Not periodically build
+```
+            
 
 ## [jenkins-installation-trigger-test](https://cmssdt.cern.ch/jenkins/job/jenkins-installation-trigger-test)
 
@@ -180,7 +240,13 @@ This runs some sub-projects to check if basic functionality of jenkins is workin
 
 **Triggers from:** []
 
-**Periodic builds:** Not periodically build
+**Periodic builds:**
+ 
+**Periodic builds:**
+```bash
+Not periodically build
+```
+            
 
 ## [jenkins-projects-report](https://cmssdt.cern.ch/jenkins/job/jenkins-projects-report)
 
@@ -198,7 +264,13 @@ display it in html form. The current page you are viewing is generated and updat
 
 **Triggers from:** []
 
-**Periodic builds:** H * * * *
+**Periodic builds:**
+ 
+**Periodic builds:**
+```bash
+H * * * *
+```
+            
 
 ## [jenkins-projects-wiki-update](https://cmssdt.cern.ch/jenkins/job/jenkins-projects-wiki-update)
 
@@ -215,7 +287,13 @@ display it in markdown form. It is later imported to CMSSDT wiki.
 
 **Triggers from:** []
 
-**Periodic builds:** H * * * *
+**Periodic builds:**
+ 
+**Periodic builds:**
+```bash
+H/5 * * * *
+```
+            
 
 ## [jenkins-restart-slaves](https://cmssdt.cern.ch/jenkins/job/jenkins-restart-slaves)
 
@@ -230,7 +308,13 @@ display it in markdown form. It is later imported to CMSSDT wiki.
 
 **Triggers from:** []
 
-**Periodic builds:** Not periodically build
+**Periodic builds:**
+ 
+**Periodic builds:**
+```bash
+Not periodically build
+```
+            
 
 ## [jenkins-test-job1](https://cmssdt.cern.ch/jenkins/job/jenkins-test-job1)
 
@@ -244,7 +328,13 @@ display it in markdown form. It is later imported to CMSSDT wiki.
 
 **Triggers from:** []
 
-**Periodic builds:** Not periodically build
+**Periodic builds:**
+ 
+**Periodic builds:**
+```bash
+Not periodically build
+```
+            
 
 ## [jenkins-test-job2](https://cmssdt.cern.ch/jenkins/job/jenkins-test-job2)
 
@@ -258,7 +348,13 @@ display it in markdown form. It is later imported to CMSSDT wiki.
 
 **Triggers from:** []
 
-**Periodic builds:** Not periodically build
+**Periodic builds:**
+ 
+**Periodic builds:**
+```bash
+Not periodically build
+```
+            
 
 ## [jenkins-test-slave](https://cmssdt.cern.ch/jenkins/job/jenkins-test-slave)
 
@@ -274,7 +370,13 @@ between Jenkins Master/slave  and slave and various services are working.
 
 **Triggers from:** []
 
-**Periodic builds:** Not periodically build
+**Periodic builds:**
+ 
+**Periodic builds:**
+```bash
+Not periodically build
+```
+            
 
 ## [jenkins-test-slaves](https://cmssdt.cern.ch/jenkins/job/jenkins-test-slaves)
 
@@ -290,5 +392,11 @@ between Jenkins Master/slave  and slave and various services are working.
 
 **Triggers from:** []
 
-**Periodic builds:** H H/8 * * *
+**Periodic builds:**
+ 
+**Periodic builds:**
+```bash
+H H/8 * * *
+```
+            
 

@@ -21,7 +21,13 @@
 
 **Triggers from:** []
 
-**Periodic builds:** Not periodically build
+**Periodic builds:**
+ 
+**Periodic builds:**
+```bash
+Not periodically build
+```
+            
 
 ## [lxr-check](https://cmssdt.cern.ch/jenkins/job/lxr-check)
 
@@ -37,7 +43,13 @@
 
 **Triggers from:** []
 
-**Periodic builds:** H/5 * * * *
+**Periodic builds:**
+ 
+**Periodic builds:**
+```bash
+H/5 * * * *
+```
+            
 
 ## [cmssw-to-stitched](https://cmssdt.cern.ch/jenkins/job/cmssw-to-stitched)
 
@@ -52,7 +64,13 @@ This is automatically triggered by auto-forward-port job
 
 **Triggers from:** []
 
-**Periodic builds:** H 0 * * *
+**Periodic builds:**
+ 
+**Periodic builds:**
+```bash
+H 0 * * *
+```
+            
 
 ## [rpm-repository-backup](https://cmssdt.cern.ch/jenkins/job/rpm-repository-backup)
 
@@ -66,7 +84,13 @@ This is automatically triggered by auto-forward-port job
 
 **Triggers from:** []
 
-**Periodic builds:** H 0 * * *
+**Periodic builds:**
+ 
+**Periodic builds:**
+```bash
+H 0 * * *
+```
+            
 
 ## [external-deploy-afs](https://cmssdt.cern.ch/jenkins/job/external-deploy-afs)
 
@@ -80,7 +104,13 @@ This is automatically triggered by auto-forward-port job
 
 **Triggers from:** []
 
-**Periodic builds:** Not periodically build
+**Periodic builds:**
+ 
+**Periodic builds:**
+```bash
+Not periodically build
+```
+            
 
 ## [update-externals-mirrors](https://cmssdt.cern.ch/jenkins/job/update-externals-mirrors)
 
@@ -94,7 +124,13 @@ This is automatically triggered by auto-forward-port job
 
 **Triggers from:** []
 
-**Periodic builds:** 0 0 * * *
+**Periodic builds:**
+ 
+**Periodic builds:**
+```bash
+0 0 * * *
+```
+            
 
 ## [test](https://cmssdt.cern.ch/jenkins/job/test)
 
@@ -108,5 +144,11 @@ This is automatically triggered by auto-forward-port job
 
 **Triggers from:** []
 
-**Periodic builds:** Not periodically build
+**Periodic builds:**
+ 
+**Periodic builds:**
+```bash
+Not periodically build
+```
+            
 

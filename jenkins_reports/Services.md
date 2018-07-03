@@ -21,7 +21,13 @@
 
 **Triggers from:** []
 
-**Periodic builds:** Not periodically build
+**Periodic builds:**
+ 
+**Periodic builds:**
+```bash
+Not periodically build
+```
+            
 
 ## [cleanup-cms-sw-io-history](https://cmssdt.cern.ch/jenkins/job/cleanup-cms-sw-io-history)
 
@@ -37,7 +43,13 @@
 
 **Triggers from:** []
 
-**Periodic builds:** H 1 * * 0
+**Periodic builds:**
+ 
+**Periodic builds:**
+```bash
+H 1 * * 0
+```
+            
 
 ## [cleanup-cmssdt](https://cmssdt.cern.ch/jenkins/job/cleanup-cmssdt)
 
@@ -51,7 +63,13 @@
 
 **Triggers from:** []
 
-**Periodic builds:** H 0 * * *
+**Periodic builds:**
+ 
+**Periodic builds:**
+```bash
+H 0 * * *
+```
+            
 
 ## [cleanup-tags](https://cmssdt.cern.ch/jenkins/job/cleanup-tags)
 
@@ -66,7 +84,13 @@
 
 **Triggers from:** []
 
-**Periodic builds:** H 0 * * *
+**Periodic builds:**
+ 
+**Periodic builds:**
+```bash
+H 0 * * *
+```
+            
 
 ## [cmspkg-clone](https://cmssdt.cern.ch/jenkins/job/cmspkg-clone)
 
@@ -82,7 +106,13 @@
 
 **Triggers from:** []
 
-**Periodic builds:** H 21 * * *
+**Periodic builds:**
+ 
+**Periodic builds:**
+```bash
+H 21 * * *
+```
+            
 
 ## [deploy-cms-repo](https://cmssdt.cern.ch/jenkins/job/deploy-cms-repo)
 
@@ -97,7 +127,13 @@
 
 **Triggers from:** []
 
-**Periodic builds:** Not periodically build
+**Periodic builds:**
+ 
+**Periodic builds:**
+```bash
+Not periodically build
+```
+            
 
 ## [deploy-cmsdoxygen](https://cmssdt.cern.ch/jenkins/job/deploy-cmsdoxygen)
 
@@ -111,7 +147,13 @@
 
 **Triggers from:** []
 
-**Periodic builds:** Not periodically build
+**Periodic builds:**
+ 
+**Periodic builds:**
+```bash
+Not periodically build
+```
+            
 
 ## [gh-teams](https://cmssdt.cern.ch/jenkins/job/gh-teams)
 
@@ -125,7 +167,13 @@
 
 **Triggers from:** []
 
-**Periodic builds:** H 22 * * *
+**Periodic builds:**
+ 
+**Periodic builds:**
+```bash
+H 22 * * *
+```
+            
 
 ## [git-mirror-repository](https://cmssdt.cern.ch/jenkins/job/git-mirror-repository)
 
@@ -140,7 +188,13 @@
 
 **Triggers from:** []
 
-**Periodic builds:** Not periodically build
+**Periodic builds:**
+ 
+**Periodic builds:**
+```bash
+Not periodically build
+```
+            
 
 ## [git-reference-cms-ib](https://cmssdt.cern.ch/jenkins/job/git-reference-cms-ib)
 
@@ -156,7 +210,13 @@ This is automatically triggered by "git push" to cmssw repo.
 
 **Triggers from:** []
 
-**Periodic builds:** Not periodically build
+**Periodic builds:**
+ 
+**Periodic builds:**
+```bash
+Not periodically build
+```
+            
 
 ## [github-hooks](https://cmssdt.cern.ch/jenkins/job/github-hooks)
 
@@ -171,7 +231,13 @@ and then a jenkins job is triggered based on the information passed from the web
 
 **Triggers from:** []
 
-**Periodic builds:** H 0 * * *
+**Periodic builds:**
+ 
+**Periodic builds:**
+```bash
+H 0 * * *
+```
+            
 
 ## [github-push-hook](https://cmssdt.cern.ch/jenkins/job/github-push-hook)
 
@@ -197,7 +263,13 @@ This job is also triggered via github web hook. Please do not add/remove any par
 
 **Triggers from:** []
 
-**Periodic builds:** H */6 * * *
+**Periodic builds:**
+ 
+**Periodic builds:**
+```bash
+H */6 * * *
+```
+            
 
 ## [mirror-cmsrep](https://cmssdt.cern.ch/jenkins/job/mirror-cmsrep)
 
@@ -211,7 +283,13 @@ This job is also triggered via github web hook. Please do not add/remove any par
 
 **Triggers from:** []
 
-**Periodic builds:** Not periodically build
+**Periodic builds:**
+ 
+**Periodic builds:**
+```bash
+Not periodically build
+```
+            
 
 ## [monitor-openstack-vms](https://cmssdt.cern.ch/jenkins/job/monitor-openstack-vms)
 
@@ -225,7 +303,13 @@ This job is also triggered via github web hook. Please do not add/remove any par
 
 **Triggers from:** []
 
-**Periodic builds:** @hourly
+**Periodic builds:**
+ 
+**Periodic builds:**
+```bash
+@hourly
+```
+            
 
 ## [slaves-checks](https://cmssdt.cern.ch/jenkins/job/slaves-checks)
 
@@ -243,7 +327,13 @@ This job is also triggered via github web hook. Please do not add/remove any par
 
 **Triggers from:** []
 
-**Periodic builds:** H 7,19 * * *
+**Periodic builds:**
+ 
+**Periodic builds:**
+```bash
+H 7,19 * * *
+```
+            
 
 ## [test-build-periodic](https://cmssdt.cern.ch/jenkins/job/test-build-periodic)
 
@@ -257,7 +347,13 @@ This job is also triggered via github web hook. Please do not add/remove any par
 
 **Triggers from:** []
 
-**Periodic builds:** H/15 * * * *
+**Periodic builds:**
+ 
+**Periodic builds:**
+```bash
+H/15 * * * *
+```
+            
 
 ## [test-docker](https://cmssdt.cern.ch/jenkins/job/test-docker)
 
@@ -272,7 +368,13 @@ This job is also triggered via github web hook. Please do not add/remove any par
 
 **Triggers from:** []
 
-**Periodic builds:** Not periodically build
+**Periodic builds:**
+ 
+**Periodic builds:**
+```bash
+Not periodically build
+```
+            
 
 ## [update-categories-page](https://cmssdt.cern.ch/jenkins/job/update-categories-page)
 
@@ -286,7 +388,13 @@ This job is also triggered via github web hook. Please do not add/remove any par
 
 **Triggers from:** []
 
-**Periodic builds:** H 0 * * *
+**Periodic builds:**
+ 
+**Periodic builds:**
+```bash
+H 0 * * *
+```
+            
 
 ## [update-release-map](https://cmssdt.cern.ch/jenkins/job/update-release-map)
 
@@ -305,7 +413,13 @@ CVMFS installation is started once a release is available in this file.
 
 **Triggers from:** []
 
-**Periodic builds:** Not periodically build
+**Periodic builds:**
+ 
+**Periodic builds:**
+```bash
+Not periodically build
+```
+            
 
 ## [web-summary-data](https://cmssdt.cern.ch/jenkins/job/web-summary-data)
 
@@ -319,7 +433,13 @@ CVMFS installation is started once a release is available in this file.
 
 **Triggers from:** []
 
-**Periodic builds:** Not periodically build
+**Periodic builds:**
+ 
+**Periodic builds:**
+```bash
+Not periodically build
+```
+            
 
 ## [web-update-SDT](https://cmssdt.cern.ch/jenkins/job/web-update-SDT)
 
@@ -333,7 +453,13 @@ CVMFS installation is started once a release is available in this file.
 
 **Triggers from:** []
 
-**Periodic builds:** Not periodically build
+**Periodic builds:**
+ 
+**Periodic builds:**
+```bash
+Not periodically build
+```
+            
 
 ## [workspace-cleanup-slave](https://cmssdt.cern.ch/jenkins/job/workspace-cleanup-slave)
 
@@ -348,5 +474,11 @@ CVMFS installation is started once a release is available in this file.
 
 **Triggers from:** []
 
-**Periodic builds:** Not periodically build
+**Periodic builds:**
+ 
+**Periodic builds:**
+```bash
+Not periodically build
+```
+            
 

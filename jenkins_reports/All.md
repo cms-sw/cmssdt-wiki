@@ -23,7 +23,13 @@
 
 **Triggers from:** []
 
-**Periodic builds:** Not periodically build
+**Periodic builds:**
+ 
+**Periodic builds:**
+```bash
+Not periodically build
+```
+            
 
 ## [auto-forward-ports](https://cmssdt.cern.ch/jenkins/job/auto-forward-ports)
 
@@ -39,7 +45,13 @@ this forward port changes from source branch to target branch. Mapping between s
 
 **Triggers from:** []
 
-**Periodic builds:** Not periodically build
+**Periodic builds:**
+ 
+**Periodic builds:**
+```bash
+Not periodically build
+```
+            
 
 ## [backport-pull-request](https://cmssdt.cern.ch/jenkins/job/backport-pull-request)
 
@@ -53,7 +65,13 @@ this forward port changes from source branch to target branch. Mapping between s
 
 **Triggers from:** []
 
-**Periodic builds:** Not periodically build
+**Periodic builds:**
+ 
+**Periodic builds:**
+```bash
+Not periodically build
+```
+            
 
 ## [baseline-ib-results](https://cmssdt.cern.ch/jenkins/job/baseline-ib-results)
 
@@ -69,7 +87,13 @@ this forward port changes from source branch to target branch. Mapping between s
 
 **Triggers from:** []
 
-**Periodic builds:** Not periodically build
+**Periodic builds:**
+ 
+**Periodic builds:**
+```bash
+Not periodically build
+```
+            
 
 ## [build-any-ib](https://cmssdt.cern.ch/jenkins/job/build-any-ib)
 
@@ -101,7 +125,13 @@ Otherwise build a patch release
 
 **Triggers from:** []
 
-**Periodic builds:** Not periodically build
+**Periodic builds:**
+ 
+**Periodic builds:**
+```bash
+Not periodically build
+```
+            
 
 ## [build-container](https://cmssdt.cern.ch/jenkins/job/build-container)
 
@@ -116,7 +146,13 @@ The parameters passed are self explandatory and concern details about which cont
 
 **Triggers from:** []
 
-**Periodic builds:** Not periodically build
+**Periodic builds:**
+ 
+**Periodic builds:**
+```bash
+Not periodically build
+```
+            
 
 ## [build-fwlite](https://cmssdt.cern.ch/jenkins/job/build-fwlite)
 
@@ -131,7 +167,13 @@ The parameters passed are self explandatory and concern details about which cont
 
 **Triggers from:** []
 
-**Periodic builds:** Not periodically build
+**Periodic builds:**
+ 
+**Periodic builds:**
+```bash
+Not periodically build
+```
+            
 
 ## [build-fwlite-ib](https://cmssdt.cern.ch/jenkins/job/build-fwlite-ib)
 
@@ -148,7 +190,13 @@ Results of this build can be seen via <a href="https://cmssdt.cern.ch/SDT/">CMSS
 
 **Triggers from:** []
 
-**Periodic builds:** Not periodically build
+**Periodic builds:**
+ 
+**Periodic builds:**
+```bash
+Not periodically build
+```
+            
 
 ## [build-release](https://cmssdt.cern.ch/jenkins/job/build-release)
 
@@ -164,7 +212,13 @@ It is triggered by cms-bot after the <a href="https://github.com/cms-sw/cmssw/is
 
 **Triggers from:** []
 
-**Periodic builds:** Not periodically build
+**Periodic builds:**
+ 
+**Periodic builds:**
+```bash
+Not periodically build
+```
+            
 
 ## [cleanup-auto-build](https://cmssdt.cern.ch/jenkins/job/cleanup-auto-build)
 
@@ -179,7 +233,13 @@ It is triggered by cms-bot after the <a href="https://github.com/cms-sw/cmssw/is
 
 **Triggers from:** []
 
-**Periodic builds:** Not periodically build
+**Periodic builds:**
+ 
+**Periodic builds:**
+```bash
+Not periodically build
+```
+            
 
 ## [cleanup-cms-sw-io-history](https://cmssdt.cern.ch/jenkins/job/cleanup-cms-sw-io-history)
 
@@ -195,7 +255,13 @@ It is triggered by cms-bot after the <a href="https://github.com/cms-sw/cmssw/is
 
 **Triggers from:** []
 
-**Periodic builds:** H 1 * * 0
+**Periodic builds:**
+ 
+**Periodic builds:**
+```bash
+H 1 * * 0
+```
+            
 
 ## [cleanup-cmssdt](https://cmssdt.cern.ch/jenkins/job/cleanup-cmssdt)
 
@@ -209,7 +275,13 @@ It is triggered by cms-bot after the <a href="https://github.com/cms-sw/cmssw/is
 
 **Triggers from:** []
 
-**Periodic builds:** H 0 * * *
+**Periodic builds:**
+ 
+**Periodic builds:**
+```bash
+H 0 * * *
+```
+            
 
 ## [cleanup-tags](https://cmssdt.cern.ch/jenkins/job/cleanup-tags)
 
@@ -224,7 +296,13 @@ It is triggered by cms-bot after the <a href="https://github.com/cms-sw/cmssw/is
 
 **Triggers from:** []
 
-**Periodic builds:** H 0 * * *
+**Periodic builds:**
+ 
+**Periodic builds:**
+```bash
+H 0 * * *
+```
+            
 
 ## [cms-bot](https://cmssdt.cern.ch/jenkins/job/cms-bot)
 
@@ -246,7 +324,13 @@ Also it runsevery 30mins to make sure any webhooks were not missed.
 
 **Triggers from:** []
 
-**Periodic builds:** Not periodically build
+**Periodic builds:**
+ 
+**Periodic builds:**
+```bash
+Not periodically build
+```
+            
 
 ## [cms-dockerhub](https://cmssdt.cern.ch/jenkins/job/cms-dockerhub)
 
@@ -260,7 +344,13 @@ Also it runsevery 30mins to make sure any webhooks were not missed.
 
 **Triggers from:** []
 
-**Periodic builds:** Not periodically build
+**Periodic builds:**
+ 
+**Periodic builds:**
+```bash
+Not periodically build
+```
+            
 
 ## [cms-prs-cache](https://cmssdt.cern.ch/jenkins/job/cms-prs-cache)
 
@@ -278,7 +368,13 @@ Also it runsevery 30mins to make sure any webhooks were not missed.
 
 **Triggers from:** []
 
-**Periodic builds:** Not periodically build
+**Periodic builds:**
+ 
+**Periodic builds:**
+```bash
+Not periodically build
+```
+            
 
 ## [cmspkg-clone](https://cmssdt.cern.ch/jenkins/job/cmspkg-clone)
 
@@ -294,7 +390,13 @@ Also it runsevery 30mins to make sure any webhooks were not missed.
 
 **Triggers from:** []
 
-**Periodic builds:** H 21 * * *
+**Periodic builds:**
+ 
+**Periodic builds:**
+```bash
+H 21 * * *
+```
+            
 
 ## [cmssw-doxygen](https://cmssdt.cern.ch/jenkins/job/cmssw-doxygen)
 
@@ -309,7 +411,13 @@ Also it runsevery 30mins to make sure any webhooks were not missed.
 
 **Triggers from:** []
 
-**Periodic builds:** Not periodically build
+**Periodic builds:**
+ 
+**Periodic builds:**
+```bash
+Not periodically build
+```
+            
 
 ## [cmssw-to-stitched](https://cmssdt.cern.ch/jenkins/job/cmssw-to-stitched)
 
@@ -324,7 +432,13 @@ This is automatically triggered by auto-forward-port job
 
 **Triggers from:** []
 
-**Periodic builds:** H 0 * * *
+**Periodic builds:**
+ 
+**Periodic builds:**
+```bash
+H 0 * * *
+```
+            
 
 ## [comp-bot](https://cmssdt.cern.ch/jenkins/job/comp-bot)
 
@@ -340,7 +454,13 @@ This is to process bot commands for cmsdist comp branches
 
 **Triggers from:** []
 
-**Periodic builds:** Not periodically build
+**Periodic builds:**
+ 
+**Periodic builds:**
+```bash
+Not periodically build
+```
+            
 
 ## [compare-material-budget](https://cmssdt.cern.ch/jenkins/job/compare-material-budget)
 
@@ -356,7 +476,13 @@ This is to process bot commands for cmsdist comp branches
 
 **Triggers from:** []
 
-**Periodic builds:** Not periodically build
+**Periodic builds:**
+ 
+**Periodic builds:**
+```bash
+Not periodically build
+```
+            
 
 ## [compare-root-files-short-matrix](https://cmssdt.cern.ch/jenkins/job/compare-root-files-short-matrix)
 
@@ -371,7 +497,13 @@ This is to process bot commands for cmsdist comp branches
 
 **Triggers from:** []
 
-**Periodic builds:** Not periodically build
+**Periodic builds:**
+ 
+**Periodic builds:**
+```bash
+Not periodically build
+```
+            
 
 ## [cvmfs-deploy-baseline](https://cmssdt.cern.ch/jenkins/job/cvmfs-deploy-baseline)
 
@@ -388,7 +520,13 @@ This is to process bot commands for cmsdist comp branches
 
 **Triggers from:** []
 
-**Periodic builds:** Not periodically build
+**Periodic builds:**
+ 
+**Periodic builds:**
+```bash
+Not periodically build
+```
+            
 
 ## [cvmfs-gc](https://cmssdt.cern.ch/jenkins/job/cvmfs-gc)
 
@@ -402,8 +540,14 @@ This is to process bot commands for cmsdist comp branches
 
 **Triggers from:** []
 
-**Periodic builds:** #Run once on Thursday at 23h05
+**Periodic builds:**
+ 
+**Periodic builds:**
+```bash
+#Run once on Thursday at 23h05
 H 23  * *  4
+```
+            
 
 ## [cvmfs-publish-baseline](https://cmssdt.cern.ch/jenkins/job/cvmfs-publish-baseline)
 
@@ -418,7 +562,13 @@ H 23  * *  4
 
 **Triggers from:** []
 
-**Periodic builds:** Not periodically build
+**Periodic builds:**
+ 
+**Periodic builds:**
+```bash
+Not periodically build
+```
+            
 
 ## [das-query](https://cmssdt.cern.ch/jenkins/job/das-query)
 
@@ -432,7 +582,13 @@ H 23  * *  4
 
 **Triggers from:** []
 
-**Periodic builds:** H 9,21 * * *
+**Periodic builds:**
+ 
+**Periodic builds:**
+```bash
+H 9,21 * * *
+```
+            
 
 ## [dataset-to-ibeos](https://cmssdt.cern.ch/jenkins/job/dataset-to-ibeos)
 
@@ -447,7 +603,13 @@ H 23  * *  4
 
 **Triggers from:** []
 
-**Periodic builds:** Not periodically build
+**Periodic builds:**
+ 
+**Periodic builds:**
+```bash
+Not periodically build
+```
+            
 
 ## [deploy-cms-repo](https://cmssdt.cern.ch/jenkins/job/deploy-cms-repo)
 
@@ -462,7 +624,13 @@ H 23  * *  4
 
 **Triggers from:** []
 
-**Periodic builds:** Not periodically build
+**Periodic builds:**
+ 
+**Periodic builds:**
+```bash
+Not periodically build
+```
+            
 
 ## [deploy-cmsdoxygen](https://cmssdt.cern.ch/jenkins/job/deploy-cmsdoxygen)
 
@@ -476,7 +644,13 @@ H 23  * *  4
 
 **Triggers from:** []
 
-**Periodic builds:** Not periodically build
+**Periodic builds:**
+ 
+**Periodic builds:**
+```bash
+Not periodically build
+```
+            
 
 ## [dxr-cmssw-index](https://cmssdt.cern.ch/jenkins/job/dxr-cmssw-index)
 
@@ -490,7 +664,13 @@ H 23  * *  4
 
 **Triggers from:** []
 
-**Periodic builds:** Not periodically build
+**Periodic builds:**
+ 
+**Periodic builds:**
+```bash
+Not periodically build
+```
+            
 
 ## [es-close-indexes](https://cmssdt.cern.ch/jenkins/job/es-close-indexes)
 
@@ -504,7 +684,13 @@ H 23  * *  4
 
 **Triggers from:** []
 
-**Periodic builds:** H 0  * *  0
+**Periodic builds:**
+ 
+**Periodic builds:**
+```bash
+H 0  * *  0
+```
+            
 
 ## [external-deploy-afs](https://cmssdt.cern.ch/jenkins/job/external-deploy-afs)
 
@@ -518,7 +704,13 @@ H 23  * *  4
 
 **Triggers from:** []
 
-**Periodic builds:** Not periodically build
+**Periodic builds:**
+ 
+**Periodic builds:**
+```bash
+Not periodically build
+```
+            
 
 ## [fix-backport-prs](https://cmssdt.cern.ch/jenkins/job/fix-backport-prs)
 
@@ -532,7 +724,13 @@ H 23  * *  4
 
 **Triggers from:** []
 
-**Periodic builds:** H * * * *
+**Periodic builds:**
+ 
+**Periodic builds:**
+```bash
+H * * * *
+```
+            
 
 ## [forward-pull-requests](https://cmssdt.cern.ch/jenkins/job/forward-pull-requests)
 
@@ -547,7 +745,13 @@ H 23  * *  4
 
 **Triggers from:** []
 
-**Periodic builds:** Not periodically build
+**Periodic builds:**
+ 
+**Periodic builds:**
+```bash
+Not periodically build
+```
+            
 
 ## [gh-teams](https://cmssdt.cern.ch/jenkins/job/gh-teams)
 
@@ -561,7 +765,13 @@ H 23  * *  4
 
 **Triggers from:** []
 
-**Periodic builds:** H 22 * * *
+**Periodic builds:**
+ 
+**Periodic builds:**
+```bash
+H 22 * * *
+```
+            
 
 ## [git-mirror-repository](https://cmssdt.cern.ch/jenkins/job/git-mirror-repository)
 
@@ -576,7 +786,13 @@ H 23  * *  4
 
 **Triggers from:** []
 
-**Periodic builds:** Not periodically build
+**Periodic builds:**
+ 
+**Periodic builds:**
+```bash
+Not periodically build
+```
+            
 
 ## [git-reference-cms-ib](https://cmssdt.cern.ch/jenkins/job/git-reference-cms-ib)
 
@@ -592,7 +808,13 @@ This is automatically triggered by "git push" to cmssw repo.
 
 **Triggers from:** []
 
-**Periodic builds:** Not periodically build
+**Periodic builds:**
+ 
+**Periodic builds:**
+```bash
+Not periodically build
+```
+            
 
 ## [github-hooks](https://cmssdt.cern.ch/jenkins/job/github-hooks)
 
@@ -607,7 +829,13 @@ and then a jenkins job is triggered based on the information passed from the web
 
 **Triggers from:** []
 
-**Periodic builds:** H 0 * * *
+**Periodic builds:**
+ 
+**Periodic builds:**
+```bash
+H 0 * * *
+```
+            
 
 ## [github-push-hook](https://cmssdt.cern.ch/jenkins/job/github-push-hook)
 
@@ -633,7 +861,13 @@ This job is also triggered via github web hook. Please do not add/remove any par
 
 **Triggers from:** []
 
-**Periodic builds:** H */6 * * *
+**Periodic builds:**
+ 
+**Periodic builds:**
+```bash
+H */6 * * *
+```
+            
 
 ## [github-webhook](https://cmssdt.cern.ch/jenkins/job/github-webhook)
 
@@ -658,7 +892,13 @@ Also it runsevery 30mins to make sure any webhooks were not missed.
 
 **Triggers from:** []
 
-**Periodic builds:** Not periodically build
+**Periodic builds:**
+ 
+**Periodic builds:**
+```bash
+Not periodically build
+```
+            
 
 ## [HLT-Validation](https://cmssdt.cern.ch/jenkins/job/HLT-Validation)
 
@@ -673,7 +913,13 @@ Also it runsevery 30mins to make sure any webhooks were not missed.
 
 **Triggers from:** []
 
-**Periodic builds:** Not periodically build
+**Periodic builds:**
+ 
+**Periodic builds:**
+```bash
+Not periodically build
+```
+            
 
 ## [ib-any-integration](https://cmssdt.cern.ch/jenkins/job/ib-any-integration)
 
@@ -694,7 +940,13 @@ Also it runsevery 30mins to make sure any webhooks were not missed.
 
 **Triggers from:** []
 
-**Periodic builds:** Not periodically build
+**Periodic builds:**
+ 
+**Periodic builds:**
+```bash
+Not periodically build
+```
+            
 
 ## [ib-build-logs](https://cmssdt.cern.ch/jenkins/job/ib-build-logs)
 
@@ -711,7 +963,13 @@ Also it runsevery 30mins to make sure any webhooks were not missed.
 
 **Triggers from:** [u'build-fwlite-ib']
 
-**Periodic builds:** H/30 * * * *
+**Periodic builds:**
+ 
+**Periodic builds:**
+```bash
+H/30 * * * *
+```
+            
 
 ## [ib-cache-to-eos](https://cmssdt.cern.ch/jenkins/job/ib-cache-to-eos)
 
@@ -727,7 +985,13 @@ Also it runsevery 30mins to make sure any webhooks were not missed.
 
 **Triggers from:** []
 
-**Periodic builds:** H 10,22 * * *
+**Periodic builds:**
+ 
+**Periodic builds:**
+```bash
+H 10,22 * * *
+```
+            
 
 ## [ib-cleanup-installers](https://cmssdt.cern.ch/jenkins/job/ib-cleanup-installers)
 
@@ -741,7 +1005,13 @@ Also it runsevery 30mins to make sure any webhooks were not missed.
 
 **Triggers from:** []
 
-**Periodic builds:** H 22 * * *
+**Periodic builds:**
+ 
+**Periodic builds:**
+```bash
+H 22 * * *
+```
+            
 
 ## [ib-cvmfs-publish](https://cmssdt.cern.ch/jenkins/job/ib-cvmfs-publish)
 
@@ -756,7 +1026,13 @@ Also it runsevery 30mins to make sure any webhooks were not missed.
 
 **Triggers from:** []
 
-**Periodic builds:** Not periodically build
+**Periodic builds:**
+ 
+**Periodic builds:**
+```bash
+Not periodically build
+```
+            
 
 ## [ib-install-cvmfs](https://cmssdt.cern.ch/jenkins/job/ib-install-cvmfs)
 
@@ -773,7 +1049,13 @@ Also it runsevery 30mins to make sure any webhooks were not missed.
 
 **Triggers from:** []
 
-**Periodic builds:** Not periodically build
+**Periodic builds:**
+ 
+**Periodic builds:**
+```bash
+Not periodically build
+```
+            
 
 ## [ib-run-addons](https://cmssdt.cern.ch/jenkins/job/ib-run-addons)
 
@@ -788,7 +1070,13 @@ Also it runsevery 30mins to make sure any webhooks were not missed.
 
 **Triggers from:** []
 
-**Periodic builds:** Not periodically build
+**Periodic builds:**
+ 
+**Periodic builds:**
+```bash
+Not periodically build
+```
+            
 
 ## [ib-run-cfipython](https://cmssdt.cern.ch/jenkins/job/ib-run-cfipython)
 
@@ -804,7 +1092,13 @@ Also it runsevery 30mins to make sure any webhooks were not missed.
 
 **Triggers from:** []
 
-**Periodic builds:** Not periodically build
+**Periodic builds:**
+ 
+**Periodic builds:**
+```bash
+Not periodically build
+```
+            
 
 ## [ib-run-check-headers](https://cmssdt.cern.ch/jenkins/job/ib-run-check-headers)
 
@@ -819,7 +1113,13 @@ Also it runsevery 30mins to make sure any webhooks were not missed.
 
 **Triggers from:** []
 
-**Periodic builds:** Not periodically build
+**Periodic builds:**
+ 
+**Periodic builds:**
+```bash
+Not periodically build
+```
+            
 
 ## [ib-run-flawfinder](https://cmssdt.cern.ch/jenkins/job/ib-run-flawfinder)
 
@@ -834,7 +1134,13 @@ Also it runsevery 30mins to make sure any webhooks were not missed.
 
 **Triggers from:** []
 
-**Periodic builds:** Not periodically build
+**Periodic builds:**
+ 
+**Periodic builds:**
+```bash
+Not periodically build
+```
+            
 
 ## [ib-run-geometry](https://cmssdt.cern.ch/jenkins/job/ib-run-geometry)
 
@@ -849,7 +1155,13 @@ Also it runsevery 30mins to make sure any webhooks were not missed.
 
 **Triggers from:** []
 
-**Periodic builds:** Not periodically build
+**Periodic builds:**
+ 
+**Periodic builds:**
+```bash
+Not periodically build
+```
+            
 
 ## [ib-run-igprof-mp](https://cmssdt.cern.ch/jenkins/job/ib-run-igprof-mp)
 
@@ -864,7 +1176,13 @@ Also it runsevery 30mins to make sure any webhooks were not missed.
 
 **Triggers from:** []
 
-**Periodic builds:** Not periodically build
+**Periodic builds:**
+ 
+**Periodic builds:**
+```bash
+Not periodically build
+```
+            
 
 ## [ib-run-igprof-pp](https://cmssdt.cern.ch/jenkins/job/ib-run-igprof-pp)
 
@@ -879,7 +1197,13 @@ Also it runsevery 30mins to make sure any webhooks were not missed.
 
 **Triggers from:** []
 
-**Periodic builds:** Not periodically build
+**Periodic builds:**
+ 
+**Periodic builds:**
+```bash
+Not periodically build
+```
+            
 
 ## [ib-run-iwyu](https://cmssdt.cern.ch/jenkins/job/ib-run-iwyu)
 
@@ -894,7 +1218,13 @@ Also it runsevery 30mins to make sure any webhooks were not missed.
 
 **Triggers from:** []
 
-**Periodic builds:** Not periodically build
+**Periodic builds:**
+ 
+**Periodic builds:**
+```bash
+Not periodically build
+```
+            
 
 ## [ib-run-lizard](https://cmssdt.cern.ch/jenkins/job/ib-run-lizard)
 
@@ -909,7 +1239,13 @@ Also it runsevery 30mins to make sure any webhooks were not missed.
 
 **Triggers from:** []
 
-**Periodic builds:** Not periodically build
+**Periodic builds:**
+ 
+**Periodic builds:**
+```bash
+Not periodically build
+```
+            
 
 ## [ib-run-material-budget](https://cmssdt.cern.ch/jenkins/job/ib-run-material-budget)
 
@@ -925,7 +1261,13 @@ Also it runsevery 30mins to make sure any webhooks were not missed.
 
 **Triggers from:** []
 
-**Periodic builds:** Not periodically build
+**Periodic builds:**
+ 
+**Periodic builds:**
+```bash
+Not periodically build
+```
+            
 
 ## [ib-run-qa](https://cmssdt.cern.ch/jenkins/job/ib-run-qa)
 
@@ -940,7 +1282,13 @@ Also it runsevery 30mins to make sure any webhooks were not missed.
 
 **Triggers from:** []
 
-**Periodic builds:** Not periodically build
+**Periodic builds:**
+ 
+**Periodic builds:**
+```bash
+Not periodically build
+```
+            
 
 ## [ib-run-relvals](https://cmssdt.cern.ch/jenkins/job/ib-run-relvals)
 
@@ -957,7 +1305,13 @@ Also it runsevery 30mins to make sure any webhooks were not missed.
 
 **Triggers from:** []
 
-**Periodic builds:** Not periodically build
+**Periodic builds:**
+ 
+**Periodic builds:**
+```bash
+Not periodically build
+```
+            
 
 ## [ib-run-valgrind](https://cmssdt.cern.ch/jenkins/job/ib-run-valgrind)
 
@@ -972,7 +1326,13 @@ Also it runsevery 30mins to make sure any webhooks were not missed.
 
 **Triggers from:** []
 
-**Periodic builds:** Not periodically build
+**Periodic builds:**
+ 
+**Periodic builds:**
+```bash
+Not periodically build
+```
+            
 
 ## [ib-schedule](https://cmssdt.cern.ch/jenkins/job/ib-schedule)
 
@@ -990,11 +1350,17 @@ This was created to avoid the issue with <a href="https://wiki.jenkins.io/displa
 
 **Triggers from:** []
 
-**Periodic builds:** #We do not run SAT 23H IB instead we start a special SUN 00h00 IB.
-5   11  * * *
-5   23  * *  0,1,2,3,4,5
-5     0  * *  0
+**Periodic builds:**
+ 
+**Periodic builds:**
+```bash
+#We do not run SAT 23H IB instead we start a special SUN 00h00 IB.
+5 11  * * *
+5 23  * *  0,1,2,3,4,5
+5  0   * *  0
 
+```
+            
 
 ## [ib-schedule-pr-tests](https://cmssdt.cern.ch/jenkins/job/ib-schedule-pr-tests)
 
@@ -1011,7 +1377,13 @@ This was created to avoid the issue with <a href="https://wiki.jenkins.io/displa
 
 **Triggers from:** []
 
-**Periodic builds:** Not periodically build
+**Periodic builds:**
+ 
+**Periodic builds:**
+```bash
+Not periodically build
+```
+            
 
 ## [ib-static-checks](https://cmssdt.cern.ch/jenkins/job/ib-static-checks)
 
@@ -1026,7 +1398,13 @@ This was created to avoid the issue with <a href="https://wiki.jenkins.io/displa
 
 **Triggers from:** []
 
-**Periodic builds:** Not periodically build
+**Periodic builds:**
+ 
+**Periodic builds:**
+```bash
+Not periodically build
+```
+            
 
 ## [ib-tag-and-schdule](https://cmssdt.cern.ch/jenkins/job/ib-tag-and-schdule)
 
@@ -1053,7 +1431,13 @@ then triggers 'ib-install-cvmfs' sub-job to get the new cms.weekN deployed on th
 
 **Triggers from:** []
 
-**Periodic builds:** Not periodically build
+**Periodic builds:**
+ 
+**Periodic builds:**
+```bash
+Not periodically build
+```
+            
 
 ## [ib-validation](https://cmssdt.cern.ch/jenkins/job/ib-validation)
 
@@ -1077,7 +1461,13 @@ then triggers 'ib-install-cvmfs' sub-job to get the new cms.weekN deployed on th
 
 **Triggers from:** []
 
-**Periodic builds:** Not periodically build
+**Periodic builds:**
+ 
+**Periodic builds:**
+```bash
+Not periodically build
+```
+            
 
 ## [import-stitched-tag](https://cmssdt.cern.ch/jenkins/job/import-stitched-tag)
 
@@ -1092,7 +1482,13 @@ CMSSW_* tag is rename to STITCHED_*
 
 **Triggers from:** []
 
-**Periodic builds:** Not periodically build
+**Periodic builds:**
+ 
+**Periodic builds:**
+```bash
+Not periodically build
+```
+            
 
 ## [jenkins-add-job-to-anthoer-server](https://cmssdt.cern.ch/jenkins/job/jenkins-add-job-to-anthoer-server)
 
@@ -1106,7 +1502,13 @@ CMSSW_* tag is rename to STITCHED_*
 
 **Triggers from:** []
 
-**Periodic builds:** Not periodically build
+**Periodic builds:**
+ 
+**Periodic builds:**
+```bash
+Not periodically build
+```
+            
 
 ## [jenkins-backup](https://cmssdt.cern.ch/jenkins/job/jenkins-backup)
 
@@ -1121,7 +1523,13 @@ Backups jenkins scripts on https://github.com/cms-sw/jenkins-backup.git
 
 **Triggers from:** []
 
-**Periodic builds:** H/5 * * * *
+**Periodic builds:**
+ 
+**Periodic builds:**
+```bash
+H/5 * * * *
+```
+            
 
 ## [jenkins-disable-jobs](https://cmssdt.cern.ch/jenkins/job/jenkins-disable-jobs)
 
@@ -1138,7 +1546,13 @@ would enable all cmsbuild machines found
 
 **Triggers from:** []
 
-**Periodic builds:** Not periodically build
+**Periodic builds:**
+ 
+**Periodic builds:**
+```bash
+Not periodically build
+```
+            
 
 ## [jenkins-disable-nodes](https://cmssdt.cern.ch/jenkins/job/jenkins-disable-nodes)
 
@@ -1152,7 +1566,13 @@ would enable all cmsbuild machines found
 
 **Triggers from:** []
 
-**Periodic builds:** Not periodically build
+**Periodic builds:**
+ 
+**Periodic builds:**
+```bash
+Not periodically build
+```
+            
 
 ## [jenkins-elasticsearch-monitor](https://cmssdt.cern.ch/jenkins/job/jenkins-elasticsearch-monitor)
 
@@ -1168,7 +1588,13 @@ would enable all cmsbuild machines found
 
 **Triggers from:** []
 
-**Periodic builds:** H/5 * * * *
+**Periodic builds:**
+ 
+**Periodic builds:**
+```bash
+H/5 * * * *
+```
+            
 
 ## [jenkins-enable-jobs](https://cmssdt.cern.ch/jenkins/job/jenkins-enable-jobs)
 
@@ -1183,7 +1609,13 @@ would enable all cmsbuild machines found
 
 **Triggers from:** []
 
-**Periodic builds:** Not periodically build
+**Periodic builds:**
+ 
+**Periodic builds:**
+```bash
+Not periodically build
+```
+            
 
 ## [jenkins-enable-nodes](https://cmssdt.cern.ch/jenkins/job/jenkins-enable-nodes)
 
@@ -1200,7 +1632,13 @@ would enable all cmsbuild machines found
 
 **Triggers from:** []
 
-**Periodic builds:** Not periodically build
+**Periodic builds:**
+ 
+**Periodic builds:**
+```bash
+Not periodically build
+```
+            
 
 ## [jenkins-initialize](https://cmssdt.cern.ch/jenkins/job/jenkins-initialize)
 
@@ -1222,7 +1660,13 @@ This runs some sub-projects to check if basic functionality of jenkins is workin
 
 **Triggers from:** []
 
-**Periodic builds:** H H * * *
+**Periodic builds:**
+ 
+**Periodic builds:**
+```bash
+H H * * *
+```
+            
 
 ## [jenkins-installation-cli-test](https://cmssdt.cern.ch/jenkins/job/jenkins-installation-cli-test)
 
@@ -1237,7 +1681,13 @@ This runs some sub-projects to check if basic functionality of jenkins is workin
 
 **Triggers from:** []
 
-**Periodic builds:** Not periodically build
+**Periodic builds:**
+ 
+**Periodic builds:**
+```bash
+Not periodically build
+```
+            
 
 ## [jenkins-installation-trigger-cli](https://cmssdt.cern.ch/jenkins/job/jenkins-installation-trigger-cli)
 
@@ -1251,7 +1701,13 @@ This runs some sub-projects to check if basic functionality of jenkins is workin
 
 **Triggers from:** []
 
-**Periodic builds:** Not periodically build
+**Periodic builds:**
+ 
+**Periodic builds:**
+```bash
+Not periodically build
+```
+            
 
 ## [jenkins-installation-trigger-test](https://cmssdt.cern.ch/jenkins/job/jenkins-installation-trigger-test)
 
@@ -1266,7 +1722,13 @@ This runs some sub-projects to check if basic functionality of jenkins is workin
 
 **Triggers from:** []
 
-**Periodic builds:** Not periodically build
+**Periodic builds:**
+ 
+**Periodic builds:**
+```bash
+Not periodically build
+```
+            
 
 ## [jenkins-projects-report](https://cmssdt.cern.ch/jenkins/job/jenkins-projects-report)
 
@@ -1284,7 +1746,13 @@ display it in html form. The current page you are viewing is generated and updat
 
 **Triggers from:** []
 
-**Periodic builds:** H * * * *
+**Periodic builds:**
+ 
+**Periodic builds:**
+```bash
+H * * * *
+```
+            
 
 ## [jenkins-projects-wiki-update](https://cmssdt.cern.ch/jenkins/job/jenkins-projects-wiki-update)
 
@@ -1301,7 +1769,13 @@ display it in markdown form. It is later imported to CMSSDT wiki.
 
 **Triggers from:** []
 
-**Periodic builds:** H * * * *
+**Periodic builds:**
+ 
+**Periodic builds:**
+```bash
+H/5 * * * *
+```
+            
 
 ## [jenkins-restart-slaves](https://cmssdt.cern.ch/jenkins/job/jenkins-restart-slaves)
 
@@ -1316,7 +1790,13 @@ display it in markdown form. It is later imported to CMSSDT wiki.
 
 **Triggers from:** []
 
-**Periodic builds:** Not periodically build
+**Periodic builds:**
+ 
+**Periodic builds:**
+```bash
+Not periodically build
+```
+            
 
 ## [jenkins-test-job1](https://cmssdt.cern.ch/jenkins/job/jenkins-test-job1)
 
@@ -1330,7 +1810,13 @@ display it in markdown form. It is later imported to CMSSDT wiki.
 
 **Triggers from:** []
 
-**Periodic builds:** Not periodically build
+**Periodic builds:**
+ 
+**Periodic builds:**
+```bash
+Not periodically build
+```
+            
 
 ## [jenkins-test-job2](https://cmssdt.cern.ch/jenkins/job/jenkins-test-job2)
 
@@ -1344,7 +1830,13 @@ display it in markdown form. It is later imported to CMSSDT wiki.
 
 **Triggers from:** []
 
-**Periodic builds:** Not periodically build
+**Periodic builds:**
+ 
+**Periodic builds:**
+```bash
+Not periodically build
+```
+            
 
 ## [jenkins-test-slave](https://cmssdt.cern.ch/jenkins/job/jenkins-test-slave)
 
@@ -1360,7 +1852,13 @@ between Jenkins Master/slave  and slave and various services are working.
 
 **Triggers from:** []
 
-**Periodic builds:** Not periodically build
+**Periodic builds:**
+ 
+**Periodic builds:**
+```bash
+Not periodically build
+```
+            
 
 ## [jenkins-test-slaves](https://cmssdt.cern.ch/jenkins/job/jenkins-test-slaves)
 
@@ -1376,7 +1874,13 @@ between Jenkins Master/slave  and slave and various services are working.
 
 **Triggers from:** []
 
-**Periodic builds:** H H/8 * * *
+**Periodic builds:**
+ 
+**Periodic builds:**
+```bash
+H H/8 * * *
+```
+            
 
 ## [kill-build-release](https://cmssdt.cern.ch/jenkins/job/kill-build-release)
 
@@ -1391,7 +1895,13 @@ between Jenkins Master/slave  and slave and various services are working.
 
 **Triggers from:** []
 
-**Periodic builds:** Not periodically build
+**Periodic builds:**
+ 
+**Periodic builds:**
+```bash
+Not periodically build
+```
+            
 
 ## [kill-hanging-jobs](https://cmssdt.cern.ch/jenkins/job/kill-hanging-jobs)
 
@@ -1405,7 +1915,13 @@ between Jenkins Master/slave  and slave and various services are working.
 
 **Triggers from:** []
 
-**Periodic builds:** H H/8 * * *
+**Periodic builds:**
+ 
+**Periodic builds:**
+```bash
+H H/8 * * *
+```
+            
 
 ## [lfn-to-ibeos](https://cmssdt.cern.ch/jenkins/job/lfn-to-ibeos)
 
@@ -1421,7 +1937,13 @@ between Jenkins Master/slave  and slave and various services are working.
 
 **Triggers from:** []
 
-**Periodic builds:** Not periodically build
+**Periodic builds:**
+ 
+**Periodic builds:**
+```bash
+Not periodically build
+```
+            
 
 ## [lxr-check](https://cmssdt.cern.ch/jenkins/job/lxr-check)
 
@@ -1437,7 +1959,13 @@ between Jenkins Master/slave  and slave and various services are working.
 
 **Triggers from:** []
 
-**Periodic builds:** H/5 * * * *
+**Periodic builds:**
+ 
+**Periodic builds:**
+```bash
+H/5 * * * *
+```
+            
 
 ## [lxr-checkout-version](https://cmssdt.cern.ch/jenkins/job/lxr-checkout-version)
 
@@ -1454,7 +1982,13 @@ between Jenkins Master/slave  and slave and various services are working.
 
 **Triggers from:** []
 
-**Periodic builds:** Not periodically build
+**Periodic builds:**
+ 
+**Periodic builds:**
+```bash
+Not periodically build
+```
+            
 
 ## [lxr-generate-index](https://cmssdt.cern.ch/jenkins/job/lxr-generate-index)
 
@@ -1469,7 +2003,13 @@ between Jenkins Master/slave  and slave and various services are working.
 
 **Triggers from:** []
 
-**Periodic builds:** Not periodically build
+**Periodic builds:**
+ 
+**Periodic builds:**
+```bash
+Not periodically build
+```
+            
 
 ## [lxr-remove-index](https://cmssdt.cern.ch/jenkins/job/lxr-remove-index)
 
@@ -1483,8 +2023,14 @@ between Jenkins Master/slave  and slave and various services are working.
 
 **Triggers from:** []
 
-**Periodic builds:** H 5  * * *
+**Periodic builds:**
+ 
+**Periodic builds:**
+```bash
+H 5  * * *
 
+```
+            
 
 ## [lxr-run-container](https://cmssdt.cern.ch/jenkins/job/lxr-run-container)
 
@@ -1499,7 +2045,13 @@ between Jenkins Master/slave  and slave and various services are working.
 
 **Triggers from:** []
 
-**Periodic builds:** H * * * *
+**Periodic builds:**
+ 
+**Periodic builds:**
+```bash
+H * * * *
+```
+            
 
 ## [material-budget-ref](https://cmssdt.cern.ch/jenkins/job/material-budget-ref)
 
@@ -1513,7 +2065,13 @@ between Jenkins Master/slave  and slave and various services are working.
 
 **Triggers from:** []
 
-**Periodic builds:** Not periodically build
+**Periodic builds:**
+ 
+**Periodic builds:**
+```bash
+Not periodically build
+```
+            
 
 ## [mirror-cmsrep](https://cmssdt.cern.ch/jenkins/job/mirror-cmsrep)
 
@@ -1527,7 +2085,13 @@ between Jenkins Master/slave  and slave and various services are working.
 
 **Triggers from:** []
 
-**Periodic builds:** Not periodically build
+**Periodic builds:**
+ 
+**Periodic builds:**
+```bash
+Not periodically build
+```
+            
 
 ## [monitor-openstack-vms](https://cmssdt.cern.ch/jenkins/job/monitor-openstack-vms)
 
@@ -1541,7 +2105,13 @@ between Jenkins Master/slave  and slave and various services are working.
 
 **Triggers from:** []
 
-**Periodic builds:** @hourly
+**Periodic builds:**
+ 
+**Periodic builds:**
+```bash
+@hourly
+```
+            
 
 ## [openstack-add-jenkins-slave](https://cmssdt.cern.ch/jenkins/job/openstack-add-jenkins-slave)
 
@@ -1556,7 +2126,13 @@ between Jenkins Master/slave  and slave and various services are working.
 
 **Triggers from:** []
 
-**Periodic builds:** Not periodically build
+**Periodic builds:**
+ 
+**Periodic builds:**
+```bash
+Not periodically build
+```
+            
 
 ## [openstack-check-jenkins-slaves](https://cmssdt.cern.ch/jenkins/job/openstack-check-jenkins-slaves)
 
@@ -1572,7 +2148,13 @@ between Jenkins Master/slave  and slave and various services are working.
 
 **Triggers from:** []
 
-**Periodic builds:** H * * * * 
+**Periodic builds:**
+ 
+**Periodic builds:**
+```bash
+H * * * * 
+```
+            
 
 ## [openstack-create-vms](https://cmssdt.cern.ch/jenkins/job/openstack-create-vms)
 
@@ -1590,7 +2172,13 @@ between Jenkins Master/slave  and slave and various services are working.
 
 **Triggers from:** []
 
-**Periodic builds:** Not periodically build
+**Periodic builds:**
+ 
+**Periodic builds:**
+```bash
+Not periodically build
+```
+            
 
 ## [openstack-create-volume](https://cmssdt.cern.ch/jenkins/job/openstack-create-volume)
 
@@ -1604,7 +2192,13 @@ between Jenkins Master/slave  and slave and various services are working.
 
 **Triggers from:** []
 
-**Periodic builds:** Not periodically build
+**Periodic builds:**
+ 
+**Periodic builds:**
+```bash
+Not periodically build
+```
+            
 
 ## [openstack-delete-vms](https://cmssdt.cern.ch/jenkins/job/openstack-delete-vms)
 
@@ -1624,7 +2218,13 @@ between Jenkins Master/slave  and slave and various services are working.
 
 **Triggers from:** []
 
-**Periodic builds:** Not periodically build
+**Periodic builds:**
+ 
+**Periodic builds:**
+```bash
+Not periodically build
+```
+            
 
 ## [openstack-delete-volume](https://cmssdt.cern.ch/jenkins/job/openstack-delete-volume)
 
@@ -1639,7 +2239,13 @@ between Jenkins Master/slave  and slave and various services are working.
 
 **Triggers from:** []
 
-**Periodic builds:** Not periodically build
+**Periodic builds:**
+ 
+**Periodic builds:**
+```bash
+Not periodically build
+```
+            
 
 ## [process-deprecate-releases](https://cmssdt.cern.ch/jenkins/job/process-deprecate-releases)
 
@@ -1653,7 +2259,13 @@ between Jenkins Master/slave  and slave and various services are working.
 
 **Triggers from:** []
 
-**Periodic builds:** Not periodically build
+**Periodic builds:**
+ 
+**Periodic builds:**
+```bash
+Not periodically build
+```
+            
 
 ## [process-relval-logs](https://cmssdt.cern.ch/jenkins/job/process-relval-logs)
 
@@ -1670,7 +2282,13 @@ between Jenkins Master/slave  and slave and various services are working.
 
 **Triggers from:** []
 
-**Periodic builds:** H/20 * * * *
+**Periodic builds:**
+ 
+**Periodic builds:**
+```bash
+H/20 * * * *
+```
+            
 
 ## [query-build-release-issues](https://cmssdt.cern.ch/jenkins/job/query-build-release-issues)
 
@@ -1695,7 +2313,13 @@ between Jenkins Master/slave  and slave and various services are working.
 
 **Triggers from:** []
 
-**Periodic builds:** H/15 * * * *
+**Periodic builds:**
+ 
+**Periodic builds:**
+```bash
+H/15 * * * *
+```
+            
 
 ## [refresh-cmssdt](https://cmssdt.cern.ch/jenkins/job/refresh-cmssdt)
 
@@ -1710,7 +2334,13 @@ between Jenkins Master/slave  and slave and various services are working.
 
 **Triggers from:** [u'update-github-pages']
 
-**Periodic builds:** Not periodically build
+**Periodic builds:**
+ 
+**Periodic builds:**
+```bash
+Not periodically build
+```
+            
 
 ## [release-deploy-afs](https://cmssdt.cern.ch/jenkins/job/release-deploy-afs)
 
@@ -1725,7 +2355,13 @@ between Jenkins Master/slave  and slave and various services are working.
 
 **Triggers from:** []
 
-**Periodic builds:** Not periodically build
+**Periodic builds:**
+ 
+**Periodic builds:**
+```bash
+Not periodically build
+```
+            
 
 ## [release-produce-changelog](https://cmssdt.cern.ch/jenkins/job/release-produce-changelog)
 
@@ -1742,7 +2378,13 @@ between Jenkins Master/slave  and slave and various services are working.
 
 **Triggers from:** []
 
-**Periodic builds:** Not periodically build
+**Periodic builds:**
+ 
+**Periodic builds:**
+```bash
+Not periodically build
+```
+            
 
 ## [rpm-repository-backup](https://cmssdt.cern.ch/jenkins/job/rpm-repository-backup)
 
@@ -1756,7 +2398,13 @@ between Jenkins Master/slave  and slave and various services are working.
 
 **Triggers from:** []
 
-**Periodic builds:** H 0 * * *
+**Periodic builds:**
+ 
+**Periodic builds:**
+```bash
+H 0 * * *
+```
+            
 
 ## [run-igprof-pr](https://cmssdt.cern.ch/jenkins/job/run-igprof-pr)
 
@@ -1771,7 +2419,13 @@ between Jenkins Master/slave  and slave and various services are working.
 
 **Triggers from:** []
 
-**Periodic builds:** Not periodically build
+**Periodic builds:**
+ 
+**Periodic builds:**
+```bash
+Not periodically build
+```
+            
 
 ## [run-pr-code-ckecks](https://cmssdt.cern.ch/jenkins/job/run-pr-code-ckecks)
 
@@ -1791,7 +2445,13 @@ In a CMSSW dev area, it runs
 
 **Triggers from:** []
 
-**Periodic builds:** Not periodically build
+**Periodic builds:**
+ 
+**Periodic builds:**
+```bash
+Not periodically build
+```
+            
 
 ## [run-repo-size-check](https://cmssdt.cern.ch/jenkins/job/run-repo-size-check)
 
@@ -1805,7 +2465,13 @@ In a CMSSW dev area, it runs
 
 **Triggers from:** []
 
-**Periodic builds:** Not periodically build
+**Periodic builds:**
+ 
+**Periodic builds:**
+```bash
+Not periodically build
+```
+            
 
 ## [schedule-additional-tests](https://cmssdt.cern.ch/jenkins/job/schedule-additional-tests)
 
@@ -1845,7 +2511,13 @@ In a CMSSW dev area, it runs
 
 **Triggers from:** []
 
-**Periodic builds:** Not periodically build
+**Periodic builds:**
+ 
+**Periodic builds:**
+```bash
+Not periodically build
+```
+            
 
 ## [slaves-checks](https://cmssdt.cern.ch/jenkins/job/slaves-checks)
 
@@ -1863,7 +2535,13 @@ In a CMSSW dev area, it runs
 
 **Triggers from:** []
 
-**Periodic builds:** H 7,19 * * *
+**Periodic builds:**
+ 
+**Periodic builds:**
+```bash
+H 7,19 * * *
+```
+            
 
 ## [stop-ib-any-integration](https://cmssdt.cern.ch/jenkins/job/stop-ib-any-integration)
 
@@ -1880,7 +2558,13 @@ In a CMSSW dev area, it runs
 
 **Triggers from:** []
 
-**Periodic builds:** Not periodically build
+**Periodic builds:**
+ 
+**Periodic builds:**
+```bash
+Not periodically build
+```
+            
 
 ## [summary-of-merged-prs](https://cmssdt.cern.ch/jenkins/job/summary-of-merged-prs)
 
@@ -1895,7 +2579,13 @@ In a CMSSW dev area, it runs
 
 **Triggers from:** [u'update-github-pages']
 
-**Periodic builds:** Not periodically build
+**Periodic builds:**
+ 
+**Periodic builds:**
+```bash
+Not periodically build
+```
+            
 
 ## [test](https://cmssdt.cern.ch/jenkins/job/test)
 
@@ -1909,7 +2599,13 @@ In a CMSSW dev area, it runs
 
 **Triggers from:** []
 
-**Periodic builds:** Not periodically build
+**Periodic builds:**
+ 
+**Periodic builds:**
+```bash
+Not periodically build
+```
+            
 
 ## [test-build-periodic](https://cmssdt.cern.ch/jenkins/job/test-build-periodic)
 
@@ -1923,7 +2619,13 @@ In a CMSSW dev area, it runs
 
 **Triggers from:** []
 
-**Periodic builds:** H/15 * * * *
+**Periodic builds:**
+ 
+**Periodic builds:**
+```bash
+H/15 * * * *
+```
+            
 
 ## [test-docker](https://cmssdt.cern.ch/jenkins/job/test-docker)
 
@@ -1938,7 +2640,13 @@ In a CMSSW dev area, it runs
 
 **Triggers from:** []
 
-**Periodic builds:** Not periodically build
+**Periodic builds:**
+ 
+**Periodic builds:**
+```bash
+Not periodically build
+```
+            
 
 ## [test-kerberos-within-docker](https://cmssdt.cern.ch/jenkins/job/test-kerberos-within-docker)
 
@@ -1954,7 +2662,13 @@ and runs the script with docker to check the behaviour
 
 **Triggers from:** []
 
-**Periodic builds:** Not periodically build
+**Periodic builds:**
+ 
+**Periodic builds:**
+```bash
+Not periodically build
+```
+            
 
 ## [test-relvals-with-krb](https://cmssdt.cern.ch/jenkins/job/test-relvals-with-krb)
 
@@ -1970,7 +2684,13 @@ and runs the script with docker to check the behaviour
 
 **Triggers from:** []
 
-**Periodic builds:** Not periodically build
+**Periodic builds:**
+ 
+**Periodic builds:**
+```bash
+Not periodically build
+```
+            
 
 ## [test-scram](https://cmssdt.cern.ch/jenkins/job/test-scram)
 
@@ -1984,7 +2704,13 @@ and runs the script with docker to check the behaviour
 
 **Triggers from:** []
 
-**Periodic builds:** Not periodically build
+**Periodic builds:**
+ 
+**Periodic builds:**
+```bash
+Not periodically build
+```
+            
 
 ## [tutorial-jenkins](https://cmssdt.cern.ch/jenkins/job/tutorial-jenkins)
 
@@ -1998,7 +2724,13 @@ and runs the script with docker to check the behaviour
 
 **Triggers from:** []
 
-**Periodic builds:** Not periodically build
+**Periodic builds:**
+ 
+**Periodic builds:**
+```bash
+Not periodically build
+```
+            
 
 ## [update-categories-page](https://cmssdt.cern.ch/jenkins/job/update-categories-page)
 
@@ -2012,7 +2744,13 @@ and runs the script with docker to check the behaviour
 
 **Triggers from:** []
 
-**Periodic builds:** H 0 * * *
+**Periodic builds:**
+ 
+**Periodic builds:**
+```bash
+H 0 * * *
+```
+            
 
 ## [update-das-queries](https://cmssdt.cern.ch/jenkins/job/update-das-queries)
 
@@ -2028,7 +2766,13 @@ and runs the script with docker to check the behaviour
 
 **Triggers from:** []
 
-**Periodic builds:** Not periodically build
+**Periodic builds:**
+ 
+**Periodic builds:**
+```bash
+Not periodically build
+```
+            
 
 ## [update-externals-mirrors](https://cmssdt.cern.ch/jenkins/job/update-externals-mirrors)
 
@@ -2042,7 +2786,13 @@ and runs the script with docker to check the behaviour
 
 **Triggers from:** []
 
-**Periodic builds:** 0 0 * * *
+**Periodic builds:**
+ 
+**Periodic builds:**
+```bash
+0 0 * * *
+```
+            
 
 ## [update-github-pages](https://cmssdt.cern.ch/jenkins/job/update-github-pages)
 
@@ -2061,7 +2811,13 @@ and runs the script with docker to check the behaviour
 
 **Triggers from:** [u'cleanup-cms-sw-io-history', u'ib-build-logs']
 
-**Periodic builds:** Not periodically build
+**Periodic builds:**
+ 
+**Periodic builds:**
+```bash
+Not periodically build
+```
+            
 
 ## [update-github-webhook-token](https://cmssdt.cern.ch/jenkins/job/update-github-webhook-token)
 
@@ -2075,7 +2831,13 @@ and runs the script with docker to check the behaviour
 
 **Triggers from:** []
 
-**Periodic builds:** Not periodically build
+**Periodic builds:**
+ 
+**Periodic builds:**
+```bash
+Not periodically build
+```
+            
 
 ## [update-ibeos-cache](https://cmssdt.cern.ch/jenkins/job/update-ibeos-cache)
 
@@ -2092,7 +2854,13 @@ and runs the script with docker to check the behaviour
 
 **Triggers from:** []
 
-**Periodic builds:** H */6 * * *
+**Periodic builds:**
+ 
+**Periodic builds:**
+```bash
+H */6 * * *
+```
+            
 
 ## [update-release-map](https://cmssdt.cern.ch/jenkins/job/update-release-map)
 
@@ -2111,7 +2879,13 @@ CVMFS installation is started once a release is available in this file.
 
 **Triggers from:** []
 
-**Periodic builds:** Not periodically build
+**Periodic builds:**
+ 
+**Periodic builds:**
+```bash
+Not periodically build
+```
+            
 
 ## [update-release-notes-collection](https://cmssdt.cern.ch/jenkins/job/update-release-notes-collection)
 
@@ -2126,7 +2900,13 @@ CVMFS installation is started once a release is available in this file.
 
 **Triggers from:** []
 
-**Periodic builds:** Not periodically build
+**Periodic builds:**
+ 
+**Periodic builds:**
+```bash
+Not periodically build
+```
+            
 
 ## [upload-release](https://cmssdt.cern.ch/jenkins/job/upload-release)
 
@@ -2144,7 +2924,13 @@ CVMFS installation is started once a release is available in this file.
 
 **Triggers from:** []
 
-**Periodic builds:** Not periodically build
+**Periodic builds:**
+ 
+**Periodic builds:**
+```bash
+Not periodically build
+```
+            
 
 ## [upload-release-setup](https://cmssdt.cern.ch/jenkins/job/upload-release-setup)
 
@@ -2160,7 +2946,13 @@ CVMFS installation is started once a release is available in this file.
 
 **Triggers from:** []
 
-**Periodic builds:** Not periodically build
+**Periodic builds:**
+ 
+**Periodic builds:**
+```bash
+Not periodically build
+```
+            
 
 ## [web-summary-data](https://cmssdt.cern.ch/jenkins/job/web-summary-data)
 
@@ -2174,7 +2966,13 @@ CVMFS installation is started once a release is available in this file.
 
 **Triggers from:** []
 
-**Periodic builds:** Not periodically build
+**Periodic builds:**
+ 
+**Periodic builds:**
+```bash
+Not periodically build
+```
+            
 
 ## [web-update-cmssdt-ib](https://cmssdt.cern.ch/jenkins/job/web-update-cmssdt-ib)
 
@@ -2189,7 +2987,13 @@ CVMFS installation is started once a release is available in this file.
 
 **Triggers from:** []
 
-**Periodic builds:** Not periodically build
+**Periodic builds:**
+ 
+**Periodic builds:**
+```bash
+Not periodically build
+```
+            
 
 ## [web-update-logReader](https://cmssdt.cern.ch/jenkins/job/web-update-logReader)
 
@@ -2203,7 +3007,13 @@ CVMFS installation is started once a release is available in this file.
 
 **Triggers from:** []
 
-**Periodic builds:** Not periodically build
+**Periodic builds:**
+ 
+**Periodic builds:**
+```bash
+Not periodically build
+```
+            
 
 ## [web-update-SDT](https://cmssdt.cern.ch/jenkins/job/web-update-SDT)
 
@@ -2217,7 +3027,13 @@ CVMFS installation is started once a release is available in this file.
 
 **Triggers from:** []
 
-**Periodic builds:** Not periodically build
+**Periodic builds:**
+ 
+**Periodic builds:**
+```bash
+Not periodically build
+```
+            
 
 ## [workspace-cleanup-slave](https://cmssdt.cern.ch/jenkins/job/workspace-cleanup-slave)
 
@@ -2232,5 +3048,11 @@ CVMFS installation is started once a release is available in this file.
 
 **Triggers from:** []
 
-**Periodic builds:** Not periodically build
+**Periodic builds:**
+ 
+**Periodic builds:**
+```bash
+Not periodically build
+```
+            
 

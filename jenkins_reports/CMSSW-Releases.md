@@ -31,7 +31,13 @@
 
 **Triggers from:** []
 
-**Periodic builds:** H/15 * * * *
+**Periodic builds:**
+ 
+**Periodic builds:**
+```bash
+H/15 * * * *
+```
+            
 
 ## [abort-release](https://cmssdt.cern.ch/jenkins/job/abort-release)
 
@@ -48,7 +54,13 @@
 
 **Triggers from:** []
 
-**Periodic builds:** Not periodically build
+**Periodic builds:**
+ 
+**Periodic builds:**
+```bash
+Not periodically build
+```
+            
 
 ## [kill-build-release](https://cmssdt.cern.ch/jenkins/job/kill-build-release)
 
@@ -63,7 +75,13 @@
 
 **Triggers from:** []
 
-**Periodic builds:** Not periodically build
+**Periodic builds:**
+ 
+**Periodic builds:**
+```bash
+Not periodically build
+```
+            
 
 ## [build-release](https://cmssdt.cern.ch/jenkins/job/build-release)
 
@@ -79,7 +97,13 @@ It is triggered by cms-bot after the <a href="https://github.com/cms-sw/cmssw/is
 
 **Triggers from:** []
 
-**Periodic builds:** Not periodically build
+**Periodic builds:**
+ 
+**Periodic builds:**
+```bash
+Not periodically build
+```
+            
 
 ## [cleanup-auto-build](https://cmssdt.cern.ch/jenkins/job/cleanup-auto-build)
 
@@ -94,7 +118,13 @@ It is triggered by cms-bot after the <a href="https://github.com/cms-sw/cmssw/is
 
 **Triggers from:** []
 
-**Periodic builds:** Not periodically build
+**Periodic builds:**
+ 
+**Periodic builds:**
+```bash
+Not periodically build
+```
+            
 
 ## [release-produce-changelog](https://cmssdt.cern.ch/jenkins/job/release-produce-changelog)
 
@@ -111,7 +141,13 @@ It is triggered by cms-bot after the <a href="https://github.com/cms-sw/cmssw/is
 
 **Triggers from:** []
 
-**Periodic builds:** Not periodically build
+**Periodic builds:**
+ 
+**Periodic builds:**
+```bash
+Not periodically build
+```
+            
 
 ## [update-release-notes-collection](https://cmssdt.cern.ch/jenkins/job/update-release-notes-collection)
 
@@ -126,7 +162,13 @@ It is triggered by cms-bot after the <a href="https://github.com/cms-sw/cmssw/is
 
 **Triggers from:** []
 
-**Periodic builds:** Not periodically build
+**Periodic builds:**
+ 
+**Periodic builds:**
+```bash
+Not periodically build
+```
+            
 
 ## [upload-release-setup](https://cmssdt.cern.ch/jenkins/job/upload-release-setup)
 
@@ -142,7 +184,13 @@ It is triggered by cms-bot after the <a href="https://github.com/cms-sw/cmssw/is
 
 **Triggers from:** []
 
-**Periodic builds:** Not periodically build
+**Periodic builds:**
+ 
+**Periodic builds:**
+```bash
+Not periodically build
+```
+            
 
 ## [upload-release](https://cmssdt.cern.ch/jenkins/job/upload-release)
 
@@ -160,7 +208,13 @@ It is triggered by cms-bot after the <a href="https://github.com/cms-sw/cmssw/is
 
 **Triggers from:** []
 
-**Periodic builds:** Not periodically build
+**Periodic builds:**
+ 
+**Periodic builds:**
+```bash
+Not periodically build
+```
+            
 
 ## [cmspkg-clone](https://cmssdt.cern.ch/jenkins/job/cmspkg-clone)
 
@@ -176,7 +230,13 @@ It is triggered by cms-bot after the <a href="https://github.com/cms-sw/cmssw/is
 
 **Triggers from:** []
 
-**Periodic builds:** H 21 * * *
+**Periodic builds:**
+ 
+**Periodic builds:**
+```bash
+H 21 * * *
+```
+            
 
 ## [release-deploy-afs](https://cmssdt.cern.ch/jenkins/job/release-deploy-afs)
 
@@ -191,7 +251,13 @@ It is triggered by cms-bot after the <a href="https://github.com/cms-sw/cmssw/is
 
 **Triggers from:** []
 
-**Periodic builds:** Not periodically build
+**Periodic builds:**
+ 
+**Periodic builds:**
+```bash
+Not periodically build
+```
+            
 
 ## [update-release-map](https://cmssdt.cern.ch/jenkins/job/update-release-map)
 
@@ -210,7 +276,13 @@ CVMFS installation is started once a release is available in this file.
 
 **Triggers from:** []
 
-**Periodic builds:** Not periodically build
+**Periodic builds:**
+ 
+**Periodic builds:**
+```bash
+Not periodically build
+```
+            
 
 ## [build-fwlite](https://cmssdt.cern.ch/jenkins/job/build-fwlite)
 
@@ -225,7 +297,13 @@ CVMFS installation is started once a release is available in this file.
 
 **Triggers from:** []
 
-**Periodic builds:** Not periodically build
+**Periodic builds:**
+ 
+**Periodic builds:**
+```bash
+Not periodically build
+```
+            
 
 ## [cmssw-doxygen](https://cmssdt.cern.ch/jenkins/job/cmssw-doxygen)
 
@@ -240,7 +318,13 @@ CVMFS installation is started once a release is available in this file.
 
 **Triggers from:** []
 
-**Periodic builds:** Not periodically build
+**Periodic builds:**
+ 
+**Periodic builds:**
+```bash
+Not periodically build
+```
+            
 
 ## [ib-run-cfipython](https://cmssdt.cern.ch/jenkins/job/ib-run-cfipython)
 
@@ -256,5 +340,11 @@ CVMFS installation is started once a release is available in this file.
 
 **Triggers from:** []
 
-**Periodic builds:** Not periodically build
+**Periodic builds:**
+ 
+**Periodic builds:**
+```bash
+Not periodically build
+```
+            
 

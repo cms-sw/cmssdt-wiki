@@ -21,7 +21,13 @@
 
 **Triggers from:** []
 
-**Periodic builds:** Not periodically build
+**Periodic builds:**
+ 
+**Periodic builds:**
+```bash
+Not periodically build
+```
+            
 
 ## [openstack-check-jenkins-slaves](https://cmssdt.cern.ch/jenkins/job/openstack-check-jenkins-slaves)
 
@@ -37,7 +43,13 @@
 
 **Triggers from:** []
 
-**Periodic builds:** H * * * * 
+**Periodic builds:**
+ 
+**Periodic builds:**
+```bash
+H * * * * 
+```
+            
 
 ## [openstack-create-vms](https://cmssdt.cern.ch/jenkins/job/openstack-create-vms)
 
@@ -55,7 +67,13 @@
 
 **Triggers from:** []
 
-**Periodic builds:** Not periodically build
+**Periodic builds:**
+ 
+**Periodic builds:**
+```bash
+Not periodically build
+```
+            
 
 ## [openstack-create-volume](https://cmssdt.cern.ch/jenkins/job/openstack-create-volume)
 
@@ -69,7 +87,13 @@
 
 **Triggers from:** []
 
-**Periodic builds:** Not periodically build
+**Periodic builds:**
+ 
+**Periodic builds:**
+```bash
+Not periodically build
+```
+            
 
 ## [openstack-delete-vms](https://cmssdt.cern.ch/jenkins/job/openstack-delete-vms)
 
@@ -89,7 +113,13 @@
 
 **Triggers from:** []
 
-**Periodic builds:** Not periodically build
+**Periodic builds:**
+ 
+**Periodic builds:**
+```bash
+Not periodically build
+```
+            
 
 ## [openstack-delete-volume](https://cmssdt.cern.ch/jenkins/job/openstack-delete-volume)
 
@@ -104,5 +134,11 @@
 
 **Triggers from:** []
 
-**Periodic builds:** Not periodically build
+**Periodic builds:**
+ 
+**Periodic builds:**
+```bash
+Not periodically build
+```
+            
 
