@@ -78,7 +78,7 @@ this forward port changes from source branch to target branch. Mapping between s
 ## [build-any-ib](https://cmssdt.cern.ch/jenkins/job/build-any-ib)
 
 **Description:** This jobs starts an Integration Build(IB). Base on state of <a href="https://github.com/cms-sw/cmsdist">CMSDIST</a>/<a href="https://github.com/cms-sw/cmssw">CMSSW</a> git repositories, it builds either a full release or patch release
-<br/>Build Full IB if
+<br>Build Full IB if
 <ul>
   <li>There are changes in <a href="https://github.com/cms-sw/cmsdist">CMSDIST</a></li>
   <li>There is no full IB available based on current <a href="https://github.com/cms-sw/cmsdist">CMSDIST</a></li>
