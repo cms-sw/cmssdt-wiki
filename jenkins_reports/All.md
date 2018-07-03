@@ -1,6 +1,6 @@
 # [All](https://cmssdt.cern.ch/jenkins/view/All)
 
-**View description:** None
+**View description:** This view has listed all CMSSDT jobs.
 
 **View type:** All
 
