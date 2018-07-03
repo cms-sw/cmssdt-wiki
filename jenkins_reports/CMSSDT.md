@@ -13,18 +13,17 @@
 **Description:** Aborts and kills a release building process.
 
 **Upstream projects:**
-
 * [query-build-release-issues](#query-build-release-issues):
 
 **Downstream projects:**
-
 * [kill-build-release](#kill-build-release):
 
 **Sub-projects:**
-
 * [kill-build-release](#kill-build-release):
 
 **Triggers from:** []
+
+**Periodic builds:** Not periodically build
 
 ## [auto-forward-ports](https://cmssdt.cern.ch/jenkins/job/auto-forward-ports)
 
@@ -32,16 +31,15 @@
 this forward port changes from source branch to target branch. Mapping between soruce and destination branches are available in cms-bot.
 
 **Upstream projects:**
-
 * [github-push-hook](#github-push-hook):
 
 **Downstream projects:**
 
-
 **Sub-projects:**
 
-
 **Triggers from:** []
+
+**Periodic builds:** Not periodically build
 
 ## [backport-pull-request](https://cmssdt.cern.ch/jenkins/job/backport-pull-request)
 
@@ -49,31 +47,29 @@ this forward port changes from source branch to target branch. Mapping between s
 
 **Upstream projects:**
 
-
 **Downstream projects:**
-
 
 **Sub-projects:**
 
-
 **Triggers from:** []
+
+**Periodic builds:** Not periodically build
 
 ## [baseline-ib-results](https://cmssdt.cern.ch/jenkins/job/baseline-ib-results)
 
 **Description:** This job runs a few tests only for the IB, for comparison with those ran by the pull request.
 
 **Upstream projects:**
-
 * [schedule-additional-tests](#schedule-additional-tests):
 
 **Downstream projects:**
-
 * [cvmfs-deploy-baseline](#cvmfs-deploy-baseline):
 
 **Sub-projects:**
 
-
 **Triggers from:** []
+
+**Periodic builds:** Not periodically build
 
 ## [build-any-ib](https://cmssdt.cern.ch/jenkins/job/build-any-ib)
 
@@ -90,23 +86,22 @@ Otherwise build a patch release
 
 
 **Upstream projects:**
-
 * [ib-tag-and-schdule](#ib-tag-and-schdule):
 
 **Downstream projects:**
-
 * [build-fwlite-ib](#build-fwlite-ib):
 * [cmspkg-clone](#cmspkg-clone):
 * [ib-build-logs](#ib-build-logs):
 * [ib-install-cvmfs](#ib-install-cvmfs):
 
 **Sub-projects:**
-
 * [ib-install-cvmfs,cmspkg-clone](#ib-install-cvmfs,cmspkg-clone):
 * [ib-build-logs](#ib-build-logs):
 * [build-fwlite-ib](#build-fwlite-ib):
 
 **Triggers from:** []
+
+**Periodic builds:** Not periodically build
 
 ## [build-container](https://cmssdt.cern.ch/jenkins/job/build-container)
 
@@ -114,30 +109,28 @@ Otherwise build a patch release
 
 **Upstream projects:**
 
-
 **Downstream projects:**
-
 
 **Sub-projects:**
 
-
 **Triggers from:** []
+
+**Periodic builds:** Not periodically build
 
 ## [build-fwlite](https://cmssdt.cern.ch/jenkins/job/build-fwlite)
 
 **Description:** TO build a CMSSW_X_Y_Z_FWLITE release based on an existing CMSSW_X_Y_Z release. CMSSW_X_Y_Z should already be build/uploaded before building its FWLITE version.
 
 **Upstream projects:**
-
 * [update-release-map](#update-release-map):
 
 **Downstream projects:**
 
-
 **Sub-projects:**
 
-
 **Triggers from:** []
+
+**Periodic builds:** Not periodically build
 
 ## [build-fwlite-ib](https://cmssdt.cern.ch/jenkins/job/build-fwlite-ib)
 
@@ -145,17 +138,16 @@ Otherwise build a patch release
 Results of this build can be seen via <a href="https://cmssdt.cern.ch/SDT/">CMSSDT</a> <a href="https://cmssdt.cern.ch/SDT/html/showIB.html">IB page</a>.
 
 **Upstream projects:**
-
 * [build-any-ib](#build-any-ib):
 
 **Downstream projects:**
-
 * [ib-build-logs](#ib-build-logs):
 
 **Sub-projects:**
 
-
 **Triggers from:** []
+
+**Periodic builds:** Not periodically build
 
 ## [build-release](https://cmssdt.cern.ch/jenkins/job/build-release)
 
@@ -163,32 +155,30 @@ Results of this build can be seen via <a href="https://cmssdt.cern.ch/SDT/">CMSS
 It is triggered by cms-bot after the <a href="https://github.com/cms-sw/cmssw/issues?q=label%3Arelease-notes-requested">Release build Issue</a> is approved by release manager.
 
 **Upstream projects:**
-
 * [query-build-release-issues](#query-build-release-issues):
 
 **Downstream projects:**
 
-
 **Sub-projects:**
 
-
 **Triggers from:** []
+
+**Periodic builds:** Not periodically build
 
 ## [cleanup-auto-build](https://cmssdt.cern.ch/jenkins/job/cleanup-auto-build)
 
 **Description:** This job deletes the relsease build areas after three days.
 
 **Upstream projects:**
-
 * [query-build-release-issues](#query-build-release-issues):
 
 **Downstream projects:**
 
-
 **Sub-projects:**
 
-
 **Triggers from:** []
+
+**Periodic builds:** Not periodically build
 
 ## [cleanup-cms-sw-io-history](https://cmssdt.cern.ch/jenkins/job/cleanup-cms-sw-io-history)
 
@@ -197,15 +187,14 @@ It is triggered by cms-bot after the <a href="https://github.com/cms-sw/cmssw/is
 
 **Upstream projects:**
 
-
 **Downstream projects:**
-
 * [update-github-pages](#update-github-pages):
 
 **Sub-projects:**
 
-
 **Triggers from:** []
+
+**Periodic builds:** H 1 * * 0
 
 ## [cleanup-cmssdt](https://cmssdt.cern.ch/jenkins/job/cleanup-cmssdt)
 
@@ -213,14 +202,13 @@ It is triggered by cms-bot after the <a href="https://github.com/cms-sw/cmssw/is
 
 **Upstream projects:**
 
-
 **Downstream projects:**
-
 
 **Sub-projects:**
 
-
 **Triggers from:** []
+
+**Periodic builds:** H 0 * * *
 
 ## [cleanup-tags](https://cmssdt.cern.ch/jenkins/job/cleanup-tags)
 
@@ -229,14 +217,13 @@ It is triggered by cms-bot after the <a href="https://github.com/cms-sw/cmssw/is
 
 **Upstream projects:**
 
-
 **Downstream projects:**
-
 
 **Sub-projects:**
 
-
 **Triggers from:** []
+
+**Periodic builds:** H 0 * * *
 
 ## [cms-bot](https://cmssdt.cern.ch/jenkins/job/cms-bot)
 
@@ -244,22 +231,21 @@ It is triggered by cms-bot after the <a href="https://github.com/cms-sw/cmssw/is
 Also it runsevery 30mins to make sure any webhooks were not missed. 
 
 **Upstream projects:**
-
 * [github-webhook](#github-webhook):
 
 **Downstream projects:**
-
 * [ib-schedule-pr-tests](#ib-schedule-pr-tests):
 * [run-pr-code-ckecks](#run-pr-code-ckecks):
 * [stop-ib-any-integration](#stop-ib-any-integration):
 
 **Sub-projects:**
-
 * [ib-schedule-pr-tests](#ib-schedule-pr-tests):
 * [stop-ib-any-integration](#stop-ib-any-integration):
 * [run-pr-code-ckecks](#run-pr-code-ckecks):
 
 **Triggers from:** []
+
+**Periodic builds:** Not periodically build
 
 ## [cms-dockerhub](https://cmssdt.cern.ch/jenkins/job/cms-dockerhub)
 
@@ -267,66 +253,62 @@ Also it runsevery 30mins to make sure any webhooks were not missed.
 
 **Upstream projects:**
 
-
 **Downstream projects:**
-
 
 **Sub-projects:**
 
-
 **Triggers from:** []
+
+**Periodic builds:** Not periodically build
 
 ## [cms-prs-cache](https://cmssdt.cern.ch/jenkins/job/cms-prs-cache)
 
 **Description:** None
 
 **Upstream projects:**
-
 * [cms-prs-cache](#cms-prs-cache):
 * [github-webhook](#github-webhook):
 
 **Downstream projects:**
-
 * [cms-prs-cache](#cms-prs-cache):
 
 **Sub-projects:**
-
 * [cms-prs-cache](#cms-prs-cache):
 
 **Triggers from:** []
+
+**Periodic builds:** Not periodically build
 
 ## [cmspkg-clone](https://cmssdt.cern.ch/jenkins/job/cmspkg-clone)
 
 **Description:** None
 
 **Upstream projects:**
-
 * [build-any-ib](#build-any-ib):
 * [upload-release](#upload-release):
 
 **Downstream projects:**
 
-
 **Sub-projects:**
 
-
 **Triggers from:** []
+
+**Periodic builds:** H 21 * * *
 
 ## [cmssw-doxygen](https://cmssdt.cern.ch/jenkins/job/cmssw-doxygen)
 
 **Description:** Generate doxygen documentation for CMSSW project
 
 **Upstream projects:**
-
 * [update-release-map](#update-release-map):
 
 **Downstream projects:**
 
-
 **Sub-projects:**
 
-
 **Triggers from:** []
+
+**Periodic builds:** Not periodically build
 
 ## [comp-bot](https://cmssdt.cern.ch/jenkins/job/comp-bot)
 
@@ -334,16 +316,15 @@ Also it runsevery 30mins to make sure any webhooks were not missed.
 This is to process bot commands for cmsdist comp branches
 
 **Upstream projects:**
-
 * [github-webhook](#github-webhook):
 
 **Downstream projects:**
 
-
 **Sub-projects:**
 
-
 **Triggers from:** []
+
+**Periodic builds:** Not periodically build
 
 ## [compare-material-budget](https://cmssdt.cern.ch/jenkins/job/compare-material-budget)
 
@@ -351,50 +332,47 @@ This is to process bot commands for cmsdist comp branches
 
 
 **Upstream projects:**
-
 * [ib-run-material-budget](#ib-run-material-budget):
 
 **Downstream projects:**
 
-
 **Sub-projects:**
 
-
 **Triggers from:** []
+
+**Periodic builds:** Not periodically build
 
 ## [compare-root-files-short-matrix](https://cmssdt.cern.ch/jenkins/job/compare-root-files-short-matrix)
 
 **Description:** Download the files of the baseline IB and compare them with the results of the ones of a pull request
 
 **Upstream projects:**
-
 * [ib-any-integration](#ib-any-integration):
 
 **Downstream projects:**
 
-
 **Sub-projects:**
 
-
 **Triggers from:** []
+
+**Periodic builds:** Not periodically build
 
 ## [cvmfs-deploy-baseline](https://cmssdt.cern.ch/jenkins/job/cvmfs-deploy-baseline)
 
 **Description:** Copy baseline results from cmssdt for an IB
 
 **Upstream projects:**
-
 * [baseline-ib-results](#baseline-ib-results):
 
 **Downstream projects:**
-
 * [cvmfs-publish-baseline](#cvmfs-publish-baseline):
 
 **Sub-projects:**
-
 * [cvmfs-publish-baseline](#cvmfs-publish-baseline):
 
 **Triggers from:** []
+
+**Periodic builds:** Not periodically build
 
 ## [cvmfs-gc](https://cmssdt.cern.ch/jenkins/job/cvmfs-gc)
 
@@ -402,30 +380,29 @@ This is to process bot commands for cmsdist comp branches
 
 **Upstream projects:**
 
-
 **Downstream projects:**
-
 
 **Sub-projects:**
 
-
 **Triggers from:** []
+
+**Periodic builds:** #Run once on Thursday at 23h05
+H 23  * *  4
 
 ## [cvmfs-publish-baseline](https://cmssdt.cern.ch/jenkins/job/cvmfs-publish-baseline)
 
 **Description:** Copy baseline results from cmssdt for an IB and deploy them on cvmfs
 
 **Upstream projects:**
-
 * [cvmfs-deploy-baseline](#cvmfs-deploy-baseline):
 
 **Downstream projects:**
 
-
 **Sub-projects:**
 
-
 **Triggers from:** []
+
+**Periodic builds:** Not periodically build
 
 ## [das-query](https://cmssdt.cern.ch/jenkins/job/das-query)
 
@@ -433,14 +410,13 @@ This is to process bot commands for cmsdist comp branches
 
 **Upstream projects:**
 
-
 **Downstream projects:**
-
 
 **Sub-projects:**
 
-
 **Triggers from:** []
+
+**Periodic builds:** H 9,21 * * *
 
 ## [dataset-to-ibeos](https://cmssdt.cern.ch/jenkins/job/dataset-to-ibeos)
 
@@ -448,31 +424,29 @@ This is to process bot commands for cmsdist comp branches
 
 **Upstream projects:**
 
-
 **Downstream projects:**
-
 * [update-ibeos-cache](#update-ibeos-cache):
 
 **Sub-projects:**
 
-
 **Triggers from:** []
+
+**Periodic builds:** Not periodically build
 
 ## [deploy-cms-repo](https://cmssdt.cern.ch/jenkins/job/deploy-cms-repo)
 
 **Description:** Updates cms-bot clone on Jenkins master
 
 **Upstream projects:**
-
 * [github-push-hook](#github-push-hook):
 
 **Downstream projects:**
 
-
 **Sub-projects:**
 
-
 **Triggers from:** []
+
+**Periodic builds:** Not periodically build
 
 ## [deploy-cmsdoxygen](https://cmssdt.cern.ch/jenkins/job/deploy-cmsdoxygen)
 
@@ -480,14 +454,13 @@ This is to process bot commands for cmsdist comp branches
 
 **Upstream projects:**
 
-
 **Downstream projects:**
-
 
 **Sub-projects:**
 
-
 **Triggers from:** []
+
+**Periodic builds:** Not periodically build
 
 ## [dxr-cmssw-index](https://cmssdt.cern.ch/jenkins/job/dxr-cmssw-index)
 
@@ -495,14 +468,13 @@ This is to process bot commands for cmsdist comp branches
 
 **Upstream projects:**
 
-
 **Downstream projects:**
-
 
 **Sub-projects:**
 
-
 **Triggers from:** []
+
+**Periodic builds:** Not periodically build
 
 ## [es-close-indexes](https://cmssdt.cern.ch/jenkins/job/es-close-indexes)
 
@@ -510,14 +482,13 @@ This is to process bot commands for cmsdist comp branches
 
 **Upstream projects:**
 
-
 **Downstream projects:**
-
 
 **Sub-projects:**
 
-
 **Triggers from:** []
+
+**Periodic builds:** H 0  * *  0
 
 ## [fix-backport-prs](https://cmssdt.cern.ch/jenkins/job/fix-backport-prs)
 
@@ -525,14 +496,13 @@ This is to process bot commands for cmsdist comp branches
 
 **Upstream projects:**
 
-
 **Downstream projects:**
-
 
 **Sub-projects:**
 
-
 **Triggers from:** []
+
+**Periodic builds:** H * * * *
 
 ## [forward-pull-requests](https://cmssdt.cern.ch/jenkins/job/forward-pull-requests)
 
@@ -541,14 +511,13 @@ This is to process bot commands for cmsdist comp branches
 
 **Upstream projects:**
 
-
 **Downstream projects:**
-
 
 **Sub-projects:**
 
-
 **Triggers from:** []
+
+**Periodic builds:** Not periodically build
 
 ## [gh-teams](https://cmssdt.cern.ch/jenkins/job/gh-teams)
 
@@ -556,30 +525,28 @@ This is to process bot commands for cmsdist comp branches
 
 **Upstream projects:**
 
-
 **Downstream projects:**
-
 
 **Sub-projects:**
 
-
 **Triggers from:** []
+
+**Periodic builds:** H 22 * * *
 
 ## [git-mirror-repository](https://cmssdt.cern.ch/jenkins/job/git-mirror-repository)
 
 **Description:** mirror one git repository
 
 **Upstream projects:**
-
 * [github-push-hook](#github-push-hook):
 
 **Downstream projects:**
 
-
 **Sub-projects:**
 
-
 **Triggers from:** []
+
+**Periodic builds:** Not periodically build
 
 ## [git-reference-cms-ib](https://cmssdt.cern.ch/jenkins/job/git-reference-cms-ib)
 
@@ -587,16 +554,15 @@ This is to process bot commands for cmsdist comp branches
 This is automatically triggered by "git push" to cmssw repo.
 
 **Upstream projects:**
-
 * [github-push-hook](#github-push-hook):
 
 **Downstream projects:**
 
-
 **Sub-projects:**
 
-
 **Triggers from:** []
+
+**Periodic builds:** Not periodically build
 
 ## [github-hooks](https://cmssdt.cern.ch/jenkins/job/github-hooks)
 
@@ -605,14 +571,13 @@ and then a jenkins job is triggered based on the information passed from the web
 
 **Upstream projects:**
 
-
 **Downstream projects:**
-
 
 **Sub-projects:**
 
-
 **Triggers from:** []
+
+**Periodic builds:** H 0 * * *
 
 ## [github-push-hook](https://cmssdt.cern.ch/jenkins/job/github-push-hook)
 
@@ -620,11 +585,9 @@ and then a jenkins job is triggered based on the information passed from the web
 This job is also triggered via github web hook. Please do not add/remove any parameters of this job otherwise github web hooks will not be able to triiger the job
 
 **Upstream projects:**
-
 * [github-webhook](#github-webhook):
 
 **Downstream projects:**
-
 * [auto-forward-ports](#auto-forward-ports):
 * [deploy-cms-repo](#deploy-cms-repo):
 * [git-mirror-repository](#git-mirror-repository):
@@ -632,7 +595,6 @@ This job is also triggered via github web hook. Please do not add/remove any par
 * [web-update-cmssdt-ib](#web-update-cmssdt-ib):
 
 **Sub-projects:**
-
 * [deploy-cms-repo](#deploy-cms-repo):
 * [auto-forward-ports](#auto-forward-ports):
 * [git-reference-cms-ib](#git-reference-cms-ib):
@@ -640,6 +602,8 @@ This job is also triggered via github web hook. Please do not add/remove any par
 * [web-update-cmssdt-ib](#web-update-cmssdt-ib):
 
 **Triggers from:** []
+
+**Periodic builds:** H */6 * * *
 
 ## [github-webhook](https://cmssdt.cern.ch/jenkins/job/github-webhook)
 
@@ -648,9 +612,7 @@ Also it runsevery 30mins to make sure any webhooks were not missed.
 
 **Upstream projects:**
 
-
 **Downstream projects:**
-
 * [cms-bot](#cms-bot):
 * [cms-prs-cache](#cms-prs-cache):
 * [comp-bot](#comp-bot):
@@ -658,7 +620,6 @@ Also it runsevery 30mins to make sure any webhooks were not missed.
 * [query-build-release-issues](#query-build-release-issues):
 
 **Sub-projects:**
-
 * [comp-bot](#comp-bot):
 * [github-push-hook](#github-push-hook):
 * [cms-prs-cache](#cms-prs-cache):
@@ -666,62 +627,61 @@ Also it runsevery 30mins to make sure any webhooks were not missed.
 * [cms-bot](#cms-bot):
 
 **Triggers from:** []
+
+**Periodic builds:** Not periodically build
 
 ## [HLT-Validation](https://cmssdt.cern.ch/jenkins/job/HLT-Validation)
 
 **Description:** Appends job's time out information into jenkins.log file.
 
 **Upstream projects:**
-
 * [schedule-additional-tests](#schedule-additional-tests):
 
 **Downstream projects:**
 
-
 **Sub-projects:**
 
-
 **Triggers from:** []
+
+**Periodic builds:** Not periodically build
 
 ## [ib-any-integration](https://cmssdt.cern.ch/jenkins/job/ib-any-integration)
 
 **Description:** Build a pull request
 
 **Upstream projects:**
-
 * [ib-schedule-pr-tests](#ib-schedule-pr-tests):
 
 **Downstream projects:**
-
 * [compare-root-files-short-matrix](#compare-root-files-short-matrix):
 * [run-igprof-pr](#run-igprof-pr):
 * [stop-ib-any-integration](#stop-ib-any-integration):
 
 **Sub-projects:**
-
 * [stop-ib-any-integration](#stop-ib-any-integration):
 * [compare-root-files-short-matrix](#compare-root-files-short-matrix):
 * [run-igprof-pr](#run-igprof-pr):
 
 **Triggers from:** []
 
+**Periodic builds:** Not periodically build
+
 ## [ib-build-logs](https://cmssdt.cern.ch/jenkins/job/ib-build-logs)
 
 **Description:** It is build periodically (H/30 * * * *). Runs on cmssdt. Projects to build: update-github-pages
 
 **Upstream projects:**
-
 * [build-any-ib](#build-any-ib):
 * [build-fwlite-ib](#build-fwlite-ib):
 
 **Downstream projects:**
-
 * [update-github-pages](#update-github-pages):
 
 **Sub-projects:**
 
-
 **Triggers from:** [u'build-fwlite-ib']
+
+**Periodic builds:** H/30 * * * *
 
 ## [ib-cache-to-eos](https://cmssdt.cern.ch/jenkins/job/ib-cache-to-eos)
 
@@ -729,16 +689,15 @@ Also it runsevery 30mins to make sure any webhooks were not missed.
 
 **Upstream projects:**
 
-
 **Downstream projects:**
-
 * [update-ibeos-cache](#update-ibeos-cache):
 
 **Sub-projects:**
-
 * [update-ibeos-cache](#update-ibeos-cache):
 
 **Triggers from:** []
+
+**Periodic builds:** H 10,22 * * *
 
 ## [ib-cleanup-installers](https://cmssdt.cern.ch/jenkins/job/ib-cleanup-installers)
 
@@ -746,228 +705,214 @@ Also it runsevery 30mins to make sure any webhooks were not missed.
 
 **Upstream projects:**
 
-
 **Downstream projects:**
-
 
 **Sub-projects:**
 
-
 **Triggers from:** []
+
+**Periodic builds:** H 22 * * *
 
 ## [ib-install-cvmfs](https://cmssdt.cern.ch/jenkins/job/ib-install-cvmfs)
 
 **Description:** This jobs install an IB on /cvmfs/cms-ib.cern.ch.
 
 **Upstream projects:**
-
 * [build-any-ib](#build-any-ib):
 * [ib-tag-and-schdule](#ib-tag-and-schdule):
 
 **Downstream projects:**
-
 * [ib-validation](#ib-validation):
 
 **Sub-projects:**
 
-
 **Triggers from:** []
+
+**Periodic builds:** Not periodically build
 
 ## [ib-run-addons](https://cmssdt.cern.ch/jenkins/job/ib-run-addons)
 
 **Description:** ---need-description---
 
 **Upstream projects:**
-
 * [ib-validation](#ib-validation):
 
 **Downstream projects:**
 
-
 **Sub-projects:**
 
-
 **Triggers from:** []
+
+**Periodic builds:** Not periodically build
 
 ## [ib-run-cfipython](https://cmssdt.cern.ch/jenkins/job/ib-run-cfipython)
 
 **Description:** This job gets the cfipython files for a cmssw release and push the changes to cms-sw/cmssw-cfipython repo.
 
 **Upstream projects:**
-
 * [schedule-additional-tests](#schedule-additional-tests):
 * [update-release-map](#update-release-map):
 
 **Downstream projects:**
 
-
 **Sub-projects:**
 
-
 **Triggers from:** []
+
+**Periodic builds:** Not periodically build
 
 ## [ib-run-check-headers](https://cmssdt.cern.ch/jenkins/job/ib-run-check-headers)
 
 **Description:** Check for missing headers and parse the log for all errors (clang modules)
 
 **Upstream projects:**
-
 * [schedule-additional-tests](#schedule-additional-tests):
 
 **Downstream projects:**
 
-
 **Sub-projects:**
 
-
 **Triggers from:** []
+
+**Periodic builds:** Not periodically build
 
 ## [ib-run-flawfinder](https://cmssdt.cern.ch/jenkins/job/ib-run-flawfinder)
 
 **Description:** ---need-description---
 
 **Upstream projects:**
-
 * [schedule-additional-tests](#schedule-additional-tests):
 
 **Downstream projects:**
 
-
 **Sub-projects:**
 
-
 **Triggers from:** []
+
+**Periodic builds:** Not periodically build
 
 ## [ib-run-igprof-mp](https://cmssdt.cern.ch/jenkins/job/ib-run-igprof-mp)
 
 **Description:** ---need-description---
 
 **Upstream projects:**
-
 * [schedule-additional-tests](#schedule-additional-tests):
 
 **Downstream projects:**
 
-
 **Sub-projects:**
 
-
 **Triggers from:** []
+
+**Periodic builds:** Not periodically build
 
 ## [ib-run-igprof-pp](https://cmssdt.cern.ch/jenkins/job/ib-run-igprof-pp)
 
 **Description:** ---need-description---
 
 **Upstream projects:**
-
 * [schedule-additional-tests](#schedule-additional-tests):
 
 **Downstream projects:**
 
-
 **Sub-projects:**
 
-
 **Triggers from:** []
+
+**Periodic builds:** Not periodically build
 
 ## [ib-run-iwyu](https://cmssdt.cern.ch/jenkins/job/ib-run-iwyu)
 
 **Description:** Runs iwyu logs parsing for each IB
 
 **Upstream projects:**
-
 * [schedule-additional-tests](#schedule-additional-tests):
 
 **Downstream projects:**
 
-
 **Sub-projects:**
 
-
 **Triggers from:** []
+
+**Periodic builds:** Not periodically build
 
 ## [ib-run-lizard](https://cmssdt.cern.ch/jenkins/job/ib-run-lizard)
 
 **Description:** ---need-description---
 
 **Upstream projects:**
-
 * [schedule-additional-tests](#schedule-additional-tests):
 
 **Downstream projects:**
 
-
 **Sub-projects:**
 
-
 **Triggers from:** []
+
+**Periodic builds:** Not periodically build
 
 ## [ib-run-material-budget](https://cmssdt.cern.ch/jenkins/job/ib-run-material-budget)
 
 **Description:** Runs Validation/Geometry/test/runP_Tracker_cfg.py and MaterialBudget.C for an IB
 
 **Upstream projects:**
-
 * [schedule-additional-tests](#schedule-additional-tests):
 
 **Downstream projects:**
-
 * [compare-material-budget](#compare-material-budget):
 
 **Sub-projects:**
 
-
 **Triggers from:** []
+
+**Periodic builds:** Not periodically build
 
 ## [ib-run-qa](https://cmssdt.cern.ch/jenkins/job/ib-run-qa)
 
 **Description:** ---need-description---
 
 **Upstream projects:**
-
 * [ib-validation](#ib-validation):
 
 **Downstream projects:**
 
-
 **Sub-projects:**
 
-
 **Triggers from:** []
+
+**Periodic builds:** Not periodically build
 
 ## [ib-run-relvals](https://cmssdt.cern.ch/jenkins/job/ib-run-relvals)
 
 **Description:** The job runs release validations, as validations are separated on pieces (1of6 2of6 etc)
 
 **Upstream projects:**
-
 * [ib-validation](#ib-validation):
 
 **Downstream projects:**
-
 * [process-relval-logs](#process-relval-logs):
 * [update-das-queries](#update-das-queries):
 
 **Sub-projects:**
 
-
 **Triggers from:** []
+
+**Periodic builds:** Not periodically build
 
 ## [ib-run-valgrind](https://cmssdt.cern.ch/jenkins/job/ib-run-valgrind)
 
 **Description:** This job runs valgrind tool for selected IBs when build IB job is complete.   
 
 **Upstream projects:**
-
 * [schedule-additional-tests](#schedule-additional-tests):
 
 **Downstream projects:**
 
-
 **Sub-projects:**
 
-
 **Triggers from:** []
+
+**Periodic builds:** Not periodically build
 
 ## [ib-schedule](https://cmssdt.cern.ch/jenkins/job/ib-schedule)
 
@@ -977,50 +922,51 @@ This was created to avoid the issue with <a href="https://wiki.jenkins.io/displa
 
 **Upstream projects:**
 
-
 **Downstream projects:**
-
 * [ib-tag-and-schdule](#ib-tag-and-schdule):
 
 **Sub-projects:**
-
 * [ib-tag-and-schdule](#ib-tag-and-schdule):
 
 **Triggers from:** []
+
+**Periodic builds:** #We do not run SAT 23H IB instead we start a special SUN 00h00 IB.
+5   11  * * *
+5   23  * *  0,1,2,3,4,5
+5     0  * *  0
+
 
 ## [ib-schedule-pr-tests](https://cmssdt.cern.ch/jenkins/job/ib-schedule-pr-tests)
 
 **Description:** Build a pull request
 
 **Upstream projects:**
-
 * [cms-bot](#cms-bot):
 
 **Downstream projects:**
-
 * [ib-any-integration](#ib-any-integration):
 
 **Sub-projects:**
-
 * [ib-any-integration](#ib-any-integration):
 
 **Triggers from:** []
+
+**Periodic builds:** Not periodically build
 
 ## [ib-static-checks](https://cmssdt.cern.ch/jenkins/job/ib-static-checks)
 
 **Description:** Runs a few tests only for the IB, for comparison with those ran by the pull request.
 
 **Upstream projects:**
-
 * [schedule-additional-tests](#schedule-additional-tests):
 
 **Downstream projects:**
 
-
 **Sub-projects:**
 
-
 **Triggers from:** []
+
+**Periodic builds:** Not periodically build
 
 ## [ib-tag-and-schdule](https://cmssdt.cern.ch/jenkins/job/ib-tag-and-schdule)
 
@@ -1033,47 +979,45 @@ For Sunday's 00h IBs, it also resets the CMSREP weekly repositories by building 
 then triggers 'ib-install-cvmfs' sub-job to get the new cms.weekN deployed on the /cvmfs/cms-ib.cern.ch
 
 **Upstream projects:**
-
 * [ib-schedule](#ib-schedule):
 
 **Downstream projects:**
-
 * [build-any-ib](#build-any-ib):
 * [ib-install-cvmfs](#ib-install-cvmfs):
 * [lxr-checkout-version](#lxr-checkout-version):
 
 **Sub-projects:**
-
 * [build-any-ib](#build-any-ib):
 * [lxr-checkout-version](#lxr-checkout-version):
 * [ib-install-cvmfs](#ib-install-cvmfs):
 
 **Triggers from:** []
+
+**Periodic builds:** Not periodically build
 
 ## [ib-validation](https://cmssdt.cern.ch/jenkins/job/ib-validation)
 
 **Description:** Validates the integration builds.
 
 **Upstream projects:**
-
 * [ib-cvmfs-publish](#ib-cvmfs-publish):
 * [ib-install-cvmfs](#ib-install-cvmfs):
 
 **Downstream projects:**
-
 * [ib-run-addons](#ib-run-addons):
 * [ib-run-qa](#ib-run-qa):
 * [ib-run-relvals](#ib-run-relvals):
 * [schedule-additional-tests](#schedule-additional-tests):
 
 **Sub-projects:**
-
 * [ib-run-addons](#ib-run-addons):
 * [ib-run-qa ](#ib-run-qa ):
 * [ib-run-relvals ](#ib-run-relvals ):
 * [schedule-additional-tests](#schedule-additional-tests):
 
 **Triggers from:** []
+
+**Periodic builds:** Not periodically build
 
 ## [import-stitched-tag](https://cmssdt.cern.ch/jenkins/job/import-stitched-tag)
 
@@ -1082,30 +1026,28 @@ CMSSW_* tag is rename to STITCHED_*
 
 **Upstream projects:**
 
-
 **Downstream projects:**
-
 
 **Sub-projects:**
 
-
 **Triggers from:** []
+
+**Periodic builds:** Not periodically build
 
 ## [kill-build-release](https://cmssdt.cern.ch/jenkins/job/kill-build-release)
 
 **Description:** Aborts and kills a release building process. 
 
 **Upstream projects:**
-
 * [abort-release](#abort-release):
 
 **Downstream projects:**
 
-
 **Sub-projects:**
 
-
 **Triggers from:** []
+
+**Periodic builds:** Not periodically build
 
 ## [kill-hanging-jobs](https://cmssdt.cern.ch/jenkins/job/kill-hanging-jobs)
 
@@ -1113,14 +1055,13 @@ CMSSW_* tag is rename to STITCHED_*
 
 **Upstream projects:**
 
-
 **Downstream projects:**
-
 
 **Sub-projects:**
 
-
 **Triggers from:** []
+
+**Periodic builds:** H H/8 * * *
 
 ## [lfn-to-ibeos](https://cmssdt.cern.ch/jenkins/job/lfn-to-ibeos)
 
@@ -1128,50 +1069,47 @@ CMSSW_* tag is rename to STITCHED_*
 
 **Upstream projects:**
 
-
 **Downstream projects:**
-
 * [update-ibeos-cache](#update-ibeos-cache):
 
 **Sub-projects:**
-
 * [update-ibeos-cache](#update-ibeos-cache):
 
 **Triggers from:** []
+
+**Periodic builds:** Not periodically build
 
 ## [lxr-checkout-version](https://cmssdt.cern.ch/jenkins/job/lxr-checkout-version)
 
 **Description:** None
 
 **Upstream projects:**
-
 * [ib-tag-and-schdule](#ib-tag-and-schdule):
 
 **Downstream projects:**
-
 * [lxr-generate-index](#lxr-generate-index):
 
 **Sub-projects:**
-
 * [lxr-generate-index](#lxr-generate-index):
 
 **Triggers from:** []
+
+**Periodic builds:** Not periodically build
 
 ## [lxr-generate-index](https://cmssdt.cern.ch/jenkins/job/lxr-generate-index)
 
 **Description:** None
 
 **Upstream projects:**
-
 * [lxr-checkout-version](#lxr-checkout-version):
 
 **Downstream projects:**
 
-
 **Sub-projects:**
 
-
 **Triggers from:** []
+
+**Periodic builds:** Not periodically build
 
 ## [lxr-remove-index](https://cmssdt.cern.ch/jenkins/job/lxr-remove-index)
 
@@ -1179,30 +1117,29 @@ CMSSW_* tag is rename to STITCHED_*
 
 **Upstream projects:**
 
-
 **Downstream projects:**
-
 
 **Sub-projects:**
 
-
 **Triggers from:** []
+
+**Periodic builds:** H 5  * * *
+
 
 ## [lxr-run-container](https://cmssdt.cern.ch/jenkins/job/lxr-run-container)
 
 **Description:** None
 
 **Upstream projects:**
-
 * [lxr-check](#lxr-check):
 
 **Downstream projects:**
 
-
 **Sub-projects:**
 
-
 **Triggers from:** []
+
+**Periodic builds:** H * * * *
 
 ## [material-budget-ref](https://cmssdt.cern.ch/jenkins/job/material-budget-ref)
 
@@ -1210,14 +1147,13 @@ CMSSW_* tag is rename to STITCHED_*
 
 **Upstream projects:**
 
-
 **Downstream projects:**
-
 
 **Sub-projects:**
 
-
 **Triggers from:** []
+
+**Periodic builds:** Not periodically build
 
 ## [mirror-cmsrep](https://cmssdt.cern.ch/jenkins/job/mirror-cmsrep)
 
@@ -1225,14 +1161,13 @@ CMSSW_* tag is rename to STITCHED_*
 
 **Upstream projects:**
 
-
 **Downstream projects:**
-
 
 **Sub-projects:**
 
-
 **Triggers from:** []
+
+**Periodic builds:** Not periodically build
 
 ## [monitor-openstack-vms](https://cmssdt.cern.ch/jenkins/job/monitor-openstack-vms)
 
@@ -1240,14 +1175,13 @@ CMSSW_* tag is rename to STITCHED_*
 
 **Upstream projects:**
 
-
 **Downstream projects:**
-
 
 **Sub-projects:**
 
-
 **Triggers from:** []
+
+**Periodic builds:** @hourly
 
 ## [process-deprecate-releases](https://cmssdt.cern.ch/jenkins/job/process-deprecate-releases)
 
@@ -1255,44 +1189,40 @@ CMSSW_* tag is rename to STITCHED_*
 
 **Upstream projects:**
 
-
 **Downstream projects:**
-
 
 **Sub-projects:**
 
-
 **Triggers from:** []
+
+**Periodic builds:** Not periodically build
 
 ## [process-relval-logs](https://cmssdt.cern.ch/jenkins/job/process-relval-logs)
 
 **Description:** This job process partial logs of Relvals and place files accordingly. 
 
 **Upstream projects:**
-
 * [ib-run-relvals](#ib-run-relvals):
 * [test-kerberos-within-docker](#test-kerberos-within-docker):
 * [test-relvals-with-krb](#test-relvals-with-krb):
 
 **Downstream projects:**
-
 * [update-github-pages](#update-github-pages):
 
 **Sub-projects:**
 
-
 **Triggers from:** []
+
+**Periodic builds:** H/20 * * * *
 
 ## [query-build-release-issues](https://cmssdt.cern.ch/jenkins/job/query-build-release-issues)
 
 **Description:** ---need-description---
 
 **Upstream projects:**
-
 * [github-webhook](#github-webhook):
 
 **Downstream projects:**
-
 * [abort-release](#abort-release):
 * [build-release](#build-release):
 * [cleanup-auto-build](#cleanup-auto-build):
@@ -1300,7 +1230,6 @@ CMSSW_* tag is rename to STITCHED_*
 * [upload-release-setup](#upload-release-setup):
 
 **Sub-projects:**
-
 * [build-release](#build-release):
 * [upload-release-setup](#upload-release-setup):
 * [cleanup-auto-build](#cleanup-auto-build):
@@ -1308,56 +1237,55 @@ CMSSW_* tag is rename to STITCHED_*
 * [abort-release](#abort-release):
 
 **Triggers from:** []
+
+**Periodic builds:** H/15 * * * *
 
 ## [refresh-cmssdt](https://cmssdt.cern.ch/jenkins/job/refresh-cmssdt)
 
 **Description:** This job updates the cmssw IB page on cmssdt.
 
 **Upstream projects:**
-
 * [update-github-pages](#update-github-pages):
 
 **Downstream projects:**
 
-
 **Sub-projects:**
 
-
 **Triggers from:** [u'update-github-pages']
+
+**Periodic builds:** Not periodically build
 
 ## [release-produce-changelog](https://cmssdt.cern.ch/jenkins/job/release-produce-changelog)
 
 **Description:** ---need-description---
 
 **Upstream projects:**
-
 * [query-build-release-issues](#query-build-release-issues):
 
 **Downstream projects:**
-
 * [update-release-notes-collection](#update-release-notes-collection):
 
 **Sub-projects:**
-
 * [update-release-notes-collection](#update-release-notes-collection):
 
 **Triggers from:** []
+
+**Periodic builds:** Not periodically build
 
 ## [run-igprof-pr](https://cmssdt.cern.ch/jenkins/job/run-igprof-pr)
 
 **Description:** ---need-description---
 
 **Upstream projects:**
-
 * [ib-any-integration](#ib-any-integration):
 
 **Downstream projects:**
 
-
 **Sub-projects:**
 
-
 **Triggers from:** []
+
+**Periodic builds:** Not periodically build
 
 ## [run-pr-code-ckecks](https://cmssdt.cern.ch/jenkins/job/run-pr-code-ckecks)
 
@@ -1367,18 +1295,17 @@ In a CMSSW dev area, it runs
   scram build code-checks
 
 **Upstream projects:**
-
 * [cms-bot](#cms-bot):
 
 **Downstream projects:**
-
 * [stop-ib-any-integration](#stop-ib-any-integration):
 
 **Sub-projects:**
-
 * [stop-ib-any-integration](#stop-ib-any-integration):
 
 **Triggers from:** []
+
+**Periodic builds:** Not periodically build
 
 ## [run-repo-size-check](https://cmssdt.cern.ch/jenkins/job/run-repo-size-check)
 
@@ -1386,25 +1313,22 @@ In a CMSSW dev area, it runs
 
 **Upstream projects:**
 
-
 **Downstream projects:**
-
 
 **Sub-projects:**
 
-
 **Triggers from:** []
+
+**Periodic builds:** Not periodically build
 
 ## [schedule-additional-tests](https://cmssdt.cern.ch/jenkins/job/schedule-additional-tests)
 
 **Description:** ---need-description---
 
 **Upstream projects:**
-
 * [ib-validation](#ib-validation):
 
 **Downstream projects:**
-
 * [HLT-Validation](#HLT-Validation):
 * [baseline-ib-results](#baseline-ib-results):
 * [ib-run-cfipython](#ib-run-cfipython):
@@ -1420,7 +1344,6 @@ In a CMSSW dev area, it runs
 * [ib-static-checks](#ib-static-checks):
 
 **Sub-projects:**
-
 * [baseline-ib-results](#baseline-ib-results):
 * [HLT-Validation](#HLT-Validation):
 * [ib-static-checks](#ib-static-checks):
@@ -1436,58 +1359,57 @@ In a CMSSW dev area, it runs
 
 **Triggers from:** []
 
+**Periodic builds:** Not periodically build
+
 ## [slaves-checks](https://cmssdt.cern.ch/jenkins/job/slaves-checks)
 
 **Description:** None
 
 **Upstream projects:**
 
-
 **Downstream projects:**
-
 * [test-docker](#test-docker):
 * [workspace-cleanup-slave](#workspace-cleanup-slave):
 
 **Sub-projects:**
-
 * [workspace-cleanup-slave](#workspace-cleanup-slave):
 * [test-docker ](#test-docker ):
 
 **Triggers from:** []
+
+**Periodic builds:** H 7,19 * * *
 
 ## [stop-ib-any-integration](https://cmssdt.cern.ch/jenkins/job/stop-ib-any-integration)
 
 **Description:** Kill a running 
 
 **Upstream projects:**
-
 * [cms-bot](#cms-bot):
 * [ib-any-integration](#ib-any-integration):
 * [run-pr-code-ckecks](#run-pr-code-ckecks):
 
 **Downstream projects:**
 
-
 **Sub-projects:**
 
-
 **Triggers from:** []
+
+**Periodic builds:** Not periodically build
 
 ## [summary-of-merged-prs](https://cmssdt.cern.ch/jenkins/job/summary-of-merged-prs)
 
 **Description:** ---need-description---
 
 **Upstream projects:**
-
 * [update-github-pages](#update-github-pages):
 
 **Downstream projects:**
 
-
 **Sub-projects:**
 
-
 **Triggers from:** [u'update-github-pages']
+
+**Periodic builds:** Not periodically build
 
 ## [test-build-periodic](https://cmssdt.cern.ch/jenkins/job/test-build-periodic)
 
@@ -1495,30 +1417,28 @@ In a CMSSW dev area, it runs
 
 **Upstream projects:**
 
-
 **Downstream projects:**
-
 
 **Sub-projects:**
 
-
 **Triggers from:** []
+
+**Periodic builds:** H/15 * * * *
 
 ## [test-docker](https://cmssdt.cern.ch/jenkins/job/test-docker)
 
 **Description:** None
 
 **Upstream projects:**
-
 * [slaves-checks](#slaves-checks):
 
 **Downstream projects:**
 
-
 **Sub-projects:**
 
-
 **Triggers from:** []
+
+**Periodic builds:** Not periodically build
 
 ## [test-kerberos-within-docker](https://cmssdt.cern.ch/jenkins/job/test-kerberos-within-docker)
 
@@ -1526,16 +1446,15 @@ In a CMSSW dev area, it runs
 
 **Upstream projects:**
 
-
 **Downstream projects:**
-
 * [process-relval-logs](#process-relval-logs):
 * [update-das-queries](#update-das-queries):
 
 **Sub-projects:**
 
-
 **Triggers from:** []
+
+**Periodic builds:** Not periodically build
 
 ## [test-relvals-with-krb](https://cmssdt.cern.ch/jenkins/job/test-relvals-with-krb)
 
@@ -1543,16 +1462,15 @@ In a CMSSW dev area, it runs
 
 **Upstream projects:**
 
-
 **Downstream projects:**
-
 * [process-relval-logs](#process-relval-logs):
 * [update-das-queries](#update-das-queries):
 
 **Sub-projects:**
 
-
 **Triggers from:** []
+
+**Periodic builds:** Not periodically build
 
 ## [test-scram](https://cmssdt.cern.ch/jenkins/job/test-scram)
 
@@ -1560,14 +1478,13 @@ In a CMSSW dev area, it runs
 
 **Upstream projects:**
 
-
 **Downstream projects:**
-
 
 **Sub-projects:**
 
-
 **Triggers from:** []
+
+**Periodic builds:** Not periodically build
 
 ## [tutorial-jenkins](https://cmssdt.cern.ch/jenkins/job/tutorial-jenkins)
 
@@ -1575,14 +1492,13 @@ In a CMSSW dev area, it runs
 
 **Upstream projects:**
 
-
 **Downstream projects:**
-
 
 **Sub-projects:**
 
-
 **Triggers from:** []
+
+**Periodic builds:** Not periodically build
 
 ## [update-categories-page](https://cmssdt.cern.ch/jenkins/job/update-categories-page)
 
@@ -1590,52 +1506,49 @@ In a CMSSW dev area, it runs
 
 **Upstream projects:**
 
-
 **Downstream projects:**
-
 
 **Sub-projects:**
 
-
 **Triggers from:** []
+
+**Periodic builds:** H 0 * * *
 
 ## [update-das-queries](https://cmssdt.cern.ch/jenkins/job/update-das-queries)
 
 **Description:** Job to run das client and cache the results in github to be used by IBs.
 
 **Upstream projects:**
-
 * [ib-run-relvals](#ib-run-relvals):
 * [test-kerberos-within-docker](#test-kerberos-within-docker):
 * [test-relvals-with-krb](#test-relvals-with-krb):
 
 **Downstream projects:**
 
-
 **Sub-projects:**
 
-
 **Triggers from:** []
+
+**Periodic builds:** Not periodically build
 
 ## [update-github-pages](https://cmssdt.cern.ch/jenkins/job/update-github-pages)
 
 **Description:** This job update contents of the "data" directory in cms-sw.github.io
 
 **Upstream projects:**
-
 * [cleanup-cms-sw-io-history](#cleanup-cms-sw-io-history):
 * [ib-build-logs](#ib-build-logs):
 * [process-relval-logs](#process-relval-logs):
 
 **Downstream projects:**
-
 * [refresh-cmssdt](#refresh-cmssdt):
 * [summary-of-merged-prs](#summary-of-merged-prs):
 
 **Sub-projects:**
 
-
 **Triggers from:** [u'cleanup-cms-sw-io-history', u'ib-build-logs']
+
+**Periodic builds:** Not periodically build
 
 ## [update-github-webhook-token](https://cmssdt.cern.ch/jenkins/job/update-github-webhook-token)
 
@@ -1643,32 +1556,30 @@ In a CMSSW dev area, it runs
 
 **Upstream projects:**
 
-
 **Downstream projects:**
-
 
 **Sub-projects:**
 
-
 **Triggers from:** []
+
+**Periodic builds:** Not periodically build
 
 ## [update-ibeos-cache](https://cmssdt.cern.ch/jenkins/job/update-ibeos-cache)
 
 **Description:** Job to run das client and cache the results in github to be used by IBs.
 
 **Upstream projects:**
-
 * [dataset-to-ibeos](#dataset-to-ibeos):
 * [ib-cache-to-eos](#ib-cache-to-eos):
 * [lfn-to-ibeos](#lfn-to-ibeos):
 
 **Downstream projects:**
 
-
 **Sub-projects:**
 
-
 **Triggers from:** []
+
+**Periodic builds:** H */6 * * *
 
 ## [update-release-map](https://cmssdt.cern.ch/jenkins/job/update-release-map)
 
@@ -1676,71 +1587,67 @@ In a CMSSW dev area, it runs
 CVMFS installation is started once a release is available in this file.
 
 **Upstream projects:**
-
 * [upload-release](#upload-release):
 
 **Downstream projects:**
-
 * [build-fwlite](#build-fwlite):
 * [cmssw-doxygen](#cmssw-doxygen):
 * [ib-run-cfipython](#ib-run-cfipython):
 
 **Sub-projects:**
 
-
 **Triggers from:** []
+
+**Periodic builds:** Not periodically build
 
 ## [update-release-notes-collection](https://cmssdt.cern.ch/jenkins/job/update-release-notes-collection)
 
 **Description:** None
 
 **Upstream projects:**
-
 * [release-produce-changelog](#release-produce-changelog):
 
 **Downstream projects:**
 
-
 **Sub-projects:**
 
-
 **Triggers from:** []
+
+**Periodic builds:** Not periodically build
 
 ## [upload-release](https://cmssdt.cern.ch/jenkins/job/upload-release)
 
 **Description:** This job uploads a release on cmsrep server once approved by release manager.
 
 **Upstream projects:**
-
 * [upload-release-setup](#upload-release-setup):
 
 **Downstream projects:**
-
 * [cmspkg-clone](#cmspkg-clone):
 * [release-deploy-afs](#release-deploy-afs):
 * [update-release-map](#update-release-map):
 
 **Sub-projects:**
 
-
 **Triggers from:** []
+
+**Periodic builds:** Not periodically build
 
 ## [upload-release-setup](https://cmssdt.cern.ch/jenkins/job/upload-release-setup)
 
 **Description:** This job uploads a release on cmsrep server once approved by release manager.
 
 **Upstream projects:**
-
 * [query-build-release-issues](#query-build-release-issues):
 
 **Downstream projects:**
-
 * [upload-release](#upload-release):
 
 **Sub-projects:**
 
-
 **Triggers from:** []
+
+**Periodic builds:** Not periodically build
 
 ## [web-summary-data](https://cmssdt.cern.ch/jenkins/job/web-summary-data)
 
@@ -1748,30 +1655,28 @@ CVMFS installation is started once a release is available in this file.
 
 **Upstream projects:**
 
-
 **Downstream projects:**
-
 
 **Sub-projects:**
 
-
 **Triggers from:** []
+
+**Periodic builds:** Not periodically build
 
 ## [web-update-cmssdt-ib](https://cmssdt.cern.ch/jenkins/job/web-update-cmssdt-ib)
 
 **Description:** Job used to transpile cmssdt ib page from ECMAscript6 to regular javascript and bush changes to github.
 
 **Upstream projects:**
-
 * [github-push-hook](#github-push-hook):
 
 **Downstream projects:**
 
-
 **Sub-projects:**
 
-
 **Triggers from:** []
+
+**Periodic builds:** Not periodically build
 
 ## [web-update-logReader](https://cmssdt.cern.ch/jenkins/job/web-update-logReader)
 
@@ -1779,14 +1684,13 @@ CVMFS installation is started once a release is available in this file.
 
 **Upstream projects:**
 
-
 **Downstream projects:**
-
 
 **Sub-projects:**
 
-
 **Triggers from:** []
+
+**Periodic builds:** Not periodically build
 
 ## [web-update-SDT](https://cmssdt.cern.ch/jenkins/job/web-update-SDT)
 
@@ -1794,28 +1698,26 @@ CVMFS installation is started once a release is available in this file.
 
 **Upstream projects:**
 
-
 **Downstream projects:**
-
 
 **Sub-projects:**
 
-
 **Triggers from:** []
+
+**Periodic builds:** Not periodically build
 
 ## [workspace-cleanup-slave](https://cmssdt.cern.ch/jenkins/job/workspace-cleanup-slave)
 
 **Description:** None
 
 **Upstream projects:**
-
 * [slaves-checks](#slaves-checks):
 
 **Downstream projects:**
 
-
 **Sub-projects:**
 
-
 **Triggers from:** []
+
+**Periodic builds:** Not periodically build
 

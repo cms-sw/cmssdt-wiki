@@ -14,14 +14,13 @@
 
 **Upstream projects:**
 
-
 **Downstream projects:**
-
 
 **Sub-projects:**
 
-
 **Triggers from:** []
+
+**Periodic builds:** Not periodically build
 
 ## [jenkins-backup](https://cmssdt.cern.ch/jenkins/job/jenkins-backup)
 
@@ -30,14 +29,13 @@ Backups jenkins scripts on https://github.com/cms-sw/jenkins-backup.git
 
 **Upstream projects:**
 
-
 **Downstream projects:**
-
 
 **Sub-projects:**
 
-
 **Triggers from:** []
+
+**Periodic builds:** H/5 * * * *
 
 ## [jenkins-disable-jobs](https://cmssdt.cern.ch/jenkins/job/jenkins-disable-jobs)
 
@@ -48,14 +46,13 @@ would enable all cmsbuild machines found
 
 **Upstream projects:**
 
-
 **Downstream projects:**
-
 
 **Sub-projects:**
 
-
 **Triggers from:** []
+
+**Periodic builds:** Not periodically build
 
 ## [jenkins-disable-nodes](https://cmssdt.cern.ch/jenkins/job/jenkins-disable-nodes)
 
@@ -63,14 +60,13 @@ would enable all cmsbuild machines found
 
 **Upstream projects:**
 
-
 **Downstream projects:**
-
 
 **Sub-projects:**
 
-
 **Triggers from:** []
+
+**Periodic builds:** Not periodically build
 
 ## [jenkins-elasticsearch-monitor](https://cmssdt.cern.ch/jenkins/job/jenkins-elasticsearch-monitor)
 
@@ -80,30 +76,28 @@ would enable all cmsbuild machines found
 
 **Upstream projects:**
 
-
 **Downstream projects:**
-
 
 **Sub-projects:**
 
-
 **Triggers from:** []
+
+**Periodic builds:** H/5 * * * *
 
 ## [jenkins-enable-jobs](https://cmssdt.cern.ch/jenkins/job/jenkins-enable-jobs)
 
 **Description:** Enable all Jenkins projects based on the wildcard filter.
 
 **Upstream projects:**
-
 * [jenkins-initialize](#jenkins-initialize):
 
 **Downstream projects:**
 
-
 **Sub-projects:**
 
-
 **Triggers from:** []
+
+**Periodic builds:** Not periodically build
 
 ## [jenkins-enable-nodes](https://cmssdt.cern.ch/jenkins/job/jenkins-enable-nodes)
 
@@ -114,14 +108,13 @@ would enable all cmsbuild machines found
 
 **Upstream projects:**
 
-
 **Downstream projects:**
-
 
 **Sub-projects:**
 
-
 **Triggers from:** []
+
+**Periodic builds:** Not periodically build
 
 ## [jenkins-initialize](https://cmssdt.cern.ch/jenkins/job/jenkins-initialize)
 
@@ -130,37 +123,35 @@ This runs some sub-projects to check if basic functionality of jenkins is workin
 
 **Upstream projects:**
 
-
 **Downstream projects:**
-
 * [jenkins-enable-jobs](#jenkins-enable-jobs):
 * [jenkins-installation-cli-test](#jenkins-installation-cli-test):
 * [jenkins-installation-trigger-test](#jenkins-installation-trigger-test):
 
 **Sub-projects:**
-
 * [jenkins-enable-jobs](#jenkins-enable-jobs):
 * [jenkins-installation-trigger-test](#jenkins-installation-trigger-test):
 * [jenkins-installation-trigger-test](#jenkins-installation-trigger-test):
 * [jenkins-installation-trigger-test](#jenkins-installation-trigger-test):
 
 **Triggers from:** []
+
+**Periodic builds:** H H * * *
 
 ## [jenkins-installation-cli-test](https://cmssdt.cern.ch/jenkins/job/jenkins-installation-cli-test)
 
 **Description:** This is Jenkins installation tests project. It tests if various Jenkins Command-line interface service are working.
 
 **Upstream projects:**
-
 * [jenkins-initialize](#jenkins-initialize):
 
 **Downstream projects:**
 
-
 **Sub-projects:**
 
-
 **Triggers from:** []
+
+**Periodic builds:** Not periodically build
 
 ## [jenkins-installation-trigger-cli](https://cmssdt.cern.ch/jenkins/job/jenkins-installation-trigger-cli)
 
@@ -168,30 +159,28 @@ This runs some sub-projects to check if basic functionality of jenkins is workin
 
 **Upstream projects:**
 
-
 **Downstream projects:**
-
 
 **Sub-projects:**
 
-
 **Triggers from:** []
+
+**Periodic builds:** Not periodically build
 
 ## [jenkins-installation-trigger-test](https://cmssdt.cern.ch/jenkins/job/jenkins-installation-trigger-test)
 
 **Description:** This is Jenkins installation test project. This tests the triggering of a sub-project.
 
 **Upstream projects:**
-
 * [jenkins-initialize](#jenkins-initialize):
 
 **Downstream projects:**
 
-
 **Sub-projects:**
 
-
 **Triggers from:** []
+
+**Periodic builds:** Not periodically build
 
 ## [jenkins-projects-report](https://cmssdt.cern.ch/jenkins/job/jenkins-projects-report)
 
@@ -203,14 +192,13 @@ display it in html form. The current page you are viewing is generated and updat
 
 **Upstream projects:**
 
-
 **Downstream projects:**
-
 
 **Sub-projects:**
 
-
 **Triggers from:** []
+
+**Periodic builds:** H * * * *
 
 ## [jenkins-projects-wiki-update](https://cmssdt.cern.ch/jenkins/job/jenkins-projects-wiki-update)
 
@@ -221,14 +209,13 @@ display it in markdown form. It is later imported to CMSSDT wiki.
 
 **Upstream projects:**
 
-
 **Downstream projects:**
-
 
 **Sub-projects:**
 
-
 **Triggers from:** []
+
+**Periodic builds:** H * * * *
 
 ## [jenkins-restart-slaves](https://cmssdt.cern.ch/jenkins/job/jenkins-restart-slaves)
 
@@ -237,14 +224,13 @@ display it in markdown form. It is later imported to CMSSDT wiki.
 
 **Upstream projects:**
 
-
 **Downstream projects:**
-
 
 **Sub-projects:**
 
-
 **Triggers from:** []
+
+**Periodic builds:** Not periodically build
 
 ## [jenkins-test-job1](https://cmssdt.cern.ch/jenkins/job/jenkins-test-job1)
 
@@ -252,14 +238,13 @@ display it in markdown form. It is later imported to CMSSDT wiki.
 
 **Upstream projects:**
 
-
 **Downstream projects:**
-
 
 **Sub-projects:**
 
-
 **Triggers from:** []
+
+**Periodic builds:** Not periodically build
 
 ## [jenkins-test-job2](https://cmssdt.cern.ch/jenkins/job/jenkins-test-job2)
 
@@ -267,14 +252,13 @@ display it in markdown form. It is later imported to CMSSDT wiki.
 
 **Upstream projects:**
 
-
 **Downstream projects:**
-
 
 **Sub-projects:**
 
-
 **Triggers from:** []
+
+**Periodic builds:** Not periodically build
 
 ## [jenkins-test-slave](https://cmssdt.cern.ch/jenkins/job/jenkins-test-slave)
 
@@ -282,16 +266,15 @@ display it in markdown form. It is later imported to CMSSDT wiki.
 between Jenkins Master/slave  and slave and various services are working.
 
 **Upstream projects:**
-
 * [jenkins-test-slaves](#jenkins-test-slaves):
 
 **Downstream projects:**
 
-
 **Sub-projects:**
 
-
 **Triggers from:** []
+
+**Periodic builds:** Not periodically build
 
 ## [jenkins-test-slaves](https://cmssdt.cern.ch/jenkins/job/jenkins-test-slaves)
 
@@ -299,14 +282,13 @@ between Jenkins Master/slave  and slave and various services are working.
 
 **Upstream projects:**
 
-
 **Downstream projects:**
-
 * [jenkins-test-slave](#jenkins-test-slave):
 
 **Sub-projects:**
-
 * [jenkins-test-slave](#jenkins-test-slave):
 
 **Triggers from:** []
+
+**Periodic builds:** H H/8 * * *
 

@@ -13,16 +13,15 @@
 **Description:** This job deletes the relsease build areas after three days.
 
 **Upstream projects:**
-
 * [query-build-release-issues](#query-build-release-issues):
 
 **Downstream projects:**
 
-
 **Sub-projects:**
 
-
 **Triggers from:** []
+
+**Periodic builds:** Not periodically build
 
 ## [cleanup-cms-sw-io-history](https://cmssdt.cern.ch/jenkins/job/cleanup-cms-sw-io-history)
 
@@ -31,15 +30,14 @@
 
 **Upstream projects:**
 
-
 **Downstream projects:**
-
 * [update-github-pages](#update-github-pages):
 
 **Sub-projects:**
 
-
 **Triggers from:** []
+
+**Periodic builds:** H 1 * * 0
 
 ## [cleanup-cmssdt](https://cmssdt.cern.ch/jenkins/job/cleanup-cmssdt)
 
@@ -47,14 +45,13 @@
 
 **Upstream projects:**
 
-
 **Downstream projects:**
-
 
 **Sub-projects:**
 
-
 **Triggers from:** []
+
+**Periodic builds:** H 0 * * *
 
 ## [cleanup-tags](https://cmssdt.cern.ch/jenkins/job/cleanup-tags)
 
@@ -63,47 +60,44 @@
 
 **Upstream projects:**
 
-
 **Downstream projects:**
-
 
 **Sub-projects:**
 
-
 **Triggers from:** []
+
+**Periodic builds:** H 0 * * *
 
 ## [cmspkg-clone](https://cmssdt.cern.ch/jenkins/job/cmspkg-clone)
 
 **Description:** None
 
 **Upstream projects:**
-
 * [build-any-ib](#build-any-ib):
 * [upload-release](#upload-release):
 
 **Downstream projects:**
 
-
 **Sub-projects:**
 
-
 **Triggers from:** []
+
+**Periodic builds:** H 21 * * *
 
 ## [deploy-cms-repo](https://cmssdt.cern.ch/jenkins/job/deploy-cms-repo)
 
 **Description:** Updates cms-bot clone on Jenkins master
 
 **Upstream projects:**
-
 * [github-push-hook](#github-push-hook):
 
 **Downstream projects:**
 
-
 **Sub-projects:**
 
-
 **Triggers from:** []
+
+**Periodic builds:** Not periodically build
 
 ## [deploy-cmsdoxygen](https://cmssdt.cern.ch/jenkins/job/deploy-cmsdoxygen)
 
@@ -111,14 +105,13 @@
 
 **Upstream projects:**
 
-
 **Downstream projects:**
-
 
 **Sub-projects:**
 
-
 **Triggers from:** []
+
+**Periodic builds:** Not periodically build
 
 ## [gh-teams](https://cmssdt.cern.ch/jenkins/job/gh-teams)
 
@@ -126,30 +119,28 @@
 
 **Upstream projects:**
 
-
 **Downstream projects:**
-
 
 **Sub-projects:**
 
-
 **Triggers from:** []
+
+**Periodic builds:** H 22 * * *
 
 ## [git-mirror-repository](https://cmssdt.cern.ch/jenkins/job/git-mirror-repository)
 
 **Description:** mirror one git repository
 
 **Upstream projects:**
-
 * [github-push-hook](#github-push-hook):
 
 **Downstream projects:**
 
-
 **Sub-projects:**
 
-
 **Triggers from:** []
+
+**Periodic builds:** Not periodically build
 
 ## [git-reference-cms-ib](https://cmssdt.cern.ch/jenkins/job/git-reference-cms-ib)
 
@@ -157,16 +148,15 @@
 This is automatically triggered by "git push" to cmssw repo.
 
 **Upstream projects:**
-
 * [github-push-hook](#github-push-hook):
 
 **Downstream projects:**
 
-
 **Sub-projects:**
 
-
 **Triggers from:** []
+
+**Periodic builds:** Not periodically build
 
 ## [github-hooks](https://cmssdt.cern.ch/jenkins/job/github-hooks)
 
@@ -175,14 +165,13 @@ and then a jenkins job is triggered based on the information passed from the web
 
 **Upstream projects:**
 
-
 **Downstream projects:**
-
 
 **Sub-projects:**
 
-
 **Triggers from:** []
+
+**Periodic builds:** H 0 * * *
 
 ## [github-push-hook](https://cmssdt.cern.ch/jenkins/job/github-push-hook)
 
@@ -190,11 +179,9 @@ and then a jenkins job is triggered based on the information passed from the web
 This job is also triggered via github web hook. Please do not add/remove any parameters of this job otherwise github web hooks will not be able to triiger the job
 
 **Upstream projects:**
-
 * [github-webhook](#github-webhook):
 
 **Downstream projects:**
-
 * [auto-forward-ports](#auto-forward-ports):
 * [deploy-cms-repo](#deploy-cms-repo):
 * [git-mirror-repository](#git-mirror-repository):
@@ -202,7 +189,6 @@ This job is also triggered via github web hook. Please do not add/remove any par
 * [web-update-cmssdt-ib](#web-update-cmssdt-ib):
 
 **Sub-projects:**
-
 * [deploy-cms-repo](#deploy-cms-repo):
 * [auto-forward-ports](#auto-forward-ports):
 * [git-reference-cms-ib](#git-reference-cms-ib):
@@ -210,6 +196,8 @@ This job is also triggered via github web hook. Please do not add/remove any par
 * [web-update-cmssdt-ib](#web-update-cmssdt-ib):
 
 **Triggers from:** []
+
+**Periodic builds:** H */6 * * *
 
 ## [mirror-cmsrep](https://cmssdt.cern.ch/jenkins/job/mirror-cmsrep)
 
@@ -217,14 +205,13 @@ This job is also triggered via github web hook. Please do not add/remove any par
 
 **Upstream projects:**
 
-
 **Downstream projects:**
-
 
 **Sub-projects:**
 
-
 **Triggers from:** []
+
+**Periodic builds:** Not periodically build
 
 ## [monitor-openstack-vms](https://cmssdt.cern.ch/jenkins/job/monitor-openstack-vms)
 
@@ -232,14 +219,13 @@ This job is also triggered via github web hook. Please do not add/remove any par
 
 **Upstream projects:**
 
-
 **Downstream projects:**
-
 
 **Sub-projects:**
 
-
 **Triggers from:** []
+
+**Periodic builds:** @hourly
 
 ## [slaves-checks](https://cmssdt.cern.ch/jenkins/job/slaves-checks)
 
@@ -247,18 +233,17 @@ This job is also triggered via github web hook. Please do not add/remove any par
 
 **Upstream projects:**
 
-
 **Downstream projects:**
-
 * [test-docker](#test-docker):
 * [workspace-cleanup-slave](#workspace-cleanup-slave):
 
 **Sub-projects:**
-
 * [workspace-cleanup-slave](#workspace-cleanup-slave):
 * [test-docker ](#test-docker ):
 
 **Triggers from:** []
+
+**Periodic builds:** H 7,19 * * *
 
 ## [test-build-periodic](https://cmssdt.cern.ch/jenkins/job/test-build-periodic)
 
@@ -266,30 +251,28 @@ This job is also triggered via github web hook. Please do not add/remove any par
 
 **Upstream projects:**
 
-
 **Downstream projects:**
-
 
 **Sub-projects:**
 
-
 **Triggers from:** []
+
+**Periodic builds:** H/15 * * * *
 
 ## [test-docker](https://cmssdt.cern.ch/jenkins/job/test-docker)
 
 **Description:** None
 
 **Upstream projects:**
-
 * [slaves-checks](#slaves-checks):
 
 **Downstream projects:**
 
-
 **Sub-projects:**
 
-
 **Triggers from:** []
+
+**Periodic builds:** Not periodically build
 
 ## [update-categories-page](https://cmssdt.cern.ch/jenkins/job/update-categories-page)
 
@@ -297,14 +280,13 @@ This job is also triggered via github web hook. Please do not add/remove any par
 
 **Upstream projects:**
 
-
 **Downstream projects:**
-
 
 **Sub-projects:**
 
-
 **Triggers from:** []
+
+**Periodic builds:** H 0 * * *
 
 ## [update-release-map](https://cmssdt.cern.ch/jenkins/job/update-release-map)
 
@@ -312,19 +294,18 @@ This job is also triggered via github web hook. Please do not add/remove any par
 CVMFS installation is started once a release is available in this file.
 
 **Upstream projects:**
-
 * [upload-release](#upload-release):
 
 **Downstream projects:**
-
 * [build-fwlite](#build-fwlite):
 * [cmssw-doxygen](#cmssw-doxygen):
 * [ib-run-cfipython](#ib-run-cfipython):
 
 **Sub-projects:**
 
-
 **Triggers from:** []
+
+**Periodic builds:** Not periodically build
 
 ## [web-summary-data](https://cmssdt.cern.ch/jenkins/job/web-summary-data)
 
@@ -332,14 +313,13 @@ CVMFS installation is started once a release is available in this file.
 
 **Upstream projects:**
 
-
 **Downstream projects:**
-
 
 **Sub-projects:**
 
-
 **Triggers from:** []
+
+**Periodic builds:** Not periodically build
 
 ## [web-update-SDT](https://cmssdt.cern.ch/jenkins/job/web-update-SDT)
 
@@ -347,28 +327,26 @@ CVMFS installation is started once a release is available in this file.
 
 **Upstream projects:**
 
-
 **Downstream projects:**
-
 
 **Sub-projects:**
 
-
 **Triggers from:** []
+
+**Periodic builds:** Not periodically build
 
 ## [workspace-cleanup-slave](https://cmssdt.cern.ch/jenkins/job/workspace-cleanup-slave)
 
 **Description:** None
 
 **Upstream projects:**
-
 * [slaves-checks](#slaves-checks):
 
 **Downstream projects:**
 
-
 **Sub-projects:**
 
-
 **Triggers from:** []
+
+**Periodic builds:** Not periodically build
 
