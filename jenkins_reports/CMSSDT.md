@@ -1203,7 +1203,6 @@ CMSSW_* tag is rename to STITCHED_*
 
 **Upstream projects:**
 * [ib-run-relvals](#ib-run-relvals):
-* [test-kerberos-within-docker](#test-kerberos-within-docker):
 * [test-relvals-with-krb](#test-relvals-with-krb):
 
 **Downstream projects:**
@@ -1442,13 +1441,13 @@ In a CMSSW dev area, it runs
 
 ## [test-kerberos-within-docker](https://cmssdt.cern.ch/jenkins/job/test-kerberos-within-docker)
 
-**Description:** The job runs release validations, as validations are separated on pieces (1of6 2of6 etc)
+**Description:** This job tests the the kerberos auth existence and its behaviour when ran from docker image. It first sets the env
+var KRB5CC inside the image to point to the ticket within /tmp. Then adds few commands in a script
+and runs the script with docker to check the behaviour
 
 **Upstream projects:**
 
 **Downstream projects:**
-* [process-relval-logs](#process-relval-logs):
-* [update-das-queries](#update-das-queries):
 
 **Sub-projects:**
 
@@ -1520,7 +1519,6 @@ In a CMSSW dev area, it runs
 
 **Upstream projects:**
 * [ib-run-relvals](#ib-run-relvals):
-* [test-kerberos-within-docker](#test-kerberos-within-docker):
 * [test-relvals-with-krb](#test-relvals-with-krb):
 
 **Downstream projects:**

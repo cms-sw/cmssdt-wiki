@@ -348,7 +348,6 @@ Results of this build can be seen via <a href="https://cmssdt.cern.ch/SDT/">CMSS
 
 **Upstream projects:**
 * [ib-run-relvals](#ib-run-relvals):
-* [test-kerberos-within-docker](#test-kerberos-within-docker):
 * [test-relvals-with-krb](#test-relvals-with-krb):
 
 **Downstream projects:**
@@ -415,7 +414,6 @@ Results of this build can be seen via <a href="https://cmssdt.cern.ch/SDT/">CMSS
 
 **Upstream projects:**
 * [ib-run-relvals](#ib-run-relvals):
-* [test-kerberos-within-docker](#test-kerberos-within-docker):
 * [test-relvals-with-krb](#test-relvals-with-krb):
 
 **Downstream projects:**
@@ -806,7 +804,6 @@ Results of this build can be seen via <a href="https://cmssdt.cern.ch/SDT/">CMSS
 
 **Upstream projects:**
 * [ib-run-relvals](#ib-run-relvals):
-* [test-kerberos-within-docker](#test-kerberos-within-docker):
 * [test-relvals-with-krb](#test-relvals-with-krb):
 
 **Downstream projects:**
@@ -873,7 +870,6 @@ Results of this build can be seen via <a href="https://cmssdt.cern.ch/SDT/">CMSS
 
 **Upstream projects:**
 * [ib-run-relvals](#ib-run-relvals):
-* [test-kerberos-within-docker](#test-kerberos-within-docker):
 * [test-relvals-with-krb](#test-relvals-with-krb):
 
 **Downstream projects:**
