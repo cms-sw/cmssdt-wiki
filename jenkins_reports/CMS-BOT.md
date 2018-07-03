@@ -1,6 +1,6 @@
 # [CMS-BOT](https://cmssdt.cern.ch/jenkins/view/CMS-BOT)
 
-**View description:** None
+**View description:** This view has all the projects involved for continuous integration testing (pull request testing, all issues processing in Github.com etc. ) 
 
 **View type:** Build Pipeline View
 

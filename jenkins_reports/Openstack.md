@@ -1,6 +1,6 @@
 # [Openstack](https://cmssdt.cern.ch/jenkins/view/Openstack)
 
-**View description:** None
+**View description:** This view contains jobs responsible working with <a href="http://openstack.cern.ch">CERN Openstack</a> (creating, deleting VMs, etc.)
 
 **View type:** List View
 
