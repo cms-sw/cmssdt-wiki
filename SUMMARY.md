@@ -61,4 +61,5 @@
   * [Openstack](jenkins_reports/Openstack.md)
   * [Jenkins Tests](jenkins_reports/Jenkins-Tests.md)
   * [IBs Pipeline](jenkins_reports/IBs-Pipeline.md)
+  * [Uncategorized](jenkins_reports/Uncategorized.md)
 * [Jenkins Jobs](https://cmssdt.cern.ch/SDT/html/jreports.html)
