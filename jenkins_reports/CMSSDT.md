@@ -334,7 +334,7 @@ Not periodically build
 
 ## [cms-dockerhub](https://cmssdt.cern.ch/jenkins/job/cms-dockerhub)
 
-**Description:** None
+**Description:** This job creates docker image with CMSSW and push it to the dockerhub. It also uploads dockerfile to github.
 
 **Upstream projects:**
 
