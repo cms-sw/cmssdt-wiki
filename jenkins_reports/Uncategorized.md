@@ -12,7 +12,7 @@
 
 **Description:** This jobs copies IBs installation for an arch from another machine and publish it to cvmfs
 
-**Project is <span style="color:red">disabled</span>.**
+**Project is `disabled`.**
 
 **Upstream projects:**
 
@@ -23,19 +23,19 @@
 
 **Triggers from:** []
 
-**Periodic builds:**
- 
+
 **Periodic builds:**
 ```bash
 Not periodically build
 ```
-            
+
+---
 
 ## [lxr-check](https://cmssdt.cern.ch/jenkins/job/lxr-check)
 
 **Description:** This job checks if https://cmssdt.cern.ch/lxr/ is acessable and if not, starts <a href="https://cmssdt.cern.ch/jenkins/view/All/job/lxr-run-container/">lxr-run-container<a/> job to restart the service.
 
-**Project is <span style="color:red">disabled</span>.**
+**Project is `disabled`.**
 
 **Upstream projects:**
 
@@ -47,20 +47,20 @@ Not periodically build
 
 **Triggers from:** []
 
-**Periodic builds:**
- 
+
 **Periodic builds:**
 ```bash
 H/5 * * * *
 ```
-            
+
+---
 
 ## [cmssw-to-stitched](https://cmssdt.cern.ch/jenkins/job/cmssw-to-stitched)
 
 **Description:** This looks for the Framework changes in cmssw and port them to stitched repo
 This is automatically triggered by auto-forward-port job
 
-**Project is <span style="color:red">disabled</span>.**
+**Project is `disabled`.**
 
 **Upstream projects:**
 
@@ -70,19 +70,19 @@ This is automatically triggered by auto-forward-port job
 
 **Triggers from:** []
 
-**Periodic builds:**
- 
+
 **Periodic builds:**
 ```bash
 H 0 * * *
 ```
-            
+
+---
 
 ## [rpm-repository-backup](https://cmssdt.cern.ch/jenkins/job/rpm-repository-backup)
 
 **Description:** Backs-up cmsrep
 
-**Project is <span style="color:red">disabled</span>.**
+**Project is `disabled`.**
 
 **Upstream projects:**
 
@@ -92,19 +92,19 @@ H 0 * * *
 
 **Triggers from:** []
 
-**Periodic builds:**
- 
+
 **Periodic builds:**
 ```bash
 H 0 * * *
 ```
-            
+
+---
 
 ## [external-deploy-afs](https://cmssdt.cern.ch/jenkins/job/external-deploy-afs)
 
 **Description:** This job deployes any external tool on afs that is required. 
 
-**Project is <span style="color:red">disabled</span>.**
+**Project is `disabled`.**
 
 **Upstream projects:**
 
@@ -114,19 +114,19 @@ H 0 * * *
 
 **Triggers from:** []
 
-**Periodic builds:**
- 
+
 **Periodic builds:**
 ```bash
 Not periodically build
 ```
-            
+
+---
 
 ## [update-externals-mirrors](https://cmssdt.cern.ch/jenkins/job/update-externals-mirrors)
 
 **Description:** Update some of the externals mirror and setup a cms specific branch so that updates can be proposed there. 
 
-**Project is <span style="color:red">disabled</span>.**
+**Project is `disabled`.**
 
 **Upstream projects:**
 
@@ -136,19 +136,19 @@ Not periodically build
 
 **Triggers from:** []
 
-**Periodic builds:**
- 
+
 **Periodic builds:**
 ```bash
 0 0 * * *
 ```
-            
+
+---
 
 ## [test](https://cmssdt.cern.ch/jenkins/job/test)
 
 **Description:** None
 
-**Project is <span style="color:red">disabled</span>.**
+**Project is `disabled`.**
 
 **Upstream projects:**
 
@@ -158,11 +158,11 @@ Not periodically build
 
 **Triggers from:** []
 
-**Periodic builds:**
- 
+
 **Periodic builds:**
 ```bash
 Not periodically build
 ```
-            
+
+---
 

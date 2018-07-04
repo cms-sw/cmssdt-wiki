@@ -12,7 +12,7 @@
 
 **Description:** Find all hosts in an hostgroup and add them to jenkins
 
-**Project is <span style="color:green">enabled</span>.**
+**Project is `enabled`.**
 
 **Upstream projects:**
 * [openstack-check-jenkins-slaves](#openstack-check-jenkins-slaves):
@@ -23,19 +23,19 @@
 
 **Triggers from:** []
 
-**Periodic builds:**
- 
+
 **Periodic builds:**
 ```bash
 Not periodically build
 ```
-            
+
+---
 
 ## [openstack-check-jenkins-slaves](https://cmssdt.cern.ch/jenkins/job/openstack-check-jenkins-slaves)
 
 **Description:** Find all hosts in an hostgroup and add then to jenkins
 
-**Project is <span style="color:green">enabled</span>.**
+**Project is `enabled`.**
 
 **Upstream projects:**
 
@@ -47,19 +47,19 @@ Not periodically build
 
 **Triggers from:** []
 
-**Periodic builds:**
- 
+
 **Periodic builds:**
 ```bash
 H * * * * 
 ```
-            
+
+---
 
 ## [openstack-create-vms](https://cmssdt.cern.ch/jenkins/job/openstack-create-vms)
 
 **Description:** Create Openstack VMs for a selected hostgroup.
 
-**Project is <span style="color:green">enabled</span>.**
+**Project is `enabled`.**
 
 **Upstream projects:**
 * [openstack-create-vms](#openstack-create-vms):
@@ -73,19 +73,19 @@ H * * * *
 
 **Triggers from:** []
 
-**Periodic builds:**
- 
+
 **Periodic builds:**
 ```bash
 Not periodically build
 ```
-            
+
+---
 
 ## [openstack-create-volume](https://cmssdt.cern.ch/jenkins/job/openstack-create-volume)
 
 **Description:** Job to delete openstack instances providing only the name
 
-**Project is <span style="color:green">enabled</span>.**
+**Project is `enabled`.**
 
 **Upstream projects:**
 
@@ -95,19 +95,19 @@ Not periodically build
 
 **Triggers from:** []
 
-**Periodic builds:**
- 
+
 **Periodic builds:**
 ```bash
 Not periodically build
 ```
-            
+
+---
 
 ## [openstack-delete-vms](https://cmssdt.cern.ch/jenkins/job/openstack-delete-vms)
 
 **Description:** Job to delete openstack instances providing only the name
 
-**Project is <span style="color:green">enabled</span>.**
+**Project is `enabled`.**
 
 **Upstream projects:**
 * [openstack-create-vms](#openstack-create-vms):
@@ -123,19 +123,19 @@ Not periodically build
 
 **Triggers from:** []
 
-**Periodic builds:**
- 
+
 **Periodic builds:**
 ```bash
 Not periodically build
 ```
-            
+
+---
 
 ## [openstack-delete-volume](https://cmssdt.cern.ch/jenkins/job/openstack-delete-volume)
 
 **Description:** Job to delete openstack instances providing only the name
 
-**Project is <span style="color:green">enabled</span>.**
+**Project is `enabled`.**
 
 **Upstream projects:**
 * [openstack-delete-vms](#openstack-delete-vms):
@@ -146,11 +146,11 @@ Not periodically build
 
 **Triggers from:** []
 
-**Periodic builds:**
- 
+
 **Periodic builds:**
 ```bash
 Not periodically build
 ```
-            
+
+---
 

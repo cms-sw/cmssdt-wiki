@@ -13,7 +13,7 @@
 **Description:** This is cms bot job which is triggered by github webhooks ( https://cmssdt.cern.ch/SDT/cgi-bin/github_webhook ) for every valid comment added to github PRs.
 Also it runsevery 30mins to make sure any webhooks were not missed. 
 
-**Project is <span style="color:green">enabled</span>.**
+**Project is `enabled`.**
 
 **Upstream projects:**
 * [github-webhook](#github-webhook):
@@ -30,19 +30,19 @@ Also it runsevery 30mins to make sure any webhooks were not missed.
 
 **Triggers from:** []
 
-**Periodic builds:**
- 
+
 **Periodic builds:**
 ```bash
 Not periodically build
 ```
-            
+
+---
 
 ## [ib-schedule-pr-tests](https://cmssdt.cern.ch/jenkins/job/ib-schedule-pr-tests)
 
 **Description:** Build a pull request
 
-**Project is <span style="color:green">enabled</span>.**
+**Project is `enabled`.**
 
 **Upstream projects:**
 * [cms-bot](#cms-bot):
@@ -55,19 +55,19 @@ Not periodically build
 
 **Triggers from:** []
 
-**Periodic builds:**
- 
+
 **Periodic builds:**
 ```bash
 Not periodically build
 ```
-            
+
+---
 
 ## [ib-any-integration](https://cmssdt.cern.ch/jenkins/job/ib-any-integration)
 
 **Description:** Build a pull request
 
-**Project is <span style="color:green">enabled</span>.**
+**Project is `enabled`.**
 
 **Upstream projects:**
 * [ib-schedule-pr-tests](#ib-schedule-pr-tests):
@@ -84,19 +84,19 @@ Not periodically build
 
 **Triggers from:** []
 
-**Periodic builds:**
- 
+
 **Periodic builds:**
 ```bash
 Not periodically build
 ```
-            
+
+---
 
 ## [compare-root-files-short-matrix](https://cmssdt.cern.ch/jenkins/job/compare-root-files-short-matrix)
 
 **Description:** Download the files of the baseline IB and compare them with the results of the ones of a pull request
 
-**Project is <span style="color:green">enabled</span>.**
+**Project is `enabled`.**
 
 **Upstream projects:**
 * [ib-any-integration](#ib-any-integration):
@@ -107,19 +107,19 @@ Not periodically build
 
 **Triggers from:** []
 
-**Periodic builds:**
- 
+
 **Periodic builds:**
 ```bash
 Not periodically build
 ```
-            
+
+---
 
 ## [run-igprof-pr](https://cmssdt.cern.ch/jenkins/job/run-igprof-pr)
 
 **Description:** ---need-description---
 
-**Project is <span style="color:green">enabled</span>.**
+**Project is `enabled`.**
 
 **Upstream projects:**
 * [ib-any-integration](#ib-any-integration):
@@ -130,19 +130,19 @@ Not periodically build
 
 **Triggers from:** []
 
-**Periodic builds:**
- 
+
 **Periodic builds:**
 ```bash
 Not periodically build
 ```
-            
+
+---
 
 ## [stop-ib-any-integration](https://cmssdt.cern.ch/jenkins/job/stop-ib-any-integration)
 
 **Description:** Kill a running 
 
-**Project is <span style="color:green">enabled</span>.**
+**Project is `enabled`.**
 
 **Upstream projects:**
 * [cms-bot](#cms-bot):
@@ -155,13 +155,13 @@ Not periodically build
 
 **Triggers from:** []
 
-**Periodic builds:**
- 
+
 **Periodic builds:**
 ```bash
 Not periodically build
 ```
-            
+
+---
 
 ## [run-pr-code-ckecks](https://cmssdt.cern.ch/jenkins/job/run-pr-code-ckecks)
 
@@ -170,7 +170,7 @@ In a CMSSW dev area, it runs
   git cms-merge-topic -u PR
   scram build code-checks
 
-**Project is <span style="color:green">enabled</span>.**
+**Project is `enabled`.**
 
 **Upstream projects:**
 * [cms-bot](#cms-bot):
@@ -183,19 +183,19 @@ In a CMSSW dev area, it runs
 
 **Triggers from:** []
 
-**Periodic builds:**
- 
+
 **Periodic builds:**
 ```bash
 Not periodically build
 ```
-            
+
+---
 
 ## [stop-ib-any-integration](https://cmssdt.cern.ch/jenkins/job/stop-ib-any-integration)
 
 **Description:** Kill a running 
 
-**Project is <span style="color:green">enabled</span>.**
+**Project is `enabled`.**
 
 **Upstream projects:**
 * [cms-bot](#cms-bot):
@@ -208,19 +208,19 @@ Not periodically build
 
 **Triggers from:** []
 
-**Periodic builds:**
- 
+
 **Periodic builds:**
 ```bash
 Not periodically build
 ```
-            
+
+---
 
 ## [stop-ib-any-integration](https://cmssdt.cern.ch/jenkins/job/stop-ib-any-integration)
 
 **Description:** Kill a running 
 
-**Project is <span style="color:green">enabled</span>.**
+**Project is `enabled`.**
 
 **Upstream projects:**
 * [cms-bot](#cms-bot):
@@ -233,11 +233,11 @@ Not periodically build
 
 **Triggers from:** []
 
-**Periodic builds:**
- 
+
 **Periodic builds:**
 ```bash
 Not periodically build
 ```
-            
+
+---
 

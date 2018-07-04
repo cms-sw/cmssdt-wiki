@@ -12,7 +12,7 @@
 
 **Description:** This is a helper job to copy a Jenkins Project from this Jenkins master to another Jenkins master.
 
-**Project is <span style="color:green">enabled</span>.**
+**Project is `enabled`.**
 
 **Upstream projects:**
 
@@ -22,20 +22,20 @@
 
 **Triggers from:** []
 
-**Periodic builds:**
- 
+
 **Periodic builds:**
 ```bash
 Not periodically build
 ```
-            
+
+---
 
 ## [jenkins-backup](https://cmssdt.cern.ch/jenkins/job/jenkins-backup)
 
 **Description:** This job takes the backup of Jenkins master configuration (which includes projects, jenkins configuration, slaves, secrets etc.)
 Backups jenkins scripts on https://github.com/cms-sw/jenkins-backup.git
 
-**Project is <span style="color:green">enabled</span>.**
+**Project is `enabled`.**
 
 **Upstream projects:**
 
@@ -45,13 +45,13 @@ Backups jenkins scripts on https://github.com/cms-sw/jenkins-backup.git
 
 **Triggers from:** []
 
-**Periodic builds:**
- 
+
 **Periodic builds:**
 ```bash
 H/5 * * * *
 ```
-            
+
+---
 
 ## [jenkins-disable-jobs](https://cmssdt.cern.ch/jenkins/job/jenkins-disable-jobs)
 
@@ -60,7 +60,7 @@ example parameter
 cmsbuild* 
 would enable all cmsbuild machines found
 
-**Project is <span style="color:green">enabled</span>.**
+**Project is `enabled`.**
 
 **Upstream projects:**
 
@@ -70,19 +70,19 @@ would enable all cmsbuild machines found
 
 **Triggers from:** []
 
-**Periodic builds:**
- 
+
 **Periodic builds:**
 ```bash
 Not periodically build
 ```
-            
+
+---
 
 ## [jenkins-disable-nodes](https://cmssdt.cern.ch/jenkins/job/jenkins-disable-nodes)
 
 **Description:** Disable all jenkins slaves based on the slave wildcard filter.
 
-**Project is <span style="color:green">enabled</span>.**
+**Project is `enabled`.**
 
 **Upstream projects:**
 
@@ -92,13 +92,13 @@ Not periodically build
 
 **Triggers from:** []
 
-**Periodic builds:**
- 
+
 **Periodic builds:**
 ```bash
 Not periodically build
 ```
-            
+
+---
 
 ## [jenkins-elasticsearch-monitor](https://cmssdt.cern.ch/jenkins/job/jenkins-elasticsearch-monitor)
 
@@ -106,7 +106,7 @@ Not periodically build
 
 
 
-**Project is <span style="color:green">enabled</span>.**
+**Project is `enabled`.**
 
 **Upstream projects:**
 
@@ -116,19 +116,19 @@ Not periodically build
 
 **Triggers from:** []
 
-**Periodic builds:**
- 
+
 **Periodic builds:**
 ```bash
 H/5 * * * *
 ```
-            
+
+---
 
 ## [jenkins-enable-jobs](https://cmssdt.cern.ch/jenkins/job/jenkins-enable-jobs)
 
 **Description:** Enable all Jenkins projects based on the wildcard filter.
 
-**Project is <span style="color:green">enabled</span>.**
+**Project is `enabled`.**
 
 **Upstream projects:**
 * [jenkins-initialize](#jenkins-initialize):
@@ -139,13 +139,13 @@ H/5 * * * *
 
 **Triggers from:** []
 
-**Periodic builds:**
- 
+
 **Periodic builds:**
 ```bash
 Not periodically build
 ```
-            
+
+---
 
 ## [jenkins-enable-nodes](https://cmssdt.cern.ch/jenkins/job/jenkins-enable-nodes)
 
@@ -154,7 +154,7 @@ example parameter
 cmsbuild* 
 would enable all cmsbuild machines found
 
-**Project is <span style="color:green">enabled</span>.**
+**Project is `enabled`.**
 
 **Upstream projects:**
 
@@ -164,20 +164,20 @@ would enable all cmsbuild machines found
 
 **Triggers from:** []
 
-**Periodic builds:**
- 
+
 **Periodic builds:**
 ```bash
 Not periodically build
 ```
-            
+
+---
 
 ## [jenkins-initialize](https://cmssdt.cern.ch/jenkins/job/jenkins-initialize)
 
 **Description:** This project is run once a new Jenkins instance is setup or upgrated to a new version.
 This runs some sub-projects to check if basic functionality of jenkins is working.
 
-**Project is <span style="color:green">enabled</span>.**
+**Project is `enabled`.**
 
 **Upstream projects:**
 
@@ -194,19 +194,19 @@ This runs some sub-projects to check if basic functionality of jenkins is workin
 
 **Triggers from:** []
 
-**Periodic builds:**
- 
+
 **Periodic builds:**
 ```bash
 H H * * *
 ```
-            
+
+---
 
 ## [jenkins-installation-cli-test](https://cmssdt.cern.ch/jenkins/job/jenkins-installation-cli-test)
 
 **Description:** This is Jenkins installation tests project. It tests if various Jenkins Command-line interface service are working.
 
-**Project is <span style="color:green">enabled</span>.**
+**Project is `enabled`.**
 
 **Upstream projects:**
 * [jenkins-initialize](#jenkins-initialize):
@@ -217,19 +217,19 @@ H H * * *
 
 **Triggers from:** []
 
-**Periodic builds:**
- 
+
 **Periodic builds:**
 ```bash
 Not periodically build
 ```
-            
+
+---
 
 ## [jenkins-installation-trigger-cli](https://cmssdt.cern.ch/jenkins/job/jenkins-installation-trigger-cli)
 
 **Description:** Jenkins installaton test job to test the triggering of a sub-project via Command-line-interface.
 
-**Project is <span style="color:green">enabled</span>.**
+**Project is `enabled`.**
 
 **Upstream projects:**
 
@@ -239,19 +239,19 @@ Not periodically build
 
 **Triggers from:** []
 
-**Periodic builds:**
- 
+
 **Periodic builds:**
 ```bash
 Not periodically build
 ```
-            
+
+---
 
 ## [jenkins-installation-trigger-test](https://cmssdt.cern.ch/jenkins/job/jenkins-installation-trigger-test)
 
 **Description:** This is Jenkins installation test project. This tests the triggering of a sub-project.
 
-**Project is <span style="color:green">enabled</span>.**
+**Project is `enabled`.**
 
 **Upstream projects:**
 * [jenkins-initialize](#jenkins-initialize):
@@ -262,13 +262,13 @@ Not periodically build
 
 **Triggers from:** []
 
-**Periodic builds:**
- 
+
 **Periodic builds:**
 ```bash
 Not periodically build
 ```
-            
+
+---
 
 ## [jenkins-projects-report](https://cmssdt.cern.ch/jenkins/job/jenkins-projects-report)
 
@@ -278,7 +278,7 @@ display it in html form. The current page you are viewing is generated and updat
 
 
 
-**Project is <span style="color:green">enabled</span>.**
+**Project is `enabled`.**
 
 **Upstream projects:**
 
@@ -288,13 +288,13 @@ display it in html form. The current page you are viewing is generated and updat
 
 **Triggers from:** []
 
-**Periodic builds:**
- 
+
 **Periodic builds:**
 ```bash
 H * * * *
 ```
-            
+
+---
 
 ## [jenkins-projects-wiki-update](https://cmssdt.cern.ch/jenkins/job/jenkins-projects-wiki-update)
 
@@ -303,7 +303,7 @@ display it in markdown form. It is later imported to CMSSDT wiki.
 
 
 
-**Project is <span style="color:green">enabled</span>.**
+**Project is `enabled`.**
 
 **Upstream projects:**
 
@@ -313,20 +313,20 @@ display it in markdown form. It is later imported to CMSSDT wiki.
 
 **Triggers from:** []
 
-**Periodic builds:**
- 
+
 **Periodic builds:**
 ```bash
 H/5 * * * *
 ```
-            
+
+---
 
 ## [jenkins-restart-slaves](https://cmssdt.cern.ch/jenkins/job/jenkins-restart-slaves)
 
 **Description:** This jobs looks for jenkins slaves which went offline due to job failures
 
 
-**Project is <span style="color:green">enabled</span>.**
+**Project is `enabled`.**
 
 **Upstream projects:**
 
@@ -336,19 +336,19 @@ H/5 * * * *
 
 **Triggers from:** []
 
-**Periodic builds:**
- 
+
 **Periodic builds:**
 ```bash
 Not periodically build
 ```
-            
+
+---
 
 ## [jenkins-test-job1](https://cmssdt.cern.ch/jenkins/job/jenkins-test-job1)
 
 **Description:** Jenkins installation test job 1 to check for the parameters passed from a parent job.
 
-**Project is <span style="color:green">enabled</span>.**
+**Project is `enabled`.**
 
 **Upstream projects:**
 
@@ -358,19 +358,19 @@ Not periodically build
 
 **Triggers from:** []
 
-**Periodic builds:**
- 
+
 **Periodic builds:**
 ```bash
 Not periodically build
 ```
-            
+
+---
 
 ## [jenkins-test-job2](https://cmssdt.cern.ch/jenkins/job/jenkins-test-job2)
 
 **Description:** Jenkins tests Project to test jenkins functionality.
 
-**Project is <span style="color:green">enabled</span>.**
+**Project is `enabled`.**
 
 **Upstream projects:**
 
@@ -380,20 +380,20 @@ Not periodically build
 
 **Triggers from:** []
 
-**Periodic builds:**
- 
+
 **Periodic builds:**
 ```bash
 Not periodically build
 ```
-            
+
+---
 
 ## [jenkins-test-slave](https://cmssdt.cern.ch/jenkins/job/jenkins-test-slave)
 
 **Description:** This Jenkins project test various CMS Jenkins slaves and makes sure that various communication channels 
 between Jenkins Master/slave  and slave and various services are working.
 
-**Project is <span style="color:green">enabled</span>.**
+**Project is `enabled`.**
 
 **Upstream projects:**
 * [jenkins-test-slaves](#jenkins-test-slaves):
@@ -404,19 +404,19 @@ between Jenkins Master/slave  and slave and various services are working.
 
 **Triggers from:** []
 
-**Periodic builds:**
- 
+
 **Periodic builds:**
 ```bash
 Not periodically build
 ```
-            
+
+---
 
 ## [jenkins-test-slaves](https://cmssdt.cern.ch/jenkins/job/jenkins-test-slaves)
 
 **Description:** Jenkins project to trigger the jenkins slave test job for each selected slave
 
-**Project is <span style="color:green">enabled</span>.**
+**Project is `enabled`.**
 
 **Upstream projects:**
 
@@ -428,11 +428,11 @@ Not periodically build
 
 **Triggers from:** []
 
-**Periodic builds:**
- 
+
 **Periodic builds:**
 ```bash
 H H/8 * * *
 ```
-            
+
+---
 
