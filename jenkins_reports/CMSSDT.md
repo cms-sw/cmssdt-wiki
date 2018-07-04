@@ -1537,7 +1537,7 @@ H 5  * * *
 
 ## [lxr-run-container](https://cmssdt.cern.ch/jenkins/job/lxr-run-container)
 
-**Description:** None
+**Description:** This job stops and deletes old docker contaner of LXR service and starts new one.
 
 **Upstream projects:**
 * [lxr-check](#lxr-check):
