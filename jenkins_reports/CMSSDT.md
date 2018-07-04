@@ -386,7 +386,8 @@ Not periodically build
 
 ## [cms-prs-cache](https://cmssdt.cern.ch/jenkins/job/cms-prs-cache)
 
-**Description:** None
+**Description:** This job collects metadata for pull requests since reading github directly when necessary might become time consuming or rejected by github
+on reached limit hits/hour grounds. 
 
 **Project is `enabled`.**
 
