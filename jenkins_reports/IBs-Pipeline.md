@@ -240,7 +240,7 @@ Not periodically build
 
 ## [cmspkg-clone](https://cmssdt.cern.ch/jenkins/job/cmspkg-clone)
 
-**Description:** None
+**Description:** Periodically (at 21 every day) backs up rpm repos from one place to another.
 
 **Project is `enabled`.**
 
