@@ -1706,7 +1706,13 @@ Not periodically build
 
 ## [lxr-checkout-version](https://cmssdt.cern.ch/jenkins/job/lxr-checkout-version)
 
-**Description:** None
+**Description:** This job sets modification timestamp of CMSSW source code according to commit history before 
+indexing it using LXR.<br>
+
+
+LXR index files based on modification timestamp. `<code>git clone</code>` ,however, sets files timestamps 
+to command's execution time. Without it, LXR would index every file, increasing jobs execution duration 
+and database size.
 
 **Project is `enabled`.**
 
