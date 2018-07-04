@@ -1015,7 +1015,7 @@ H 22 * * *
 
 ## [ib-cvmfs-publish](https://cmssdt.cern.ch/jenkins/job/ib-cvmfs-publish)
 
-**Description:** This jobs copies IBs installation for a arch from another machine and publish it to cvmfs
+**Description:** This jobs copies IBs installation for an arch from another machine and publish it to cvmfs
 
 **Upstream projects:**
 
