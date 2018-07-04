@@ -624,7 +624,7 @@ H 9,21 * * *
 
 ## [dataset-to-ibeos](https://cmssdt.cern.ch/jenkins/job/dataset-to-ibeos)
 
-**Description:** None
+**Description:** Copies root files for a given dataset localy on eos to be used from local cache (eos) if they diasappear from the site where they resided. 
 
 **Project is `enabled`.**
 
