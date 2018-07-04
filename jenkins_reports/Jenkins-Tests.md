@@ -12,7 +12,7 @@
 
 **Description:** This is a helper job to copy a Jenkins Project from this Jenkins master to another Jenkins master.
 
-<b>Project is <span style="color:green">enabled</span>.</b>
+**Project is <span style="color:green">enabled</span>.**
 
 **Upstream projects:**
 
