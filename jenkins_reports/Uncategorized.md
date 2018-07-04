@@ -31,7 +31,7 @@ Not periodically build
 
 ## [lxr-check](https://cmssdt.cern.ch/jenkins/job/lxr-check)
 
-**Description:** None
+**Description:** This job checks if https://cmssdt.cern.ch/lxr/ is acessable and if not, restarts the service.
 
 **Upstream projects:**
 
