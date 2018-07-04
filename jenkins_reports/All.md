@@ -2078,7 +2078,7 @@ Not periodically build
 
 ## [kill-hanging-jobs](https://cmssdt.cern.ch/jenkins/job/kill-hanging-jobs)
 
-**Description:** None
+**Description:** This project checks all selected host for process running longer then set treshold (default 2 days) and kill them. 
 
 **Project is `enabled`.**
 
