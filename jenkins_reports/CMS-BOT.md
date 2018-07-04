@@ -13,6 +13,8 @@
 **Description:** This is cms bot job which is triggered by github webhooks ( https://cmssdt.cern.ch/SDT/cgi-bin/github_webhook ) for every valid comment added to github PRs.
 Also it runsevery 30mins to make sure any webhooks were not missed. 
 
+**Project is <span style="color:green">enabled</span>.**
+
 **Upstream projects:**
 * [github-webhook](#github-webhook):
 
@@ -40,6 +42,8 @@ Not periodically build
 
 **Description:** Build a pull request
 
+**Project is <span style="color:green">enabled</span>.**
+
 **Upstream projects:**
 * [cms-bot](#cms-bot):
 
@@ -62,6 +66,8 @@ Not periodically build
 ## [ib-any-integration](https://cmssdt.cern.ch/jenkins/job/ib-any-integration)
 
 **Description:** Build a pull request
+
+**Project is <span style="color:green">enabled</span>.**
 
 **Upstream projects:**
 * [ib-schedule-pr-tests](#ib-schedule-pr-tests):
@@ -90,6 +96,8 @@ Not periodically build
 
 **Description:** Download the files of the baseline IB and compare them with the results of the ones of a pull request
 
+**Project is <span style="color:green">enabled</span>.**
+
 **Upstream projects:**
 * [ib-any-integration](#ib-any-integration):
 
@@ -111,6 +119,8 @@ Not periodically build
 
 **Description:** ---need-description---
 
+**Project is <span style="color:green">enabled</span>.**
+
 **Upstream projects:**
 * [ib-any-integration](#ib-any-integration):
 
@@ -131,6 +141,8 @@ Not periodically build
 ## [stop-ib-any-integration](https://cmssdt.cern.ch/jenkins/job/stop-ib-any-integration)
 
 **Description:** Kill a running 
+
+**Project is <span style="color:green">enabled</span>.**
 
 **Upstream projects:**
 * [cms-bot](#cms-bot):
@@ -158,6 +170,8 @@ In a CMSSW dev area, it runs
   git cms-merge-topic -u PR
   scram build code-checks
 
+**Project is <span style="color:green">enabled</span>.**
+
 **Upstream projects:**
 * [cms-bot](#cms-bot):
 
@@ -180,6 +194,8 @@ Not periodically build
 ## [stop-ib-any-integration](https://cmssdt.cern.ch/jenkins/job/stop-ib-any-integration)
 
 **Description:** Kill a running 
+
+**Project is <span style="color:green">enabled</span>.**
 
 **Upstream projects:**
 * [cms-bot](#cms-bot):
@@ -203,6 +219,8 @@ Not periodically build
 ## [stop-ib-any-integration](https://cmssdt.cern.ch/jenkins/job/stop-ib-any-integration)
 
 **Description:** Kill a running 
+
+**Project is <span style="color:green">enabled</span>.**
 
 **Upstream projects:**
 * [cms-bot](#cms-bot):

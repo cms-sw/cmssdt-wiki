@@ -12,6 +12,8 @@
 
 **Description:** This is a helper job to copy a Jenkins Project from this Jenkins master to another Jenkins master.
 
+**Project is <span style="color:green">enabled</span>.**
+
 **Upstream projects:**
 
 **Downstream projects:**
@@ -32,6 +34,8 @@ Not periodically build
 
 **Description:** This job takes the backup of Jenkins master configuration (which includes projects, jenkins configuration, slaves, secrets etc.)
 Backups jenkins scripts on https://github.com/cms-sw/jenkins-backup.git
+
+**Project is <span style="color:green">enabled</span>.**
 
 **Upstream projects:**
 
@@ -56,6 +60,8 @@ example parameter
 cmsbuild* 
 would enable all cmsbuild machines found
 
+**Project is <span style="color:green">enabled</span>.**
+
 **Upstream projects:**
 
 **Downstream projects:**
@@ -75,6 +81,8 @@ Not periodically build
 ## [jenkins-disable-nodes](https://cmssdt.cern.ch/jenkins/job/jenkins-disable-nodes)
 
 **Description:** Disable all jenkins slaves based on the slave wildcard filter.
+
+**Project is <span style="color:green">enabled</span>.**
 
 **Upstream projects:**
 
@@ -98,6 +106,8 @@ Not periodically build
 
 
 
+**Project is <span style="color:green">enabled</span>.**
+
 **Upstream projects:**
 
 **Downstream projects:**
@@ -117,6 +127,8 @@ H/5 * * * *
 ## [jenkins-enable-jobs](https://cmssdt.cern.ch/jenkins/job/jenkins-enable-jobs)
 
 **Description:** Enable all Jenkins projects based on the wildcard filter.
+
+**Project is <span style="color:green">enabled</span>.**
 
 **Upstream projects:**
 * [jenkins-initialize](#jenkins-initialize):
@@ -142,6 +154,8 @@ example parameter
 cmsbuild* 
 would enable all cmsbuild machines found
 
+**Project is <span style="color:green">enabled</span>.**
+
 **Upstream projects:**
 
 **Downstream projects:**
@@ -162,6 +176,8 @@ Not periodically build
 
 **Description:** This project is run once a new Jenkins instance is setup or upgrated to a new version.
 This runs some sub-projects to check if basic functionality of jenkins is working.
+
+**Project is <span style="color:green">enabled</span>.**
 
 **Upstream projects:**
 
@@ -190,6 +206,8 @@ H H * * *
 
 **Description:** This is Jenkins installation tests project. It tests if various Jenkins Command-line interface service are working.
 
+**Project is <span style="color:green">enabled</span>.**
+
 **Upstream projects:**
 * [jenkins-initialize](#jenkins-initialize):
 
@@ -211,6 +229,8 @@ Not periodically build
 
 **Description:** Jenkins installaton test job to test the triggering of a sub-project via Command-line-interface.
 
+**Project is <span style="color:green">enabled</span>.**
+
 **Upstream projects:**
 
 **Downstream projects:**
@@ -230,6 +250,8 @@ Not periodically build
 ## [jenkins-installation-trigger-test](https://cmssdt.cern.ch/jenkins/job/jenkins-installation-trigger-test)
 
 **Description:** This is Jenkins installation test project. This tests the triggering of a sub-project.
+
+**Project is <span style="color:green">enabled</span>.**
 
 **Upstream projects:**
 * [jenkins-initialize](#jenkins-initialize):
@@ -256,6 +278,8 @@ display it in html form. The current page you are viewing is generated and updat
 
 
 
+**Project is <span style="color:green">enabled</span>.**
+
 **Upstream projects:**
 
 **Downstream projects:**
@@ -279,6 +303,8 @@ display it in markdown form. It is later imported to CMSSDT wiki.
 
 
 
+**Project is <span style="color:green">enabled</span>.**
+
 **Upstream projects:**
 
 **Downstream projects:**
@@ -300,6 +326,8 @@ H/5 * * * *
 **Description:** This jobs looks for jenkins slaves which went offline due to job failures
 
 
+**Project is <span style="color:green">enabled</span>.**
+
 **Upstream projects:**
 
 **Downstream projects:**
@@ -320,6 +348,8 @@ Not periodically build
 
 **Description:** Jenkins installation test job 1 to check for the parameters passed from a parent job.
 
+**Project is <span style="color:green">enabled</span>.**
+
 **Upstream projects:**
 
 **Downstream projects:**
@@ -339,6 +369,8 @@ Not periodically build
 ## [jenkins-test-job2](https://cmssdt.cern.ch/jenkins/job/jenkins-test-job2)
 
 **Description:** Jenkins tests Project to test jenkins functionality.
+
+**Project is <span style="color:green">enabled</span>.**
 
 **Upstream projects:**
 
@@ -361,6 +393,8 @@ Not periodically build
 **Description:** This Jenkins project test various CMS Jenkins slaves and makes sure that various communication channels 
 between Jenkins Master/slave  and slave and various services are working.
 
+**Project is <span style="color:green">enabled</span>.**
+
 **Upstream projects:**
 * [jenkins-test-slaves](#jenkins-test-slaves):
 
@@ -381,6 +415,8 @@ Not periodically build
 ## [jenkins-test-slaves](https://cmssdt.cern.ch/jenkins/job/jenkins-test-slaves)
 
 **Description:** Jenkins project to trigger the jenkins slave test job for each selected slave
+
+**Project is <span style="color:green">enabled</span>.**
 
 **Upstream projects:**
 

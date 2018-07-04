@@ -12,6 +12,8 @@
 
 **Description:** This jobs copies IBs installation for an arch from another machine and publish it to cvmfs
 
+**Project is <span style="color:red">disabled</span>.**
+
 **Upstream projects:**
 
 **Downstream projects:**
@@ -32,6 +34,8 @@ Not periodically build
 ## [lxr-check](https://cmssdt.cern.ch/jenkins/job/lxr-check)
 
 **Description:** This job checks if https://cmssdt.cern.ch/lxr/ is acessable and if not, starts <a href="https://cmssdt.cern.ch/jenkins/view/All/job/lxr-run-container/">lxr-run-container<a/> job to restart the service.
+
+**Project is <span style="color:red">disabled</span>.**
 
 **Upstream projects:**
 
@@ -56,6 +60,8 @@ H/5 * * * *
 **Description:** This looks for the Framework changes in cmssw and port them to stitched repo
 This is automatically triggered by auto-forward-port job
 
+**Project is <span style="color:red">disabled</span>.**
+
 **Upstream projects:**
 
 **Downstream projects:**
@@ -75,6 +81,8 @@ H 0 * * *
 ## [rpm-repository-backup](https://cmssdt.cern.ch/jenkins/job/rpm-repository-backup)
 
 **Description:** Backs-up cmsrep
+
+**Project is <span style="color:red">disabled</span>.**
 
 **Upstream projects:**
 
@@ -96,6 +104,8 @@ H 0 * * *
 
 **Description:** This job deployes any external tool on afs that is required. 
 
+**Project is <span style="color:red">disabled</span>.**
+
 **Upstream projects:**
 
 **Downstream projects:**
@@ -116,6 +126,8 @@ Not periodically build
 
 **Description:** Update some of the externals mirror and setup a cms specific branch so that updates can be proposed there. 
 
+**Project is <span style="color:red">disabled</span>.**
+
 **Upstream projects:**
 
 **Downstream projects:**
@@ -135,6 +147,8 @@ Not periodically build
 ## [test](https://cmssdt.cern.ch/jenkins/job/test)
 
 **Description:** None
+
+**Project is <span style="color:red">disabled</span>.**
 
 **Upstream projects:**
 

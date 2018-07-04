@@ -12,6 +12,8 @@
 
 **Description:** ---need-description---
 
+**Project is <span style="color:green">enabled</span>.**
+
 **Upstream projects:**
 * [github-webhook](#github-webhook):
 
@@ -43,6 +45,8 @@ H/15 * * * *
 
 **Description:** Aborts and kills a release building process.
 
+**Project is <span style="color:green">enabled</span>.**
+
 **Upstream projects:**
 * [query-build-release-issues](#query-build-release-issues):
 
@@ -66,6 +70,8 @@ Not periodically build
 
 **Description:** Aborts and kills a release building process. 
 
+**Project is <span style="color:green">enabled</span>.**
+
 **Upstream projects:**
 * [abort-release](#abort-release):
 
@@ -88,6 +94,8 @@ Not periodically build
 **Description:** This job actually builds a release.
 It is triggered by cms-bot after the <a href="https://github.com/cms-sw/cmssw/issues?q=label%3Arelease-notes-requested">Release build Issue</a> is approved by release manager.
 
+**Project is <span style="color:green">enabled</span>.**
+
 **Upstream projects:**
 * [query-build-release-issues](#query-build-release-issues):
 
@@ -109,6 +117,8 @@ Not periodically build
 
 **Description:** This job deletes the relsease build areas after three days.
 
+**Project is <span style="color:green">enabled</span>.**
+
 **Upstream projects:**
 * [query-build-release-issues](#query-build-release-issues):
 
@@ -129,6 +139,8 @@ Not periodically build
 ## [release-produce-changelog](https://cmssdt.cern.ch/jenkins/job/release-produce-changelog)
 
 **Description:** ---need-description---
+
+**Project is <span style="color:green">enabled</span>.**
 
 **Upstream projects:**
 * [query-build-release-issues](#query-build-release-issues):
@@ -153,6 +165,8 @@ Not periodically build
 
 **Description:** None
 
+**Project is <span style="color:green">enabled</span>.**
+
 **Upstream projects:**
 * [release-produce-changelog](#release-produce-changelog):
 
@@ -173,6 +187,8 @@ Not periodically build
 ## [upload-release-setup](https://cmssdt.cern.ch/jenkins/job/upload-release-setup)
 
 **Description:** This job uploads a release on cmsrep server once approved by release manager.
+
+**Project is <span style="color:green">enabled</span>.**
 
 **Upstream projects:**
 * [query-build-release-issues](#query-build-release-issues):
@@ -195,6 +211,8 @@ Not periodically build
 ## [upload-release](https://cmssdt.cern.ch/jenkins/job/upload-release)
 
 **Description:** This job uploads a release on cmsrep server once approved by release manager.
+
+**Project is <span style="color:green">enabled</span>.**
 
 **Upstream projects:**
 * [upload-release-setup](#upload-release-setup):
@@ -220,6 +238,8 @@ Not periodically build
 
 **Description:** None
 
+**Project is <span style="color:green">enabled</span>.**
+
 **Upstream projects:**
 * [build-any-ib](#build-any-ib):
 * [upload-release](#upload-release):
@@ -242,6 +262,8 @@ H 21 * * *
 
 **Description:** ---need-description---
 
+**Project is <span style="color:red">disabled</span>.**
+
 **Upstream projects:**
 * [upload-release](#upload-release):
 
@@ -263,6 +285,8 @@ Not periodically build
 
 **Description:** This project adds the release information in <a href="https://cmssdt.cern.ch/SDT/releases.map">cms-bot/releases.map</a> file.
 CVMFS installation is started once a release is available in this file.
+
+**Project is <span style="color:green">enabled</span>.**
 
 **Upstream projects:**
 * [upload-release](#upload-release):
@@ -288,6 +312,8 @@ Not periodically build
 
 **Description:** TO build a CMSSW_X_Y_Z_FWLITE release based on an existing CMSSW_X_Y_Z release. CMSSW_X_Y_Z should already be build/uploaded before building its FWLITE version.
 
+**Project is <span style="color:green">enabled</span>.**
+
 **Upstream projects:**
 * [update-release-map](#update-release-map):
 
@@ -309,6 +335,8 @@ Not periodically build
 
 **Description:** Generate doxygen documentation for CMSSW project
 
+**Project is <span style="color:green">enabled</span>.**
+
 **Upstream projects:**
 * [update-release-map](#update-release-map):
 
@@ -329,6 +357,8 @@ Not periodically build
 ## [ib-run-cfipython](https://cmssdt.cern.ch/jenkins/job/ib-run-cfipython)
 
 **Description:** This job gets the cfipython files for a cmssw release and push the changes to cms-sw/cmssw-cfipython repo.
+
+**Project is <span style="color:green">enabled</span>.**
 
 **Upstream projects:**
 * [schedule-additional-tests](#schedule-additional-tests):

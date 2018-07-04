@@ -12,6 +12,8 @@
 
 **Description:** Aborts and kills a release building process.
 
+**Project is <span style="color:green">enabled</span>.**
+
 **Upstream projects:**
 * [query-build-release-issues](#query-build-release-issues):
 
@@ -36,6 +38,8 @@ Not periodically build
 **Description:** This is triggered by github webhook for each cmssw/cmsdist branch merge event.
 this forward port changes from source branch to target branch. Mapping between soruce and destination branches are available in cms-bot.
 
+**Project is <span style="color:green">enabled</span>.**
+
 **Upstream projects:**
 * [github-push-hook](#github-push-hook):
 
@@ -57,6 +61,8 @@ Not periodically build
 
 **Description:** Manually executed job for backporting pull requests given the repo name, the branch for which the PR should be created and the PR to be backported
 
+**Project is <span style="color:green">enabled</span>.**
+
 **Upstream projects:**
 
 **Downstream projects:**
@@ -76,6 +82,8 @@ Not periodically build
 ## [baseline-ib-results](https://cmssdt.cern.ch/jenkins/job/baseline-ib-results)
 
 **Description:** This job runs a few tests only for the IB, for comparison with those ran by the pull request.
+
+**Project is <span style="color:green">enabled</span>.**
 
 **Upstream projects:**
 * [schedule-additional-tests](#schedule-additional-tests):
@@ -109,6 +117,8 @@ Not periodically build
 Otherwise build a patch release
 
 
+**Project is <span style="color:green">enabled</span>.**
+
 **Upstream projects:**
 * [ib-tag-and-schdule](#ib-tag-and-schdule):
 
@@ -138,6 +148,8 @@ Not periodically build
 **Description:** Builds a docker container manualy when the docker file (the recipe) here: https://github.com/cms-sw/cms-docker is changed and needs to be updated.
 The parameters passed are self explandatory and concern details about which container to update, should it be pushed back on dockerhub etc.
 
+**Project is <span style="color:green">enabled</span>.**
+
 **Upstream projects:**
 
 **Downstream projects:**
@@ -157,6 +169,8 @@ Not periodically build
 ## [build-fwlite](https://cmssdt.cern.ch/jenkins/job/build-fwlite)
 
 **Description:** TO build a CMSSW_X_Y_Z_FWLITE release based on an existing CMSSW_X_Y_Z release. CMSSW_X_Y_Z should already be build/uploaded before building its FWLITE version.
+
+**Project is <span style="color:green">enabled</span>.**
 
 **Upstream projects:**
 * [update-release-map](#update-release-map):
@@ -179,6 +193,8 @@ Not periodically build
 
 **Description:** This job is responsible for building FWLITE release for each Integration build(IB). 
 Results of this build can be seen via <a href="https://cmssdt.cern.ch/SDT/">CMSSDT</a> <a href="https://cmssdt.cern.ch/SDT/html/showIB.html">IB page</a>.
+
+**Project is <span style="color:green">enabled</span>.**
 
 **Upstream projects:**
 * [build-any-ib](#build-any-ib):
@@ -203,6 +219,8 @@ Not periodically build
 **Description:** This job actually builds a release.
 It is triggered by cms-bot after the <a href="https://github.com/cms-sw/cmssw/issues?q=label%3Arelease-notes-requested">Release build Issue</a> is approved by release manager.
 
+**Project is <span style="color:green">enabled</span>.**
+
 **Upstream projects:**
 * [query-build-release-issues](#query-build-release-issues):
 
@@ -223,6 +241,8 @@ Not periodically build
 ## [cleanup-auto-build](https://cmssdt.cern.ch/jenkins/job/cleanup-auto-build)
 
 **Description:** This job deletes the relsease build areas after three days.
+
+**Project is <span style="color:green">enabled</span>.**
 
 **Upstream projects:**
 * [query-build-release-issues](#query-build-release-issues):
@@ -246,6 +266,8 @@ Not periodically build
 **Description:** This job cleanup the cms-sw/cms-sw.github.io repository history. Specially the data and _data directories history.
 
 
+**Project is <span style="color:green">enabled</span>.**
+
 **Upstream projects:**
 
 **Downstream projects:**
@@ -266,6 +288,8 @@ H 1 * * 0
 ## [cleanup-cmssdt](https://cmssdt.cern.ch/jenkins/job/cleanup-cmssdt)
 
 **Description:** Clean up disk space on cmssdt
+
+**Project is <span style="color:green">enabled</span>.**
 
 **Upstream projects:**
 
@@ -288,6 +312,8 @@ H 0 * * *
 **Description:** Cleanup IB tags from the official CMSSW repository.
 
 
+**Project is <span style="color:green">enabled</span>.**
+
 **Upstream projects:**
 
 **Downstream projects:**
@@ -308,6 +334,8 @@ H 0 * * *
 
 **Description:** This is cms bot job which is triggered by github webhooks ( https://cmssdt.cern.ch/SDT/cgi-bin/github_webhook ) for every valid comment added to github PRs.
 Also it runsevery 30mins to make sure any webhooks were not missed. 
+
+**Project is <span style="color:green">enabled</span>.**
 
 **Upstream projects:**
 * [github-webhook](#github-webhook):
@@ -336,6 +364,8 @@ Not periodically build
 
 **Description:** This job creates docker image with CMSSW and push it to the dockerhub. It also uploads dockerfile to github.
 
+**Project is <span style="color:green">enabled</span>.**
+
 **Upstream projects:**
 
 **Downstream projects:**
@@ -355,6 +385,8 @@ Not periodically build
 ## [cms-prs-cache](https://cmssdt.cern.ch/jenkins/job/cms-prs-cache)
 
 **Description:** None
+
+**Project is <span style="color:green">enabled</span>.**
 
 **Upstream projects:**
 * [cms-prs-cache](#cms-prs-cache):
@@ -380,6 +412,8 @@ Not periodically build
 
 **Description:** None
 
+**Project is <span style="color:green">enabled</span>.**
+
 **Upstream projects:**
 * [build-any-ib](#build-any-ib):
 * [upload-release](#upload-release):
@@ -401,6 +435,8 @@ H 21 * * *
 ## [cmssw-doxygen](https://cmssdt.cern.ch/jenkins/job/cmssw-doxygen)
 
 **Description:** Generate doxygen documentation for CMSSW project
+
+**Project is <span style="color:green">enabled</span>.**
 
 **Upstream projects:**
 * [update-release-map](#update-release-map):
@@ -424,6 +460,8 @@ Not periodically build
 **Description:** This looks for the Framework changes in cmssw and port them to stitched repo
 This is automatically triggered by auto-forward-port job
 
+**Project is <span style="color:red">disabled</span>.**
+
 **Upstream projects:**
 
 **Downstream projects:**
@@ -444,6 +482,8 @@ H 0 * * *
 
 **Description:** This is cms bot job which is triggered by github webhooks ( https://cmssdt.cern.ch/SDT/cgi-bin/github_webhook ) for every valid comment added to github PRs.
 This is to process bot commands for cmsdist comp branches
+
+**Project is <span style="color:green">enabled</span>.**
 
 **Upstream projects:**
 * [github-webhook](#github-webhook):
@@ -467,6 +507,8 @@ Not periodically build
 **Description:** Comopare results of material budget of two releases using Validation/Geometry/test/TrackerMaterialBudgetComparison.C macro
 
 
+**Project is <span style="color:green">enabled</span>.**
+
 **Upstream projects:**
 * [ib-run-material-budget](#ib-run-material-budget):
 
@@ -488,6 +530,8 @@ Not periodically build
 
 **Description:** Download the files of the baseline IB and compare them with the results of the ones of a pull request
 
+**Project is <span style="color:green">enabled</span>.**
+
 **Upstream projects:**
 * [ib-any-integration](#ib-any-integration):
 
@@ -508,6 +552,8 @@ Not periodically build
 ## [cvmfs-deploy-baseline](https://cmssdt.cern.ch/jenkins/job/cvmfs-deploy-baseline)
 
 **Description:** Copy baseline results from cmssdt for an IB
+
+**Project is <span style="color:green">enabled</span>.**
 
 **Upstream projects:**
 * [baseline-ib-results](#baseline-ib-results):
@@ -532,6 +578,8 @@ Not periodically build
 
 **Description:** This runs CVMFS GC (once a week)
 
+**Project is <span style="color:green">enabled</span>.**
+
 **Upstream projects:**
 
 **Downstream projects:**
@@ -552,6 +600,8 @@ H 23  * *  4
 ## [cvmfs-publish-baseline](https://cmssdt.cern.ch/jenkins/job/cvmfs-publish-baseline)
 
 **Description:** Copy baseline results from cmssdt for an IB and deploy them on cvmfs
+
+**Project is <span style="color:green">enabled</span>.**
 
 **Upstream projects:**
 * [cvmfs-deploy-baseline](#cvmfs-deploy-baseline):
@@ -574,6 +624,8 @@ Not periodically build
 
 **Description:** Job to run das client and cache the results in github to be used by IBs.
 
+**Project is <span style="color:green">enabled</span>.**
+
 **Upstream projects:**
 
 **Downstream projects:**
@@ -593,6 +645,8 @@ H 9,21 * * *
 ## [dataset-to-ibeos](https://cmssdt.cern.ch/jenkins/job/dataset-to-ibeos)
 
 **Description:** None
+
+**Project is <span style="color:green">enabled</span>.**
 
 **Upstream projects:**
 
@@ -615,6 +669,8 @@ Not periodically build
 
 **Description:** Updates cms-bot clone on Jenkins master
 
+**Project is <span style="color:green">enabled</span>.**
+
 **Upstream projects:**
 * [github-push-hook](#github-push-hook):
 
@@ -636,6 +692,8 @@ Not periodically build
 
 **Description:** None
 
+**Project is <span style="color:green">enabled</span>.**
+
 **Upstream projects:**
 
 **Downstream projects:**
@@ -655,6 +713,8 @@ Not periodically build
 ## [dxr-cmssw-index](https://cmssdt.cern.ch/jenkins/job/dxr-cmssw-index)
 
 **Description:** ---need-description---
+
+**Project is <span style="color:green">enabled</span>.**
 
 **Upstream projects:**
 
@@ -676,6 +736,8 @@ Not periodically build
 
 **Description:** None
 
+**Project is <span style="color:green">enabled</span>.**
+
 **Upstream projects:**
 
 **Downstream projects:**
@@ -696,6 +758,8 @@ H 0  * *  0
 
 **Description:** This job deployes any external tool on afs that is required. 
 
+**Project is <span style="color:red">disabled</span>.**
+
 **Upstream projects:**
 
 **Downstream projects:**
@@ -715,6 +779,8 @@ Not periodically build
 ## [fix-backport-prs](https://cmssdt.cern.ch/jenkins/job/fix-backport-prs)
 
 **Description:** None
+
+**Project is <span style="color:green">enabled</span>.**
 
 **Upstream projects:**
 
@@ -737,6 +803,8 @@ H * * * *
 **Description:** Given a branch, gets all of its pull requests and recreates them in a different branch.
 
 
+**Project is <span style="color:green">enabled</span>.**
+
 **Upstream projects:**
 
 **Downstream projects:**
@@ -757,6 +825,8 @@ Not periodically build
 
 **Description:** printing some python file	
 
+**Project is <span style="color:green">enabled</span>.**
+
 **Upstream projects:**
 
 **Downstream projects:**
@@ -776,6 +846,8 @@ H 22 * * *
 ## [git-mirror-repository](https://cmssdt.cern.ch/jenkins/job/git-mirror-repository)
 
 **Description:** mirror one git repository
+
+**Project is <span style="color:green">enabled</span>.**
 
 **Upstream projects:**
 * [github-push-hook](#github-push-hook):
@@ -799,6 +871,8 @@ Not periodically build
 **Description:** Create GIT Reference for cms-sw/cmssw repository in /cvmfs/cms-ib.cern.ch/git/cms-sw.
 This is automatically triggered by "git push" to cmssw repo.
 
+**Project is <span style="color:green">enabled</span>.**
+
 **Upstream projects:**
 * [github-push-hook](#github-push-hook):
 
@@ -821,6 +895,8 @@ Not periodically build
 **Description:** Adds and configures web hooks in github repositories. The web hooks are then used to send some events to a specified url
 and then a jenkins job is triggered based on the information passed from the web hook , as jenkins parameters. 
 
+**Project is <span style="color:green">enabled</span>.**
+
 **Upstream projects:**
 
 **Downstream projects:**
@@ -841,6 +917,8 @@ H 0 * * *
 
 **Description:** Updates cms-bot clone on cmssdt.
 This job is also triggered via github web hook. Please do not add/remove any parameters of this job otherwise github web hooks will not be able to triiger the job
+
+**Project is <span style="color:green">enabled</span>.**
 
 **Upstream projects:**
 * [github-webhook](#github-webhook):
@@ -874,6 +952,8 @@ H */6 * * *
 **Description:** This is cms bot job which is triggered by github webhooks ( https://cmssdt.cern.ch/SDT/cgi-bin/github_webhook ) for every valid comment added to github PRs.
 Also it runsevery 30mins to make sure any webhooks were not missed. 
 
+**Project is <span style="color:green">enabled</span>.**
+
 **Upstream projects:**
 
 **Downstream projects:**
@@ -904,6 +984,8 @@ Not periodically build
 
 **Description:** Appends job's time out information into jenkins.log file.
 
+**Project is <span style="color:green">enabled</span>.**
+
 **Upstream projects:**
 * [schedule-additional-tests](#schedule-additional-tests):
 
@@ -924,6 +1006,8 @@ Not periodically build
 ## [ib-any-integration](https://cmssdt.cern.ch/jenkins/job/ib-any-integration)
 
 **Description:** Build a pull request
+
+**Project is <span style="color:green">enabled</span>.**
 
 **Upstream projects:**
 * [ib-schedule-pr-tests](#ib-schedule-pr-tests):
@@ -952,6 +1036,8 @@ Not periodically build
 
 **Description:** It is build periodically (H/30 * * * *). Runs on cmssdt. Projects to build: update-github-pages
 
+**Project is <span style="color:green">enabled</span>.**
+
 **Upstream projects:**
 * [build-any-ib](#build-any-ib):
 * [build-fwlite-ib](#build-fwlite-ib):
@@ -975,6 +1061,8 @@ H/30 * * * *
 
 **Description:** Job to run das client and cache the results in github to be used by IBs.
 
+**Project is <span style="color:green">enabled</span>.**
+
 **Upstream projects:**
 
 **Downstream projects:**
@@ -997,6 +1085,8 @@ H 10,22 * * *
 
 **Description:** Cron job for log rotation on installer nodes. (clean up obsolete weeks)
 
+**Project is <span style="color:green">enabled</span>.**
+
 **Upstream projects:**
 
 **Downstream projects:**
@@ -1016,6 +1106,8 @@ H 22 * * *
 ## [ib-cvmfs-publish](https://cmssdt.cern.ch/jenkins/job/ib-cvmfs-publish)
 
 **Description:** This jobs copies IBs installation for an arch from another machine and publish it to cvmfs
+
+**Project is <span style="color:red">disabled</span>.**
 
 **Upstream projects:**
 
@@ -1037,6 +1129,8 @@ Not periodically build
 ## [ib-install-cvmfs](https://cmssdt.cern.ch/jenkins/job/ib-install-cvmfs)
 
 **Description:** This jobs install an IB on /cvmfs/cms-ib.cern.ch.
+
+**Project is <span style="color:green">enabled</span>.**
 
 **Upstream projects:**
 * [build-any-ib](#build-any-ib):
@@ -1061,6 +1155,8 @@ Not periodically build
 
 **Description:** ---need-description---
 
+**Project is <span style="color:green">enabled</span>.**
+
 **Upstream projects:**
 * [ib-validation](#ib-validation):
 
@@ -1081,6 +1177,8 @@ Not periodically build
 ## [ib-run-cfipython](https://cmssdt.cern.ch/jenkins/job/ib-run-cfipython)
 
 **Description:** This job gets the cfipython files for a cmssw release and push the changes to cms-sw/cmssw-cfipython repo.
+
+**Project is <span style="color:green">enabled</span>.**
 
 **Upstream projects:**
 * [schedule-additional-tests](#schedule-additional-tests):
@@ -1104,6 +1202,8 @@ Not periodically build
 
 **Description:** Check for missing headers and parse the log for all errors (clang modules)
 
+**Project is <span style="color:green">enabled</span>.**
+
 **Upstream projects:**
 * [schedule-additional-tests](#schedule-additional-tests):
 
@@ -1124,6 +1224,8 @@ Not periodically build
 ## [ib-run-flawfinder](https://cmssdt.cern.ch/jenkins/job/ib-run-flawfinder)
 
 **Description:** ---need-description---
+
+**Project is <span style="color:green">enabled</span>.**
 
 **Upstream projects:**
 * [schedule-additional-tests](#schedule-additional-tests):
@@ -1146,6 +1248,8 @@ Not periodically build
 
 **Description:** Runs geometry comparison tests for each IB
 
+**Project is <span style="color:red">disabled</span>.**
+
 **Upstream projects:**
 * [schedule-additional-tests](#schedule-additional-tests):
 
@@ -1166,6 +1270,8 @@ Not periodically build
 ## [ib-run-igprof-mp](https://cmssdt.cern.ch/jenkins/job/ib-run-igprof-mp)
 
 **Description:** ---need-description---
+
+**Project is <span style="color:green">enabled</span>.**
 
 **Upstream projects:**
 * [schedule-additional-tests](#schedule-additional-tests):
@@ -1188,6 +1294,8 @@ Not periodically build
 
 **Description:** ---need-description---
 
+**Project is <span style="color:green">enabled</span>.**
+
 **Upstream projects:**
 * [schedule-additional-tests](#schedule-additional-tests):
 
@@ -1208,6 +1316,8 @@ Not periodically build
 ## [ib-run-iwyu](https://cmssdt.cern.ch/jenkins/job/ib-run-iwyu)
 
 **Description:** Runs iwyu logs parsing for each IB
+
+**Project is <span style="color:green">enabled</span>.**
 
 **Upstream projects:**
 * [schedule-additional-tests](#schedule-additional-tests):
@@ -1230,6 +1340,8 @@ Not periodically build
 
 **Description:** ---need-description---
 
+**Project is <span style="color:green">enabled</span>.**
+
 **Upstream projects:**
 * [schedule-additional-tests](#schedule-additional-tests):
 
@@ -1250,6 +1362,8 @@ Not periodically build
 ## [ib-run-material-budget](https://cmssdt.cern.ch/jenkins/job/ib-run-material-budget)
 
 **Description:** Runs Validation/Geometry/test/runP_Tracker_cfg.py and MaterialBudget.C for an IB
+
+**Project is <span style="color:green">enabled</span>.**
 
 **Upstream projects:**
 * [schedule-additional-tests](#schedule-additional-tests):
@@ -1273,6 +1387,8 @@ Not periodically build
 
 **Description:** ---need-description---
 
+**Project is <span style="color:green">enabled</span>.**
+
 **Upstream projects:**
 * [ib-validation](#ib-validation):
 
@@ -1293,6 +1409,8 @@ Not periodically build
 ## [ib-run-relvals](https://cmssdt.cern.ch/jenkins/job/ib-run-relvals)
 
 **Description:** The job runs release validations, as validations are separated on pieces (1of6 2of6 etc)
+
+**Project is <span style="color:green">enabled</span>.**
 
 **Upstream projects:**
 * [ib-validation](#ib-validation):
@@ -1317,6 +1435,8 @@ Not periodically build
 
 **Description:** This job runs valgrind tool for selected IBs when build IB job is complete.   
 
+**Project is <span style="color:green">enabled</span>.**
+
 **Upstream projects:**
 * [schedule-additional-tests](#schedule-additional-tests):
 
@@ -1339,6 +1459,8 @@ Not periodically build
 **Description:** This is a warpper job which runs daily at 11h and 23h (except Sunday at 00h) to triger 'ib-tag-and-schdule' sub-project.<br/>
 This was created to avoid the issue with <a href="https://wiki.jenkins.io/display/JENKINS/Dynamic+Parameter+Plug-in">Jenkins Dynamic Parameters</a>.
 
+
+**Project is <span style="color:green">enabled</span>.**
 
 **Upstream projects:**
 
@@ -1366,6 +1488,8 @@ This was created to avoid the issue with <a href="https://wiki.jenkins.io/displa
 
 **Description:** Build a pull request
 
+**Project is <span style="color:green">enabled</span>.**
+
 **Upstream projects:**
 * [cms-bot](#cms-bot):
 
@@ -1388,6 +1512,8 @@ Not periodically build
 ## [ib-static-checks](https://cmssdt.cern.ch/jenkins/job/ib-static-checks)
 
 **Description:** Runs a few tests only for the IB, for comparison with those ran by the pull request.
+
+**Project is <span style="color:green">enabled</span>.**
 
 **Upstream projects:**
 * [schedule-additional-tests](#schedule-additional-tests):
@@ -1416,6 +1542,8 @@ For Developement IB, it also triggers the generation of <a href="https://cmssdt.
 For Sunday's 00h IBs, it also resets the CMSREP weekly repositories by building a dummy package and uploading it to cms.weekN. It also 
 then triggers 'ib-install-cvmfs' sub-job to get the new cms.weekN deployed on the /cvmfs/cms-ib.cern.ch
 
+**Project is <span style="color:green">enabled</span>.**
+
 **Upstream projects:**
 * [ib-schedule](#ib-schedule):
 
@@ -1442,6 +1570,8 @@ Not periodically build
 ## [ib-validation](https://cmssdt.cern.ch/jenkins/job/ib-validation)
 
 **Description:** Validates the integration builds.
+
+**Project is <span style="color:green">enabled</span>.**
 
 **Upstream projects:**
 * [ib-cvmfs-publish](#ib-cvmfs-publish):
@@ -1474,6 +1604,8 @@ Not periodically build
 **Description:** This tags a CMSSW release tag and upload the packages (https://github.com/cms-sw/Stitched/blob/master/packages.txt) needed by Stitched to Stitched repo.
 CMSSW_* tag is rename to STITCHED_*
 
+**Project is <span style="color:green">enabled</span>.**
+
 **Upstream projects:**
 
 **Downstream projects:**
@@ -1493,6 +1625,8 @@ Not periodically build
 ## [jenkins-add-job-to-anthoer-server](https://cmssdt.cern.ch/jenkins/job/jenkins-add-job-to-anthoer-server)
 
 **Description:** This is a helper job to copy a Jenkins Project from this Jenkins master to another Jenkins master.
+
+**Project is <span style="color:green">enabled</span>.**
 
 **Upstream projects:**
 
@@ -1514,6 +1648,8 @@ Not periodically build
 
 **Description:** This job takes the backup of Jenkins master configuration (which includes projects, jenkins configuration, slaves, secrets etc.)
 Backups jenkins scripts on https://github.com/cms-sw/jenkins-backup.git
+
+**Project is <span style="color:green">enabled</span>.**
 
 **Upstream projects:**
 
@@ -1538,6 +1674,8 @@ example parameter
 cmsbuild* 
 would enable all cmsbuild machines found
 
+**Project is <span style="color:green">enabled</span>.**
+
 **Upstream projects:**
 
 **Downstream projects:**
@@ -1557,6 +1695,8 @@ Not periodically build
 ## [jenkins-disable-nodes](https://cmssdt.cern.ch/jenkins/job/jenkins-disable-nodes)
 
 **Description:** Disable all jenkins slaves based on the slave wildcard filter.
+
+**Project is <span style="color:green">enabled</span>.**
 
 **Upstream projects:**
 
@@ -1580,6 +1720,8 @@ Not periodically build
 
 
 
+**Project is <span style="color:green">enabled</span>.**
+
 **Upstream projects:**
 
 **Downstream projects:**
@@ -1599,6 +1741,8 @@ H/5 * * * *
 ## [jenkins-enable-jobs](https://cmssdt.cern.ch/jenkins/job/jenkins-enable-jobs)
 
 **Description:** Enable all Jenkins projects based on the wildcard filter.
+
+**Project is <span style="color:green">enabled</span>.**
 
 **Upstream projects:**
 * [jenkins-initialize](#jenkins-initialize):
@@ -1624,6 +1768,8 @@ example parameter
 cmsbuild* 
 would enable all cmsbuild machines found
 
+**Project is <span style="color:green">enabled</span>.**
+
 **Upstream projects:**
 
 **Downstream projects:**
@@ -1644,6 +1790,8 @@ Not periodically build
 
 **Description:** This project is run once a new Jenkins instance is setup or upgrated to a new version.
 This runs some sub-projects to check if basic functionality of jenkins is working.
+
+**Project is <span style="color:green">enabled</span>.**
 
 **Upstream projects:**
 
@@ -1672,6 +1820,8 @@ H H * * *
 
 **Description:** This is Jenkins installation tests project. It tests if various Jenkins Command-line interface service are working.
 
+**Project is <span style="color:green">enabled</span>.**
+
 **Upstream projects:**
 * [jenkins-initialize](#jenkins-initialize):
 
@@ -1693,6 +1843,8 @@ Not periodically build
 
 **Description:** Jenkins installaton test job to test the triggering of a sub-project via Command-line-interface.
 
+**Project is <span style="color:green">enabled</span>.**
+
 **Upstream projects:**
 
 **Downstream projects:**
@@ -1712,6 +1864,8 @@ Not periodically build
 ## [jenkins-installation-trigger-test](https://cmssdt.cern.ch/jenkins/job/jenkins-installation-trigger-test)
 
 **Description:** This is Jenkins installation test project. This tests the triggering of a sub-project.
+
+**Project is <span style="color:green">enabled</span>.**
 
 **Upstream projects:**
 * [jenkins-initialize](#jenkins-initialize):
@@ -1738,6 +1892,8 @@ display it in html form. The current page you are viewing is generated and updat
 
 
 
+**Project is <span style="color:green">enabled</span>.**
+
 **Upstream projects:**
 
 **Downstream projects:**
@@ -1761,6 +1917,8 @@ display it in markdown form. It is later imported to CMSSDT wiki.
 
 
 
+**Project is <span style="color:green">enabled</span>.**
+
 **Upstream projects:**
 
 **Downstream projects:**
@@ -1782,6 +1940,8 @@ H/5 * * * *
 **Description:** This jobs looks for jenkins slaves which went offline due to job failures
 
 
+**Project is <span style="color:green">enabled</span>.**
+
 **Upstream projects:**
 
 **Downstream projects:**
@@ -1802,6 +1962,8 @@ Not periodically build
 
 **Description:** Jenkins installation test job 1 to check for the parameters passed from a parent job.
 
+**Project is <span style="color:green">enabled</span>.**
+
 **Upstream projects:**
 
 **Downstream projects:**
@@ -1821,6 +1983,8 @@ Not periodically build
 ## [jenkins-test-job2](https://cmssdt.cern.ch/jenkins/job/jenkins-test-job2)
 
 **Description:** Jenkins tests Project to test jenkins functionality.
+
+**Project is <span style="color:green">enabled</span>.**
 
 **Upstream projects:**
 
@@ -1843,6 +2007,8 @@ Not periodically build
 **Description:** This Jenkins project test various CMS Jenkins slaves and makes sure that various communication channels 
 between Jenkins Master/slave  and slave and various services are working.
 
+**Project is <span style="color:green">enabled</span>.**
+
 **Upstream projects:**
 * [jenkins-test-slaves](#jenkins-test-slaves):
 
@@ -1863,6 +2029,8 @@ Not periodically build
 ## [jenkins-test-slaves](https://cmssdt.cern.ch/jenkins/job/jenkins-test-slaves)
 
 **Description:** Jenkins project to trigger the jenkins slave test job for each selected slave
+
+**Project is <span style="color:green">enabled</span>.**
 
 **Upstream projects:**
 
@@ -1886,6 +2054,8 @@ H H/8 * * *
 
 **Description:** Aborts and kills a release building process. 
 
+**Project is <span style="color:green">enabled</span>.**
+
 **Upstream projects:**
 * [abort-release](#abort-release):
 
@@ -1907,6 +2077,8 @@ Not periodically build
 
 **Description:** None
 
+**Project is <span style="color:green">enabled</span>.**
+
 **Upstream projects:**
 
 **Downstream projects:**
@@ -1926,6 +2098,8 @@ H H/8 * * *
 ## [lfn-to-ibeos](https://cmssdt.cern.ch/jenkins/job/lfn-to-ibeos)
 
 **Description:** Job to run das client and cache the results in github to be used by IBs.
+
+**Project is <span style="color:green">enabled</span>.**
 
 **Upstream projects:**
 
@@ -1949,6 +2123,8 @@ Not periodically build
 
 **Description:** This job checks if https://cmssdt.cern.ch/lxr/ is acessable and if not, starts <a href="https://cmssdt.cern.ch/jenkins/view/All/job/lxr-run-container/">lxr-run-container<a/> job to restart the service.
 
+**Project is <span style="color:red">disabled</span>.**
+
 **Upstream projects:**
 
 **Downstream projects:**
@@ -1970,6 +2146,8 @@ H/5 * * * *
 ## [lxr-checkout-version](https://cmssdt.cern.ch/jenkins/job/lxr-checkout-version)
 
 **Description:** None
+
+**Project is <span style="color:green">enabled</span>.**
 
 **Upstream projects:**
 * [ib-tag-and-schdule](#ib-tag-and-schdule):
@@ -1994,6 +2172,8 @@ Not periodically build
 
 **Description:** None
 
+**Project is <span style="color:green">enabled</span>.**
+
 **Upstream projects:**
 * [lxr-checkout-version](#lxr-checkout-version):
 
@@ -2014,6 +2194,8 @@ Not periodically build
 ## [lxr-remove-index](https://cmssdt.cern.ch/jenkins/job/lxr-remove-index)
 
 **Description:** None
+
+**Project is <span style="color:green">enabled</span>.**
 
 **Upstream projects:**
 
@@ -2036,6 +2218,8 @@ H 5  * * *
 
 **Description:** This job stops and deletes old docker contaner of LXR service and starts new one.
 
+**Project is <span style="color:green">enabled</span>.**
+
 **Upstream projects:**
 * [lxr-check](#lxr-check):
 
@@ -2057,6 +2241,8 @@ H * * * *
 
 **Description:** Runs Validation/Geometry/test/runP_Tracker_cfg.py and MaterialBudget.C for an IB
 
+**Project is <span style="color:green">enabled</span>.**
+
 **Upstream projects:**
 
 **Downstream projects:**
@@ -2076,6 +2262,8 @@ Not periodically build
 ## [mirror-cmsrep](https://cmssdt.cern.ch/jenkins/job/mirror-cmsrep)
 
 **Description:** Create a live mirror of cmsrep.cern.ch
+
+**Project is <span style="color:green">enabled</span>.**
 
 **Upstream projects:**
 
@@ -2097,6 +2285,8 @@ Not periodically build
 
 **Description:** This job run periodically to monitor the running state of vms in openstack , if stopped , creates an email alert.
 
+**Project is <span style="color:green">enabled</span>.**
+
 **Upstream projects:**
 
 **Downstream projects:**
@@ -2116,6 +2306,8 @@ Not periodically build
 ## [openstack-add-jenkins-slave](https://cmssdt.cern.ch/jenkins/job/openstack-add-jenkins-slave)
 
 **Description:** Find all hosts in an hostgroup and add them to jenkins
+
+**Project is <span style="color:green">enabled</span>.**
 
 **Upstream projects:**
 * [openstack-check-jenkins-slaves](#openstack-check-jenkins-slaves):
@@ -2138,6 +2330,8 @@ Not periodically build
 
 **Description:** Find all hosts in an hostgroup and add then to jenkins
 
+**Project is <span style="color:green">enabled</span>.**
+
 **Upstream projects:**
 
 **Downstream projects:**
@@ -2159,6 +2353,8 @@ H * * * *
 ## [openstack-create-vms](https://cmssdt.cern.ch/jenkins/job/openstack-create-vms)
 
 **Description:** Create Openstack VMs for a selected hostgroup.
+
+**Project is <span style="color:green">enabled</span>.**
 
 **Upstream projects:**
 * [openstack-create-vms](#openstack-create-vms):
@@ -2184,6 +2380,8 @@ Not periodically build
 
 **Description:** Job to delete openstack instances providing only the name
 
+**Project is <span style="color:green">enabled</span>.**
+
 **Upstream projects:**
 
 **Downstream projects:**
@@ -2203,6 +2401,8 @@ Not periodically build
 ## [openstack-delete-vms](https://cmssdt.cern.ch/jenkins/job/openstack-delete-vms)
 
 **Description:** Job to delete openstack instances providing only the name
+
+**Project is <span style="color:green">enabled</span>.**
 
 **Upstream projects:**
 * [openstack-create-vms](#openstack-create-vms):
@@ -2230,6 +2430,8 @@ Not periodically build
 
 **Description:** Job to delete openstack instances providing only the name
 
+**Project is <span style="color:green">enabled</span>.**
+
 **Upstream projects:**
 * [openstack-delete-vms](#openstack-delete-vms):
 
@@ -2251,6 +2453,8 @@ Not periodically build
 
 **Description:** None
 
+**Project is <span style="color:green">enabled</span>.**
+
 **Upstream projects:**
 
 **Downstream projects:**
@@ -2270,6 +2474,8 @@ Not periodically build
 ## [process-relval-logs](https://cmssdt.cern.ch/jenkins/job/process-relval-logs)
 
 **Description:** This job process partial logs of Relvals and place files accordingly. 
+
+**Project is <span style="color:green">enabled</span>.**
 
 **Upstream projects:**
 * [ib-run-relvals](#ib-run-relvals):
@@ -2293,6 +2499,8 @@ H/20 * * * *
 ## [query-build-release-issues](https://cmssdt.cern.ch/jenkins/job/query-build-release-issues)
 
 **Description:** ---need-description---
+
+**Project is <span style="color:green">enabled</span>.**
 
 **Upstream projects:**
 * [github-webhook](#github-webhook):
@@ -2325,6 +2533,8 @@ H/15 * * * *
 
 **Description:** This job updates the cmssw IB page on cmssdt.
 
+**Project is <span style="color:green">enabled</span>.**
+
 **Upstream projects:**
 * [update-github-pages](#update-github-pages):
 
@@ -2346,6 +2556,8 @@ Not periodically build
 
 **Description:** ---need-description---
 
+**Project is <span style="color:red">disabled</span>.**
+
 **Upstream projects:**
 * [upload-release](#upload-release):
 
@@ -2366,6 +2578,8 @@ Not periodically build
 ## [release-produce-changelog](https://cmssdt.cern.ch/jenkins/job/release-produce-changelog)
 
 **Description:** ---need-description---
+
+**Project is <span style="color:green">enabled</span>.**
 
 **Upstream projects:**
 * [query-build-release-issues](#query-build-release-issues):
@@ -2390,6 +2604,8 @@ Not periodically build
 
 **Description:** Backs-up cmsrep
 
+**Project is <span style="color:red">disabled</span>.**
+
 **Upstream projects:**
 
 **Downstream projects:**
@@ -2409,6 +2625,8 @@ H 0 * * *
 ## [run-igprof-pr](https://cmssdt.cern.ch/jenkins/job/run-igprof-pr)
 
 **Description:** ---need-description---
+
+**Project is <span style="color:green">enabled</span>.**
 
 **Upstream projects:**
 * [ib-any-integration](#ib-any-integration):
@@ -2434,6 +2652,8 @@ In a CMSSW dev area, it runs
   git cms-merge-topic -u PR
   scram build code-checks
 
+**Project is <span style="color:green">enabled</span>.**
+
 **Upstream projects:**
 * [cms-bot](#cms-bot):
 
@@ -2457,6 +2677,8 @@ Not periodically build
 
 **Description:** None
 
+**Project is <span style="color:green">enabled</span>.**
+
 **Upstream projects:**
 
 **Downstream projects:**
@@ -2476,6 +2698,8 @@ Not periodically build
 ## [schedule-additional-tests](https://cmssdt.cern.ch/jenkins/job/schedule-additional-tests)
 
 **Description:** ---need-description---
+
+**Project is <span style="color:green">enabled</span>.**
 
 **Upstream projects:**
 * [ib-validation](#ib-validation):
@@ -2523,6 +2747,8 @@ Not periodically build
 
 **Description:** None
 
+**Project is <span style="color:green">enabled</span>.**
+
 **Upstream projects:**
 
 **Downstream projects:**
@@ -2547,6 +2773,8 @@ H 7,19 * * *
 
 **Description:** Kill a running 
 
+**Project is <span style="color:green">enabled</span>.**
+
 **Upstream projects:**
 * [cms-bot](#cms-bot):
 * [ib-any-integration](#ib-any-integration):
@@ -2570,6 +2798,8 @@ Not periodically build
 
 **Description:** ---need-description---
 
+**Project is <span style="color:green">enabled</span>.**
+
 **Upstream projects:**
 * [update-github-pages](#update-github-pages):
 
@@ -2591,6 +2821,8 @@ Not periodically build
 
 **Description:** None
 
+**Project is <span style="color:red">disabled</span>.**
+
 **Upstream projects:**
 
 **Downstream projects:**
@@ -2611,6 +2843,8 @@ Not periodically build
 
 **Description:** None
 
+**Project is <span style="color:green">enabled</span>.**
+
 **Upstream projects:**
 
 **Downstream projects:**
@@ -2630,6 +2864,8 @@ H/15 * * * *
 ## [test-docker](https://cmssdt.cern.ch/jenkins/job/test-docker)
 
 **Description:** None
+
+**Project is <span style="color:green">enabled</span>.**
 
 **Upstream projects:**
 * [slaves-checks](#slaves-checks):
@@ -2654,6 +2890,8 @@ Not periodically build
 var KRB5CC inside the image to point to the ticket within /tmp. Then adds few commands in a script
 and runs the script with docker to check the behaviour
 
+**Project is <span style="color:green">enabled</span>.**
+
 **Upstream projects:**
 
 **Downstream projects:**
@@ -2673,6 +2911,8 @@ Not periodically build
 ## [test-relvals-with-krb](https://cmssdt.cern.ch/jenkins/job/test-relvals-with-krb)
 
 **Description:** The job runs release validations, as validations are separated on pieces (1of6 2of6 etc)
+
+**Project is <span style="color:green">enabled</span>.**
 
 **Upstream projects:**
 
@@ -2696,6 +2936,8 @@ Not periodically build
 
 **Description:** None
 
+**Project is <span style="color:green">enabled</span>.**
+
 **Upstream projects:**
 
 **Downstream projects:**
@@ -2715,6 +2957,8 @@ Not periodically build
 ## [tutorial-jenkins](https://cmssdt.cern.ch/jenkins/job/tutorial-jenkins)
 
 **Description:** This is job used to learn jenkins.
+
+**Project is <span style="color:green">enabled</span>.**
 
 **Upstream projects:**
 
@@ -2736,6 +2980,8 @@ Not periodically build
 
 **Description:** ---need-description---
 
+**Project is <span style="color:green">enabled</span>.**
+
 **Upstream projects:**
 
 **Downstream projects:**
@@ -2755,6 +3001,8 @@ H 0 * * *
 ## [update-das-queries](https://cmssdt.cern.ch/jenkins/job/update-das-queries)
 
 **Description:** Job to run das client and cache the results in github to be used by IBs.
+
+**Project is <span style="color:green">enabled</span>.**
 
 **Upstream projects:**
 * [ib-run-relvals](#ib-run-relvals):
@@ -2778,6 +3026,8 @@ Not periodically build
 
 **Description:** Update some of the externals mirror and setup a cms specific branch so that updates can be proposed there. 
 
+**Project is <span style="color:red">disabled</span>.**
+
 **Upstream projects:**
 
 **Downstream projects:**
@@ -2797,6 +3047,8 @@ Not periodically build
 ## [update-github-pages](https://cmssdt.cern.ch/jenkins/job/update-github-pages)
 
 **Description:** This job update contents of the "data" directory in cms-sw.github.io
+
+**Project is <span style="color:green">enabled</span>.**
 
 **Upstream projects:**
 * [cleanup-cms-sw-io-history](#cleanup-cms-sw-io-history):
@@ -2823,6 +3075,8 @@ Not periodically build
 
 **Description:** None
 
+**Project is <span style="color:green">enabled</span>.**
+
 **Upstream projects:**
 
 **Downstream projects:**
@@ -2842,6 +3096,8 @@ Not periodically build
 ## [update-ibeos-cache](https://cmssdt.cern.ch/jenkins/job/update-ibeos-cache)
 
 **Description:** Job to run das client and cache the results in github to be used by IBs.
+
+**Project is <span style="color:green">enabled</span>.**
 
 **Upstream projects:**
 * [dataset-to-ibeos](#dataset-to-ibeos):
@@ -2867,6 +3123,8 @@ H */6 * * *
 **Description:** This project adds the release information in <a href="https://cmssdt.cern.ch/SDT/releases.map">cms-bot/releases.map</a> file.
 CVMFS installation is started once a release is available in this file.
 
+**Project is <span style="color:green">enabled</span>.**
+
 **Upstream projects:**
 * [upload-release](#upload-release):
 
@@ -2891,6 +3149,8 @@ Not periodically build
 
 **Description:** None
 
+**Project is <span style="color:green">enabled</span>.**
+
 **Upstream projects:**
 * [release-produce-changelog](#release-produce-changelog):
 
@@ -2911,6 +3171,8 @@ Not periodically build
 ## [upload-release](https://cmssdt.cern.ch/jenkins/job/upload-release)
 
 **Description:** This job uploads a release on cmsrep server once approved by release manager.
+
+**Project is <span style="color:green">enabled</span>.**
 
 **Upstream projects:**
 * [upload-release-setup](#upload-release-setup):
@@ -2936,6 +3198,8 @@ Not periodically build
 
 **Description:** This job uploads a release on cmsrep server once approved by release manager.
 
+**Project is <span style="color:green">enabled</span>.**
+
 **Upstream projects:**
 * [query-build-release-issues](#query-build-release-issues):
 
@@ -2958,6 +3222,8 @@ Not periodically build
 
 **Description:** Scans build summary (ib-report-generator/scan-build-summary)
 
+**Project is <span style="color:green">enabled</span>.**
+
 **Upstream projects:**
 
 **Downstream projects:**
@@ -2977,6 +3243,8 @@ Not periodically build
 ## [web-update-cmssdt-ib](https://cmssdt.cern.ch/jenkins/job/web-update-cmssdt-ib)
 
 **Description:** Job used to transpile cmssdt ib page from ECMAscript6 to regular javascript and bush changes to github.
+
+**Project is <span style="color:green">enabled</span>.**
 
 **Upstream projects:**
 * [github-push-hook](#github-push-hook):
@@ -2999,6 +3267,8 @@ Not periodically build
 
 **Description:** ---need-description---
 
+**Project is <span style="color:green">enabled</span>.**
+
 **Upstream projects:**
 
 **Downstream projects:**
@@ -3019,6 +3289,8 @@ Not periodically build
 
 **Description:** ---need-description---
 
+**Project is <span style="color:green">enabled</span>.**
+
 **Upstream projects:**
 
 **Downstream projects:**
@@ -3038,6 +3310,8 @@ Not periodically build
 ## [workspace-cleanup-slave](https://cmssdt.cern.ch/jenkins/job/workspace-cleanup-slave)
 
 **Description:** None
+
+**Project is <span style="color:green">enabled</span>.**
 
 **Upstream projects:**
 * [slaves-checks](#slaves-checks):
