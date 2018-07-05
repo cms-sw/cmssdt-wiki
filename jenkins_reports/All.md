@@ -781,7 +781,8 @@ Not periodically build
 
 ## [fix-backport-prs](https://cmssdt.cern.ch/jenkins/job/fix-backport-prs)
 
-**Description:** None
+**Description:** Periodicaly runs https://github.com/cms-sw/cms-bot/blob/master/fix-backport-labels.py to check if the PR on master, which backport has been requested, is merged.
+If the original PR has been merged, it changes all opened backport PRs of it from backport(blue) to backport-ok(green)
 
 **Project is `enabled`.**
 
