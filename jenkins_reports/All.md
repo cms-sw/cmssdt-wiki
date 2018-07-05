@@ -717,7 +717,7 @@ Not periodically build
 
 ## [dxr-cmssw-index](https://cmssdt.cern.ch/jenkins/job/dxr-cmssw-index)
 
-**Description:** ---need-description---
+**Description:** Index <a href="https://cmssdt.cern.ch/dxr">CMSSW</a> documentation using DXR. 
 
 **Project is `enabled`.**
 
