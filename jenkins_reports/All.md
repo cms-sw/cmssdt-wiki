@@ -2767,7 +2767,9 @@ Not periodically build
 
 ## [slaves-checks](https://cmssdt.cern.ch/jenkins/job/slaves-checks)
 
-**Description:** None
+**Description:** A wrapper project that starts a 
+<a href="https://cmssdt.cern.ch/jenkins/job/workspace-cleanup-slave/">workspace-cleanup-slave</a>
+and <a href="https://cmssdt.cern.ch/jenkins/job/test-docker">test-docker</a> jobs on selected slaves. 
 
 **Project is `enabled`.**
 
