@@ -1663,7 +1663,8 @@ Not periodically build
 
 ## [lxr-remove-index](https://cmssdt.cern.ch/jenkins/job/lxr-remove-index)
 
-**Description:** None
+**Description:** Deletes index of of IB's older then treshold on LXR ( default 14 days).
+If specified, it also deletes Release index.
 
 **Project is `enabled`.**
 
