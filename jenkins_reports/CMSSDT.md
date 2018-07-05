@@ -2327,7 +2327,8 @@ Not periodically build
 
 ## [update-github-webhook-token](https://cmssdt.cern.ch/jenkins/job/update-github-webhook-token)
 
-**Description:** None
+**Description:** Updates passphrase for git webhooks for selected repository.
+More details <a href="https://github.com/cms-sw/cms-bot/tree/master/repos">here</a>.
 
 **Project is `enabled`.**
 
