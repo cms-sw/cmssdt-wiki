@@ -1636,7 +1636,7 @@ Not periodically build
 
 ## [lxr-generate-index](https://cmssdt.cern.ch/jenkins/job/lxr-generate-index)
 
-**Description:** None
+**Description:** Generates CMSSW index using LXR tool. 
 
 **Project is `enabled`.**
 
