@@ -2887,7 +2887,7 @@ H/15 * * * *
 
 ## [test-docker](https://cmssdt.cern.ch/jenkins/job/test-docker)
 
-**Description:** None
+**Description:** Connects to the slave and checks if docker service is runable.
 
 **Project is `enabled`.**
 
