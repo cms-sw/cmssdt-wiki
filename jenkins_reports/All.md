@@ -2685,7 +2685,19 @@ Not periodically build
 
 ## [run-repo-size-check](https://cmssdt.cern.ch/jenkins/job/run-repo-size-check)
 
-**Description:** None
+**Description:** This job was supposed to tell how much repository size increases
+if a pull request is merged. However, it is not properly working 
+since:
+
+<ul>
+  <li> Not all information is available about pull request </li>
+  <li> After merging, repo size is smaller do internal Github 
+    optimization</li>
+</ul> 
+
+A solution would be to make a test branch, merge pul request there, 
+push to Github and pull again to read the size. 
+
 
 **Project is `enabled`.**
 
