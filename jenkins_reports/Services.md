@@ -149,7 +149,9 @@ Not periodically build
 
 ## [deploy-cmsdoxygen](https://cmssdt.cern.ch/jenkins/job/deploy-cmsdoxygen)
 
-**Description:** None
+**Description:** This job deploys <a href="http://doxygen.org">doxygen</a> scripts to web server. 
+It is later used to serve <a href="http://cmsdoxygen.web.cern.ch/cmsdoxygen/">CMSSW documentation</a><br>
+<b>Could be automated by github hooks.<b>
 
 **Project is `enabled`.**
 
