@@ -3180,7 +3180,7 @@ Not periodically build
 
 ## [update-release-notes-collection](https://cmssdt.cern.ch/jenkins/job/update-release-notes-collection)
 
-**Description:** None
+**Description:** Updates <a href="https://cmssdt.cern.ch/SDT/ReleaseNotes/">CMSSW release notes</a>.
 
 **Project is `enabled`.**
 
