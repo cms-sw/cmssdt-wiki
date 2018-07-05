@@ -3333,7 +3333,7 @@ Not periodically build
 
 ## [workspace-cleanup-slave](https://cmssdt.cern.ch/jenkins/job/workspace-cleanup-slave)
 
-**Description:** Connect to selected slave and removes workspace.
+**Description:** Connect to selected slave and cleans (deletes) workspace.
 
 **Project is `enabled`.**
 
