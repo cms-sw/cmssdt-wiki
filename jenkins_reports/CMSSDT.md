@@ -1776,7 +1776,11 @@ Not periodically build
 
 ## [process-deprecate-releases](https://cmssdt.cern.ch/jenkins/job/process-deprecate-releases)
 
-**Description:** None
+**Description:** ** Needs to be checked ** <br>
+
+This job marks selected realeases depricated in realease map. Grid jobs will not depricated release and posibly uninstall it.
+
+
 
 **Project is `enabled`.**
 
