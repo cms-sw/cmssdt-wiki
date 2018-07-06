@@ -1189,8 +1189,8 @@ Not periodically build
 **Description:** Runs <a href="https://igprof.org/">IgProf</a> on IB.
 Results are available on <a href="https://cmssdt.cern.ch/SDT/html/cmssdt-ib">IB page</a>. 
 
-<br>--need-check--<br>
-run-ib-igprof is run with `mp` parameter.
+<br>
+run-ib-igprof is executed with `mp` flag for `memory profiling`.
 
 **Project is `enabled`.**
 
@@ -1216,8 +1216,8 @@ Not periodically build
 **Description:** Runs <a href="https://igprof.org/">IgProf</a> on IB.
 Results are available on <a href="https://cmssdt.cern.ch/SDT/html/cmssdt-ib">IB page</a>. 
 
-<br>--need-check--<br>
-run-ib-igprof is run with `pp` parameter.
+<br>
+run-ib-igprof is executed with `pp` flag for `performance profiling`.
 
 **Project is `enabled`.**
 
