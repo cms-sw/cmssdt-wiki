@@ -926,7 +926,9 @@ Not periodically build
 
 ## [ib-run-lizard](https://cmssdt.cern.ch/jenkins/job/ib-run-lizard)
 
-**Description:** ---need-description---
+**Description:** Runs <a href="https://github.com/terryyin/lizard">Lizard</a>, a Cyclomatic Complexity Analyzer, on IB.
+Results are available on <a href="https://cmssdt.cern.ch/SDT/html/cmssdt-ib">IB page</a>. 
+
 
 **Project is `enabled`.**
 
@@ -1607,7 +1609,9 @@ Not periodically build
 
 ## [ib-run-lizard](https://cmssdt.cern.ch/jenkins/job/ib-run-lizard)
 
-**Description:** ---need-description---
+**Description:** Runs <a href="https://github.com/terryyin/lizard">Lizard</a>, a Cyclomatic Complexity Analyzer, on IB.
+Results are available on <a href="https://cmssdt.cern.ch/SDT/html/cmssdt-ib">IB page</a>. 
+
 
 **Project is `enabled`.**
 
