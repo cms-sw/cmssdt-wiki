@@ -803,7 +803,7 @@ Not periodically build
 
 ## [ib-run-flawfinder](https://cmssdt.cern.ch/jenkins/job/ib-run-flawfinder)
 
-**Description:** ---need-description---
+**Description:** Runs <a href="https://www.dwheeler.com/flawfinder/"> Flawfinder</a> test on IB.
 
 **Project is `enabled`.**
 
@@ -1476,7 +1476,7 @@ Not periodically build
 
 ## [ib-run-flawfinder](https://cmssdt.cern.ch/jenkins/job/ib-run-flawfinder)
 
-**Description:** ---need-description---
+**Description:** Runs <a href="https://www.dwheeler.com/flawfinder/"> Flawfinder</a> test on IB.
 
 **Project is `enabled`.**
 
