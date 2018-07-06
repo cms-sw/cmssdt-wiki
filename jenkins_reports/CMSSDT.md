@@ -1092,7 +1092,8 @@ Not periodically build
 
 ## [ib-run-addons](https://cmssdt.cern.ch/jenkins/job/ib-run-addons)
 
-**Description:** ---need-description---
+**Description:** Runs addons test on IB. Results are shown as "Other test" in the 
+<a href="https://cmssdt.cern.ch/SDT/html/cmssdt-ib/">IB page</a> for the IB.  
 
 **Project is `enabled`.**
 
