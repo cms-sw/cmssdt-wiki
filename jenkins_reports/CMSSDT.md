@@ -2533,7 +2533,8 @@ Not periodically build
 
 ## [web-update-logReader](https://cmssdt.cern.ch/jenkins/job/web-update-logReader)
 
-**Description:** ---need-description---
+**Description:** Transpiles <a href="https://github.com/cms-sw/logreader">Logreader</a> to pure js/html/css and deploys to 
+<a href="https://cmssdt.cern.ch/SDT/">cmssdt-web</a>.
 
 **Project is `enabled`.**
 
