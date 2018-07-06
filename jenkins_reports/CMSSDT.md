@@ -2267,7 +2267,10 @@ Not periodically build
 
 ## [update-categories-page](https://cmssdt.cern.ch/jenkins/job/update-categories-page)
 
-**Description:** ---need-description---
+**Description:** Generates categories.json file and uploads it to this <a href="https://github.com/cms-sw/cms-sw.github.io">github repo</a>. 
+<br>
+The date is later used to generate <a href="http://cms-sw.github.io/categories.html">this page</a>.
+
 
 **Project is `enabled`.**
 
