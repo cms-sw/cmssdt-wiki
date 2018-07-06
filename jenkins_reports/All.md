@@ -3337,13 +3337,10 @@ Not periodically build
 
 ## [web-update-SDT](https://cmssdt.cern.ch/jenkins/job/web-update-SDT)
 
-**Description:** ---need-description---
-<br>
----need-check---
-<br>
-Copies releases.map to /data/sdt/SDT/jenkins-artifacts. That is all (unfinished project maybe ?).
+**Description:** Copies releases.map to /data/sdt/SDT/jenkins-artifacts.<br>
+<b>Depricated project</b>. Its tasks are taken by <a href="https://cmssdt.cern.ch/jenkins/job/deploy-cms-repo">deploy-cms-repo</a> project.
 
-**Project is `enabled`.**
+**Project is `disabled`.**
 
 **Upstream projects:**
 

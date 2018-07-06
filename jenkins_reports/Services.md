@@ -488,32 +488,6 @@ Not periodically build
 
 ---
 
-## [web-update-SDT](https://cmssdt.cern.ch/jenkins/job/web-update-SDT)
-
-**Description:** ---need-description---
-<br>
----need-check---
-<br>
-Copies releases.map to /data/sdt/SDT/jenkins-artifacts. That is all (unfinished project maybe ?).
-
-**Project is `enabled`.**
-
-**Upstream projects:**
-
-**Downstream projects:**
-
-**Sub-projects:**
-
-**Triggers from:** []
-
-
-**Periodic builds:**
-```bash
-Not periodically build
-```
-
----
-
 ## [workspace-cleanup-slave](https://cmssdt.cern.ch/jenkins/job/workspace-cleanup-slave)
 
 **Description:** Connect to selected slave and cleans (deletes) workspace.
