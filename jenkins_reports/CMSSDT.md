@@ -2005,7 +2005,7 @@ Not periodically build
 
 ## [schedule-additional-tests](https://cmssdt.cern.ch/jenkins/job/schedule-additional-tests)
 
-**Description:** ---need-description---
+**Description:** Wrapper project to schedule aditonal test such as Flawfinder, Lizard, IgProf, etc.
 
 **Project is `enabled`.**
 
