@@ -849,7 +849,8 @@ Not periodically build
 
 ## [ib-run-igprof-mp](https://cmssdt.cern.ch/jenkins/job/ib-run-igprof-mp)
 
-**Description:** ---need-description---
+**Description:** Runs <a href="https://igprof.org/">IgProf</a> on IB.
+Results are available on <a href="https://cmssdt.cern.ch/SDT/html/cmssdt-ib">IB page</a>.
 
 **Project is `enabled`.**
 
@@ -1522,7 +1523,8 @@ Not periodically build
 
 ## [ib-run-igprof-mp](https://cmssdt.cern.ch/jenkins/job/ib-run-igprof-mp)
 
-**Description:** ---need-description---
+**Description:** Runs <a href="https://igprof.org/">IgProf</a> on IB.
+Results are available on <a href="https://cmssdt.cern.ch/SDT/html/cmssdt-ib">IB page</a>.
 
 **Project is `enabled`.**
 
