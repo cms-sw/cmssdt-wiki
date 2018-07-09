@@ -217,7 +217,10 @@ Not periodically build
 
 ## [summary-of-merged-prs](https://cmssdt.cern.ch/jenkins/job/summary-of-merged-prs)
 
-**Description:** ---need-description---
+**Description:** Generates statistics for each IB ( merged pull request since last IB, test result summary, .etc)
+as well as structure of release que and stores it in .json files. It then push it to <b>cms-sw.github.io</b> repo as well
+as deploys on the web server. It is used to generate <a href="https://cmssdt.cern.ch/SDT/html/cmssdt-ib">IB page</a>.
+
 
 **Project is `enabled`.**
 
@@ -339,7 +342,10 @@ Not periodically build
 
 ## [summary-of-merged-prs](https://cmssdt.cern.ch/jenkins/job/summary-of-merged-prs)
 
-**Description:** ---need-description---
+**Description:** Generates statistics for each IB ( merged pull request since last IB, test result summary, .etc)
+as well as structure of release que and stores it in .json files. It then push it to <b>cms-sw.github.io</b> repo as well
+as deploys on the web server. It is used to generate <a href="https://cmssdt.cern.ch/SDT/html/cmssdt-ib">IB page</a>.
+
 
 **Project is `enabled`.**
 
@@ -567,7 +573,10 @@ Not periodically build
 
 ## [summary-of-merged-prs](https://cmssdt.cern.ch/jenkins/job/summary-of-merged-prs)
 
-**Description:** ---need-description---
+**Description:** Generates statistics for each IB ( merged pull request since last IB, test result summary, .etc)
+as well as structure of release que and stores it in .json files. It then push it to <b>cms-sw.github.io</b> repo as well
+as deploys on the web server. It is used to generate <a href="https://cmssdt.cern.ch/SDT/html/cmssdt-ib">IB page</a>.
+
 
 **Project is `enabled`.**
 
@@ -1251,7 +1260,10 @@ Not periodically build
 
 ## [summary-of-merged-prs](https://cmssdt.cern.ch/jenkins/job/summary-of-merged-prs)
 
-**Description:** ---need-description---
+**Description:** Generates statistics for each IB ( merged pull request since last IB, test result summary, .etc)
+as well as structure of release que and stores it in .json files. It then push it to <b>cms-sw.github.io</b> repo as well
+as deploys on the web server. It is used to generate <a href="https://cmssdt.cern.ch/SDT/html/cmssdt-ib">IB page</a>.
+
 
 **Project is `enabled`.**
 
