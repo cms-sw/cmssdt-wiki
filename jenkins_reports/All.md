@@ -1403,7 +1403,8 @@ Not periodically build
 
 ## [ib-run-qa](https://cmssdt.cern.ch/jenkins/job/ib-run-qa)
 
-**Description:** ---need-description---
+**Description:** Runs Quality Assurance (QA) test on IB. Rezulst are available at 
+<a href="https://cmssdt.cern.ch/SDT/html/cmssdt-ib/">IB page's</a> Q/A section.
 
 **Project is `enabled`.**
 
