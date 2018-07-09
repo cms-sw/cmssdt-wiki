@@ -1897,7 +1897,8 @@ Not periodically build
 
 ## [release-produce-changelog](https://cmssdt.cern.ch/jenkins/job/release-produce-changelog)
 
-**Description:** ---need-description---
+**Description:** Posts a message in the github issue that triggered the build. Structure of the message depends on the option used.
+
 
 **Project is `enabled`.**
 
