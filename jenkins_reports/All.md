@@ -2584,7 +2584,8 @@ Not periodically build
 
 ## [release-deploy-afs](https://cmssdt.cern.ch/jenkins/job/release-deploy-afs)
 
-**Description:** ---need-description---
+**Description:** This job deploys a release on AFS.
+Job is disabled since we are moving from AFS.
 
 **Project is `disabled`.**
 
