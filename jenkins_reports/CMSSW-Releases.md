@@ -10,7 +10,8 @@
 
 ## [query-build-release-issues](https://cmssdt.cern.ch/jenkins/job/query-build-release-issues)
 
-**Description:** ---need-description---
+**Description:** Processes a github issue to check if it is requesting the build of a new release.
+If the issue is not requesting any release, it ignores it. 
 
 **Project is `enabled`.**
 
