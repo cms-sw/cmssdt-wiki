@@ -2656,9 +2656,12 @@ H 0 * * *
 
 ## [run-igprof-pr](https://cmssdt.cern.ch/jenkins/job/run-igprof-pr)
 
-**Description:** ---need-description---
+**Description:** <b>Depricated.</b> <br>
+Runs igprof tests. Depricated in favor of 
+<a href="https://cmssdt.cern.ch/jenkins/job/ib-run-igprof-mp">ib-run-igprof-mp</a> and
+<a href="https://cmssdt.cern.ch/jenkins/job/ib-run-igprof-pp">ib-run-igprof-pp</a>.
 
-**Project is `enabled`.**
+**Project is `disabled`.**
 
 **Upstream projects:**
 * [ib-any-integration](#ib-any-integration):

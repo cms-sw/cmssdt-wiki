@@ -1919,29 +1919,6 @@ Not periodically build
 
 ---
 
-## [run-igprof-pr](https://cmssdt.cern.ch/jenkins/job/run-igprof-pr)
-
-**Description:** ---need-description---
-
-**Project is `enabled`.**
-
-**Upstream projects:**
-* [ib-any-integration](#ib-any-integration):
-
-**Downstream projects:**
-
-**Sub-projects:**
-
-**Triggers from:** []
-
-
-**Periodic builds:**
-```bash
-Not periodically build
-```
-
----
-
 ## [run-pr-code-ckecks](https://cmssdt.cern.ch/jenkins/job/run-pr-code-ckecks)
 
 **Description:** This run "scram build code-checks" for a cmssw PR to find out if it comply with cmssw code checks.
