@@ -3199,7 +3199,7 @@ Not periodically build
 
 ## [update-release-notes-collection](https://cmssdt.cern.ch/jenkins/job/update-release-notes-collection)
 
-**Description:** Updates <a href="https://cmssdt.cern.ch/SDT/ReleaseNotes/">CMSSW release notes</a>.
+**Description:** Generates <a href="https://cmssdt.cern.ch/SDT/ReleaseNotes/">CMSSW release notes</a> using Jekyll.
 
 **Project is `enabled`.**
 
