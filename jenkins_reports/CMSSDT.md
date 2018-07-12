@@ -114,8 +114,19 @@ Not periodically build
   <li> Previous full IB had build errors</li>
 </ul>
 
-Otherwise build a patch release
+Otherwise build a patch release.
 
+<br><br>
+<b>Q/A</b>
+
+<ul>
+  <li>
+    <b>Q:</b> The job is scheduled with a clock simbol. Jenkins also complains that there are not agents with labels THIS and THIS.
+  </li>
+  <li>
+    <b>A:</b> Jenkins should automaticly launch agents with specific labels for the job. However, for some reason it does not work for this job. For now, launch agent manually.
+  </li>
+</ul>
 
 **Project is `enabled`.**
 
