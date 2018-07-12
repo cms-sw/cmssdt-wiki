@@ -1576,6 +1576,19 @@ Not periodically build
 ## [kill-hanging-jobs](https://cmssdt.cern.ch/jenkins/job/kill-hanging-jobs)
 
 **Description:** This project checks all selected host for process running longer then set treshold (default 2 days) and kill them. 
+<br><br>
+<b>Q/A:</b>
+
+<ul>
+  <li>
+    <b>Q:</b> The job is taken more time then is supposed to (status bar becomes red).
+  </li>
+  <li>
+    <b>A:</b> Most likely one of the machine is in a weird state (last time it was issues with CMSFS) and job hangs when connecting to it.
+    IF it is a cmsbuildXX machine, just delete it and restart the job.
+  </li>
+</ul>
+
 
 **Project is `enabled`.**
 
