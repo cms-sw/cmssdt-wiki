@@ -233,6 +233,19 @@ as well as structure of release que and stores it in .json files. It then push i
 as deploys on the web server. It is used to generate <a href="https://cmssdt.cern.ch/SDT/html/cmssdt-ib">IB page</a>.
 
 
+<br><br>
+<b>Q/A</b>
+
+<ul>
+  <li>
+    <b>Q:</b> The job failed.
+  </li>
+  <li>
+    <b>A:</b> Most likely Github rejected push request because other job pushed after `git pull --rebase`
+	. Do not worry - job builds quite ofthen and next build shouls be succesful.
+  </li>
+</ul>
+
 **Project is `enabled`.**
 
 **Upstream projects:**
@@ -357,6 +370,19 @@ Not periodically build
 as well as structure of release que and stores it in .json files. It then push it to <b>cms-sw.github.io</b> repo as well
 as deploys on the web server. It is used to generate <a href="https://cmssdt.cern.ch/SDT/html/cmssdt-ib">IB page</a>.
 
+
+<br><br>
+<b>Q/A</b>
+
+<ul>
+  <li>
+    <b>Q:</b> The job failed.
+  </li>
+  <li>
+    <b>A:</b> Most likely Github rejected push request because other job pushed after `git pull --rebase`
+	. Do not worry - job builds quite ofthen and next build shouls be succesful.
+  </li>
+</ul>
 
 **Project is `enabled`.**
 
@@ -588,6 +614,19 @@ Not periodically build
 as well as structure of release que and stores it in .json files. It then push it to <b>cms-sw.github.io</b> repo as well
 as deploys on the web server. It is used to generate <a href="https://cmssdt.cern.ch/SDT/html/cmssdt-ib">IB page</a>.
 
+
+<br><br>
+<b>Q/A</b>
+
+<ul>
+  <li>
+    <b>Q:</b> The job failed.
+  </li>
+  <li>
+    <b>A:</b> Most likely Github rejected push request because other job pushed after `git pull --rebase`
+	. Do not worry - job builds quite ofthen and next build shouls be succesful.
+  </li>
+</ul>
 
 **Project is `enabled`.**
 
@@ -1275,6 +1314,19 @@ Not periodically build
 as well as structure of release que and stores it in .json files. It then push it to <b>cms-sw.github.io</b> repo as well
 as deploys on the web server. It is used to generate <a href="https://cmssdt.cern.ch/SDT/html/cmssdt-ib">IB page</a>.
 
+
+<br><br>
+<b>Q/A</b>
+
+<ul>
+  <li>
+    <b>Q:</b> The job failed.
+  </li>
+  <li>
+    <b>A:</b> Most likely Github rejected push request because other job pushed after `git pull --rebase`
+	. Do not worry - job builds quite ofthen and next build shouls be succesful.
+  </li>
+</ul>
 
 **Project is `enabled`.**
 
