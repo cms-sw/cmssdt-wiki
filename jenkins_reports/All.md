@@ -863,7 +863,14 @@ H 22 * * *
 
 ## [git-mirror-repository](https://cmssdt.cern.ch/jenkins/job/git-mirror-repository)
 
-**Description:** mirror one git repository
+**Description:** Mirror one git repository.
+<br>
+<b>Q/A:</b>
+
+<ul>
+  <li>Q: Failed due to `remote: GitLab: Failed to authorize your Git request: internal API unreachable`</li>
+  <li>A: Problem with GitLab. Just file a ticket.</li>
+</ul>
 
 **Project is `enabled`.**
 
