@@ -2038,8 +2038,8 @@ Not periodically build
 
 ## [schedule-docker-build](https://cmssdt.cern.ch/jenkins/job/schedule-docker-build)
 
-**Description:** Builds a docker container manualy when the docker file (the recipe) here: https://github.com/cms-sw/cms-docker is changed and needs to be updated.
-The parameters passed are self explandatory and concern details about which container to update, should it be pushed back on dockerhub etc.
+**Description:** A glue job to connect github-webhook with build-container. 
+Should check only containers containing buildme.txt  
 
 **Project is `enabled`.**
 
