@@ -1086,7 +1086,7 @@ H/30 * * * *
 
 **Description:** Job to run das client and cache the results in github to be used by IBs.
 
-**Project is `enabled`.**
+**Project is `disabled`.**
 
 **Upstream projects:**
 
