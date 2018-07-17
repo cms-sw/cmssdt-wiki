@@ -918,6 +918,7 @@ Also it runsevery 30mins to make sure any webhooks were not missed.
 * [comp-bot](#comp-bot):
 * [github-push-hook](#github-push-hook):
 * [query-build-release-issues](#query-build-release-issues):
+* [schedule-docker-build](#schedule-docker-build):
 
 **Sub-projects:**
 * [comp-bot](#comp-bot):
@@ -925,6 +926,7 @@ Also it runsevery 30mins to make sure any webhooks were not missed.
 * [cms-prs-cache](#cms-prs-cache):
 * [query-build-release-issues](#query-build-release-issues):
 * [cms-bot](#cms-bot):
+* [schedule-docker-build](#schedule-docker-build):
 
 **Triggers from:** []
 
@@ -2020,6 +2022,7 @@ Should check only folder containing buildme.txt
 **Project is `enabled`.**
 
 **Upstream projects:**
+* [github-webhook](#github-webhook):
 
 **Downstream projects:**
 
