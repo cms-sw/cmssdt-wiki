@@ -145,30 +145,6 @@ Not periodically build
 
 ---
 
-## [git-reference-cms-ib](https://cmssdt.cern.ch/jenkins/job/git-reference-cms-ib)
-
-**Description:** Create GIT Reference for cms-sw/cmssw repository in /cvmfs/cms-ib.cern.ch/git/cms-sw.
-This is automatically triggered by "git push" to cmssw repo.
-
-**Project is `disabled`.**
-
-**Upstream projects:**
-* [github-push-hook](#github-push-hook):
-
-**Downstream projects:**
-
-**Sub-projects:**
-
-**Triggers from:** []
-
-
-**Periodic builds:**
-```bash
-Not periodically build
-```
-
----
-
 ## [update-externals-mirrors](https://cmssdt.cern.ch/jenkins/job/update-externals-mirrors)
 
 **Description:** Update some of the externals mirror and setup a cms specific branch so that updates can be proposed there. 
