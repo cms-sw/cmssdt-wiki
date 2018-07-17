@@ -916,7 +916,6 @@ This job is also triggered via github web hook. Please do not add/remove any par
 * [git-reference-cms-ib](#git-reference-cms-ib):
 * [git-mirror-repository](#git-mirror-repository):
 * [web-update-cmssdt-ib](#web-update-cmssdt-ib):
-* [](#):
 
 **Triggers from:** []
 
