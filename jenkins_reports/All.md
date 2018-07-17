@@ -2824,7 +2824,7 @@ Not periodically build
 ## [schedule-docker-build](https://cmssdt.cern.ch/jenkins/job/schedule-docker-build)
 
 **Description:** A glue job to connect github-webhook with build-container. 
-Should check only containers containing buildme.txt  
+Should check only folder containing buildme.txt  
 
 **Project is `enabled`.**
 
