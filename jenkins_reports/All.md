@@ -162,6 +162,7 @@ The parameters passed are self explandatory and concern details about which cont
 **Project is `enabled`.**
 
 **Upstream projects:**
+* [schedule-docker-build](#schedule-docker-build):
 
 **Downstream projects:**
 
@@ -2826,7 +2827,7 @@ Not periodically build
 ## [schedule-docker-build](https://cmssdt.cern.ch/jenkins/job/schedule-docker-build)
 
 **Description:** A glue job to connect github-webhook with build-container. 
-Should check only folder containing buildme.txt  
+Should check only folder containing *EXECUTE_BUILD.sh  
 
 **Project is `enabled`.**
 
@@ -2834,8 +2835,10 @@ Should check only folder containing buildme.txt
 * [github-webhook](#github-webhook):
 
 **Downstream projects:**
+* [build-container](#build-container):
 
 **Sub-projects:**
+* [build-container](#build-container):
 
 **Triggers from:** []
 
