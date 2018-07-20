@@ -11,7 +11,18 @@
 ## [cms-bot](https://cmssdt.cern.ch/jenkins/job/cms-bot)
 
 **Description:** This is cms bot job which is triggered by github webhooks ( https://cmssdt.cern.ch/SDT/cgi-bin/github_webhook ) for every valid comment added to github PRs.
-Also it runsevery 30mins to make sure any webhooks were not missed. 
+
+<br><br>
+<b>Q/A</b>
+
+<ul>
+  <li>
+    <b>Q:</b> Job 'cms-sw/cmssw #****' failed. What to do?
+  </li>
+  <li>
+    <b>A:</b> If cause of failure is fixed (bug in cms-bot, github servers issue), job should be restarted. Otherwise PR will not be procesed unless someone retrigers it by writing a comment.
+  </li>
+</ul>
 
 **Project is `enabled`.**
 
