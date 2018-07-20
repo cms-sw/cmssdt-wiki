@@ -128,6 +128,15 @@ Otherwise build a patch release.
   </li>
 </ul>
 
+<ul>
+  <li>
+    <b>Q:</b> How to manually build an IB?
+  </li>
+  <li>
+    <b>A:</b> Go to upstream job (ib-tag-and-schdule) and start a job.
+  </li>
+</ul>
+
 **Project is `enabled`.**
 
 **Upstream projects:**
