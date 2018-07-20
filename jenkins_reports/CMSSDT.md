@@ -1187,10 +1187,11 @@ Not periodically build
 Results are available on <a href="https://cmssdt.cern.ch/SDT/html/cmssdt-ib">IB page</a>. 
 
 <br>
-run-ib-igprof is executed with `mp` flag for `memory profiling`.
+Run-ib-igprof is executed with `mp` flag for `memory profiling`.
+<br>
 <br>
 
-<b>Q/a</b>
+<b>Q/a:</b>
 
 <ul>
   <li>
