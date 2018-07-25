@@ -1368,6 +1368,19 @@ Results are available on <a href="https://cmssdt.cern.ch/SDT/html/cmssdt-ib">IB 
 <br>
 run-ib-igprof is executed with `pp` flag for `performance profiling`.
 
+<br><br>
+
+<b>Q/a:</b>
+
+<ul>
+  <li>
+    Q: Error: near line 63: unrecognized token: "" 
+  </li>  
+  <li>
+    A: Igprof has a bug that from time to time it returns unrecognizable character which fails the job. There is no easy fix, so we glance over it.
+  </li>
+</ul>
+
 **Project is `enabled`.**
 
 **Upstream projects:**
