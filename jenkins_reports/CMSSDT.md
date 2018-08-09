@@ -1032,7 +1032,7 @@ Not periodically build
 
 <ul>
   <li>
-    Q: error: switch `b' requires a value 
+    Q: git error - "error: switch `b' requires a value" 
   </li>  
   <li>
     A: It happened to a job in  a form of `PR cmssw#24237 cmsdist#4249` when `cmssw#24237` was a back port 
@@ -1246,12 +1246,10 @@ Run-ib-igprof is executed with `mp` flag for `memory profiling`.
 
 <ul>
   <li>
-    Q: error: switch `b' requires a value 
+    Q: Error: near line 63: unrecognized token: "" 
   </li>  
   <li>
-    A: It happened to a job in  a form of `PR cmssw#24237 cmsdist#4249` when `cmssw#24237` was a back port 
-    to 10_2 from 10_3, but there was no related pull request on cmsdist 10_2 branch (cmssw#24237 was 
-    a pull request on branch 10_3). Solved creating back port on cmsdist manually. 
+    A: Igprof has a bug that from time to time it returns unrecognizable character which fails the job. There is no easy fix, so we glance over it.
   </li>
 </ul>
 

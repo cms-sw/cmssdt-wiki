@@ -85,7 +85,7 @@ Not periodically build
 
 <ul>
   <li>
-    Q: error: switch `b' requires a value 
+    Q: git error - "error: switch `b' requires a value" 
   </li>  
   <li>
     A: It happened to a job in  a form of `PR cmssw#24237 cmsdist#4249` when `cmssw#24237` was a back port 
