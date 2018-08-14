@@ -187,6 +187,7 @@ The parameters passed are self explandatory and concern details about which cont
 
 **Upstream projects:**
 * [schedule-docker-build](#schedule-docker-build):
+* [test-cms-data](#test-cms-data):
 
 **Downstream projects:**
 
@@ -3063,6 +3064,31 @@ Not periodically build
 **Periodic builds:**
 ```bash
 H/15 * * * *
+```
+
+---
+
+## [test-cms-data](https://cmssdt.cern.ch/jenkins/job/test-cms-data)
+
+**Description:** A glue job to connect github-webhook with build-container. 
+Should check only folder containing *EXECUTE_BUILD.sh  
+
+**Project is `enabled`.**
+
+**Upstream projects:**
+
+**Downstream projects:**
+* [build-container](#build-container):
+
+**Sub-projects:**
+* [build-container](#build-container):
+
+**Triggers from:** []
+
+
+**Periodic builds:**
+```bash
+Not periodically build
 ```
 
 ---
