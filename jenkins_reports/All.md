@@ -1409,6 +1409,7 @@ run-ib-igprof is executed with `pp` flag for `performance profiling`.
   </li>  
   <li>
     A: Igprof has a bug that from time to time it returns unrecognizable character which fails the job. There is no easy fix, so we glance over it.
+  	However, job will execute all steps and then fail.
   </li>
 </ul>
 
