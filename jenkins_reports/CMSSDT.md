@@ -1091,6 +1091,30 @@ H/30 * * * *
 
 ---
 
+## [ib-cache-to-eos](https://cmssdt.cern.ch/jenkins/job/ib-cache-to-eos)
+
+**Description:** Job to run das client and cache the results in github to be used by IBs.
+
+**Project is `enabled`.**
+
+**Upstream projects:**
+
+**Downstream projects:**
+* [update-ibeos-cache](#update-ibeos-cache):
+
+**Sub-projects:**
+* [update-ibeos-cache](#update-ibeos-cache):
+
+**Triggers from:** []
+
+
+**Periodic builds:**
+```bash
+H 10,22 * * *
+```
+
+---
+
 ## [ib-cleanup-installers](https://cmssdt.cern.ch/jenkins/job/ib-cleanup-installers)
 
 **Description:** Cron job for log rotation on installer nodes. (clean up obsolete weeks)

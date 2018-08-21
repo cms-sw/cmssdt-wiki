@@ -189,27 +189,3 @@ Not periodically build
 
 ---
 
-## [ib-cache-to-eos](https://cmssdt.cern.ch/jenkins/job/ib-cache-to-eos)
-
-**Description:** Job to run das client and cache the results in github to be used by IBs.
-
-**Project is `disabled`.**
-
-**Upstream projects:**
-
-**Downstream projects:**
-* [update-ibeos-cache](#update-ibeos-cache):
-
-**Sub-projects:**
-* [update-ibeos-cache](#update-ibeos-cache):
-
-**Triggers from:** []
-
-
-**Periodic builds:**
-```bash
-H 10,22 * * *
-```
-
----
-
