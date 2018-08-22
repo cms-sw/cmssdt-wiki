@@ -3499,7 +3499,7 @@ Not periodically build
 
 ## [web-update-cmssdt-ib](https://cmssdt.cern.ch/jenkins/job/web-update-cmssdt-ib)
 
-**Description:** Job used to transpile cmssdt ib page from ECMAscript6 to regular javascript and bush changes to github.
+**Description:** Job used to transpile cmssdt ib page from ECMAscript6 to regular javascript and push changes to github.
 
 **Project is `enabled`.**
 
