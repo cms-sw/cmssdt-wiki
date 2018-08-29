@@ -384,7 +384,7 @@ H 0 * * *
   </li>
 </ul>
 
-**Project is `disabled`.**
+**Project is `enabled`.**
 
 **Upstream projects:**
 * [github-webhook](#github-webhook):
