@@ -368,47 +368,6 @@ H 0 * * *
 
 ---
 
-## [cms-bot](https://cmssdt.cern.ch/jenkins/job/cms-bot)
-
-**Description:** This is cms bot job which is triggered by github webhooks ( https://cmssdt.cern.ch/SDT/cgi-bin/github_webhook ) for every valid comment added to github PRs.
-
-<br><br>
-<b>Q/A</b>
-
-<ul>
-  <li>
-    <b>Q:</b> Job 'cms-sw/cmssw #****' failed. What to do?
-  </li>
-  <li>
-    <b>A:</b> If cause of failure is fixed (bug in cms-bot, github servers issue), job should be restarted. Otherwise PR will not be procesed unless someone retrigers it by writing a comment.
-  </li>
-</ul>
-
-**Project is `enabled`.**
-
-**Upstream projects:**
-* [github-webhook](#github-webhook):
-
-**Downstream projects:**
-* [ib-schedule-pr-tests](#ib-schedule-pr-tests):
-* [run-pr-code-ckecks](#run-pr-code-ckecks):
-* [stop-ib-any-integration](#stop-ib-any-integration):
-
-**Sub-projects:**
-* [ib-schedule-pr-tests](#ib-schedule-pr-tests):
-* [stop-ib-any-integration](#stop-ib-any-integration):
-* [run-pr-code-ckecks](#run-pr-code-ckecks):
-
-**Triggers from:** []
-
-
-**Periodic builds:**
-```bash
-Not periodically build
-```
-
----
-
 ## [cms-dockerhub](https://cmssdt.cern.ch/jenkins/job/cms-dockerhub)
 
 **Description:** This job creates docker image with CMSSW and push it to the dockerhub. It also uploads dockerfile to github.
