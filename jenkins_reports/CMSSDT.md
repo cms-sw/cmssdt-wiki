@@ -1508,6 +1508,36 @@ Not periodically build
 
 ---
 
+## [ib-schedule](https://cmssdt.cern.ch/jenkins/job/ib-schedule)
+
+**Description:** This is a warpper job which runs daily at 11h and 23h (except Sunday at 00h) to triger 'ib-tag-and-schdule' sub-project.<br/>
+This was created to avoid the issue with <a href="https://wiki.jenkins.io/display/JENKINS/Dynamic+Parameter+Plug-in">Jenkins Dynamic Parameters</a>.
+
+
+**Project is `enabled`.**
+
+**Upstream projects:**
+
+**Downstream projects:**
+* [ib-tag-and-schdule](#ib-tag-and-schdule):
+
+**Sub-projects:**
+* [ib-tag-and-schdule](#ib-tag-and-schdule):
+
+**Triggers from:** []
+
+
+**Periodic builds:**
+```bash
+#We do not run SAT 23H IB instead we start a special SUN 00h00 IB.
+5 11  * * *
+5 23  * *  0,1,2,3,4,5
+5  0   * *  0
+
+```
+
+---
+
 ## [ib-schedule-pr-tests](https://cmssdt.cern.ch/jenkins/job/ib-schedule-pr-tests)
 
 **Description:** Build a pull request
@@ -2689,6 +2719,29 @@ Not periodically build
 
 **Description:** Transpiles <a href="https://github.com/cms-sw/logreader">Logreader</a> to pure js/html/css and deploys to 
 <a href="https://cmssdt.cern.ch/SDT/">cmssdt-web</a>.
+
+**Project is `enabled`.**
+
+**Upstream projects:**
+
+**Downstream projects:**
+
+**Sub-projects:**
+
+**Triggers from:** []
+
+
+**Periodic builds:**
+```bash
+Not periodically build
+```
+
+---
+
+## [web-update-SDT](https://cmssdt.cern.ch/jenkins/job/web-update-SDT)
+
+**Description:** Copies releases.map to /data/sdt/SDT/jenkins-artifacts.<br>
+<b>Depricated project</b>. Its tasks are taken by <a href="https://cmssdt.cern.ch/jenkins/job/deploy-cms-repo">deploy-cms-repo</a> project.
 
 **Project is `enabled`.**
 

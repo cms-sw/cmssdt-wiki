@@ -495,6 +495,29 @@ Not periodically build
 
 ---
 
+## [web-update-SDT](https://cmssdt.cern.ch/jenkins/job/web-update-SDT)
+
+**Description:** Copies releases.map to /data/sdt/SDT/jenkins-artifacts.<br>
+<b>Depricated project</b>. Its tasks are taken by <a href="https://cmssdt.cern.ch/jenkins/job/deploy-cms-repo">deploy-cms-repo</a> project.
+
+**Project is `enabled`.**
+
+**Upstream projects:**
+
+**Downstream projects:**
+
+**Sub-projects:**
+
+**Triggers from:** []
+
+
+**Periodic builds:**
+```bash
+Not periodically build
+```
+
+---
+
 ## [workspace-cleanup-slave](https://cmssdt.cern.ch/jenkins/job/workspace-cleanup-slave)
 
 **Description:** Connect to selected slave and cleans (deletes) workspace.

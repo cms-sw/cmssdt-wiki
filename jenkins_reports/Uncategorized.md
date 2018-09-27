@@ -8,29 +8,6 @@
 
 # Projects:
 
-## [web-update-SDT](https://cmssdt.cern.ch/jenkins/job/web-update-SDT)
-
-**Description:** Copies releases.map to /data/sdt/SDT/jenkins-artifacts.<br>
-<b>Depricated project</b>. Its tasks are taken by <a href="https://cmssdt.cern.ch/jenkins/job/deploy-cms-repo">deploy-cms-repo</a> project.
-
-**Project is `disabled`.**
-
-**Upstream projects:**
-
-**Downstream projects:**
-
-**Sub-projects:**
-
-**Triggers from:** []
-
-
-**Periodic builds:**
-```bash
-Not periodically build
-```
-
----
-
 ## [ib-cvmfs-publish](https://cmssdt.cern.ch/jenkins/job/ib-cvmfs-publish)
 
 **Description:** This jobs copies IBs installation for an arch from another machine and publish it to cvmfs

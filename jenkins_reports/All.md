@@ -1605,7 +1605,7 @@ Not periodically build
 This was created to avoid the issue with <a href="https://wiki.jenkins.io/display/JENKINS/Dynamic+Parameter+Plug-in">Jenkins Dynamic Parameters</a>.
 
 
-**Project is `disabled`.**
+**Project is `enabled`.**
 
 **Upstream projects:**
 
@@ -2147,6 +2147,29 @@ Not periodically build
 
 ---
 
+## [jenkins-test-kerberos](https://cmssdt.cern.ch/jenkins/job/jenkins-test-kerberos)
+
+**Description:** None
+
+**Project is `enabled`.**
+
+**Upstream projects:**
+* [jenkins-test-slaves](#jenkins-test-slaves):
+
+**Downstream projects:**
+
+**Sub-projects:**
+
+**Triggers from:** []
+
+
+**Periodic builds:**
+```bash
+Not periodically build
+```
+
+---
+
 ## [jenkins-test-slave](https://cmssdt.cern.ch/jenkins/job/jenkins-test-slave)
 
 **Description:** This Jenkins project test various CMS Jenkins slaves and makes sure that various communication channels 
@@ -2180,10 +2203,12 @@ Not periodically build
 **Upstream projects:**
 
 **Downstream projects:**
+* [jenkins-test-kerberos](#jenkins-test-kerberos):
 * [jenkins-test-slave](#jenkins-test-slave):
 
 **Sub-projects:**
 * [jenkins-test-slave](#jenkins-test-slave):
+* [jenkins-test-kerberos](#jenkins-test-kerberos):
 
 **Triggers from:** []
 
@@ -3548,7 +3573,7 @@ Not periodically build
 **Description:** Copies releases.map to /data/sdt/SDT/jenkins-artifacts.<br>
 <b>Depricated project</b>. Its tasks are taken by <a href="https://cmssdt.cern.ch/jenkins/job/deploy-cms-repo">deploy-cms-repo</a> project.
 
-**Project is `disabled`.**
+**Project is `enabled`.**
 
 **Upstream projects:**
 
