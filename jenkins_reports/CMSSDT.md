@@ -1678,6 +1678,7 @@ Not periodically build
 **Upstream projects:**
 * [ib-cvmfs-publish](#ib-cvmfs-publish):
 * [ib-install-cvmfs](#ib-install-cvmfs):
+* [install-release-test](#install-release-test):
 
 **Downstream projects:**
 * [ib-run-addons](#ib-run-addons):
@@ -1726,13 +1727,14 @@ Not periodically build
 
 ## [install-release-test](https://cmssdt.cern.ch/jenkins/job/install-release-test)
 
-**Description:** None
+**Description:** This jobs install an IB on /cvmfs/cms-ib.cern.ch.
 
 **Project is `enabled`.**
 
 **Upstream projects:**
 
 **Downstream projects:**
+* [ib-validation](#ib-validation):
 
 **Sub-projects:**
 
