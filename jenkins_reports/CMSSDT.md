@@ -202,6 +202,29 @@ Not periodically build
 
 ---
 
+## [build-dummy-release](https://cmssdt.cern.ch/jenkins/job/build-dummy-release)
+
+**Description:** This job actually builds a release.
+It is triggered by cms-bot after the <a href="https://github.com/cms-sw/cmssw/issues?q=label%3Arelease-notes-requested">Release build Issue</a> is approved by release manager.
+
+**Project is `enabled`.**
+
+**Upstream projects:**
+
+**Downstream projects:**
+
+**Sub-projects:**
+
+**Triggers from:** []
+
+
+**Periodic builds:**
+```bash
+Not periodically build
+```
+
+---
+
 ## [build-fwlite](https://cmssdt.cern.ch/jenkins/job/build-fwlite)
 
 **Description:** TO build a CMSSW_X_Y_Z_FWLITE release based on an existing CMSSW_X_Y_Z release. CMSSW_X_Y_Z should already be build/uploaded before building its FWLITE version.
