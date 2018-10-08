@@ -490,6 +490,7 @@ Not periodically build
 **Upstream projects:**
 * [build-any-ib](#build-any-ib):
 * [upload-release](#upload-release):
+* [upload-release-test](#upload-release-test):
 
 **Downstream projects:**
 
@@ -2602,6 +2603,7 @@ CVMFS installation is started once a release is available in this file.
 
 **Upstream projects:**
 * [upload-release](#upload-release):
+* [upload-release-test](#upload-release-test):
 
 **Downstream projects:**
 * [build-fwlite](#build-fwlite):
@@ -2680,6 +2682,31 @@ Not periodically build
 
 **Downstream projects:**
 * [upload-release](#upload-release):
+
+**Sub-projects:**
+
+**Triggers from:** []
+
+
+**Periodic builds:**
+```bash
+Not periodically build
+```
+
+---
+
+## [upload-release-test](https://cmssdt.cern.ch/jenkins/job/upload-release-test)
+
+**Description:** This job uploads a release on cmsrep server once approved by release manager.
+
+**Project is `enabled`.**
+
+**Upstream projects:**
+
+**Downstream projects:**
+* [cmspkg-clone](#cmspkg-clone):
+* [release-deploy-afs](#release-deploy-afs):
+* [update-release-map](#update-release-map):
 
 **Sub-projects:**
 

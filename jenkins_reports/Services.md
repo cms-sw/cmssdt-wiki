@@ -109,6 +109,7 @@ H 0 * * *
 **Upstream projects:**
 * [build-any-ib](#build-any-ib):
 * [upload-release](#upload-release):
+* [upload-release-test](#upload-release-test):
 
 **Downstream projects:**
 
@@ -455,6 +456,7 @@ CVMFS installation is started once a release is available in this file.
 
 **Upstream projects:**
 * [upload-release](#upload-release):
+* [upload-release-test](#upload-release-test):
 
 **Downstream projects:**
 * [build-fwlite](#build-fwlite):
