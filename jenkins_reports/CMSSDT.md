@@ -1725,6 +1725,28 @@ Not periodically build
 
 ---
 
+## [install-release-test](https://cmssdt.cern.ch/jenkins/job/install-release-test)
+
+**Description:** None
+
+**Project is `enabled`.**
+
+**Upstream projects:**
+
+**Downstream projects:**
+
+**Sub-projects:**
+
+**Triggers from:** []
+
+
+**Periodic builds:**
+```bash
+Not periodically build
+```
+
+---
+
 ## [kill-build-release](https://cmssdt.cern.ch/jenkins/job/kill-build-release)
 
 **Description:** Aborts and kills a release building process. 
