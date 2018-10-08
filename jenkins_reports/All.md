@@ -299,6 +299,31 @@ Not periodically build
 
 ---
 
+## [build-release-test](https://cmssdt.cern.ch/jenkins/job/build-release-test)
+
+**Description:** Test job for simulating release build
+Simulates 'building' release to trigger
+upload-release-test
+It is triggered by cms-bot after the <a href="https://github.com/cms-sw/cmssw/issues?q=label%3Arelease-notes-requested">Release build Issue</a> is approved by release manager.
+
+**Project is `enabled`.**
+
+**Upstream projects:**
+
+**Downstream projects:**
+
+**Sub-projects:**
+
+**Triggers from:** []
+
+
+**Periodic builds:**
+```bash
+Not periodically build
+```
+
+---
+
 ## [cleanup-auto-build](https://cmssdt.cern.ch/jenkins/job/cleanup-auto-build)
 
 **Description:** This job deletes the relsease build areas after three days.
