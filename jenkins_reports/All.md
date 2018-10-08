@@ -3574,7 +3574,10 @@ Not periodically build
 
 ## [upload-release-test](https://cmssdt.cern.ch/jenkins/job/upload-release-test)
 
-**Description:** This job uploads a release on cmsrep server once approved by release manager.
+**Description:** Upload release test simulating job to trigger 
+install release job 
+used only to pass arguments once the release upload was finished.
+
 
 **Project is `enabled`.**
 
