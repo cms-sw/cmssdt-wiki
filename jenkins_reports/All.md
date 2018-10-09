@@ -2242,6 +2242,28 @@ Not periodically build
 
 ---
 
+## [jenkins-test-localcli](https://cmssdt.cern.ch/jenkins/job/jenkins-test-localcli)
+
+**Description:** None
+
+**Project is `enabled`.**
+
+**Upstream projects:**
+
+**Downstream projects:**
+
+**Sub-projects:**
+
+**Triggers from:** []
+
+
+**Periodic builds:**
+```bash
+Not periodically build
+```
+
+---
+
 ## [jenkins-test-slave](https://cmssdt.cern.ch/jenkins/job/jenkins-test-slave)
 
 **Description:** This Jenkins project test various CMS Jenkins slaves and makes sure that various communication channels 
