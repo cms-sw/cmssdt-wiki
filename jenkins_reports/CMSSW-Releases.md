@@ -270,7 +270,6 @@ Job is disabled since we are moving from AFS.
 
 **Upstream projects:**
 * [upload-release](#upload-release):
-* [upload-release-test](#upload-release-test):
 
 **Downstream projects:**
 

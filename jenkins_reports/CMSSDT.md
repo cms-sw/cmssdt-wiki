@@ -1732,6 +1732,7 @@ Not periodically build
 **Project is `enabled`.**
 
 **Upstream projects:**
+* [upload-release-test](#upload-release-test):
 
 **Downstream projects:**
 * [ib-validation](#ib-validation):
@@ -2745,9 +2746,10 @@ Not periodically build
 
 ## [upload-release-test](https://cmssdt.cern.ch/jenkins/job/upload-release-test)
 
-**Description:** Upload release test simulating job to trigger 
+**Description:** Test job to trigger 
 install release job 
 used only to pass arguments once the release upload was finished.
+Should run for existing 
 
 
 **Project is `enabled`.**
@@ -2756,7 +2758,7 @@ used only to pass arguments once the release upload was finished.
 
 **Downstream projects:**
 * [cmspkg-clone](#cmspkg-clone):
-* [release-deploy-afs](#release-deploy-afs):
+* [install-release-test](#install-release-test):
 * [update-release-map](#update-release-map):
 
 **Sub-projects:**
