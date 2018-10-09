@@ -1816,7 +1816,9 @@ Not periodically build
 
 ## [install-release-test](https://cmssdt.cern.ch/jenkins/job/install-release-test)
 
-**Description:** This jobs install an IB on /cvmfs/cms-ib.cern.ch.
+**Description:** This is a test job to install releases and IBs
+once the upload is completed. The job should be triggered by upstream job
+upload-release.
 
 **Project is `enabled`.**
 
