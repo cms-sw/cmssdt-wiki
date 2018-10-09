@@ -3596,9 +3596,8 @@ Not periodically build
 
 ## [upload-release-test](https://cmssdt.cern.ch/jenkins/job/upload-release-test)
 
-**Description:** Test job to trigger 
-install release job 
-used only to pass arguments once the release upload was finished.
+**Description:** Test job to trigger install-release-test job 
+Used only to pass arguments once the release upload was finished.
 Should run for existing 
 
 
