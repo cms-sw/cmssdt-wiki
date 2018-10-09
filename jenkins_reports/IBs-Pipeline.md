@@ -283,7 +283,6 @@ Not periodically build
 **Upstream projects:**
 * [build-any-ib](#build-any-ib):
 * [upload-release](#upload-release):
-* [upload-release-test](#upload-release-test):
 
 **Downstream projects:**
 

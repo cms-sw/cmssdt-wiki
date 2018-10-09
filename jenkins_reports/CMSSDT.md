@@ -514,7 +514,6 @@ Not periodically build
 **Upstream projects:**
 * [build-any-ib](#build-any-ib):
 * [upload-release](#upload-release):
-* [upload-release-test](#upload-release-test):
 
 **Downstream projects:**
 
@@ -2652,7 +2651,6 @@ CVMFS installation is started once a release is available in this file.
 
 **Upstream projects:**
 * [upload-release](#upload-release):
-* [upload-release-test](#upload-release-test):
 
 **Downstream projects:**
 * [build-fwlite](#build-fwlite):
@@ -2757,9 +2755,7 @@ Should run for existing
 **Upstream projects:**
 
 **Downstream projects:**
-* [cmspkg-clone](#cmspkg-clone):
 * [install-release-test](#install-release-test):
-* [update-release-map](#update-release-map):
 
 **Sub-projects:**
 
