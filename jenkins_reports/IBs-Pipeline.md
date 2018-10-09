@@ -446,7 +446,6 @@ Not periodically build
 **Upstream projects:**
 * [ib-cvmfs-publish](#ib-cvmfs-publish):
 * [ib-install-cvmfs](#ib-install-cvmfs):
-* [install-release-test](#install-release-test):
 
 **Downstream projects:**
 * [ib-run-addons](#ib-run-addons):
@@ -1201,7 +1200,6 @@ Not periodically build
 **Upstream projects:**
 * [ib-cvmfs-publish](#ib-cvmfs-publish):
 * [ib-install-cvmfs](#ib-install-cvmfs):
-* [install-release-test](#install-release-test):
 
 **Downstream projects:**
 * [ib-run-addons](#ib-run-addons):
