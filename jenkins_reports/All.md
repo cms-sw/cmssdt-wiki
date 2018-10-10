@@ -1861,32 +1861,6 @@ H/5 * * * *
 
 ---
 
-## [jenkins-delete-workspace](https://cmssdt.cern.ch/jenkins/job/jenkins-delete-workspace)
-
-**Description:** None
-
-**Project is `enabled`.**
-
-**Upstream projects:**
-
-**Downstream projects:**
-* [jenkins-test-job1](#jenkins-test-job1):
-* [jenkins-test-job2](#jenkins-test-job2):
-
-**Sub-projects:**
-* [jenkins-test-job1](#jenkins-test-job1):
-* [jenkins-test-job2](#jenkins-test-job2):
-
-**Triggers from:** []
-
-
-**Periodic builds:**
-```bash
-Not periodically build
-```
-
----
-
 ## [jenkins-disable-jobs](https://cmssdt.cern.ch/jenkins/job/jenkins-disable-jobs)
 
 **Description:** Disable all nodes that started with the provided wildcard string,
@@ -2207,7 +2181,7 @@ Not periodically build
 **Project is `enabled`.**
 
 **Upstream projects:**
-* [jenkins-delete-workspace](#jenkins-delete-workspace):
+* [jenkins-test-ws-trigger-job](#jenkins-test-ws-trigger-job):
 
 **Downstream projects:**
 
@@ -2230,7 +2204,7 @@ Not periodically build
 **Project is `enabled`.**
 
 **Upstream projects:**
-* [jenkins-delete-workspace](#jenkins-delete-workspace):
+* [jenkins-test-ws-trigger-job](#jenkins-test-ws-trigger-job):
 
 **Downstream projects:**
 
@@ -2337,6 +2311,32 @@ Not periodically build
 **Periodic builds:**
 ```bash
 H H/8 * * *
+```
+
+---
+
+## [jenkins-test-ws-trigger-job](https://cmssdt.cern.ch/jenkins/job/jenkins-test-ws-trigger-job)
+
+**Description:** None
+
+**Project is `enabled`.**
+
+**Upstream projects:**
+
+**Downstream projects:**
+* [jenkins-test-job1](#jenkins-test-job1):
+* [jenkins-test-job2](#jenkins-test-job2):
+
+**Sub-projects:**
+* [jenkins-test-job1](#jenkins-test-job1):
+* [jenkins-test-job2](#jenkins-test-job2):
+
+**Triggers from:** []
+
+
+**Periodic builds:**
+```bash
+Not periodically build
 ```
 
 ---
