@@ -2734,6 +2734,7 @@ Should run for existing
 * [install-release-test](#install-release-test):
 
 **Sub-projects:**
+* [install-release-test](#install-release-test):
 
 **Triggers from:** []
 
