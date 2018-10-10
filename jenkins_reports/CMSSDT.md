@@ -1702,9 +1702,7 @@ Not periodically build
 
 ## [install-cms-package-test](https://cmssdt.cern.ch/jenkins/job/install-cms-package-test)
 
-**Description:** This is a test job to install releases and IBs
-once the upload is completed. The job should be triggered by upstream job
-upload-release.
+**Description:** This job installs packages using cmspkg tool
 
 **Project is `enabled`.**
 
