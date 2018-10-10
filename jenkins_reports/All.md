@@ -1870,8 +1870,10 @@ H/5 * * * *
 **Upstream projects:**
 
 **Downstream projects:**
+* [jenkins-test-job1](#jenkins-test-job1):
 
 **Sub-projects:**
+* [jenkins-test-job1](#jenkins-test-job1):
 
 **Triggers from:** []
 
@@ -2203,6 +2205,7 @@ Not periodically build
 **Project is `enabled`.**
 
 **Upstream projects:**
+* [jenkins-delete-workspace](#jenkins-delete-workspace):
 
 **Downstream projects:**
 
