@@ -241,6 +241,7 @@ Results of this build can be seen via <a href="https://cmssdt.cern.ch/SDT/">CMSS
 * [ib-build-logs](#ib-build-logs):
 
 **Sub-projects:**
+* [ib-build-logs](#ib-build-logs):
 
 **Triggers from:** []
 
@@ -1150,7 +1151,7 @@ Not periodically build
 
 **Sub-projects:**
 
-**Triggers from:** [u'build-fwlite-ib']
+**Triggers from:** []
 
 
 **Periodic builds:**
@@ -1589,6 +1590,8 @@ Not periodically build
 * [update-das-queries](#update-das-queries):
 
 **Sub-projects:**
+* [update-das-queries](#update-das-queries):
+* [process-relval-logs](#process-relval-logs):
 
 **Triggers from:** []
 
