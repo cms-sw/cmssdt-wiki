@@ -1708,6 +1708,7 @@ Not periodically build
 **Project is `enabled`.**
 
 **Upstream projects:**
+* [install-release-test](#install-release-test):
 
 **Downstream projects:**
 
@@ -1735,8 +1736,10 @@ upload-release.
 * [upload-release-test](#upload-release-test):
 
 **Downstream projects:**
+* [install-cms-package-test](#install-cms-package-test):
 
 **Sub-projects:**
+* [install-cms-package-test](#install-cms-package-test):
 
 **Triggers from:** []
 
