@@ -1073,7 +1073,6 @@ Not periodically build
 
 **Downstream projects:**
 * [compare-root-files-short-matrix](#compare-root-files-short-matrix):
-* [run-igprof-pr](#run-igprof-pr):
 * [stop-ib-any-integration](#stop-ib-any-integration):
 
 **Sub-projects:**

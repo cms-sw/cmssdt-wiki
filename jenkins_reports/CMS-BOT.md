@@ -101,7 +101,6 @@ Not periodically build
 
 **Downstream projects:**
 * [compare-root-files-short-matrix](#compare-root-files-short-matrix):
-* [run-igprof-pr](#run-igprof-pr):
 * [stop-ib-any-integration](#stop-ib-any-integration):
 
 **Sub-projects:**
@@ -124,32 +123,6 @@ Not periodically build
 **Description:** Download the files of the baseline IB and compare them with the results of the ones of a pull request
 
 **Project is `enabled`.**
-
-**Upstream projects:**
-* [ib-any-integration](#ib-any-integration):
-
-**Downstream projects:**
-
-**Sub-projects:**
-
-**Triggers from:** []
-
-
-**Periodic builds:**
-```bash
-Not periodically build
-```
-
----
-
-## [run-igprof-pr](https://cmssdt.cern.ch/jenkins/job/run-igprof-pr)
-
-**Description:** <b>Depricated.</b> <br>
-Runs igprof tests. Depricated in favor of 
-<a href="https://cmssdt.cern.ch/jenkins/job/ib-run-igprof-mp">ib-run-igprof-mp</a> and
-<a href="https://cmssdt.cern.ch/jenkins/job/ib-run-igprof-pp">ib-run-igprof-pp</a>.
-
-**Project is `disabled`.**
 
 **Upstream projects:**
 * [ib-any-integration](#ib-any-integration):
