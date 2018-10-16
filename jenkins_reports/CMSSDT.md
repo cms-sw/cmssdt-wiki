@@ -1078,7 +1078,6 @@ Not periodically build
 **Sub-projects:**
 * [stop-ib-any-integration](#stop-ib-any-integration):
 * [compare-root-files-short-matrix](#compare-root-files-short-matrix):
-* [run-igprof-pr](#run-igprof-pr):
 
 **Triggers from:** []
 
