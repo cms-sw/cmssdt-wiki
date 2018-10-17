@@ -277,30 +277,6 @@ Not periodically build
 
 ---
 
-## [build-release-test](https://cmssdt.cern.ch/jenkins/job/build-release-test)
-
-**Description:** Test job for simulating release build
-and eventually pass arguments to upload-release
-It is triggered by cms-bot after the <a href="https://github.com/cms-sw/cmssw/issues?q=label%3Arelease-notes-requested">Release build Issue</a> is approved by release manager.
-
-**Project is `enabled`.**
-
-**Upstream projects:**
-
-**Downstream projects:**
-
-**Sub-projects:**
-
-**Triggers from:** []
-
-
-**Periodic builds:**
-```bash
-Not periodically build
-```
-
----
-
 ## [cleanup-auto-build](https://cmssdt.cern.ch/jenkins/job/cleanup-auto-build)
 
 **Description:** This job deletes the relsease build areas after three days.
@@ -1824,7 +1800,6 @@ upload-release.
 **Project is `enabled`.**
 
 **Upstream projects:**
-* [upload-release-test](#upload-release-test):
 
 **Downstream projects:**
 * [install-cms-package-test](#install-cms-package-test):
@@ -3632,33 +3607,6 @@ Not periodically build
 * [upload-release](#upload-release):
 
 **Sub-projects:**
-
-**Triggers from:** []
-
-
-**Periodic builds:**
-```bash
-Not periodically build
-```
-
----
-
-## [upload-release-test](https://cmssdt.cern.ch/jenkins/job/upload-release-test)
-
-**Description:** Test job to trigger install-release-test job 
-Used only to pass arguments once the release upload was finished.
-Should run for existing 
-
-
-**Project is `enabled`.**
-
-**Upstream projects:**
-
-**Downstream projects:**
-* [install-release-test](#install-release-test):
-
-**Sub-projects:**
-* [install-release-test](#install-release-test):
 
 **Triggers from:** []
 
