@@ -1769,21 +1769,23 @@ Not periodically build
 
 ---
 
-## [install-cms-common-test](https://cmssdt.cern.ch/jenkins/job/install-cms-common-test)
+## [install-cms-common-devjob](https://cmssdt.cern.ch/jenkins/job/install-cms-common-devjob)
 
-**Description:** This is a test job to install releases and IBs
-once the upload is completed. The job should be triggered by upstream job
-upload-release.
+**Description:** Job to install cms-common.
+Logic follow this function
+https://github.com/bockjoo/cvmfs-cms-install-scripts/blob/master/functions-cms-cvmfs-mgmt#L2885
+called from this script before cmssw installation:
+https://github.com/bockjoo/cvmfs-cms-install-scripts/blob/master/cron_install_cmssw.sh#L359
+
 
 **Project is `enabled`.**
 
 **Upstream projects:**
 
 **Downstream projects:**
-* [install-cms-package-devjob](#install-cms-package-devjob):
 
 **Sub-projects:**
-* [install-cms-package-devjob](#install-cms-package-devjob):
+* [install-cms-package-test](#install-cms-package-test):
 
 **Triggers from:** []
 
@@ -1802,7 +1804,6 @@ Not periodically build
 **Project is `enabled`.**
 
 **Upstream projects:**
-* [install-cms-common-test](#install-cms-common-test):
 * [install-release-devjob](#install-release-devjob):
 
 **Downstream projects:**
