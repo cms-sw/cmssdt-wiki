@@ -124,7 +124,6 @@ Not periodically build
 **Project is `enabled`.**
 
 **Upstream projects:**
-* [Test_get_source_flag](#Test_get_source_flag):
 * [ib-any-integration](#ib-any-integration):
 
 **Downstream projects:**
