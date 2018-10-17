@@ -1689,10 +1689,10 @@ upload-release.
 **Upstream projects:**
 
 **Downstream projects:**
-* [install-cms-package-test](#install-cms-package-test):
+* [install-cms-package-devjob](#install-cms-package-devjob):
 
 **Sub-projects:**
-* [install-cms-package-test](#install-cms-package-test):
+* [install-cms-package-devjob](#install-cms-package-devjob):
 
 **Triggers from:** []
 
@@ -1704,7 +1704,7 @@ Not periodically build
 
 ---
 
-## [install-cms-package-test](https://cmssdt.cern.ch/jenkins/job/install-cms-package-test)
+## [install-cms-package-devjob](https://cmssdt.cern.ch/jenkins/job/install-cms-package-devjob)
 
 **Description:** This job installs packages using cmspkg tool
 
@@ -1712,7 +1712,7 @@ Not periodically build
 
 **Upstream projects:**
 * [install-cms-common-test](#install-cms-common-test):
-* [install-release-test](#install-release-test):
+* [install-release-devjob](#install-release-devjob):
 
 **Downstream projects:**
 
@@ -1728,7 +1728,7 @@ Not periodically build
 
 ---
 
-## [install-release-test](https://cmssdt.cern.ch/jenkins/job/install-release-test)
+## [install-release-devjob](https://cmssdt.cern.ch/jenkins/job/install-release-devjob)
 
 **Description:** This is a test job to install releases and IBs
 once the upload is completed. The job should be triggered by upstream job
@@ -1739,10 +1739,10 @@ upload-release.
 **Upstream projects:**
 
 **Downstream projects:**
-* [install-cms-package-test](#install-cms-package-test):
+* [install-cms-package-devjob](#install-cms-package-devjob):
 
 **Sub-projects:**
-* [install-cms-package-test](#install-cms-package-test):
+* [install-cms-package-devjob](#install-cms-package-devjob):
 
 **Triggers from:** []
 
