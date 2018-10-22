@@ -767,6 +767,7 @@ Not periodically build
 * [cvmfs-deploy-baseline](#cvmfs-deploy-baseline):
 
 **Sub-projects:**
+* [cvmfs-deploy-baseline](#cvmfs-deploy-baseline):
 
 **Triggers from:** []
 
@@ -1523,6 +1524,7 @@ Not periodically build
 * [cvmfs-deploy-baseline](#cvmfs-deploy-baseline):
 
 **Sub-projects:**
+* [cvmfs-deploy-baseline](#cvmfs-deploy-baseline):
 
 **Triggers from:** []
 
