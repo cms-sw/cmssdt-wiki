@@ -553,7 +553,6 @@ Not periodically build
 
 **Upstream projects:**
 * [ib-run-relvals](#ib-run-relvals):
-* [test-relvals-with-krb](#test-relvals-with-krb):
 
 **Downstream projects:**
 * [update-github-pages](#update-github-pages):
@@ -667,7 +666,6 @@ Not periodically build
 
 **Upstream projects:**
 * [ib-run-relvals](#ib-run-relvals):
-* [test-relvals-with-krb](#test-relvals-with-krb):
 
 **Downstream projects:**
 
@@ -1310,7 +1308,6 @@ Not periodically build
 
 **Upstream projects:**
 * [ib-run-relvals](#ib-run-relvals):
-* [test-relvals-with-krb](#test-relvals-with-krb):
 
 **Downstream projects:**
 * [update-github-pages](#update-github-pages):
@@ -1424,7 +1421,6 @@ Not periodically build
 
 **Upstream projects:**
 * [ib-run-relvals](#ib-run-relvals):
-* [test-relvals-with-krb](#test-relvals-with-krb):
 
 **Downstream projects:**
 

@@ -2036,7 +2036,6 @@ Not periodically build
 
 **Upstream projects:**
 * [ib-run-relvals](#ib-run-relvals):
-* [test-relvals-with-krb](#test-relvals-with-krb):
 
 **Downstream projects:**
 * [update-github-pages](#update-github-pages):
@@ -2456,30 +2455,6 @@ Not periodically build
 
 ---
 
-## [test-relvals-with-krb](https://cmssdt.cern.ch/jenkins/job/test-relvals-with-krb)
-
-**Description:** The job runs release validations, as validations are separated on pieces (1of6 2of6 etc)
-
-**Project is `enabled`.**
-
-**Upstream projects:**
-
-**Downstream projects:**
-* [process-relval-logs](#process-relval-logs):
-* [update-das-queries](#update-das-queries):
-
-**Sub-projects:**
-
-**Triggers from:** []
-
-
-**Periodic builds:**
-```bash
-Not periodically build
-```
-
----
-
 ## [test-scram](https://cmssdt.cern.ch/jenkins/job/test-scram)
 
 **Description:** ---need-description--- <br>
@@ -2584,7 +2559,6 @@ H 0 * * *
 
 **Upstream projects:**
 * [ib-run-relvals](#ib-run-relvals):
-* [test-relvals-with-krb](#test-relvals-with-krb):
 
 **Downstream projects:**
 
