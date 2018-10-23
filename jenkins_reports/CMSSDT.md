@@ -1680,12 +1680,7 @@ Not periodically build
 
 ## [install-cms-common-devjob](https://cmssdt.cern.ch/jenkins/job/install-cms-common-devjob)
 
-**Description:** Job to install cms-common.
-Logic follow this function
-https://github.com/bockjoo/cvmfs-cms-install-scripts/blob/master/functions-cms-cvmfs-mgmt#L2885
-called from this script before cmssw installation:
-https://github.com/bockjoo/cvmfs-cms-install-scripts/blob/master/cron_install_cmssw.sh#L359
-
+**Description:** None
 
 **Project is `enabled`.**
 
