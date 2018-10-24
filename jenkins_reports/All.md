@@ -3489,6 +3489,28 @@ Not periodically build
 
 ---
 
+## [update-git-mirror-devjob](https://cmssdt.cern.ch/jenkins/job/update-git-mirror-devjob)
+
+**Description:** None
+
+**Project is `enabled`.**
+
+**Upstream projects:**
+
+**Downstream projects:**
+
+**Sub-projects:**
+
+**Triggers from:** []
+
+
+**Periodic builds:**
+```bash
+Not periodically build
+```
+
+---
+
 ## [update-github-pages](https://cmssdt.cern.ch/jenkins/job/update-github-pages)
 
 **Description:** This job update contents of the "data" directory in cms-sw.github.io
