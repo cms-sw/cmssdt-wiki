@@ -2597,7 +2597,14 @@ Not periodically build
 
 ## [update-git-mirror-devjob](https://cmssdt.cern.ch/jenkins/job/update-git-mirror-devjob)
 
-**Description:** This job mirrors 
+**Description:** This job mirrors cmssw to cms.cern.ch as described here:
+
+https://github.com/mrodozov/cvmfs-cms-install-scripts/blob/master/update_cmssw_git_mirror.sh#L191
+
+Thats the only function that executes, as it exits right after:
+
+https://github.com/mrodozov/cvmfs-cms-install-scripts/blob/master/update_cmssw_git_mirror.sh#L50
+
 
 **Project is `enabled`.**
 
