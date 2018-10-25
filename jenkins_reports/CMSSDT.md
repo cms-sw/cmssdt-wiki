@@ -895,8 +895,10 @@ This is automatically triggered by "git push" to cmssw repo.
 * [github-push-hook](#github-push-hook):
 
 **Downstream projects:**
+* [git-reference-cms-ib-new](#git-reference-cms-ib-new):
 
 **Sub-projects:**
+* [git-reference-cms-ib-new](#git-reference-cms-ib-new):
 
 **Triggers from:** []
 
@@ -916,6 +918,7 @@ This is automatically triggered by "git push" to cmssw repo.
 **Project is `enabled`.**
 
 **Upstream projects:**
+* [git-reference-cms-ib](#git-reference-cms-ib):
 
 **Downstream projects:**
 
