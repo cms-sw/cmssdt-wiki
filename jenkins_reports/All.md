@@ -3669,6 +3669,28 @@ Not periodically build
 
 ---
 
+## [update-siteconf-devjob](https://cmssdt.cern.ch/jenkins/job/update-siteconf-devjob)
+
+**Description:** None
+
+**Project is `enabled`.**
+
+**Upstream projects:**
+
+**Downstream projects:**
+
+**Sub-projects:**
+
+**Triggers from:** []
+
+
+**Periodic builds:**
+```bash
+Not periodically build
+```
+
+---
+
 ## [upload-release](https://cmssdt.cern.ch/jenkins/job/upload-release)
 
 **Description:** This job uploads a release on cmsrep server once approved by release manager.
