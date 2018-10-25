@@ -2571,8 +2571,7 @@ Not periodically build
 
 ## [update-git-mirror-devjob](https://cmssdt.cern.ch/jenkins/job/update-git-mirror-devjob)
 
-**Description:** This job is updating cmssw repos to cvmfs
-
+**Description:** None
 
 **Project is `enabled`.**
 
