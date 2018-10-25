@@ -1840,6 +1840,28 @@ Not periodically build
 
 ---
 
+## [install-crab3-cvmfs-devjob](https://cmssdt.cern.ch/jenkins/job/install-crab3-cvmfs-devjob)
+
+**Description:** This job installs packages using cmspkg tool
+
+**Project is `enabled`.**
+
+**Upstream projects:**
+
+**Downstream projects:**
+
+**Sub-projects:**
+
+**Triggers from:** []
+
+
+**Periodic builds:**
+```bash
+Not periodically build
+```
+
+---
+
 ## [install-release-devjob](https://cmssdt.cern.ch/jenkins/job/install-release-devjob)
 
 **Description:** This is a test job to install releases and IBs
