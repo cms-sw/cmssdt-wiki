@@ -2571,7 +2571,7 @@ Not periodically build
 
 ## [update-git-mirror-devjob](https://cmssdt.cern.ch/jenkins/job/update-git-mirror-devjob)
 
-**Description:** None
+**Description:** This job makes a 
 
 **Project is `enabled`.**
 
