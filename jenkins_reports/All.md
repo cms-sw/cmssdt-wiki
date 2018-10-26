@@ -3616,6 +3616,29 @@ Not periodically build
 
 ---
 
+## [update-gridpacks-devjob](https://cmssdt.cern.ch/jenkins/job/update-gridpacks-devjob)
+
+**Description:** This job updates gridpacks on cvmfs as described here:
+<br> https://github.com/mrodozov/cvmfs-cms-install-scripts/blob/master/cron_rsync_generator_package_from_eos_individual.sh
+
+**Project is `enabled`.**
+
+**Upstream projects:**
+
+**Downstream projects:**
+
+**Sub-projects:**
+
+**Triggers from:** []
+
+
+**Periodic builds:**
+```bash
+Not periodically build
+```
+
+---
+
 ## [update-ibeos-cache](https://cmssdt.cern.ch/jenkins/job/update-ibeos-cache)
 
 **Description:** Job to run das client and cache the results in github to be used by IBs.
