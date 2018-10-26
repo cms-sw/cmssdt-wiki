@@ -3752,6 +3752,9 @@ Not periodically build
 * [update-release-map](#update-release-map):
 
 **Sub-projects:**
+* [release-deploy-afs](#release-deploy-afs):
+* [update-release-map](#update-release-map):
+* [cmspkg-clone](#cmspkg-clone):
 
 **Triggers from:** []
 
