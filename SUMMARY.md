@@ -54,6 +54,7 @@
     * [usercode-faq](cmssw/old/usercode-faq.md)
 * [Jenkins Projects](jenkins_reports/README.md)
   * [All](jenkins_reports/All.md)
+  * [Develop](jenkins_reports/Develop.md)
   * [CMS-CVMFS](jenkins_reports/CMS-CVMFS.md)
   * [CMSSDT](jenkins_reports/CMSSDT.md)
   * [CMSSW Releases](jenkins_reports/CMSSW-Releases.md)
