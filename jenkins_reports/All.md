@@ -1817,6 +1817,28 @@ Not periodically build
 
 ---
 
+## [install-cms-package-cmsbot-devjob](https://cmssdt.cern.ch/jenkins/job/install-cms-package-cmsbot-devjob)
+
+**Description:** This job installs packages using cmspkg tool
+
+**Project is `enabled`.**
+
+**Upstream projects:**
+
+**Downstream projects:**
+
+**Sub-projects:**
+
+**Triggers from:** []
+
+
+**Periodic builds:**
+```bash
+Not periodically build
+```
+
+---
+
 ## [install-cms-package-devjob](https://cmssdt.cern.ch/jenkins/job/install-cms-package-devjob)
 
 **Description:** This job installs packages using cmspkg tool
