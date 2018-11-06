@@ -1795,9 +1795,8 @@ Not periodically build
 
 ## [install-release-devjob](https://cmssdt.cern.ch/jenkins/job/install-release-devjob)
 
-**Description:** This is a test job to install releases and IBs
-once the upload is completed. The job should be triggered by upstream job
-upload-release.
+**Description:** This is a test job to install releases and IBs once the upload is completed.
+The job should be triggered by upstream job upload-release.
 
 **Project is `enabled`.**
 
