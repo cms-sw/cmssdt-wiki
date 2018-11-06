@@ -1866,7 +1866,9 @@ Not periodically build
 
 ## [install-crab3-cvmfs-devjob](https://cmssdt.cern.ch/jenkins/job/install-crab3-cvmfs-devjob)
 
-**Description:** This job installs packages using cmspkg tool
+**Description:** This job lists all new versions of crab3 client from comp repo and installs them
+Same job should be repeated for all the other installdir+arch+pkg that are install
+on cvmfs (python, xrootd etc) , or maybe single job different parameters for this one
 
 **Project is `enabled`.**
 
