@@ -1733,6 +1733,7 @@ Not periodically build
 **Project is `enabled`.**
 
 **Upstream projects:**
+* [install-release-devjob](#install-release-devjob):
 
 **Downstream projects:**
 
@@ -1755,7 +1756,6 @@ Not periodically build
 **Project is `enabled`.**
 
 **Upstream projects:**
-* [install-release-devjob](#install-release-devjob):
 
 **Downstream projects:**
 
@@ -1803,10 +1803,10 @@ The job should be triggered by upstream job upload-release.
 **Upstream projects:**
 
 **Downstream projects:**
-* [install-cms-package-devjob](#install-cms-package-devjob):
+* [install-cms-package-cmsbot-devjob](#install-cms-package-cmsbot-devjob):
 
 **Sub-projects:**
-* [install-cms-package-devjob](#install-cms-package-devjob):
+* [install-cms-package-cmsbot-devjob](#install-cms-package-cmsbot-devjob):
 
 **Triggers from:** []
 
