@@ -1706,7 +1706,9 @@ Not periodically build
 
 ## [install-cms-common-devjob](https://cmssdt.cern.ch/jenkins/job/install-cms-common-devjob)
 
-**Description:** None
+**Description:** Install cms-common for any new architecture listed as production arch ('PROD_ARCH=1')
+found here: https://raw.githubusercontent.com/cms-sw/cms-bot/master/config.map
+The job tries to bootstrap (if not) and install cms+cms-common+1.0 
 
 **Project is `enabled`.**
 
