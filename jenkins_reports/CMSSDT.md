@@ -1715,8 +1715,10 @@ The job tries to bootstrap (if not) and install cms+cms-common+1.0
 **Upstream projects:**
 
 **Downstream projects:**
+* [install-cms-package-cmsbot-devjob](#install-cms-package-cmsbot-devjob):
 
 **Sub-projects:**
+* [install-cms-package-cmsbot-devjob](#install-cms-package-cmsbot-devjob):
 
 **Triggers from:** []
 
@@ -1735,6 +1737,7 @@ Not periodically build
 **Project is `enabled`.**
 
 **Upstream projects:**
+* [install-cms-common-devjob](#install-cms-common-devjob):
 * [install-release-devjob](#install-release-devjob):
 
 **Downstream projects:**
