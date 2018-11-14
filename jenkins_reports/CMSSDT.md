@@ -160,12 +160,11 @@ Otherwise build a patch release.
 
 **Downstream projects:**
 * [build-fwlite-ib](#build-fwlite-ib):
-* [cmspkg-clone](#cmspkg-clone):
 * [ib-build-logs](#ib-build-logs):
 * [ib-install-cvmfs](#ib-install-cvmfs):
 
 **Sub-projects:**
-* [ib-install-cvmfs,cmspkg-clone](#ib-install-cvmfs,cmspkg-clone):
+* [ib-install-cvmfs](#ib-install-cvmfs):
 * [ib-build-logs](#ib-build-logs):
 * [build-fwlite-ib](#build-fwlite-ib):
 
@@ -462,13 +461,12 @@ Not periodically build
 
 ## [cmspkg-clone](https://cmssdt.cern.ch/jenkins/job/cmspkg-clone)
 
-**Description:** Periodically (at 21 every day) backs up rpm repos from one place to another.
+**Description:** None
 
 **Project is `enabled`.**
 
 **Upstream projects:**
-* [build-any-ib](#build-any-ib):
-* [upload-release](#upload-release):
+* [cmsrep-webhook](#cmsrep-webhook):
 
 **Downstream projects:**
 
@@ -479,7 +477,47 @@ Not periodically build
 
 **Periodic builds:**
 ```bash
-H 21 * * *
+#Run on Monday at 2h to do the cleanup
+H 2 * * 1
+```
+
+---
+
+## [cmsrep-webhook](https://cmssdt.cern.ch/jenkins/job/cmsrep-webhook)
+
+**Description:** This is cms bot job which is triggered by github webhooks ( https://cmssdt.cern.ch/SDT/cgi-bin/github_webhook ) for every valid comment added to github PRs.
+Also it runsevery 30mins to make sure any webhooks were not missed. 
+
+**Project is `enabled`.**
+
+**Upstream projects:**
+
+**Downstream projects:**
+* [cmspkg-clone](#cmspkg-clone):
+* [cvmfs-cms-install-COMP-python](#cvmfs-cms-install-COMP-python):
+* [cvmfs-cms-install-COMP-xrootd](#cvmfs-cms-install-COMP-xrootd):
+* [cvmfs-cms-install-cms](#cvmfs-cms-install-cms):
+* [cvmfs-cms-install-common](#cvmfs-cms-install-common):
+* [cvmfs-cms-install-crab3](#cvmfs-cms-install-crab3):
+* [cvmfs-cms-install-phedex](#cvmfs-cms-install-phedex):
+* [cvmfs-cms-install-spacemon-client](#cvmfs-cms-install-spacemon-client):
+
+**Sub-projects:**
+* [cvmfs-cms-install-common](#cvmfs-cms-install-common):
+* [cmspkg-clone](#cmspkg-clone):
+* [cvmfs-cms-install-crab3](#cvmfs-cms-install-crab3):
+* [cvmfs-cms-install-phedex](#cvmfs-cms-install-phedex):
+* [cvmfs-cms-install-spacemon-client](#cvmfs-cms-install-spacemon-client):
+* [cvmfs-cms-install-cms](#cvmfs-cms-install-cms):
+* [cvmfs-cms-install-COMP-python](#cvmfs-cms-install-COMP-python):
+* [cvmfs-cms-install-COMP-xrootd](#cvmfs-cms-install-COMP-xrootd):
+
+**Triggers from:** []
+
+
+**Periodic builds:**
+```bash
+Not periodically build
 ```
 
 ---
@@ -908,7 +946,31 @@ Not periodically build
 
 ---
 
-## [git-reference-cms-ib-new](https://cmssdt.cern.ch/jenkins/job/git-reference-cms-ib-new)
+## [git-reference-cms-ib-bare](https://cmssdt.cern.ch/jenkins/job/git-reference-cms-ib-bare)
+
+**Description:** Create GIT Reference for cms-sw/cmssw repository in /cvmfs/cms-ib.cern.ch/git/cms-sw.
+This is automatically triggered by "git push" to cmssw repo.
+
+**Project is `enabled`.**
+
+**Upstream projects:**
+* [github-push-hook](#github-push-hook):
+
+**Downstream projects:**
+
+**Sub-projects:**
+
+**Triggers from:** []
+
+
+**Periodic builds:**
+```bash
+Not periodically build
+```
+
+---
+
+## [git-reference-cms-ib-mirror](https://cmssdt.cern.ch/jenkins/job/git-reference-cms-ib-mirror)
 
 **Description:** Create GIT Reference for cms-sw/cmssw repository in /cvmfs/cms-ib.cern.ch/git/cms-sw.
 This is automatically triggered by "git push" to cmssw repo.
@@ -970,7 +1032,8 @@ This job is also triggered via github web hook. Please do not add/remove any par
 * [deploy-cms-repo](#deploy-cms-repo):
 * [git-mirror-repository](#git-mirror-repository):
 * [git-reference-cms-ib](#git-reference-cms-ib):
-* [git-reference-cms-ib-new](#git-reference-cms-ib-new):
+* [git-reference-cms-ib-bare](#git-reference-cms-ib-bare):
+* [git-reference-cms-ib-mirror](#git-reference-cms-ib-mirror):
 * [web-update-cmssdt-ib](#web-update-cmssdt-ib):
 
 **Sub-projects:**
@@ -979,7 +1042,7 @@ This job is also triggered via github web hook. Please do not add/remove any par
 * [git-reference-cms-ib](#git-reference-cms-ib):
 * [git-mirror-repository](#git-mirror-repository):
 * [web-update-cmssdt-ib](#web-update-cmssdt-ib):
-* [git-reference-cms-ib-new](#git-reference-cms-ib-new):
+* [git-reference-cms-ib-bare,git-reference-cms-ib-mirror](#git-reference-cms-ib-bare,git-reference-cms-ib-mirror):
 
 **Triggers from:** []
 
@@ -1693,127 +1756,6 @@ CMSSW_* tag is rename to STITCHED_*
 **Downstream projects:**
 
 **Sub-projects:**
-
-**Triggers from:** []
-
-
-**Periodic builds:**
-```bash
-Not periodically build
-```
-
----
-
-## [install-cms-common-devjob](https://cmssdt.cern.ch/jenkins/job/install-cms-common-devjob)
-
-**Description:** Install cms-common for any new architecture listed as production arch ('PROD_ARCH=1')
-found here: https://raw.githubusercontent.com/cms-sw/cms-bot/master/config.map
-The job tries to bootstrap (if not) and install cms+cms-common+1.0 
-
-**Project is `enabled`.**
-
-**Upstream projects:**
-
-**Downstream projects:**
-* [install-cms-package-cmsbot-devjob](#install-cms-package-cmsbot-devjob):
-
-**Sub-projects:**
-* [install-cms-package-cmsbot-devjob](#install-cms-package-cmsbot-devjob):
-
-**Triggers from:** []
-
-
-**Periodic builds:**
-```bash
-Not periodically build
-```
-
----
-
-## [install-cms-package-cmsbot-devjob](https://cmssdt.cern.ch/jenkins/job/install-cms-package-cmsbot-devjob)
-
-**Description:** This job installs packages using cmspkg tool
-
-**Project is `enabled`.**
-
-**Upstream projects:**
-* [install-cms-common-devjob](#install-cms-common-devjob):
-* [install-release-devjob](#install-release-devjob):
-
-**Downstream projects:**
-
-**Sub-projects:**
-
-**Triggers from:** []
-
-
-**Periodic builds:**
-```bash
-Not periodically build
-```
-
----
-
-## [install-cms-package-devjob](https://cmssdt.cern.ch/jenkins/job/install-cms-package-devjob)
-
-**Description:** This job installs packages using cmspkg tool
-
-**Project is `enabled`.**
-
-**Upstream projects:**
-
-**Downstream projects:**
-
-**Sub-projects:**
-
-**Triggers from:** []
-
-
-**Periodic builds:**
-```bash
-Not periodically build
-```
-
----
-
-## [install-crab3-cvmfs-devjob](https://cmssdt.cern.ch/jenkins/job/install-crab3-cvmfs-devjob)
-
-**Description:** This job lists all new versions of crab3 client from comp repo and installs them
-Same job should be repeated for all the other installdir+arch+pkg that are install
-on cvmfs (python, xrootd etc) , or maybe single job different parameters for this one
-
-**Project is `enabled`.**
-
-**Upstream projects:**
-
-**Downstream projects:**
-
-**Sub-projects:**
-
-**Triggers from:** []
-
-
-**Periodic builds:**
-```bash
-Not periodically build
-```
-
----
-
-## [install-release-devjob](https://cmssdt.cern.ch/jenkins/job/install-release-devjob)
-
-**Description:** This is a test job to install releases and IBs once the upload is completed.
-The job should be triggered by upstream job upload-release.
-
-**Project is `enabled`.**
-
-**Upstream projects:**
-
-**Downstream projects:**
-* [install-cms-package-cmsbot-devjob](#install-cms-package-cmsbot-devjob):
-
-**Sub-projects:**
-* [install-cms-package-cmsbot-devjob](#install-cms-package-cmsbot-devjob):
 
 **Triggers from:** []
 
@@ -2575,28 +2517,6 @@ Not periodically build
 
 ---
 
-## [tutorial-jenkins](https://cmssdt.cern.ch/jenkins/job/tutorial-jenkins)
-
-**Description:** This is job used to learn jenkins.
-
-**Project is `enabled`.**
-
-**Upstream projects:**
-
-**Downstream projects:**
-
-**Sub-projects:**
-
-**Triggers from:** []
-
-
-**Periodic builds:**
-```bash
-Not periodically build
-```
-
----
-
 ## [update-categories-page](https://cmssdt.cern.ch/jenkins/job/update-categories-page)
 
 **Description:** Generates categories.json file and uploads it to this <a href="https://github.com/cms-sw/cms-sw.github.io">github repo</a>. 
@@ -2645,35 +2565,6 @@ Not periodically build
 
 ---
 
-## [update-git-mirror-devjob](https://cmssdt.cern.ch/jenkins/job/update-git-mirror-devjob)
-
-**Description:** This job mirrors cmssw to cms.cern.ch as described here:
-
-https://github.com/mrodozov/cvmfs-cms-install-scripts/blob/master/update_cmssw_git_mirror.sh#L191
-
-Thats the only function that executes, as it exits right after:
-
-https://github.com/mrodozov/cvmfs-cms-install-scripts/blob/master/update_cmssw_git_mirror.sh#L50
-
-
-**Project is `enabled`.**
-
-**Upstream projects:**
-
-**Downstream projects:**
-
-**Sub-projects:**
-
-**Triggers from:** []
-
-
-**Periodic builds:**
-```bash
-Not periodically build
-```
-
----
-
 ## [update-github-pages](https://cmssdt.cern.ch/jenkins/job/update-github-pages)
 
 **Description:** This job update contents of the "data" directory in cms-sw.github.io
@@ -2705,29 +2596,6 @@ Not periodically build
 
 **Description:** Updates passphrase for git webhooks for selected repository.
 More details <a href="https://github.com/cms-sw/cms-bot/tree/master/repos">here</a>.
-
-**Project is `enabled`.**
-
-**Upstream projects:**
-
-**Downstream projects:**
-
-**Sub-projects:**
-
-**Triggers from:** []
-
-
-**Periodic builds:**
-```bash
-Not periodically build
-```
-
----
-
-## [update-gridpacks-devjob](https://cmssdt.cern.ch/jenkins/job/update-gridpacks-devjob)
-
-**Description:** This job updates gridpacks on cvmfs as described here:
-<br> https://github.com/mrodozov/cvmfs-cms-install-scripts/blob/master/cron_rsync_generator_package_from_eos_individual.sh
 
 **Project is `enabled`.**
 
@@ -2822,29 +2690,6 @@ Not periodically build
 
 ---
 
-## [update-siteconf-devjob](https://cmssdt.cern.ch/jenkins/job/update-siteconf-devjob)
-
-**Description:** This job updates SITECONF on cvmfs as described here:
-<br> https://github.com/mrodozov/cvmfs-cms-install-scripts/blob/master/cron_install_cmssw.sh#L562 
-
-**Project is `enabled`.**
-
-**Upstream projects:**
-
-**Downstream projects:**
-
-**Sub-projects:**
-
-**Triggers from:** []
-
-
-**Periodic builds:**
-```bash
-Not periodically build
-```
-
----
-
 ## [upload-release](https://cmssdt.cern.ch/jenkins/job/upload-release)
 
 **Description:** This job uploads a release on cmsrep server once approved by release manager.
@@ -2855,14 +2700,12 @@ Not periodically build
 * [upload-release-setup](#upload-release-setup):
 
 **Downstream projects:**
-* [cmspkg-clone](#cmspkg-clone):
 * [release-deploy-afs](#release-deploy-afs):
 * [update-release-map](#update-release-map):
 
 **Sub-projects:**
 * [release-deploy-afs](#release-deploy-afs):
 * [update-release-map](#update-release-map):
-* [cmspkg-clone](#cmspkg-clone):
 
 **Triggers from:** []
 

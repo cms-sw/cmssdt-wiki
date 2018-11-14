@@ -102,13 +102,12 @@ H 0 * * *
 
 ## [cmspkg-clone](https://cmssdt.cern.ch/jenkins/job/cmspkg-clone)
 
-**Description:** Periodically (at 21 every day) backs up rpm repos from one place to another.
+**Description:** None
 
 **Project is `enabled`.**
 
 **Upstream projects:**
-* [build-any-ib](#build-any-ib):
-* [upload-release](#upload-release):
+* [cmsrep-webhook](#cmsrep-webhook):
 
 **Downstream projects:**
 
@@ -119,7 +118,8 @@ H 0 * * *
 
 **Periodic builds:**
 ```bash
-H 21 * * *
+#Run on Monday at 2h to do the cleanup
+H 2 * * 1
 ```
 
 ---
@@ -285,7 +285,8 @@ This job is also triggered via github web hook. Please do not add/remove any par
 * [deploy-cms-repo](#deploy-cms-repo):
 * [git-mirror-repository](#git-mirror-repository):
 * [git-reference-cms-ib](#git-reference-cms-ib):
-* [git-reference-cms-ib-new](#git-reference-cms-ib-new):
+* [git-reference-cms-ib-bare](#git-reference-cms-ib-bare):
+* [git-reference-cms-ib-mirror](#git-reference-cms-ib-mirror):
 * [web-update-cmssdt-ib](#web-update-cmssdt-ib):
 
 **Sub-projects:**
@@ -294,7 +295,7 @@ This job is also triggered via github web hook. Please do not add/remove any par
 * [git-reference-cms-ib](#git-reference-cms-ib):
 * [git-mirror-repository](#git-mirror-repository):
 * [web-update-cmssdt-ib](#web-update-cmssdt-ib):
-* [git-reference-cms-ib-new](#git-reference-cms-ib-new):
+* [git-reference-cms-ib-bare,git-reference-cms-ib-mirror](#git-reference-cms-ib-bare,git-reference-cms-ib-mirror):
 
 **Triggers from:** []
 

@@ -220,14 +220,12 @@ Not periodically build
 * [upload-release-setup](#upload-release-setup):
 
 **Downstream projects:**
-* [cmspkg-clone](#cmspkg-clone):
 * [release-deploy-afs](#release-deploy-afs):
 * [update-release-map](#update-release-map):
 
 **Sub-projects:**
 * [release-deploy-afs](#release-deploy-afs):
 * [update-release-map](#update-release-map):
-* [cmspkg-clone](#cmspkg-clone):
 
 **Triggers from:** []
 
@@ -235,30 +233,6 @@ Not periodically build
 **Periodic builds:**
 ```bash
 Not periodically build
-```
-
----
-
-## [cmspkg-clone](https://cmssdt.cern.ch/jenkins/job/cmspkg-clone)
-
-**Description:** Periodically (at 21 every day) backs up rpm repos from one place to another.
-
-**Project is `enabled`.**
-
-**Upstream projects:**
-* [build-any-ib](#build-any-ib):
-* [upload-release](#upload-release):
-
-**Downstream projects:**
-
-**Sub-projects:**
-
-**Triggers from:** []
-
-
-**Periodic builds:**
-```bash
-H 21 * * *
 ```
 
 ---

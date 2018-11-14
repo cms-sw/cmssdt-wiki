@@ -114,12 +114,11 @@ Otherwise build a patch release.
 
 **Downstream projects:**
 * [build-fwlite-ib](#build-fwlite-ib):
-* [cmspkg-clone](#cmspkg-clone):
 * [ib-build-logs](#ib-build-logs):
 * [ib-install-cvmfs](#ib-install-cvmfs):
 
 **Sub-projects:**
-* [ib-install-cvmfs,cmspkg-clone](#ib-install-cvmfs,cmspkg-clone):
+* [ib-install-cvmfs](#ib-install-cvmfs):
 * [ib-build-logs](#ib-build-logs):
 * [build-fwlite-ib](#build-fwlite-ib):
 
@@ -271,30 +270,6 @@ as deploys on the web server. It is used to generate <a href="https://cmssdt.cer
 **Periodic builds:**
 ```bash
 Not periodically build
-```
-
----
-
-## [cmspkg-clone](https://cmssdt.cern.ch/jenkins/job/cmspkg-clone)
-
-**Description:** Periodically (at 21 every day) backs up rpm repos from one place to another.
-
-**Project is `enabled`.**
-
-**Upstream projects:**
-* [build-any-ib](#build-any-ib):
-* [upload-release](#upload-release):
-
-**Downstream projects:**
-
-**Sub-projects:**
-
-**Triggers from:** []
-
-
-**Periodic builds:**
-```bash
-H 21 * * *
 ```
 
 ---
