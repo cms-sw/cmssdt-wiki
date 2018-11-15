@@ -905,6 +905,29 @@ Not periodically build
 
 ---
 
+## [cvmfs-cms-update-lhapdf](https://cmssdt.cern.ch/jenkins/job/cvmfs-cms-update-lhapdf)
+
+**Description:** This job updates gridpacks on cvmfs as described here:
+<br> https://github.com/mrodozov/cvmfs-cms-install-scripts/blob/master/cron_rsync_generator_package_from_eos_individual.sh
+
+**Project is `enabled`.**
+
+**Upstream projects:**
+
+**Downstream projects:**
+
+**Sub-projects:**
+
+**Triggers from:** []
+
+
+**Periodic builds:**
+```bash
+Not periodically build
+```
+
+---
+
 ## [cvmfs-cms-update-siteconf](https://cmssdt.cern.ch/jenkins/job/cvmfs-cms-update-siteconf)
 
 **Description:** This job updates SITECONF on cvmfs as described here:
