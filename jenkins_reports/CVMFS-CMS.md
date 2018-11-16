@@ -15,6 +15,7 @@
 **Project is `enabled`.**
 
 **Upstream projects:**
+* [cvmfs-cms-eos-sync](#cvmfs-cms-eos-sync):
 
 **Downstream projects:**
 
@@ -39,8 +40,10 @@ Not periodically build
 **Upstream projects:**
 
 **Downstream projects:**
+* [cvmfs-cms-eos-list](#cvmfs-cms-eos-list):
 
 **Sub-projects:**
+* [cvmfs-cms-eos-list ](#cvmfs-cms-eos-list ):
 
 **Triggers from:** []
 
