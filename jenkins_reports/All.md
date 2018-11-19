@@ -688,7 +688,8 @@ Not periodically build
 
 ## [cvmfs-cms-eos-sync-dirs](https://cmssdt.cern.ch/jenkins/job/cvmfs-cms-eos-sync-dirs)
 
-**Description:** Sync two folders (used to copy from eos to cvmfs mostly)
+**Description:** Sync two folders first anywhere second - on cvmfs.
+Should work
 
 **Project is `enabled`.**
 
