@@ -647,6 +647,7 @@ Not periodically build
 
 **Upstream projects:**
 * [cvmfs-cms-eos-sync](#cvmfs-cms-eos-sync):
+* [cvmfs-cms-eos-sync-dirs](#cvmfs-cms-eos-sync-dirs):
 
 **Downstream projects:**
 
@@ -663,6 +664,30 @@ Not periodically build
 ---
 
 ## [cvmfs-cms-eos-sync](https://cmssdt.cern.ch/jenkins/job/cvmfs-cms-eos-sync)
+
+**Description:** None
+
+**Project is `enabled`.**
+
+**Upstream projects:**
+
+**Downstream projects:**
+* [cvmfs-cms-eos-list](#cvmfs-cms-eos-list):
+
+**Sub-projects:**
+* [cvmfs-cms-eos-list ](#cvmfs-cms-eos-list ):
+
+**Triggers from:** []
+
+
+**Periodic builds:**
+```bash
+Not periodically build
+```
+
+---
+
+## [cvmfs-cms-eos-sync-dirs](https://cmssdt.cern.ch/jenkins/job/cvmfs-cms-eos-sync-dirs)
 
 **Description:** None
 
