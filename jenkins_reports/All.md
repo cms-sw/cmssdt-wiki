@@ -647,7 +647,6 @@ Not periodically build
 
 **Upstream projects:**
 * [cvmfs-cms-eos-sync](#cvmfs-cms-eos-sync):
-* [cvmfs-cms-eos-sync-dirs](#cvmfs-cms-eos-sync-dirs):
 
 **Downstream projects:**
 
@@ -689,17 +688,15 @@ Not periodically build
 
 ## [cvmfs-cms-eos-sync-dirs](https://cmssdt.cern.ch/jenkins/job/cvmfs-cms-eos-sync-dirs)
 
-**Description:** None
+**Description:** Sync two folders (used to copy from eos to cvmfs mostly)
 
 **Project is `enabled`.**
 
 **Upstream projects:**
 
 **Downstream projects:**
-* [cvmfs-cms-eos-list](#cvmfs-cms-eos-list):
 
 **Sub-projects:**
-* [cvmfs-cms-eos-list ](#cvmfs-cms-eos-list ):
 
 **Triggers from:** []
 
