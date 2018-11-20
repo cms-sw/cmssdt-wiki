@@ -694,7 +694,6 @@ If the destination folder is on cvmfs, it gets published
 **Project is `enabled`.**
 
 **Upstream projects:**
-* [cvmfs-cms-update-gridpacks](#cvmfs-cms-update-gridpacks):
 
 **Downstream projects:**
 
@@ -963,10 +962,8 @@ Not periodically build
 **Upstream projects:**
 
 **Downstream projects:**
-* [cvmfs-cms-eos-sync-dirs](#cvmfs-cms-eos-sync-dirs):
 
 **Sub-projects:**
-* [cvmfs-cms-eos-sync-dirs](#cvmfs-cms-eos-sync-dirs):
 
 **Triggers from:** []
 
