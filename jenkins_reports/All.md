@@ -711,28 +711,6 @@ Not periodically build
 
 ---
 
-## [cvmfs-cms-install-cleanup-lock](https://cmssdt.cern.ch/jenkins/job/cvmfs-cms-install-cleanup-lock)
-
-**Description:** None
-
-**Project is `enabled`.**
-
-**Upstream projects:**
-
-**Downstream projects:**
-
-**Sub-projects:**
-
-**Triggers from:** []
-
-
-**Periodic builds:**
-```bash
-Not periodically build
-```
-
----
-
 ## [cvmfs-cms-install-cms](https://cmssdt.cern.ch/jenkins/job/cvmfs-cms-install-cms)
 
 **Description:** Job to install (test) releases (and IBs) once the upload is completed.
@@ -2603,50 +2581,6 @@ H/5 * * * *
 
 **Description:** This jobs looks for jenkins slaves which went offline due to job failures
 
-
-**Project is `enabled`.**
-
-**Upstream projects:**
-
-**Downstream projects:**
-
-**Sub-projects:**
-
-**Triggers from:** []
-
-
-**Periodic builds:**
-```bash
-Not periodically build
-```
-
----
-
-## [jenkins-test-abort](https://cmssdt.cern.ch/jenkins/job/jenkins-test-abort)
-
-**Description:** None
-
-**Project is `enabled`.**
-
-**Upstream projects:**
-
-**Downstream projects:**
-
-**Sub-projects:**
-
-**Triggers from:** []
-
-
-**Periodic builds:**
-```bash
-Not periodically build
-```
-
----
-
-## [jenkins-test-abort-cleanup](https://cmssdt.cern.ch/jenkins/job/jenkins-test-abort-cleanup)
-
-**Description:** None
 
 **Project is `enabled`.**
 

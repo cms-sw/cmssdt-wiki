@@ -366,50 +366,6 @@ Not periodically build
 
 ---
 
-## [jenkins-test-abort](https://cmssdt.cern.ch/jenkins/job/jenkins-test-abort)
-
-**Description:** None
-
-**Project is `enabled`.**
-
-**Upstream projects:**
-
-**Downstream projects:**
-
-**Sub-projects:**
-
-**Triggers from:** []
-
-
-**Periodic builds:**
-```bash
-Not periodically build
-```
-
----
-
-## [jenkins-test-abort-cleanup](https://cmssdt.cern.ch/jenkins/job/jenkins-test-abort-cleanup)
-
-**Description:** None
-
-**Project is `enabled`.**
-
-**Upstream projects:**
-
-**Downstream projects:**
-
-**Sub-projects:**
-
-**Triggers from:** []
-
-
-**Periodic builds:**
-```bash
-Not periodically build
-```
-
----
-
 ## [jenkins-test-command-on-slave](https://cmssdt.cern.ch/jenkins/job/jenkins-test-command-on-slave)
 
 **Description:** None
