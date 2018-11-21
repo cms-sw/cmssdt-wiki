@@ -676,7 +676,7 @@ Not periodically build
 * [cvmfs-cms-eos-list](#cvmfs-cms-eos-list):
 
 **Sub-projects:**
-* [cvmfs-cms-eos-list ](#cvmfs-cms-eos-list ):
+* [cvmfs-cms-eos-list](#cvmfs-cms-eos-list):
 
 **Triggers from:** []
 
@@ -696,6 +696,29 @@ If the destination folder is on cvmfs, it gets published
 **Project is `enabled`.**
 
 **Upstream projects:**
+
+**Downstream projects:**
+
+**Sub-projects:**
+
+**Triggers from:** []
+
+
+**Periodic builds:**
+```bash
+Not periodically build
+```
+
+---
+
+## [cvmfs-cms-install-cleanup-lock](https://cmssdt.cern.ch/jenkins/job/cvmfs-cms-install-cleanup-lock)
+
+**Description:** None
+
+**Project is `enabled`.**
+
+**Upstream projects:**
+* [cvmfs-cms-install-package](#cvmfs-cms-install-package):
 
 **Downstream projects:**
 
@@ -862,6 +885,7 @@ Triggered by webhook
 * [cvmfs-cms-install-spacemon-client](#cvmfs-cms-install-spacemon-client):
 
 **Downstream projects:**
+* [cvmfs-cms-install-cleanup-lock](#cvmfs-cms-install-cleanup-lock):
 
 **Sub-projects:**
 

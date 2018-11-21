@@ -115,6 +115,30 @@ Triggered by webhook
 * [cvmfs-cms-install-spacemon-client](#cvmfs-cms-install-spacemon-client):
 
 **Downstream projects:**
+* [cvmfs-cms-install-cleanup-lock](#cvmfs-cms-install-cleanup-lock):
+
+**Sub-projects:**
+
+**Triggers from:** []
+
+
+**Periodic builds:**
+```bash
+Not periodically build
+```
+
+---
+
+## [cvmfs-cms-install-cleanup-lock](https://cmssdt.cern.ch/jenkins/job/cvmfs-cms-install-cleanup-lock)
+
+**Description:** None
+
+**Project is `enabled`.**
+
+**Upstream projects:**
+* [cvmfs-cms-install-package](#cvmfs-cms-install-package):
+
+**Downstream projects:**
 
 **Sub-projects:**
 
@@ -170,6 +194,30 @@ Triggered by webhook
 * [cvmfs-cms-install-crab3](#cvmfs-cms-install-crab3):
 * [cvmfs-cms-install-phedex](#cvmfs-cms-install-phedex):
 * [cvmfs-cms-install-spacemon-client](#cvmfs-cms-install-spacemon-client):
+
+**Downstream projects:**
+* [cvmfs-cms-install-cleanup-lock](#cvmfs-cms-install-cleanup-lock):
+
+**Sub-projects:**
+
+**Triggers from:** []
+
+
+**Periodic builds:**
+```bash
+Not periodically build
+```
+
+---
+
+## [cvmfs-cms-install-cleanup-lock](https://cmssdt.cern.ch/jenkins/job/cvmfs-cms-install-cleanup-lock)
+
+**Description:** None
+
+**Project is `enabled`.**
+
+**Upstream projects:**
+* [cvmfs-cms-install-package](#cvmfs-cms-install-package):
 
 **Downstream projects:**
 
@@ -231,6 +279,30 @@ Triggered by webhook
 * [cvmfs-cms-install-spacemon-client](#cvmfs-cms-install-spacemon-client):
 
 **Downstream projects:**
+* [cvmfs-cms-install-cleanup-lock](#cvmfs-cms-install-cleanup-lock):
+
+**Sub-projects:**
+
+**Triggers from:** []
+
+
+**Periodic builds:**
+```bash
+Not periodically build
+```
+
+---
+
+## [cvmfs-cms-install-cleanup-lock](https://cmssdt.cern.ch/jenkins/job/cvmfs-cms-install-cleanup-lock)
+
+**Description:** None
+
+**Project is `enabled`.**
+
+**Upstream projects:**
+* [cvmfs-cms-install-package](#cvmfs-cms-install-package):
+
+**Downstream projects:**
 
 **Sub-projects:**
 
@@ -287,6 +359,30 @@ Triggered by webhook
 * [cvmfs-cms-install-crab3](#cvmfs-cms-install-crab3):
 * [cvmfs-cms-install-phedex](#cvmfs-cms-install-phedex):
 * [cvmfs-cms-install-spacemon-client](#cvmfs-cms-install-spacemon-client):
+
+**Downstream projects:**
+* [cvmfs-cms-install-cleanup-lock](#cvmfs-cms-install-cleanup-lock):
+
+**Sub-projects:**
+
+**Triggers from:** []
+
+
+**Periodic builds:**
+```bash
+Not periodically build
+```
+
+---
+
+## [cvmfs-cms-install-cleanup-lock](https://cmssdt.cern.ch/jenkins/job/cvmfs-cms-install-cleanup-lock)
+
+**Description:** None
+
+**Project is `enabled`.**
+
+**Upstream projects:**
+* [cvmfs-cms-install-package](#cvmfs-cms-install-package):
 
 **Downstream projects:**
 
@@ -346,6 +442,30 @@ Triggered by webhook
 * [cvmfs-cms-install-spacemon-client](#cvmfs-cms-install-spacemon-client):
 
 **Downstream projects:**
+* [cvmfs-cms-install-cleanup-lock](#cvmfs-cms-install-cleanup-lock):
+
+**Sub-projects:**
+
+**Triggers from:** []
+
+
+**Periodic builds:**
+```bash
+Not periodically build
+```
+
+---
+
+## [cvmfs-cms-install-cleanup-lock](https://cmssdt.cern.ch/jenkins/job/cvmfs-cms-install-cleanup-lock)
+
+**Description:** None
+
+**Project is `enabled`.**
+
+**Upstream projects:**
+* [cvmfs-cms-install-package](#cvmfs-cms-install-package):
+
+**Downstream projects:**
 
 **Sub-projects:**
 
@@ -403,6 +523,30 @@ Triggered by webhook
 * [cvmfs-cms-install-spacemon-client](#cvmfs-cms-install-spacemon-client):
 
 **Downstream projects:**
+* [cvmfs-cms-install-cleanup-lock](#cvmfs-cms-install-cleanup-lock):
+
+**Sub-projects:**
+
+**Triggers from:** []
+
+
+**Periodic builds:**
+```bash
+Not periodically build
+```
+
+---
+
+## [cvmfs-cms-install-cleanup-lock](https://cmssdt.cern.ch/jenkins/job/cvmfs-cms-install-cleanup-lock)
+
+**Description:** None
+
+**Project is `enabled`.**
+
+**Upstream projects:**
+* [cvmfs-cms-install-package](#cvmfs-cms-install-package):
+
+**Downstream projects:**
 
 **Sub-projects:**
 
@@ -458,6 +602,30 @@ Triggered by webhook
 * [cvmfs-cms-install-crab3](#cvmfs-cms-install-crab3):
 * [cvmfs-cms-install-phedex](#cvmfs-cms-install-phedex):
 * [cvmfs-cms-install-spacemon-client](#cvmfs-cms-install-spacemon-client):
+
+**Downstream projects:**
+* [cvmfs-cms-install-cleanup-lock](#cvmfs-cms-install-cleanup-lock):
+
+**Sub-projects:**
+
+**Triggers from:** []
+
+
+**Periodic builds:**
+```bash
+Not periodically build
+```
+
+---
+
+## [cvmfs-cms-install-cleanup-lock](https://cmssdt.cern.ch/jenkins/job/cvmfs-cms-install-cleanup-lock)
+
+**Description:** None
+
+**Project is `enabled`.**
+
+**Upstream projects:**
+* [cvmfs-cms-install-package](#cvmfs-cms-install-package):
 
 **Downstream projects:**
 
