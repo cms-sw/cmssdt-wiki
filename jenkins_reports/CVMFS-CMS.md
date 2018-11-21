@@ -85,7 +85,6 @@ Not periodically build
 **Project is `enabled`.**
 
 **Upstream projects:**
-* [cvmfs-cms-install-package](#cvmfs-cms-install-package):
 
 **Downstream projects:**
 
@@ -252,7 +251,6 @@ Triggered by webhook
 * [cvmfs-cms-install-spacemon-client](#cvmfs-cms-install-spacemon-client):
 
 **Downstream projects:**
-* [cvmfs-cms-install-cleanup-lock](#cvmfs-cms-install-cleanup-lock):
 
 **Sub-projects:**
 
