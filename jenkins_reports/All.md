@@ -2609,6 +2609,30 @@ Not periodically build
 **Upstream projects:**
 
 **Downstream projects:**
+* [jenkins-test-abort-cleanup](#jenkins-test-abort-cleanup):
+
+**Sub-projects:**
+
+**Triggers from:** []
+
+
+**Periodic builds:**
+```bash
+Not periodically build
+```
+
+---
+
+## [jenkins-test-abort-cleanup](https://cmssdt.cern.ch/jenkins/job/jenkins-test-abort-cleanup)
+
+**Description:** None
+
+**Project is `enabled`.**
+
+**Upstream projects:**
+* [jenkins-test-abort](#jenkins-test-abort):
+
+**Downstream projects:**
 
 **Sub-projects:**
 
