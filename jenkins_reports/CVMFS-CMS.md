@@ -217,7 +217,7 @@ Not periodically build
 To be used for - CRAB3, PHEDEX, spacemon-client, python, releases(cmssw), cms-common
 Triggered by webhook
 
-**Project is `enabled`.**
+**Project is `disabled`.**
 
 **Upstream projects:**
 * [cvmfs-cms-install-COMP-python](#cvmfs-cms-install-COMP-python):
