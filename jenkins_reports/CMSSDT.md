@@ -783,7 +783,9 @@ Not periodically build
 
 ## [download-jenkins-rpm](https://cmssdt.cern.ch/jenkins/job/download-jenkins-rpm)
 
-**Description:** None
+**Description:** This downloads a jenkins RPM from https://pkg.jenkins.io/redhat-stable/ and 
+make it available via http://cmsrep.cern.ch/cmssw/download/jenkins
+for faster access to CMs internal jenkns servers
 
 **Project is `enabled`.**
 
