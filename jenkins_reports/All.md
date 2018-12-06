@@ -3213,6 +3213,7 @@ H * * * *
 **Downstream projects:**
 * [openstack-create-vms](#openstack-create-vms):
 * [openstack-delete-vms](#openstack-delete-vms):
+* [openstack-delete-volume](#openstack-delete-volume):
 
 **Sub-projects:**
 * [openstack-create-vms](#openstack-create-vms):
@@ -3284,6 +3285,7 @@ Not periodically build
 **Project is `enabled`.**
 
 **Upstream projects:**
+* [openstack-create-vms](#openstack-create-vms):
 * [openstack-delete-vms](#openstack-delete-vms):
 
 **Downstream projects:**
