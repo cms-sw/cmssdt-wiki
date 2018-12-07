@@ -2466,12 +2466,14 @@ This runs some sub-projects to check if basic functionality of jenkins is workin
 * [jenkins-enable-jobs](#jenkins-enable-jobs):
 * [jenkins-installation-cli-test](#jenkins-installation-cli-test):
 * [jenkins-installation-trigger-test](#jenkins-installation-trigger-test):
+* [jenkins-webhook](#jenkins-webhook):
 
 **Sub-projects:**
 * [jenkins-enable-jobs](#jenkins-enable-jobs):
 * [jenkins-installation-trigger-test](#jenkins-installation-trigger-test):
 * [jenkins-installation-trigger-test](#jenkins-installation-trigger-test):
 * [jenkins-installation-trigger-test](#jenkins-installation-trigger-test):
+* [jenkins-webhook](#jenkins-webhook):
 
 **Triggers from:** []
 
@@ -2888,6 +2890,7 @@ Not periodically build
 **Project is `enabled`.**
 
 **Upstream projects:**
+* [jenkins-initialize](#jenkins-initialize):
 
 **Downstream projects:**
 
