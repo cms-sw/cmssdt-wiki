@@ -1399,54 +1399,6 @@ Not periodically build
 
 ---
 
-## [git-reference-cms-ib-bare](https://cmssdt.cern.ch/jenkins/job/git-reference-cms-ib-bare)
-
-**Description:** Create GIT Reference for cms-sw/cmssw repository in /cvmfs/cms-ib.cern.ch/git/cms-sw.
-This is automatically triggered by "git push" to cmssw repo.
-
-**Project is `enabled`.**
-
-**Upstream projects:**
-* [github-push-hook](#github-push-hook):
-
-**Downstream projects:**
-
-**Sub-projects:**
-
-**Triggers from:** []
-
-
-**Periodic builds:**
-```bash
-Not periodically build
-```
-
----
-
-## [git-reference-cms-ib-mirror](https://cmssdt.cern.ch/jenkins/job/git-reference-cms-ib-mirror)
-
-**Description:** Create GIT Reference for cms-sw/cmssw repository in /cvmfs/cms-ib.cern.ch/git/cms-sw.
-This is automatically triggered by "git push" to cmssw repo.
-
-**Project is `enabled`.**
-
-**Upstream projects:**
-* [github-push-hook](#github-push-hook):
-
-**Downstream projects:**
-
-**Sub-projects:**
-
-**Triggers from:** []
-
-
-**Periodic builds:**
-```bash
-Not periodically build
-```
-
----
-
 ## [github-hooks](https://cmssdt.cern.ch/jenkins/job/github-hooks)
 
 **Description:** Adds and configures web hooks in github repositories. The web hooks are then used to send some events to a specified url
@@ -1485,8 +1437,6 @@ This job is also triggered via github web hook. Please do not add/remove any par
 * [deploy-cms-repo](#deploy-cms-repo):
 * [git-mirror-repository](#git-mirror-repository):
 * [git-reference-cms-ib](#git-reference-cms-ib):
-* [git-reference-cms-ib-bare](#git-reference-cms-ib-bare):
-* [git-reference-cms-ib-mirror](#git-reference-cms-ib-mirror):
 * [web-update-cmssdt-ib](#web-update-cmssdt-ib):
 
 **Sub-projects:**
@@ -1495,7 +1445,6 @@ This job is also triggered via github web hook. Please do not add/remove any par
 * [git-reference-cms-ib](#git-reference-cms-ib):
 * [git-mirror-repository](#git-mirror-repository):
 * [web-update-cmssdt-ib](#web-update-cmssdt-ib):
-* [git-reference-cms-ib-bare,git-reference-cms-ib-mirror](#git-reference-cms-ib-bare,git-reference-cms-ib-mirror):
 
 **Triggers from:** []
 
