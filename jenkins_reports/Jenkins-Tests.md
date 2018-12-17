@@ -397,7 +397,6 @@ Not periodically build
 **Project is `enabled`.**
 
 **Upstream projects:**
-* [build-container](#build-container):
 
 **Downstream projects:**
 

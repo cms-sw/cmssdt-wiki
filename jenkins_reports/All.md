@@ -189,10 +189,8 @@ The parameters passed are self explandatory and concern details about which cont
 * [schedule-docker-build](#schedule-docker-build):
 
 **Downstream projects:**
-* [jenkins-test-container](#jenkins-test-container):
 
 **Sub-projects:**
-* [jenkins-test-container](#jenkins-test-container):
 
 **Triggers from:** []
 
@@ -2605,7 +2603,6 @@ Not periodically build
 **Project is `enabled`.**
 
 **Upstream projects:**
-* [build-container](#build-container):
 
 **Downstream projects:**
 
