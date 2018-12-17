@@ -189,8 +189,10 @@ The parameters passed are self explandatory and concern details about which cont
 * [schedule-docker-build](#schedule-docker-build):
 
 **Downstream projects:**
+* [test-build-container](#test-build-container):
 
 **Sub-projects:**
+* [test-build-container ](#test-build-container ):
 
 **Triggers from:** []
 
@@ -2358,6 +2360,7 @@ Not periodically build
 **Project is `enabled`.**
 
 **Upstream projects:**
+* [build-container](#build-container):
 
 **Downstream projects:**
 
