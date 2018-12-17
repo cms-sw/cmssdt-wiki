@@ -180,8 +180,7 @@ Not periodically build
 
 ## [build-container](https://cmssdt.cern.ch/jenkins/job/build-container)
 
-**Description:** Builds a docker container manualy when the docker file (the recipe) here: https://github.com/cms-sw/cms-docker is changed and needs to be updated.
-The parameters passed are self explandatory and concern details about which container to update, should it be pushed back on dockerhub etc.
+**Description:** None
 
 **Project is `enabled`.**
 
