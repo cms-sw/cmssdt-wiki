@@ -191,7 +191,7 @@ Not periodically build
 * [test-build-container](#test-build-container):
 
 **Sub-projects:**
-* [test-build-container ](#test-build-container ):
+* [test-build-container](#test-build-container):
 
 **Triggers from:** []
 
@@ -625,7 +625,6 @@ Not periodically build
 
 **Upstream projects:**
 * [ib-any-integration](#ib-any-integration):
-* [ib-any-integration-gpu](#ib-any-integration-gpu):
 
 **Downstream projects:**
 
@@ -1538,48 +1537,6 @@ Not periodically build
 
 **Upstream projects:**
 * [ib-schedule-pr-tests](#ib-schedule-pr-tests):
-
-**Downstream projects:**
-* [compare-root-files-short-matrix](#compare-root-files-short-matrix):
-* [stop-ib-any-integration](#stop-ib-any-integration):
-
-**Sub-projects:**
-* [stop-ib-any-integration](#stop-ib-any-integration):
-* [compare-root-files-short-matrix](#compare-root-files-short-matrix):
-
-**Triggers from:** []
-
-
-**Periodic builds:**
-```bash
-Not periodically build
-```
-
----
-
-## [ib-any-integration-gpu](https://cmssdt.cern.ch/jenkins/job/ib-any-integration-gpu)
-
-**Description:** Build a pull request
-
-<br>
-<br>
-
-<b>Q/a:</b>
-
-<ul>
-  <li>
-    Q: git error - "error: switch `b' requires a value" 
-  </li>  
-  <li>
-    A: It happened to a job in  a form of `PR cmssw#24237 cmsdist#4249` when `cmssw#24237` was a back port 
-    to 10_2 from 10_3, but there was no related pull request on cmsdist 10_2 branch (cmssw#24237 was 
-    a pull request on branch 10_3). Solved creating back port on cmsdist manually. 
-  </li>
-</ul>
-
-**Project is `enabled`.**
-
-**Upstream projects:**
 
 **Downstream projects:**
 * [compare-root-files-short-matrix](#compare-root-files-short-matrix):
@@ -3716,7 +3673,6 @@ H 7,19 * * *
 * [Test_get_source_flag](#Test_get_source_flag):
 * [cms-bot](#cms-bot):
 * [ib-any-integration](#ib-any-integration):
-* [ib-any-integration-gpu](#ib-any-integration-gpu):
 * [run-pr-code-ckecks](#run-pr-code-ckecks):
 
 **Downstream projects:**
