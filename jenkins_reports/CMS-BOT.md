@@ -125,6 +125,7 @@ Not periodically build
 
 **Upstream projects:**
 * [ib-any-integration](#ib-any-integration):
+* [ib-any-integration-gpu](#ib-any-integration-gpu):
 
 **Downstream projects:**
 
@@ -150,6 +151,7 @@ Not periodically build
 * [Test_get_source_flag](#Test_get_source_flag):
 * [cms-bot](#cms-bot):
 * [ib-any-integration](#ib-any-integration):
+* [ib-any-integration-gpu](#ib-any-integration-gpu):
 * [run-pr-code-ckecks](#run-pr-code-ckecks):
 
 **Downstream projects:**
@@ -204,6 +206,7 @@ Not periodically build
 * [Test_get_source_flag](#Test_get_source_flag):
 * [cms-bot](#cms-bot):
 * [ib-any-integration](#ib-any-integration):
+* [ib-any-integration-gpu](#ib-any-integration-gpu):
 * [run-pr-code-ckecks](#run-pr-code-ckecks):
 
 **Downstream projects:**
@@ -230,6 +233,7 @@ Not periodically build
 * [Test_get_source_flag](#Test_get_source_flag):
 * [cms-bot](#cms-bot):
 * [ib-any-integration](#ib-any-integration):
+* [ib-any-integration-gpu](#ib-any-integration-gpu):
 * [run-pr-code-ckecks](#run-pr-code-ckecks):
 
 **Downstream projects:**
