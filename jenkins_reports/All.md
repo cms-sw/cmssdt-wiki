@@ -1981,6 +1981,7 @@ Not periodically build
 
 **Upstream projects:**
 * [ib-validation](#ib-validation):
+* [schedule-additional-tests](#schedule-additional-tests):
 
 **Downstream projects:**
 
@@ -3579,6 +3580,7 @@ Not periodically build
 * [ib-run-iwyu](#ib-run-iwyu):
 * [ib-run-lizard](#ib-run-lizard):
 * [ib-run-material-budget](#ib-run-material-budget):
+* [ib-run-qa](#ib-run-qa):
 * [ib-run-valgrind](#ib-run-valgrind):
 * [ib-static-checks](#ib-static-checks):
 
@@ -3595,6 +3597,7 @@ Not periodically build
 * [ib-run-flawfinder](#ib-run-flawfinder):
 * [ib-run-check-headers](#ib-run-check-headers):
 * [ib-run-cfipython](#ib-run-cfipython):
+* [ib-run-qa](#ib-run-qa):
 
 **Triggers from:** []
 

@@ -479,6 +479,7 @@ Not periodically build
 
 **Upstream projects:**
 * [ib-validation](#ib-validation):
+* [schedule-additional-tests](#schedule-additional-tests):
 
 **Downstream projects:**
 
@@ -678,6 +679,7 @@ Not periodically build
 * [ib-run-iwyu](#ib-run-iwyu):
 * [ib-run-lizard](#ib-run-lizard):
 * [ib-run-material-budget](#ib-run-material-budget):
+* [ib-run-qa](#ib-run-qa):
 * [ib-run-valgrind](#ib-run-valgrind):
 * [ib-static-checks](#ib-static-checks):
 
@@ -694,6 +696,7 @@ Not periodically build
 * [ib-run-flawfinder](#ib-run-flawfinder):
 * [ib-run-check-headers](#ib-run-check-headers):
 * [ib-run-cfipython](#ib-run-cfipython):
+* [ib-run-qa](#ib-run-qa):
 
 **Triggers from:** []
 
@@ -1083,6 +1086,31 @@ Not periodically build
 
 **Upstream projects:**
 * [ib-run-material-budget](#ib-run-material-budget):
+
+**Downstream projects:**
+
+**Sub-projects:**
+
+**Triggers from:** []
+
+
+**Periodic builds:**
+```bash
+Not periodically build
+```
+
+---
+
+## [ib-run-qa](https://cmssdt.cern.ch/jenkins/job/ib-run-qa)
+
+**Description:** Runs Quality Assurance (QA) test on IB. Rezulst are available at 
+<a href="https://cmssdt.cern.ch/SDT/html/cmssdt-ib/">IB page's</a> Q/A section.
+
+**Project is `enabled`.**
+
+**Upstream projects:**
+* [ib-validation](#ib-validation):
+* [schedule-additional-tests](#schedule-additional-tests):
 
 **Downstream projects:**
 
@@ -1234,6 +1262,7 @@ Not periodically build
 
 **Upstream projects:**
 * [ib-validation](#ib-validation):
+* [schedule-additional-tests](#schedule-additional-tests):
 
 **Downstream projects:**
 
@@ -1433,6 +1462,7 @@ Not periodically build
 * [ib-run-iwyu](#ib-run-iwyu):
 * [ib-run-lizard](#ib-run-lizard):
 * [ib-run-material-budget](#ib-run-material-budget):
+* [ib-run-qa](#ib-run-qa):
 * [ib-run-valgrind](#ib-run-valgrind):
 * [ib-static-checks](#ib-static-checks):
 
@@ -1449,6 +1479,7 @@ Not periodically build
 * [ib-run-flawfinder](#ib-run-flawfinder):
 * [ib-run-check-headers](#ib-run-check-headers):
 * [ib-run-cfipython](#ib-run-cfipython):
+* [ib-run-qa](#ib-run-qa):
 
 **Triggers from:** []
 
@@ -1838,6 +1869,31 @@ Not periodically build
 
 **Upstream projects:**
 * [ib-run-material-budget](#ib-run-material-budget):
+
+**Downstream projects:**
+
+**Sub-projects:**
+
+**Triggers from:** []
+
+
+**Periodic builds:**
+```bash
+Not periodically build
+```
+
+---
+
+## [ib-run-qa](https://cmssdt.cern.ch/jenkins/job/ib-run-qa)
+
+**Description:** Runs Quality Assurance (QA) test on IB. Rezulst are available at 
+<a href="https://cmssdt.cern.ch/SDT/html/cmssdt-ib/">IB page's</a> Q/A section.
+
+**Project is `enabled`.**
+
+**Upstream projects:**
+* [ib-validation](#ib-validation):
+* [schedule-additional-tests](#schedule-additional-tests):
 
 **Downstream projects:**
 
