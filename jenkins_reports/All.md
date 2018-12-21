@@ -625,7 +625,6 @@ Not periodically build
 
 **Upstream projects:**
 * [ib-any-integration](#ib-any-integration):
-* [ib-any-integration-gpu](#ib-any-integration-gpu):
 
 **Downstream projects:**
 
@@ -1538,32 +1537,6 @@ Not periodically build
 
 **Upstream projects:**
 * [ib-schedule-pr-tests](#ib-schedule-pr-tests):
-
-**Downstream projects:**
-* [compare-root-files-short-matrix](#compare-root-files-short-matrix):
-* [stop-ib-any-integration](#stop-ib-any-integration):
-
-**Sub-projects:**
-* [stop-ib-any-integration](#stop-ib-any-integration):
-* [compare-root-files-short-matrix](#compare-root-files-short-matrix):
-
-**Triggers from:** []
-
-
-**Periodic builds:**
-```bash
-Not periodically build
-```
-
----
-
-## [ib-any-integration-gpu](https://cmssdt.cern.ch/jenkins/job/ib-any-integration-gpu)
-
-**Description:** None
-
-**Project is `enabled`.**
-
-**Upstream projects:**
 
 **Downstream projects:**
 * [compare-root-files-short-matrix](#compare-root-files-short-matrix):
@@ -3722,7 +3695,6 @@ H 7,19 * * *
 * [Test_get_source_flag](#Test_get_source_flag):
 * [cms-bot](#cms-bot):
 * [ib-any-integration](#ib-any-integration):
-* [ib-any-integration-gpu](#ib-any-integration-gpu):
 * [run-pr-code-ckecks](#run-pr-code-ckecks):
 
 **Downstream projects:**
