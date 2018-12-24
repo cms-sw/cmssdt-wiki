@@ -1792,60 +1792,6 @@ Not periodically build
 
 ---
 
-## [ib-run-igprof-mp](https://cmssdt.cern.ch/jenkins/job/ib-run-igprof-mp)
-
-**Description:** Runs <a href="https://igprof.org/">IgProf</a> on IB.
-Results are available on <a href="https://cmssdt.cern.ch/SDT/html/cmssdt-ib">IB page</a>. 
-
-<br>
-Run-ib-igprof is executed with `mp` flag for `memory profiling`.
-<br>
-<br>
-
-<b>Q/a:</b>
-
-<ul>
-  <li>
-    Q: Error: near line 63: unrecognized token: "" 
-  </li>  
-  <li>
-    A: Igprof has a bug that from time to time it returns unrecognizable character which fails the job. There is no easy fix, so we glance over it.
-  </li>
-</ul>
-
-<ul>
-  <li>
-    Q: IOError: [Errno 2] No such file or directory: 'runall-report-step123-.log' 
-  </li>  
-  <li>
-    A: No idea yet
-  </li>
-</ul>
-
-
-
-
-
-
-**Project is `enabled`.**
-
-**Upstream projects:**
-* [schedule-additional-tests](#schedule-additional-tests):
-
-**Downstream projects:**
-
-**Sub-projects:**
-
-**Triggers from:** []
-
-
-**Periodic builds:**
-```bash
-Not periodically build
-```
-
----
-
 ## [ib-run-igprof-pp](https://cmssdt.cern.ch/jenkins/job/ib-run-igprof-pp)
 
 **Description:** Runs <a href="https://igprof.org/">IgProf</a> on IB.
@@ -2244,7 +2190,7 @@ Not periodically build
 **Description:** This job takes the backup of Jenkins master configuration (which includes projects, jenkins configuration, slaves, secrets etc.)
 Backups jenkins scripts on https://github.com/cms-sw/jenkins-backup.git
 
-**Project is `enabled`.**
+**Project is `disabled`.**
 
 **Upstream projects:**
 
@@ -3598,7 +3544,6 @@ Not periodically build
 * [ib-run-check-headers](#ib-run-check-headers):
 * [ib-run-flawfinder](#ib-run-flawfinder):
 * [ib-run-geometry](#ib-run-geometry):
-* [ib-run-igprof-mp](#ib-run-igprof-mp):
 * [ib-run-igprof-pp](#ib-run-igprof-pp):
 * [ib-run-iwyu](#ib-run-iwyu):
 * [ib-run-lizard](#ib-run-lizard):
