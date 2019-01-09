@@ -1993,28 +1993,6 @@ Not periodically build
 
 ---
 
-## [pr-squash](https://cmssdt.cern.ch/jenkins/job/pr-squash)
-
-**Description:** Manually executed job for backporting pull requests given the repo name, the branch for which the PR should be created and the PR to be backported
-
-**Project is `enabled`.**
-
-**Upstream projects:**
-
-**Downstream projects:**
-
-**Sub-projects:**
-
-**Triggers from:** []
-
-
-**Periodic builds:**
-```bash
-Not periodically build
-```
-
----
-
 ## [process-deprecate-releases](https://cmssdt.cern.ch/jenkins/job/process-deprecate-releases)
 
 **Description:** This job marks selected realeases depricated in realease map. Grid jobs will not use depricated release and posibly uninstall it.
