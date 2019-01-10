@@ -434,6 +434,28 @@ Not periodically build
 
 ---
 
+## [jenkins-test-htcondor](https://cmssdt.cern.ch/jenkins/job/jenkins-test-htcondor)
+
+**Description:** None
+
+**Project is `enabled`.**
+
+**Upstream projects:**
+
+**Downstream projects:**
+
+**Sub-projects:**
+
+**Triggers from:** []
+
+
+**Periodic builds:**
+```bash
+Not periodically build
+```
+
+---
+
 ## [jenkins-test-job1](https://cmssdt.cern.ch/jenkins/job/jenkins-test-job1)
 
 **Description:** Jenkins installation test job 1 to check for the parameters passed from a parent job.
