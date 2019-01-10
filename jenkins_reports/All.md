@@ -2652,6 +2652,7 @@ Not periodically build
 **Upstream projects:**
 
 **Downstream projects:**
+* [jenkins-test-job1](#jenkins-test-job1):
 
 **Sub-projects:**
 
@@ -2672,6 +2673,7 @@ Not periodically build
 **Project is `enabled`.**
 
 **Upstream projects:**
+* [jenkins-test-htcondor](#jenkins-test-htcondor):
 * [jenkins-test-ws-trigger-job](#jenkins-test-ws-trigger-job):
 
 **Downstream projects:**
