@@ -194,6 +194,30 @@ Not periodically build
 
 ---
 
+## [jenkins-ib-run-qa](https://cmssdt.cern.ch/jenkins/job/jenkins-ib-run-qa)
+
+**Description:** None
+
+**Project is `enabled`.**
+
+**Upstream projects:**
+
+**Downstream projects:**
+* [jenkins-test-job1](#jenkins-test-job1):
+
+**Sub-projects:**
+* [jenkins-test-job1](#jenkins-test-job1):
+
+**Triggers from:** []
+
+
+**Periodic builds:**
+```bash
+Not periodically build
+```
+
+---
+
 ## [jenkins-initialize](https://cmssdt.cern.ch/jenkins/job/jenkins-initialize)
 
 **Description:** This project is run once a new Jenkins instance is setup or upgrated to a new version.
@@ -465,6 +489,7 @@ Not periodically build
 **Project is `enabled`.**
 
 **Upstream projects:**
+* [jenkins-ib-run-qa](#jenkins-ib-run-qa):
 * [jenkins-test-htcondor](#jenkins-test-htcondor):
 * [jenkins-test-ws-trigger-job](#jenkins-test-ws-trigger-job):
 
