@@ -2704,7 +2704,7 @@ Not periodically build
 
 **Periodic builds:**
 ```bash
-Not periodically build
+H * * * *
 ```
 
 ---
