@@ -468,6 +468,7 @@ Not periodically build
 
 **Upstream projects:**
 * [cmsrep-webhook](#cmsrep-webhook):
+* [condor-webhook](#condor-webhook):
 
 **Downstream projects:**
 
@@ -606,6 +607,45 @@ Not periodically build
 **Downstream projects:**
 
 **Sub-projects:**
+
+**Triggers from:** []
+
+
+**Periodic builds:**
+```bash
+Not periodically build
+```
+
+---
+
+## [condor-webhook](https://cmssdt.cern.ch/jenkins/job/condor-webhook)
+
+**Description:** This is cms bot job which is triggered by github webhooks ( https://cmssdt.cern.ch/SDT/cgi-bin/github_webhook ) for every valid comment added to github PRs.
+Also it runsevery 30mins to make sure any webhooks were not missed. 
+
+**Project is `enabled`.**
+
+**Upstream projects:**
+
+**Downstream projects:**
+* [cmspkg-clone](#cmspkg-clone):
+* [cvmfs-cms-install-COMP-python](#cvmfs-cms-install-COMP-python):
+* [cvmfs-cms-install-COMP-xrootd](#cvmfs-cms-install-COMP-xrootd):
+* [cvmfs-cms-install-cms](#cvmfs-cms-install-cms):
+* [cvmfs-cms-install-common](#cvmfs-cms-install-common):
+* [cvmfs-cms-install-crab3](#cvmfs-cms-install-crab3):
+* [cvmfs-cms-install-phedex](#cvmfs-cms-install-phedex):
+* [cvmfs-cms-install-spacemon-client](#cvmfs-cms-install-spacemon-client):
+
+**Sub-projects:**
+* [cvmfs-cms-install-common](#cvmfs-cms-install-common):
+* [cmspkg-clone](#cmspkg-clone):
+* [cvmfs-cms-install-crab3](#cvmfs-cms-install-crab3):
+* [cvmfs-cms-install-phedex](#cvmfs-cms-install-phedex):
+* [cvmfs-cms-install-spacemon-client](#cvmfs-cms-install-spacemon-client):
+* [cvmfs-cms-install-cms](#cvmfs-cms-install-cms):
+* [cvmfs-cms-install-COMP-python](#cvmfs-cms-install-COMP-python):
+* [cvmfs-cms-install-COMP-xrootd](#cvmfs-cms-install-COMP-xrootd):
 
 **Triggers from:** []
 
