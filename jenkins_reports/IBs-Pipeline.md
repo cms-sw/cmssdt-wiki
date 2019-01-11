@@ -421,6 +421,7 @@ Not periodically build
 **Project is `enabled`.**
 
 **Upstream projects:**
+* [cvmfs-unpack-container](#cvmfs-unpack-container):
 * [ib-cvmfs-publish](#ib-cvmfs-publish):
 * [ib-install-cvmfs](#ib-install-cvmfs):
 
@@ -1204,6 +1205,7 @@ Not periodically build
 **Project is `enabled`.**
 
 **Upstream projects:**
+* [cvmfs-unpack-container](#cvmfs-unpack-container):
 * [ib-cvmfs-publish](#ib-cvmfs-publish):
 * [ib-install-cvmfs](#ib-install-cvmfs):
 

@@ -1093,6 +1093,29 @@ Not periodically build
 
 ---
 
+## [cvmfs-unpack-container](https://cmssdt.cern.ch/jenkins/job/cvmfs-unpack-container)
+
+**Description:** This jobs install an IB on /cvmfs/cms-ib.cern.ch.
+
+**Project is `enabled`.**
+
+**Upstream projects:**
+
+**Downstream projects:**
+* [ib-validation](#ib-validation):
+
+**Sub-projects:**
+
+**Triggers from:** []
+
+
+**Periodic builds:**
+```bash
+Not periodically build
+```
+
+---
+
 ## [das-query](https://cmssdt.cern.ch/jenkins/job/das-query)
 
 **Description:** Job to run das client and cache the results in github to be used by IBs.
@@ -2169,6 +2192,7 @@ Not periodically build
 **Project is `enabled`.**
 
 **Upstream projects:**
+* [cvmfs-unpack-container](#cvmfs-unpack-container):
 * [ib-cvmfs-publish](#ib-cvmfs-publish):
 * [ib-install-cvmfs](#ib-install-cvmfs):
 
