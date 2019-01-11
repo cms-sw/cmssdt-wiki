@@ -108,7 +108,6 @@ H 0 * * *
 
 **Upstream projects:**
 * [cmsrep-webhook](#cmsrep-webhook):
-* [condor-webhook](#condor-webhook):
 
 **Downstream projects:**
 

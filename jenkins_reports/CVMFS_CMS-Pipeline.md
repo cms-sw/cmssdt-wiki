@@ -55,7 +55,6 @@ Not periodically build
 
 **Upstream projects:**
 * [cmsrep-webhook](#cmsrep-webhook):
-* [condor-webhook](#condor-webhook):
 
 **Downstream projects:**
 
@@ -81,7 +80,6 @@ Install path is ${CVMFS_PATH} + COMP install dir (boostraped for comp)
 
 **Upstream projects:**
 * [cmsrep-webhook](#cmsrep-webhook):
-* [condor-webhook](#condor-webhook):
 
 **Downstream projects:**
 * [cvmfs-cms-install-package](#cvmfs-cms-install-package):
@@ -139,7 +137,6 @@ Install path is ${CVMFS_PATH} + COMP install dir (boostraped for comp)
 
 **Upstream projects:**
 * [cmsrep-webhook](#cmsrep-webhook):
-* [condor-webhook](#condor-webhook):
 
 **Downstream projects:**
 * [cvmfs-cms-install-package](#cvmfs-cms-install-package):
@@ -199,7 +196,6 @@ it would get from upload-release job, but without using upload-release instance 
 
 **Upstream projects:**
 * [cmsrep-webhook](#cmsrep-webhook):
-* [condor-webhook](#condor-webhook):
 
 **Downstream projects:**
 * [cvmfs-cms-install-package](#cvmfs-cms-install-package):
@@ -258,7 +254,6 @@ This job is triggered by <a href="https://cmssdt.cern.ch/jenkins/job/cmsrep-webh
 
 **Upstream projects:**
 * [cmsrep-webhook](#cmsrep-webhook):
-* [condor-webhook](#condor-webhook):
 
 **Downstream projects:**
 * [cvmfs-cms-install-package](#cvmfs-cms-install-package):
@@ -316,7 +311,6 @@ Install path is ${CVMFS_PATH} + crab3 install dir (boostraped for comp)
 
 **Upstream projects:**
 * [cmsrep-webhook](#cmsrep-webhook):
-* [condor-webhook](#condor-webhook):
 
 **Downstream projects:**
 * [cvmfs-cms-install-package](#cvmfs-cms-install-package):
@@ -374,7 +368,6 @@ Install path is ${CVMFS_PATH} + phedex install dir (boostraped for comp)
 
 **Upstream projects:**
 * [cmsrep-webhook](#cmsrep-webhook):
-* [condor-webhook](#condor-webhook):
 
 **Downstream projects:**
 * [cvmfs-cms-install-package](#cvmfs-cms-install-package):
@@ -432,7 +425,6 @@ Install path is ${CVMFS_PATH} + spacemonclient install dir (boostraped for comp)
 
 **Upstream projects:**
 * [cmsrep-webhook](#cmsrep-webhook):
-* [condor-webhook](#condor-webhook):
 
 **Downstream projects:**
 * [cvmfs-cms-install-package](#cvmfs-cms-install-package):
