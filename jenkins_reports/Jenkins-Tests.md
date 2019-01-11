@@ -53,6 +53,28 @@ H/5 * * * *
 
 ---
 
+## [jenkins-condor-node](https://cmssdt.cern.ch/jenkins/job/jenkins-condor-node)
+
+**Description:** None
+
+**Project is `enabled`.**
+
+**Upstream projects:**
+
+**Downstream projects:**
+
+**Sub-projects:**
+
+**Triggers from:** []
+
+
+**Periodic builds:**
+```bash
+Not periodically build
+```
+
+---
+
 ## [jenkins-disable-jobs](https://cmssdt.cern.ch/jenkins/job/jenkins-disable-jobs)
 
 **Description:** Disable all nodes that started with the provided wildcard string,
