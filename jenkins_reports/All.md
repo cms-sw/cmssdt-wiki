@@ -2735,7 +2735,7 @@ Not periodically build
 
 **Description:** None
 
-**Project is `disabled`.**
+**Project is `enabled`.**
 
 **Upstream projects:**
 
