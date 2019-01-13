@@ -53,6 +53,28 @@ H/5 * * * *
 
 ---
 
+## [jenkins-condor-auto-load](https://cmssdt.cern.ch/jenkins/job/jenkins-condor-auto-load)
+
+**Description:** None
+
+**Project is `enabled`.**
+
+**Upstream projects:**
+
+**Downstream projects:**
+
+**Sub-projects:**
+
+**Triggers from:** []
+
+
+**Periodic builds:**
+```bash
+Not periodically build
+```
+
+---
+
 ## [jenkins-condor-node](https://cmssdt.cern.ch/jenkins/job/jenkins-condor-node)
 
 **Description:** None
