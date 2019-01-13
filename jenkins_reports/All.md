@@ -2322,14 +2322,14 @@ H/5 * * * *
 
 **Sub-projects:**
 * [jenkins-condor-auto-load](#jenkins-condor-auto-load):
-* [condor-webhook](#condor-webhook):
+* [condor-webhook ](#condor-webhook ):
 
 **Triggers from:** []
 
 
 **Periodic builds:**
 ```bash
-Not periodically build
+H/2 * * * *
 ```
 
 ---
