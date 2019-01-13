@@ -2311,7 +2311,7 @@ H/5 * * * *
 
 **Description:** None
 
-**Project is `disabled`.**
+**Project is `enabled`.**
 
 **Upstream projects:**
 * [jenkins-condor-auto-load](#jenkins-condor-auto-load):
