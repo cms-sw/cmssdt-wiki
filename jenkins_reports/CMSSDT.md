@@ -624,6 +624,7 @@ Not periodically build
 **Project is `enabled`.**
 
 **Upstream projects:**
+* [jenkins-condor-auto-load](#jenkins-condor-auto-load):
 
 **Downstream projects:**
 

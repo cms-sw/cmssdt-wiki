@@ -647,6 +647,7 @@ Not periodically build
 **Project is `enabled`.**
 
 **Upstream projects:**
+* [jenkins-condor-auto-load](#jenkins-condor-auto-load):
 
 **Downstream projects:**
 
@@ -2313,32 +2314,15 @@ H/5 * * * *
 **Project is `enabled`.**
 
 **Upstream projects:**
+* [jenkins-condor-auto-load](#jenkins-condor-auto-load):
 
 **Downstream projects:**
+* [condor-webhook](#condor-webhook):
+* [jenkins-condor-auto-load](#jenkins-condor-auto-load):
 
 **Sub-projects:**
-
-**Triggers from:** []
-
-
-**Periodic builds:**
-```bash
-Not periodically build
-```
-
----
-
-## [jenkins-condor-node](https://cmssdt.cern.ch/jenkins/job/jenkins-condor-node)
-
-**Description:** None
-
-**Project is `disabled`.**
-
-**Upstream projects:**
-
-**Downstream projects:**
-
-**Sub-projects:**
+* [jenkins-condor-auto-load](#jenkins-condor-auto-load):
+* [condor-webhook](#condor-webhook):
 
 **Triggers from:** []
 
