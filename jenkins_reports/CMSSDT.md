@@ -624,7 +624,7 @@ Not periodically build
 **Project is `enabled`.**
 
 **Upstream projects:**
-* [jenkins-condor-auto-load](#jenkins-condor-auto-load):
+* [grid-keep-node-busy](#grid-keep-node-busy):
 
 **Downstream projects:**
 
@@ -1104,6 +1104,55 @@ Also it runsevery 30mins to make sure any webhooks were not missed.
 **Periodic builds:**
 ```bash
 Not periodically build
+```
+
+---
+
+## [grid-create-node](https://cmssdt.cern.ch/jenkins/job/grid-create-node)
+
+**Description:** None
+
+**Project is `enabled`.**
+
+**Upstream projects:**
+
+**Downstream projects:**
+
+**Sub-projects:**
+
+**Triggers from:** []
+
+
+**Periodic builds:**
+```bash
+Not periodically build
+```
+
+---
+
+## [grid-keep-node-busy](https://cmssdt.cern.ch/jenkins/job/grid-keep-node-busy)
+
+**Description:** None
+
+**Project is `enabled`.**
+
+**Upstream projects:**
+* [grid-keep-node-busy](#grid-keep-node-busy):
+
+**Downstream projects:**
+* [condor-webhook](#condor-webhook):
+* [grid-keep-node-busy](#grid-keep-node-busy):
+
+**Sub-projects:**
+* [grid-keep-node-busy](#grid-keep-node-busy):
+* [condor-webhook](#condor-webhook):
+
+**Triggers from:** []
+
+
+**Periodic builds:**
+```bash
+H/2 * * * *
 ```
 
 ---

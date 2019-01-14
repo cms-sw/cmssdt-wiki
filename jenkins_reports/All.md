@@ -647,7 +647,7 @@ Not periodically build
 **Project is `enabled`.**
 
 **Upstream projects:**
-* [jenkins-condor-auto-load](#jenkins-condor-auto-load):
+* [grid-keep-node-busy](#grid-keep-node-busy):
 
 **Downstream projects:**
 
@@ -1535,6 +1535,55 @@ Not periodically build
 
 ---
 
+## [grid-create-node](https://cmssdt.cern.ch/jenkins/job/grid-create-node)
+
+**Description:** None
+
+**Project is `enabled`.**
+
+**Upstream projects:**
+
+**Downstream projects:**
+
+**Sub-projects:**
+
+**Triggers from:** []
+
+
+**Periodic builds:**
+```bash
+Not periodically build
+```
+
+---
+
+## [grid-keep-node-busy](https://cmssdt.cern.ch/jenkins/job/grid-keep-node-busy)
+
+**Description:** None
+
+**Project is `enabled`.**
+
+**Upstream projects:**
+* [grid-keep-node-busy](#grid-keep-node-busy):
+
+**Downstream projects:**
+* [condor-webhook](#condor-webhook):
+* [grid-keep-node-busy](#grid-keep-node-busy):
+
+**Sub-projects:**
+* [grid-keep-node-busy](#grid-keep-node-busy):
+* [condor-webhook](#condor-webhook):
+
+**Triggers from:** []
+
+
+**Periodic builds:**
+```bash
+H/2 * * * *
+```
+
+---
+
 ## [HLT-Validation](https://cmssdt.cern.ch/jenkins/job/HLT-Validation)
 
 **Description:** Appends job's time out information into jenkins.log file.
@@ -2303,55 +2352,6 @@ Backups jenkins scripts on https://github.com/cms-sw/jenkins-backup.git
 **Periodic builds:**
 ```bash
 H/5 * * * *
-```
-
----
-
-## [jenkins-condor-auto-load](https://cmssdt.cern.ch/jenkins/job/jenkins-condor-auto-load)
-
-**Description:** None
-
-**Project is `enabled`.**
-
-**Upstream projects:**
-* [jenkins-condor-auto-load](#jenkins-condor-auto-load):
-
-**Downstream projects:**
-* [condor-webhook](#condor-webhook):
-* [jenkins-condor-auto-load](#jenkins-condor-auto-load):
-
-**Sub-projects:**
-* [jenkins-condor-auto-load](#jenkins-condor-auto-load):
-* [condor-webhook ](#condor-webhook ):
-
-**Triggers from:** []
-
-
-**Periodic builds:**
-```bash
-H/2 * * * *
-```
-
----
-
-## [jenkins-create-grid-node](https://cmssdt.cern.ch/jenkins/job/jenkins-create-grid-node)
-
-**Description:** None
-
-**Project is `enabled`.**
-
-**Upstream projects:**
-
-**Downstream projects:**
-
-**Sub-projects:**
-
-**Triggers from:** []
-
-
-**Periodic builds:**
-```bash
-Not periodically build
 ```
 
 ---

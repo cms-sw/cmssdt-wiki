@@ -59,6 +59,7 @@
   * [CVMFS_CMS Pipeline](jenkins_reports/CVMFS_CMS-Pipeline.md)
   * [CMSSDT](jenkins_reports/CMSSDT.md)
   * [CMSSW Releases](jenkins_reports/CMSSW-Releases.md)
+  * [Grid](jenkins_reports/Grid.md)
   * [Services](jenkins_reports/Services.md)
   * [CMS-BOT](jenkins_reports/CMS-BOT.md)
   * [Openstack](jenkins_reports/Openstack.md)

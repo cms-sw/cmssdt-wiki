@@ -53,55 +53,6 @@ H/5 * * * *
 
 ---
 
-## [jenkins-condor-auto-load](https://cmssdt.cern.ch/jenkins/job/jenkins-condor-auto-load)
-
-**Description:** None
-
-**Project is `enabled`.**
-
-**Upstream projects:**
-* [jenkins-condor-auto-load](#jenkins-condor-auto-load):
-
-**Downstream projects:**
-* [condor-webhook](#condor-webhook):
-* [jenkins-condor-auto-load](#jenkins-condor-auto-load):
-
-**Sub-projects:**
-* [jenkins-condor-auto-load](#jenkins-condor-auto-load):
-* [condor-webhook ](#condor-webhook ):
-
-**Triggers from:** []
-
-
-**Periodic builds:**
-```bash
-H/2 * * * *
-```
-
----
-
-## [jenkins-create-grid-node](https://cmssdt.cern.ch/jenkins/job/jenkins-create-grid-node)
-
-**Description:** None
-
-**Project is `enabled`.**
-
-**Upstream projects:**
-
-**Downstream projects:**
-
-**Sub-projects:**
-
-**Triggers from:** []
-
-
-**Periodic builds:**
-```bash
-Not periodically build
-```
-
----
-
 ## [jenkins-disable-jobs](https://cmssdt.cern.ch/jenkins/job/jenkins-disable-jobs)
 
 **Description:** Disable all nodes that started with the provided wildcard string,
