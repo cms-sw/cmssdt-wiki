@@ -617,29 +617,6 @@ Not periodically build
 
 ---
 
-## [condor-webhook](https://cmssdt.cern.ch/jenkins/job/condor-webhook)
-
-**Description:** None
-
-**Project is `enabled`.**
-
-**Upstream projects:**
-* [grid-keep-node-busy](#grid-keep-node-busy):
-
-**Downstream projects:**
-
-**Sub-projects:**
-
-**Triggers from:** []
-
-
-**Periodic builds:**
-```bash
-Not periodically build
-```
-
----
-
 ## [cvmfs-deploy-baseline](https://cmssdt.cern.ch/jenkins/job/cvmfs-deploy-baseline)
 
 **Description:** Copy baseline results from cmssdt for an IB
@@ -1140,12 +1117,12 @@ Not periodically build
 * [grid-keep-node-busy](#grid-keep-node-busy):
 
 **Downstream projects:**
-* [condor-webhook](#condor-webhook):
 * [grid-keep-node-busy](#grid-keep-node-busy):
+* [grid-webhook](#grid-webhook):
 
 **Sub-projects:**
 * [grid-keep-node-busy](#grid-keep-node-busy):
-* [condor-webhook](#condor-webhook):
+* [grid-webhook](#grid-webhook):
 
 **Triggers from:** []
 
@@ -1153,6 +1130,29 @@ Not periodically build
 **Periodic builds:**
 ```bash
 H/2 * * * *
+```
+
+---
+
+## [grid-webhook](https://cmssdt.cern.ch/jenkins/job/grid-webhook)
+
+**Description:** None
+
+**Project is `enabled`.**
+
+**Upstream projects:**
+* [grid-keep-node-busy](#grid-keep-node-busy):
+
+**Downstream projects:**
+
+**Sub-projects:**
+
+**Triggers from:** []
+
+
+**Periodic builds:**
+```bash
+Not periodically build
 ```
 
 ---
