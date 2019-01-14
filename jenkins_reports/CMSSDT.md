@@ -1129,7 +1129,7 @@ Not periodically build
 
 **Periodic builds:**
 ```bash
-H/2 * * * *
+H/10 * * * *
 ```
 
 ---
