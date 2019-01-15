@@ -52,7 +52,7 @@ Not periodically build
 
 **Periodic builds:**
 ```bash
-H/10 * * * *
+H/30 * * * *
 ```
 
 ---
