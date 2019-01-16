@@ -1535,28 +1535,6 @@ Not periodically build
 
 ---
 
-## [grid-destroy-node](https://cmssdt.cern.ch/jenkins/job/grid-destroy-node)
-
-**Description:** None
-
-**Project is `enabled`.**
-
-**Upstream projects:**
-
-**Downstream projects:**
-
-**Sub-projects:**
-
-**Triggers from:** []
-
-
-**Periodic builds:**
-```bash
-Not periodically build
-```
-
----
-
 ## [grid-keep-node-busy](https://cmssdt.cern.ch/jenkins/job/grid-keep-node-busy)
 
 **Description:** None
