@@ -802,30 +802,6 @@ Not periodically build
 
 ---
 
-## [download-jenkins-rpm](https://cmssdt.cern.ch/jenkins/job/download-jenkins-rpm)
-
-**Description:** This downloads a jenkins RPM from https://pkg.jenkins.io/redhat-stable/ and 
-make it available via http://cmsrep.cern.ch/cmssw/download/jenkins
-for faster access to CMs internal jenkns servers
-
-**Project is `enabled`.**
-
-**Upstream projects:**
-
-**Downstream projects:**
-
-**Sub-projects:**
-
-**Triggers from:** []
-
-
-**Periodic builds:**
-```bash
-Not periodically build
-```
-
----
-
 ## [dxr-cmssw-index](https://cmssdt.cern.ch/jenkins/job/dxr-cmssw-index)
 
 **Description:** Index <a href="https://cmssdt.cern.ch/dxr">CMSSW</a> documentation using DXR. 
@@ -1822,6 +1798,30 @@ Not periodically build
 
 **Description:** This tags a CMSSW release tag and upload the packages (https://github.com/cms-sw/Stitched/blob/master/packages.txt) needed by Stitched to Stitched repo.
 CMSSW_* tag is rename to STITCHED_*
+
+**Project is `enabled`.**
+
+**Upstream projects:**
+
+**Downstream projects:**
+
+**Sub-projects:**
+
+**Triggers from:** []
+
+
+**Periodic builds:**
+```bash
+Not periodically build
+```
+
+---
+
+## [jenkins-download-rpm](https://cmssdt.cern.ch/jenkins/job/jenkins-download-rpm)
+
+**Description:** This downloads a jenkins RPM from https://pkg.jenkins.io/redhat-stable/ and 
+make it available via http://cmsrep.cern.ch/cmssw/download/jenkins
+for faster access to CMs internal jenkns servers
 
 **Project is `enabled`.**
 

@@ -100,6 +100,30 @@ Not periodically build
 
 ---
 
+## [jenkins-download-rpm](https://cmssdt.cern.ch/jenkins/job/jenkins-download-rpm)
+
+**Description:** This downloads a jenkins RPM from https://pkg.jenkins.io/redhat-stable/ and 
+make it available via http://cmsrep.cern.ch/cmssw/download/jenkins
+for faster access to CMs internal jenkns servers
+
+**Project is `enabled`.**
+
+**Upstream projects:**
+
+**Downstream projects:**
+
+**Sub-projects:**
+
+**Triggers from:** []
+
+
+**Periodic builds:**
+```bash
+Not periodically build
+```
+
+---
+
 ## [jenkins-elasticsearch-monitor](https://cmssdt.cern.ch/jenkins/job/jenkins-elasticsearch-monitor)
 
 **Description:** This job runs a python script to push useful info from jenkins build logs to elasticsearch
