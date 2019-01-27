@@ -1061,6 +1061,28 @@ Not periodically build
 
 ---
 
+## [grid-check-jobs](https://cmssdt.cern.ch/jenkins/job/grid-check-jobs)
+
+**Description:** None
+
+**Project is `enabled`.**
+
+**Upstream projects:**
+
+**Downstream projects:**
+
+**Sub-projects:**
+
+**Triggers from:** []
+
+
+**Periodic builds:**
+```bash
+Not periodically build
+```
+
+---
+
 ## [grid-create-node](https://cmssdt.cern.ch/jenkins/job/grid-create-node)
 
 **Description:** None
