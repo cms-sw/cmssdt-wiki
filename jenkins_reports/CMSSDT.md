@@ -188,10 +188,12 @@ Not periodically build
 * [schedule-docker-build](#schedule-docker-build):
 
 **Downstream projects:**
+* [cvmfs-unpack-container](#cvmfs-unpack-container):
 * [test-build-container](#test-build-container):
 
 **Sub-projects:**
 * [test-build-container](#test-build-container):
+* [cvmfs-unpack-container](#cvmfs-unpack-container):
 
 **Triggers from:** []
 
@@ -695,6 +697,7 @@ Not periodically build
 **Project is `enabled`.**
 
 **Upstream projects:**
+* [build-container](#build-container):
 
 **Downstream projects:**
 
