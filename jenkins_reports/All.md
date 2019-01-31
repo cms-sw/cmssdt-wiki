@@ -3480,7 +3480,8 @@ Not periodically build
 
 ## [openstack-delete-vms](https://cmssdt.cern.ch/jenkins/job/openstack-delete-vms)
 
-**Description:** Job to delete openstack instances providing only the name
+**Description:** Job to delete openstack instances providing only the name.
+<b>Only kills builder nodes (cmsbuild)</b>
 
 **Project is `enabled`.**
 
