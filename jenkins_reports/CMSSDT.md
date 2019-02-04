@@ -1073,10 +1073,12 @@ Not periodically build
 **Upstream projects:**
 
 **Downstream projects:**
+* [grid-keep-node-busy2](#grid-keep-node-busy2):
 * [grid-shutdown-node](#grid-shutdown-node):
 
 **Sub-projects:**
 * [grid-shutdown-node](#grid-shutdown-node):
+* [grid-keep-node-busy2 ](#grid-keep-node-busy2 ):
 
 **Triggers from:** []
 
@@ -1139,6 +1141,7 @@ Not periodically build
 **Project is `enabled`.**
 
 **Upstream projects:**
+* [grid-check-free-nodes](#grid-check-free-nodes):
 
 **Downstream projects:**
 
