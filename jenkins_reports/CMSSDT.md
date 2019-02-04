@@ -1882,29 +1882,6 @@ Not periodically build
 
 ---
 
-## [lxr-generate-index](https://cmssdt.cern.ch/jenkins/job/lxr-generate-index)
-
-**Description:** Generates CMSSW index using LXR tool. 
-
-**Project is `enabled`.**
-
-**Upstream projects:**
-* [lxr-checkout-version](#lxr-checkout-version):
-
-**Downstream projects:**
-
-**Sub-projects:**
-
-**Triggers from:** []
-
-
-**Periodic builds:**
-```bash
-Not periodically build
-```
-
----
-
 ## [lxr-remove-index](https://cmssdt.cern.ch/jenkins/job/lxr-remove-index)
 
 **Description:** Deletes index of of IB's older then treshold on LXR ( default 14 days).

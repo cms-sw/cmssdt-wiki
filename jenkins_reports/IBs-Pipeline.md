@@ -1990,7 +1990,7 @@ Not periodically build
 
 **Description:** Generates CMSSW index using LXR tool. 
 
-**Project is `enabled`.**
+**Project is `disabled`.**
 
 **Upstream projects:**
 * [lxr-checkout-version](#lxr-checkout-version):
