@@ -1512,7 +1512,7 @@ Not periodically build
 
 **Periodic builds:**
 ```bash
-H/30 * * * *
+H/10 * * * *
 ```
 
 ---
