@@ -3338,7 +3338,7 @@ H 5  * * *
 
 **Description:** This job stops and deletes old docker contaner of LXR service and starts new one.
 
-**Project is `enabled`.**
+**Project is `disabled`.**
 
 **Upstream projects:**
 * [lxr-check](#lxr-check):

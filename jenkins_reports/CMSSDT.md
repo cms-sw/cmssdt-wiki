@@ -1906,29 +1906,6 @@ H 5  * * *
 
 ---
 
-## [lxr-run-container](https://cmssdt.cern.ch/jenkins/job/lxr-run-container)
-
-**Description:** This job stops and deletes old docker contaner of LXR service and starts new one.
-
-**Project is `enabled`.**
-
-**Upstream projects:**
-* [lxr-check](#lxr-check):
-
-**Downstream projects:**
-
-**Sub-projects:**
-
-**Triggers from:** []
-
-
-**Periodic builds:**
-```bash
-H * * * *
-```
-
----
-
 ## [material-budget-ref](https://cmssdt.cern.ch/jenkins/job/material-budget-ref)
 
 **Description:** Runs Validation/Geometry/test/runP_Tracker_cfg.py and MaterialBudget.C for an IB

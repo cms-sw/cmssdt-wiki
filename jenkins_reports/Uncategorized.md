@@ -31,6 +31,29 @@ Not periodically build
 
 ---
 
+## [lxr-run-container](https://cmssdt.cern.ch/jenkins/job/lxr-run-container)
+
+**Description:** This job stops and deletes old docker contaner of LXR service and starts new one.
+
+**Project is `disabled`.**
+
+**Upstream projects:**
+* [lxr-check](#lxr-check):
+
+**Downstream projects:**
+
+**Sub-projects:**
+
+**Triggers from:** []
+
+
+**Periodic builds:**
+```bash
+H * * * *
+```
+
+---
+
 ## [cmssw-to-stitched](https://cmssdt.cern.ch/jenkins/job/cmssw-to-stitched)
 
 **Description:** This looks for the Framework changes in cmssw and port them to stitched repo
