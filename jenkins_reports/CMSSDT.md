@@ -1093,15 +1093,13 @@ Not periodically build
 **Project is `enabled`.**
 
 **Upstream projects:**
-* [grid-check-nodes](#grid-check-nodes):
-* [grid-keep-node-busy](#grid-keep-node-busy):
 
 **Downstream projects:**
-* [grid-check-nodes](#grid-check-nodes):
+* [grid-keep-node-busy](#grid-keep-node-busy):
 * [grid-webhook](#grid-webhook):
 
 **Sub-projects:**
-* [grid-check-nodes](#grid-check-nodes):
+* [grid-keep-node-busy](#grid-keep-node-busy):
 * [grid-webhook](#grid-webhook):
 
 **Triggers from:** []
@@ -1144,14 +1142,11 @@ Not periodically build
 **Project is `enabled`.**
 
 **Upstream projects:**
+* [grid-check-nodes](#grid-check-nodes):
 
 **Downstream projects:**
-* [grid-check-nodes](#grid-check-nodes):
-* [grid-webhook](#grid-webhook):
 
 **Sub-projects:**
-* [grid-check-nodes](#grid-check-nodes):
-* [grid-webhook](#grid-webhook):
 
 **Triggers from:** []
 
@@ -1171,7 +1166,6 @@ Not periodically build
 
 **Upstream projects:**
 * [grid-check-nodes](#grid-check-nodes):
-* [grid-keep-node-busy](#grid-keep-node-busy):
 
 **Downstream projects:**
 * [grid-create-node](#grid-create-node):
