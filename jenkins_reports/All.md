@@ -1513,6 +1513,34 @@ Not periodically build
 
 ---
 
+## [grid-check-nodes](https://cmssdt.cern.ch/jenkins/job/grid-check-nodes)
+
+**Description:** None
+
+**Project is `enabled`.**
+
+**Upstream projects:**
+* [grid-check-nodes](#grid-check-nodes):
+* [grid-keep-node-busy](#grid-keep-node-busy):
+
+**Downstream projects:**
+* [grid-check-nodes](#grid-check-nodes):
+* [grid-webhook](#grid-webhook):
+
+**Sub-projects:**
+* [grid-check-nodes](#grid-check-nodes):
+* [grid-webhook](#grid-webhook):
+
+**Triggers from:** []
+
+
+**Periodic builds:**
+```bash
+H/30 * * * *
+```
+
+---
+
 ## [grid-create-node](https://cmssdt.cern.ch/jenkins/job/grid-create-node)
 
 **Description:** None
@@ -1543,14 +1571,13 @@ Not periodically build
 **Project is `enabled`.**
 
 **Upstream projects:**
-* [grid-keep-node-busy](#grid-keep-node-busy):
 
 **Downstream projects:**
-* [grid-keep-node-busy](#grid-keep-node-busy):
+* [grid-check-nodes](#grid-check-nodes):
 * [grid-webhook](#grid-webhook):
 
 **Sub-projects:**
-* [grid-keep-node-busy](#grid-keep-node-busy):
+* [grid-check-nodes](#grid-check-nodes):
 * [grid-webhook](#grid-webhook):
 
 **Triggers from:** []
@@ -1558,7 +1585,7 @@ Not periodically build
 
 **Periodic builds:**
 ```bash
-H/30 * * * *
+Not periodically build
 ```
 
 ---
@@ -1570,6 +1597,7 @@ H/30 * * * *
 **Project is `enabled`.**
 
 **Upstream projects:**
+* [grid-check-nodes](#grid-check-nodes):
 * [grid-keep-node-busy](#grid-keep-node-busy):
 
 **Downstream projects:**
