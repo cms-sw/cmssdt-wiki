@@ -1500,12 +1500,10 @@ Not periodically build
 **Upstream projects:**
 
 **Downstream projects:**
-* [grid-keep-node-busy](#grid-keep-node-busy):
 * [grid-shutdown-node](#grid-shutdown-node):
 
 **Sub-projects:**
-* [grid-keep-node-busy](#grid-keep-node-busy):
-* [grid-shutdown-node ](#grid-shutdown-node ):
+* [grid-shutdown-node](#grid-shutdown-node):
 
 **Triggers from:** []
 
@@ -1561,14 +1559,13 @@ Not periodically build
 
 ---
 
-## [grid-keep-node-busy](https://cmssdt.cern.ch/jenkins/job/grid-keep-node-busy)
+## [grid-keep-node-busy2](https://cmssdt.cern.ch/jenkins/job/grid-keep-node-busy2)
 
 **Description:** None
 
 **Project is `enabled`.**
 
 **Upstream projects:**
-* [grid-check-free-nodes](#grid-check-free-nodes):
 
 **Downstream projects:**
 
