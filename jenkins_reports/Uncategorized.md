@@ -8,6 +8,28 @@
 
 # Projects:
 
+## [ib-cleanup-installers](https://cmssdt.cern.ch/jenkins/job/ib-cleanup-installers)
+
+**Description:** Cron job for log rotation on installer nodes. (clean up obsolete weeks)
+
+**Project is `disabled`.**
+
+**Upstream projects:**
+
+**Downstream projects:**
+
+**Sub-projects:**
+
+**Triggers from:** []
+
+
+**Periodic builds:**
+```bash
+H 22 * * *
+```
+
+---
+
 ## [ib-cvmfs-publish](https://cmssdt.cern.ch/jenkins/job/ib-cvmfs-publish)
 
 **Description:** This jobs copies IBs installation for an arch from another machine and publish it to cvmfs

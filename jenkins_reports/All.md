@@ -1748,7 +1748,7 @@ H 10,22 * * *
 
 **Description:** Cron job for log rotation on installer nodes. (clean up obsolete weeks)
 
-**Project is `enabled`.**
+**Project is `disabled`.**
 
 **Upstream projects:**
 
