@@ -4143,23 +4143,12 @@ Not periodically build
 
 ## [test-multiple-prs](https://cmssdt.cern.ch/jenkins/job/test-multiple-prs)
 
-**Description:** Build a pull request
+**Description:** Build mutiple  a pull requests
 
 <br>
 <br>
 
-<b>Q/a:</b>
 
-<ul>
-  <li>
-    Q: git error - "error: switch `b' requires a value" 
-  </li>  
-  <li>
-    A: It happened to a job in  a form of `PR cmssw#24237 cmsdist#4249` when `cmssw#24237` was a back port 
-    to 10_2 from 10_3, but there was no related pull request on cmsdist 10_2 branch (cmssw#24237 was 
-    a pull request on branch 10_3). Solved creating back port on cmsdist manually. 
-  </li>
-</ul>
 
 **Project is `enabled`.**
 
