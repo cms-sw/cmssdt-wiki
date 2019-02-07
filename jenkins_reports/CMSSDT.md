@@ -2323,6 +2323,28 @@ Not periodically build
 
 ---
 
+## [stop-pr-tests](https://cmssdt.cern.ch/jenkins/job/stop-pr-tests)
+
+**Description:** Kill a running 
+
+**Project is `enabled`.**
+
+**Upstream projects:**
+
+**Downstream projects:**
+
+**Sub-projects:**
+
+**Triggers from:** []
+
+
+**Periodic builds:**
+```bash
+Not periodically build
+```
+
+---
+
 ## [summary-of-merged-prs](https://cmssdt.cern.ch/jenkins/job/summary-of-merged-prs)
 
 **Description:** Generates statistics for each IB ( merged pull request since last IB, test result summary, .etc)
