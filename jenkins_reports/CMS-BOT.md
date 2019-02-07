@@ -126,6 +126,7 @@ Not periodically build
 
 **Upstream projects:**
 * [ib-any-integration](#ib-any-integration):
+* [test-multiple-prs](#test-multiple-prs):
 
 **Downstream projects:**
 
@@ -152,6 +153,7 @@ Not periodically build
 * [cms-bot](#cms-bot):
 * [ib-any-integration](#ib-any-integration):
 * [run-pr-code-ckecks](#run-pr-code-ckecks):
+* [test-multiple-prs](#test-multiple-prs):
 
 **Downstream projects:**
 
@@ -206,6 +208,7 @@ Not periodically build
 * [cms-bot](#cms-bot):
 * [ib-any-integration](#ib-any-integration):
 * [run-pr-code-ckecks](#run-pr-code-ckecks):
+* [test-multiple-prs](#test-multiple-prs):
 
 **Downstream projects:**
 
@@ -232,6 +235,7 @@ Not periodically build
 * [cms-bot](#cms-bot):
 * [ib-any-integration](#ib-any-integration):
 * [run-pr-code-ckecks](#run-pr-code-ckecks):
+* [test-multiple-prs](#test-multiple-prs):
 
 **Downstream projects:**
 

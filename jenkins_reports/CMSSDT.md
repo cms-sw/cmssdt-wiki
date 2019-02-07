@@ -604,6 +604,7 @@ Not periodically build
 
 **Upstream projects:**
 * [ib-any-integration](#ib-any-integration):
+* [test-multiple-prs](#test-multiple-prs):
 
 **Downstream projects:**
 
@@ -2305,6 +2306,7 @@ H 7,19 * * *
 * [cms-bot](#cms-bot):
 * [ib-any-integration](#ib-any-integration):
 * [run-pr-code-ckecks](#run-pr-code-ckecks):
+* [test-multiple-prs](#test-multiple-prs):
 
 **Downstream projects:**
 
@@ -2484,6 +2486,48 @@ Not periodically build
 **Downstream projects:**
 
 **Sub-projects:**
+
+**Triggers from:** []
+
+
+**Periodic builds:**
+```bash
+Not periodically build
+```
+
+---
+
+## [test-multiple-prs](https://cmssdt.cern.ch/jenkins/job/test-multiple-prs)
+
+**Description:** Build a pull request
+
+<br>
+<br>
+
+<b>Q/a:</b>
+
+<ul>
+  <li>
+    Q: git error - "error: switch `b' requires a value" 
+  </li>  
+  <li>
+    A: It happened to a job in  a form of `PR cmssw#24237 cmsdist#4249` when `cmssw#24237` was a back port 
+    to 10_2 from 10_3, but there was no related pull request on cmsdist 10_2 branch (cmssw#24237 was 
+    a pull request on branch 10_3). Solved creating back port on cmsdist manually. 
+  </li>
+</ul>
+
+**Project is `enabled`.**
+
+**Upstream projects:**
+
+**Downstream projects:**
+* [compare-root-files-short-matrix](#compare-root-files-short-matrix):
+* [stop-ib-any-integration](#stop-ib-any-integration):
+
+**Sub-projects:**
+* [stop-ib-any-integration](#stop-ib-any-integration):
+* [compare-root-files-short-matrix](#compare-root-files-short-matrix):
 
 **Triggers from:** []
 
