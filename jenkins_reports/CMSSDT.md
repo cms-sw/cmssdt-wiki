@@ -2047,6 +2047,28 @@ H/20 * * * *
 
 ---
 
+## [pySCRAM-develop](https://cmssdt.cern.ch/jenkins/job/pySCRAM-develop)
+
+**Description:** None
+
+**Project is `enabled`.**
+
+**Upstream projects:**
+
+**Downstream projects:**
+
+**Sub-projects:**
+
+**Triggers from:** []
+
+
+**Periodic builds:**
+```bash
+Not periodically build
+```
+
+---
+
 ## [query-build-release-issues](https://cmssdt.cern.ch/jenkins/job/query-build-release-issues)
 
 **Description:** Processes a github issue to check if it is requesting the build of a new release.
