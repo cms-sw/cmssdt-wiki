@@ -659,28 +659,6 @@ Not periodically build
 
 ---
 
-## [jenkins-test-passwd-params](https://cmssdt.cern.ch/jenkins/job/jenkins-test-passwd-params)
-
-**Description:** None
-
-**Project is `enabled`.**
-
-**Upstream projects:**
-
-**Downstream projects:**
-
-**Sub-projects:**
-
-**Triggers from:** []
-
-
-**Periodic builds:**
-```bash
-Not periodically build
-```
-
----
-
 ## [jenkins-test-singularity-slave](https://cmssdt.cern.ch/jenkins/job/jenkins-test-singularity-slave)
 
 **Description:** None
