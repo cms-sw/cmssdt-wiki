@@ -60,11 +60,11 @@ Not periodically build
 
 **Downstream projects:**
 * [ib-any-integration](#ib-any-integration):
-* [test-multiple-prs](#test-multiple-prs):
+* [run-pr-tests](#run-pr-tests):
 
 **Sub-projects:**
 * [ib-any-integration](#ib-any-integration):
-* [test-multiple-prs](#test-multiple-prs):
+* [run-pr-tests](#run-pr-tests):
 
 **Triggers from:** []
 
@@ -127,7 +127,7 @@ Not periodically build
 
 **Upstream projects:**
 * [ib-any-integration](#ib-any-integration):
-* [test-multiple-prs](#test-multiple-prs):
+* [run-pr-tests](#run-pr-tests):
 
 **Downstream projects:**
 
@@ -154,7 +154,7 @@ Not periodically build
 * [cms-bot](#cms-bot):
 * [ib-any-integration](#ib-any-integration):
 * [run-pr-code-ckecks](#run-pr-code-ckecks):
-* [test-multiple-prs](#test-multiple-prs):
+* [run-pr-tests](#run-pr-tests):
 
 **Downstream projects:**
 
@@ -170,7 +170,7 @@ Not periodically build
 
 ---
 
-## [test-multiple-prs](https://cmssdt.cern.ch/jenkins/job/test-multiple-prs)
+## [run-pr-tests](https://cmssdt.cern.ch/jenkins/job/run-pr-tests)
 
 **Description:** Build mutiple  a pull requests
 
@@ -210,7 +210,7 @@ Not periodically build
 
 **Upstream projects:**
 * [ib-any-integration](#ib-any-integration):
-* [test-multiple-prs](#test-multiple-prs):
+* [run-pr-tests](#run-pr-tests):
 
 **Downstream projects:**
 
@@ -237,7 +237,7 @@ Not periodically build
 * [cms-bot](#cms-bot):
 * [ib-any-integration](#ib-any-integration):
 * [run-pr-code-ckecks](#run-pr-code-ckecks):
-* [test-multiple-prs](#test-multiple-prs):
+* [run-pr-tests](#run-pr-tests):
 
 **Downstream projects:**
 
@@ -292,7 +292,7 @@ Not periodically build
 * [cms-bot](#cms-bot):
 * [ib-any-integration](#ib-any-integration):
 * [run-pr-code-ckecks](#run-pr-code-ckecks):
-* [test-multiple-prs](#test-multiple-prs):
+* [run-pr-tests](#run-pr-tests):
 
 **Downstream projects:**
 
@@ -319,7 +319,7 @@ Not periodically build
 * [cms-bot](#cms-bot):
 * [ib-any-integration](#ib-any-integration):
 * [run-pr-code-ckecks](#run-pr-code-ckecks):
-* [test-multiple-prs](#test-multiple-prs):
+* [run-pr-tests](#run-pr-tests):
 
 **Downstream projects:**
 

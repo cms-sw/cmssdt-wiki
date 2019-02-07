@@ -604,7 +604,7 @@ Not periodically build
 
 **Upstream projects:**
 * [ib-any-integration](#ib-any-integration):
-* [test-multiple-prs](#test-multiple-prs):
+* [run-pr-tests](#run-pr-tests):
 
 **Downstream projects:**
 
@@ -1596,11 +1596,11 @@ This was created to avoid the issue with <a href="https://wiki.jenkins.io/displa
 
 **Downstream projects:**
 * [ib-any-integration](#ib-any-integration):
-* [test-multiple-prs](#test-multiple-prs):
+* [run-pr-tests](#run-pr-tests):
 
 **Sub-projects:**
 * [ib-any-integration](#ib-any-integration):
-* [test-multiple-prs](#test-multiple-prs):
+* [run-pr-tests](#run-pr-tests):
 
 **Triggers from:** []
 
@@ -2180,6 +2180,38 @@ Not periodically build
 
 ---
 
+## [run-pr-tests](https://cmssdt.cern.ch/jenkins/job/run-pr-tests)
+
+**Description:** Build mutiple  a pull requests
+
+<br>
+<br>
+
+
+
+**Project is `enabled`.**
+
+**Upstream projects:**
+* [ib-schedule-pr-tests](#ib-schedule-pr-tests):
+
+**Downstream projects:**
+* [compare-root-files-short-matrix](#compare-root-files-short-matrix):
+* [stop-ib-any-integration](#stop-ib-any-integration):
+
+**Sub-projects:**
+* [stop-ib-any-integration](#stop-ib-any-integration):
+* [compare-root-files-short-matrix](#compare-root-files-short-matrix):
+
+**Triggers from:** []
+
+
+**Periodic builds:**
+```bash
+Not periodically build
+```
+
+---
+
 ## [run-repo-size-check](https://cmssdt.cern.ch/jenkins/job/run-repo-size-check)
 
 **Description:** This job was supposed to tell how much repository size increases
@@ -2329,7 +2361,7 @@ H 7,19 * * *
 * [cms-bot](#cms-bot):
 * [ib-any-integration](#ib-any-integration):
 * [run-pr-code-ckecks](#run-pr-code-ckecks):
-* [test-multiple-prs](#test-multiple-prs):
+* [run-pr-tests](#run-pr-tests):
 
 **Downstream projects:**
 
@@ -2509,38 +2541,6 @@ Not periodically build
 **Downstream projects:**
 
 **Sub-projects:**
-
-**Triggers from:** []
-
-
-**Periodic builds:**
-```bash
-Not periodically build
-```
-
----
-
-## [test-multiple-prs](https://cmssdt.cern.ch/jenkins/job/test-multiple-prs)
-
-**Description:** Build mutiple  a pull requests
-
-<br>
-<br>
-
-
-
-**Project is `enabled`.**
-
-**Upstream projects:**
-* [ib-schedule-pr-tests](#ib-schedule-pr-tests):
-
-**Downstream projects:**
-* [compare-root-files-short-matrix](#compare-root-files-short-matrix):
-* [stop-ib-any-integration](#stop-ib-any-integration):
-
-**Sub-projects:**
-* [stop-ib-any-integration](#stop-ib-any-integration):
-* [compare-root-files-short-matrix](#compare-root-files-short-matrix):
 
 **Triggers from:** []
 
