@@ -1600,7 +1600,7 @@ This was created to avoid the issue with <a href="https://wiki.jenkins.io/displa
 
 **Sub-projects:**
 * [ib-any-integration](#ib-any-integration):
-* [test-multiple-prs ](#test-multiple-prs ):
+* [test-multiple-prs](#test-multiple-prs):
 
 **Triggers from:** []
 
@@ -2308,28 +2308,6 @@ H 7,19 * * *
 * [ib-any-integration](#ib-any-integration):
 * [run-pr-code-ckecks](#run-pr-code-ckecks):
 * [test-multiple-prs](#test-multiple-prs):
-
-**Downstream projects:**
-
-**Sub-projects:**
-
-**Triggers from:** []
-
-
-**Periodic builds:**
-```bash
-Not periodically build
-```
-
----
-
-## [stop-pr-tests](https://cmssdt.cern.ch/jenkins/job/stop-pr-tests)
-
-**Description:** Kill a running 
-
-**Project is `enabled`.**
-
-**Upstream projects:**
 
 **Downstream projects:**
 

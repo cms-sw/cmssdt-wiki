@@ -64,7 +64,7 @@ Not periodically build
 
 **Sub-projects:**
 * [ib-any-integration](#ib-any-integration):
-* [test-multiple-prs ](#test-multiple-prs ):
+* [test-multiple-prs](#test-multiple-prs):
 
 **Triggers from:** []
 
