@@ -60,10 +60,11 @@ Not periodically build
 
 **Downstream projects:**
 * [ib-any-integration](#ib-any-integration):
+* [test-multiple-prs](#test-multiple-prs):
 
 **Sub-projects:**
 * [ib-any-integration](#ib-any-integration):
-* [ib-any-integration](#ib-any-integration):
+* [test-multiple-prs ](#test-multiple-prs ):
 
 **Triggers from:** []
 
@@ -94,6 +95,89 @@ Not periodically build
     a pull request on branch 10_3). Solved creating back port on cmsdist manually. 
   </li>
 </ul>
+
+**Project is `enabled`.**
+
+**Upstream projects:**
+* [ib-schedule-pr-tests](#ib-schedule-pr-tests):
+
+**Downstream projects:**
+* [compare-root-files-short-matrix](#compare-root-files-short-matrix):
+* [stop-ib-any-integration](#stop-ib-any-integration):
+
+**Sub-projects:**
+* [stop-ib-any-integration](#stop-ib-any-integration):
+* [compare-root-files-short-matrix](#compare-root-files-short-matrix):
+
+**Triggers from:** []
+
+
+**Periodic builds:**
+```bash
+Not periodically build
+```
+
+---
+
+## [compare-root-files-short-matrix](https://cmssdt.cern.ch/jenkins/job/compare-root-files-short-matrix)
+
+**Description:** Download the files of the baseline IB and compare them with the results of the ones of a pull request
+
+**Project is `enabled`.**
+
+**Upstream projects:**
+* [ib-any-integration](#ib-any-integration):
+* [test-multiple-prs](#test-multiple-prs):
+
+**Downstream projects:**
+
+**Sub-projects:**
+
+**Triggers from:** []
+
+
+**Periodic builds:**
+```bash
+Not periodically build
+```
+
+---
+
+## [stop-ib-any-integration](https://cmssdt.cern.ch/jenkins/job/stop-ib-any-integration)
+
+**Description:** Kill a running 
+
+**Project is `enabled`.**
+
+**Upstream projects:**
+* [Test_get_source_flag](#Test_get_source_flag):
+* [cms-bot](#cms-bot):
+* [ib-any-integration](#ib-any-integration):
+* [run-pr-code-ckecks](#run-pr-code-ckecks):
+* [test-multiple-prs](#test-multiple-prs):
+
+**Downstream projects:**
+
+**Sub-projects:**
+
+**Triggers from:** []
+
+
+**Periodic builds:**
+```bash
+Not periodically build
+```
+
+---
+
+## [test-multiple-prs](https://cmssdt.cern.ch/jenkins/job/test-multiple-prs)
+
+**Description:** Build mutiple  a pull requests
+
+<br>
+<br>
+
+
 
 **Project is `enabled`.**
 

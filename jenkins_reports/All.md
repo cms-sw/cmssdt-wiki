@@ -2229,10 +2229,11 @@ This was created to avoid the issue with <a href="https://wiki.jenkins.io/displa
 
 **Downstream projects:**
 * [ib-any-integration](#ib-any-integration):
+* [test-multiple-prs](#test-multiple-prs):
 
 **Sub-projects:**
 * [ib-any-integration](#ib-any-integration):
-* [ib-any-integration](#ib-any-integration):
+* [test-multiple-prs ](#test-multiple-prs ):
 
 **Triggers from:** []
 
@@ -4153,6 +4154,7 @@ Not periodically build
 **Project is `enabled`.**
 
 **Upstream projects:**
+* [ib-schedule-pr-tests](#ib-schedule-pr-tests):
 
 **Downstream projects:**
 * [compare-root-files-short-matrix](#compare-root-files-short-matrix):
