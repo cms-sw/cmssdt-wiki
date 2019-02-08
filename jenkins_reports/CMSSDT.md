@@ -1479,6 +1479,28 @@ Not periodically build
 
 ---
 
+## [ib-run-python3](https://cmssdt.cern.ch/jenkins/job/ib-run-python3)
+
+**Description:** Runs iwyu logs parsing for each IB
+
+**Project is `enabled`.**
+
+**Upstream projects:**
+
+**Downstream projects:**
+
+**Sub-projects:**
+
+**Triggers from:** []
+
+
+**Periodic builds:**
+```bash
+Not periodically build
+```
+
+---
+
 ## [ib-run-qa](https://cmssdt.cern.ch/jenkins/job/ib-run-qa)
 
 **Description:** Runs Quality Assurance (QA) test on IB. Rezulst are available at 
