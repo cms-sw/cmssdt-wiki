@@ -1486,6 +1486,7 @@ Not periodically build
 **Project is `enabled`.**
 
 **Upstream projects:**
+* [schedule-additional-tests](#schedule-additional-tests):
 
 **Downstream projects:**
 
@@ -2289,6 +2290,7 @@ Not periodically build
 * [ib-run-iwyu](#ib-run-iwyu):
 * [ib-run-lizard](#ib-run-lizard):
 * [ib-run-material-budget](#ib-run-material-budget):
+* [ib-run-python3](#ib-run-python3):
 * [ib-run-qa](#ib-run-qa):
 * [ib-run-valgrind](#ib-run-valgrind):
 * [ib-static-checks](#ib-static-checks):
@@ -2307,6 +2309,7 @@ Not periodically build
 * [ib-run-check-headers](#ib-run-check-headers):
 * [ib-run-cfipython](#ib-run-cfipython):
 * [ib-run-qa](#ib-run-qa):
+* [ib-run-python3](#ib-run-python3):
 
 **Triggers from:** []
 

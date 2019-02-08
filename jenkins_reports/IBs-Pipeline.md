@@ -679,6 +679,7 @@ Not periodically build
 * [ib-run-iwyu](#ib-run-iwyu):
 * [ib-run-lizard](#ib-run-lizard):
 * [ib-run-material-budget](#ib-run-material-budget):
+* [ib-run-python3](#ib-run-python3):
 * [ib-run-qa](#ib-run-qa):
 * [ib-run-valgrind](#ib-run-valgrind):
 * [ib-static-checks](#ib-static-checks):
@@ -697,6 +698,7 @@ Not periodically build
 * [ib-run-check-headers](#ib-run-check-headers):
 * [ib-run-cfipython](#ib-run-cfipython):
 * [ib-run-qa](#ib-run-qa):
+* [ib-run-python3](#ib-run-python3):
 
 **Triggers from:** []
 
@@ -1086,6 +1088,29 @@ Not periodically build
 
 **Upstream projects:**
 * [ib-run-material-budget](#ib-run-material-budget):
+
+**Downstream projects:**
+
+**Sub-projects:**
+
+**Triggers from:** []
+
+
+**Periodic builds:**
+```bash
+Not periodically build
+```
+
+---
+
+## [ib-run-python3](https://cmssdt.cern.ch/jenkins/job/ib-run-python3)
+
+**Description:** Runs iwyu logs parsing for each IB
+
+**Project is `enabled`.**
+
+**Upstream projects:**
+* [schedule-additional-tests](#schedule-additional-tests):
 
 **Downstream projects:**
 
@@ -1462,6 +1487,7 @@ Not periodically build
 * [ib-run-iwyu](#ib-run-iwyu):
 * [ib-run-lizard](#ib-run-lizard):
 * [ib-run-material-budget](#ib-run-material-budget):
+* [ib-run-python3](#ib-run-python3):
 * [ib-run-qa](#ib-run-qa):
 * [ib-run-valgrind](#ib-run-valgrind):
 * [ib-static-checks](#ib-static-checks):
@@ -1480,6 +1506,7 @@ Not periodically build
 * [ib-run-check-headers](#ib-run-check-headers):
 * [ib-run-cfipython](#ib-run-cfipython):
 * [ib-run-qa](#ib-run-qa):
+* [ib-run-python3](#ib-run-python3):
 
 **Triggers from:** []
 
@@ -1869,6 +1896,29 @@ Not periodically build
 
 **Upstream projects:**
 * [ib-run-material-budget](#ib-run-material-budget):
+
+**Downstream projects:**
+
+**Sub-projects:**
+
+**Triggers from:** []
+
+
+**Periodic builds:**
+```bash
+Not periodically build
+```
+
+---
+
+## [ib-run-python3](https://cmssdt.cern.ch/jenkins/job/ib-run-python3)
+
+**Description:** Runs iwyu logs parsing for each IB
+
+**Project is `enabled`.**
+
+**Upstream projects:**
+* [schedule-additional-tests](#schedule-additional-tests):
 
 **Downstream projects:**
 
