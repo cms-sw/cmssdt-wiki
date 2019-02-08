@@ -29,7 +29,7 @@
 
 **Periodic builds:**
 ```bash
-H/5 * * * *
+H/2 * * * *
 ```
 
 ---
