@@ -4181,6 +4181,28 @@ Not periodically build
 
 ---
 
+## [test-dqm-upload](https://cmssdt.cern.ch/jenkins/job/test-dqm-upload)
+
+**Description:** None
+
+**Project is `enabled`.**
+
+**Upstream projects:**
+
+**Downstream projects:**
+
+**Sub-projects:**
+
+**Triggers from:** []
+
+
+**Periodic builds:**
+```bash
+Not periodically build
+```
+
+---
+
 ## [test-kerberos-within-docker](https://cmssdt.cern.ch/jenkins/job/test-kerberos-within-docker)
 
 **Description:** This job tests the the kerberos auth existence and its behaviour when ran from docker image. It first sets the env
