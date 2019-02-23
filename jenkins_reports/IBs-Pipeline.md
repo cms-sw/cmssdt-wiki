@@ -737,6 +737,17 @@ Not periodically build
 
 **Description:** This job runs a few tests only for the IB, for comparison with those ran by the pull request.
 
+<p><b> Latest failures.</b></p>
+<ul>
+  <li>
+    Failed due to RelVal Error. The problem was that RelVal nr. 
+    10224 was unable to download a randomly chosen sample file 
+    (file is stored somewhere on the GRID and then must be fetched using a client). 
+    The file is inaccessible, it should not appear on the list, but it does. 
+    Restarting the job did the trick since another file, that actually exist was selected. 
+  </li>
+</ul>
+
 **Project is `enabled`.**
 
 **Upstream projects:**
@@ -1177,18 +1188,6 @@ Not periodically build
 ## [ib-static-checks](https://cmssdt.cern.ch/jenkins/job/ib-static-checks)
 
 **Description:** Runs a few tests only for the IB, for comparison with those ran by the pull request.
-
-<p><b> Latest failures.</b></p>
-
-<ul>
-  <li>
-    Failed due to RelVal Error. The problem was that RelVal nr. 
-    10224 was unable to download a randomly chosen sample file 
-    (file is stored somewhere on the GRID and then must be fetched using a client). 
-    The file is inaccessible, it should not appear on the list, but it does. 
-    Restarting the job did the trick since another file, that actually exist was selected. 
-  </li>
-</ul>
 
 **Project is `enabled`.**
 
@@ -1557,6 +1556,17 @@ Not periodically build
 
 **Description:** This job runs a few tests only for the IB, for comparison with those ran by the pull request.
 
+<p><b> Latest failures.</b></p>
+<ul>
+  <li>
+    Failed due to RelVal Error. The problem was that RelVal nr. 
+    10224 was unable to download a randomly chosen sample file 
+    (file is stored somewhere on the GRID and then must be fetched using a client). 
+    The file is inaccessible, it should not appear on the list, but it does. 
+    Restarting the job did the trick since another file, that actually exist was selected. 
+  </li>
+</ul>
+
 **Project is `enabled`.**
 
 **Upstream projects:**
@@ -1997,18 +2007,6 @@ Not periodically build
 ## [ib-static-checks](https://cmssdt.cern.ch/jenkins/job/ib-static-checks)
 
 **Description:** Runs a few tests only for the IB, for comparison with those ran by the pull request.
-
-<p><b> Latest failures.</b></p>
-
-<ul>
-  <li>
-    Failed due to RelVal Error. The problem was that RelVal nr. 
-    10224 was unable to download a randomly chosen sample file 
-    (file is stored somewhere on the GRID and then must be fetched using a client). 
-    The file is inaccessible, it should not appear on the list, but it does. 
-    Restarting the job did the trick since another file, that actually exist was selected. 
-  </li>
-</ul>
 
 **Project is `enabled`.**
 
