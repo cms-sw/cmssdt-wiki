@@ -1824,12 +1824,15 @@ H H/8 * * *
 **Project is `enabled`.**
 
 **Upstream projects:**
+* [lfn-to-ibeos](#lfn-to-ibeos):
 
 **Downstream projects:**
+* [lfn-to-ibeos](#lfn-to-ibeos):
 * [update-ibeos-cache](#update-ibeos-cache):
 
 **Sub-projects:**
 * [update-ibeos-cache](#update-ibeos-cache):
+* [lfn-to-ibeos](#lfn-to-ibeos):
 
 **Triggers from:** []
 
