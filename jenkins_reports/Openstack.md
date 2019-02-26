@@ -15,6 +15,7 @@
 **Project is `enabled`.**
 
 **Upstream projects:**
+* [openstack-delete-vms](#openstack-delete-vms):
 
 **Downstream projects:**
 
@@ -138,10 +139,12 @@ Not periodically build
 * [openstack-delete-vms](#openstack-delete-vms):
 
 **Downstream projects:**
+* [jenkins-delete-node](#jenkins-delete-node):
 * [openstack-delete-vms](#openstack-delete-vms):
 * [openstack-delete-volume](#openstack-delete-volume):
 
 **Sub-projects:**
+* [jenkins-delete-node](#jenkins-delete-node):
 * [openstack-delete-vms](#openstack-delete-vms):
 * [openstack-delete-volume](#openstack-delete-volume):
 

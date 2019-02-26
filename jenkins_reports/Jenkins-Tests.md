@@ -60,6 +60,7 @@ H/5 * * * *
 **Project is `enabled`.**
 
 **Upstream projects:**
+* [openstack-delete-vms](#openstack-delete-vms):
 
 **Downstream projects:**
 
