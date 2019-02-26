@@ -1559,6 +1559,7 @@ H/2 * * * *
 
 **Upstream projects:**
 * [grid-webhook](#grid-webhook):
+* [jenkins-delete-node](#jenkins-delete-node):
 
 **Downstream projects:**
 
@@ -1605,6 +1606,7 @@ Not periodically build
 
 **Upstream projects:**
 * [grid-webhook](#grid-webhook):
+* [jenkins-delete-node](#jenkins-delete-node):
 
 **Downstream projects:**
 
@@ -2439,6 +2441,32 @@ Backups jenkins scripts on https://github.com/cms-sw/jenkins-backup.git
 **Periodic builds:**
 ```bash
 H/5 * * * *
+```
+
+---
+
+## [jenkins-delete-node](https://cmssdt.cern.ch/jenkins/job/jenkins-delete-node)
+
+**Description:** None
+
+**Project is `enabled`.**
+
+**Upstream projects:**
+
+**Downstream projects:**
+* [grid-create-node](#grid-create-node):
+* [grid-shutdown-node](#grid-shutdown-node):
+
+**Sub-projects:**
+* [grid-shutdown-node](#grid-shutdown-node):
+* [grid-create-node ](#grid-create-node ):
+
+**Triggers from:** []
+
+
+**Periodic builds:**
+```bash
+Not periodically build
 ```
 
 ---

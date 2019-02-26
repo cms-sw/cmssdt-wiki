@@ -8,6 +8,32 @@
 
 # Projects:
 
+## [jenkins-delete-node](https://cmssdt.cern.ch/jenkins/job/jenkins-delete-node)
+
+**Description:** None
+
+**Project is `enabled`.**
+
+**Upstream projects:**
+
+**Downstream projects:**
+* [grid-create-node](#grid-create-node):
+* [grid-shutdown-node](#grid-shutdown-node):
+
+**Sub-projects:**
+* [grid-shutdown-node](#grid-shutdown-node):
+* [grid-create-node ](#grid-create-node ):
+
+**Triggers from:** []
+
+
+**Periodic builds:**
+```bash
+Not periodically build
+```
+
+---
+
 ## [openstack-add-jenkins-slave](https://cmssdt.cern.ch/jenkins/job/openstack-add-jenkins-slave)
 
 **Description:** Find all hosts in an hostgroup and add them to jenkins

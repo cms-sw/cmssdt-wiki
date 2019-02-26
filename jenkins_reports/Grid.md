@@ -64,6 +64,7 @@ H/2 * * * *
 
 **Upstream projects:**
 * [grid-webhook](#grid-webhook):
+* [jenkins-delete-node](#jenkins-delete-node):
 
 **Downstream projects:**
 
@@ -110,6 +111,7 @@ Not periodically build
 
 **Upstream projects:**
 * [grid-webhook](#grid-webhook):
+* [jenkins-delete-node](#jenkins-delete-node):
 
 **Downstream projects:**
 
