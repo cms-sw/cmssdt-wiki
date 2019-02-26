@@ -10,19 +10,15 @@
 
 ## [jenkins-delete-node](https://cmssdt.cern.ch/jenkins/job/jenkins-delete-node)
 
-**Description:** None
+**Description:** Deletes nodes from jenkins and then deletes it on openstack.
 
 **Project is `enabled`.**
 
 **Upstream projects:**
 
 **Downstream projects:**
-* [grid-create-node](#grid-create-node):
-* [grid-shutdown-node](#grid-shutdown-node):
 
 **Sub-projects:**
-* [grid-shutdown-node](#grid-shutdown-node):
-* [grid-create-node ](#grid-create-node ):
 
 **Triggers from:** []
 
