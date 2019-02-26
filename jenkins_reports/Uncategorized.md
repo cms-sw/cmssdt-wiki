@@ -230,30 +230,6 @@ Not periodically build
 
 ---
 
-## [git-reference-cms-ib](https://cmssdt.cern.ch/jenkins/job/git-reference-cms-ib)
-
-**Description:** Create GIT Reference for cms-sw/cmssw repository in /cvmfs/cms-ib.cern.ch/git/cms-sw.
-This is automatically triggered by "git push" to cmssw repo.
-
-**Project is `disabled`.**
-
-**Upstream projects:**
-* [github-push-hook](#github-push-hook):
-
-**Downstream projects:**
-
-**Sub-projects:**
-
-**Triggers from:** []
-
-
-**Periodic builds:**
-```bash
-Not periodically build
-```
-
----
-
 ## [lxr-check](https://cmssdt.cern.ch/jenkins/job/lxr-check)
 
 **Description:** This job checks if https://cmssdt.cern.ch/lxr/ is acessable and if not, starts <a href="https://cmssdt.cern.ch/jenkins/view/All/job/lxr-run-container/">lxr-run-container<a/> job to restart the service.

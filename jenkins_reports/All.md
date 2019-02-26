@@ -1392,7 +1392,7 @@ Not periodically build
 **Description:** Create GIT Reference for cms-sw/cmssw repository in /cvmfs/cms-ib.cern.ch/git/cms-sw.
 This is automatically triggered by "git push" to cmssw repo.
 
-**Project is `disabled`.**
+**Project is `enabled`.**
 
 **Upstream projects:**
 * [github-push-hook](#github-push-hook):
