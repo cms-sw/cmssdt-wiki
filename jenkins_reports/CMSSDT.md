@@ -2662,6 +2662,28 @@ Not periodically build
 
 ---
 
+## [tutorial-jenkins](https://cmssdt.cern.ch/jenkins/job/tutorial-jenkins)
+
+**Description:** This is job used to learn jenkins.
+
+**Project is `enabled`.**
+
+**Upstream projects:**
+
+**Downstream projects:**
+
+**Sub-projects:**
+
+**Triggers from:** []
+
+
+**Periodic builds:**
+```bash
+Not periodically build
+```
+
+---
+
 ## [update-categories-page](https://cmssdt.cern.ch/jenkins/job/update-categories-page)
 
 **Description:** Generates categories.json file and uploads it to this <a href="https://github.com/cms-sw/cms-sw.github.io">github repo</a>. 

@@ -343,7 +343,7 @@ Not periodically build
 
 ## [jenkins-kill-job](https://cmssdt.cern.ch/jenkins/job/jenkins-kill-job)
 
-**Description:** Kill a running 
+**Description:** Kill a <b>specific</b> running.
 
 **Project is `enabled`.**
 

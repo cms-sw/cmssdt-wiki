@@ -60,7 +60,7 @@ Not periodically build
 
 **Description:** This is job used to learn jenkins.
 
-**Project is `disabled`.**
+**Project is `enabled`.**
 
 **Upstream projects:**
 
