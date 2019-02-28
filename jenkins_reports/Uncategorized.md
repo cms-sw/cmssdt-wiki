@@ -120,28 +120,6 @@ Not periodically build
 
 ---
 
-## [slc6](https://cmssdt.cern.ch/jenkins/job/slc6)
-
-**Description:** None
-
-**Project is `enabled`.**
-
-**Upstream projects:**
-
-**Downstream projects:**
-
-**Sub-projects:**
-
-**Triggers from:** []
-
-
-**Periodic builds:**
-```bash
-Not periodically build
-```
-
----
-
 ## [slc7](https://cmssdt.cern.ch/jenkins/job/slc7)
 
 **Description:** None
@@ -204,6 +182,28 @@ Not periodically build
 **Periodic builds:**
 ```bash
 0 0 * * *
+```
+
+---
+
+## [slc6](https://cmssdt.cern.ch/jenkins/job/slc6)
+
+**Description:** None
+
+**Project is `enabled`.**
+
+**Upstream projects:**
+
+**Downstream projects:**
+
+**Sub-projects:**
+
+**Triggers from:** []
+
+
+**Periodic builds:**
+```bash
+Not periodically build
 ```
 
 ---

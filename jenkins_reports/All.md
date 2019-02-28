@@ -2537,6 +2537,28 @@ Not periodically build
 
 ---
 
+## [jenkins-dummy-job](https://cmssdt.cern.ch/jenkins/job/jenkins-dummy-job)
+
+**Description:** None
+
+**Project is `enabled`.**
+
+**Upstream projects:**
+
+**Downstream projects:**
+
+**Sub-projects:**
+
+**Triggers from:** []
+
+
+**Periodic builds:**
+```bash
+Not periodically build
+```
+
+---
+
 ## [jenkins-elasticsearch-monitor](https://cmssdt.cern.ch/jenkins/job/jenkins-elasticsearch-monitor)
 
 **Description:** This job runs a python script to push useful info from jenkins build logs to elasticsearch
