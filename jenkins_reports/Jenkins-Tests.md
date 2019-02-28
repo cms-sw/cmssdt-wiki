@@ -341,6 +341,28 @@ Not periodically build
 
 ---
 
+## [jenkins-kill-job](https://cmssdt.cern.ch/jenkins/job/jenkins-kill-job)
+
+**Description:** Kill a running 
+
+**Project is `enabled`.**
+
+**Upstream projects:**
+
+**Downstream projects:**
+
+**Sub-projects:**
+
+**Triggers from:** []
+
+
+**Periodic builds:**
+```bash
+Not periodically build
+```
+
+---
+
 ## [jenkins-projects-report](https://cmssdt.cern.ch/jenkins/job/jenkins-projects-report)
 
 **Description:** This job runs a groovy script to dump jenkins
