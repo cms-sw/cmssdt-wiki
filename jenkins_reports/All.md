@@ -1606,8 +1606,10 @@ Not periodically build
 **Upstream projects:**
 
 **Downstream projects:**
+* [jenkins-kill-job](#jenkins-kill-job):
 
 **Sub-projects:**
+* [jenkins-kill-job](#jenkins-kill-job):
 
 **Triggers from:** []
 
@@ -2782,6 +2784,7 @@ Not periodically build
 **Project is `enabled`.**
 
 **Upstream projects:**
+* [grid-make-node-available](#grid-make-node-available):
 
 **Downstream projects:**
 

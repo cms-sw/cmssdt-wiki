@@ -111,8 +111,10 @@ Not periodically build
 **Upstream projects:**
 
 **Downstream projects:**
+* [jenkins-kill-job](#jenkins-kill-job):
 
 **Sub-projects:**
+* [jenkins-kill-job](#jenkins-kill-job):
 
 **Triggers from:** []
 
