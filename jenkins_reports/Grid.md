@@ -162,7 +162,7 @@ Not periodically build
 
 **Sub-projects:**
 * [grid-shutdown-node](#grid-shutdown-node):
-* [grid-create-node ](#grid-create-node ):
+* [grid-create-node](#grid-create-node):
 
 **Triggers from:** []
 

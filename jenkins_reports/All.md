@@ -1657,7 +1657,7 @@ Not periodically build
 
 **Sub-projects:**
 * [grid-shutdown-node](#grid-shutdown-node):
-* [grid-create-node ](#grid-create-node ):
+* [grid-create-node](#grid-create-node):
 
 **Triggers from:** []
 
@@ -3908,6 +3908,28 @@ H 0 * * *
 
 ---
 
+## [Run-fake-job](https://cmssdt.cern.ch/jenkins/job/Run-fake-job)
+
+**Description:** This jobs runs timer on node to keep it busy.
+
+**Project is `enabled`.**
+
+**Upstream projects:**
+
+**Downstream projects:**
+
+**Sub-projects:**
+
+**Triggers from:** []
+
+
+**Periodic builds:**
+```bash
+Not periodically build
+```
+
+---
+
 ## [run-pr-code-ckecks](https://cmssdt.cern.ch/jenkins/job/run-pr-code-ckecks)
 
 **Description:** This run "scram build code-checks" for a cmssw PR to find out if it comply with cmssw code checks.
@@ -4392,28 +4414,6 @@ Test job
 
 **Sub-projects:**
 * [stop-ib-any-integration](#stop-ib-any-integration):
-
-**Triggers from:** []
-
-
-**Periodic builds:**
-```bash
-Not periodically build
-```
-
----
-
-## [tutorial-jenkins](https://cmssdt.cern.ch/jenkins/job/tutorial-jenkins)
-
-**Description:** This is job used to learn jenkins.
-
-**Project is `enabled`.**
-
-**Upstream projects:**
-
-**Downstream projects:**
-
-**Sub-projects:**
 
 **Triggers from:** []
 
