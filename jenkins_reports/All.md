@@ -1597,6 +1597,28 @@ Not periodically build
 
 ---
 
+## [grid-make-node-available](https://cmssdt.cern.ch/jenkins/job/grid-make-node-available)
+
+**Description:** None
+
+**Project is `enabled`.**
+
+**Upstream projects:**
+
+**Downstream projects:**
+
+**Sub-projects:**
+
+**Triggers from:** []
+
+
+**Periodic builds:**
+```bash
+Not periodically build
+```
+
+---
+
 ## [grid-shutdown-node](https://cmssdt.cern.ch/jenkins/job/grid-shutdown-node)
 
 **Description:** None
