@@ -1599,7 +1599,7 @@ Not periodically build
 
 ## [grid-make-node-available](https://cmssdt.cern.ch/jenkins/job/grid-make-node-available)
 
-**Description:** None
+**Description:** Check if there are jobs queued for condor nodes, and if so kill placeholder job.
 
 **Project is `enabled`.**
 
@@ -1614,7 +1614,7 @@ Not periodically build
 
 **Periodic builds:**
 ```bash
-Not periodically build
+H/5 * * * *
 ```
 
 ---
