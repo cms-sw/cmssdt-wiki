@@ -548,28 +548,6 @@ Not periodically build
 
 ---
 
-## [jenkins-test-htcondor](https://cmssdt.cern.ch/jenkins/job/jenkins-test-htcondor)
-
-**Description:** None
-
-**Project is `enabled`.**
-
-**Upstream projects:**
-
-**Downstream projects:**
-
-**Sub-projects:**
-
-**Triggers from:** []
-
-
-**Periodic builds:**
-```bash
-H * * * *
-```
-
----
-
 ## [jenkins-test-indirect-slave](https://cmssdt.cern.ch/jenkins/job/jenkins-test-indirect-slave)
 
 **Description:** None
