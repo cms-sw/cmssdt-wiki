@@ -1117,8 +1117,10 @@ Not periodically build
 * [build-container](#build-container):
 
 **Downstream projects:**
+* [cvmfs_publish_remote_dir](#cvmfs_publish_remote_dir):
 
 **Sub-projects:**
+* [cvmfs_publish_remote_dir](#cvmfs_publish_remote_dir):
 
 **Triggers from:** []
 
@@ -1137,6 +1139,7 @@ Not periodically build
 **Project is `enabled`.**
 
 **Upstream projects:**
+* [cvmfs-unpack-container](#cvmfs-unpack-container):
 
 **Downstream projects:**
 
