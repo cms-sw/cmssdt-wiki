@@ -564,7 +564,7 @@ Not periodically build
 **Description:** This looks for the Framework changes in cmssw and port them to stitched repo
 This is automatically triggered by auto-forward-port job
 
-**Project is `disabled`.**
+**Project is `enabled`.**
 
 **Upstream projects:**
 
