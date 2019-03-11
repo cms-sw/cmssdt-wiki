@@ -53,6 +53,29 @@ Not periodically build
 
 ---
 
+## [cmssw-to-stitched](https://cmssdt.cern.ch/jenkins/job/cmssw-to-stitched)
+
+**Description:** This looks for the Framework changes in cmssw and port them to stitched repo
+This is automatically triggered by auto-forward-port job
+
+**Project is `disabled`.**
+
+**Upstream projects:**
+
+**Downstream projects:**
+
+**Sub-projects:**
+
+**Triggers from:** []
+
+
+**Periodic builds:**
+```bash
+H 0 * * *
+```
+
+---
+
 ## [rpm-repository-backup](https://cmssdt.cern.ch/jenkins/job/rpm-repository-backup)
 
 **Description:** Backs-up cmsrep
