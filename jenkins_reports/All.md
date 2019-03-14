@@ -972,7 +972,7 @@ Not periodically build
 **Description:** This job updates gridpacks on cvmfs as described here:
 <br> https://github.com/mrodozov/cvmfs-cms-install-scripts/blob/master/cron_rsync_generator_package_from_eos_individual.sh
 
-**Project is `enabled`.**
+**Project is `disabled`.**
 
 **Upstream projects:**
 
