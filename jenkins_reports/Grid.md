@@ -149,6 +149,28 @@ Not periodically build
 
 ---
 
+## [grid-test-submit](https://cmssdt.cern.ch/jenkins/job/grid-test-submit)
+
+**Description:** None
+
+**Project is `enabled`.**
+
+**Upstream projects:**
+
+**Downstream projects:**
+
+**Sub-projects:**
+
+**Triggers from:** []
+
+
+**Periodic builds:**
+```bash
+Not periodically build
+```
+
+---
+
 ## [grid-webhook](https://cmssdt.cern.ch/jenkins/job/grid-webhook)
 
 **Description:** None
