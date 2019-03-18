@@ -4138,7 +4138,10 @@ H 7,19 * * *
 
 ## [stop-ib-any-integration](https://cmssdt.cern.ch/jenkins/job/stop-ib-any-integration)
 
-**Description:** Kill a running 
+**Description:** Kill a running job (by default it is 'ib-any-integration'). 
+
+The idea is that if pull reguest was updated, all the test should be restarted. This job will kill all the running jobs for that
+PR and matching parameters. It will ignore given job ID - the ID of upstream job that started this job.
 
 **Project is `enabled`.**
 
