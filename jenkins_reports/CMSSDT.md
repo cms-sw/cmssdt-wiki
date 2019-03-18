@@ -2246,7 +2246,8 @@ Not periodically build
 
 ## [run-pr-tests](https://cmssdt.cern.ch/jenkins/job/run-pr-tests)
 
-**Description:** Build mutiple  a pull requests
+**Description:** Build mutiple  a pull requests. 
+Same puprose as `ib-any-integration`, just different script is called.
 
 <br>
 <br>
