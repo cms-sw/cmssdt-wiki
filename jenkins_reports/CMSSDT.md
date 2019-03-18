@@ -615,7 +615,7 @@ Not periodically build
 
 **Upstream projects:**
 * [ib-any-integration](#ib-any-integration):
-* [run-pr-tests](#run-pr-tests):
+* [ib-run-pr-tests](#ib-run-pr-tests):
 
 **Downstream projects:**
 
@@ -1517,6 +1517,39 @@ Not periodically build
 
 ---
 
+## [ib-run-pr-tests](https://cmssdt.cern.ch/jenkins/job/ib-run-pr-tests)
+
+**Description:** Build mutiple  a pull requests. 
+Same puprose as `ib-any-integration`, just different script is called.
+
+<br>
+<br>
+
+
+
+**Project is `enabled`.**
+
+**Upstream projects:**
+* [ib-schedule-pr-tests](#ib-schedule-pr-tests):
+
+**Downstream projects:**
+* [compare-root-files-short-matrix](#compare-root-files-short-matrix):
+* [stop-ib-any-integration](#stop-ib-any-integration):
+
+**Sub-projects:**
+* [stop-ib-any-integration](#stop-ib-any-integration):
+* [compare-root-files-short-matrix](#compare-root-files-short-matrix):
+
+**Triggers from:** []
+
+
+**Periodic builds:**
+```bash
+Not periodically build
+```
+
+---
+
 ## [ib-run-python3](https://cmssdt.cern.ch/jenkins/job/ib-run-python3)
 
 **Description:** Runs iwyu logs parsing for each IB
@@ -1657,11 +1690,11 @@ This was created to avoid the issue with <a href="https://wiki.jenkins.io/displa
 
 **Downstream projects:**
 * [ib-any-integration](#ib-any-integration):
-* [run-pr-tests](#run-pr-tests):
+* [ib-run-pr-tests](#ib-run-pr-tests):
 
 **Sub-projects:**
 * [ib-any-integration](#ib-any-integration):
-* [run-pr-tests](#run-pr-tests):
+* [ib-run-pr-tests](#ib-run-pr-tests):
 
 **Triggers from:** []
 
@@ -2244,39 +2277,6 @@ Not periodically build
 
 ---
 
-## [run-pr-tests](https://cmssdt.cern.ch/jenkins/job/run-pr-tests)
-
-**Description:** Build mutiple  a pull requests. 
-Same puprose as `ib-any-integration`, just different script is called.
-
-<br>
-<br>
-
-
-
-**Project is `enabled`.**
-
-**Upstream projects:**
-* [ib-schedule-pr-tests](#ib-schedule-pr-tests):
-
-**Downstream projects:**
-* [compare-root-files-short-matrix](#compare-root-files-short-matrix):
-* [stop-ib-any-integration](#stop-ib-any-integration):
-
-**Sub-projects:**
-* [stop-ib-any-integration](#stop-ib-any-integration):
-* [compare-root-files-short-matrix](#compare-root-files-short-matrix):
-
-**Triggers from:** []
-
-
-**Periodic builds:**
-```bash
-Not periodically build
-```
-
----
-
 ## [run-repo-size-check](https://cmssdt.cern.ch/jenkins/job/run-repo-size-check)
 
 **Description:** This job was supposed to tell how much repository size increases
@@ -2431,7 +2431,7 @@ PR and matching parameters. It will ignore given job ID - the ID of upstream job
 * [cms-bot](#cms-bot):
 * [ib-any-integration](#ib-any-integration):
 * [run-pr-code-ckecks](#run-pr-code-ckecks):
-* [run-pr-tests](#run-pr-tests):
+* [ib-run-pr-tests](#ib-run-pr-tests):
 
 **Downstream projects:**
 

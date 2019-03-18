@@ -60,11 +60,11 @@ Not periodically build
 
 **Downstream projects:**
 * [ib-any-integration](#ib-any-integration):
-* [run-pr-tests](#run-pr-tests):
+* [ib-run-pr-tests](#ib-run-pr-tests):
 
 **Sub-projects:**
 * [ib-any-integration](#ib-any-integration):
-* [run-pr-tests](#run-pr-tests):
+* [ib-run-pr-tests](#ib-run-pr-tests):
 
 **Triggers from:** []
 
@@ -129,7 +129,7 @@ Not periodically build
 
 **Upstream projects:**
 * [ib-any-integration](#ib-any-integration):
-* [run-pr-tests](#run-pr-tests):
+* [ib-run-pr-tests](#ib-run-pr-tests):
 
 **Downstream projects:**
 
@@ -159,7 +159,7 @@ PR and matching parameters. It will ignore given job ID - the ID of upstream job
 * [cms-bot](#cms-bot):
 * [ib-any-integration](#ib-any-integration):
 * [run-pr-code-ckecks](#run-pr-code-ckecks):
-* [run-pr-tests](#run-pr-tests):
+* [ib-run-pr-tests](#ib-run-pr-tests):
 
 **Downstream projects:**
 
@@ -175,7 +175,7 @@ Not periodically build
 
 ---
 
-## [run-pr-tests](https://cmssdt.cern.ch/jenkins/job/run-pr-tests)
+## [ib-run-pr-tests](https://cmssdt.cern.ch/jenkins/job/ib-run-pr-tests)
 
 **Description:** Build mutiple  a pull requests. 
 Same puprose as `ib-any-integration`, just different script is called.
@@ -216,7 +216,7 @@ Not periodically build
 
 **Upstream projects:**
 * [ib-any-integration](#ib-any-integration):
-* [run-pr-tests](#run-pr-tests):
+* [ib-run-pr-tests](#ib-run-pr-tests):
 
 **Downstream projects:**
 
@@ -246,7 +246,7 @@ PR and matching parameters. It will ignore given job ID - the ID of upstream job
 * [cms-bot](#cms-bot):
 * [ib-any-integration](#ib-any-integration):
 * [run-pr-code-ckecks](#run-pr-code-ckecks):
-* [run-pr-tests](#run-pr-tests):
+* [ib-run-pr-tests](#ib-run-pr-tests):
 
 **Downstream projects:**
 
@@ -304,7 +304,7 @@ PR and matching parameters. It will ignore given job ID - the ID of upstream job
 * [cms-bot](#cms-bot):
 * [ib-any-integration](#ib-any-integration):
 * [run-pr-code-ckecks](#run-pr-code-ckecks):
-* [run-pr-tests](#run-pr-tests):
+* [ib-run-pr-tests](#ib-run-pr-tests):
 
 **Downstream projects:**
 
@@ -334,7 +334,7 @@ PR and matching parameters. It will ignore given job ID - the ID of upstream job
 * [cms-bot](#cms-bot):
 * [ib-any-integration](#ib-any-integration):
 * [run-pr-code-ckecks](#run-pr-code-ckecks):
-* [run-pr-tests](#run-pr-tests):
+* [ib-run-pr-tests](#ib-run-pr-tests):
 
 **Downstream projects:**
 
