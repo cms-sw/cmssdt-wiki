@@ -4152,8 +4152,8 @@ PR and matching parameters. It will ignore given job ID - the ID of upstream job
 * [Test_get_source_flag](#Test_get_source_flag):
 * [cms-bot](#cms-bot):
 * [ib-any-integration](#ib-any-integration):
-* [run-pr-code-ckecks](#run-pr-code-ckecks):
 * [ib-run-pr-tests](#ib-run-pr-tests):
+* [run-pr-code-ckecks](#run-pr-code-ckecks):
 
 **Downstream projects:**
 
