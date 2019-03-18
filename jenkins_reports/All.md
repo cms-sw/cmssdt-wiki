@@ -1743,7 +1743,9 @@ Not periodically build
 
 ## [ib-any-integration](https://cmssdt.cern.ch/jenkins/job/ib-any-integration)
 
-**Description:** Build a pull request
+**Description:** This job will take pull request and merged it to branch, then build an IB and run selected tests.
+It will upload results online and comment back to PR the tests results. 
+
 
 <br>
 <br>
