@@ -12,6 +12,8 @@
 
 **Description:** This is cms bot job which is triggered by github webhooks ( https://cmssdt.cern.ch/SDT/cgi-bin/github_webhook ) for every valid comment added to github PRs.
 
+Will kill a scheduled/running job acording to comments.
+
 <br><br>
 <b>Q/A</b>
 
