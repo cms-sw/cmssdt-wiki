@@ -4171,6 +4171,31 @@ Not periodically build
 
 ---
 
+## [stop-ib-any-integration-2](https://cmssdt.cern.ch/jenkins/job/stop-ib-any-integration-2)
+
+**Description:** Kill a running job (by default it is 'ib-any-integration'). 
+
+The idea is that if pull reguest was updated, all the test should be restarted. This job will kill all the running jobs for that
+PR and matching parameters. It will ignore given job ID - the ID of upstream job that started this job.
+
+**Project is `enabled`.**
+
+**Upstream projects:**
+
+**Downstream projects:**
+
+**Sub-projects:**
+
+**Triggers from:** []
+
+
+**Periodic builds:**
+```bash
+Not periodically build
+```
+
+---
+
 ## [summary-of-merged-prs](https://cmssdt.cern.ch/jenkins/job/summary-of-merged-prs)
 
 **Description:** Generates statistics for each IB ( merged pull request since last IB, test result summary, .etc)
