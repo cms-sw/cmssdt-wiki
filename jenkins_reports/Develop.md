@@ -17,10 +17,8 @@
 **Upstream projects:**
 
 **Downstream projects:**
-* [stop-ib-any-integration-2](#stop-ib-any-integration-2):
 
 **Sub-projects:**
-* [stop-ib-any-integration-2](#stop-ib-any-integration-2):
 
 **Triggers from:** []
 

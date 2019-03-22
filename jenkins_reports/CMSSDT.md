@@ -2238,10 +2238,8 @@ Not periodically build
 **Upstream projects:**
 
 **Downstream projects:**
-* [stop-ib-any-integration-2](#stop-ib-any-integration-2):
 
 **Sub-projects:**
-* [stop-ib-any-integration-2](#stop-ib-any-integration-2):
 
 **Triggers from:** []
 
@@ -2436,32 +2434,6 @@ PR and matching parameters. It will ignore given job ID - the ID of upstream job
 * [ib-any-integration](#ib-any-integration):
 * [ib-run-pr-tests](#ib-run-pr-tests):
 * [run-pr-code-ckecks](#run-pr-code-ckecks):
-
-**Downstream projects:**
-
-**Sub-projects:**
-
-**Triggers from:** []
-
-
-**Periodic builds:**
-```bash
-Not periodically build
-```
-
----
-
-## [stop-ib-any-integration-2](https://cmssdt.cern.ch/jenkins/job/stop-ib-any-integration-2)
-
-**Description:** Kill a running job (by default it is 'ib-any-integration'). 
-
-The idea is that if pull reguest was updated, all the test should be restarted. This job will kill all the running jobs for that
-PR and matching parameters. It will ignore given job ID - the ID of upstream job that started this job.
-
-**Project is `enabled`.**
-
-**Upstream projects:**
-* [Run-fake-job](#Run-fake-job):
 
 **Downstream projects:**
 
