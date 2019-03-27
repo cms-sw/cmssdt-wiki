@@ -8,6 +8,34 @@
 
 # Projects:
 
+## [abort-jenkins-job](https://cmssdt.cern.ch/jenkins/job/abort-jenkins-job)
+
+**Description:** Kill a running job (by default it is 'ib-any-integration'). 
+
+The idea is that if pull reguest was updated, all the test should be restarted. This job will kill all the running jobs for that
+PR and matching parameters. It will ignore given job ID - the ID of upstream job that started this job.
+
+**Project is `enabled`.**
+
+**Upstream projects:**
+* [Test_get_source_flag](#Test_get_source_flag):
+* [abort-pr-tests](#abort-pr-tests):
+* [run-pr-code-ckecks](#run-pr-code-ckecks):
+
+**Downstream projects:**
+
+**Sub-projects:**
+
+**Triggers from:** []
+
+
+**Periodic builds:**
+```bash
+Not periodically build
+```
+
+---
+
 ## [abort-pr-tests](https://cmssdt.cern.ch/jenkins/job/abort-pr-tests)
 
 **Description:** None
@@ -20,10 +48,10 @@
 * [ib-run-pr-tests](#ib-run-pr-tests):
 
 **Downstream projects:**
-* [stop-ib-any-integration](#stop-ib-any-integration):
+* [abort-jenkins-job](#abort-jenkins-job):
 
 **Sub-projects:**
-* [stop-ib-any-integration](#stop-ib-any-integration):
+* [abort-jenkins-job](#abort-jenkins-job):
 
 **Triggers from:** []
 
@@ -2291,10 +2319,10 @@ In a CMSSW dev area, it runs
 * [cms-bot](#cms-bot):
 
 **Downstream projects:**
-* [stop-ib-any-integration](#stop-ib-any-integration):
+* [abort-jenkins-job](#abort-jenkins-job):
 
 **Sub-projects:**
-* [stop-ib-any-integration](#stop-ib-any-integration):
+* [abort-jenkins-job](#abort-jenkins-job):
 
 **Triggers from:** []
 
@@ -2442,34 +2470,6 @@ and <a href="https://cmssdt.cern.ch/jenkins/job/test-docker">test-docker</a> job
 **Periodic builds:**
 ```bash
 H 7,19 * * *
-```
-
----
-
-## [stop-ib-any-integration](https://cmssdt.cern.ch/jenkins/job/stop-ib-any-integration)
-
-**Description:** Kill a running job (by default it is 'ib-any-integration'). 
-
-The idea is that if pull reguest was updated, all the test should be restarted. This job will kill all the running jobs for that
-PR and matching parameters. It will ignore given job ID - the ID of upstream job that started this job.
-
-**Project is `enabled`.**
-
-**Upstream projects:**
-* [Test_get_source_flag](#Test_get_source_flag):
-* [abort-pr-tests](#abort-pr-tests):
-* [run-pr-code-ckecks](#run-pr-code-ckecks):
-
-**Downstream projects:**
-
-**Sub-projects:**
-
-**Triggers from:** []
-
-
-**Periodic builds:**
-```bash
-Not periodically build
 ```
 
 ---
@@ -2705,10 +2705,10 @@ Test job
 **Upstream projects:**
 
 **Downstream projects:**
-* [stop-ib-any-integration](#stop-ib-any-integration):
+* [abort-jenkins-job](#abort-jenkins-job):
 
 **Sub-projects:**
-* [stop-ib-any-integration](#stop-ib-any-integration):
+* [abort-jenkins-job](#abort-jenkins-job):
 
 **Triggers from:** []
 

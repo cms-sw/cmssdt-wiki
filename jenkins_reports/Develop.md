@@ -41,10 +41,10 @@ Test job
 **Upstream projects:**
 
 **Downstream projects:**
-* [stop-ib-any-integration](#stop-ib-any-integration):
+* [abort-jenkins-job](#abort-jenkins-job):
 
 **Sub-projects:**
-* [stop-ib-any-integration](#stop-ib-any-integration):
+* [abort-jenkins-job](#abort-jenkins-job):
 
 **Triggers from:** []
 

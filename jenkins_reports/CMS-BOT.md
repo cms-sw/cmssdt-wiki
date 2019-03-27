@@ -63,10 +63,10 @@ Not periodically build
 * [ib-run-pr-tests](#ib-run-pr-tests):
 
 **Downstream projects:**
-* [stop-ib-any-integration](#stop-ib-any-integration):
+* [abort-jenkins-job](#abort-jenkins-job):
 
 **Sub-projects:**
-* [stop-ib-any-integration](#stop-ib-any-integration):
+* [abort-jenkins-job](#abort-jenkins-job):
 
 **Triggers from:** []
 
@@ -78,7 +78,7 @@ Not periodically build
 
 ---
 
-## [stop-ib-any-integration](https://cmssdt.cern.ch/jenkins/job/stop-ib-any-integration)
+## [abort-jenkins-job](https://cmssdt.cern.ch/jenkins/job/abort-jenkins-job)
 
 **Description:** Kill a running job (by default it is 'ib-any-integration'). 
 
@@ -190,10 +190,10 @@ Not periodically build
 * [ib-run-pr-tests](#ib-run-pr-tests):
 
 **Downstream projects:**
-* [stop-ib-any-integration](#stop-ib-any-integration):
+* [abort-jenkins-job](#abort-jenkins-job):
 
 **Sub-projects:**
-* [stop-ib-any-integration](#stop-ib-any-integration):
+* [abort-jenkins-job](#abort-jenkins-job):
 
 **Triggers from:** []
 
@@ -205,7 +205,7 @@ Not periodically build
 
 ---
 
-## [stop-ib-any-integration](https://cmssdt.cern.ch/jenkins/job/stop-ib-any-integration)
+## [abort-jenkins-job](https://cmssdt.cern.ch/jenkins/job/abort-jenkins-job)
 
 **Description:** Kill a running job (by default it is 'ib-any-integration'). 
 
@@ -302,10 +302,10 @@ Not periodically build
 * [ib-run-pr-tests](#ib-run-pr-tests):
 
 **Downstream projects:**
-* [stop-ib-any-integration](#stop-ib-any-integration):
+* [abort-jenkins-job](#abort-jenkins-job):
 
 **Sub-projects:**
-* [stop-ib-any-integration](#stop-ib-any-integration):
+* [abort-jenkins-job](#abort-jenkins-job):
 
 **Triggers from:** []
 
@@ -317,7 +317,7 @@ Not periodically build
 
 ---
 
-## [stop-ib-any-integration](https://cmssdt.cern.ch/jenkins/job/stop-ib-any-integration)
+## [abort-jenkins-job](https://cmssdt.cern.ch/jenkins/job/abort-jenkins-job)
 
 **Description:** Kill a running job (by default it is 'ib-any-integration'). 
 
@@ -382,10 +382,10 @@ In a CMSSW dev area, it runs
 * [cms-bot](#cms-bot):
 
 **Downstream projects:**
-* [stop-ib-any-integration](#stop-ib-any-integration):
+* [abort-jenkins-job](#abort-jenkins-job):
 
 **Sub-projects:**
-* [stop-ib-any-integration](#stop-ib-any-integration):
+* [abort-jenkins-job](#abort-jenkins-job):
 
 **Triggers from:** []
 
@@ -397,7 +397,7 @@ Not periodically build
 
 ---
 
-## [stop-ib-any-integration](https://cmssdt.cern.ch/jenkins/job/stop-ib-any-integration)
+## [abort-jenkins-job](https://cmssdt.cern.ch/jenkins/job/abort-jenkins-job)
 
 **Description:** Kill a running job (by default it is 'ib-any-integration'). 
 
