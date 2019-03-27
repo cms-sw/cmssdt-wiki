@@ -15,6 +15,7 @@
 **Project is `enabled`.**
 
 **Upstream projects:**
+* [ib-run-pr-tests](#ib-run-pr-tests):
 
 **Downstream projects:**
 * [stop-ib-any-integration](#stop-ib-any-integration):
@@ -1559,11 +1560,11 @@ Same puprose as `ib-any-integration`, just different script is called.
 * [ib-schedule-pr-tests](#ib-schedule-pr-tests):
 
 **Downstream projects:**
+* [abort-pr-tests](#abort-pr-tests):
 * [compare-root-files-short-matrix](#compare-root-files-short-matrix):
-* [stop-ib-any-integration](#stop-ib-any-integration):
 
 **Sub-projects:**
-* [stop-ib-any-integration](#stop-ib-any-integration):
+* [abort-pr-tests](#abort-pr-tests):
 * [compare-root-files-short-matrix](#compare-root-files-short-matrix):
 
 **Triggers from:** []
@@ -2457,7 +2458,6 @@ PR and matching parameters. It will ignore given job ID - the ID of upstream job
 * [abort-pr-tests](#abort-pr-tests):
 * [cms-bot](#cms-bot):
 * [ib-any-integration](#ib-any-integration):
-* [ib-run-pr-tests](#ib-run-pr-tests):
 * [run-pr-code-ckecks](#run-pr-code-ckecks):
 
 **Downstream projects:**
