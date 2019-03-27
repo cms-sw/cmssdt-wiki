@@ -106,11 +106,11 @@ It will upload results online and comment back to PR the tests results.
 * [ib-schedule-pr-tests](#ib-schedule-pr-tests):
 
 **Downstream projects:**
+* [abort-pr-tests](#abort-pr-tests):
 * [compare-root-files-short-matrix](#compare-root-files-short-matrix):
-* [stop-ib-any-integration](#stop-ib-any-integration):
 
 **Sub-projects:**
-* [stop-ib-any-integration](#stop-ib-any-integration):
+* [abort-pr-tests](#abort-pr-tests):
 * [compare-root-files-short-matrix](#compare-root-files-short-matrix):
 
 **Triggers from:** []
@@ -123,9 +123,9 @@ Not periodically build
 
 ---
 
-## [compare-root-files-short-matrix](https://cmssdt.cern.ch/jenkins/job/compare-root-files-short-matrix)
+## [abort-pr-tests](https://cmssdt.cern.ch/jenkins/job/abort-pr-tests)
 
-**Description:** Download the files of the baseline IB and compare them with the results of the ones of a pull request
+**Description:** None
 
 **Project is `enabled`.**
 
@@ -134,8 +134,10 @@ Not periodically build
 * [ib-run-pr-tests](#ib-run-pr-tests):
 
 **Downstream projects:**
+* [stop-ib-any-integration](#stop-ib-any-integration):
 
 **Sub-projects:**
+* [stop-ib-any-integration](#stop-ib-any-integration):
 
 **Triggers from:** []
 
@@ -160,8 +162,31 @@ PR and matching parameters. It will ignore given job ID - the ID of upstream job
 * [Test_get_source_flag](#Test_get_source_flag):
 * [abort-pr-tests](#abort-pr-tests):
 * [cms-bot](#cms-bot):
-* [ib-any-integration](#ib-any-integration):
 * [run-pr-code-ckecks](#run-pr-code-ckecks):
+
+**Downstream projects:**
+
+**Sub-projects:**
+
+**Triggers from:** []
+
+
+**Periodic builds:**
+```bash
+Not periodically build
+```
+
+---
+
+## [compare-root-files-short-matrix](https://cmssdt.cern.ch/jenkins/job/compare-root-files-short-matrix)
+
+**Description:** Download the files of the baseline IB and compare them with the results of the ones of a pull request
+
+**Project is `enabled`.**
+
+**Upstream projects:**
+* [ib-any-integration](#ib-any-integration):
+* [ib-run-pr-tests](#ib-run-pr-tests):
 
 **Downstream projects:**
 
@@ -217,6 +242,7 @@ Not periodically build
 **Project is `enabled`.**
 
 **Upstream projects:**
+* [ib-any-integration](#ib-any-integration):
 * [ib-run-pr-tests](#ib-run-pr-tests):
 
 **Downstream projects:**
@@ -248,7 +274,6 @@ PR and matching parameters. It will ignore given job ID - the ID of upstream job
 * [Test_get_source_flag](#Test_get_source_flag):
 * [abort-pr-tests](#abort-pr-tests):
 * [cms-bot](#cms-bot):
-* [ib-any-integration](#ib-any-integration):
 * [run-pr-code-ckecks](#run-pr-code-ckecks):
 
 **Downstream projects:**
@@ -330,7 +355,6 @@ PR and matching parameters. It will ignore given job ID - the ID of upstream job
 * [Test_get_source_flag](#Test_get_source_flag):
 * [abort-pr-tests](#abort-pr-tests):
 * [cms-bot](#cms-bot):
-* [ib-any-integration](#ib-any-integration):
 * [run-pr-code-ckecks](#run-pr-code-ckecks):
 
 **Downstream projects:**
@@ -360,7 +384,6 @@ PR and matching parameters. It will ignore given job ID - the ID of upstream job
 * [Test_get_source_flag](#Test_get_source_flag):
 * [abort-pr-tests](#abort-pr-tests):
 * [cms-bot](#cms-bot):
-* [ib-any-integration](#ib-any-integration):
 * [run-pr-code-ckecks](#run-pr-code-ckecks):
 
 **Downstream projects:**
