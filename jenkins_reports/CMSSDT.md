@@ -15,6 +15,7 @@
 **Project is `enabled`.**
 
 **Upstream projects:**
+* [cms-bot](#cms-bot):
 * [ib-any-integration](#ib-any-integration):
 * [ib-run-pr-tests](#ib-run-pr-tests):
 
@@ -433,13 +434,13 @@ Will kill a scheduled/running job acording to comments.
 * [github-webhook](#github-webhook):
 
 **Downstream projects:**
+* [abort-pr-tests](#abort-pr-tests):
 * [ib-schedule-pr-tests](#ib-schedule-pr-tests):
 * [run-pr-code-ckecks](#run-pr-code-ckecks):
-* [stop-ib-any-integration](#stop-ib-any-integration):
 
 **Sub-projects:**
 * [ib-schedule-pr-tests](#ib-schedule-pr-tests):
-* [stop-ib-any-integration](#stop-ib-any-integration):
+* [abort-pr-tests ](#abort-pr-tests ):
 * [run-pr-code-ckecks](#run-pr-code-ckecks):
 
 **Triggers from:** []
@@ -2457,7 +2458,6 @@ PR and matching parameters. It will ignore given job ID - the ID of upstream job
 **Upstream projects:**
 * [Test_get_source_flag](#Test_get_source_flag):
 * [abort-pr-tests](#abort-pr-tests):
-* [cms-bot](#cms-bot):
 * [run-pr-code-ckecks](#run-pr-code-ckecks):
 
 **Downstream projects:**

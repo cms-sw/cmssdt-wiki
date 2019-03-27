@@ -32,14 +32,69 @@ Will kill a scheduled/running job acording to comments.
 * [github-webhook](#github-webhook):
 
 **Downstream projects:**
+* [abort-pr-tests](#abort-pr-tests):
 * [ib-schedule-pr-tests](#ib-schedule-pr-tests):
 * [run-pr-code-ckecks](#run-pr-code-ckecks):
-* [stop-ib-any-integration](#stop-ib-any-integration):
 
 **Sub-projects:**
 * [ib-schedule-pr-tests](#ib-schedule-pr-tests):
-* [stop-ib-any-integration](#stop-ib-any-integration):
+* [abort-pr-tests ](#abort-pr-tests ):
 * [run-pr-code-ckecks](#run-pr-code-ckecks):
+
+**Triggers from:** []
+
+
+**Periodic builds:**
+```bash
+Not periodically build
+```
+
+---
+
+## [abort-pr-tests](https://cmssdt.cern.ch/jenkins/job/abort-pr-tests)
+
+**Description:** None
+
+**Project is `enabled`.**
+
+**Upstream projects:**
+* [cms-bot](#cms-bot):
+* [ib-any-integration](#ib-any-integration):
+* [ib-run-pr-tests](#ib-run-pr-tests):
+
+**Downstream projects:**
+* [stop-ib-any-integration](#stop-ib-any-integration):
+
+**Sub-projects:**
+* [stop-ib-any-integration](#stop-ib-any-integration):
+
+**Triggers from:** []
+
+
+**Periodic builds:**
+```bash
+Not periodically build
+```
+
+---
+
+## [stop-ib-any-integration](https://cmssdt.cern.ch/jenkins/job/stop-ib-any-integration)
+
+**Description:** Kill a running job (by default it is 'ib-any-integration'). 
+
+The idea is that if pull reguest was updated, all the test should be restarted. This job will kill all the running jobs for that
+PR and matching parameters. It will ignore given job ID - the ID of upstream job that started this job.
+
+**Project is `enabled`.**
+
+**Upstream projects:**
+* [Test_get_source_flag](#Test_get_source_flag):
+* [abort-pr-tests](#abort-pr-tests):
+* [run-pr-code-ckecks](#run-pr-code-ckecks):
+
+**Downstream projects:**
+
+**Sub-projects:**
 
 **Triggers from:** []
 
@@ -130,6 +185,7 @@ Not periodically build
 **Project is `enabled`.**
 
 **Upstream projects:**
+* [cms-bot](#cms-bot):
 * [ib-any-integration](#ib-any-integration):
 * [ib-run-pr-tests](#ib-run-pr-tests):
 
@@ -161,7 +217,6 @@ PR and matching parameters. It will ignore given job ID - the ID of upstream job
 **Upstream projects:**
 * [Test_get_source_flag](#Test_get_source_flag):
 * [abort-pr-tests](#abort-pr-tests):
-* [cms-bot](#cms-bot):
 * [run-pr-code-ckecks](#run-pr-code-ckecks):
 
 **Downstream projects:**
@@ -242,6 +297,7 @@ Not periodically build
 **Project is `enabled`.**
 
 **Upstream projects:**
+* [cms-bot](#cms-bot):
 * [ib-any-integration](#ib-any-integration):
 * [ib-run-pr-tests](#ib-run-pr-tests):
 
@@ -273,7 +329,6 @@ PR and matching parameters. It will ignore given job ID - the ID of upstream job
 **Upstream projects:**
 * [Test_get_source_flag](#Test_get_source_flag):
 * [abort-pr-tests](#abort-pr-tests):
-* [cms-bot](#cms-bot):
 * [run-pr-code-ckecks](#run-pr-code-ckecks):
 
 **Downstream projects:**
@@ -354,36 +409,6 @@ PR and matching parameters. It will ignore given job ID - the ID of upstream job
 **Upstream projects:**
 * [Test_get_source_flag](#Test_get_source_flag):
 * [abort-pr-tests](#abort-pr-tests):
-* [cms-bot](#cms-bot):
-* [run-pr-code-ckecks](#run-pr-code-ckecks):
-
-**Downstream projects:**
-
-**Sub-projects:**
-
-**Triggers from:** []
-
-
-**Periodic builds:**
-```bash
-Not periodically build
-```
-
----
-
-## [stop-ib-any-integration](https://cmssdt.cern.ch/jenkins/job/stop-ib-any-integration)
-
-**Description:** Kill a running job (by default it is 'ib-any-integration'). 
-
-The idea is that if pull reguest was updated, all the test should be restarted. This job will kill all the running jobs for that
-PR and matching parameters. It will ignore given job ID - the ID of upstream job that started this job.
-
-**Project is `enabled`.**
-
-**Upstream projects:**
-* [Test_get_source_flag](#Test_get_source_flag):
-* [abort-pr-tests](#abort-pr-tests):
-* [cms-bot](#cms-bot):
 * [run-pr-code-ckecks](#run-pr-code-ckecks):
 
 **Downstream projects:**
