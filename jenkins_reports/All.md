@@ -8,6 +8,30 @@
 
 # Projects:
 
+## [abort-pr-tests](https://cmssdt.cern.ch/jenkins/job/abort-pr-tests)
+
+**Description:** None
+
+**Project is `enabled`.**
+
+**Upstream projects:**
+
+**Downstream projects:**
+* [stop-ib-any-integration](#stop-ib-any-integration):
+
+**Sub-projects:**
+* [stop-ib-any-integration](#stop-ib-any-integration):
+
+**Triggers from:** []
+
+
+**Periodic builds:**
+```bash
+Not periodically build
+```
+
+---
+
 ## [abort-release](https://cmssdt.cern.ch/jenkins/job/abort-release)
 
 **Description:** Aborts and kills a release building process.
@@ -4152,6 +4176,7 @@ PR and matching parameters. It will ignore given job ID - the ID of upstream job
 
 **Upstream projects:**
 * [Test_get_source_flag](#Test_get_source_flag):
+* [abort-pr-tests](#abort-pr-tests):
 * [cms-bot](#cms-bot):
 * [ib-any-integration](#ib-any-integration):
 * [ib-run-pr-tests](#ib-run-pr-tests):

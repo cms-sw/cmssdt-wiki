@@ -158,6 +158,7 @@ PR and matching parameters. It will ignore given job ID - the ID of upstream job
 
 **Upstream projects:**
 * [Test_get_source_flag](#Test_get_source_flag):
+* [abort-pr-tests](#abort-pr-tests):
 * [cms-bot](#cms-bot):
 * [ib-any-integration](#ib-any-integration):
 * [ib-run-pr-tests](#ib-run-pr-tests):
@@ -245,6 +246,7 @@ PR and matching parameters. It will ignore given job ID - the ID of upstream job
 
 **Upstream projects:**
 * [Test_get_source_flag](#Test_get_source_flag):
+* [abort-pr-tests](#abort-pr-tests):
 * [cms-bot](#cms-bot):
 * [ib-any-integration](#ib-any-integration):
 * [ib-run-pr-tests](#ib-run-pr-tests):
@@ -303,6 +305,7 @@ PR and matching parameters. It will ignore given job ID - the ID of upstream job
 
 **Upstream projects:**
 * [Test_get_source_flag](#Test_get_source_flag):
+* [abort-pr-tests](#abort-pr-tests):
 * [cms-bot](#cms-bot):
 * [ib-any-integration](#ib-any-integration):
 * [ib-run-pr-tests](#ib-run-pr-tests):
@@ -333,6 +336,7 @@ PR and matching parameters. It will ignore given job ID - the ID of upstream job
 
 **Upstream projects:**
 * [Test_get_source_flag](#Test_get_source_flag):
+* [abort-pr-tests](#abort-pr-tests):
 * [cms-bot](#cms-bot):
 * [ib-any-integration](#ib-any-integration):
 * [ib-run-pr-tests](#ib-run-pr-tests):
