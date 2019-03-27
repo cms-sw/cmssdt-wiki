@@ -1089,6 +1089,29 @@ H 0 * * *
 
 ---
 
+## [github-labels](https://cmssdt.cern.ch/jenkins/job/github-labels)
+
+**Description:** Adds and configures web hooks in github repositories. The web hooks are then used to send some events to a specified url
+and then a jenkins job is triggered based on the information passed from the web hook , as jenkins parameters. 
+
+**Project is `enabled`.**
+
+**Upstream projects:**
+
+**Downstream projects:**
+
+**Sub-projects:**
+
+**Triggers from:** []
+
+
+**Periodic builds:**
+```bash
+H 0 * * *
+```
+
+---
+
 ## [github-push-hook](https://cmssdt.cern.ch/jenkins/job/github-push-hook)
 
 **Description:** Updates cms-bot clone on cmssdt.
