@@ -1394,6 +1394,28 @@ Not periodically build
 
 ---
 
+## [ib-run-chk-invalid-includes](https://cmssdt.cern.ch/jenkins/job/ib-run-chk-invalid-includes)
+
+**Description:** Runs iwyu logs parsing for each IB
+
+**Project is `enabled`.**
+
+**Upstream projects:**
+
+**Downstream projects:**
+
+**Sub-projects:**
+
+**Triggers from:** []
+
+
+**Periodic builds:**
+```bash
+Not periodically build
+```
+
+---
+
 ## [ib-run-flawfinder](https://cmssdt.cern.ch/jenkins/job/ib-run-flawfinder)
 
 **Description:** Runs <a href="https://www.dwheeler.com/flawfinder/"> Flawfinder</a> test on IB.
