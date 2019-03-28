@@ -1401,6 +1401,7 @@ Not periodically build
 **Project is `enabled`.**
 
 **Upstream projects:**
+* [schedule-additional-tests](#schedule-additional-tests):
 
 **Downstream projects:**
 
@@ -2427,6 +2428,7 @@ Not periodically build
 * [baseline-ib-results](#baseline-ib-results):
 * [ib-run-cfipython](#ib-run-cfipython):
 * [ib-run-check-headers](#ib-run-check-headers):
+* [ib-run-chk-invalid-includes](#ib-run-chk-invalid-includes):
 * [ib-run-flawfinder](#ib-run-flawfinder):
 * [ib-run-geometry](#ib-run-geometry):
 * [ib-run-igprof-mp](#ib-run-igprof-mp):
@@ -2454,6 +2456,7 @@ Not periodically build
 * [ib-run-cfipython](#ib-run-cfipython):
 * [ib-run-qa](#ib-run-qa):
 * [ib-run-python3](#ib-run-python3):
+* [ib-run-chk-invalid-includes](#ib-run-chk-invalid-includes):
 
 **Triggers from:** []
 

@@ -672,6 +672,7 @@ Not periodically build
 * [baseline-ib-results](#baseline-ib-results):
 * [ib-run-cfipython](#ib-run-cfipython):
 * [ib-run-check-headers](#ib-run-check-headers):
+* [ib-run-chk-invalid-includes](#ib-run-chk-invalid-includes):
 * [ib-run-flawfinder](#ib-run-flawfinder):
 * [ib-run-geometry](#ib-run-geometry):
 * [ib-run-igprof-mp](#ib-run-igprof-mp):
@@ -699,6 +700,7 @@ Not periodically build
 * [ib-run-cfipython](#ib-run-cfipython):
 * [ib-run-qa](#ib-run-qa):
 * [ib-run-python3](#ib-run-python3):
+* [ib-run-chk-invalid-includes](#ib-run-chk-invalid-includes):
 
 **Triggers from:** []
 
@@ -844,6 +846,29 @@ Not periodically build
 ## [ib-run-check-headers](https://cmssdt.cern.ch/jenkins/job/ib-run-check-headers)
 
 **Description:** Check for missing headers and parse the log for all errors (clang modules)
+
+**Project is `enabled`.**
+
+**Upstream projects:**
+* [schedule-additional-tests](#schedule-additional-tests):
+
+**Downstream projects:**
+
+**Sub-projects:**
+
+**Triggers from:** []
+
+
+**Periodic builds:**
+```bash
+Not periodically build
+```
+
+---
+
+## [ib-run-chk-invalid-includes](https://cmssdt.cern.ch/jenkins/job/ib-run-chk-invalid-includes)
+
+**Description:** Runs iwyu logs parsing for each IB
 
 **Project is `enabled`.**
 
@@ -1491,6 +1516,7 @@ Not periodically build
 * [baseline-ib-results](#baseline-ib-results):
 * [ib-run-cfipython](#ib-run-cfipython):
 * [ib-run-check-headers](#ib-run-check-headers):
+* [ib-run-chk-invalid-includes](#ib-run-chk-invalid-includes):
 * [ib-run-flawfinder](#ib-run-flawfinder):
 * [ib-run-geometry](#ib-run-geometry):
 * [ib-run-igprof-mp](#ib-run-igprof-mp):
@@ -1518,6 +1544,7 @@ Not periodically build
 * [ib-run-cfipython](#ib-run-cfipython):
 * [ib-run-qa](#ib-run-qa):
 * [ib-run-python3](#ib-run-python3):
+* [ib-run-chk-invalid-includes](#ib-run-chk-invalid-includes):
 
 **Triggers from:** []
 
@@ -1663,6 +1690,29 @@ Not periodically build
 ## [ib-run-check-headers](https://cmssdt.cern.ch/jenkins/job/ib-run-check-headers)
 
 **Description:** Check for missing headers and parse the log for all errors (clang modules)
+
+**Project is `enabled`.**
+
+**Upstream projects:**
+* [schedule-additional-tests](#schedule-additional-tests):
+
+**Downstream projects:**
+
+**Sub-projects:**
+
+**Triggers from:** []
+
+
+**Periodic builds:**
+```bash
+Not periodically build
+```
+
+---
+
+## [ib-run-chk-invalid-includes](https://cmssdt.cern.ch/jenkins/job/ib-run-chk-invalid-includes)
+
+**Description:** Runs iwyu logs parsing for each IB
 
 **Project is `enabled`.**
 
