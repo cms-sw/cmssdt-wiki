@@ -2528,6 +2528,7 @@ This was created to avoid the issue with <a href="https://wiki.jenkins.io/displa
 **Project is `enabled`.**
 
 **Upstream projects:**
+* [ib-validation](#ib-validation):
 
 **Downstream projects:**
 * [ib-run-additional-tests](#ib-run-additional-tests):
@@ -2621,12 +2622,13 @@ Not periodically build
 * [ib-run-addons](#ib-run-addons):
 * [ib-run-qa](#ib-run-qa):
 * [ib-run-relvals](#ib-run-relvals):
+* [ib-schedule-additional-tests](#ib-schedule-additional-tests):
 
 **Sub-projects:**
 * [ib-run-addons](#ib-run-addons):
 * [ib-run-qa ](#ib-run-qa ):
 * [ib-run-relvals ](#ib-run-relvals ):
-* [schedule-additional-tests](#schedule-additional-tests):
+* [ib-schedule-additional-tests](#ib-schedule-additional-tests):
 
 **Triggers from:** []
 
