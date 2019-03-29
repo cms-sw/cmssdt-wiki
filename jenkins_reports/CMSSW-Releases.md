@@ -341,7 +341,6 @@ Not periodically build
 **Project is `enabled`.**
 
 **Upstream projects:**
-* [schedule-additional-tests](#schedule-additional-tests):
 * [update-release-map](#update-release-map):
 
 **Downstream projects:**

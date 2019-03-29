@@ -1181,29 +1181,6 @@ Not periodically build
 
 ---
 
-## [HLT-Validation](https://cmssdt.cern.ch/jenkins/job/HLT-Validation)
-
-**Description:** Appends job's time out information into jenkins.log file.
-
-**Project is `enabled`.**
-
-**Upstream projects:**
-* [schedule-additional-tests](#schedule-additional-tests):
-
-**Downstream projects:**
-
-**Sub-projects:**
-
-**Triggers from:** []
-
-
-**Periodic builds:**
-```bash
-Not periodically build
-```
-
----
-
 ## [ib-any-integration](https://cmssdt.cern.ch/jenkins/job/ib-any-integration)
 
 **Description:** This job will take pull request and merged it to branch, then build an IB and run selected tests.
@@ -1330,6 +1307,7 @@ Not periodically build
 **Project is `enabled`.**
 
 **Upstream projects:**
+* [schedule-additional-tests](#schedule-additional-tests):
 
 **Downstream projects:**
 
@@ -1377,7 +1355,6 @@ Not periodically build
 **Project is `enabled`.**
 
 **Upstream projects:**
-* [schedule-additional-tests](#schedule-additional-tests):
 * [update-release-map](#update-release-map):
 
 **Downstream projects:**
@@ -1401,7 +1378,6 @@ Not periodically build
 **Project is `enabled`.**
 
 **Upstream projects:**
-* [schedule-additional-tests](#schedule-additional-tests):
 
 **Downstream projects:**
 
@@ -1424,7 +1400,6 @@ Not periodically build
 **Project is `enabled`.**
 
 **Upstream projects:**
-* [schedule-additional-tests](#schedule-additional-tests):
 
 **Downstream projects:**
 
@@ -1448,6 +1423,29 @@ Not periodically build
 **Project is `enabled`.**
 
 **Upstream projects:**
+
+**Downstream projects:**
+
+**Sub-projects:**
+
+**Triggers from:** []
+
+
+**Periodic builds:**
+```bash
+Not periodically build
+```
+
+---
+
+## [ib-run-HLT](https://cmssdt.cern.ch/jenkins/job/ib-run-HLT)
+
+**Description:** Appends job's time out information into jenkins.log file.
+
+**Project is `enabled`.**
+
+**Upstream projects:**
+* [schedule-additional-tests](#schedule-additional-tests):
 
 **Downstream projects:**
 
@@ -1501,7 +1499,6 @@ run-ib-igprof is executed with `mp` flag for `performance profiling`.
 **Project is `enabled`.**
 
 **Upstream projects:**
-* [schedule-additional-tests](#schedule-additional-tests):
 
 **Downstream projects:**
 
@@ -1555,7 +1552,6 @@ run-ib-igprof is executed with `pp` flag for `performance profiling`.
 **Project is `enabled`.**
 
 **Upstream projects:**
-* [schedule-additional-tests](#schedule-additional-tests):
 
 **Downstream projects:**
 
@@ -1578,7 +1574,6 @@ Not periodically build
 **Project is `enabled`.**
 
 **Upstream projects:**
-* [schedule-additional-tests](#schedule-additional-tests):
 
 **Downstream projects:**
 
@@ -1601,7 +1596,6 @@ Not periodically build
 **Project is `enabled`.**
 
 **Upstream projects:**
-* [schedule-additional-tests](#schedule-additional-tests):
 
 **Downstream projects:**
 
@@ -1626,7 +1620,6 @@ Results are available on <a href="https://cmssdt.cern.ch/SDT/html/cmssdt-ib">IB 
 **Project is `enabled`.**
 
 **Upstream projects:**
-* [schedule-additional-tests](#schedule-additional-tests):
 
 **Downstream projects:**
 
@@ -1649,7 +1642,6 @@ Not periodically build
 **Project is `enabled`.**
 
 **Upstream projects:**
-* [schedule-additional-tests](#schedule-additional-tests):
 
 **Downstream projects:**
 * [compare-material-budget](#compare-material-budget):
@@ -1706,7 +1698,6 @@ Not periodically build
 **Project is `enabled`.**
 
 **Upstream projects:**
-* [schedule-additional-tests](#schedule-additional-tests):
 
 **Downstream projects:**
 
@@ -1731,7 +1722,6 @@ Not periodically build
 
 **Upstream projects:**
 * [ib-validation](#ib-validation):
-* [schedule-additional-tests](#schedule-additional-tests):
 
 **Downstream projects:**
 
@@ -1803,7 +1793,6 @@ Not periodically build
 **Project is `enabled`.**
 
 **Upstream projects:**
-* [schedule-additional-tests](#schedule-additional-tests):
 
 **Downstream projects:**
 
@@ -2469,38 +2458,14 @@ Not periodically build
 * [ib-validation](#ib-validation):
 
 **Downstream projects:**
-* [HLT-Validation](#HLT-Validation):
+* [ib-run-HLT](#ib-run-HLT):
 * [baseline-ib-results](#baseline-ib-results):
-* [ib-run-cfipython](#ib-run-cfipython):
-* [ib-run-check-headers](#ib-run-check-headers):
-* [ib-run-flawfinder](#ib-run-flawfinder):
-* [ib-run-geometry](#ib-run-geometry):
-* [ib-run-igprof-mp](#ib-run-igprof-mp):
-* [ib-run-igprof-pp](#ib-run-igprof-pp):
-* [ib-run-invalid-includes](#ib-run-invalid-includes):
-* [ib-run-iwyu](#ib-run-iwyu):
-* [ib-run-lizard](#ib-run-lizard):
-* [ib-run-material-budget](#ib-run-material-budget):
-* [ib-run-python3](#ib-run-python3):
-* [ib-run-qa](#ib-run-qa):
-* [ib-run-valgrind](#ib-run-valgrind):
+* [ib-run-additional-tests](#ib-run-additional-tests):
 
 **Sub-projects:**
 * [baseline-ib-results](#baseline-ib-results):
 * [HLT-Validation](#HLT-Validation):
-* [ib-static-checks](#ib-static-checks):
-* [ib-run-valgrind ](#ib-run-valgrind ):
-* [ib-run-igprof-mp,ib-run-igprof-pp](#ib-run-igprof-mp,ib-run-igprof-pp):
-* [ib-run-geometry](#ib-run-geometry):
-* [ib-run-iwyu](#ib-run-iwyu):
-* [ib-run-material-budget](#ib-run-material-budget):
-* [ib-run-lizard](#ib-run-lizard):
-* [ib-run-flawfinder](#ib-run-flawfinder):
-* [ib-run-check-headers](#ib-run-check-headers):
-* [ib-run-cfipython](#ib-run-cfipython):
-* [ib-run-qa](#ib-run-qa):
-* [ib-run-python3](#ib-run-python3):
-* [ib-run-invalid-includes ](#ib-run-invalid-includes ):
+* [ib-run-additional-tests](#ib-run-additional-tests):
 
 **Triggers from:** []
 

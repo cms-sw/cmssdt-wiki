@@ -479,7 +479,6 @@ Not periodically build
 
 **Upstream projects:**
 * [ib-validation](#ib-validation):
-* [schedule-additional-tests](#schedule-additional-tests):
 
 **Downstream projects:**
 
@@ -668,38 +667,14 @@ Not periodically build
 * [ib-validation](#ib-validation):
 
 **Downstream projects:**
-* [HLT-Validation](#HLT-Validation):
+* [ib-run-HLT](#ib-run-HLT):
 * [baseline-ib-results](#baseline-ib-results):
-* [ib-run-cfipython](#ib-run-cfipython):
-* [ib-run-check-headers](#ib-run-check-headers):
-* [ib-run-flawfinder](#ib-run-flawfinder):
-* [ib-run-geometry](#ib-run-geometry):
-* [ib-run-igprof-mp](#ib-run-igprof-mp):
-* [ib-run-igprof-pp](#ib-run-igprof-pp):
-* [ib-run-invalid-includes](#ib-run-invalid-includes):
-* [ib-run-iwyu](#ib-run-iwyu):
-* [ib-run-lizard](#ib-run-lizard):
-* [ib-run-material-budget](#ib-run-material-budget):
-* [ib-run-python3](#ib-run-python3):
-* [ib-run-qa](#ib-run-qa):
-* [ib-run-valgrind](#ib-run-valgrind):
+* [ib-run-additional-tests](#ib-run-additional-tests):
 
 **Sub-projects:**
 * [baseline-ib-results](#baseline-ib-results):
 * [HLT-Validation](#HLT-Validation):
-* [ib-static-checks](#ib-static-checks):
-* [ib-run-valgrind ](#ib-run-valgrind ):
-* [ib-run-igprof-mp,ib-run-igprof-pp](#ib-run-igprof-mp,ib-run-igprof-pp):
-* [ib-run-geometry](#ib-run-geometry):
-* [ib-run-iwyu](#ib-run-iwyu):
-* [ib-run-material-budget](#ib-run-material-budget):
-* [ib-run-lizard](#ib-run-lizard):
-* [ib-run-flawfinder](#ib-run-flawfinder):
-* [ib-run-check-headers](#ib-run-check-headers):
-* [ib-run-cfipython](#ib-run-cfipython):
-* [ib-run-qa](#ib-run-qa):
-* [ib-run-python3](#ib-run-python3):
-* [ib-run-invalid-includes ](#ib-run-invalid-includes ):
+* [ib-run-additional-tests](#ib-run-additional-tests):
 
 **Triggers from:** []
 
@@ -711,7 +686,7 @@ Not periodically build
 
 ---
 
-## [HLT-Validation](https://cmssdt.cern.ch/jenkins/job/HLT-Validation)
+## [ib-run-HLT](https://cmssdt.cern.ch/jenkins/job/ib-run-HLT)
 
 **Description:** Appends job's time out information into jenkins.log file.
 
@@ -818,33 +793,9 @@ Not periodically build
 
 ---
 
-## [ib-run-cfipython](https://cmssdt.cern.ch/jenkins/job/ib-run-cfipython)
+## [ib-run-additional-tests](https://cmssdt.cern.ch/jenkins/job/ib-run-additional-tests)
 
-**Description:** This job gets the cfipython files for a cmssw release and push the changes to cms-sw/cmssw-cfipython repo.
-
-**Project is `enabled`.**
-
-**Upstream projects:**
-* [schedule-additional-tests](#schedule-additional-tests):
-* [update-release-map](#update-release-map):
-
-**Downstream projects:**
-
-**Sub-projects:**
-
-**Triggers from:** []
-
-
-**Periodic builds:**
-```bash
-Not periodically build
-```
-
----
-
-## [ib-run-check-headers](https://cmssdt.cern.ch/jenkins/job/ib-run-check-headers)
-
-**Description:** Check for missing headers and parse the log for all errors (clang modules)
+**Description:** None
 
 **Project is `enabled`.**
 
@@ -854,350 +805,7 @@ Not periodically build
 **Downstream projects:**
 
 **Sub-projects:**
-
-**Triggers from:** []
-
-
-**Periodic builds:**
-```bash
-Not periodically build
-```
-
----
-
-## [ib-run-flawfinder](https://cmssdt.cern.ch/jenkins/job/ib-run-flawfinder)
-
-**Description:** Runs <a href="https://www.dwheeler.com/flawfinder/"> Flawfinder</a> test on IB.
-
-**Project is `enabled`.**
-
-**Upstream projects:**
-* [schedule-additional-tests](#schedule-additional-tests):
-
-**Downstream projects:**
-
-**Sub-projects:**
-
-**Triggers from:** []
-
-
-**Periodic builds:**
-```bash
-Not periodically build
-```
-
----
-
-## [ib-run-geometry](https://cmssdt.cern.ch/jenkins/job/ib-run-geometry)
-
-**Description:** Runs geometry comparison tests for each IB
-
-**Project is `disabled`.**
-
-**Upstream projects:**
-* [schedule-additional-tests](#schedule-additional-tests):
-
-**Downstream projects:**
-
-**Sub-projects:**
-
-**Triggers from:** []
-
-
-**Periodic builds:**
-```bash
-Not periodically build
-```
-
----
-
-## [ib-run-igprof-mp](https://cmssdt.cern.ch/jenkins/job/ib-run-igprof-mp)
-
-**Description:** Runs <a href="https://igprof.org/">IgProf</a> on IB.
-Results are available on <a href="https://cmssdt.cern.ch/SDT/html/cmssdt-ib">IB page</a>. 
-
-<br>
-run-ib-igprof is executed with `mp` flag for `performance profiling`.
-
-<br><br>
-
-<b>Q/a:</b>
-
-<ul>
-  <li>
-    Q: Error: near line 63: unrecognized token: "" 
-  </li>  
-  <li>
-    A: Igprof has a bug that from time to time it returns unrecognizable character which fails the job. There is no easy fix, so we glance over it.
-  	However, job will execute all steps and then fail.
-  </li>
-</ul>
-
-
-<ul>
-  <li>
-    Q: `IOError: [Errno 2] No such file or directory: 'runall-report-step123-.log'`
-  </li>  
-  <li>
-    A: No idea... Yet.
-  </li>
-</ul>
-
-
-
-
-**Project is `enabled`.**
-
-**Upstream projects:**
-* [schedule-additional-tests](#schedule-additional-tests):
-
-**Downstream projects:**
-
-**Sub-projects:**
-
-**Triggers from:** []
-
-
-**Periodic builds:**
-```bash
-Not periodically build
-```
-
----
-
-## [ib-run-igprof-pp](https://cmssdt.cern.ch/jenkins/job/ib-run-igprof-pp)
-
-**Description:** Runs <a href="https://igprof.org/">IgProf</a> on IB.
-Results are available on <a href="https://cmssdt.cern.ch/SDT/html/cmssdt-ib">IB page</a>. 
-
-<br>
-run-ib-igprof is executed with `pp` flag for `performance profiling`.
-
-<br><br>
-
-<b>Q/a:</b>
-
-<ul>
-  <li>
-    Q: Error: near line 63: unrecognized token: "" 
-  </li>  
-  <li>
-    A: Igprof has a bug that from time to time it returns unrecognizable character which fails the job. There is no easy fix, so we glance over it.
-  	However, job will execute all steps and then fail.
-  </li>
-</ul>
-
-
-<ul>
-  <li>
-    Q: `IOError: [Errno 2] No such file or directory: 'runall-report-step123-.log'`
-  </li>  
-  <li>
-    A: No idea... Yet.
-  </li>
-</ul>
-
-
-
-
-**Project is `enabled`.**
-
-**Upstream projects:**
-* [schedule-additional-tests](#schedule-additional-tests):
-
-**Downstream projects:**
-
-**Sub-projects:**
-
-**Triggers from:** []
-
-
-**Periodic builds:**
-```bash
-Not periodically build
-```
-
----
-
-## [ib-run-invalid-includes](https://cmssdt.cern.ch/jenkins/job/ib-run-invalid-includes)
-
-**Description:** Runs iwyu logs parsing for each IB
-
-**Project is `enabled`.**
-
-**Upstream projects:**
-* [schedule-additional-tests](#schedule-additional-tests):
-
-**Downstream projects:**
-
-**Sub-projects:**
-
-**Triggers from:** []
-
-
-**Periodic builds:**
-```bash
-Not periodically build
-```
-
----
-
-## [ib-run-iwyu](https://cmssdt.cern.ch/jenkins/job/ib-run-iwyu)
-
-**Description:** Runs iwyu logs parsing for each IB
-
-**Project is `enabled`.**
-
-**Upstream projects:**
-* [schedule-additional-tests](#schedule-additional-tests):
-
-**Downstream projects:**
-
-**Sub-projects:**
-
-**Triggers from:** []
-
-
-**Periodic builds:**
-```bash
-Not periodically build
-```
-
----
-
-## [ib-run-lizard](https://cmssdt.cern.ch/jenkins/job/ib-run-lizard)
-
-**Description:** Runs <a href="https://github.com/terryyin/lizard">Lizard</a>, a Cyclomatic Complexity Analyzer, on IB.
-Results are available on <a href="https://cmssdt.cern.ch/SDT/html/cmssdt-ib">IB page</a>. 
-
-
-**Project is `enabled`.**
-
-**Upstream projects:**
-* [schedule-additional-tests](#schedule-additional-tests):
-
-**Downstream projects:**
-
-**Sub-projects:**
-
-**Triggers from:** []
-
-
-**Periodic builds:**
-```bash
-Not periodically build
-```
-
----
-
-## [ib-run-material-budget](https://cmssdt.cern.ch/jenkins/job/ib-run-material-budget)
-
-**Description:** Runs Validation/Geometry/test/runP_Tracker_cfg.py and MaterialBudget.C for an IB
-
-**Project is `enabled`.**
-
-**Upstream projects:**
-* [schedule-additional-tests](#schedule-additional-tests):
-
-**Downstream projects:**
-* [compare-material-budget](#compare-material-budget):
-
-**Sub-projects:**
-
-**Triggers from:** []
-
-
-**Periodic builds:**
-```bash
-Not periodically build
-```
-
----
-
-## [compare-material-budget](https://cmssdt.cern.ch/jenkins/job/compare-material-budget)
-
-**Description:** Comopare results of material budget of two releases using Validation/Geometry/test/TrackerMaterialBudgetComparison.C macro
-
-
-**Project is `enabled`.**
-
-**Upstream projects:**
-* [ib-run-material-budget](#ib-run-material-budget):
-
-**Downstream projects:**
-
-**Sub-projects:**
-
-**Triggers from:** []
-
-
-**Periodic builds:**
-```bash
-Not periodically build
-```
-
----
-
-## [ib-run-python3](https://cmssdt.cern.ch/jenkins/job/ib-run-python3)
-
-**Description:** Runs iwyu logs parsing for each IB
-
-**Project is `enabled`.**
-
-**Upstream projects:**
-* [schedule-additional-tests](#schedule-additional-tests):
-
-**Downstream projects:**
-
-**Sub-projects:**
-
-**Triggers from:** []
-
-
-**Periodic builds:**
-```bash
-Not periodically build
-```
-
----
-
-## [ib-run-qa](https://cmssdt.cern.ch/jenkins/job/ib-run-qa)
-
-**Description:** Runs Quality Assurance (QA) test on IB. Rezulst are available at 
-<a href="https://cmssdt.cern.ch/SDT/html/cmssdt-ib/">IB page's</a> Q/A section.
-
-**Project is `enabled`.**
-
-**Upstream projects:**
-* [ib-validation](#ib-validation):
-* [schedule-additional-tests](#schedule-additional-tests):
-
-**Downstream projects:**
-
-**Sub-projects:**
-
-**Triggers from:** []
-
-
-**Periodic builds:**
-```bash
-Not periodically build
-```
-
----
-
-## [ib-run-valgrind](https://cmssdt.cern.ch/jenkins/job/ib-run-valgrind)
-
-**Description:** This job runs valgrind tool for selected IBs when build IB job is complete.   
-
-**Project is `enabled`.**
-
-**Upstream projects:**
-* [schedule-additional-tests](#schedule-additional-tests):
-
-**Downstream projects:**
-
-**Sub-projects:**
+* [ib-run-${ADDITIONAL_TEST_NAME}](#ib-run-${ADDITIONAL_TEST_NAME}):
 
 **Triggers from:** []
 
@@ -1299,7 +907,6 @@ Not periodically build
 
 **Upstream projects:**
 * [ib-validation](#ib-validation):
-* [schedule-additional-tests](#schedule-additional-tests):
 
 **Downstream projects:**
 
@@ -1488,38 +1095,14 @@ Not periodically build
 * [ib-validation](#ib-validation):
 
 **Downstream projects:**
-* [HLT-Validation](#HLT-Validation):
+* [ib-run-HLT](#ib-run-HLT):
 * [baseline-ib-results](#baseline-ib-results):
-* [ib-run-cfipython](#ib-run-cfipython):
-* [ib-run-check-headers](#ib-run-check-headers):
-* [ib-run-flawfinder](#ib-run-flawfinder):
-* [ib-run-geometry](#ib-run-geometry):
-* [ib-run-igprof-mp](#ib-run-igprof-mp):
-* [ib-run-igprof-pp](#ib-run-igprof-pp):
-* [ib-run-invalid-includes](#ib-run-invalid-includes):
-* [ib-run-iwyu](#ib-run-iwyu):
-* [ib-run-lizard](#ib-run-lizard):
-* [ib-run-material-budget](#ib-run-material-budget):
-* [ib-run-python3](#ib-run-python3):
-* [ib-run-qa](#ib-run-qa):
-* [ib-run-valgrind](#ib-run-valgrind):
+* [ib-run-additional-tests](#ib-run-additional-tests):
 
 **Sub-projects:**
 * [baseline-ib-results](#baseline-ib-results):
 * [HLT-Validation](#HLT-Validation):
-* [ib-static-checks](#ib-static-checks):
-* [ib-run-valgrind ](#ib-run-valgrind ):
-* [ib-run-igprof-mp,ib-run-igprof-pp](#ib-run-igprof-mp,ib-run-igprof-pp):
-* [ib-run-geometry](#ib-run-geometry):
-* [ib-run-iwyu](#ib-run-iwyu):
-* [ib-run-material-budget](#ib-run-material-budget):
-* [ib-run-lizard](#ib-run-lizard):
-* [ib-run-flawfinder](#ib-run-flawfinder):
-* [ib-run-check-headers](#ib-run-check-headers):
-* [ib-run-cfipython](#ib-run-cfipython):
-* [ib-run-qa](#ib-run-qa):
-* [ib-run-python3](#ib-run-python3):
-* [ib-run-invalid-includes ](#ib-run-invalid-includes ):
+* [ib-run-additional-tests](#ib-run-additional-tests):
 
 **Triggers from:** []
 
@@ -1531,7 +1114,7 @@ Not periodically build
 
 ---
 
-## [HLT-Validation](https://cmssdt.cern.ch/jenkins/job/HLT-Validation)
+## [ib-run-HLT](https://cmssdt.cern.ch/jenkins/job/ib-run-HLT)
 
 **Description:** Appends job's time out information into jenkins.log file.
 
@@ -1638,33 +1221,9 @@ Not periodically build
 
 ---
 
-## [ib-run-cfipython](https://cmssdt.cern.ch/jenkins/job/ib-run-cfipython)
+## [ib-run-additional-tests](https://cmssdt.cern.ch/jenkins/job/ib-run-additional-tests)
 
-**Description:** This job gets the cfipython files for a cmssw release and push the changes to cms-sw/cmssw-cfipython repo.
-
-**Project is `enabled`.**
-
-**Upstream projects:**
-* [schedule-additional-tests](#schedule-additional-tests):
-* [update-release-map](#update-release-map):
-
-**Downstream projects:**
-
-**Sub-projects:**
-
-**Triggers from:** []
-
-
-**Periodic builds:**
-```bash
-Not periodically build
-```
-
----
-
-## [ib-run-check-headers](https://cmssdt.cern.ch/jenkins/job/ib-run-check-headers)
-
-**Description:** Check for missing headers and parse the log for all errors (clang modules)
+**Description:** None
 
 **Project is `enabled`.**
 
@@ -1674,350 +1233,7 @@ Not periodically build
 **Downstream projects:**
 
 **Sub-projects:**
-
-**Triggers from:** []
-
-
-**Periodic builds:**
-```bash
-Not periodically build
-```
-
----
-
-## [ib-run-flawfinder](https://cmssdt.cern.ch/jenkins/job/ib-run-flawfinder)
-
-**Description:** Runs <a href="https://www.dwheeler.com/flawfinder/"> Flawfinder</a> test on IB.
-
-**Project is `enabled`.**
-
-**Upstream projects:**
-* [schedule-additional-tests](#schedule-additional-tests):
-
-**Downstream projects:**
-
-**Sub-projects:**
-
-**Triggers from:** []
-
-
-**Periodic builds:**
-```bash
-Not periodically build
-```
-
----
-
-## [ib-run-geometry](https://cmssdt.cern.ch/jenkins/job/ib-run-geometry)
-
-**Description:** Runs geometry comparison tests for each IB
-
-**Project is `disabled`.**
-
-**Upstream projects:**
-* [schedule-additional-tests](#schedule-additional-tests):
-
-**Downstream projects:**
-
-**Sub-projects:**
-
-**Triggers from:** []
-
-
-**Periodic builds:**
-```bash
-Not periodically build
-```
-
----
-
-## [ib-run-igprof-mp](https://cmssdt.cern.ch/jenkins/job/ib-run-igprof-mp)
-
-**Description:** Runs <a href="https://igprof.org/">IgProf</a> on IB.
-Results are available on <a href="https://cmssdt.cern.ch/SDT/html/cmssdt-ib">IB page</a>. 
-
-<br>
-run-ib-igprof is executed with `mp` flag for `performance profiling`.
-
-<br><br>
-
-<b>Q/a:</b>
-
-<ul>
-  <li>
-    Q: Error: near line 63: unrecognized token: "" 
-  </li>  
-  <li>
-    A: Igprof has a bug that from time to time it returns unrecognizable character which fails the job. There is no easy fix, so we glance over it.
-  	However, job will execute all steps and then fail.
-  </li>
-</ul>
-
-
-<ul>
-  <li>
-    Q: `IOError: [Errno 2] No such file or directory: 'runall-report-step123-.log'`
-  </li>  
-  <li>
-    A: No idea... Yet.
-  </li>
-</ul>
-
-
-
-
-**Project is `enabled`.**
-
-**Upstream projects:**
-* [schedule-additional-tests](#schedule-additional-tests):
-
-**Downstream projects:**
-
-**Sub-projects:**
-
-**Triggers from:** []
-
-
-**Periodic builds:**
-```bash
-Not periodically build
-```
-
----
-
-## [ib-run-igprof-pp](https://cmssdt.cern.ch/jenkins/job/ib-run-igprof-pp)
-
-**Description:** Runs <a href="https://igprof.org/">IgProf</a> on IB.
-Results are available on <a href="https://cmssdt.cern.ch/SDT/html/cmssdt-ib">IB page</a>. 
-
-<br>
-run-ib-igprof is executed with `pp` flag for `performance profiling`.
-
-<br><br>
-
-<b>Q/a:</b>
-
-<ul>
-  <li>
-    Q: Error: near line 63: unrecognized token: "" 
-  </li>  
-  <li>
-    A: Igprof has a bug that from time to time it returns unrecognizable character which fails the job. There is no easy fix, so we glance over it.
-  	However, job will execute all steps and then fail.
-  </li>
-</ul>
-
-
-<ul>
-  <li>
-    Q: `IOError: [Errno 2] No such file or directory: 'runall-report-step123-.log'`
-  </li>  
-  <li>
-    A: No idea... Yet.
-  </li>
-</ul>
-
-
-
-
-**Project is `enabled`.**
-
-**Upstream projects:**
-* [schedule-additional-tests](#schedule-additional-tests):
-
-**Downstream projects:**
-
-**Sub-projects:**
-
-**Triggers from:** []
-
-
-**Periodic builds:**
-```bash
-Not periodically build
-```
-
----
-
-## [ib-run-invalid-includes](https://cmssdt.cern.ch/jenkins/job/ib-run-invalid-includes)
-
-**Description:** Runs iwyu logs parsing for each IB
-
-**Project is `enabled`.**
-
-**Upstream projects:**
-* [schedule-additional-tests](#schedule-additional-tests):
-
-**Downstream projects:**
-
-**Sub-projects:**
-
-**Triggers from:** []
-
-
-**Periodic builds:**
-```bash
-Not periodically build
-```
-
----
-
-## [ib-run-iwyu](https://cmssdt.cern.ch/jenkins/job/ib-run-iwyu)
-
-**Description:** Runs iwyu logs parsing for each IB
-
-**Project is `enabled`.**
-
-**Upstream projects:**
-* [schedule-additional-tests](#schedule-additional-tests):
-
-**Downstream projects:**
-
-**Sub-projects:**
-
-**Triggers from:** []
-
-
-**Periodic builds:**
-```bash
-Not periodically build
-```
-
----
-
-## [ib-run-lizard](https://cmssdt.cern.ch/jenkins/job/ib-run-lizard)
-
-**Description:** Runs <a href="https://github.com/terryyin/lizard">Lizard</a>, a Cyclomatic Complexity Analyzer, on IB.
-Results are available on <a href="https://cmssdt.cern.ch/SDT/html/cmssdt-ib">IB page</a>. 
-
-
-**Project is `enabled`.**
-
-**Upstream projects:**
-* [schedule-additional-tests](#schedule-additional-tests):
-
-**Downstream projects:**
-
-**Sub-projects:**
-
-**Triggers from:** []
-
-
-**Periodic builds:**
-```bash
-Not periodically build
-```
-
----
-
-## [ib-run-material-budget](https://cmssdt.cern.ch/jenkins/job/ib-run-material-budget)
-
-**Description:** Runs Validation/Geometry/test/runP_Tracker_cfg.py and MaterialBudget.C for an IB
-
-**Project is `enabled`.**
-
-**Upstream projects:**
-* [schedule-additional-tests](#schedule-additional-tests):
-
-**Downstream projects:**
-* [compare-material-budget](#compare-material-budget):
-
-**Sub-projects:**
-
-**Triggers from:** []
-
-
-**Periodic builds:**
-```bash
-Not periodically build
-```
-
----
-
-## [compare-material-budget](https://cmssdt.cern.ch/jenkins/job/compare-material-budget)
-
-**Description:** Comopare results of material budget of two releases using Validation/Geometry/test/TrackerMaterialBudgetComparison.C macro
-
-
-**Project is `enabled`.**
-
-**Upstream projects:**
-* [ib-run-material-budget](#ib-run-material-budget):
-
-**Downstream projects:**
-
-**Sub-projects:**
-
-**Triggers from:** []
-
-
-**Periodic builds:**
-```bash
-Not periodically build
-```
-
----
-
-## [ib-run-python3](https://cmssdt.cern.ch/jenkins/job/ib-run-python3)
-
-**Description:** Runs iwyu logs parsing for each IB
-
-**Project is `enabled`.**
-
-**Upstream projects:**
-* [schedule-additional-tests](#schedule-additional-tests):
-
-**Downstream projects:**
-
-**Sub-projects:**
-
-**Triggers from:** []
-
-
-**Periodic builds:**
-```bash
-Not periodically build
-```
-
----
-
-## [ib-run-qa](https://cmssdt.cern.ch/jenkins/job/ib-run-qa)
-
-**Description:** Runs Quality Assurance (QA) test on IB. Rezulst are available at 
-<a href="https://cmssdt.cern.ch/SDT/html/cmssdt-ib/">IB page's</a> Q/A section.
-
-**Project is `enabled`.**
-
-**Upstream projects:**
-* [ib-validation](#ib-validation):
-* [schedule-additional-tests](#schedule-additional-tests):
-
-**Downstream projects:**
-
-**Sub-projects:**
-
-**Triggers from:** []
-
-
-**Periodic builds:**
-```bash
-Not periodically build
-```
-
----
-
-## [ib-run-valgrind](https://cmssdt.cern.ch/jenkins/job/ib-run-valgrind)
-
-**Description:** This job runs valgrind tool for selected IBs when build IB job is complete.   
-
-**Project is `enabled`.**
-
-**Upstream projects:**
-* [schedule-additional-tests](#schedule-additional-tests):
-
-**Downstream projects:**
-
-**Sub-projects:**
+* [ib-run-${ADDITIONAL_TEST_NAME}](#ib-run-${ADDITIONAL_TEST_NAME}):
 
 **Triggers from:** []
 

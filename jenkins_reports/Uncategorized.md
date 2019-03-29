@@ -76,6 +76,28 @@ H 0 * * *
 
 ---
 
+## [ib-run-geometry](https://cmssdt.cern.ch/jenkins/job/ib-run-geometry)
+
+**Description:** Runs geometry comparison tests for each IB
+
+**Project is `disabled`.**
+
+**Upstream projects:**
+
+**Downstream projects:**
+
+**Sub-projects:**
+
+**Triggers from:** []
+
+
+**Periodic builds:**
+```bash
+Not periodically build
+```
+
+---
+
 ## [rpm-repository-backup](https://cmssdt.cern.ch/jenkins/job/rpm-repository-backup)
 
 **Description:** Backs-up cmsrep
