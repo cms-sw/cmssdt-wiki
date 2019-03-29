@@ -149,42 +149,6 @@ Not periodically build
 
 ---
 
-## [baseline-ib-results](https://cmssdt.cern.ch/jenkins/job/baseline-ib-results)
-
-**Description:** This job runs a few tests only for the IB, for comparison with those ran by the pull request.
-
-<p><b> Latest failures.</b></p>
-<ul>
-  <li>
-    Failed due to RelVal Error. The problem was that RelVal nr. 
-    10224 was unable to download a randomly chosen sample file 
-    (file is stored somewhere on the GRID and then must be fetched using a client). 
-    The file is inaccessible, it should not appear on the list, but it does. 
-    Restarting the job did the trick since another file, that actually exist was selected. 
-  </li>
-</ul>
-
-**Project is `enabled`.**
-
-**Upstream projects:**
-* [schedule-additional-tests](#schedule-additional-tests):
-
-**Downstream projects:**
-* [cvmfs-deploy-baseline](#cvmfs-deploy-baseline):
-
-**Sub-projects:**
-* [cvmfs-deploy-baseline](#cvmfs-deploy-baseline):
-
-**Triggers from:** []
-
-
-**Periodic builds:**
-```bash
-Not periodically build
-```
-
----
-
 ## [build-any-ib](https://cmssdt.cern.ch/jenkins/job/build-any-ib)
 
 **Description:** This jobs starts an Integration Build(IB). Base on state of <a href="https://github.com/cms-sw/cmsdist">CMSDIST</a>/<a href="https://github.com/cms-sw/cmssw">CMSSW</a> git repositories, it builds either a full release or patch release.
@@ -695,7 +659,7 @@ Not periodically build
 **Project is `enabled`.**
 
 **Upstream projects:**
-* [baseline-ib-results](#baseline-ib-results):
+* [ib-run-baseline](#ib-run-baseline):
 
 **Downstream projects:**
 * [cvmfs-publish-baseline](#cvmfs-publish-baseline):
@@ -1348,6 +1312,41 @@ Not periodically build
 
 ---
 
+## [ib-run-baseline](https://cmssdt.cern.ch/jenkins/job/ib-run-baseline)
+
+**Description:** This job runs a few tests only for the IB, for comparison with those ran by the pull request.
+
+<p><b> Latest failures.</b></p>
+<ul>
+  <li>
+    Failed due to RelVal Error. The problem was that RelVal nr. 
+    10224 was unable to download a randomly chosen sample file 
+    (file is stored somewhere on the GRID and then must be fetched using a client). 
+    The file is inaccessible, it should not appear on the list, but it does. 
+    Restarting the job did the trick since another file, that actually exist was selected. 
+  </li>
+</ul>
+
+**Project is `enabled`.**
+
+**Upstream projects:**
+
+**Downstream projects:**
+* [cvmfs-deploy-baseline](#cvmfs-deploy-baseline):
+
+**Sub-projects:**
+* [cvmfs-deploy-baseline](#cvmfs-deploy-baseline):
+
+**Triggers from:** []
+
+
+**Periodic builds:**
+```bash
+Not periodically build
+```
+
+---
+
 ## [ib-run-cfipython](https://cmssdt.cern.ch/jenkins/job/ib-run-cfipython)
 
 **Description:** This job gets the cfipython files for a cmssw release and push the changes to cms-sw/cmssw-cfipython repo.
@@ -1445,7 +1444,6 @@ Not periodically build
 **Project is `enabled`.**
 
 **Upstream projects:**
-* [schedule-additional-tests](#schedule-additional-tests):
 
 **Downstream projects:**
 
@@ -2458,13 +2456,9 @@ Not periodically build
 * [ib-validation](#ib-validation):
 
 **Downstream projects:**
-* [ib-run-HLT](#ib-run-HLT):
-* [baseline-ib-results](#baseline-ib-results):
 * [ib-run-additional-tests](#ib-run-additional-tests):
 
 **Sub-projects:**
-* [baseline-ib-results](#baseline-ib-results):
-* [HLT-Validation](#HLT-Validation):
 * [ib-run-additional-tests](#ib-run-additional-tests):
 
 **Triggers from:** []
