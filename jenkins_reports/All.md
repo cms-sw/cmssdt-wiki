@@ -2125,6 +2125,29 @@ Not periodically build
 
 ---
 
+## [ib-run-gpu](https://cmssdt.cern.ch/jenkins/job/ib-run-gpu)
+
+**Description:** Runs Quality Assurance (QA) test on IB. Rezulst are available at 
+<a href="https://cmssdt.cern.ch/SDT/html/cmssdt-ib/">IB page's</a> Q/A section.
+
+**Project is `enabled`.**
+
+**Upstream projects:**
+
+**Downstream projects:**
+
+**Sub-projects:**
+
+**Triggers from:** []
+
+
+**Periodic builds:**
+```bash
+Not periodically build
+```
+
+---
+
 ## [ib-run-igprof-mp](https://cmssdt.cern.ch/jenkins/job/ib-run-igprof-mp)
 
 **Description:** Runs <a href="https://igprof.org/">IgProf</a> on IB.
@@ -2436,6 +2459,28 @@ Not periodically build
 
 ---
 
+## [ib-run-static-checks](https://cmssdt.cern.ch/jenkins/job/ib-run-static-checks)
+
+**Description:** Runs a few tests only for the IB, for comparison with those ran by the pull request.
+
+**Project is `enabled`.**
+
+**Upstream projects:**
+
+**Downstream projects:**
+
+**Sub-projects:**
+
+**Triggers from:** []
+
+
+**Periodic builds:**
+```bash
+Not periodically build
+```
+
+---
+
 ## [ib-run-valgrind](https://cmssdt.cern.ch/jenkins/job/ib-run-valgrind)
 
 **Description:** This job runs valgrind tool for selected IBs when build IB job is complete.   
@@ -2506,29 +2551,6 @@ This was created to avoid the issue with <a href="https://wiki.jenkins.io/displa
 **Sub-projects:**
 * [ib-any-integration](#ib-any-integration):
 * [ib-run-pr-tests](#ib-run-pr-tests):
-
-**Triggers from:** []
-
-
-**Periodic builds:**
-```bash
-Not periodically build
-```
-
----
-
-## [ib-static-checks](https://cmssdt.cern.ch/jenkins/job/ib-static-checks)
-
-**Description:** Runs a few tests only for the IB, for comparison with those ran by the pull request.
-
-**Project is `enabled`.**
-
-**Upstream projects:**
-* [schedule-additional-tests](#schedule-additional-tests):
-
-**Downstream projects:**
-
-**Sub-projects:**
 
 **Triggers from:** []
 
@@ -4184,7 +4206,6 @@ Not periodically build
 * [ib-run-python3](#ib-run-python3):
 * [ib-run-qa](#ib-run-qa):
 * [ib-run-valgrind](#ib-run-valgrind):
-* [ib-static-checks](#ib-static-checks):
 
 **Sub-projects:**
 * [baseline-ib-results](#baseline-ib-results):

@@ -683,7 +683,6 @@ Not periodically build
 * [ib-run-python3](#ib-run-python3):
 * [ib-run-qa](#ib-run-qa):
 * [ib-run-valgrind](#ib-run-valgrind):
-* [ib-static-checks](#ib-static-checks):
 
 **Sub-projects:**
 * [baseline-ib-results](#baseline-ib-results):
@@ -1190,29 +1189,6 @@ Not periodically build
 ## [ib-run-valgrind](https://cmssdt.cern.ch/jenkins/job/ib-run-valgrind)
 
 **Description:** This job runs valgrind tool for selected IBs when build IB job is complete.   
-
-**Project is `enabled`.**
-
-**Upstream projects:**
-* [schedule-additional-tests](#schedule-additional-tests):
-
-**Downstream projects:**
-
-**Sub-projects:**
-
-**Triggers from:** []
-
-
-**Periodic builds:**
-```bash
-Not periodically build
-```
-
----
-
-## [ib-static-checks](https://cmssdt.cern.ch/jenkins/job/ib-static-checks)
-
-**Description:** Runs a few tests only for the IB, for comparison with those ran by the pull request.
 
 **Project is `enabled`.**
 
@@ -1527,7 +1503,6 @@ Not periodically build
 * [ib-run-python3](#ib-run-python3):
 * [ib-run-qa](#ib-run-qa):
 * [ib-run-valgrind](#ib-run-valgrind):
-* [ib-static-checks](#ib-static-checks):
 
 **Sub-projects:**
 * [baseline-ib-results](#baseline-ib-results):
@@ -2034,29 +2009,6 @@ Not periodically build
 ## [ib-run-valgrind](https://cmssdt.cern.ch/jenkins/job/ib-run-valgrind)
 
 **Description:** This job runs valgrind tool for selected IBs when build IB job is complete.   
-
-**Project is `enabled`.**
-
-**Upstream projects:**
-* [schedule-additional-tests](#schedule-additional-tests):
-
-**Downstream projects:**
-
-**Sub-projects:**
-
-**Triggers from:** []
-
-
-**Periodic builds:**
-```bash
-Not periodically build
-```
-
----
-
-## [ib-static-checks](https://cmssdt.cern.ch/jenkins/job/ib-static-checks)
-
-**Description:** Runs a few tests only for the IB, for comparison with those ran by the pull request.
 
 **Project is `enabled`.**
 
