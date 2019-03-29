@@ -1996,6 +1996,7 @@ Not periodically build
 **Downstream projects:**
 
 **Sub-projects:**
+* [ib-run-${ADDITIONAL_TEST_NAME}](#ib-run-${ADDITIONAL_TEST_NAME}):
 
 **Triggers from:** []
 
