@@ -1933,7 +1933,7 @@ Not periodically build
 **Project is `enabled`.**
 
 **Upstream projects:**
-* [schedule-additional-tests](#schedule-additional-tests):
+* [ib-schedule-additional-tests](#ib-schedule-additional-tests):
 
 **Downstream projects:**
 
@@ -2521,6 +2521,31 @@ This was created to avoid the issue with <a href="https://wiki.jenkins.io/displa
 
 ---
 
+## [ib-schedule-additional-tests](https://cmssdt.cern.ch/jenkins/job/ib-schedule-additional-tests)
+
+**Description:** Wrapper project to schedule aditonal test such as Flawfinder, Lizard, IgProf, etc.
+
+**Project is `enabled`.**
+
+**Upstream projects:**
+* [ib-validation](#ib-validation):
+
+**Downstream projects:**
+* [ib-run-additional-tests](#ib-run-additional-tests):
+
+**Sub-projects:**
+* [ib-run-additional-tests](#ib-run-additional-tests):
+
+**Triggers from:** []
+
+
+**Periodic builds:**
+```bash
+Not periodically build
+```
+
+---
+
 ## [ib-schedule-pr-tests](https://cmssdt.cern.ch/jenkins/job/ib-schedule-pr-tests)
 
 **Description:** Build a pull request
@@ -2597,7 +2622,7 @@ Not periodically build
 * [ib-run-addons](#ib-run-addons):
 * [ib-run-qa](#ib-run-qa):
 * [ib-run-relvals](#ib-run-relvals):
-* [schedule-additional-tests](#schedule-additional-tests):
+* [ib-schedule-additional-tests](#ib-schedule-additional-tests):
 
 **Sub-projects:**
 * [ib-run-addons](#ib-run-addons):
@@ -4156,31 +4181,6 @@ push to Github and pull again to read the size.
 **Downstream projects:**
 
 **Sub-projects:**
-
-**Triggers from:** []
-
-
-**Periodic builds:**
-```bash
-Not periodically build
-```
-
----
-
-## [schedule-additional-tests](https://cmssdt.cern.ch/jenkins/job/schedule-additional-tests)
-
-**Description:** Wrapper project to schedule aditonal test such as Flawfinder, Lizard, IgProf, etc.
-
-**Project is `enabled`.**
-
-**Upstream projects:**
-* [ib-validation](#ib-validation):
-
-**Downstream projects:**
-* [ib-run-additional-tests](#ib-run-additional-tests):
-
-**Sub-projects:**
-* [ib-run-additional-tests](#ib-run-additional-tests):
 
 **Triggers from:** []
 

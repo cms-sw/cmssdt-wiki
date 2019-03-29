@@ -428,7 +428,7 @@ Not periodically build
 * [ib-run-addons](#ib-run-addons):
 * [ib-run-qa](#ib-run-qa):
 * [ib-run-relvals](#ib-run-relvals):
-* [schedule-additional-tests](#schedule-additional-tests):
+* [ib-schedule-additional-tests](#ib-schedule-additional-tests):
 
 **Sub-projects:**
 * [ib-run-addons](#ib-run-addons):
@@ -657,7 +657,7 @@ Not periodically build
 
 ---
 
-## [schedule-additional-tests](https://cmssdt.cern.ch/jenkins/job/schedule-additional-tests)
+## [ib-schedule-additional-tests](https://cmssdt.cern.ch/jenkins/job/ib-schedule-additional-tests)
 
 **Description:** Wrapper project to schedule aditonal test such as Flawfinder, Lizard, IgProf, etc.
 
@@ -689,7 +689,7 @@ Not periodically build
 **Project is `enabled`.**
 
 **Upstream projects:**
-* [schedule-additional-tests](#schedule-additional-tests):
+* [ib-schedule-additional-tests](#ib-schedule-additional-tests):
 
 **Downstream projects:**
 
@@ -745,7 +745,7 @@ Not periodically build
 * [ib-run-addons](#ib-run-addons):
 * [ib-run-qa](#ib-run-qa):
 * [ib-run-relvals](#ib-run-relvals):
-* [schedule-additional-tests](#schedule-additional-tests):
+* [ib-schedule-additional-tests](#ib-schedule-additional-tests):
 
 **Sub-projects:**
 * [ib-run-addons](#ib-run-addons):
@@ -974,7 +974,7 @@ Not periodically build
 
 ---
 
-## [schedule-additional-tests](https://cmssdt.cern.ch/jenkins/job/schedule-additional-tests)
+## [ib-schedule-additional-tests](https://cmssdt.cern.ch/jenkins/job/ib-schedule-additional-tests)
 
 **Description:** Wrapper project to schedule aditonal test such as Flawfinder, Lizard, IgProf, etc.
 
@@ -1006,7 +1006,7 @@ Not periodically build
 **Project is `enabled`.**
 
 **Upstream projects:**
-* [schedule-additional-tests](#schedule-additional-tests):
+* [ib-schedule-additional-tests](#ib-schedule-additional-tests):
 
 **Downstream projects:**
 
