@@ -83,7 +83,7 @@ Not periodically build
 
 **Description:** None
 
-**Project is `disabled`.**
+**Project is `enabled`.**
 
 **Upstream projects:**
 * [grid-check-nodes](#grid-check-nodes):
