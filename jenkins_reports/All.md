@@ -1620,6 +1620,28 @@ H/10 * * * *
 
 ---
 
+## [grid-create-gpu-node](https://cmssdt.cern.ch/jenkins/job/grid-create-gpu-node)
+
+**Description:** None
+
+**Project is `enabled`.**
+
+**Upstream projects:**
+
+**Downstream projects:**
+
+**Sub-projects:**
+
+**Triggers from:** []
+
+
+**Periodic builds:**
+```bash
+Not periodically build
+```
+
+---
+
 ## [grid-create-node](https://cmssdt.cern.ch/jenkins/job/grid-create-node)
 
 **Description:** None
