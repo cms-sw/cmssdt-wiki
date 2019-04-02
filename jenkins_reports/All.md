@@ -2187,6 +2187,59 @@ Not periodically build
 
 ---
 
+## [ib-run-igprof](https://cmssdt.cern.ch/jenkins/job/ib-run-igprof)
+
+**Description:** Runs <a href="https://igprof.org/">IgProf</a> on IB.
+Results are available on <a href="https://cmssdt.cern.ch/SDT/html/cmssdt-ib">IB page</a>. 
+
+<br>
+run-ib-igprof is executed with `pp` flag for `performance profiling`.
+
+<br><br>
+
+<b>Q/a:</b>
+
+<ul>
+  <li>
+    Q: Error: near line 63: unrecognized token: "" 
+  </li>  
+  <li>
+    A: Igprof has a bug that from time to time it returns unrecognizable character which fails the job. There is no easy fix, so we glance over it.
+  	However, job will execute all steps and then fail.
+  </li>
+</ul>
+
+
+<ul>
+  <li>
+    Q: `IOError: [Errno 2] No such file or directory: 'runall-report-step123-.log'`
+  </li>  
+  <li>
+    A: No idea... Yet.
+  </li>
+</ul>
+
+
+
+
+**Project is `enabled`.**
+
+**Upstream projects:**
+
+**Downstream projects:**
+
+**Sub-projects:**
+
+**Triggers from:** []
+
+
+**Periodic builds:**
+```bash
+Not periodically build
+```
+
+---
+
 ## [ib-run-igprof-mp](https://cmssdt.cern.ch/jenkins/job/ib-run-igprof-mp)
 
 **Description:** Runs <a href="https://igprof.org/">IgProf</a> on IB.
