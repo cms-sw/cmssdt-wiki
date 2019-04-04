@@ -235,6 +235,28 @@ Not periodically build
 
 ---
 
+## [build-docker-container](https://cmssdt.cern.ch/jenkins/job/build-docker-container)
+
+**Description:** None
+
+**Project is `enabled`.**
+
+**Upstream projects:**
+
+**Downstream projects:**
+
+**Sub-projects:**
+
+**Triggers from:** []
+
+
+**Periodic builds:**
+```bash
+Not periodically build
+```
+
+---
+
 ## [build-fwlite](https://cmssdt.cern.ch/jenkins/job/build-fwlite)
 
 **Description:** TO build a CMSSW_X_Y_Z_FWLITE release based on an existing CMSSW_X_Y_Z release. CMSSW_X_Y_Z should already be build/uploaded before building its FWLITE version.
@@ -844,28 +866,6 @@ Not periodically build
 **Description:** This job deploys <a href="http://doxygen.org">doxygen</a> scripts to web server. 
 It is later used to serve <a href="http://cmsdoxygen.web.cern.ch/cmsdoxygen/">CMSSW documentation</a><br>
 <b>Could be automated by github hooks.<b>
-
-**Project is `enabled`.**
-
-**Upstream projects:**
-
-**Downstream projects:**
-
-**Sub-projects:**
-
-**Triggers from:** []
-
-
-**Periodic builds:**
-```bash
-Not periodically build
-```
-
----
-
-## [dmwm-docker](https://cmssdt.cern.ch/jenkins/job/dmwm-docker)
-
-**Description:** None
 
 **Project is `enabled`.**
 
