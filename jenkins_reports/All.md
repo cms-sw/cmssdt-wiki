@@ -2765,7 +2765,7 @@ We need to make a initial connection to the slave to get its labels assigned.
 
 **Periodic builds:**
 ```bash
-H * * * *
+H/5 * * * *
 ```
 
 ---
