@@ -2012,7 +2012,7 @@ for faster access to CMs internal jenkns servers
 
 **Periodic builds:**
 ```bash
-Not periodically build
+H * * * *
 ```
 
 ---
