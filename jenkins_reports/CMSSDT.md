@@ -1177,6 +1177,28 @@ H */6 * * *
 
 ---
 
+## [GitHub-refaktor-cmssw](https://cmssdt.cern.ch/jenkins/job/GitHub-refaktor-cmssw)
+
+**Description:** This jobs runs timer on node to keep it busy.
+
+**Project is `enabled`.**
+
+**Upstream projects:**
+
+**Downstream projects:**
+
+**Sub-projects:**
+
+**Triggers from:** []
+
+
+**Periodic builds:**
+```bash
+Not periodically build
+```
+
+---
+
 ## [github-webhook](https://cmssdt.cern.ch/jenkins/job/github-webhook)
 
 **Description:** This is cms bot job which is triggered by github webhooks ( https://cmssdt.cern.ch/SDT/cgi-bin/github_webhook ) for every valid comment added to github PRs.
@@ -2390,28 +2412,6 @@ Not periodically build
 
 **Sub-projects:**
 * [update-release-notes-collection](#update-release-notes-collection):
-
-**Triggers from:** []
-
-
-**Periodic builds:**
-```bash
-Not periodically build
-```
-
----
-
-## [run](https://cmssdt.cern.ch/jenkins/job/run)
-
-**Description:** This jobs runs timer on node to keep it busy.
-
-**Project is `enabled`.**
-
-**Upstream projects:**
-
-**Downstream projects:**
-
-**Sub-projects:**
 
 **Triggers from:** []
 
