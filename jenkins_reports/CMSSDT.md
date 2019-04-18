@@ -1179,7 +1179,7 @@ H */6 * * *
 
 ## [GitHub-refaktor-cmssw](https://cmssdt.cern.ch/jenkins/job/GitHub-refaktor-cmssw)
 
-**Description:** This jobs runs timer on node to keep it busy.
+**Description:** This job 
 
 **Project is `enabled`.**
 
