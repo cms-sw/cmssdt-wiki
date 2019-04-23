@@ -1604,7 +1604,7 @@ H */6 * * *
 
 ---
 
-## [GitHub-refaktor-cmssw](https://cmssdt.cern.ch/jenkins/job/GitHub-refaktor-cmssw)
+## [GitHub-refactor-cmssw](https://cmssdt.cern.ch/jenkins/job/GitHub-refactor-cmssw)
 
 **Description:** This job 
 
@@ -1817,7 +1817,7 @@ H/2 * * * *
 * [grid-shutdown-node](#grid-shutdown-node):
 
 **Sub-projects:**
-* [grid-shutdown-node ](#grid-shutdown-node ):
+* [grid-shutdown-node](#grid-shutdown-node):
 
 **Triggers from:** []
 

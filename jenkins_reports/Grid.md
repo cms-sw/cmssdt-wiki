@@ -162,7 +162,7 @@ H/2 * * * *
 * [grid-shutdown-node](#grid-shutdown-node):
 
 **Sub-projects:**
-* [grid-shutdown-node ](#grid-shutdown-node ):
+* [grid-shutdown-node](#grid-shutdown-node):
 
 **Triggers from:** []
 

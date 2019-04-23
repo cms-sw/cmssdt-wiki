@@ -1177,7 +1177,7 @@ H */6 * * *
 
 ---
 
-## [GitHub-refaktor-cmssw](https://cmssdt.cern.ch/jenkins/job/GitHub-refaktor-cmssw)
+## [GitHub-refactor-cmssw](https://cmssdt.cern.ch/jenkins/job/GitHub-refactor-cmssw)
 
 **Description:** This job 
 
