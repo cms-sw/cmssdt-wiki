@@ -1606,7 +1606,7 @@ H */6 * * *
 
 ## [GitHub-refactor-cmssw](https://cmssdt.cern.ch/jenkins/job/GitHub-refactor-cmssw)
 
-**Description:** This job 
+**Description:** Refactors the CMSSW repo.
 
 **Project is `enabled`.**
 
