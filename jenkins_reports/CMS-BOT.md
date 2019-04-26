@@ -60,6 +60,7 @@ Not periodically build
 **Upstream projects:**
 * [cms-bot](#cms-bot):
 * [ib-any-integration](#ib-any-integration):
+* [ib-any-integration-test-cmsdist-prs](#ib-any-integration-test-cmsdist-prs):
 * [ib-run-pr-tests](#ib-run-pr-tests):
 
 **Downstream projects:**
@@ -187,6 +188,7 @@ Not periodically build
 **Upstream projects:**
 * [cms-bot](#cms-bot):
 * [ib-any-integration](#ib-any-integration):
+* [ib-any-integration-test-cmsdist-prs](#ib-any-integration-test-cmsdist-prs):
 * [ib-run-pr-tests](#ib-run-pr-tests):
 
 **Downstream projects:**
@@ -241,6 +243,7 @@ Not periodically build
 
 **Upstream projects:**
 * [ib-any-integration](#ib-any-integration):
+* [ib-any-integration-test-cmsdist-prs](#ib-any-integration-test-cmsdist-prs):
 * [ib-run-pr-tests](#ib-run-pr-tests):
 
 **Downstream projects:**
@@ -297,6 +300,7 @@ Not periodically build
 **Upstream projects:**
 * [cms-bot](#cms-bot):
 * [ib-any-integration](#ib-any-integration):
+* [ib-any-integration-test-cmsdist-prs](#ib-any-integration-test-cmsdist-prs):
 * [ib-run-pr-tests](#ib-run-pr-tests):
 
 **Downstream projects:**
@@ -351,6 +355,7 @@ Not periodically build
 
 **Upstream projects:**
 * [ib-any-integration](#ib-any-integration):
+* [ib-any-integration-test-cmsdist-prs](#ib-any-integration-test-cmsdist-prs):
 * [ib-run-pr-tests](#ib-run-pr-tests):
 
 **Downstream projects:**
