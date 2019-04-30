@@ -1952,6 +1952,7 @@ It will upload results online and comment back to PR the tests results.
 **Project is `enabled`.**
 
 **Upstream projects:**
+* [ib-schedule-extra-build](#ib-schedule-extra-build):
 * [ib-schedule-pr-tests](#ib-schedule-pr-tests):
 
 **Downstream projects:**
@@ -2507,6 +2508,7 @@ Same puprose as `ib-any-integration`, just different script is called.
 **Project is `enabled`.**
 
 **Upstream projects:**
+* [ib-schedule-extra-build](#ib-schedule-extra-build):
 * [ib-schedule-pr-tests](#ib-schedule-pr-tests):
 
 **Downstream projects:**
@@ -2689,6 +2691,32 @@ This was created to avoid the issue with <a href="https://wiki.jenkins.io/displa
 
 **Sub-projects:**
 * [ib-run-additional-tests](#ib-run-additional-tests):
+
+**Triggers from:** []
+
+
+**Periodic builds:**
+```bash
+Not periodically build
+```
+
+---
+
+## [ib-schedule-extra-build](https://cmssdt.cern.ch/jenkins/job/ib-schedule-extra-build)
+
+**Description:** Build a pull request
+
+**Project is `enabled`.**
+
+**Upstream projects:**
+
+**Downstream projects:**
+* [ib-any-integration](#ib-any-integration):
+* [ib-run-pr-tests](#ib-run-pr-tests):
+
+**Sub-projects:**
+* [ib-any-integration](#ib-any-integration):
+* [ib-run-pr-tests](#ib-run-pr-tests):
 
 **Triggers from:** []
 
