@@ -159,7 +159,6 @@ It will upload results online and comment back to PR the tests results.
 **Project is `enabled`.**
 
 **Upstream projects:**
-* [ib-schedule-extra-build](#ib-schedule-extra-build):
 * [ib-schedule-pr-tests](#ib-schedule-pr-tests):
 
 **Downstream projects:**
@@ -272,7 +271,6 @@ Same puprose as `ib-any-integration`, just different script is called.
 **Project is `enabled`.**
 
 **Upstream projects:**
-* [ib-schedule-extra-build](#ib-schedule-extra-build):
 * [ib-schedule-pr-tests](#ib-schedule-pr-tests):
 
 **Downstream projects:**

@@ -1952,7 +1952,6 @@ It will upload results online and comment back to PR the tests results.
 **Project is `enabled`.**
 
 **Upstream projects:**
-* [ib-schedule-extra-build](#ib-schedule-extra-build):
 * [ib-schedule-pr-tests](#ib-schedule-pr-tests):
 
 **Downstream projects:**
@@ -1998,6 +1997,7 @@ It will upload results online and comment back to PR the tests results.
 **Project is `enabled`.**
 
 **Upstream projects:**
+* [ib-schedule-extra-tests](#ib-schedule-extra-tests):
 
 **Downstream projects:**
 * [abort-pr-tests](#abort-pr-tests):
@@ -2508,7 +2508,6 @@ Same puprose as `ib-any-integration`, just different script is called.
 **Project is `enabled`.**
 
 **Upstream projects:**
-* [ib-schedule-extra-build](#ib-schedule-extra-build):
 * [ib-schedule-pr-tests](#ib-schedule-pr-tests):
 
 **Downstream projects:**
@@ -2702,21 +2701,19 @@ Not periodically build
 
 ---
 
-## [ib-schedule-extra-build](https://cmssdt.cern.ch/jenkins/job/ib-schedule-extra-build)
+## [ib-schedule-extra-tests](https://cmssdt.cern.ch/jenkins/job/ib-schedule-extra-tests)
 
-**Description:** Build a pull request
+**Description:** Schedule extra tests
 
 **Project is `enabled`.**
 
 **Upstream projects:**
 
 **Downstream projects:**
-* [ib-any-integration](#ib-any-integration):
-* [ib-run-pr-tests](#ib-run-pr-tests):
+* [ib-any-integration-test-cmsdist-prs](#ib-any-integration-test-cmsdist-prs):
 
 **Sub-projects:**
-* [ib-any-integration](#ib-any-integration):
-* [ib-run-pr-tests](#ib-run-pr-tests):
+* [ib-any-integration-test-cmsdist-prs](#ib-any-integration-test-cmsdist-prs):
 
 **Triggers from:** []
 
