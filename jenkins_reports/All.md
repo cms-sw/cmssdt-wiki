@@ -1615,8 +1615,10 @@ H */6 * * *
 **Upstream projects:**
 
 **Downstream projects:**
+* [GitHub-refactor-cmssw-module](#GitHub-refactor-cmssw-module):
 
 **Sub-projects:**
+* [GitHub-refactor-cmssw-module](#GitHub-refactor-cmssw-module):
 
 **Triggers from:** []
 
@@ -1635,6 +1637,7 @@ Not periodically build
 **Project is `enabled`.**
 
 **Upstream projects:**
+* [GitHub-refactor-cmssw](#GitHub-refactor-cmssw):
 
 **Downstream projects:**
 
