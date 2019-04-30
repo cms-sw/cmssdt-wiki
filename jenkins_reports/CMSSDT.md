@@ -1203,7 +1203,7 @@ Not periodically build
 
 ## [GitHub-refactor-cmssw-module](https://cmssdt.cern.ch/jenkins/job/GitHub-refactor-cmssw-module)
 
-**Description:** Refactors the CMSSW repo.
+**Description:** Refactors one module of CMSSW and makes an PR.
 
 **Project is `enabled`.**
 
