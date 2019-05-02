@@ -76,6 +76,29 @@ H 0 * * *
 
 ---
 
+## [GitHub-refactor-cmssw-module](https://cmssdt.cern.ch/jenkins/job/GitHub-refactor-cmssw-module)
+
+**Description:** Refactors one module of CMSSW and makes an PR.
+
+**Project is `disabled`.**
+
+**Upstream projects:**
+* [GitHub-refactor-cmssw](#GitHub-refactor-cmssw):
+
+**Downstream projects:**
+
+**Sub-projects:**
+
+**Triggers from:** []
+
+
+**Periodic builds:**
+```bash
+Not periodically build
+```
+
+---
+
 ## [ib-run-geometry](https://cmssdt.cern.ch/jenkins/job/ib-run-geometry)
 
 **Description:** Runs geometry comparison tests for each IB
