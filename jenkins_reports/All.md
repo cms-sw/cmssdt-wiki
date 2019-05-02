@@ -1634,7 +1634,7 @@ Not periodically build
 
 **Description:** Refactors one module of CMSSW and makes an PR.
 
-**Project is `disabled`.**
+**Project is `enabled`.**
 
 **Upstream projects:**
 * [GitHub-refactor-cmssw](#GitHub-refactor-cmssw):

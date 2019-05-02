@@ -1203,6 +1203,29 @@ Not periodically build
 
 ---
 
+## [GitHub-refactor-cmssw-module](https://cmssdt.cern.ch/jenkins/job/GitHub-refactor-cmssw-module)
+
+**Description:** Refactors one module of CMSSW and makes an PR.
+
+**Project is `enabled`.**
+
+**Upstream projects:**
+* [GitHub-refactor-cmssw](#GitHub-refactor-cmssw):
+
+**Downstream projects:**
+
+**Sub-projects:**
+
+**Triggers from:** []
+
+
+**Periodic builds:**
+```bash
+Not periodically build
+```
+
+---
+
 ## [github-webhook](https://cmssdt.cern.ch/jenkins/job/github-webhook)
 
 **Description:** This is cms bot job which is triggered by github webhooks ( https://cmssdt.cern.ch/SDT/cgi-bin/github_webhook ) for every valid comment added to github PRs.
