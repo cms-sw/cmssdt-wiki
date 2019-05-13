@@ -2111,6 +2111,28 @@ Not periodically build
 
 ---
 
+## [install-data-cvmfs](https://cmssdt.cern.ch/jenkins/job/install-data-cvmfs)
+
+**Description:** None
+
+**Project is `enabled`.**
+
+**Upstream projects:**
+
+**Downstream projects:**
+
+**Sub-projects:**
+
+**Triggers from:** []
+
+
+**Periodic builds:**
+```bash
+Not periodically build
+```
+
+---
+
 ## [jenkins-download-rpm](https://cmssdt.cern.ch/jenkins/job/jenkins-download-rpm)
 
 **Description:** This downloads a jenkins RPM from https://pkg.jenkins.io/redhat-stable/ and 
