@@ -583,10 +583,9 @@ Not periodically build
 
 ## [cmssw-to-stitched](https://cmssdt.cern.ch/jenkins/job/cmssw-to-stitched)
 
-**Description:** This looks for the Framework changes in cmssw and port them to stitched repo
-This is automatically triggered by auto-forward-port job
+**Description:** None
 
-**Project is `disabled`.**
+**Project is `enabled`.**
 
 **Upstream projects:**
 
@@ -599,7 +598,7 @@ This is automatically triggered by auto-forward-port job
 
 **Periodic builds:**
 ```bash
-H 0 * * *
+Not periodically build
 ```
 
 ---

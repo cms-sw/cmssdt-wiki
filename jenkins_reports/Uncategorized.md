@@ -53,29 +53,6 @@ Not periodically build
 
 ---
 
-## [cmssw-to-stitched](https://cmssdt.cern.ch/jenkins/job/cmssw-to-stitched)
-
-**Description:** This looks for the Framework changes in cmssw and port them to stitched repo
-This is automatically triggered by auto-forward-port job
-
-**Project is `disabled`.**
-
-**Upstream projects:**
-
-**Downstream projects:**
-
-**Sub-projects:**
-
-**Triggers from:** []
-
-
-**Periodic builds:**
-```bash
-H 0 * * *
-```
-
----
-
 ## [ib-run-geometry](https://cmssdt.cern.ch/jenkins/job/ib-run-geometry)
 
 **Description:** Runs geometry comparison tests for each IB
