@@ -2762,6 +2762,28 @@ Not periodically build
 
 ---
 
+## [test](https://cmssdt.cern.ch/jenkins/job/test)
+
+**Description:** None
+
+**Project is `enabled`.**
+
+**Upstream projects:**
+
+**Downstream projects:**
+
+**Sub-projects:**
+
+**Triggers from:** []
+
+
+**Periodic builds:**
+```bash
+Not periodically build
+```
+
+---
+
 ## [test-build-container](https://cmssdt.cern.ch/jenkins/job/test-build-container)
 
 **Description:** None
