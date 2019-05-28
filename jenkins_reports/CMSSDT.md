@@ -2089,6 +2089,28 @@ Not periodically build
 
 ---
 
+## [install-cvmfs-package](https://cmssdt.cern.ch/jenkins/job/install-cvmfs-package)
+
+**Description:** None
+
+**Project is `enabled`.**
+
+**Upstream projects:**
+
+**Downstream projects:**
+
+**Sub-projects:**
+
+**Triggers from:** []
+
+
+**Periodic builds:**
+```bash
+Not periodically build
+```
+
+---
+
 ## [install-data-cvmfs](https://cmssdt.cern.ch/jenkins/job/install-data-cvmfs)
 
 **Description:** None
