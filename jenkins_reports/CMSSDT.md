@@ -1286,51 +1286,6 @@ Not periodically build
 
 ---
 
-## [ib-any-integration](https://cmssdt.cern.ch/jenkins/job/ib-any-integration)
-
-**Description:** This job will take pull request and merged it to branch, then build an IB and run selected tests.
-It will upload results online and comment back to PR the tests results. 
-
-
-<br>
-<br>
-
-<b>Q/a:</b>
-
-<ul>
-  <li>
-    Q: git error - "error: switch `b' requires a value" 
-  </li>  
-  <li>
-    A: It happened to a job in  a form of `PR cmssw#24237 cmsdist#4249` when `cmssw#24237` was a back port 
-    to 10_2 from 10_3, but there was no related pull request on cmsdist 10_2 branch (cmssw#24237 was 
-    a pull request on branch 10_3). Solved creating back port on cmsdist manually. 
-  </li>
-</ul>
-
-**Project is `enabled`.**
-
-**Upstream projects:**
-* [ib-schedule-pr-tests](#ib-schedule-pr-tests):
-
-**Downstream projects:**
-* [abort-pr-tests](#abort-pr-tests):
-* [compare-root-files-short-matrix](#compare-root-files-short-matrix):
-
-**Sub-projects:**
-* [abort-pr-tests](#abort-pr-tests):
-* [compare-root-files-short-matrix](#compare-root-files-short-matrix):
-
-**Triggers from:** []
-
-
-**Periodic builds:**
-```bash
-Not periodically build
-```
-
----
-
 ## [ib-any-integration-test-cmsdist-prs](https://cmssdt.cern.ch/jenkins/job/ib-any-integration-test-cmsdist-prs)
 
 **Description:** This job will take pull request and merged it to branch, then build an IB and run selected tests.

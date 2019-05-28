@@ -1949,7 +1949,7 @@ It will upload results online and comment back to PR the tests results.
   </li>
 </ul>
 
-**Project is `enabled`.**
+**Project is `disabled`.**
 
 **Upstream projects:**
 * [ib-schedule-pr-tests](#ib-schedule-pr-tests):
