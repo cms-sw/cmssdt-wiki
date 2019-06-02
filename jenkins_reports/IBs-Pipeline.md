@@ -534,6 +534,7 @@ Not periodically build
 * [update-github-pages](#update-github-pages):
 
 **Sub-projects:**
+* [update-github-pages](#update-github-pages):
 
 **Triggers from:** []
 
@@ -851,6 +852,7 @@ Not periodically build
 * [update-github-pages](#update-github-pages):
 
 **Sub-projects:**
+* [update-github-pages](#update-github-pages):
 
 **Triggers from:** []
 
