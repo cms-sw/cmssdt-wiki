@@ -1670,6 +1670,7 @@ Also it runsevery 30mins to make sure any webhooks were not missed.
 * [github-push-hook](#github-push-hook):
 * [query-build-release-issues](#query-build-release-issues):
 * [schedule-docker-build](#schedule-docker-build):
+* [summary-of-merged-prs](#summary-of-merged-prs):
 
 **Sub-projects:**
 * [comp-bot](#comp-bot):
@@ -1679,6 +1680,7 @@ Also it runsevery 30mins to make sure any webhooks were not missed.
 * [cms-bot](#cms-bot):
 * [schedule-docker-build](#schedule-docker-build):
 * [docker-dmwm-CMSKubernetes](#docker-dmwm-CMSKubernetes):
+* [summary-of-merged-prs](#summary-of-merged-prs):
 
 **Triggers from:** []
 
@@ -4562,6 +4564,7 @@ as deploys on the web server. It is used to generate <a href="https://cmssdt.cer
 **Project is `enabled`.**
 
 **Upstream projects:**
+* [github-webhook](#github-webhook):
 * [update-github-pages](#update-github-pages):
 
 **Downstream projects:**
