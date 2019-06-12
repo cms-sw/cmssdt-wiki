@@ -478,7 +478,6 @@ on reached limit hits/hour grounds.
 **Upstream projects:**
 * [cms-prs-cache](#cms-prs-cache):
 * [github-webhook](#github-webhook):
-* [update-data-tag-on-pr-merge](#update-data-tag-on-pr-merge):
 
 **Downstream projects:**
 * [cms-prs-cache](#cms-prs-cache):
@@ -3043,26 +3042,24 @@ Not periodically build
 
 ## [update-data-tag-on-pr-merge](https://cmssdt.cern.ch/jenkins/job/update-data-tag-on-pr-merge)
 
-**Description:** This job collects metadata for pull requests since reading github directly when necessary might become time consuming or rejected by github
-on reached limit hits/hour grounds. 
+**Description:** This job creates new release when cms-data/$REPO PR is merged which release includes the latest commits on master
+It also creates PR for data/cmsswdata.txt on cms-sw/cmsdist for the data repo with that name
+to update the tag. 
 
 **Project is `enabled`.**
 
 **Upstream projects:**
 
 **Downstream projects:**
-* [cms-prs-cache](#cms-prs-cache):
 
 **Sub-projects:**
-* [cms-prs-cache](#cms-prs-cache):
-* [cms-prs-cache](#cms-prs-cache):
 
 **Triggers from:** []
 
 
 **Periodic builds:**
 ```bash
-0 20 * * *
+Not periodically build
 ```
 
 ---
