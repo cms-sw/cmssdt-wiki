@@ -1694,6 +1694,7 @@ Also it runsevery 30mins to make sure any webhooks were not missed.
 * [github-push-hook](#github-push-hook):
 * [query-build-release-issues](#query-build-release-issues):
 * [schedule-docker-build](#schedule-docker-build):
+* [update-data-tag-on-pr-merge](#update-data-tag-on-pr-merge):
 
 **Sub-projects:**
 * [comp-bot](#comp-bot):
@@ -1704,6 +1705,7 @@ Also it runsevery 30mins to make sure any webhooks were not missed.
 * [schedule-docker-build](#schedule-docker-build):
 * [docker-dmwm-CMSKubernetes](#docker-dmwm-CMSKubernetes):
 * [cms-prs-files ](#cms-prs-files ):
+* [update-data-tag-on-pr-merge ](#update-data-tag-on-pr-merge ):
 
 **Triggers from:** []
 
@@ -4888,6 +4890,7 @@ It also creates cmsdist PR with the new release tag
 **Project is `enabled`.**
 
 **Upstream projects:**
+* [github-webhook](#github-webhook):
 
 **Downstream projects:**
 
