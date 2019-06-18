@@ -39,6 +39,7 @@ Not periodically build
 **Project is `enabled`.**
 
 **Upstream projects:**
+* [github-webhook](#github-webhook):
 
 **Downstream projects:**
 * [update-github-pages](#update-github-pages):
