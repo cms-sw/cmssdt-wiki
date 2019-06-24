@@ -499,7 +499,7 @@ on reached limit hits/hour grounds.
 
 ## [cms-prs-files](https://cmssdt.cern.ch/jenkins/job/cms-prs-files)
 
-**Description:** None
+**Description:** On every CMSSW PR, this job dumps list of files that are going to be modified by open PRs to files_changed_by_prs.json .
 
 **Project is `enabled`.**
 
