@@ -386,9 +386,11 @@ In a CMSSW dev area, it runs
 
 **Downstream projects:**
 * [abort-jenkins-job](#abort-jenkins-job):
+* [cms-prs-files](#cms-prs-files):
 
 **Sub-projects:**
 * [abort-jenkins-job](#abort-jenkins-job):
+* [cms-prs-files](#cms-prs-files):
 
 **Triggers from:** []
 
@@ -412,6 +414,30 @@ PR and matching parameters. It will ignore given job ID - the ID of upstream job
 **Upstream projects:**
 * [Test_get_source_flag](#Test_get_source_flag):
 * [abort-pr-tests](#abort-pr-tests):
+* [run-pr-code-ckecks](#run-pr-code-ckecks):
+
+**Downstream projects:**
+
+**Sub-projects:**
+
+**Triggers from:** []
+
+
+**Periodic builds:**
+```bash
+Not periodically build
+```
+
+---
+
+## [cms-prs-files](https://cmssdt.cern.ch/jenkins/job/cms-prs-files)
+
+**Description:** On every CMSSW PR, this job dumps list of files that are going to be modified by open PRs to files_changed_by_prs.json .
+
+**Project is `enabled`.**
+
+**Upstream projects:**
+* [github-webhook](#github-webhook):
 * [run-pr-code-ckecks](#run-pr-code-ckecks):
 
 **Downstream projects:**

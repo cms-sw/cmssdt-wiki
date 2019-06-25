@@ -505,6 +505,7 @@ on reached limit hits/hour grounds.
 
 **Upstream projects:**
 * [github-webhook](#github-webhook):
+* [run-pr-code-ckecks](#run-pr-code-ckecks):
 
 **Downstream projects:**
 
@@ -4467,9 +4468,11 @@ In a CMSSW dev area, it runs
 
 **Downstream projects:**
 * [abort-jenkins-job](#abort-jenkins-job):
+* [cms-prs-files](#cms-prs-files):
 
 **Sub-projects:**
 * [abort-jenkins-job](#abort-jenkins-job):
+* [cms-prs-files](#cms-prs-files):
 
 **Triggers from:** []
 
