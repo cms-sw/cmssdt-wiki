@@ -34,11 +34,12 @@ Will kill a scheduled/running job acording to comments.
 **Downstream projects:**
 * [abort-pr-tests](#abort-pr-tests):
 * [ib-schedule-pr-tests](#ib-schedule-pr-tests):
+* [run-pr-code-checks](#run-pr-code-checks):
 
 **Sub-projects:**
 * [ib-schedule-pr-tests](#ib-schedule-pr-tests):
 * [abort-pr-tests ](#abort-pr-tests ):
-* [run-pr-code-ckecks](#run-pr-code-ckecks):
+* [run-pr-code-checks](#run-pr-code-checks):
 
 **Triggers from:** []
 
@@ -356,6 +357,88 @@ Not periodically build
 * [ib-any-integration](#ib-any-integration):
 * [ib-any-integration-test-cmsdist-prs](#ib-any-integration-test-cmsdist-prs):
 * [ib-run-pr-tests](#ib-run-pr-tests):
+
+**Downstream projects:**
+
+**Sub-projects:**
+
+**Triggers from:** []
+
+
+**Periodic builds:**
+```bash
+Not periodically build
+```
+
+---
+
+## [run-pr-code-checks](https://cmssdt.cern.ch/jenkins/job/run-pr-code-checks)
+
+**Description:** This run "scram build code-checks" for a cmssw PR to find out if it comply with cmssw code checks.
+In a CMSSW dev area, it runs 
+  git cms-merge-topic -u PR
+  scram build code-checks
+
+**Project is `enabled`.**
+
+**Upstream projects:**
+* [cms-bot](#cms-bot):
+
+**Downstream projects:**
+* [abort-jenkins-job](#abort-jenkins-job):
+* [cms-prs-files](#cms-prs-files):
+
+**Sub-projects:**
+* [abort-jenkins-job](#abort-jenkins-job):
+* [cms-prs-files](#cms-prs-files):
+
+**Triggers from:** []
+
+
+**Periodic builds:**
+```bash
+Not periodically build
+```
+
+---
+
+## [abort-jenkins-job](https://cmssdt.cern.ch/jenkins/job/abort-jenkins-job)
+
+**Description:** Kill a running job (by default it is 'ib-any-integration'). 
+
+The idea is that if pull reguest was updated, all the test should be restarted. This job will kill all the running jobs for that
+PR and matching parameters. It will ignore given job ID - the ID of upstream job that started this job.
+
+**Project is `enabled`.**
+
+**Upstream projects:**
+* [Test_get_source_flag](#Test_get_source_flag):
+* [abort-pr-tests](#abort-pr-tests):
+* [run-pr-code-checks](#run-pr-code-checks):
+
+**Downstream projects:**
+
+**Sub-projects:**
+
+**Triggers from:** []
+
+
+**Periodic builds:**
+```bash
+Not periodically build
+```
+
+---
+
+## [cms-prs-files](https://cmssdt.cern.ch/jenkins/job/cms-prs-files)
+
+**Description:** On every CMSSW PR, this job dumps list of files that are going to be modified by open PRs to files_changed_by_prs.json .
+
+**Project is `enabled`.**
+
+**Upstream projects:**
+* [github-webhook](#github-webhook):
+* [run-pr-code-checks](#run-pr-code-checks):
 
 **Downstream projects:**
 
