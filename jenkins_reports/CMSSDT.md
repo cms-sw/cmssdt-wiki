@@ -430,7 +430,6 @@ Will kill a scheduled/running job acording to comments.
 **Downstream projects:**
 * [abort-pr-tests](#abort-pr-tests):
 * [ib-schedule-pr-tests](#ib-schedule-pr-tests):
-* [run-pr-code-checks](#run-pr-code-checks):
 
 **Sub-projects:**
 * [ib-schedule-pr-tests](#ib-schedule-pr-tests):
@@ -2627,7 +2626,6 @@ In a CMSSW dev area, it runs
 **Project is `enabled`.**
 
 **Upstream projects:**
-* [cms-bot](#cms-bot):
 
 **Downstream projects:**
 * [abort-jenkins-job](#abort-jenkins-job):
