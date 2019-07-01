@@ -34,7 +34,7 @@ Will kill a scheduled/running job acording to comments.
 **Downstream projects:**
 * [abort-pr-tests](#abort-pr-tests):
 * [ib-schedule-pr-tests](#ib-schedule-pr-tests):
-* [run-pr-code-ckecks](#run-pr-code-ckecks):
+* [run-pr-code-checks](#run-pr-code-checks):
 
 **Sub-projects:**
 * [ib-schedule-pr-tests](#ib-schedule-pr-tests):
@@ -91,7 +91,7 @@ PR and matching parameters. It will ignore given job ID - the ID of upstream job
 **Upstream projects:**
 * [Test_get_source_flag](#Test_get_source_flag):
 * [abort-pr-tests](#abort-pr-tests):
-* [run-pr-code-ckecks](#run-pr-code-ckecks):
+* [run-pr-code-checks](#run-pr-code-checks):
 
 **Downstream projects:**
 
@@ -219,7 +219,7 @@ PR and matching parameters. It will ignore given job ID - the ID of upstream job
 **Upstream projects:**
 * [Test_get_source_flag](#Test_get_source_flag):
 * [abort-pr-tests](#abort-pr-tests):
-* [run-pr-code-ckecks](#run-pr-code-ckecks):
+* [run-pr-code-checks](#run-pr-code-checks):
 
 **Downstream projects:**
 
@@ -331,7 +331,7 @@ PR and matching parameters. It will ignore given job ID - the ID of upstream job
 **Upstream projects:**
 * [Test_get_source_flag](#Test_get_source_flag):
 * [abort-pr-tests](#abort-pr-tests):
-* [run-pr-code-ckecks](#run-pr-code-ckecks):
+* [run-pr-code-checks](#run-pr-code-checks):
 
 **Downstream projects:**
 
@@ -372,7 +372,7 @@ Not periodically build
 
 ---
 
-## [run-pr-code-ckecks](https://cmssdt.cern.ch/jenkins/job/run-pr-code-ckecks)
+## [run-pr-code-checks](https://cmssdt.cern.ch/jenkins/job/run-pr-code-checks)
 
 **Description:** This run "scram build code-checks" for a cmssw PR to find out if it comply with cmssw code checks.
 In a CMSSW dev area, it runs 
@@ -414,7 +414,7 @@ PR and matching parameters. It will ignore given job ID - the ID of upstream job
 **Upstream projects:**
 * [Test_get_source_flag](#Test_get_source_flag):
 * [abort-pr-tests](#abort-pr-tests):
-* [run-pr-code-ckecks](#run-pr-code-ckecks):
+* [run-pr-code-checks](#run-pr-code-checks):
 
 **Downstream projects:**
 
@@ -438,7 +438,7 @@ Not periodically build
 
 **Upstream projects:**
 * [github-webhook](#github-webhook):
-* [run-pr-code-ckecks](#run-pr-code-ckecks):
+* [run-pr-code-checks](#run-pr-code-checks):
 
 **Downstream projects:**
 
