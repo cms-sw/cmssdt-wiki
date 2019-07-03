@@ -162,9 +162,11 @@ TODO: needs to check if manuall deletion is working.
 
 **Downstream projects:**
 * [grid-shutdown-node](#grid-shutdown-node):
+* [jenkins-delete-node](#jenkins-delete-node):
 
 **Sub-projects:**
 * [grid-shutdown-node](#grid-shutdown-node):
+* [jenkins-delete-node](#jenkins-delete-node):
 
 **Triggers from:** []
 
