@@ -150,7 +150,9 @@ H/2 * * * *
 
 ## [grid-shutdown-node](https://cmssdt.cern.ch/jenkins/job/grid-shutdown-node)
 
-**Description:** None
+**Description:** shutdowns condor job.
+
+TODO: needs to check if manuall deletion is working.
 
 **Project is `enabled`.**
 
