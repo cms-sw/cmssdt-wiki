@@ -4370,7 +4370,7 @@ Not periodically build
 
 ## [reindex-elasticsearch-indexes](https://cmssdt.cern.ch/jenkins/job/reindex-elasticsearch-indexes)
 
-**Description:** None
+**Description:** Job to reindex existing indexes whenever the template schema is changed or for whatever other reason
 
 **Project is `enabled`.**
 
