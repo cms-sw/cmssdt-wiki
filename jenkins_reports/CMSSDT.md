@@ -2554,6 +2554,7 @@ Not periodically build
 
 **Description:** Job to reindex existing indexes whenever the template schema is changed or for whatever other reason
 
+
 **Project is `enabled`.**
 
 **Upstream projects:**
