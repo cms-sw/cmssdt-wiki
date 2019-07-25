@@ -1868,10 +1868,12 @@ Not periodically build
 **Upstream projects:**
 
 **Downstream projects:**
+* [jenkins-auto-node-scheduler](#jenkins-auto-node-scheduler):
 * [jenkins-kill-job](#jenkins-kill-job):
 
 **Sub-projects:**
 * [jenkins-kill-job](#jenkins-kill-job):
+* [jenkins-auto-node-scheduler](#jenkins-auto-node-scheduler):
 
 **Triggers from:** []
 
@@ -2989,6 +2991,30 @@ We need to make a initial connection to the slave to get its labels assigned.
 **Periodic builds:**
 ```bash
 H * * * *
+```
+
+---
+
+## [jenkins-auto-node-scheduler](https://cmssdt.cern.ch/jenkins/job/jenkins-auto-node-scheduler)
+
+**Description:** None
+
+**Project is `enabled`.**
+
+**Upstream projects:**
+* [grid-make-node-available](#grid-make-node-available):
+
+**Downstream projects:**
+
+**Sub-projects:**
+* [${AUTO_NODE_JOB_NAME}](#${AUTO_NODE_JOB_NAME}):
+
+**Triggers from:** []
+
+
+**Periodic builds:**
+```bash
+Not periodically build
 ```
 
 ---
