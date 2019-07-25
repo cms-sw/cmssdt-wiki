@@ -919,6 +919,29 @@ Not periodically build
 
 ---
 
+## [jenkins-trigger-dynamic-job](https://cmssdt.cern.ch/jenkins/job/jenkins-trigger-dynamic-job)
+
+**Description:** None
+
+**Project is `enabled`.**
+
+**Upstream projects:**
+
+**Downstream projects:**
+
+**Sub-projects:**
+* [${JENKINS_DYNAMIC_JOB_NAME}](#${JENKINS_DYNAMIC_JOB_NAME}):
+
+**Triggers from:** []
+
+
+**Periodic builds:**
+```bash
+Not periodically build
+```
+
+---
+
 ## [jenkins-webhook](https://cmssdt.cern.ch/jenkins/job/jenkins-webhook)
 
 **Description:** None
