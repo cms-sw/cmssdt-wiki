@@ -3839,7 +3839,7 @@ Not periodically build
 
 **Description:** None
 
-**Project is `disabled`.**
+**Project is `enabled`.**
 
 **Upstream projects:**
 * [grid-make-node-available](#grid-make-node-available):
