@@ -1868,12 +1868,12 @@ Not periodically build
 **Upstream projects:**
 
 **Downstream projects:**
-* [jenkins-auto-node-scheduler](#jenkins-auto-node-scheduler):
 * [jenkins-kill-job](#jenkins-kill-job):
+* [jenkins-trigger-dynamic-job](#jenkins-trigger-dynamic-job):
 
 **Sub-projects:**
 * [jenkins-kill-job](#jenkins-kill-job):
-* [jenkins-auto-node-scheduler](#jenkins-auto-node-scheduler):
+* [jenkins-trigger-dynamic-job](#jenkins-trigger-dynamic-job):
 
 **Triggers from:** []
 
@@ -2995,30 +2995,6 @@ H * * * *
 
 ---
 
-## [jenkins-auto-node-scheduler](https://cmssdt.cern.ch/jenkins/job/jenkins-auto-node-scheduler)
-
-**Description:** None
-
-**Project is `enabled`.**
-
-**Upstream projects:**
-* [grid-make-node-available](#grid-make-node-available):
-
-**Downstream projects:**
-
-**Sub-projects:**
-* [${AUTO_NODE_JOB_NAME}](#${AUTO_NODE_JOB_NAME}):
-
-**Triggers from:** []
-
-
-**Periodic builds:**
-```bash
-Not periodically build
-```
-
----
-
 ## [jenkins-backup](https://cmssdt.cern.ch/jenkins/job/jenkins-backup)
 
 **Description:** This job takes the backup of Jenkins master configuration (which includes projects, jenkins configuration, slaves, secrets etc.)
@@ -3866,6 +3842,7 @@ Not periodically build
 **Project is `enabled`.**
 
 **Upstream projects:**
+* [grid-make-node-available](#grid-make-node-available):
 
 **Downstream projects:**
 

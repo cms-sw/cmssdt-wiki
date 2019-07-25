@@ -133,12 +133,12 @@ Not periodically build
 **Upstream projects:**
 
 **Downstream projects:**
-* [jenkins-auto-node-scheduler](#jenkins-auto-node-scheduler):
 * [jenkins-kill-job](#jenkins-kill-job):
+* [jenkins-trigger-dynamic-job](#jenkins-trigger-dynamic-job):
 
 **Sub-projects:**
 * [jenkins-kill-job](#jenkins-kill-job):
-* [jenkins-auto-node-scheduler](#jenkins-auto-node-scheduler):
+* [jenkins-trigger-dynamic-job](#jenkins-trigger-dynamic-job):
 
 **Triggers from:** []
 
