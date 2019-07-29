@@ -1795,7 +1795,7 @@ H/10 * * * *
 
 **Description:** None
 
-**Project is `disabled`.**
+**Project is `enabled`.**
 
 **Upstream projects:**
 
