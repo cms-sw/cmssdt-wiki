@@ -13,7 +13,7 @@
 **Description:** Processes a github issue to check if it is requesting the build of a new release.
 If the issue is not requesting any release, it ignores it. 
 
-**Project is `enabled`.**
+**Project is `disabled`.**
 
 **Upstream projects:**
 * [github-webhook](#github-webhook):
