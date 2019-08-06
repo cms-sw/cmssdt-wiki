@@ -1065,7 +1065,7 @@ We do not care about older data. By doing it we make Elasticsearch faster.
 
 **Periodic builds:**
 ```bash
-H 0  * *  0
+Not periodically build
 ```
 
 ---
