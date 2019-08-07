@@ -2516,6 +2516,40 @@ H/20 * * * *
 
 ---
 
+## [query-build-release-issues](https://cmssdt.cern.ch/jenkins/job/query-build-release-issues)
+
+**Description:** Processes a github issue to check if it is requesting the build of a new release.
+If the issue is not requesting any release, it ignores it. 
+
+**Project is `enabled`.**
+
+**Upstream projects:**
+* [github-webhook](#github-webhook):
+
+**Downstream projects:**
+* [abort-release](#abort-release):
+* [build-release](#build-release):
+* [cleanup-auto-build](#cleanup-auto-build):
+* [release-produce-changelog](#release-produce-changelog):
+* [upload-release-setup](#upload-release-setup):
+
+**Sub-projects:**
+* [build-release](#build-release):
+* [upload-release-setup](#upload-release-setup):
+* [cleanup-auto-build](#cleanup-auto-build):
+* [release-produce-changelog](#release-produce-changelog):
+* [abort-release](#abort-release):
+
+**Triggers from:** []
+
+
+**Periodic builds:**
+```bash
+H/15 * * * *
+```
+
+---
+
 ## [refresh-cmssdt](https://cmssdt.cern.ch/jenkins/job/refresh-cmssdt)
 
 **Description:** This job updates the cmssw IB page on cmssdt.
