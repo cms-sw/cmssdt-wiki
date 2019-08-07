@@ -4716,7 +4716,7 @@ as deploys on the web server. It is used to generate <a href="https://cmssdt.cer
   </li>
 </ul>
 
-**Project is `enabled`.**
+**Project is `disabled`.**
 
 **Upstream projects:**
 * [update-github-pages](#update-github-pages):
