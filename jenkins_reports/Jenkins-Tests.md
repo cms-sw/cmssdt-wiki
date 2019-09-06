@@ -284,7 +284,7 @@ Not periodically build
 
 **Periodic builds:**
 ```bash
-H/10 * * * *
+Not periodically build
 ```
 
 ---
