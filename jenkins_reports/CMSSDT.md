@@ -111,45 +111,6 @@ Not periodically build
 
 ---
 
-## [auto-forward-ports](https://cmssdt.cern.ch/jenkins/job/auto-forward-ports)
-
-**Description:** This is triggered by github webhook for each cmssw/cmsdist branch merge event.
-this forward port changes from source branch to target branch. Mapping between soruce and destination branches are available in cms-bot.
-
-<ul>
-  <li>
-    <b>Q:</b> Job failed do to merge conflict.
-  </li>
-  <li>
-    <b>A:</b> It comonly fails when merging diferences on `root.spec` files. 
-    If we known that we want to keep our changes on merge conflict, we can a) manually run
-    `auto-update-git-branches` with `-X ours` option and push changes, b) re-run job with 
-    KEEP_OURS value set to True.<br>
-    Due only when we are sure about changes. Otherwise, you have to resolve merge 
-    conflict manually.
-    
-  </li>
-</ul>
-
-**Project is `enabled`.**
-
-**Upstream projects:**
-* [github-push-hook](#github-push-hook):
-
-**Downstream projects:**
-
-**Sub-projects:**
-
-**Triggers from:** []
-
-
-**Periodic builds:**
-```bash
-Not periodically build
-```
-
----
-
 ## [backport-pull-request](https://cmssdt.cern.ch/jenkins/job/backport-pull-request)
 
 **Description:** Manually executed job for backporting pull requests given the repo name, the branch for which the PR should be created and the PR to be backported
