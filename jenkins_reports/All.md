@@ -131,7 +131,7 @@ this forward port changes from source branch to target branch. Mapping between s
   </li>
 </ul>
 
-**Project is `disabled`.**
+**Project is `enabled`.**
 
 **Upstream projects:**
 * [github-push-hook](#github-push-hook):
