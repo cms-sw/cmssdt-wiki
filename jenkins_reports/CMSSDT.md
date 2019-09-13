@@ -44,7 +44,6 @@ Not periodically build
 
 **Upstream projects:**
 * [cms-bot](#cms-bot):
-* [ib-any-integration](#ib-any-integration):
 * [ib-run-pr-tests](#ib-run-pr-tests):
 
 **Downstream projects:**
@@ -705,7 +704,6 @@ Not periodically build
 **Project is `enabled`.**
 
 **Upstream projects:**
-* [ib-any-integration](#ib-any-integration):
 * [ib-run-pr-tests](#ib-run-pr-tests):
 
 **Downstream projects:**
@@ -2012,11 +2010,9 @@ Not periodically build
 * [cms-bot](#cms-bot):
 
 **Downstream projects:**
-* [ib-any-integration](#ib-any-integration):
 * [ib-run-pr-tests](#ib-run-pr-tests):
 
 **Sub-projects:**
-* [ib-any-integration](#ib-any-integration):
 * [ib-run-pr-tests](#ib-run-pr-tests):
 
 **Triggers from:** []

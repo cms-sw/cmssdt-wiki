@@ -59,7 +59,6 @@ Not periodically build
 
 **Upstream projects:**
 * [cms-bot](#cms-bot):
-* [ib-any-integration](#ib-any-integration):
 * [ib-run-pr-tests](#ib-run-pr-tests):
 
 **Downstream projects:**
@@ -116,136 +115,10 @@ Not periodically build
 * [cms-bot](#cms-bot):
 
 **Downstream projects:**
-* [ib-any-integration](#ib-any-integration):
 * [ib-run-pr-tests](#ib-run-pr-tests):
 
 **Sub-projects:**
-* [ib-any-integration](#ib-any-integration):
 * [ib-run-pr-tests](#ib-run-pr-tests):
-
-**Triggers from:** []
-
-
-**Periodic builds:**
-```bash
-Not periodically build
-```
-
----
-
-## [ib-any-integration](https://cmssdt.cern.ch/jenkins/job/ib-any-integration)
-
-**Description:** This job will take pull request and merged it to branch, then build an IB and run selected tests.
-It will upload results online and comment back to PR the tests results. 
-
-
-<br>
-<br>
-
-<b>Q/a:</b>
-
-<ul>
-  <li>
-    Q: git error - "error: switch `b' requires a value" 
-  </li>  
-  <li>
-    A: It happened to a job in  a form of `PR cmssw#24237 cmsdist#4249` when `cmssw#24237` was a back port 
-    to 10_2 from 10_3, but there was no related pull request on cmsdist 10_2 branch (cmssw#24237 was 
-    a pull request on branch 10_3). Solved creating back port on cmsdist manually. 
-  </li>
-</ul>
-
-**Project is `disabled`.**
-
-**Upstream projects:**
-* [ib-schedule-pr-tests](#ib-schedule-pr-tests):
-
-**Downstream projects:**
-* [abort-pr-tests](#abort-pr-tests):
-* [compare-root-files-short-matrix](#compare-root-files-short-matrix):
-
-**Sub-projects:**
-* [abort-pr-tests](#abort-pr-tests):
-* [compare-root-files-short-matrix](#compare-root-files-short-matrix):
-
-**Triggers from:** []
-
-
-**Periodic builds:**
-```bash
-Not periodically build
-```
-
----
-
-## [abort-pr-tests](https://cmssdt.cern.ch/jenkins/job/abort-pr-tests)
-
-**Description:** None
-
-**Project is `enabled`.**
-
-**Upstream projects:**
-* [cms-bot](#cms-bot):
-* [ib-any-integration](#ib-any-integration):
-* [ib-run-pr-tests](#ib-run-pr-tests):
-
-**Downstream projects:**
-* [abort-jenkins-job](#abort-jenkins-job):
-
-**Sub-projects:**
-* [abort-jenkins-job](#abort-jenkins-job):
-
-**Triggers from:** []
-
-
-**Periodic builds:**
-```bash
-Not periodically build
-```
-
----
-
-## [abort-jenkins-job](https://cmssdt.cern.ch/jenkins/job/abort-jenkins-job)
-
-**Description:** Kill a running job (by default it is 'ib-any-integration'). 
-
-The idea is that if pull reguest was updated, all the test should be restarted. This job will kill all the running jobs for that
-PR and matching parameters. It will ignore given job ID - the ID of upstream job that started this job.
-
-**Project is `enabled`.**
-
-**Upstream projects:**
-* [Test_get_source_flag](#Test_get_source_flag):
-* [abort-pr-tests](#abort-pr-tests):
-* [run-pr-code-checks](#run-pr-code-checks):
-
-**Downstream projects:**
-
-**Sub-projects:**
-
-**Triggers from:** []
-
-
-**Periodic builds:**
-```bash
-Not periodically build
-```
-
----
-
-## [compare-root-files-short-matrix](https://cmssdt.cern.ch/jenkins/job/compare-root-files-short-matrix)
-
-**Description:** Download the files of the baseline IB and compare them with the results of the ones of a pull request
-
-**Project is `enabled`.**
-
-**Upstream projects:**
-* [ib-any-integration](#ib-any-integration):
-* [ib-run-pr-tests](#ib-run-pr-tests):
-
-**Downstream projects:**
-
-**Sub-projects:**
 
 **Triggers from:** []
 
@@ -296,7 +169,6 @@ Not periodically build
 
 **Upstream projects:**
 * [cms-bot](#cms-bot):
-* [ib-any-integration](#ib-any-integration):
 * [ib-run-pr-tests](#ib-run-pr-tests):
 
 **Downstream projects:**
@@ -350,7 +222,6 @@ Not periodically build
 **Project is `enabled`.**
 
 **Upstream projects:**
-* [ib-any-integration](#ib-any-integration):
 * [ib-run-pr-tests](#ib-run-pr-tests):
 
 **Downstream projects:**
