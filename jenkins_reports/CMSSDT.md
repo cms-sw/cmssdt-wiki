@@ -45,7 +45,6 @@ Not periodically build
 **Upstream projects:**
 * [cms-bot](#cms-bot):
 * [ib-any-integration](#ib-any-integration):
-* [ib-any-integration-test-cmsdist-prs](#ib-any-integration-test-cmsdist-prs):
 * [ib-run-pr-tests](#ib-run-pr-tests):
 
 **Downstream projects:**
@@ -707,7 +706,6 @@ Not periodically build
 
 **Upstream projects:**
 * [ib-any-integration](#ib-any-integration):
-* [ib-any-integration-test-cmsdist-prs](#ib-any-integration-test-cmsdist-prs):
 * [ib-run-pr-tests](#ib-run-pr-tests):
 
 **Downstream projects:**
@@ -1362,51 +1360,6 @@ Not periodically build
 
 ---
 
-## [ib-any-integration-test-cmsdist-prs](https://cmssdt.cern.ch/jenkins/job/ib-any-integration-test-cmsdist-prs)
-
-**Description:** This job will take pull request and merged it to branch, then build an IB and run selected tests.
-It will upload results online and comment back to PR the tests results. 
-
-
-<br>
-<br>
-
-<b>Q/a:</b>
-
-<ul>
-  <li>
-    Q: git error - "error: switch `b' requires a value" 
-  </li>  
-  <li>
-    A: It happened to a job in  a form of `PR cmssw#24237 cmsdist#4249` when `cmssw#24237` was a back port 
-    to 10_2 from 10_3, but there was no related pull request on cmsdist 10_2 branch (cmssw#24237 was 
-    a pull request on branch 10_3). Solved creating back port on cmsdist manually. 
-  </li>
-</ul>
-
-**Project is `enabled`.**
-
-**Upstream projects:**
-* [ib-schedule-extra-tests](#ib-schedule-extra-tests):
-
-**Downstream projects:**
-* [abort-pr-tests](#abort-pr-tests):
-* [compare-root-files-short-matrix](#compare-root-files-short-matrix):
-
-**Sub-projects:**
-* [abort-pr-tests](#abort-pr-tests):
-* [compare-root-files-short-matrix](#compare-root-files-short-matrix):
-
-**Triggers from:** []
-
-
-**Periodic builds:**
-```bash
-Not periodically build
-```
-
----
-
 ## [ib-build-logs](https://cmssdt.cern.ch/jenkins/job/ib-build-logs)
 
 **Description:** It is build periodically (H/30 * * * *). Runs on cmssdt. Projects to build: update-github-pages
@@ -2036,10 +1989,8 @@ Not periodically build
 **Upstream projects:**
 
 **Downstream projects:**
-* [ib-any-integration-test-cmsdist-prs](#ib-any-integration-test-cmsdist-prs):
 
 **Sub-projects:**
-* [ib-any-integration-test-cmsdist-prs](#ib-any-integration-test-cmsdist-prs):
 
 **Triggers from:** []
 
