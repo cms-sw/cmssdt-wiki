@@ -2224,6 +2224,30 @@ Not periodically build
 
 ---
 
+## [lxr-check](https://cmssdt.cern.ch/jenkins/job/lxr-check)
+
+**Description:** This job checks if https://cmssdt.cern.ch/lxr/ is acessable and if not, starts <a href="https://cmssdt.cern.ch/jenkins/view/All/job/lxr-run-container/">lxr-run-container<a/> job to restart the service.
+
+**Project is `enabled`.**
+
+**Upstream projects:**
+
+**Downstream projects:**
+* [lxr-run-container](#lxr-run-container):
+
+**Sub-projects:**
+* [lxr-run-container](#lxr-run-container):
+
+**Triggers from:** []
+
+
+**Periodic builds:**
+```bash
+H/20 * * * *
+```
+
+---
+
 ## [lxr-checkout-version](https://cmssdt.cern.ch/jenkins/job/lxr-checkout-version)
 
 **Description:** This job sets modification timestamp of CMSSW source code according to commit history before 
@@ -3184,11 +3208,9 @@ Not periodically build
 * [upload-release-setup](#upload-release-setup):
 
 **Downstream projects:**
-* [release-deploy-afs](#release-deploy-afs):
 * [update-release-map](#update-release-map):
 
 **Sub-projects:**
-* [release-deploy-afs](#release-deploy-afs):
 * [update-release-map](#update-release-map):
 
 **Triggers from:** []

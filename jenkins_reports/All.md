@@ -3786,7 +3786,7 @@ Not periodically build
 
 **Description:** This job checks if https://cmssdt.cern.ch/lxr/ is acessable and if not, starts <a href="https://cmssdt.cern.ch/jenkins/view/All/job/lxr-run-container/">lxr-run-container<a/> job to restart the service.
 
-**Project is `disabled`.**
+**Project is `enabled`.**
 
 **Upstream projects:**
 
@@ -3801,7 +3801,7 @@ Not periodically build
 
 **Periodic builds:**
 ```bash
-H/5 * * * *
+H/20 * * * *
 ```
 
 ---
@@ -4254,30 +4254,6 @@ Not periodically build
 
 ---
 
-## [release-deploy-afs](https://cmssdt.cern.ch/jenkins/job/release-deploy-afs)
-
-**Description:** This job deploys a release on AFS.
-Job is disabled since we are moving from AFS.
-
-**Project is `disabled`.**
-
-**Upstream projects:**
-* [upload-release](#upload-release):
-
-**Downstream projects:**
-
-**Sub-projects:**
-
-**Triggers from:** []
-
-
-**Periodic builds:**
-```bash
-Not periodically build
-```
-
----
-
 ## [release-produce-changelog](https://cmssdt.cern.ch/jenkins/job/release-produce-changelog)
 
 **Description:** Posts a message in the github issue that triggered the build. Structure of the message depends on the option used.
@@ -4300,28 +4276,6 @@ Not periodically build
 **Periodic builds:**
 ```bash
 Not periodically build
-```
-
----
-
-## [rpm-repository-backup](https://cmssdt.cern.ch/jenkins/job/rpm-repository-backup)
-
-**Description:** Backs-up cmsrep
-
-**Project is `disabled`.**
-
-**Upstream projects:**
-
-**Downstream projects:**
-
-**Sub-projects:**
-
-**Triggers from:** []
-
-
-**Periodic builds:**
-```bash
-H 0 * * *
 ```
 
 ---
@@ -4828,28 +4782,6 @@ Not periodically build
 
 ---
 
-## [update-externals-mirrors](https://cmssdt.cern.ch/jenkins/job/update-externals-mirrors)
-
-**Description:** Update some of the externals mirror and setup a cms specific branch so that updates can be proposed there. 
-
-**Project is `disabled`.**
-
-**Upstream projects:**
-
-**Downstream projects:**
-
-**Sub-projects:**
-
-**Triggers from:** []
-
-
-**Periodic builds:**
-```bash
-0 0 * * *
-```
-
----
-
 ## [update-github-pages](https://cmssdt.cern.ch/jenkins/job/update-github-pages)
 
 **Description:** This job update contents of the "data" directory in cms-sw.github.io
@@ -4985,11 +4917,9 @@ Not periodically build
 * [upload-release-setup](#upload-release-setup):
 
 **Downstream projects:**
-* [release-deploy-afs](#release-deploy-afs):
 * [update-release-map](#update-release-map):
 
 **Sub-projects:**
-* [release-deploy-afs](#release-deploy-afs):
 * [update-release-map](#update-release-map):
 
 **Triggers from:** []

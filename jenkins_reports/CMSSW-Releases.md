@@ -220,36 +220,10 @@ Not periodically build
 * [upload-release-setup](#upload-release-setup):
 
 **Downstream projects:**
-* [release-deploy-afs](#release-deploy-afs):
 * [update-release-map](#update-release-map):
 
 **Sub-projects:**
-* [release-deploy-afs](#release-deploy-afs):
 * [update-release-map](#update-release-map):
-
-**Triggers from:** []
-
-
-**Periodic builds:**
-```bash
-Not periodically build
-```
-
----
-
-## [release-deploy-afs](https://cmssdt.cern.ch/jenkins/job/release-deploy-afs)
-
-**Description:** This job deploys a release on AFS.
-Job is disabled since we are moving from AFS.
-
-**Project is `disabled`.**
-
-**Upstream projects:**
-* [upload-release](#upload-release):
-
-**Downstream projects:**
-
-**Sub-projects:**
 
 **Triggers from:** []
 
