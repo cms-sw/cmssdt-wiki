@@ -1448,28 +1448,6 @@ Not periodically build
 
 ---
 
-## [external-deploy-afs](https://cmssdt.cern.ch/jenkins/job/external-deploy-afs)
-
-**Description:** This job deployes any external tool on afs that is required. 
-
-**Project is `disabled`.**
-
-**Upstream projects:**
-
-**Downstream projects:**
-
-**Sub-projects:**
-
-**Triggers from:** []
-
-
-**Periodic builds:**
-```bash
-Not periodically build
-```
-
----
-
 ## [fix-backport-prs](https://cmssdt.cern.ch/jenkins/job/fix-backport-prs)
 
 **Description:** Periodicaly runs https://github.com/cms-sw/cms-bot/blob/master/fix-backport-labels.py to check if the PR on master, which backport has been requested, is merged.
@@ -2050,28 +2028,6 @@ H/30 * * * *
 **Periodic builds:**
 ```bash
 H 10,22 * * *
-```
-
----
-
-## [ib-cleanup-installers](https://cmssdt.cern.ch/jenkins/job/ib-cleanup-installers)
-
-**Description:** Cron job for log rotation on installer nodes. (clean up obsolete weeks)
-
-**Project is `disabled`.**
-
-**Upstream projects:**
-
-**Downstream projects:**
-
-**Sub-projects:**
-
-**Triggers from:** []
-
-
-**Periodic builds:**
-```bash
-H 22 * * *
 ```
 
 ---
@@ -2692,28 +2648,6 @@ Not periodically build
 
 ---
 
-## [ib-schedule-extra-tests](https://cmssdt.cern.ch/jenkins/job/ib-schedule-extra-tests)
-
-**Description:** Schedule extra tests
-
-**Project is `enabled`.**
-
-**Upstream projects:**
-
-**Downstream projects:**
-
-**Sub-projects:**
-
-**Triggers from:** []
-
-
-**Periodic builds:**
-```bash
-Not periodically build
-```
-
----
-
 ## [ib-schedule-pr-tests](https://cmssdt.cern.ch/jenkins/job/ib-schedule-pr-tests)
 
 **Description:** Build a pull request
@@ -3012,28 +2946,6 @@ for faster access to CMs internal jenkns servers
 **Periodic builds:**
 ```bash
 H * * * *
-```
-
----
-
-## [jenkins-dummy-job](https://cmssdt.cern.ch/jenkins/job/jenkins-dummy-job)
-
-**Description:** None
-
-**Project is `enabled`.**
-
-**Upstream projects:**
-
-**Downstream projects:**
-
-**Sub-projects:**
-
-**Triggers from:** []
-
-
-**Periodic builds:**
-```bash
-Not periodically build
 ```
 
 ---

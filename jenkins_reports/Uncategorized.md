@@ -8,28 +8,6 @@
 
 # Projects:
 
-## [ib-cleanup-installers](https://cmssdt.cern.ch/jenkins/job/ib-cleanup-installers)
-
-**Description:** Cron job for log rotation on installer nodes. (clean up obsolete weeks)
-
-**Project is `disabled`.**
-
-**Upstream projects:**
-
-**Downstream projects:**
-
-**Sub-projects:**
-
-**Triggers from:** []
-
-
-**Periodic builds:**
-```bash
-H 22 * * *
-```
-
----
-
 ## [ib-cvmfs-publish](https://cmssdt.cern.ch/jenkins/job/ib-cvmfs-publish)
 
 **Description:** This jobs copies IBs installation for an arch from another machine and publish it to cvmfs
@@ -97,11 +75,11 @@ H 0 * * *
 
 ---
 
-## [external-deploy-afs](https://cmssdt.cern.ch/jenkins/job/external-deploy-afs)
+## [slc6](https://cmssdt.cern.ch/jenkins/job/slc6)
 
-**Description:** This job deployes any external tool on afs that is required. 
+**Description:** None
 
-**Project is `disabled`.**
+**Project is `enabled`.**
 
 **Upstream projects:**
 
@@ -181,28 +159,6 @@ Not periodically build
 **Periodic builds:**
 ```bash
 0 0 * * *
-```
-
----
-
-## [slc6](https://cmssdt.cern.ch/jenkins/job/slc6)
-
-**Description:** None
-
-**Project is `enabled`.**
-
-**Upstream projects:**
-
-**Downstream projects:**
-
-**Sub-projects:**
-
-**Triggers from:** []
-
-
-**Periodic builds:**
-```bash
-Not periodically build
 ```
 
 ---

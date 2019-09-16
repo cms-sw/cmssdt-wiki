@@ -1978,28 +1978,6 @@ Not periodically build
 
 ---
 
-## [ib-schedule-extra-tests](https://cmssdt.cern.ch/jenkins/job/ib-schedule-extra-tests)
-
-**Description:** Schedule extra tests
-
-**Project is `enabled`.**
-
-**Upstream projects:**
-
-**Downstream projects:**
-
-**Sub-projects:**
-
-**Triggers from:** []
-
-
-**Periodic builds:**
-```bash
-Not periodically build
-```
-
----
-
 ## [ib-schedule-pr-tests](https://cmssdt.cern.ch/jenkins/job/ib-schedule-pr-tests)
 
 **Description:** Build a pull request
