@@ -87,7 +87,6 @@ PR and matching parameters. It will ignore given job ID - the ID of upstream job
 **Project is `enabled`.**
 
 **Upstream projects:**
-* [Test_get_source_flag](#Test_get_source_flag):
 * [abort-pr-tests](#abort-pr-tests):
 * [run-pr-code-checks](#run-pr-code-checks):
 
@@ -197,7 +196,6 @@ PR and matching parameters. It will ignore given job ID - the ID of upstream job
 **Project is `enabled`.**
 
 **Upstream projects:**
-* [Test_get_source_flag](#Test_get_source_flag):
 * [abort-pr-tests](#abort-pr-tests):
 * [run-pr-code-checks](#run-pr-code-checks):
 
@@ -278,7 +276,6 @@ PR and matching parameters. It will ignore given job ID - the ID of upstream job
 **Project is `enabled`.**
 
 **Upstream projects:**
-* [Test_get_source_flag](#Test_get_source_flag):
 * [abort-pr-tests](#abort-pr-tests):
 * [run-pr-code-checks](#run-pr-code-checks):
 

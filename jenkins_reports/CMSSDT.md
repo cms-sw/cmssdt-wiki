@@ -18,7 +18,6 @@ PR and matching parameters. It will ignore given job ID - the ID of upstream job
 **Project is `enabled`.**
 
 **Upstream projects:**
-* [Test_get_source_flag](#Test_get_source_flag):
 * [abort-pr-tests](#abort-pr-tests):
 * [run-pr-code-checks](#run-pr-code-checks):
 
@@ -2942,32 +2941,6 @@ Not periodically build
 **Downstream projects:**
 
 **Sub-projects:**
-
-**Triggers from:** []
-
-
-**Periodic builds:**
-```bash
-Not periodically build
-```
-
----
-
-## [Test_get_source_flag](https://cmssdt.cern.ch/jenkins/job/Test_get_source_flag)
-
-**Description:** <b>Test_get_source_flag</b> 
-
-Test job
-
-**Project is `enabled`.**
-
-**Upstream projects:**
-
-**Downstream projects:**
-* [abort-jenkins-job](#abort-jenkins-job):
-
-**Sub-projects:**
-* [abort-jenkins-job](#abort-jenkins-job):
 
 **Triggers from:** []
 
