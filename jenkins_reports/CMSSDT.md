@@ -2495,40 +2495,6 @@ Not periodically build
 
 ---
 
-## [run-repo-size-check](https://cmssdt.cern.ch/jenkins/job/run-repo-size-check)
-
-**Description:** This job was supposed to tell how much repository size increases
-if a pull request is merged. However, it is not properly working 
-since:
-
-<ul>
-  <li> Not all information is available about pull request </li>
-  <li> After merging, repo size is smaller do internal Github 
-    optimization</li>
-</ul> 
-
-A solution would be to make a test branch, merge pul request there, 
-push to Github and pull again to read the size. 
-
-
-**Project is `enabled`.**
-
-**Upstream projects:**
-
-**Downstream projects:**
-
-**Sub-projects:**
-
-**Triggers from:** []
-
-
-**Periodic builds:**
-```bash
-Not periodically build
-```
-
----
-
 ## [schedule-docker-build](https://cmssdt.cern.ch/jenkins/job/schedule-docker-build)
 
 **Description:** A glue job to connect github-webhook with build-container. 
@@ -2675,74 +2641,6 @@ H/15 * * * *
 
 **Upstream projects:**
 * [slaves-checks](#slaves-checks):
-
-**Downstream projects:**
-
-**Sub-projects:**
-
-**Triggers from:** []
-
-
-**Periodic builds:**
-```bash
-Not periodically build
-```
-
----
-
-## [test-dqm-upload](https://cmssdt.cern.ch/jenkins/job/test-dqm-upload)
-
-**Description:** None
-
-**Project is `enabled`.**
-
-**Upstream projects:**
-
-**Downstream projects:**
-
-**Sub-projects:**
-
-**Triggers from:** []
-
-
-**Periodic builds:**
-```bash
-Not periodically build
-```
-
----
-
-## [test-kerberos-within-docker](https://cmssdt.cern.ch/jenkins/job/test-kerberos-within-docker)
-
-**Description:** This job tests the the kerberos auth existence and its behaviour when ran from docker image. It first sets the env
-var KRB5CC inside the image to point to the ticket within /tmp. Then adds few commands in a script
-and runs the script with docker to check the behaviour
-
-**Project is `enabled`.**
-
-**Upstream projects:**
-
-**Downstream projects:**
-
-**Sub-projects:**
-
-**Triggers from:** []
-
-
-**Periodic builds:**
-```bash
-Not periodically build
-```
-
----
-
-## [test-lxplus-future](https://cmssdt.cern.ch/jenkins/job/test-lxplus-future)
-
-**Description:** None
-
-**Project is `enabled`.**
-
-**Upstream projects:**
 
 **Downstream projects:**
 
