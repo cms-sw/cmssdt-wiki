@@ -466,28 +466,6 @@ Not periodically build
 
 ---
 
-## [cms-dockerhub](https://cmssdt.cern.ch/jenkins/job/cms-dockerhub)
-
-**Description:** This job creates docker image with CMSSW and push it to the dockerhub. It also uploads dockerfile to github.
-
-**Project is `enabled`.**
-
-**Upstream projects:**
-
-**Downstream projects:**
-
-**Sub-projects:**
-
-**Triggers from:** []
-
-
-**Periodic builds:**
-```bash
-Not periodically build
-```
-
----
-
 ## [cms-prs-cache](https://cmssdt.cern.ch/jenkins/job/cms-prs-cache)
 
 **Description:** This job collects metadata for pull requests since reading github directly when necessary might become time consuming or rejected by github
@@ -4457,28 +4435,6 @@ H/15 * * * *
 
 ---
 
-## [test-cms-data](https://cmssdt.cern.ch/jenkins/job/test-cms-data)
-
-**Description:** None
-
-**Project is `enabled`.**
-
-**Upstream projects:**
-
-**Downstream projects:**
-
-**Sub-projects:**
-
-**Triggers from:** []
-
-
-**Periodic builds:**
-```bash
-Not periodically build
-```
-
----
-
 ## [test-docker](https://cmssdt.cern.ch/jenkins/job/test-docker)
 
 **Description:** Connects to the slave and checks if docker service is runable.
@@ -4669,29 +4625,6 @@ Not periodically build
 
 ---
 
-## [update-github-webhook-token](https://cmssdt.cern.ch/jenkins/job/update-github-webhook-token)
-
-**Description:** Updates passphrase for git webhooks for selected repository.
-More details <a href="https://github.com/cms-sw/cms-bot/tree/master/repos">here</a>.
-
-**Project is `enabled`.**
-
-**Upstream projects:**
-
-**Downstream projects:**
-
-**Sub-projects:**
-
-**Triggers from:** []
-
-
-**Periodic builds:**
-```bash
-Not periodically build
-```
-
----
-
 ## [update-ibeos-cache](https://cmssdt.cern.ch/jenkins/job/update-ibeos-cache)
 
 **Description:** Job to run das client and cache the results in github to be used by IBs.
@@ -4816,28 +4749,6 @@ Not periodically build
 
 ---
 
-## [web-summary-data](https://cmssdt.cern.ch/jenkins/job/web-summary-data)
-
-**Description:** Scans build summary (ib-report-generator/scan-build-summary)
-
-**Project is `enabled`.**
-
-**Upstream projects:**
-
-**Downstream projects:**
-
-**Sub-projects:**
-
-**Triggers from:** []
-
-
-**Periodic builds:**
-```bash
-Not periodically build
-```
-
----
-
 ## [web-update-cmssdt-ib](https://cmssdt.cern.ch/jenkins/job/web-update-cmssdt-ib)
 
 **Description:** Job used to transpile cmssdt ib page from ECMAscript6 to regular javascript and push changes to github.
@@ -4867,29 +4778,6 @@ Not periodically build
 <a href="https://cmssdt.cern.ch/SDT/">cmssdt-web</a>.
 
 **Project is `enabled`.**
-
-**Upstream projects:**
-
-**Downstream projects:**
-
-**Sub-projects:**
-
-**Triggers from:** []
-
-
-**Periodic builds:**
-```bash
-Not periodically build
-```
-
----
-
-## [web-update-SDT](https://cmssdt.cern.ch/jenkins/job/web-update-SDT)
-
-**Description:** Copies releases.map to /data/sdt/SDT/jenkins-artifacts.<br>
-<b>Depricated project</b>. Its tasks are taken by <a href="https://cmssdt.cern.ch/jenkins/job/deploy-cms-repo">deploy-cms-repo</a> project.
-
-**Project is `disabled`.**
 
 **Upstream projects:**
 

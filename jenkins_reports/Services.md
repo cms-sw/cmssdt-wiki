@@ -428,28 +428,6 @@ Not periodically build
 
 ---
 
-## [web-summary-data](https://cmssdt.cern.ch/jenkins/job/web-summary-data)
-
-**Description:** Scans build summary (ib-report-generator/scan-build-summary)
-
-**Project is `enabled`.**
-
-**Upstream projects:**
-
-**Downstream projects:**
-
-**Sub-projects:**
-
-**Triggers from:** []
-
-
-**Periodic builds:**
-```bash
-Not periodically build
-```
-
----
-
 ## [workspace-cleanup-slave](https://cmssdt.cern.ch/jenkins/job/workspace-cleanup-slave)
 
 **Description:** Connect to selected slave and cleans (deletes) workspace.
