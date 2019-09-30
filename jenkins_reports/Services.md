@@ -281,28 +281,6 @@ H */6 * * *
 
 ---
 
-## [mirror-cmsrep](https://cmssdt.cern.ch/jenkins/job/mirror-cmsrep)
-
-**Description:** Create a live mirror of cmsrep.cern.ch
-
-**Project is `enabled`.**
-
-**Upstream projects:**
-
-**Downstream projects:**
-
-**Sub-projects:**
-
-**Triggers from:** []
-
-
-**Periodic builds:**
-```bash
-Not periodically build
-```
-
----
-
 ## [monitor-openstack-vms](https://cmssdt.cern.ch/jenkins/job/monitor-openstack-vms)
 
 **Description:** This job run periodically to monitor the running state of vms in openstack , if stopped , creates an email alert.
@@ -453,29 +431,6 @@ Not periodically build
 ## [web-summary-data](https://cmssdt.cern.ch/jenkins/job/web-summary-data)
 
 **Description:** Scans build summary (ib-report-generator/scan-build-summary)
-
-**Project is `enabled`.**
-
-**Upstream projects:**
-
-**Downstream projects:**
-
-**Sub-projects:**
-
-**Triggers from:** []
-
-
-**Periodic builds:**
-```bash
-Not periodically build
-```
-
----
-
-## [web-update-SDT](https://cmssdt.cern.ch/jenkins/job/web-update-SDT)
-
-**Description:** Copies releases.map to /data/sdt/SDT/jenkins-artifacts.<br>
-<b>Depricated project</b>. Its tasks are taken by <a href="https://cmssdt.cern.ch/jenkins/job/deploy-cms-repo">deploy-cms-repo</a> project.
 
 **Project is `enabled`.**
 

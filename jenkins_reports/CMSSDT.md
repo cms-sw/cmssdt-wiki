@@ -1088,29 +1088,6 @@ H * * * *
 
 ---
 
-## [forward-pull-requests](https://cmssdt.cern.ch/jenkins/job/forward-pull-requests)
-
-**Description:** Given a branch, gets all of its pull requests and recreates them in a different branch.
-
-
-**Project is `enabled`.**
-
-**Upstream projects:**
-
-**Downstream projects:**
-
-**Sub-projects:**
-
-**Triggers from:** []
-
-
-**Periodic builds:**
-```bash
-Not periodically build
-```
-
----
-
 ## [gh-teams](https://cmssdt.cern.ch/jenkins/job/gh-teams)
 
 **Description:** printing some python file	
@@ -2010,29 +1987,6 @@ Not periodically build
 
 ---
 
-## [import-stitched-tag](https://cmssdt.cern.ch/jenkins/job/import-stitched-tag)
-
-**Description:** This tags a CMSSW release tag and upload the packages (https://github.com/cms-sw/Stitched/blob/master/packages.txt) needed by Stitched to Stitched repo.
-CMSSW_* tag is rename to STITCHED_*
-
-**Project is `enabled`.**
-
-**Upstream projects:**
-
-**Downstream projects:**
-
-**Sub-projects:**
-
-**Triggers from:** []
-
-
-**Periodic builds:**
-```bash
-Not periodically build
-```
-
----
-
 ## [install-cvmfs-package](https://cmssdt.cern.ch/jenkins/job/install-cvmfs-package)
 
 **Description:** None
@@ -2292,28 +2246,6 @@ H * * * *
 ## [material-budget-ref](https://cmssdt.cern.ch/jenkins/job/material-budget-ref)
 
 **Description:** Runs Validation/Geometry/test/runP_Tracker_cfg.py and MaterialBudget.C for an IB
-
-**Project is `enabled`.**
-
-**Upstream projects:**
-
-**Downstream projects:**
-
-**Sub-projects:**
-
-**Triggers from:** []
-
-
-**Periodic builds:**
-```bash
-Not periodically build
-```
-
----
-
-## [mirror-cmsrep](https://cmssdt.cern.ch/jenkins/job/mirror-cmsrep)
-
-**Description:** Create a live mirror of cmsrep.cern.ch
 
 **Project is `enabled`.**
 
@@ -2870,29 +2802,6 @@ Not periodically build
 
 ---
 
-## [test-scram](https://cmssdt.cern.ch/jenkins/job/test-scram)
-
-**Description:** ---need-description--- <br>
----need-check---
-
-**Project is `enabled`.**
-
-**Upstream projects:**
-
-**Downstream projects:**
-
-**Sub-projects:**
-
-**Triggers from:** []
-
-
-**Periodic builds:**
-```bash
-Not periodically build
-```
-
----
-
 ## [update-categories-page](https://cmssdt.cern.ch/jenkins/job/update-categories-page)
 
 **Description:** Generates categories.json file and uploads it to this <a href="https://github.com/cms-sw/cms-sw.github.io">github repo</a>. 
@@ -3188,29 +3097,6 @@ Not periodically build
 
 **Description:** Transpiles <a href="https://github.com/cms-sw/logreader">Logreader</a> to pure js/html/css and deploys to 
 <a href="https://cmssdt.cern.ch/SDT/">cmssdt-web</a>.
-
-**Project is `enabled`.**
-
-**Upstream projects:**
-
-**Downstream projects:**
-
-**Sub-projects:**
-
-**Triggers from:** []
-
-
-**Periodic builds:**
-```bash
-Not periodically build
-```
-
----
-
-## [web-update-SDT](https://cmssdt.cern.ch/jenkins/job/web-update-SDT)
-
-**Description:** Copies releases.map to /data/sdt/SDT/jenkins-artifacts.<br>
-<b>Depricated project</b>. Its tasks are taken by <a href="https://cmssdt.cern.ch/jenkins/job/deploy-cms-repo">deploy-cms-repo</a> project.
 
 **Project is `enabled`.**
 
