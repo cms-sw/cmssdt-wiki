@@ -2740,6 +2740,28 @@ H 0 * * *
 
 ---
 
+## [update-config-guess](https://cmssdt.cern.ch/jenkins/job/update-config-guess)
+
+**Description:** None
+
+**Project is `enabled`.**
+
+**Upstream projects:**
+
+**Downstream projects:**
+
+**Sub-projects:**
+
+**Triggers from:** []
+
+
+**Periodic builds:**
+```bash
+Not periodically build
+```
+
+---
+
 ## [update-das-queries](https://cmssdt.cern.ch/jenkins/job/update-das-queries)
 
 **Description:** Job to run das client and cache the results in github to be used by IBs.
