@@ -3461,6 +3461,28 @@ Not periodically build
 
 ---
 
+## [jenkins-test-shared-node](https://cmssdt.cern.ch/jenkins/job/jenkins-test-shared-node)
+
+**Description:** None
+
+**Project is `enabled`.**
+
+**Upstream projects:**
+
+**Downstream projects:**
+
+**Sub-projects:**
+
+**Triggers from:** []
+
+
+**Periodic builds:**
+```bash
+H/5 * * * *
+```
+
+---
+
 ## [jenkins-test-singularity-slave](https://cmssdt.cern.ch/jenkins/job/jenkins-test-singularity-slave)
 
 **Description:** None
