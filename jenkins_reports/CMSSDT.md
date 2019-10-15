@@ -228,33 +228,6 @@ Not periodically build
 
 ---
 
-## [build-container](https://cmssdt.cern.ch/jenkins/job/build-container)
-
-**Description:** None
-
-**Project is `enabled`.**
-
-**Upstream projects:**
-* [schedule-docker-build](#schedule-docker-build):
-
-**Downstream projects:**
-* [cvmfs-unpack-container](#cvmfs-unpack-container):
-* [test-build-container](#test-build-container):
-
-**Sub-projects:**
-* [test-build-container](#test-build-container):
-* [cvmfs-unpack-container](#cvmfs-unpack-container):
-
-**Triggers from:** []
-
-
-**Periodic builds:**
-```bash
-Not periodically build
-```
-
----
-
 ## [build-fwlite](https://cmssdt.cern.ch/jenkins/job/build-fwlite)
 
 **Description:** TO build a CMSSW_X_Y_Z_FWLITE release based on an existing CMSSW_X_Y_Z release. CMSSW_X_Y_Z should already be build/uploaded before building its FWLITE version.

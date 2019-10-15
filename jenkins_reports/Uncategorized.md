@@ -119,3 +119,30 @@ Not periodically build
 
 ---
 
+## [build-container](https://cmssdt.cern.ch/jenkins/job/build-container)
+
+**Description:** None
+
+**Project is `disabled`.**
+
+**Upstream projects:**
+* [schedule-docker-build](#schedule-docker-build):
+
+**Downstream projects:**
+* [cvmfs-unpack-container](#cvmfs-unpack-container):
+* [test-build-container](#test-build-container):
+
+**Sub-projects:**
+* [test-build-container](#test-build-container):
+* [cvmfs-unpack-container](#cvmfs-unpack-container):
+
+**Triggers from:** []
+
+
+**Periodic builds:**
+```bash
+Not periodically build
+```
+
+---
+
