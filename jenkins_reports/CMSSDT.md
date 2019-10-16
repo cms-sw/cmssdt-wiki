@@ -1359,28 +1359,6 @@ Not periodically build
 
 ---
 
-## [ib-install-cvmfs-new](https://cmssdt.cern.ch/jenkins/job/ib-install-cvmfs-new)
-
-**Description:** This jobs install an IB on /cvmfs/cms-ib.cern.ch.
-
-**Project is `enabled`.**
-
-**Upstream projects:**
-
-**Downstream projects:**
-
-**Sub-projects:**
-
-**Triggers from:** []
-
-
-**Periodic builds:**
-```bash
-Not periodically build
-```
-
----
-
 ## [ib-run-additional-tests](https://cmssdt.cern.ch/jenkins/job/ib-run-additional-tests)
 
 **Description:** None
