@@ -2043,7 +2043,6 @@ Not periodically build
 **Upstream projects:**
 
 **Downstream projects:**
-* [ib-validation](#ib-validation):
 
 **Sub-projects:**
 
@@ -2694,7 +2693,6 @@ Not periodically build
 **Upstream projects:**
 * [ib-cvmfs-publish](#ib-cvmfs-publish):
 * [ib-install-cvmfs](#ib-install-cvmfs):
-* [ib-install-cvmfs-new](#ib-install-cvmfs-new):
 
 **Downstream projects:**
 * [ib-run-addons](#ib-run-addons):
