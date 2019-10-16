@@ -303,6 +303,28 @@ Not periodically build
 
 ---
 
+## [check_image_repositories](https://cmssdt.cern.ch/jenkins/job/check_image_repositories)
+
+**Description:** None
+
+**Project is `enabled`.**
+
+**Upstream projects:**
+
+**Downstream projects:**
+
+**Sub-projects:**
+
+**Triggers from:** []
+
+
+**Periodic builds:**
+```bash
+Not periodically build
+```
+
+---
+
 ## [cleanup-auto-build](https://cmssdt.cern.ch/jenkins/job/cleanup-auto-build)
 
 **Description:** This job deletes the relsease build areas after three days.
