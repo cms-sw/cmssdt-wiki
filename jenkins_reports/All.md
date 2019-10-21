@@ -262,6 +262,7 @@ Not periodically build
 **Project is `enabled`.**
 
 **Upstream projects:**
+* [check-docker-container](#check-docker-container):
 
 **Downstream projects:**
 
@@ -361,8 +362,10 @@ Not periodically build
 **Upstream projects:**
 
 **Downstream projects:**
+* [build-docker-container](#build-docker-container):
 
 **Sub-projects:**
+* [build-docker-container](#build-docker-container):
 
 **Triggers from:** []
 
