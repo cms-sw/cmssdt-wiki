@@ -2033,29 +2033,6 @@ H 10,22 * * *
 
 ---
 
-## [ib-cvmfs-publish](https://cmssdt.cern.ch/jenkins/job/ib-cvmfs-publish)
-
-**Description:** This jobs copies IBs installation for an arch from another machine and publish it to cvmfs
-
-**Project is `disabled`.**
-
-**Upstream projects:**
-
-**Downstream projects:**
-* [ib-validation](#ib-validation):
-
-**Sub-projects:**
-
-**Triggers from:** []
-
-
-**Periodic builds:**
-```bash
-Not periodically build
-```
-
----
-
 ## [ib-install-cvmfs](https://cmssdt.cern.ch/jenkins/job/ib-install-cvmfs)
 
 **Description:** This jobs install an IB on /cvmfs/cms-ib.cern.ch.
@@ -2716,7 +2693,6 @@ Not periodically build
 **Project is `enabled`.**
 
 **Upstream projects:**
-* [ib-cvmfs-publish](#ib-cvmfs-publish):
 * [ib-install-cvmfs](#ib-install-cvmfs):
 
 **Downstream projects:**

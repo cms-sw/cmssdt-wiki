@@ -2019,7 +2019,6 @@ Not periodically build
 **Project is `enabled`.**
 
 **Upstream projects:**
-* [ib-cvmfs-publish](#ib-cvmfs-publish):
 * [ib-install-cvmfs](#ib-install-cvmfs):
 
 **Downstream projects:**

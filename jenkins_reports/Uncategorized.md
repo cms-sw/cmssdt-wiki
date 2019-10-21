@@ -8,29 +8,6 @@
 
 # Projects:
 
-## [ib-cvmfs-publish](https://cmssdt.cern.ch/jenkins/job/ib-cvmfs-publish)
-
-**Description:** This jobs copies IBs installation for an arch from another machine and publish it to cvmfs
-
-**Project is `disabled`.**
-
-**Upstream projects:**
-
-**Downstream projects:**
-* [ib-validation](#ib-validation):
-
-**Sub-projects:**
-
-**Triggers from:** []
-
-
-**Periodic builds:**
-```bash
-Not periodically build
-```
-
----
-
 ## [ib-run-geometry](https://cmssdt.cern.ch/jenkins/job/ib-run-geometry)
 
 **Description:** Runs geometry comparison tests for each IB
