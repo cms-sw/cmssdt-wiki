@@ -86,6 +86,31 @@ Not periodically build
 
 ---
 
+## [auto-forward-port](https://cmssdt.cern.ch/jenkins/job/auto-forward-port)
+
+**Description:** This is triggered by github webhook for each cmssw/cmsdist branch merge event.
+This is just a place holder job to trigger one sub-job per destionation branch for which the forward porting should be done.
+
+**Project is `enabled`.**
+
+**Upstream projects:**
+
+**Downstream projects:**
+* [auto-forward-port-branch](#auto-forward-port-branch):
+
+**Sub-projects:**
+* [auto-forward-port-branch ](#auto-forward-port-branch ):
+
+**Triggers from:** []
+
+
+**Periodic builds:**
+```bash
+Not periodically build
+```
+
+---
+
 ## [auto-forward-port-branch](https://cmssdt.cern.ch/jenkins/job/auto-forward-port-branch)
 
 **Description:** None
@@ -93,6 +118,7 @@ Not periodically build
 **Project is `enabled`.**
 
 **Upstream projects:**
+* [auto-forward-port](#auto-forward-port):
 
 **Downstream projects:**
 
@@ -108,7 +134,7 @@ Not periodically build
 
 ---
 
-## [auto-forward-ports](https://cmssdt.cern.ch/jenkins/job/auto-forward-ports)
+## [auto-forward-ports-old](https://cmssdt.cern.ch/jenkins/job/auto-forward-ports-old)
 
 **Description:** This is triggered by github webhook for each cmssw/cmsdist branch merge event.
 this forward port changes from source branch to target branch. Mapping between soruce and destination branches are available in cms-bot.
@@ -1219,7 +1245,7 @@ This job is also triggered via github web hook. Please do not add/remove any par
 * [github-webhook](#github-webhook):
 
 **Downstream projects:**
-* [auto-forward-ports](#auto-forward-ports):
+* [auto-forward-ports-old](#auto-forward-ports-old):
 * [deploy-cms-repo](#deploy-cms-repo):
 * [git-mirror-repository](#git-mirror-repository):
 * [git-reference-cms-ib](#git-reference-cms-ib):
@@ -1227,7 +1253,7 @@ This job is also triggered via github web hook. Please do not add/remove any par
 
 **Sub-projects:**
 * [deploy-cms-repo](#deploy-cms-repo):
-* [auto-forward-ports](#auto-forward-ports):
+* [auto-forward-ports-old](#auto-forward-ports-old):
 * [git-reference-cms-ib](#git-reference-cms-ib):
 * [git-mirror-repository](#git-mirror-repository):
 * [web-update-cmssdt-ib](#web-update-cmssdt-ib):
@@ -2719,29 +2745,6 @@ H/15 * * * *
 
 **Upstream projects:**
 * [slaves-checks](#slaves-checks):
-
-**Downstream projects:**
-
-**Sub-projects:**
-
-**Triggers from:** []
-
-
-**Periodic builds:**
-```bash
-Not periodically build
-```
-
----
-
-## [trigger-auto-forward-port](https://cmssdt.cern.ch/jenkins/job/trigger-auto-forward-port)
-
-**Description:** This is triggered by github webhook for each cmssw/cmsdist branch merge event.
-This is just a place holder job to trigger one sub-job per destionation branch for which the forward porting should be done.
-
-**Project is `enabled`.**
-
-**Upstream projects:**
 
 **Downstream projects:**
 
