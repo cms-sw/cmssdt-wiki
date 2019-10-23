@@ -155,7 +155,7 @@ this forward port changes from source branch to target branch. Mapping between s
   </li>
 </ul>
 
-**Project is `enabled`.**
+**Project is `disabled`.**
 
 **Upstream projects:**
 
