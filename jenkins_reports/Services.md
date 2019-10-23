@@ -282,7 +282,6 @@ This job is also triggered via github web hook. Please do not add/remove any par
 * [github-webhook](#github-webhook):
 
 **Downstream projects:**
-* [auto-forward-ports-old](#auto-forward-ports-old):
 * [deploy-cms-repo](#deploy-cms-repo):
 * [git-mirror-repository](#git-mirror-repository):
 * [git-reference-cms-ib](#git-reference-cms-ib):
@@ -290,7 +289,7 @@ This job is also triggered via github web hook. Please do not add/remove any par
 
 **Sub-projects:**
 * [deploy-cms-repo](#deploy-cms-repo):
-* [auto-forward-ports-old](#auto-forward-ports-old):
+* [auto-forward-ports](#auto-forward-ports):
 * [git-reference-cms-ib](#git-reference-cms-ib):
 * [git-mirror-repository](#git-mirror-repository):
 * [web-update-cmssdt-ib](#web-update-cmssdt-ib):
