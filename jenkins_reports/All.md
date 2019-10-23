@@ -94,6 +94,7 @@ This is just a place holder job to trigger one sub-job per destionation branch f
 **Project is `enabled`.**
 
 **Upstream projects:**
+* [github-push-hook](#github-push-hook):
 
 **Downstream projects:**
 * [auto-forward-port-branch](#auto-forward-port-branch):
@@ -1653,6 +1654,7 @@ This job is also triggered via github web hook. Please do not add/remove any par
 * [github-webhook](#github-webhook):
 
 **Downstream projects:**
+* [auto-forward-port](#auto-forward-port):
 * [deploy-cms-repo](#deploy-cms-repo):
 * [git-mirror-repository](#git-mirror-repository):
 * [git-reference-cms-ib](#git-reference-cms-ib):
@@ -1660,7 +1662,7 @@ This job is also triggered via github web hook. Please do not add/remove any par
 
 **Sub-projects:**
 * [deploy-cms-repo](#deploy-cms-repo):
-* [auto-forward-ports](#auto-forward-ports):
+* [auto-forward-port](#auto-forward-port):
 * [git-reference-cms-ib](#git-reference-cms-ib):
 * [git-mirror-repository](#git-mirror-repository):
 * [web-update-cmssdt-ib](#web-update-cmssdt-ib):
