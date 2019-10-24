@@ -291,8 +291,10 @@ Not periodically build
 * [check-docker-container](#check-docker-container):
 
 **Downstream projects:**
+* [test-image-build](#test-image-build):
 
 **Sub-projects:**
+* [test-image-build](#test-image-build):
 
 **Triggers from:** []
 
@@ -4480,6 +4482,29 @@ H/15 * * * *
 
 **Upstream projects:**
 * [slaves-checks](#slaves-checks):
+
+**Downstream projects:**
+
+**Sub-projects:**
+
+**Triggers from:** []
+
+
+**Periodic builds:**
+```bash
+Not periodically build
+```
+
+---
+
+## [test-image-build](https://cmssdt.cern.ch/jenkins/job/test-image-build)
+
+**Description:** None
+
+**Project is `enabled`.**
+
+**Upstream projects:**
+* [build-docker-container](#build-docker-container):
 
 **Downstream projects:**
 
