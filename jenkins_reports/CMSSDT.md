@@ -100,7 +100,7 @@ This is just a place holder job to trigger one sub-job per destionation branch f
 * [auto-forward-port-branch](#auto-forward-port-branch):
 
 **Sub-projects:**
-* [auto-forward-port-branch ](#auto-forward-port-branch ):
+* [auto-forward-port-branch](#auto-forward-port-branch):
 
 **Triggers from:** []
 
@@ -2697,28 +2697,6 @@ Not periodically build
 **Periodic builds:**
 ```bash
 H/15 * * * *
-```
-
----
-
-## [test-cvmfs](https://cmssdt.cern.ch/jenkins/job/test-cvmfs)
-
-**Description:** None
-
-**Project is `enabled`.**
-
-**Upstream projects:**
-
-**Downstream projects:**
-
-**Sub-projects:**
-
-**Triggers from:** []
-
-
-**Periodic builds:**
-```bash
-Not periodically build
 ```
 
 ---
