@@ -389,10 +389,8 @@ Not periodically build
 **Upstream projects:**
 
 **Downstream projects:**
-* [TEST-build-docker-container](#TEST-build-docker-container):
 
 **Sub-projects:**
-* [TEST-build-docker-container](#TEST-build-docker-container):
 
 **Triggers from:** []
 
@@ -4436,29 +4434,6 @@ Not periodically build
 
 **Upstream projects:**
 * [build-container](#build-container):
-
-**Downstream projects:**
-
-**Sub-projects:**
-
-**Triggers from:** []
-
-
-**Periodic builds:**
-```bash
-Not periodically build
-```
-
----
-
-## [TEST-build-docker-container](https://cmssdt.cern.ch/jenkins/job/TEST-build-docker-container)
-
-**Description:** None
-
-**Project is `enabled`.**
-
-**Upstream projects:**
-* [check-docker-container](#check-docker-container):
 
 **Downstream projects:**
 
