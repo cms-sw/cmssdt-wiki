@@ -226,10 +226,12 @@ Not periodically build
 * [check-docker-container](#check-docker-container):
 
 **Downstream projects:**
+* [cvmfs-unpack-container](#cvmfs-unpack-container):
 * [test-image-build](#test-image-build):
 
 **Sub-projects:**
 * [test-image-build](#test-image-build):
+* [cvmfs-unpack-container](#cvmfs-unpack-container):
 
 **Triggers from:** []
 
@@ -786,6 +788,7 @@ Not periodically build
 
 **Upstream projects:**
 * [build-container](#build-container):
+* [build-docker-container](#build-docker-container):
 
 **Downstream projects:**
 * [cvmfs_publish_remote_dir](#cvmfs_publish_remote_dir):
