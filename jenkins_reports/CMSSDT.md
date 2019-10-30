@@ -324,10 +324,10 @@ Not periodically build
 **Upstream projects:**
 
 **Downstream projects:**
-* [test-image-build](#test-image-build):
+* [TEST-build-docker-container](#TEST-build-docker-container):
 
 **Sub-projects:**
-* [test-image-build](#test-image-build):
+* [TEST-build-docker-container](#TEST-build-docker-container):
 
 **Triggers from:** []
 
@@ -2685,6 +2685,7 @@ Not periodically build
 **Project is `enabled`.**
 
 **Upstream projects:**
+* [check-docker-container](#check-docker-container):
 
 **Downstream projects:**
 
@@ -2753,7 +2754,6 @@ Not periodically build
 
 **Upstream projects:**
 * [build-docker-container](#build-docker-container):
-* [check-docker-container](#check-docker-container):
 
 **Downstream projects:**
 
