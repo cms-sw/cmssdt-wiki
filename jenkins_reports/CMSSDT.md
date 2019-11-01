@@ -2592,28 +2592,6 @@ Not periodically build
 
 ---
 
-## [send-email-TEST_TWO](https://cmssdt.cern.ch/jenkins/job/send-email-TEST_TWO)
-
-**Description:** None
-
-**Project is `enabled`.**
-
-**Upstream projects:**
-
-**Downstream projects:**
-
-**Sub-projects:**
-
-**Triggers from:** []
-
-
-**Periodic builds:**
-```bash
-Not periodically build
-```
-
----
-
 ## [slaves-checks](https://cmssdt.cern.ch/jenkins/job/slaves-checks)
 
 **Description:** A wrapper project that starts a 
