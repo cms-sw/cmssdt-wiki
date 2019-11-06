@@ -590,7 +590,7 @@ on reached limit hits/hour grounds.
 
 **Periodic builds:**
 ```bash
-Not periodically build
+H/2 * * * *
 ```
 
 ---
