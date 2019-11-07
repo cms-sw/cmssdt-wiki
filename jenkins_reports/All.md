@@ -3515,6 +3515,28 @@ Not periodically build
 
 ---
 
+## [jenkins-test-patch-checkout](https://cmssdt.cern.ch/jenkins/job/jenkins-test-patch-checkout)
+
+**Description:** None
+
+**Project is `enabled`.**
+
+**Upstream projects:**
+
+**Downstream projects:**
+
+**Sub-projects:**
+
+**Triggers from:** []
+
+
+**Periodic builds:**
+```bash
+Not periodically build
+```
+
+---
+
 ## [jenkins-test-shared-node](https://cmssdt.cern.ch/jenkins/job/jenkins-test-shared-node)
 
 **Description:** None
