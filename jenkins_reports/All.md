@@ -538,7 +538,7 @@ Will kill a scheduled/running job acording to comments.
 
 **Periodic builds:**
 ```bash
-Not periodically build
+H/30 * * * *
 ```
 
 ---
