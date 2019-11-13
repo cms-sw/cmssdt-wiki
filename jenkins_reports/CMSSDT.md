@@ -412,6 +412,28 @@ H 0 * * *
 
 ---
 
+## [cleanup-docker-tags](https://cmssdt.cern.ch/jenkins/job/cleanup-docker-tags)
+
+**Description:** None
+
+**Project is `enabled`.**
+
+**Upstream projects:**
+
+**Downstream projects:**
+
+**Sub-projects:**
+
+**Triggers from:** []
+
+
+**Periodic builds:**
+```bash
+Not periodically build
+```
+
+---
+
 ## [cleanup-tags](https://cmssdt.cern.ch/jenkins/job/cleanup-tags)
 
 **Description:** Cleanup IB tags from the official CMSSW repository.
