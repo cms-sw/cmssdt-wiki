@@ -414,7 +414,7 @@ H 0 * * *
 
 ## [cleanup-docker-tags](https://cmssdt.cern.ch/jenkins/job/cleanup-docker-tags)
 
-**Description:** None
+**Description:** Removes dockerimages from docker repository.
 
 **Project is `enabled`.**
 
