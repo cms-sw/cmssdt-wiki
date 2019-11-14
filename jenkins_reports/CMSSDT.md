@@ -277,6 +277,7 @@ Results of this build can be seen via <a href="https://cmssdt.cern.ch/SDT/">CMSS
 
 **Upstream projects:**
 * [build-any-ib](#build-any-ib):
+* [jenkins-test-build-any-ib](#jenkins-test-build-any-ib):
 
 **Downstream projects:**
 * [ib-build-logs](#ib-build-logs):
@@ -1356,6 +1357,7 @@ Not periodically build
 **Upstream projects:**
 * [build-any-ib](#build-any-ib):
 * [build-fwlite-ib](#build-fwlite-ib):
+* [jenkins-test-build-any-ib](#jenkins-test-build-any-ib):
 
 **Downstream projects:**
 * [update-github-pages](#update-github-pages):
@@ -1405,6 +1407,7 @@ H 10,22 * * *
 **Upstream projects:**
 * [build-any-ib](#build-any-ib):
 * [ib-tag-and-schdule](#ib-tag-and-schdule):
+* [jenkins-test-build-any-ib](#jenkins-test-build-any-ib):
 
 **Downstream projects:**
 * [ib-validation](#ib-validation):

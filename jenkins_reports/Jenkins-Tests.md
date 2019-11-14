@@ -511,6 +511,64 @@ Not periodically build
 
 ---
 
+## [jenkins-test-build-any-ib](https://cmssdt.cern.ch/jenkins/job/jenkins-test-build-any-ib)
+
+**Description:** This jobs starts an Integration Build(IB). Base on state of <a href="https://github.com/cms-sw/cmsdist">CMSDIST</a>/<a href="https://github.com/cms-sw/cmssw">CMSSW</a> git repositories, it builds either a full release or patch release.
+<br>Build Full IB if:
+
+<ul>
+  <li> There are changes in <a href="https://github.com/cms-sw/cmsdist">CMSDIST</a></li>
+  <li> There is no full IB available based on current <a href="https://github.com/cms-sw/cmsdist">CMSDIST</a></li>
+  <li> Previous full IB had build errors</li>
+</ul>
+
+Otherwise build a patch release.
+
+<br><br>
+<b>Q/A</b>
+
+<ul>
+  <li>
+    <b>Q:</b> The job is scheduled with a clock simbol. Jenkins also complains that there are not agents with labels THIS and THIS.
+  </li>
+  <li>
+    <b>A:</b> Jenkins should automaticly launch agents with specific labels for the job. However, for some reason it does not work for this job. For now, launch agent manually.
+  </li>
+</ul>
+
+<ul>
+  <li>
+    <b>Q:</b> How to manually build an IB?
+  </li>
+  <li>
+    <b>A:</b> Go to upstream job (ib-tag-and-schdule) and start a job.
+  </li>
+</ul>
+
+**Project is `enabled`.**
+
+**Upstream projects:**
+
+**Downstream projects:**
+* [build-fwlite-ib](#build-fwlite-ib):
+* [ib-build-logs](#ib-build-logs):
+* [ib-install-cvmfs](#ib-install-cvmfs):
+
+**Sub-projects:**
+* [ib-install-cvmfs](#ib-install-cvmfs):
+* [ib-build-logs](#ib-build-logs):
+* [build-fwlite-ib](#build-fwlite-ib):
+
+**Triggers from:** []
+
+
+**Periodic builds:**
+```bash
+Not periodically build
+```
+
+---
+
 ## [jenkins-test-code-format](https://cmssdt.cern.ch/jenkins/job/jenkins-test-code-format)
 
 **Description:** None
