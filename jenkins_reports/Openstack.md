@@ -36,7 +36,7 @@ Not periodically build
 
 **Description:** Find all hosts in an hostgroup and add them to jenkins
 
-**Project is `enabled`.**
+**Project is `disabled`.**
 
 **Upstream projects:**
 * [openstack-check-jenkins-slaves](#openstack-check-jenkins-slaves):
