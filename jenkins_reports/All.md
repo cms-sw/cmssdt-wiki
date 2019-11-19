@@ -588,7 +588,7 @@ on reached limit hits/hour grounds.
 
 **Periodic builds:**
 ```bash
-H * * * *
+H 20 * * *
 ```
 
 ---
