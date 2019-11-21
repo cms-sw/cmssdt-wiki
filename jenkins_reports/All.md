@@ -479,7 +479,7 @@ H 0 * * *
 
 ## [cleanup-docker-tags](https://cmssdt.cern.ch/jenkins/job/cleanup-docker-tags)
 
-**Description:** Removes dockerimages from docker repository.
+**Description:** Removes outdated tags from docker repository.
 
 **Project is `enabled`.**
 
@@ -494,7 +494,7 @@ H 0 * * *
 
 **Periodic builds:**
 ```bash
-Not periodically build
+H 0 * * *
 ```
 
 ---
