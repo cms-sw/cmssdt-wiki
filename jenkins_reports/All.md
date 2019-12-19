@@ -4279,7 +4279,7 @@ If the issue is not requesting any release, it ignores it.
 
 **Periodic builds:**
 ```bash
-H/15 * * * *
+Not periodically build
 ```
 
 ---
