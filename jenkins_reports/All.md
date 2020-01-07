@@ -1641,7 +1641,7 @@ Not periodically build
 
 **Periodic builds:**
 ```bash
-Not periodically build
+5 11,23 * * *
 ```
 
 ---
