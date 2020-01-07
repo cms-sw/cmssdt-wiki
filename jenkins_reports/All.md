@@ -1459,7 +1459,7 @@ H H/4 * * *
 
 ## [dockerhub_synchronization](https://cmssdt.cern.ch/jenkins/job/dockerhub_synchronization)
 
-**Description:** None
+**Description:** Synchronizes Docker Hub Organization's setup (repositories/teams/members/permissions) with docker configuration yaml file.
 
 **Project is `enabled`.**
 
@@ -1474,7 +1474,7 @@ H H/4 * * *
 
 **Periodic builds:**
 ```bash
-Not periodically build
+H 0 * * *
 ```
 
 ---
