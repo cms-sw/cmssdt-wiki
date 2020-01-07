@@ -1624,6 +1624,28 @@ Not periodically build
 
 ---
 
+## [git-repo-size](https://cmssdt.cern.ch/jenkins/job/git-repo-size)
+
+**Description:** None
+
+**Project is `enabled`.**
+
+**Upstream projects:**
+
+**Downstream projects:**
+
+**Sub-projects:**
+
+**Triggers from:** []
+
+
+**Periodic builds:**
+```bash
+Not periodically build
+```
+
+---
+
 ## [github-hooks](https://cmssdt.cern.ch/jenkins/job/github-hooks)
 
 **Description:** Adds and configures web hooks in github repositories. The web hooks are then used to send some events to a specified url
