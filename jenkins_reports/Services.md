@@ -172,6 +172,28 @@ Not periodically build
 
 ---
 
+## [gh-teams](https://cmssdt.cern.ch/jenkins/job/gh-teams)
+
+**Description:** printing some python file	
+
+**Project is `enabled`.**
+
+**Upstream projects:**
+
+**Downstream projects:**
+
+**Sub-projects:**
+
+**Triggers from:** []
+
+
+**Periodic builds:**
+```bash
+H 22 * * *
+```
+
+---
+
 ## [git-mirror-repository](https://cmssdt.cern.ch/jenkins/job/git-mirror-repository)
 
 **Description:** Mirror one git repository.

@@ -1574,7 +1574,7 @@ H * * * *
 
 **Description:** printing some python file	
 
-**Project is `disabled`.**
+**Project is `enabled`.**
 
 **Upstream projects:**
 

@@ -112,28 +112,6 @@ Not periodically build
 
 ---
 
-## [gh-teams](https://cmssdt.cern.ch/jenkins/job/gh-teams)
-
-**Description:** printing some python file	
-
-**Project is `disabled`.**
-
-**Upstream projects:**
-
-**Downstream projects:**
-
-**Sub-projects:**
-
-**Triggers from:** []
-
-
-**Periodic builds:**
-```bash
-H 22 * * *
-```
-
----
-
 ## [aarch64](https://cmssdt.cern.ch/jenkins/job/aarch64)
 
 **Description:** None
