@@ -195,7 +195,6 @@ H/30 * * * *
 **Upstream projects:**
 * [cleanup-cms-sw-io-history](#cleanup-cms-sw-io-history):
 * [ib-build-logs](#ib-build-logs):
-* [process-external-elastic-stats](#process-external-elastic-stats):
 * [process-relval-logs](#process-relval-logs):
 
 **Downstream projects:**
@@ -310,7 +309,6 @@ H/30 * * * *
 **Upstream projects:**
 * [cleanup-cms-sw-io-history](#cleanup-cms-sw-io-history):
 * [ib-build-logs](#ib-build-logs):
-* [process-external-elastic-stats](#process-external-elastic-stats):
 * [process-relval-logs](#process-relval-logs):
 
 **Downstream projects:**
@@ -559,7 +557,6 @@ H/20 * * * *
 **Upstream projects:**
 * [cleanup-cms-sw-io-history](#cleanup-cms-sw-io-history):
 * [ib-build-logs](#ib-build-logs):
-* [process-external-elastic-stats](#process-external-elastic-stats):
 * [process-relval-logs](#process-relval-logs):
 
 **Downstream projects:**
@@ -880,7 +877,6 @@ H/20 * * * *
 **Upstream projects:**
 * [cleanup-cms-sw-io-history](#cleanup-cms-sw-io-history):
 * [ib-build-logs](#ib-build-logs):
-* [process-external-elastic-stats](#process-external-elastic-stats):
 * [process-relval-logs](#process-relval-logs):
 
 **Downstream projects:**

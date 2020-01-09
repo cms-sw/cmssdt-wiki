@@ -4278,17 +4278,15 @@ Not periodically build
 **Upstream projects:**
 
 **Downstream projects:**
-* [update-github-pages](#update-github-pages):
 
 **Sub-projects:**
-* [update-github-pages](#update-github-pages):
 
 **Triggers from:** []
 
 
 **Periodic builds:**
 ```bash
-H/20 * * * *
+H 22-23 * * *
 ```
 
 ---
@@ -4785,7 +4783,6 @@ Not periodically build
 **Upstream projects:**
 * [cleanup-cms-sw-io-history](#cleanup-cms-sw-io-history):
 * [ib-build-logs](#ib-build-logs):
-* [process-external-elastic-stats](#process-external-elastic-stats):
 * [process-relval-logs](#process-relval-logs):
 
 **Downstream projects:**
