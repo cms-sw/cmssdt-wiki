@@ -2427,6 +2427,30 @@ Not periodically build
 
 ---
 
+## [process-external-elastic-stats](https://cmssdt.cern.ch/jenkins/job/process-external-elastic-stats)
+
+**Description:** This job process partial logs of Relvals and place files accordingly. 
+
+**Project is `enabled`.**
+
+**Upstream projects:**
+
+**Downstream projects:**
+* [update-github-pages](#update-github-pages):
+
+**Sub-projects:**
+* [update-github-pages](#update-github-pages):
+
+**Triggers from:** []
+
+
+**Periodic builds:**
+```bash
+H/20 * * * *
+```
+
+---
+
 ## [process-relval-logs](https://cmssdt.cern.ch/jenkins/job/process-relval-logs)
 
 **Description:** This job process partial logs of Relvals and place files accordingly. 
@@ -2919,6 +2943,7 @@ Not periodically build
 **Upstream projects:**
 * [cleanup-cms-sw-io-history](#cleanup-cms-sw-io-history):
 * [ib-build-logs](#ib-build-logs):
+* [process-external-elastic-stats](#process-external-elastic-stats):
 * [process-relval-logs](#process-relval-logs):
 
 **Downstream projects:**
