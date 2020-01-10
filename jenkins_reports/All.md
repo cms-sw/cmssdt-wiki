@@ -4271,7 +4271,7 @@ Not periodically build
 
 ## [process-external-elastic-stats](https://cmssdt.cern.ch/jenkins/job/process-external-elastic-stats)
 
-**Description:** This job process partial logs of Relvals and place files accordingly. 
+**Description:** This job process resource metrics jsons for externals
 
 **Project is `enabled`.**
 
