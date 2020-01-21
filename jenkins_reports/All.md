@@ -560,7 +560,7 @@ Will kill a scheduled/running job acording to comments.
 
 **Periodic builds:**
 ```bash
-H/30 * * * *
+Not periodically build
 ```
 
 ---
