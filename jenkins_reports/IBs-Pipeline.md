@@ -117,11 +117,13 @@ Otherwise build a patch release.
 * [build-fwlite-ib](#build-fwlite-ib):
 * [ib-build-logs](#ib-build-logs):
 * [ib-install-cvmfs](#ib-install-cvmfs):
+* [ib-install-new-cvmfs](#ib-install-new-cvmfs):
 
 **Sub-projects:**
 * [ib-install-cvmfs](#ib-install-cvmfs):
 * [ib-build-logs](#ib-build-logs):
 * [build-fwlite-ib](#build-fwlite-ib):
+* [ib-install-new-cvmfs](#ib-install-new-cvmfs):
 
 **Triggers from:** []
 
@@ -698,6 +700,29 @@ Not periodically build
 
 **Sub-projects:**
 * [ib-run-${ADDITIONAL_TEST_NAME}](#ib-run-${ADDITIONAL_TEST_NAME}):
+
+**Triggers from:** []
+
+
+**Periodic builds:**
+```bash
+Not periodically build
+```
+
+---
+
+## [ib-install-new-cvmfs](https://cmssdt.cern.ch/jenkins/job/ib-install-new-cvmfs)
+
+**Description:** This jobs install an IB on /cvmfs/cms-ib.cern.ch.
+
+**Project is `enabled`.**
+
+**Upstream projects:**
+* [build-any-ib](#build-any-ib):
+
+**Downstream projects:**
+
+**Sub-projects:**
 
 **Triggers from:** []
 

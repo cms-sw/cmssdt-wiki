@@ -200,11 +200,13 @@ Otherwise build a patch release.
 * [build-fwlite-ib](#build-fwlite-ib):
 * [ib-build-logs](#ib-build-logs):
 * [ib-install-cvmfs](#ib-install-cvmfs):
+* [ib-install-new-cvmfs](#ib-install-new-cvmfs):
 
 **Sub-projects:**
 * [ib-install-cvmfs](#ib-install-cvmfs):
 * [ib-build-logs](#ib-build-logs):
 * [build-fwlite-ib](#build-fwlite-ib):
+* [ib-install-new-cvmfs](#ib-install-new-cvmfs):
 
 **Triggers from:** []
 
@@ -1450,6 +1452,7 @@ Not periodically build
 **Project is `enabled`.**
 
 **Upstream projects:**
+* [build-any-ib](#build-any-ib):
 
 **Downstream projects:**
 
