@@ -422,6 +422,7 @@ Not periodically build
 
 **Upstream projects:**
 * [ib-install-cvmfs](#ib-install-cvmfs):
+* [ib-install-new-cvmfs](#ib-install-new-cvmfs):
 
 **Downstream projects:**
 * [ib-run-addons](#ib-run-addons):
@@ -742,6 +743,7 @@ Not periodically build
 
 **Upstream projects:**
 * [ib-install-cvmfs](#ib-install-cvmfs):
+* [ib-install-new-cvmfs](#ib-install-new-cvmfs):
 
 **Downstream projects:**
 * [ib-run-addons](#ib-run-addons):
