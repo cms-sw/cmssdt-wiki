@@ -4614,6 +4614,28 @@ Not periodically build
 
 ---
 
+## [sync-patatrack-branch](https://cmssdt.cern.ch/jenkins/job/sync-patatrack-branch)
+
+**Description:** None
+
+**Project is `enabled`.**
+
+**Upstream projects:**
+
+**Downstream projects:**
+
+**Sub-projects:**
+
+**Triggers from:** []
+
+
+**Periodic builds:**
+```bash
+Not periodically build
+```
+
+---
+
 ## [test-build-container](https://cmssdt.cern.ch/jenkins/job/test-build-container)
 
 **Description:** None
