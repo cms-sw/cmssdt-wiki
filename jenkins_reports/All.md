@@ -1228,6 +1228,29 @@ H 23  * *  4
 
 ---
 
+## [cvmfs-new-gc](https://cmssdt.cern.ch/jenkins/job/cvmfs-new-gc)
+
+**Description:** This runs CVMFS GC (once a week)
+
+**Project is `enabled`.**
+
+**Upstream projects:**
+
+**Downstream projects:**
+
+**Sub-projects:**
+
+**Triggers from:** []
+
+
+**Periodic builds:**
+```bash
+#Run once on Thursday at 23h05
+H 23  * *  4
+```
+
+---
+
 ## [cvmfs-publish-baseline](https://cmssdt.cern.ch/jenkins/job/cvmfs-publish-baseline)
 
 **Description:** Copy baseline results from cmssdt for an IB and deploy them on cvmfs
