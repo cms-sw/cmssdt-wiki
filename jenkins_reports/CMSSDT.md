@@ -1042,6 +1042,7 @@ H H/4 * * *
 **Project is `enabled`.**
 
 **Upstream projects:**
+* [github-webhook](#github-webhook):
 
 **Downstream projects:**
 
@@ -1389,9 +1390,9 @@ Also it runsevery 30mins to make sure any webhooks were not missed.
 * [cms-prs-files](#cms-prs-files):
 * [comp-bot](#comp-bot):
 * [docker-dmwm-CMSKubernetes](#docker-dmwm-CMSKubernetes):
+* [dockerhub_synchronization](#dockerhub_synchronization):
 * [github-push-hook](#github-push-hook):
 * [query-build-release-issues](#query-build-release-issues):
-* [schedule-docker-build](#schedule-docker-build):
 * [update-data-tag-on-pr-merge](#update-data-tag-on-pr-merge):
 
 **Sub-projects:**
@@ -1400,7 +1401,7 @@ Also it runsevery 30mins to make sure any webhooks were not missed.
 * [cms-prs-cache](#cms-prs-cache):
 * [query-build-release-issues](#query-build-release-issues):
 * [cms-bot](#cms-bot):
-* [schedule-docker-build](#schedule-docker-build):
+* [dockerhub_synchronization](#dockerhub_synchronization):
 * [docker-dmwm-CMSKubernetes](#docker-dmwm-CMSKubernetes):
 * [cms-prs-files](#cms-prs-files):
 * [update-data-tag-on-pr-merge](#update-data-tag-on-pr-merge):
@@ -2710,7 +2711,6 @@ Should check only folder containing *EXECUTE_BUILD.sh
 **Project is `enabled`.**
 
 **Upstream projects:**
-* [github-webhook](#github-webhook):
 
 **Downstream projects:**
 * [build-container](#build-container):
