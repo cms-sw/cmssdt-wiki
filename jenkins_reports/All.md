@@ -4550,7 +4550,7 @@ Not periodically build
 **Description:** A glue job to connect github-webhook with build-container. 
 Should check only folder containing *EXECUTE_BUILD.sh  
 
-**Project is `enabled`.**
+**Project is `disabled`.**
 
 **Upstream projects:**
 

@@ -2703,31 +2703,6 @@ Not periodically build
 
 ---
 
-## [schedule-docker-build](https://cmssdt.cern.ch/jenkins/job/schedule-docker-build)
-
-**Description:** A glue job to connect github-webhook with build-container. 
-Should check only folder containing *EXECUTE_BUILD.sh  
-
-**Project is `enabled`.**
-
-**Upstream projects:**
-
-**Downstream projects:**
-* [build-container](#build-container):
-
-**Sub-projects:**
-* [build-container](#build-container):
-
-**Triggers from:** []
-
-
-**Periodic builds:**
-```bash
-Not periodically build
-```
-
----
-
 ## [slaves-checks](https://cmssdt.cern.ch/jenkins/job/slaves-checks)
 
 **Description:** A wrapper project that starts a 
