@@ -118,10 +118,11 @@ Otherwise build a patch release.
 * [ib-build-logs](#ib-build-logs):
 * [ib-install-cvmfs](#ib-install-cvmfs):
 * [ib-install-new-cvmfs](#ib-install-new-cvmfs):
+* [process-external-elastic-stats](#process-external-elastic-stats):
 
 **Sub-projects:**
 * [ib-install-cvmfs](#ib-install-cvmfs):
-* [ib-build-logs](#ib-build-logs):
+* [ib-build-logs,process-external-elastic-stats](#ib-build-logs,process-external-elastic-stats):
 * [build-fwlite-ib](#build-fwlite-ib):
 * [ib-install-new-cvmfs](#ib-install-new-cvmfs):
 
@@ -730,6 +731,29 @@ Not periodically build
 **Periodic builds:**
 ```bash
 Not periodically build
+```
+
+---
+
+## [process-external-elastic-stats](https://cmssdt.cern.ch/jenkins/job/process-external-elastic-stats)
+
+**Description:** This job process resource metrics jsons for externals
+
+**Project is `enabled`.**
+
+**Upstream projects:**
+* [build-any-ib](#build-any-ib):
+
+**Downstream projects:**
+
+**Sub-projects:**
+
+**Triggers from:** []
+
+
+**Periodic builds:**
+```bash
+H 22-23 * * *
 ```
 
 ---
