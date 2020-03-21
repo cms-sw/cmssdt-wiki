@@ -2039,8 +2039,10 @@ This was created to avoid the issue with <a href="https://wiki.jenkins.io/displa
 
 **Downstream projects:**
 * [ib-tag-and-schdule](#ib-tag-and-schdule):
+* [sync-patatrack-branch](#sync-patatrack-branch):
 
 **Sub-projects:**
+* [sync-patatrack-branch](#sync-patatrack-branch):
 * [ib-tag-and-schdule](#ib-tag-and-schdule):
 
 **Triggers from:** []
@@ -2801,6 +2803,7 @@ Not periodically build
 **Project is `enabled`.**
 
 **Upstream projects:**
+* [ib-schedule](#ib-schedule):
 
 **Downstream projects:**
 

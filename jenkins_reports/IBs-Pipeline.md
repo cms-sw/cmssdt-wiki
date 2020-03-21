@@ -20,8 +20,10 @@ This was created to avoid the issue with <a href="https://wiki.jenkins.io/displa
 
 **Downstream projects:**
 * [ib-tag-and-schdule](#ib-tag-and-schdule):
+* [sync-patatrack-branch](#sync-patatrack-branch):
 
 **Sub-projects:**
+* [sync-patatrack-branch](#sync-patatrack-branch):
 * [ib-tag-and-schdule](#ib-tag-and-schdule):
 
 **Triggers from:** []
@@ -1128,6 +1130,29 @@ Not periodically build
 **Periodic builds:**
 ```bash
 Not periodically build
+```
+
+---
+
+## [sync-patatrack-branch](https://cmssdt.cern.ch/jenkins/job/sync-patatrack-branch)
+
+**Description:** None
+
+**Project is `enabled`.**
+
+**Upstream projects:**
+* [ib-schedule](#ib-schedule):
+
+**Downstream projects:**
+
+**Sub-projects:**
+
+**Triggers from:** []
+
+
+**Periodic builds:**
+```bash
+55 * * * *
 ```
 
 ---
