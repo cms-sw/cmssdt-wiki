@@ -1058,7 +1058,7 @@ Not periodically build
 ## [cvmfs-cms-install-phedex](https://cmssdt.cern.ch/jenkins/job/cvmfs-cms-install-phedex)
 
 **Description:** Job to install phedex whenever there is a new version pushed on cmsrep.cern.ch <br>
-Install path is ${CVMFS_PATH} + phedex install dir (boostraped for comp)
+Install path is /cvmfs/${CVMFS_REPOSITORY} + phedex install dir (boostraped for comp)
 
 **Project is `enabled`.**
 
@@ -1084,7 +1084,7 @@ Not periodically build
 ## [cvmfs-cms-install-spacemon-client](https://cmssdt.cern.ch/jenkins/job/cvmfs-cms-install-spacemon-client)
 
 **Description:** Job to install spacemonclient whenever there is a new version pushed on cmsrep.cern.ch <br>
-Install path is ${CVMFS_PATH} + spacemonclient install dir (boostraped for comp)
+Install path is /cvmfs/${CVMFS_REPOSITORY} + spacemonclient install dir (boostraped for comp)
 
 **Project is `enabled`.**
 
