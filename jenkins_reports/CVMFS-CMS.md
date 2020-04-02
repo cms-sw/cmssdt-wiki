@@ -85,7 +85,7 @@ The job should be triggered by upstream job upload-release.
 It's purpose is to only trigger cms-install-package with the same argument
 it would get from upload-release job, but without using upload-release instance (it's just a trigger job for now)
 
-**Project is `disabled`.**
+**Project is `enabled`.**
 
 **Upstream projects:**
 * [cmsrep-webhook](#cmsrep-webhook):
