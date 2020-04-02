@@ -12,7 +12,7 @@
 
 **Description:** None
 
-**Project is `enabled`.**
+**Project is `disabled`.**
 
 **Upstream projects:**
 * [cvmfs-cms-eos-sync](#cvmfs-cms-eos-sync):
@@ -35,7 +35,7 @@ Not periodically build
 
 **Description:** None
 
-**Project is `enabled`.**
+**Project is `disabled`.**
 
 **Upstream projects:**
 
@@ -60,7 +60,7 @@ Not periodically build
 **Description:** Sync two folders with  cvmfs transaction.
 If the destination folder is on cvmfs, it gets published 
 
-**Project is `enabled`.**
+**Project is `disabled`.**
 
 **Upstream projects:**
 
@@ -217,7 +217,7 @@ Not periodically build
 To be used for - CRAB3, PHEDEX, spacemon-client, python, releases(cmssw), cms-common
 Triggered by webhook
 
-**Project is `disabled`.**
+**Project is `enabled`.**
 
 **Upstream projects:**
 * [cvmfs-cms-install-COMP-python](#cvmfs-cms-install-COMP-python):
@@ -325,7 +325,7 @@ Thats the only function that executes, as it exits right after:
 https://github.com/bockjoo/cvmfs-cms-install-scripts/blob/master/update_cmssw_git_mirror.sh#L50
 
 
-**Project is `enabled`.**
+**Project is `disabled`.**
 
 **Upstream projects:**
 
@@ -394,7 +394,7 @@ Not periodically build
 **Description:** This job updates SITECONF on cvmfs as described here:
 <br> https://github.com/mrodozov/cvmfs-cms-install-scripts/blob/master/cron_install_cmssw.sh#L562 
 
-**Project is `enabled`.**
+**Project is `disabled`.**
 
 **Upstream projects:**
 
