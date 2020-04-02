@@ -76,7 +76,7 @@ H 2 * * 1
 **Description:** Job to install python whenever there is a new version pushed on cmsrep.cern.ch <br>
 Install path is /cvmfs/${CVMFS_REPOSITORY} + COMP install dir (boostraped for comp)
 
-**Project is `enabled`.**
+**Project is `disabled`.**
 
 **Upstream projects:**
 * [cmsrep-webhook](#cmsrep-webhook):
@@ -133,7 +133,7 @@ Not periodically build
 **Description:** Job to install xrootd whenever there is a new version pushed on cmsrep.cern.ch <br>
 Install path is /cvmfs/${CVMFS_REPOSITORY} + COMP install dir (boostraped for comp)
 
-**Project is `enabled`.**
+**Project is `disabled`.**
 
 **Upstream projects:**
 * [cmsrep-webhook](#cmsrep-webhook):
@@ -192,7 +192,7 @@ The job should be triggered by upstream job upload-release.
 It's purpose is to only trigger cms-install-package with the same argument
 it would get from upload-release job, but without using upload-release instance (it's just a trigger job for now)
 
-**Project is `enabled`.**
+**Project is `disabled`.**
 
 **Upstream projects:**
 * [cmsrep-webhook](#cmsrep-webhook):
@@ -250,7 +250,7 @@ Not periodically build
 - Production architecture if obtained via <a href="https://raw.githubusercontent.com/cms-sw/cms-bot/master/config.map">config.map</a><br/>
 This job is triggered by <a href="https://cmssdt.cern.ch/jenkins/job/cmsrep-webhook">cmsrep-webhook</a> which should pass the cms-common revision and architecture.
 
-**Project is `enabled`.**
+**Project is `disabled`.**
 
 **Upstream projects:**
 * [cmsrep-webhook](#cmsrep-webhook):
@@ -307,7 +307,7 @@ Not periodically build
 **Description:** Job to install crab3 whenever there is a new version pushed on cmsrep.cern.ch <br>
 Install path is /cvmfs/${CVMFS_REPOSITORY} + crab3 install dir (boostraped for comp)
 
-**Project is `enabled`.**
+**Project is `disabled`.**
 
 **Upstream projects:**
 * [cmsrep-webhook](#cmsrep-webhook):
@@ -364,7 +364,7 @@ Not periodically build
 **Description:** Job to install phedex whenever there is a new version pushed on cmsrep.cern.ch <br>
 Install path is /cvmfs/${CVMFS_REPOSITORY} + phedex install dir (boostraped for comp)
 
-**Project is `enabled`.**
+**Project is `disabled`.**
 
 **Upstream projects:**
 * [cmsrep-webhook](#cmsrep-webhook):
@@ -421,7 +421,7 @@ Not periodically build
 **Description:** Job to install spacemonclient whenever there is a new version pushed on cmsrep.cern.ch <br>
 Install path is /cvmfs/${CVMFS_REPOSITORY} + spacemonclient install dir (boostraped for comp)
 
-**Project is `enabled`.**
+**Project is `disabled`.**
 
 **Upstream projects:**
 * [cmsrep-webhook](#cmsrep-webhook):
