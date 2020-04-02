@@ -136,7 +136,7 @@ Not periodically build
 ## [cvmfs-cms-install-COMP-python](https://cmssdt.cern.ch/jenkins/job/cvmfs-cms-install-COMP-python)
 
 **Description:** Job to install python whenever there is a new version pushed on cmsrep.cern.ch <br>
-Install path is ${CVMFS_PATH} + COMP install dir (boostraped for comp)
+Install path is /cvmfs/${CVMFS_REPOSITORY} + COMP install dir (boostraped for comp)
 
 **Project is `enabled`.**
 
@@ -162,7 +162,7 @@ Not periodically build
 ## [cvmfs-cms-install-COMP-xrootd](https://cmssdt.cern.ch/jenkins/job/cvmfs-cms-install-COMP-xrootd)
 
 **Description:** Job to install xrootd whenever there is a new version pushed on cmsrep.cern.ch <br>
-Install path is ${CVMFS_PATH} + COMP install dir (boostraped for comp)
+Install path is /cvmfs/${CVMFS_REPOSITORY} + COMP install dir (boostraped for comp)
 
 **Project is `enabled`.**
 
@@ -188,7 +188,7 @@ Not periodically build
 ## [cvmfs-cms-install-crab3](https://cmssdt.cern.ch/jenkins/job/cvmfs-cms-install-crab3)
 
 **Description:** Job to install crab3 whenever there is a new version pushed on cmsrep.cern.ch <br>
-Install path is ${CVMFS_PATH} + crab3 install dir (boostraped for comp)
+Install path is /cvmfs/${CVMFS_REPOSITORY} + crab3 install dir (boostraped for comp)
 
 **Project is `enabled`.**
 
