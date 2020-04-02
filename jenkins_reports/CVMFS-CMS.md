@@ -294,6 +294,28 @@ Not periodically build
 
 ---
 
+## [cvmfs-cms-test](https://cmssdt.cern.ch/jenkins/job/cvmfs-cms-test)
+
+**Description:** None
+
+**Project is `enabled`.**
+
+**Upstream projects:**
+
+**Downstream projects:**
+
+**Sub-projects:**
+
+**Triggers from:** []
+
+
+**Periodic builds:**
+```bash
+Not periodically build
+```
+
+---
+
 ## [cvmfs-cms-update-git-mirror](https://cmssdt.cern.ch/jenkins/job/cvmfs-cms-update-git-mirror)
 
 **Description:** This job mirrors cmssw to cms.cern.ch as described here:
