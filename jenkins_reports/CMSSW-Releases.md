@@ -248,6 +248,7 @@ CVMFS installation is started once a release is available in this file.
 **Downstream projects:**
 * [build-fwlite](#build-fwlite):
 * [cmssw-doxygen](#cmssw-doxygen):
+* [cvmfs-cms-install-cms](#cvmfs-cms-install-cms):
 * [ib-run-cfipython](#ib-run-cfipython):
 
 **Sub-projects:**
@@ -293,6 +294,66 @@ Not periodically build
 
 **Upstream projects:**
 * [update-release-map](#update-release-map):
+
+**Downstream projects:**
+
+**Sub-projects:**
+
+**Triggers from:** []
+
+
+**Periodic builds:**
+```bash
+Not periodically build
+```
+
+---
+
+## [cvmfs-cms-install-cms](https://cmssdt.cern.ch/jenkins/job/cvmfs-cms-install-cms)
+
+**Description:** Job to install (test) releases (and IBs) once the upload is completed.
+The job should be triggered by upstream job upload-release.
+It's purpose is to only trigger cms-install-package with the same argument
+it would get from upload-release job, but without using upload-release instance (it's just a trigger job for now)
+
+**Project is `enabled`.**
+
+**Upstream projects:**
+* [cmsrep-webhook](#cmsrep-webhook):
+* [update-release-map](#update-release-map):
+
+**Downstream projects:**
+* [cvmfs-cms-install-package](#cvmfs-cms-install-package):
+
+**Sub-projects:**
+* [cvmfs-cms-install-package](#cvmfs-cms-install-package):
+
+**Triggers from:** []
+
+
+**Periodic builds:**
+```bash
+Not periodically build
+```
+
+---
+
+## [cvmfs-cms-install-package](https://cmssdt.cern.ch/jenkins/job/cvmfs-cms-install-package)
+
+**Description:** This job installs packages using cmspkg tool
+To be used for - CRAB3, PHEDEX, spacemon-client, python, releases(cmssw), cms-common
+Triggered by webhook
+
+**Project is `enabled`.**
+
+**Upstream projects:**
+* [cvmfs-cms-install-COMP-python](#cvmfs-cms-install-COMP-python):
+* [cvmfs-cms-install-COMP-xrootd](#cvmfs-cms-install-COMP-xrootd):
+* [cvmfs-cms-install-cms](#cvmfs-cms-install-cms):
+* [cvmfs-cms-install-common](#cvmfs-cms-install-common):
+* [cvmfs-cms-install-crab3](#cvmfs-cms-install-crab3):
+* [cvmfs-cms-install-phedex](#cvmfs-cms-install-phedex):
+* [cvmfs-cms-install-spacemon-client](#cvmfs-cms-install-spacemon-client):
 
 **Downstream projects:**
 

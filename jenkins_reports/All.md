@@ -902,6 +902,7 @@ it would get from upload-release job, but without using upload-release instance 
 
 **Upstream projects:**
 * [cmsrep-webhook](#cmsrep-webhook):
+* [update-release-map](#update-release-map):
 
 **Downstream projects:**
 * [cvmfs-cms-install-package](#cvmfs-cms-install-package):
@@ -4958,6 +4959,7 @@ CVMFS installation is started once a release is available in this file.
 **Downstream projects:**
 * [build-fwlite](#build-fwlite):
 * [cmssw-doxygen](#cmssw-doxygen):
+* [cvmfs-cms-install-cms](#cvmfs-cms-install-cms):
 * [ib-run-cfipython](#ib-run-cfipython):
 
 **Sub-projects:**

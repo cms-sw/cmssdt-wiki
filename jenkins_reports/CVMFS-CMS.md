@@ -89,6 +89,7 @@ it would get from upload-release job, but without using upload-release instance 
 
 **Upstream projects:**
 * [cmsrep-webhook](#cmsrep-webhook):
+* [update-release-map](#update-release-map):
 
 **Downstream projects:**
 * [cvmfs-cms-install-package](#cvmfs-cms-install-package):
