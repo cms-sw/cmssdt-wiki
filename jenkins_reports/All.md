@@ -4293,6 +4293,7 @@ Not periodically build
 **Project is `enabled`.**
 
 **Upstream projects:**
+* [openstack-delete-vms](#openstack-delete-vms):
 
 **Downstream projects:**
 
@@ -4321,13 +4322,14 @@ Not periodically build
 
 **Downstream projects:**
 * [jenkins-delete-node](#jenkins-delete-node):
+* [openstack-delete-vm-foreman](#openstack-delete-vm-foreman):
 * [openstack-delete-vms](#openstack-delete-vms):
 * [openstack-delete-volume](#openstack-delete-volume):
 
 **Sub-projects:**
-* [jenkins-delete-node](#jenkins-delete-node):
 * [openstack-delete-vms](#openstack-delete-vms):
 * [openstack-delete-volume](#openstack-delete-volume):
+* [openstack-delete-vm-foreman ](#openstack-delete-vm-foreman ):
 
 **Triggers from:** []
 
