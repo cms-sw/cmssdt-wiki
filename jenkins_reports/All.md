@@ -4286,6 +4286,28 @@ Not periodically build
 
 ---
 
+## [openstack-delete-vm-foreman](https://cmssdt.cern.ch/jenkins/job/openstack-delete-vm-foreman)
+
+**Description:** None
+
+**Project is `enabled`.**
+
+**Upstream projects:**
+
+**Downstream projects:**
+
+**Sub-projects:**
+
+**Triggers from:** []
+
+
+**Periodic builds:**
+```bash
+Not periodically build
+```
+
+---
+
 ## [openstack-delete-vms](https://cmssdt.cern.ch/jenkins/job/openstack-delete-vms)
 
 **Description:** Job to delete openstack instances providing only the name.
