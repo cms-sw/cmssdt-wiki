@@ -56,7 +56,6 @@
   * [All](jenkins_reports/All.md)
   * [Develop](jenkins_reports/Develop.md)
   * [CVMFS-CMS](jenkins_reports/CVMFS-CMS.md)
-  * [CVMFS_CMS Pipeline](jenkins_reports/CVMFS_CMS-Pipeline.md)
   * [CMSSDT](jenkins_reports/CMSSDT.md)
   * [CMSSW Releases](jenkins_reports/CMSSW-Releases.md)
   * [Grid](jenkins_reports/Grid.md)
