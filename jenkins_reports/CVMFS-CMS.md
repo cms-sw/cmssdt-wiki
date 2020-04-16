@@ -269,6 +269,28 @@ Not periodically build
 
 ---
 
+## [cvmfs-cms-install-rucio](https://cmssdt.cern.ch/jenkins/job/cvmfs-cms-install-rucio)
+
+**Description:** None
+
+**Project is `enabled`.**
+
+**Upstream projects:**
+
+**Downstream projects:**
+
+**Sub-projects:**
+
+**Triggers from:** []
+
+
+**Periodic builds:**
+```bash
+Not periodically build
+```
+
+---
+
 ## [cvmfs-cms-install-spacemon-client](https://cmssdt.cern.ch/jenkins/job/cvmfs-cms-install-spacemon-client)
 
 **Description:** Job to install spacemonclient whenever there is a new version pushed on cmsrep.cern.ch <br>
