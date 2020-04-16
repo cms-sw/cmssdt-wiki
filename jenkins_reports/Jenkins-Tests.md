@@ -964,53 +964,6 @@ Not periodically build
 
 ---
 
-## [jenkins-test1](https://cmssdt.cern.ch/jenkins/job/jenkins-test1)
-
-**Description:** None
-
-**Project is `enabled`.**
-
-**Upstream projects:**
-* [jenkins-test2](#jenkins-test2):
-
-**Downstream projects:**
-
-**Sub-projects:**
-
-**Triggers from:** []
-
-
-**Periodic builds:**
-```bash
-Not periodically build
-```
-
----
-
-## [jenkins-test2](https://cmssdt.cern.ch/jenkins/job/jenkins-test2)
-
-**Description:** None
-
-**Project is `enabled`.**
-
-**Upstream projects:**
-
-**Downstream projects:**
-* [jenkins-test1](#jenkins-test1):
-
-**Sub-projects:**
-* [jenkins-test1](#jenkins-test1):
-
-**Triggers from:** []
-
-
-**Periodic builds:**
-```bash
-Not periodically build
-```
-
----
-
 ## [jenkins-trigger-dynamic-job](https://cmssdt.cern.ch/jenkins/job/jenkins-trigger-dynamic-job)
 
 **Description:** None
