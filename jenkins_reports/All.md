@@ -3915,6 +3915,7 @@ Not periodically build
 **Project is `enabled`.**
 
 **Upstream projects:**
+* [jenkins-test2](#jenkins-test2):
 
 **Downstream projects:**
 
@@ -3939,8 +3940,10 @@ Not periodically build
 **Upstream projects:**
 
 **Downstream projects:**
+* [jenkins-test1](#jenkins-test1):
 
 **Sub-projects:**
+* [jenkins-test1](#jenkins-test1):
 
 **Triggers from:** []
 
