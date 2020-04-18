@@ -4585,28 +4585,6 @@ Not periodically build
 
 ---
 
-## [rucio-install-cvmfs](https://cmssdt.cern.ch/jenkins/job/rucio-install-cvmfs)
-
-**Description:** None
-
-**Project is `enabled`.**
-
-**Upstream projects:**
-
-**Downstream projects:**
-
-**Sub-projects:**
-
-**Triggers from:** []
-
-
-**Periodic builds:**
-```bash
-Not periodically build
-```
-
----
-
 ## [run-cvmfs-commands](https://cmssdt.cern.ch/jenkins/job/run-cvmfs-commands)
 
 **Description:** None
