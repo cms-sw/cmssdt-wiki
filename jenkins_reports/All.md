@@ -91,7 +91,7 @@ Not periodically build
 **Description:** This is triggered by github webhook for each cmssw/cmsdist branch merge event.
 This is just a place holder job to trigger one sub-job per destionation branch for which the forward porting should be done.
 
-**Project is `disabled`.**
+**Project is `enabled`.**
 
 **Upstream projects:**
 * [github-push-hook](#github-push-hook):
