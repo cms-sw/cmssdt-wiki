@@ -620,6 +620,28 @@ Not periodically build
 
 ---
 
+## [cmssw-container](https://cmssdt.cern.ch/jenkins/job/cmssw-container)
+
+**Description:** None
+
+**Project is `enabled`.**
+
+**Upstream projects:**
+
+**Downstream projects:**
+
+**Sub-projects:**
+
+**Triggers from:** []
+
+
+**Periodic builds:**
+```bash
+Not periodically build
+```
+
+---
+
 ## [cmssw-doxygen](https://cmssdt.cern.ch/jenkins/job/cmssw-doxygen)
 
 **Description:** Generate doxygen documentation for CMSSW project
