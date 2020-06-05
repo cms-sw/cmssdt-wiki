@@ -39,6 +39,7 @@ H 10 * * *
 **Project is `enabled`.**
 
 **Upstream projects:**
+* [github-push-hook](#github-push-hook):
 
 **Downstream projects:**
 
