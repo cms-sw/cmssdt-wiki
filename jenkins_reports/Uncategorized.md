@@ -52,28 +52,6 @@ Not periodically build
 
 ---
 
-## [slc7](https://cmssdt.cern.ch/jenkins/job/slc7)
-
-**Description:** None
-
-**Project is `enabled`.**
-
-**Upstream projects:**
-
-**Downstream projects:**
-
-**Sub-projects:**
-
-**Triggers from:** []
-
-
-**Periodic builds:**
-```bash
-Not periodically build
-```
-
----
-
 ## [auto-forward-ports-old](https://cmssdt.cern.ch/jenkins/job/auto-forward-ports-old)
 
 **Description:** This is triggered by github webhook for each cmssw/cmsdist branch merge event.
@@ -138,6 +116,28 @@ Not periodically build
 ---
 
 ## [aarch64](https://cmssdt.cern.ch/jenkins/job/aarch64)
+
+**Description:** None
+
+**Project is `enabled`.**
+
+**Upstream projects:**
+
+**Downstream projects:**
+
+**Sub-projects:**
+
+**Triggers from:** []
+
+
+**Periodic builds:**
+```bash
+Not periodically build
+```
+
+---
+
+## [slc7](https://cmssdt.cern.ch/jenkins/job/slc7)
 
 **Description:** None
 
