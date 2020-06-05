@@ -219,30 +219,6 @@ Not periodically build
 
 ---
 
-## [build-cms-grid-container](https://cmssdt.cern.ch/jenkins/job/build-cms-grid-container)
-
-**Description:** None
-
-**Project is `enabled`.**
-
-**Upstream projects:**
-
-**Downstream projects:**
-* [check-docker-container](#check-docker-container):
-
-**Sub-projects:**
-* [check-docker-container](#check-docker-container):
-
-**Triggers from:** []
-
-
-**Periodic builds:**
-```bash
-H 10 * * *
-```
-
----
-
 ## [build-docker-container](https://cmssdt.cern.ch/jenkins/job/build-docker-container)
 
 **Description:** None
@@ -352,7 +328,7 @@ Not periodically build
 **Project is `enabled`.**
 
 **Upstream projects:**
-* [build-cms-grid-container](#build-cms-grid-container):
+* [cms-grid-build-container](#cms-grid-build-container):
 
 **Downstream projects:**
 * [build-docker-container](#build-docker-container):
@@ -528,9 +504,55 @@ Not periodically build
 
 ---
 
+## [cms-grid-build-container](https://cmssdt.cern.ch/jenkins/job/cms-grid-build-container)
+
+**Description:** None
+
+**Project is `enabled`.**
+
+**Upstream projects:**
+
+**Downstream projects:**
+* [check-docker-container](#check-docker-container):
+
+**Sub-projects:**
+* [check-docker-container](#check-docker-container):
+
+**Triggers from:** []
+
+
+**Periodic builds:**
+```bash
+H 10 * * *
+```
+
+---
+
 ## [cms-grid-checks-tags](https://cmssdt.cern.ch/jenkins/job/cms-grid-checks-tags)
 
 **Description:** This project search for tags.yaml files in cms-sw/cms-docker repostory and create new image tags if needed
+
+**Project is `enabled`.**
+
+**Upstream projects:**
+
+**Downstream projects:**
+
+**Sub-projects:**
+
+**Triggers from:** []
+
+
+**Periodic builds:**
+```bash
+Not periodically build
+```
+
+---
+
+## [cms-grid-tag-container](https://cmssdt.cern.ch/jenkins/job/cms-grid-tag-container)
+
+**Description:** None
 
 **Project is `enabled`.**
 
@@ -598,28 +620,6 @@ H 20 * * *
 **Periodic builds:**
 ```bash
 H H/2 * * *
-```
-
----
-
-## [cms-tag-container](https://cmssdt.cern.ch/jenkins/job/cms-tag-container)
-
-**Description:** None
-
-**Project is `enabled`.**
-
-**Upstream projects:**
-
-**Downstream projects:**
-
-**Sub-projects:**
-
-**Triggers from:** []
-
-
-**Periodic builds:**
-```bash
-Not periodically build
 ```
 
 ---
