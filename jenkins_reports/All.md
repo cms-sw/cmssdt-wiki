@@ -593,6 +593,28 @@ Not periodically build
 
 ---
 
+## [cms-grid-checks-tags](https://cmssdt.cern.ch/jenkins/job/cms-grid-checks-tags)
+
+**Description:** This project search for tags.yaml files in cms-sw/cms-docker repostory and create new image tags if needed
+
+**Project is `enabled`.**
+
+**Upstream projects:**
+
+**Downstream projects:**
+
+**Sub-projects:**
+
+**Triggers from:** []
+
+
+**Periodic builds:**
+```bash
+Not periodically build
+```
+
+---
+
 ## [cms-prs-cache](https://cmssdt.cern.ch/jenkins/job/cms-prs-cache)
 
 **Description:** This job collects metadata for pull requests since reading github directly when necessary might become time consuming or rejected by github
