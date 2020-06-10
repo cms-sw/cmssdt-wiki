@@ -918,6 +918,28 @@ Not periodically build
 
 ---
 
+## [cvmfs-cleanup-containers](https://cmssdt.cern.ch/jenkins/job/cvmfs-cleanup-containers)
+
+**Description:** None
+
+**Project is `enabled`.**
+
+**Upstream projects:**
+
+**Downstream projects:**
+
+**Sub-projects:**
+
+**Triggers from:** []
+
+
+**Periodic builds:**
+```bash
+Not periodically build
+```
+
+---
+
 ## [cvmfs-cms-eos-list](https://cmssdt.cern.ch/jenkins/job/cvmfs-cms-eos-list)
 
 **Description:** None
