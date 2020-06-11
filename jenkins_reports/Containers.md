@@ -69,7 +69,7 @@ Not periodically build
 **Project is `enabled`.**
 
 **Upstream projects:**
-* [cms-grid-build-container](#cms-grid-build-container):
+* [cms-auto-build-container](#cms-auto-build-container):
 
 **Downstream projects:**
 * [build-docker-container](#build-docker-container):
@@ -87,7 +87,7 @@ Not periodically build
 
 ---
 
-## [cms-grid-build-container](https://cmssdt.cern.ch/jenkins/job/cms-grid-build-container)
+## [cms-auto-build-container](https://cmssdt.cern.ch/jenkins/job/cms-auto-build-container)
 
 **Description:** None
 
@@ -111,6 +111,28 @@ H 10 * * *
 
 ---
 
+## [cms-grid-auto-build-containers](https://cmssdt.cern.ch/jenkins/job/cms-grid-auto-build-containers)
+
+**Description:** None
+
+**Project is `enabled`.**
+
+**Upstream projects:**
+
+**Downstream projects:**
+
+**Sub-projects:**
+
+**Triggers from:** []
+
+
+**Periodic builds:**
+```bash
+Not periodically build
+```
+
+---
+
 ## [cms-grid-checks-tags](https://cmssdt.cern.ch/jenkins/job/cms-grid-checks-tags)
 
 **Description:** This project search for tags.yaml files in cms-sw/cms-docker repostory and create new image tags if needed
@@ -124,7 +146,7 @@ H 10 * * *
 * [cms-grid-tag-container](#cms-grid-tag-container):
 
 **Sub-projects:**
-* [cms-grid-tag-container ](#cms-grid-tag-container ):
+* [cms-grid-tag-container](#cms-grid-tag-container):
 
 **Triggers from:** []
 

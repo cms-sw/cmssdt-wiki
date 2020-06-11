@@ -328,7 +328,7 @@ Not periodically build
 **Project is `enabled`.**
 
 **Upstream projects:**
-* [cms-grid-build-container](#cms-grid-build-container):
+* [cms-auto-build-container](#cms-auto-build-container):
 
 **Downstream projects:**
 * [build-docker-container](#build-docker-container):
@@ -461,6 +461,30 @@ H 0 * * *
 
 ---
 
+## [cms-auto-build-container](https://cmssdt.cern.ch/jenkins/job/cms-auto-build-container)
+
+**Description:** None
+
+**Project is `enabled`.**
+
+**Upstream projects:**
+
+**Downstream projects:**
+* [check-docker-container](#check-docker-container):
+
+**Sub-projects:**
+* [check-docker-container](#check-docker-container):
+
+**Triggers from:** []
+
+
+**Periodic builds:**
+```bash
+H 10 * * *
+```
+
+---
+
 ## [cms-bot](https://cmssdt.cern.ch/jenkins/job/cms-bot)
 
 **Description:** This is cms bot job which is triggered by github webhooks ( https://cmssdt.cern.ch/SDT/cgi-bin/github_webhook ) for every valid comment added to github PRs.
@@ -504,7 +528,7 @@ Not periodically build
 
 ---
 
-## [cms-grid-build-container](https://cmssdt.cern.ch/jenkins/job/cms-grid-build-container)
+## [cms-grid-auto-build-containers](https://cmssdt.cern.ch/jenkins/job/cms-grid-auto-build-containers)
 
 **Description:** None
 
@@ -513,17 +537,15 @@ Not periodically build
 **Upstream projects:**
 
 **Downstream projects:**
-* [check-docker-container](#check-docker-container):
 
 **Sub-projects:**
-* [check-docker-container](#check-docker-container):
 
 **Triggers from:** []
 
 
 **Periodic builds:**
 ```bash
-H 10 * * *
+Not periodically build
 ```
 
 ---
@@ -541,7 +563,7 @@ H 10 * * *
 * [cms-grid-tag-container](#cms-grid-tag-container):
 
 **Sub-projects:**
-* [cms-grid-tag-container ](#cms-grid-tag-container ):
+* [cms-grid-tag-container](#cms-grid-tag-container):
 
 **Triggers from:** []
 
