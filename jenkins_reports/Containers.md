@@ -70,6 +70,7 @@ Not periodically build
 
 **Upstream projects:**
 * [cms-auto-build-container](#cms-auto-build-container):
+* [cms-grid-auto-build-containers](#cms-grid-auto-build-containers):
 
 **Downstream projects:**
 * [build-docker-container](#build-docker-container):
@@ -120,8 +121,10 @@ H 10 * * *
 **Upstream projects:**
 
 **Downstream projects:**
+* [check-docker-container](#check-docker-container):
 
 **Sub-projects:**
+* [check-docker-container](#check-docker-container):
 
 **Triggers from:** []
 
