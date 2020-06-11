@@ -394,7 +394,6 @@ Not periodically build
 
 **Upstream projects:**
 * [cms-auto-build-container](#cms-auto-build-container):
-* [cms-grid-auto-build-containers](#cms-grid-auto-build-containers):
 
 **Downstream projects:**
 * [build-docker-container](#build-docker-container):
@@ -583,30 +582,6 @@ Will kill a scheduled/running job acording to comments.
 * [ib-schedule-pr-tests](#ib-schedule-pr-tests):
 * [abort-pr-tests ](#abort-pr-tests ):
 * [run-pr-code-checks](#run-pr-code-checks):
-
-**Triggers from:** []
-
-
-**Periodic builds:**
-```bash
-Not periodically build
-```
-
----
-
-## [cms-grid-auto-build-containers](https://cmssdt.cern.ch/jenkins/job/cms-grid-auto-build-containers)
-
-**Description:** None
-
-**Project is `enabled`.**
-
-**Upstream projects:**
-
-**Downstream projects:**
-* [check-docker-container](#check-docker-container):
-
-**Sub-projects:**
-* [check-docker-container](#check-docker-container):
 
 **Triggers from:** []
 

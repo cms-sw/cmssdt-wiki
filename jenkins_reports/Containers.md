@@ -70,7 +70,6 @@ Not periodically build
 
 **Upstream projects:**
 * [cms-auto-build-container](#cms-auto-build-container):
-* [cms-grid-auto-build-containers](#cms-grid-auto-build-containers):
 
 **Downstream projects:**
 * [build-docker-container](#build-docker-container):
@@ -108,30 +107,6 @@ Not periodically build
 **Periodic builds:**
 ```bash
 H 10 * * *
-```
-
----
-
-## [cms-grid-auto-build-containers](https://cmssdt.cern.ch/jenkins/job/cms-grid-auto-build-containers)
-
-**Description:** None
-
-**Project is `enabled`.**
-
-**Upstream projects:**
-
-**Downstream projects:**
-* [check-docker-container](#check-docker-container):
-
-**Sub-projects:**
-* [check-docker-container](#check-docker-container):
-
-**Triggers from:** []
-
-
-**Periodic builds:**
-```bash
-Not periodically build
 ```
 
 ---
