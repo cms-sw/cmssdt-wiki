@@ -652,6 +652,28 @@ H 2 * * 1
 
 ---
 
+## [cmspkg-test](https://cmssdt.cern.ch/jenkins/job/cmspkg-test)
+
+**Description:** None
+
+**Project is `enabled`.**
+
+**Upstream projects:**
+
+**Downstream projects:**
+
+**Sub-projects:**
+
+**Triggers from:** []
+
+
+**Periodic builds:**
+```bash
+Not periodically build
+```
+
+---
+
 ## [cmsrep-webhook](https://cmssdt.cern.ch/jenkins/job/cmsrep-webhook)
 
 **Description:** This is cms bot job which is triggered by github webhooks ( https://cmssdt.cern.ch/SDT/cgi-bin/github_webhook ) for every valid comment added to github PRs.
@@ -2933,28 +2955,6 @@ Not periodically build
 **Periodic builds:**
 ```bash
 H/15 * * * *
-```
-
----
-
-## [test-cmspkg](https://cmssdt.cern.ch/jenkins/job/test-cmspkg)
-
-**Description:** None
-
-**Project is `enabled`.**
-
-**Upstream projects:**
-
-**Downstream projects:**
-
-**Sub-projects:**
-
-**Triggers from:** []
-
-
-**Periodic builds:**
-```bash
-Not periodically build
 ```
 
 ---
