@@ -111,7 +111,7 @@ H 10 * * *
 
 ---
 
-## [cms-grid-checks-tags](https://cmssdt.cern.ch/jenkins/job/cms-grid-checks-tags)
+## [cms-containers-checks-tags](https://cmssdt.cern.ch/jenkins/job/cms-containers-checks-tags)
 
 **Description:** This project search for tags.yaml files in cms-sw/cms-docker repostory and create new image tags if needed
 
@@ -143,7 +143,7 @@ Not periodically build
 **Project is `enabled`.**
 
 **Upstream projects:**
-* [cms-grid-checks-tags](#cms-grid-checks-tags):
+* [cms-containers-checks-tags](#cms-containers-checks-tags):
 
 **Downstream projects:**
 

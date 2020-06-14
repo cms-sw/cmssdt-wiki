@@ -528,7 +528,7 @@ Not periodically build
 
 ---
 
-## [cms-grid-checks-tags](https://cmssdt.cern.ch/jenkins/job/cms-grid-checks-tags)
+## [cms-containers-checks-tags](https://cmssdt.cern.ch/jenkins/job/cms-containers-checks-tags)
 
 **Description:** This project search for tags.yaml files in cms-sw/cms-docker repostory and create new image tags if needed
 
@@ -560,7 +560,7 @@ Not periodically build
 **Project is `enabled`.**
 
 **Upstream projects:**
-* [cms-grid-checks-tags](#cms-grid-checks-tags):
+* [cms-containers-checks-tags](#cms-containers-checks-tags):
 
 **Downstream projects:**
 
@@ -1445,7 +1445,7 @@ This job is also triggered via github web hook. Please do not add/remove any par
 
 **Downstream projects:**
 * [auto-forward-port](#auto-forward-port):
-* [cms-grid-checks-tags](#cms-grid-checks-tags):
+* [cms-containers-checks-tags](#cms-containers-checks-tags):
 * [deploy-cms-repo](#deploy-cms-repo):
 * [git-mirror-repository](#git-mirror-repository):
 * [git-reference-cms-ib](#git-reference-cms-ib):
@@ -1457,7 +1457,7 @@ This job is also triggered via github web hook. Please do not add/remove any par
 * [git-reference-cms-ib](#git-reference-cms-ib):
 * [git-mirror-repository](#git-mirror-repository):
 * [web-update-cmssdt-ib](#web-update-cmssdt-ib):
-* [cms-grid-checks-tags](#cms-grid-checks-tags):
+* [cms-containers-checks-tags](#cms-containers-checks-tags):
 
 **Triggers from:** []
 
