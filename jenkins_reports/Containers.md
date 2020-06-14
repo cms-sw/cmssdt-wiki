@@ -121,10 +121,10 @@ H 10 * * *
 * [github-push-hook](#github-push-hook):
 
 **Downstream projects:**
-* [cms-grid-tag-container](#cms-grid-tag-container):
+* [cms-tag-container](#cms-tag-container):
 
 **Sub-projects:**
-* [cms-grid-tag-container](#cms-grid-tag-container):
+* [cms-tag-container](#cms-tag-container):
 
 **Triggers from:** []
 
@@ -136,7 +136,7 @@ Not periodically build
 
 ---
 
-## [cms-grid-tag-container](https://cmssdt.cern.ch/jenkins/job/cms-grid-tag-container)
+## [cms-tag-container](https://cmssdt.cern.ch/jenkins/job/cms-tag-container)
 
 **Description:** None
 
