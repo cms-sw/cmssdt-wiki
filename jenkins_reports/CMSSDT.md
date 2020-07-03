@@ -628,6 +628,28 @@ Not periodically build
 
 ---
 
+## [cms-test-all](https://cmssdt.cern.ch/jenkins/job/cms-test-all)
+
+**Description:** None
+
+**Project is `enabled`.**
+
+**Upstream projects:**
+
+**Downstream projects:**
+
+**Sub-projects:**
+
+**Triggers from:** []
+
+
+**Periodic builds:**
+```bash
+Not periodically build
+```
+
+---
+
 ## [cmspkg-clone](https://cmssdt.cern.ch/jenkins/job/cmspkg-clone)
 
 **Description:** None
