@@ -111,6 +111,30 @@ H 10 * * *
 
 ---
 
+## [cms-container-test-cmssw](https://cmssdt.cern.ch/jenkins/job/cms-container-test-cmssw)
+
+**Description:** None
+
+**Project is `enabled`.**
+
+**Upstream projects:**
+
+**Downstream projects:**
+* [test-cms-container](#test-cms-container):
+
+**Sub-projects:**
+* [test-cms-container](#test-cms-container):
+
+**Triggers from:** []
+
+
+**Periodic builds:**
+```bash
+Not periodically build
+```
+
+---
+
 ## [cms-containers-checks-tags](https://cmssdt.cern.ch/jenkins/job/cms-containers-checks-tags)
 
 **Description:** This project search for tags.yaml files in cms-sw/cms-docker repostory and create new image tags if needed
@@ -144,28 +168,6 @@ Not periodically build
 
 **Upstream projects:**
 * [cms-containers-checks-tags](#cms-containers-checks-tags):
-
-**Downstream projects:**
-
-**Sub-projects:**
-
-**Triggers from:** []
-
-
-**Periodic builds:**
-```bash
-Not periodically build
-```
-
----
-
-## [cms-test-all](https://cmssdt.cern.ch/jenkins/job/cms-test-all)
-
-**Description:** None
-
-**Project is `enabled`.**
-
-**Upstream projects:**
 
 **Downstream projects:**
 
@@ -233,6 +235,7 @@ H 0 * * *
 **Project is `enabled`.**
 
 **Upstream projects:**
+* [cms-container-test-cmssw](#cms-container-test-cmssw):
 
 **Downstream projects:**
 
