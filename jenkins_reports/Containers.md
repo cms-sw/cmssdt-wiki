@@ -111,30 +111,6 @@ H 10 * * *
 
 ---
 
-## [cms-container-test-cmssw](https://cmssdt.cern.ch/jenkins/job/cms-container-test-cmssw)
-
-**Description:** None
-
-**Project is `enabled`.**
-
-**Upstream projects:**
-
-**Downstream projects:**
-* [test-cms-container](#test-cms-container):
-
-**Sub-projects:**
-* [test-cms-container](#test-cms-container):
-
-**Triggers from:** []
-
-
-**Periodic builds:**
-```bash
-Not periodically build
-```
-
----
-
 ## [cms-containers-checks-tags](https://cmssdt.cern.ch/jenkins/job/cms-containers-checks-tags)
 
 **Description:** This project search for tags.yaml files in cms-sw/cms-docker repostory and create new image tags if needed
@@ -149,6 +125,53 @@ Not periodically build
 
 **Sub-projects:**
 * [cms-tag-container](#cms-tag-container):
+
+**Triggers from:** []
+
+
+**Periodic builds:**
+```bash
+Not periodically build
+```
+
+---
+
+## [cms-containers-run-cmssw-test](https://cmssdt.cern.ch/jenkins/job/cms-containers-run-cmssw-test)
+
+**Description:** None
+
+**Project is `enabled`.**
+
+**Upstream projects:**
+* [cms-containers-schedule-cmssw-test](#cms-containers-schedule-cmssw-test):
+
+**Downstream projects:**
+
+**Sub-projects:**
+
+**Triggers from:** []
+
+
+**Periodic builds:**
+```bash
+Not periodically build
+```
+
+---
+
+## [cms-containers-schedule-cmssw-test](https://cmssdt.cern.ch/jenkins/job/cms-containers-schedule-cmssw-test)
+
+**Description:** None
+
+**Project is `enabled`.**
+
+**Upstream projects:**
+
+**Downstream projects:**
+* [cms-containers-run-cmssw-test](#cms-containers-run-cmssw-test):
+
+**Sub-projects:**
+* [cms-containers-run-cmssw-test](#cms-containers-run-cmssw-test):
 
 **Triggers from:** []
 
@@ -224,29 +247,6 @@ Not periodically build
 **Periodic builds:**
 ```bash
 H 0 * * *
-```
-
----
-
-## [test-cms-container](https://cmssdt.cern.ch/jenkins/job/test-cms-container)
-
-**Description:** None
-
-**Project is `enabled`.**
-
-**Upstream projects:**
-* [cms-container-test-cmssw](#cms-container-test-cmssw):
-
-**Downstream projects:**
-
-**Sub-projects:**
-
-**Triggers from:** []
-
-
-**Periodic builds:**
-```bash
-Not periodically build
 ```
 
 ---
