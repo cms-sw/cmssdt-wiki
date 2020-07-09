@@ -1141,7 +1141,7 @@ Not periodically build
 **Description:** Job to install python whenever there is a new version pushed on cmsrep.cern.ch <br>
 Install path is /cvmfs/${CVMFS_REPOSITORY} + COMP install dir (boostraped for comp)
 
-**Project is `disabled`.**
+**Project is `enabled`.**
 
 **Upstream projects:**
 * [cmsrep-webhook](#cmsrep-webhook):
