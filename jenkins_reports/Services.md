@@ -264,6 +264,7 @@ This job is also triggered via github web hook. Please do not add/remove any par
 * [git-mirror-repository](#git-mirror-repository):
 * [git-reference-cms-ib](#git-reference-cms-ib):
 * [web-update-cmssdt-ib](#web-update-cmssdt-ib):
+* [web-update-logReader](#web-update-logReader):
 
 **Sub-projects:**
 * [deploy-cms-repo](#deploy-cms-repo):
@@ -272,6 +273,7 @@ This job is also triggered via github web hook. Please do not add/remove any par
 * [git-mirror-repository](#git-mirror-repository):
 * [web-update-cmssdt-ib](#web-update-cmssdt-ib):
 * [cms-containers-checks-tags](#cms-containers-checks-tags):
+* [web-update-logReader](#web-update-logReader):
 
 **Triggers from:** []
 

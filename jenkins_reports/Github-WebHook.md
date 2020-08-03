@@ -613,6 +613,7 @@ This job is also triggered via github web hook. Please do not add/remove any par
 * [git-mirror-repository](#git-mirror-repository):
 * [git-reference-cms-ib](#git-reference-cms-ib):
 * [web-update-cmssdt-ib](#web-update-cmssdt-ib):
+* [web-update-logReader](#web-update-logReader):
 
 **Sub-projects:**
 * [deploy-cms-repo](#deploy-cms-repo):
@@ -621,6 +622,7 @@ This job is also triggered via github web hook. Please do not add/remove any par
 * [git-mirror-repository](#git-mirror-repository):
 * [web-update-cmssdt-ib](#web-update-cmssdt-ib):
 * [cms-containers-checks-tags](#cms-containers-checks-tags):
+* [web-update-logReader](#web-update-logReader):
 
 **Triggers from:** []
 
@@ -809,6 +811,30 @@ Not periodically build
 ## [web-update-cmssdt-ib](https://cmssdt.cern.ch/jenkins/job/web-update-cmssdt-ib)
 
 **Description:** Job used to transpile cmssdt ib page from ECMAscript6 to regular javascript and push changes to github.
+
+**Project is `enabled`.**
+
+**Upstream projects:**
+* [github-push-hook](#github-push-hook):
+
+**Downstream projects:**
+
+**Sub-projects:**
+
+**Triggers from:** []
+
+
+**Periodic builds:**
+```bash
+Not periodically build
+```
+
+---
+
+## [web-update-logReader](https://cmssdt.cern.ch/jenkins/job/web-update-logReader)
+
+**Description:** Transpiles <a href="https://github.com/cms-sw/logreader">Logreader</a> to pure js/html/css and deploys to 
+<a href="https://cmssdt.cern.ch/SDT/">cmssdt-web</a>.
 
 **Project is `enabled`.**
 
