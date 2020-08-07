@@ -693,31 +693,6 @@ Not periodically build
 * [github-push-hook](#github-push-hook):
 
 **Downstream projects:**
-* [cms-tag-container](#cms-tag-container):
-
-**Sub-projects:**
-* [cms-tag-container](#cms-tag-container):
-
-**Triggers from:** []
-
-
-**Periodic builds:**
-```bash
-Not periodically build
-```
-
----
-
-## [cms-tag-container](https://cmssdt.cern.ch/jenkins/job/cms-tag-container)
-
-**Description:** None
-
-**Project is `enabled`.**
-
-**Upstream projects:**
-* [cms-containers-checks-tags](#cms-containers-checks-tags):
-
-**Downstream projects:**
 
 **Sub-projects:**
 
