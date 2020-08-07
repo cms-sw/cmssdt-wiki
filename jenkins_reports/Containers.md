@@ -121,8 +121,10 @@ H 10 * * *
 * [github-push-hook](#github-push-hook):
 
 **Downstream projects:**
+* [cms-tag-container](#cms-tag-container):
 
 **Sub-projects:**
+* [cms-tag-container](#cms-tag-container):
 
 **Triggers from:** []
 
@@ -189,6 +191,7 @@ Not periodically build
 **Project is `enabled`.**
 
 **Upstream projects:**
+* [cms-containers-checks-tags](#cms-containers-checks-tags):
 
 **Downstream projects:**
 
