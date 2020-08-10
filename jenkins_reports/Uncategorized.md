@@ -100,10 +100,8 @@ Should check only folder containing *EXECUTE_BUILD.sh
 **Upstream projects:**
 
 **Downstream projects:**
-* [build-container](#build-container):
 
 **Sub-projects:**
-* [build-container](#build-container):
 
 **Triggers from:** []
 

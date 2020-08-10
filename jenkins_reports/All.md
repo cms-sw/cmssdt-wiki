@@ -257,33 +257,6 @@ Not periodically build
 
 ---
 
-## [build-container](https://cmssdt.cern.ch/jenkins/job/build-container)
-
-**Description:** None
-
-**Project is `disabled`.**
-
-**Upstream projects:**
-* [schedule-docker-build](#schedule-docker-build):
-
-**Downstream projects:**
-* [cvmfs-unpack-container](#cvmfs-unpack-container):
-* [test-build-container](#test-build-container):
-
-**Sub-projects:**
-* [test-build-container](#test-build-container):
-* [cvmfs-unpack-container](#cvmfs-unpack-container):
-
-**Triggers from:** []
-
-
-**Periodic builds:**
-```bash
-Not periodically build
-```
-
----
-
 ## [build-docker-container](https://cmssdt.cern.ch/jenkins/job/build-docker-container)
 
 **Description:** None
@@ -1560,7 +1533,6 @@ Not periodically build
 **Project is `enabled`.**
 
 **Upstream projects:**
-* [build-container](#build-container):
 * [build-docker-container](#build-docker-container):
 
 **Downstream projects:**
@@ -4863,10 +4835,8 @@ Should check only folder containing *EXECUTE_BUILD.sh
 **Upstream projects:**
 
 **Downstream projects:**
-* [build-container](#build-container):
 
 **Sub-projects:**
-* [build-container](#build-container):
 
 **Triggers from:** []
 
@@ -4968,29 +4938,6 @@ Not periodically build
 
 ---
 
-## [test-build-container](https://cmssdt.cern.ch/jenkins/job/test-build-container)
-
-**Description:** None
-
-**Project is `enabled`.**
-
-**Upstream projects:**
-* [build-container](#build-container):
-
-**Downstream projects:**
-
-**Sub-projects:**
-
-**Triggers from:** []
-
-
-**Periodic builds:**
-```bash
-Not periodically build
-```
-
----
-
 ## [test-build-periodic](https://cmssdt.cern.ch/jenkins/job/test-build-periodic)
 
 **Description:** None
@@ -5021,28 +4968,6 @@ H/15 * * * *
 
 **Upstream projects:**
 * [slaves-checks](#slaves-checks):
-
-**Downstream projects:**
-
-**Sub-projects:**
-
-**Triggers from:** []
-
-
-**Periodic builds:**
-```bash
-Not periodically build
-```
-
----
-
-## [test-image-build](https://cmssdt.cern.ch/jenkins/job/test-image-build)
-
-**Description:** None
-
-**Project is `enabled`.**
-
-**Upstream projects:**
 
 **Downstream projects:**
 
