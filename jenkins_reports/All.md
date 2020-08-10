@@ -1694,28 +1694,6 @@ Not periodically build
 
 ---
 
-## [docker-build-container](https://cmssdt.cern.ch/jenkins/job/docker-build-container)
-
-**Description:** None
-
-**Project is `enabled`.**
-
-**Upstream projects:**
-
-**Downstream projects:**
-
-**Sub-projects:**
-
-**Triggers from:** []
-
-
-**Periodic builds:**
-```bash
-Not periodically build
-```
-
----
-
 ## [docker-dmwm-CMSKubernetes](https://cmssdt.cern.ch/jenkins/job/docker-dmwm-CMSKubernetes)
 
 **Description:** None
