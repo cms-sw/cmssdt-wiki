@@ -2833,12 +2833,7 @@ Not periodically build
 ## [ib-run-profiling](https://cmssdt.cern.ch/jenkins/job/ib-run-profiling)
 
 **Description:** Runs <a href="https://igprof.org/">IgProf</a> on IB.
-Results are available on <a href="https://cmssdt.cern.ch/SDT/html/cmssdt-ib">IB page</a>. 
 
-<br>
-run-ib-igprof is executed with `pp` flag for `performance profiling`.
-
-<br><br>
 
 
 
