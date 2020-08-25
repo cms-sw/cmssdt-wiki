@@ -461,30 +461,6 @@ H 0 * * *
 
 ---
 
-## [cms-auto-build-container](https://cmssdt.cern.ch/jenkins/job/cms-auto-build-container)
-
-**Description:** None
-
-**Project is `enabled`.**
-
-**Upstream projects:**
-
-**Downstream projects:**
-* [check-docker-container](#check-docker-container):
-
-**Sub-projects:**
-* [check-docker-container](#check-docker-container):
-
-**Triggers from:** []
-
-
-**Periodic builds:**
-```bash
-H 10 * * *
-```
-
----
-
 ## [cms-bot](https://cmssdt.cern.ch/jenkins/job/cms-bot)
 
 **Description:** This is cms bot job which is triggered by github webhooks ( https://cmssdt.cern.ch/SDT/cgi-bin/github_webhook ) for every valid comment added to github PRs.
