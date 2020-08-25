@@ -60,6 +60,28 @@ Not periodically build
 
 ---
 
+## [cleanup-docker-tags](https://cmssdt.cern.ch/jenkins/job/cleanup-docker-tags)
+
+**Description:** Removes outdated tags from docker repository.
+
+**Project is `enabled`.**
+
+**Upstream projects:**
+
+**Downstream projects:**
+
+**Sub-projects:**
+
+**Triggers from:** []
+
+
+**Periodic builds:**
+```bash
+H 0 * * *
+```
+
+---
+
 ## [cms-auto-build-container](https://cmssdt.cern.ch/jenkins/job/cms-auto-build-container)
 
 **Description:** None
