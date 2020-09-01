@@ -2773,7 +2773,6 @@ Same puprose as `ib-any-integration`, just different script is called.
 
 **Upstream projects:**
 * [ib-schedule-pr-tests](#ib-schedule-pr-tests):
-* [test-ib-schedule-pr-tests](#test-ib-schedule-pr-tests):
 
 **Downstream projects:**
 * [abort-pr-tests](#abort-pr-tests):
@@ -4974,30 +4973,6 @@ Not periodically build
 ---
 
 ## [test-ib-schedule-pr-tests](https://cmssdt.cern.ch/jenkins/job/test-ib-schedule-pr-tests)
-
-**Description:** Build a pull request
-
-**Project is `enabled`.**
-
-**Upstream projects:**
-
-**Downstream projects:**
-* [ib-run-pr-tests](#ib-run-pr-tests):
-
-**Sub-projects:**
-* [ib-run-pr-tests](#ib-run-pr-tests):
-
-**Triggers from:** []
-
-
-**Periodic builds:**
-```bash
-Not periodically build
-```
-
----
-
-## [test-pr-schedule-tests](https://cmssdt.cern.ch/jenkins/job/test-pr-schedule-tests)
 
 **Description:** Build a pull request
 

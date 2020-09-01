@@ -298,7 +298,6 @@ Same puprose as `ib-any-integration`, just different script is called.
 
 **Upstream projects:**
 * [ib-schedule-pr-tests](#ib-schedule-pr-tests):
-* [test-ib-schedule-pr-tests](#test-ib-schedule-pr-tests):
 
 **Downstream projects:**
 * [abort-pr-tests](#abort-pr-tests):
