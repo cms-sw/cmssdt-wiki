@@ -4972,6 +4972,28 @@ Not periodically build
 
 ---
 
+## [test-pr-schedule-tests](https://cmssdt.cern.ch/jenkins/job/test-pr-schedule-tests)
+
+**Description:** Build a pull request
+
+**Project is `enabled`.**
+
+**Upstream projects:**
+
+**Downstream projects:**
+
+**Sub-projects:**
+
+**Triggers from:** []
+
+
+**Periodic builds:**
+```bash
+Not periodically build
+```
+
+---
+
 ## [test-summary-merged-prs](https://cmssdt.cern.ch/jenkins/job/test-summary-merged-prs)
 
 **Description:** Generates statistics for each IB ( merged pull request since last IB, test result summary, .etc)
