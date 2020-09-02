@@ -887,7 +887,6 @@ Not periodically build
 
 **Upstream projects:**
 * [ib-run-pr-tests](#ib-run-pr-tests):
-* [test-pr-run-tests](#test-pr-run-tests):
 
 **Downstream projects:**
 
@@ -3029,11 +3028,9 @@ Same puprose as `ib-any-integration`, just different script is called.
 
 **Downstream projects:**
 * [abort-pr-tests](#abort-pr-tests):
-* [compare-root-files-short-matrix](#compare-root-files-short-matrix):
 
 **Sub-projects:**
 * [abort-pr-tests](#abort-pr-tests):
-* [compare-root-files-short-matrix](#compare-root-files-short-matrix):
 
 **Triggers from:** []
 
