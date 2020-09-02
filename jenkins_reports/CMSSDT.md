@@ -44,7 +44,6 @@ Not periodically build
 **Upstream projects:**
 * [cms-bot](#cms-bot):
 * [ib-run-pr-tests](#ib-run-pr-tests):
-* [test-ib-run-pr-tests](#test-ib-run-pr-tests):
 
 **Downstream projects:**
 * [abort-jenkins-job](#abort-jenkins-job):
@@ -887,7 +886,6 @@ Not periodically build
 
 **Upstream projects:**
 * [ib-run-pr-tests](#ib-run-pr-tests):
-* [test-ib-run-pr-tests](#test-ib-run-pr-tests):
 
 **Downstream projects:**
 
@@ -3004,36 +3002,6 @@ H/15 * * * *
 **Downstream projects:**
 
 **Sub-projects:**
-
-**Triggers from:** []
-
-
-**Periodic builds:**
-```bash
-Not periodically build
-```
-
----
-
-## [test-ib-run-pr-tests](https://cmssdt.cern.ch/jenkins/job/test-ib-run-pr-tests)
-
-**Description:** Build mutiple  a pull requests. 
-Same puprose as `ib-any-integration`, just different script is called.
-
-
-
-
-**Project is `enabled`.**
-
-**Upstream projects:**
-
-**Downstream projects:**
-* [abort-pr-tests](#abort-pr-tests):
-* [compare-root-files-short-matrix](#compare-root-files-short-matrix):
-
-**Sub-projects:**
-* [abort-pr-tests](#abort-pr-tests):
-* [compare-root-files-short-matrix](#compare-root-files-short-matrix):
 
 **Triggers from:** []
 
