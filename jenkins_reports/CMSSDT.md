@@ -2282,41 +2282,6 @@ Not periodically build
 
 ---
 
-## [ib-tag-and-schdule](https://cmssdt.cern.ch/jenkins/job/ib-tag-and-schdule)
-
-**Description:** This job tags and schedules all the IBs.<br/>
-It reads the <a href="https://raw.githubusercontent.com/cms-sw/cms-bot/master/config.map">cms-bot/config.map</a> to find all available CMSSW release cycles and tag them in github.
-Once tags is done then it triggers 'build-any-ib' sub-job to actually build IBs for all possible architectures (mentioned in <a href="https://raw.githubusercontent.com/cms-sw/cms-bot/master/config.map">cms-bot/config.map</a>).
-For Developement IB, it also triggers the generation of <a href="https://cmssdt.cern.ch/lxr">LXR indexes</a>
-
-For Sunday's 00h IBs, it also resets the CMSREP weekly repositories by building a dummy package and uploading it to cms.weekN. It also 
-then triggers 'ib-install-cvmfs' sub-job to get the new cms.weekN deployed on the /cvmfs/cms-ib.cern.ch
-
-**Project is `enabled`.**
-
-**Upstream projects:**
-* [ib-schedule](#ib-schedule):
-
-**Downstream projects:**
-* [build-any-ib](#build-any-ib):
-* [ib-install-cvmfs](#ib-install-cvmfs):
-* [lxr-checkout-version](#lxr-checkout-version):
-
-**Sub-projects:**
-* [build-any-ib](#build-any-ib):
-* [lxr-checkout-version](#lxr-checkout-version):
-* [ib-install-cvmfs](#ib-install-cvmfs):
-
-**Triggers from:** []
-
-
-**Periodic builds:**
-```bash
-Not periodically build
-```
-
----
-
 ## [ib-validation](https://cmssdt.cern.ch/jenkins/job/ib-validation)
 
 **Description:** Validates the integration builds.
