@@ -60,7 +60,6 @@ Not periodically build
 **Upstream projects:**
 * [cms-bot](#cms-bot):
 * [ib-run-pr-tests](#ib-run-pr-tests):
-* [test-pr-run-tests](#test-pr-run-tests):
 
 **Downstream projects:**
 * [abort-jenkins-job](#abort-jenkins-job):
@@ -170,7 +169,6 @@ Not periodically build
 **Upstream projects:**
 * [cms-bot](#cms-bot):
 * [ib-run-pr-tests](#ib-run-pr-tests):
-* [test-pr-run-tests](#test-pr-run-tests):
 
 **Downstream projects:**
 * [abort-jenkins-job](#abort-jenkins-job):
