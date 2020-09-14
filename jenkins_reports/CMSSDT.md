@@ -2056,8 +2056,7 @@ Not periodically build
 
 ## [ib-run-profiling](https://cmssdt.cern.ch/jenkins/job/ib-run-profiling)
 
-**Description:** Runs <a href="https://igprof.org/">IgProf</a> on IB.
-
+**Description:** Runs FastTimerService and Igprof on the RECO and PAT steps for high pileup workflow.
 
 
 
