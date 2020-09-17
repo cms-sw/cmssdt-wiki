@@ -124,6 +124,28 @@ Not periodically build
 
 ---
 
+## [ib-run-geometry](https://cmssdt.cern.ch/jenkins/job/ib-run-geometry)
+
+**Description:** Runs geometry comparison tests for each IB
+
+**Project is `disabled`.**
+
+**Upstream projects:**
+
+**Downstream projects:**
+
+**Sub-projects:**
+
+**Triggers from:** []
+
+
+**Periodic builds:**
+```bash
+Not periodically build
+```
+
+---
+
 ## [cvmfs-unpack-container](https://cmssdt.cern.ch/jenkins/job/cvmfs-unpack-container)
 
 **Description:** This jobs install an IB on /cvmfs/cms-ib.cern.ch.
@@ -154,6 +176,29 @@ Not periodically build
 **Description:** None
 
 **Project is `enabled`.**
+
+**Upstream projects:**
+
+**Downstream projects:**
+
+**Sub-projects:**
+
+**Triggers from:** []
+
+
+**Periodic builds:**
+```bash
+Not periodically build
+```
+
+---
+
+## [schedule-docker-build](https://cmssdt.cern.ch/jenkins/job/schedule-docker-build)
+
+**Description:** A glue job to connect github-webhook with build-container. 
+Should check only folder containing *EXECUTE_BUILD.sh  
+
+**Project is `disabled`.**
 
 **Upstream projects:**
 
