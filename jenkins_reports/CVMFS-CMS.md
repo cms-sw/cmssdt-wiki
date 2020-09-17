@@ -78,6 +78,147 @@ Not periodically build
 
 ---
 
+## [cvmfs-cms-install-COMP-python](https://cmssdt.cern.ch/jenkins/job/cvmfs-cms-install-COMP-python)
+
+**Description:** Job to install python whenever there is a new version pushed on cmsrep.cern.ch <br>
+Install path is /cvmfs/${CVMFS_REPOSITORY} + COMP install dir (boostraped for comp)
+
+**Project is `enabled`.**
+
+**Upstream projects:**
+* [cmsrep-webhook](#cmsrep-webhook):
+
+**Downstream projects:**
+* [cvmfs-cms-install-package](#cvmfs-cms-install-package):
+
+**Sub-projects:**
+* [cvmfs-cms-install-package](#cvmfs-cms-install-package):
+
+**Triggers from:** []
+
+
+**Periodic builds:**
+```bash
+Not periodically build
+```
+
+---
+
+## [cvmfs-cms-install-COMP-xrootd](https://cmssdt.cern.ch/jenkins/job/cvmfs-cms-install-COMP-xrootd)
+
+**Description:** Job to install xrootd whenever there is a new version pushed on cmsrep.cern.ch <br>
+Install path is /cvmfs/${CVMFS_REPOSITORY} + COMP install dir (boostraped for comp)
+
+**Project is `disabled`.**
+
+**Upstream projects:**
+* [cmsrep-webhook](#cmsrep-webhook):
+
+**Downstream projects:**
+* [cvmfs-cms-install-package](#cvmfs-cms-install-package):
+
+**Sub-projects:**
+* [cvmfs-cms-install-package](#cvmfs-cms-install-package):
+
+**Triggers from:** []
+
+
+**Periodic builds:**
+```bash
+Not periodically build
+```
+
+---
+
+## [cvmfs-cms-install-rucio](https://cmssdt.cern.ch/jenkins/job/cvmfs-cms-install-rucio)
+
+**Description:** None
+
+**Project is `enabled`.**
+
+**Upstream projects:**
+
+**Downstream projects:**
+
+**Sub-projects:**
+
+**Triggers from:** []
+
+
+**Periodic builds:**
+```bash
+Not periodically build
+```
+
+---
+
+## [cvmfs-cms-stale-lock](https://cmssdt.cern.ch/jenkins/job/cvmfs-cms-stale-lock)
+
+**Description:** None
+
+**Project is `enabled`.**
+
+**Upstream projects:**
+
+**Downstream projects:**
+
+**Sub-projects:**
+
+**Triggers from:** []
+
+
+**Periodic builds:**
+```bash
+H * * * *
+```
+
+---
+
+## [cvmfs-cms-test](https://cmssdt.cern.ch/jenkins/job/cvmfs-cms-test)
+
+**Description:** None
+
+**Project is `enabled`.**
+
+**Upstream projects:**
+
+**Downstream projects:**
+
+**Sub-projects:**
+
+**Triggers from:** []
+
+
+**Periodic builds:**
+```bash
+Not periodically build
+```
+
+---
+
+## [cvmfs-cms-update-lhapdf](https://cmssdt.cern.ch/jenkins/job/cvmfs-cms-update-lhapdf)
+
+**Description:** This job updates gridpacks on cvmfs as described here:
+<br> https://github.com/mrodozov/cvmfs-cms-install-scripts/blob/master/cron_rsync_generator_package_from_eos_individual.sh
+
+**Project is `enabled`.**
+
+**Upstream projects:**
+
+**Downstream projects:**
+
+**Sub-projects:**
+
+**Triggers from:** []
+
+
+**Periodic builds:**
+```bash
+Not periodically build
+```
+
+---
+
 ## [cvmfs-cms-install-cms](https://cmssdt.cern.ch/jenkins/job/cvmfs-cms-install-cms)
 
 **Description:** Job to install (test) releases (and IBs) once the upload is completed.
@@ -114,58 +255,6 @@ Not periodically build
 This job is triggered by <a href="https://cmssdt.cern.ch/jenkins/job/cmsrep-webhook">cmsrep-webhook</a> which should pass the cms-common revision and architecture.
 
 **Project is `enabled`.**
-
-**Upstream projects:**
-* [cmsrep-webhook](#cmsrep-webhook):
-
-**Downstream projects:**
-* [cvmfs-cms-install-package](#cvmfs-cms-install-package):
-
-**Sub-projects:**
-* [cvmfs-cms-install-package](#cvmfs-cms-install-package):
-
-**Triggers from:** []
-
-
-**Periodic builds:**
-```bash
-Not periodically build
-```
-
----
-
-## [cvmfs-cms-install-COMP-python](https://cmssdt.cern.ch/jenkins/job/cvmfs-cms-install-COMP-python)
-
-**Description:** Job to install python whenever there is a new version pushed on cmsrep.cern.ch <br>
-Install path is /cvmfs/${CVMFS_REPOSITORY} + COMP install dir (boostraped for comp)
-
-**Project is `enabled`.**
-
-**Upstream projects:**
-* [cmsrep-webhook](#cmsrep-webhook):
-
-**Downstream projects:**
-* [cvmfs-cms-install-package](#cvmfs-cms-install-package):
-
-**Sub-projects:**
-* [cvmfs-cms-install-package](#cvmfs-cms-install-package):
-
-**Triggers from:** []
-
-
-**Periodic builds:**
-```bash
-Not periodically build
-```
-
----
-
-## [cvmfs-cms-install-COMP-xrootd](https://cmssdt.cern.ch/jenkins/job/cvmfs-cms-install-COMP-xrootd)
-
-**Description:** Job to install xrootd whenever there is a new version pushed on cmsrep.cern.ch <br>
-Install path is /cvmfs/${CVMFS_REPOSITORY} + COMP install dir (boostraped for comp)
-
-**Project is `disabled`.**
 
 **Upstream projects:**
 * [cmsrep-webhook](#cmsrep-webhook):
@@ -269,28 +358,6 @@ Not periodically build
 
 ---
 
-## [cvmfs-cms-install-rucio](https://cmssdt.cern.ch/jenkins/job/cvmfs-cms-install-rucio)
-
-**Description:** None
-
-**Project is `enabled`.**
-
-**Upstream projects:**
-
-**Downstream projects:**
-
-**Sub-projects:**
-
-**Triggers from:** []
-
-
-**Periodic builds:**
-```bash
-Not periodically build
-```
-
----
-
 ## [cvmfs-cms-install-spacemon-client](https://cmssdt.cern.ch/jenkins/job/cvmfs-cms-install-spacemon-client)
 
 **Description:** Job to install spacemonclient whenever there is a new version pushed on cmsrep.cern.ch <br>
@@ -306,50 +373,6 @@ Install path is /cvmfs/${CVMFS_REPOSITORY} + spacemonclient install dir (boostra
 
 **Sub-projects:**
 * [cvmfs-cms-install-package](#cvmfs-cms-install-package):
-
-**Triggers from:** []
-
-
-**Periodic builds:**
-```bash
-Not periodically build
-```
-
----
-
-## [cvmfs-cms-stale-lock](https://cmssdt.cern.ch/jenkins/job/cvmfs-cms-stale-lock)
-
-**Description:** None
-
-**Project is `enabled`.**
-
-**Upstream projects:**
-
-**Downstream projects:**
-
-**Sub-projects:**
-
-**Triggers from:** []
-
-
-**Periodic builds:**
-```bash
-H * * * *
-```
-
----
-
-## [cvmfs-cms-test](https://cmssdt.cern.ch/jenkins/job/cvmfs-cms-test)
-
-**Description:** None
-
-**Project is `enabled`.**
-
-**Upstream projects:**
-
-**Downstream projects:**
-
-**Sub-projects:**
 
 **Triggers from:** []
 
@@ -407,29 +430,6 @@ Not periodically build
 **Periodic builds:**
 ```bash
 H * * * *
-```
-
----
-
-## [cvmfs-cms-update-lhapdf](https://cmssdt.cern.ch/jenkins/job/cvmfs-cms-update-lhapdf)
-
-**Description:** This job updates gridpacks on cvmfs as described here:
-<br> https://github.com/mrodozov/cvmfs-cms-install-scripts/blob/master/cron_rsync_generator_package_from_eos_individual.sh
-
-**Project is `enabled`.**
-
-**Upstream projects:**
-
-**Downstream projects:**
-
-**Sub-projects:**
-
-**Triggers from:** []
-
-
-**Periodic builds:**
-```bash
-Not periodically build
 ```
 
 ---

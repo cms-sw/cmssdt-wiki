@@ -32,6 +32,29 @@ Not periodically build
 
 ---
 
+## [openstack-delete-vm-foreman](https://cmssdt.cern.ch/jenkins/job/openstack-delete-vm-foreman)
+
+**Description:** None
+
+**Project is `enabled`.**
+
+**Upstream projects:**
+* [openstack-delete-vms](#openstack-delete-vms):
+
+**Downstream projects:**
+
+**Sub-projects:**
+
+**Triggers from:** []
+
+
+**Periodic builds:**
+```bash
+Not periodically build
+```
+
+---
+
 ## [openstack-add-jenkins-slave](https://cmssdt.cern.ch/jenkins/job/openstack-add-jenkins-slave)
 
 **Description:** Find all hosts in an hostgroup and add them to jenkins
@@ -113,29 +136,6 @@ Not periodically build
 **Project is `enabled`.**
 
 **Upstream projects:**
-
-**Downstream projects:**
-
-**Sub-projects:**
-
-**Triggers from:** []
-
-
-**Periodic builds:**
-```bash
-Not periodically build
-```
-
----
-
-## [openstack-delete-vm-foreman](https://cmssdt.cern.ch/jenkins/job/openstack-delete-vm-foreman)
-
-**Description:** None
-
-**Project is `enabled`.**
-
-**Upstream projects:**
-* [openstack-delete-vms](#openstack-delete-vms):
 
 **Downstream projects:**
 
