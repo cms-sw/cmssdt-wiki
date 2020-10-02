@@ -1086,7 +1086,7 @@ LXR index files based on modification timestamp. `<code>git clone</code>` ,howev
 to command's execution time. Without it, LXR would index every file, increasing jobs execution duration 
 and database size.
 
-**Project is `disabled`.**
+**Project is `enabled`.**
 
 **Upstream projects:**
 * [ib-tag-and-schdule](#ib-tag-and-schdule):
