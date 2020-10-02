@@ -1226,10 +1226,10 @@ Not periodically build
 * [update-release-map](#update-release-map):
 
 **Downstream projects:**
-* [lxr-checkout-version](#lxr-checkout-version):
+* [lxr-generate-index](#lxr-generate-index):
 
 **Sub-projects:**
-* [lxr-checkout-version](#lxr-checkout-version):
+* [lxr-generate-index](#lxr-generate-index):
 
 **Triggers from:** []
 
@@ -1241,7 +1241,7 @@ Not periodically build
 
 ---
 
-## [lxr-checkout-version](https://cmssdt.cern.ch/jenkins/job/lxr-checkout-version)
+## [lxr-generate-index](https://cmssdt.cern.ch/jenkins/job/lxr-generate-index)
 
 **Description:** This job sets modification timestamp of CMSSW source code according to commit history before 
 indexing it using LXR.<br>
