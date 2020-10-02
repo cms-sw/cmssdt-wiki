@@ -2330,31 +2330,6 @@ and database size.
 * [ib-run-cfipython](#ib-run-cfipython):
 
 **Downstream projects:**
-* [lxr-generate-index](#lxr-generate-index):
-
-**Sub-projects:**
-* [lxr-generate-index](#lxr-generate-index):
-
-**Triggers from:** []
-
-
-**Periodic builds:**
-```bash
-Not periodically build
-```
-
----
-
-## [lxr-generate-index](https://cmssdt.cern.ch/jenkins/job/lxr-generate-index)
-
-**Description:** Generates CMSSW index using LXR tool. 
-
-**Project is `enabled`.**
-
-**Upstream projects:**
-* [lxr-checkout-version](#lxr-checkout-version):
-
-**Downstream projects:**
 
 **Sub-projects:**
 
