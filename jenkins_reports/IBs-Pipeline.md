@@ -59,11 +59,9 @@ then triggers 'ib-install-cvmfs' sub-job to get the new cms.weekN deployed on th
 **Downstream projects:**
 * [build-any-ib](#build-any-ib):
 * [ib-install-cvmfs](#ib-install-cvmfs):
-* [lxr-checkout-version](#lxr-checkout-version):
 
 **Sub-projects:**
 * [build-any-ib](#build-any-ib):
-* [lxr-checkout-version](#lxr-checkout-version):
 * [ib-install-cvmfs](#ib-install-cvmfs):
 
 **Triggers from:** []
@@ -1065,60 +1063,6 @@ Not periodically build
 
 **Sub-projects:**
 * [ib-run-${ADDITIONAL_TEST_NAME}](#ib-run-${ADDITIONAL_TEST_NAME}):
-
-**Triggers from:** []
-
-
-**Periodic builds:**
-```bash
-Not periodically build
-```
-
----
-
-## [lxr-checkout-version](https://cmssdt.cern.ch/jenkins/job/lxr-checkout-version)
-
-**Description:** This job sets modification timestamp of CMSSW source code according to commit history before 
-indexing it using LXR.<br>
-
-
-LXR index files based on modification timestamp. `<code>git clone</code>` ,however, sets files timestamps 
-to command's execution time. Without it, LXR would index every file, increasing jobs execution duration 
-and database size.
-
-**Project is `enabled`.**
-
-**Upstream projects:**
-* [ib-tag-and-schdule](#ib-tag-and-schdule):
-
-**Downstream projects:**
-* [lxr-generate-index](#lxr-generate-index):
-
-**Sub-projects:**
-* [lxr-generate-index](#lxr-generate-index):
-
-**Triggers from:** []
-
-
-**Periodic builds:**
-```bash
-Not periodically build
-```
-
----
-
-## [lxr-generate-index](https://cmssdt.cern.ch/jenkins/job/lxr-generate-index)
-
-**Description:** Generates CMSSW index using LXR tool. 
-
-**Project is `enabled`.**
-
-**Upstream projects:**
-* [lxr-checkout-version](#lxr-checkout-version):
-
-**Downstream projects:**
-
-**Sub-projects:**
 
 **Triggers from:** []
 

@@ -3036,11 +3036,9 @@ then triggers 'ib-install-cvmfs' sub-job to get the new cms.weekN deployed on th
 **Downstream projects:**
 * [build-any-ib](#build-any-ib):
 * [ib-install-cvmfs](#ib-install-cvmfs):
-* [lxr-checkout-version](#lxr-checkout-version):
 
 **Sub-projects:**
 * [build-any-ib](#build-any-ib):
-* [lxr-checkout-version](#lxr-checkout-version):
 * [ib-install-cvmfs](#ib-install-cvmfs):
 
 **Triggers from:** []
@@ -4253,7 +4251,6 @@ and database size.
 **Project is `enabled`.**
 
 **Upstream projects:**
-* [ib-tag-and-schdule](#ib-tag-and-schdule):
 
 **Downstream projects:**
 * [lxr-generate-index](#lxr-generate-index):
