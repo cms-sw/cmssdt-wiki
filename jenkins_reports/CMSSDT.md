@@ -1636,8 +1636,10 @@ Not periodically build
 * [update-release-map](#update-release-map):
 
 **Downstream projects:**
+* [lxr-checkout-version](#lxr-checkout-version):
 
 **Sub-projects:**
+* [lxr-checkout-version](#lxr-checkout-version):
 
 **Triggers from:** []
 
@@ -2325,6 +2327,7 @@ and database size.
 **Project is `enabled`.**
 
 **Upstream projects:**
+* [ib-run-cfipython](#ib-run-cfipython):
 
 **Downstream projects:**
 * [lxr-generate-index](#lxr-generate-index):
