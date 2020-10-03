@@ -3699,7 +3699,7 @@ Not periodically build
 
 ## [jenkins-test-email](https://cmssdt.cern.ch/jenkins/job/jenkins-test-email)
 
-**Description:** None
+**Description:** This job is to test if Jenkins can send an email
 
 **Project is `enabled`.**
 
