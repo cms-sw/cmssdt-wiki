@@ -3697,6 +3697,28 @@ Not periodically build
 
 ---
 
+## [jenkins-test-email](https://cmssdt.cern.ch/jenkins/job/jenkins-test-email)
+
+**Description:** None
+
+**Project is `enabled`.**
+
+**Upstream projects:**
+
+**Downstream projects:**
+
+**Sub-projects:**
+
+**Triggers from:** []
+
+
+**Periodic builds:**
+```bash
+Not periodically build
+```
+
+---
+
 ## [jenkins-test-gpu](https://cmssdt.cern.ch/jenkins/job/jenkins-test-gpu)
 
 **Description:** None
