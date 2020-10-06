@@ -1226,10 +1226,35 @@ Not periodically build
 * [update-release-map](#update-release-map):
 
 **Downstream projects:**
+* [dxr-cmssw-index](#dxr-cmssw-index):
 * [lxr-generate-index](#lxr-generate-index):
 
 **Sub-projects:**
 * [lxr-generate-index](#lxr-generate-index):
+* [dxr-cmssw-index](#dxr-cmssw-index):
+
+**Triggers from:** []
+
+
+**Periodic builds:**
+```bash
+Not periodically build
+```
+
+---
+
+## [dxr-cmssw-index](https://cmssdt.cern.ch/jenkins/job/dxr-cmssw-index)
+
+**Description:** Index <a href="https://cmssdt.cern.ch/dxr">CMSSW</a> documentation using DXR. 
+
+**Project is `enabled`.**
+
+**Upstream projects:**
+* [ib-run-cfipython](#ib-run-cfipython):
+
+**Downstream projects:**
+
+**Sub-projects:**
 
 **Triggers from:** []
 

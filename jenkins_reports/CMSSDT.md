@@ -1113,6 +1113,7 @@ H 0 * * *
 **Project is `enabled`.**
 
 **Upstream projects:**
+* [ib-run-cfipython](#ib-run-cfipython):
 
 **Downstream projects:**
 
@@ -1636,10 +1637,12 @@ Not periodically build
 * [update-release-map](#update-release-map):
 
 **Downstream projects:**
+* [dxr-cmssw-index](#dxr-cmssw-index):
 * [lxr-generate-index](#lxr-generate-index):
 
 **Sub-projects:**
 * [lxr-generate-index](#lxr-generate-index):
+* [dxr-cmssw-index](#dxr-cmssw-index):
 
 **Triggers from:** []
 
