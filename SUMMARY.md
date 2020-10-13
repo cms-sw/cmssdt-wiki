@@ -56,6 +56,7 @@
   * [All](jenkins_reports/All.md)
   * [CVMFS-CMS](jenkins_reports/CVMFS-CMS.md)
   * [CMSSDT](jenkins_reports/CMSSDT.md)
+  * [Shared Agents](jenkins_reports/Shared-Agents.md)
   * [CMSSW Releases](jenkins_reports/CMSSW-Releases.md)
   * [Grid](jenkins_reports/Grid.md)
   * [IBs Pipeline](jenkins_reports/IBs-Pipeline.md)
