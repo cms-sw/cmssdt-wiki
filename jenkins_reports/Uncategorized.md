@@ -33,9 +33,7 @@ H 23  * *  4
 
 ## [cvmfs-install-pr](https://cmssdt.cern.ch/jenkins/job/cvmfs-install-pr)
 
-**Description:** This job installs packages using cmspkg tool
-To be used for - CRAB3, PHEDEX, spacemon-client, python, releases(cmssw), cms-common
-Triggered by webhook
+**Description:** To install PR externals
 
 **Project is `enabled`.**
 
