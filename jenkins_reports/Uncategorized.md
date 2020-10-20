@@ -8,29 +8,6 @@
 
 # Projects:
 
-## [cvmfs-new-gc](https://cmssdt.cern.ch/jenkins/job/cvmfs-new-gc)
-
-**Description:** This runs CVMFS GC (once a week)
-
-**Project is `enabled`.**
-
-**Upstream projects:**
-
-**Downstream projects:**
-
-**Sub-projects:**
-
-**Triggers from:** []
-
-
-**Periodic builds:**
-```bash
-#Run once on Thursday at 23h05
-H 23  * *  4
-```
-
----
-
 ## [cvmfs-cleanup-containers](https://cmssdt.cern.ch/jenkins/job/cvmfs-cleanup-containers)
 
 **Description:** None
@@ -74,6 +51,29 @@ Not periodically build
 **Periodic builds:**
 ```bash
 Not periodically build
+```
+
+---
+
+## [cvmfs-ci-gc](https://cmssdt.cern.ch/jenkins/job/cvmfs-ci-gc)
+
+**Description:** This runs CVMFS GC (once a week)
+
+**Project is `enabled`.**
+
+**Upstream projects:**
+
+**Downstream projects:**
+
+**Sub-projects:**
+
+**Triggers from:** []
+
+
+**Periodic builds:**
+```bash
+#Run once on Thursday at 23h05
+H 23  * *  4
 ```
 
 ---
