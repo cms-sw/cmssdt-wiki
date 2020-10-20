@@ -200,14 +200,12 @@ Otherwise build a patch release.
 * [build-fwlite-ib](#build-fwlite-ib):
 * [ib-build-logs](#ib-build-logs):
 * [ib-install-cvmfs](#ib-install-cvmfs):
-* [ib-install-new-cvmfs](#ib-install-new-cvmfs):
 * [process-external-elastic-stats](#process-external-elastic-stats):
 
 **Sub-projects:**
 * [ib-install-cvmfs](#ib-install-cvmfs):
 * [ib-build-logs,process-external-elastic-stats](#ib-build-logs,process-external-elastic-stats):
 * [build-fwlite-ib](#build-fwlite-ib):
-* [ib-install-new-cvmfs](#ib-install-new-cvmfs):
 
 **Triggers from:** []
 
@@ -2409,10 +2407,9 @@ Not periodically build
 
 **Description:** This jobs install an IB on /cvmfs/cms-ib.cern.ch.
 
-**Project is `enabled`.**
+**Project is `disabled`.**
 
 **Upstream projects:**
-* [build-any-ib](#build-any-ib):
 
 **Downstream projects:**
 
