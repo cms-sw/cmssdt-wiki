@@ -8,6 +8,29 @@
 
 # Projects:
 
+## [cvmfs-install-pr](https://cmssdt.cern.ch/jenkins/job/cvmfs-install-pr)
+
+**Description:** To install PR externals
+
+**Project is `enabled`.**
+
+**Upstream projects:**
+* [cmsrep-webhook](#cmsrep-webhook):
+
+**Downstream projects:**
+
+**Sub-projects:**
+
+**Triggers from:** []
+
+
+**Periodic builds:**
+```bash
+Not periodically build
+```
+
+---
+
 ## [abort-jenkins-job](https://cmssdt.cern.ch/jenkins/job/abort-jenkins-job)
 
 **Description:** Kill a running job (by default it is 'ib-any-integration'). 

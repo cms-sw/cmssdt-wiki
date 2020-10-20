@@ -31,29 +31,6 @@ H 23  * *  4
 
 ---
 
-## [cvmfs-install-pr](https://cmssdt.cern.ch/jenkins/job/cvmfs-install-pr)
-
-**Description:** To install PR externals
-
-**Project is `enabled`.**
-
-**Upstream projects:**
-* [cmsrep-webhook](#cmsrep-webhook):
-
-**Downstream projects:**
-
-**Sub-projects:**
-
-**Triggers from:** []
-
-
-**Periodic builds:**
-```bash
-Not periodically build
-```
-
----
-
 ## [cvmfs-cleanup-containers](https://cmssdt.cern.ch/jenkins/job/cvmfs-cleanup-containers)
 
 **Description:** None
