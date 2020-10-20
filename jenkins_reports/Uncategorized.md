@@ -31,6 +31,30 @@ H 23  * *  4
 
 ---
 
+## [cvmfs-install-pr](https://cmssdt.cern.ch/jenkins/job/cvmfs-install-pr)
+
+**Description:** This job installs packages using cmspkg tool
+To be used for - CRAB3, PHEDEX, spacemon-client, python, releases(cmssw), cms-common
+Triggered by webhook
+
+**Project is `enabled`.**
+
+**Upstream projects:**
+
+**Downstream projects:**
+
+**Sub-projects:**
+
+**Triggers from:** []
+
+
+**Periodic builds:**
+```bash
+Not periodically build
+```
+
+---
+
 ## [cvmfs-cleanup-containers](https://cmssdt.cern.ch/jenkins/job/cvmfs-cleanup-containers)
 
 **Description:** None
