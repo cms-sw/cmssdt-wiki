@@ -735,7 +735,7 @@ H 22-23 * * *
 
 ## [cleanup-cmsrep](https://cmssdt.cern.ch/jenkins/job/cleanup-cmsrep)
 
-**Description:** None
+**Description:** This cleans up old cms.weekN.PR_* repositories from cmsrep.cern.ch server.
 
 **Project is `enabled`.**
 
