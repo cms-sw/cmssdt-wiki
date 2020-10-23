@@ -437,6 +437,28 @@ H 0 * * *
 
 ---
 
+## [cleanup-dev-machines](https://cmssdt.cern.ch/jenkins/job/cleanup-dev-machines)
+
+**Description:** Clean up disk space on cmssdt
+
+**Project is `enabled`.**
+
+**Upstream projects:**
+
+**Downstream projects:**
+
+**Sub-projects:**
+
+**Triggers from:** []
+
+
+**Periodic builds:**
+```bash
+H 0 * * *
+```
+
+---
+
 ## [cleanup-docker-tags](https://cmssdt.cern.ch/jenkins/job/cleanup-docker-tags)
 
 **Description:** Removes outdated tags from docker repository.
