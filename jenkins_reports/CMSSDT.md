@@ -33,7 +33,7 @@ Not periodically build
 
 ## [cleanup-dev-machines](https://cmssdt.cern.ch/jenkins/job/cleanup-dev-machines)
 
-**Description:** Clean up disk space on cmssdt
+**Description:** Clean up disk space on cmsdev machines
 
 **Project is `enabled`.**
 
@@ -48,7 +48,7 @@ Not periodically build
 
 **Periodic builds:**
 ```bash
-H 0 * * *
+Not periodically build
 ```
 
 ---
