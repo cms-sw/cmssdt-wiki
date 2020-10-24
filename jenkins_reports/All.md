@@ -441,7 +441,7 @@ H 0 * * *
 
 **Description:** Clean up disk space on cmsdev machines
 
-**Project is `enabled`.**
+**Project is `disabled`.**
 
 **Upstream projects:**
 

@@ -101,6 +101,28 @@ H 19  * *  4
 
 ---
 
+## [cleanup-dev-machines](https://cmssdt.cern.ch/jenkins/job/cleanup-dev-machines)
+
+**Description:** Clean up disk space on cmsdev machines
+
+**Project is `disabled`.**
+
+**Upstream projects:**
+
+**Downstream projects:**
+
+**Sub-projects:**
+
+**Triggers from:** []
+
+
+**Periodic builds:**
+```bash
+0 8,20 * * *
+```
+
+---
+
 ## [cvmfs-publish-baseline](https://cmssdt.cern.ch/jenkins/job/cvmfs-publish-baseline)
 
 **Description:** Copy baseline results from cmssdt for an IB and deploy them on cvmfs
