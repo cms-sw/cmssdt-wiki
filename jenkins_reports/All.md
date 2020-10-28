@@ -5186,6 +5186,28 @@ H */6 * * *
 
 ---
 
+## [update-pr-status](https://cmssdt.cern.ch/jenkins/job/update-pr-status)
+
+**Description:** None
+
+**Project is `enabled`.**
+
+**Upstream projects:**
+
+**Downstream projects:**
+
+**Sub-projects:**
+
+**Triggers from:** []
+
+
+**Periodic builds:**
+```bash
+Not periodically build
+```
+
+---
+
 ## [update-release-map](https://cmssdt.cern.ch/jenkins/job/update-release-map)
 
 **Description:** This project adds the release information in <a href="https://cmssdt.cern.ch/SDT/releases.map">cms-bot/releases.map</a> file.

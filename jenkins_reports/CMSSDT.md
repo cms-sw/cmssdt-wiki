@@ -76,6 +76,28 @@ Not periodically build
 
 ---
 
+## [update-pr-status](https://cmssdt.cern.ch/jenkins/job/update-pr-status)
+
+**Description:** None
+
+**Project is `enabled`.**
+
+**Upstream projects:**
+
+**Downstream projects:**
+
+**Sub-projects:**
+
+**Triggers from:** []
+
+
+**Periodic builds:**
+```bash
+Not periodically build
+```
+
+---
+
 ## [abort-jenkins-job](https://cmssdt.cern.ch/jenkins/job/abort-jenkins-job)
 
 **Description:** Kill a running job (by default it is 'ib-any-integration'). 
