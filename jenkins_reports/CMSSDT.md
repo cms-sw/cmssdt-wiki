@@ -54,6 +54,28 @@ Not periodically build
 
 ---
 
+## [das-query-test](https://cmssdt.cern.ch/jenkins/job/das-query-test)
+
+**Description:** Job to run das client and cache the results in github to be used by IBs.
+
+**Project is `enabled`.**
+
+**Upstream projects:**
+
+**Downstream projects:**
+
+**Sub-projects:**
+
+**Triggers from:** []
+
+
+**Periodic builds:**
+```bash
+H 9,21 * * *
+```
+
+---
+
 ## [abort-jenkins-job](https://cmssdt.cern.ch/jenkins/job/abort-jenkins-job)
 
 **Description:** Kill a running job (by default it is 'ib-any-integration'). 
