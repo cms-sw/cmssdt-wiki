@@ -71,7 +71,7 @@ Not periodically build
 
 **Periodic builds:**
 ```bash
-H 9,21 * * *
+Not periodically build
 ```
 
 ---
