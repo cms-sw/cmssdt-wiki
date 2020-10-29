@@ -1039,6 +1039,7 @@ Not periodically build
 ## [das-query](https://cmssdt.cern.ch/jenkins/job/das-query)
 
 **Description:** Job to run das client and cache the results in github to be used by IBs.
+Ignore any failed job if a newer job has succeeded.
 
 **Project is `enabled`.**
 
