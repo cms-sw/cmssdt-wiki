@@ -54,28 +54,6 @@ Not periodically build
 
 ---
 
-## [das-query-test](https://cmssdt.cern.ch/jenkins/job/das-query-test)
-
-**Description:** Job to run das client and cache the results in github to be used by IBs.
-
-**Project is `enabled`.**
-
-**Upstream projects:**
-
-**Downstream projects:**
-
-**Sub-projects:**
-
-**Triggers from:** []
-
-
-**Periodic builds:**
-```bash
-Not periodically build
-```
-
----
-
 ## [update-pr-status](https://cmssdt.cern.ch/jenkins/job/update-pr-status)
 
 **Description:** None
