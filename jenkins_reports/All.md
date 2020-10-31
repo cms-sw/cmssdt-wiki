@@ -1554,30 +1554,6 @@ Not periodically build
 
 ---
 
-## [cvmfs-unpack-container](https://cmssdt.cern.ch/jenkins/job/cvmfs-unpack-container)
-
-**Description:** This jobs install an IB on /cvmfs/cms-ib.cern.ch.
-
-**Project is `enabled`.**
-
-**Upstream projects:**
-
-**Downstream projects:**
-* [cvmfs_publish_remote_dir](#cvmfs_publish_remote_dir):
-
-**Sub-projects:**
-* [cvmfs_publish_remote_dir](#cvmfs_publish_remote_dir):
-
-**Triggers from:** []
-
-
-**Periodic builds:**
-```bash
-Not periodically build
-```
-
----
-
 ## [cvmfs_publish_remote_dir](https://cmssdt.cern.ch/jenkins/job/cvmfs_publish_remote_dir)
 
 **Description:** This jobs install an IB on /cvmfs/cms-ib.cern.ch.
@@ -1585,7 +1561,6 @@ Not periodically build
 **Project is `enabled`.**
 
 **Upstream projects:**
-* [cvmfs-unpack-container](#cvmfs-unpack-container):
 
 **Downstream projects:**
 
@@ -1911,7 +1886,7 @@ Not periodically build
 **Description:** Create GIT Reference for cms-sw/cmssw repository in /cvmfs/cms-ib.cern.ch/git/cms-sw.
 This is automatically triggered by "git push" to cmssw repo.
 
-**Project is `disabled`.**
+**Project is `enabled`.**
 
 **Upstream projects:**
 * [github-push-hook](#github-push-hook):
