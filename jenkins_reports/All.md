@@ -946,28 +946,6 @@ Not periodically build
 
 ---
 
-## [create-json](https://cmssdt.cern.ch/jenkins/job/create-json)
-
-**Description:** None
-
-**Project is `enabled`.**
-
-**Upstream projects:**
-
-**Downstream projects:**
-
-**Sub-projects:**
-
-**Triggers from:** []
-
-
-**Periodic builds:**
-```bash
-Not periodically build
-```
-
----
-
 ## [cvmfs-ci-cleanup](https://cmssdt.cern.ch/jenkins/job/cvmfs-ci-cleanup)
 
 **Description:** This cleans up old cms.weekN.PR_* repositories from cmsrep.cern.ch server.
