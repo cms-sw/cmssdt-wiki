@@ -968,6 +968,28 @@ Not periodically build
 
 ---
 
+## [cvmfs-ci-cleanup](https://cmssdt.cern.ch/jenkins/job/cvmfs-ci-cleanup)
+
+**Description:** This cleans up old cms.weekN.PR_* repositories from cmsrep.cern.ch server.
+
+**Project is `enabled`.**
+
+**Upstream projects:**
+
+**Downstream projects:**
+
+**Sub-projects:**
+
+**Triggers from:** []
+
+
+**Periodic builds:**
+```bash
+Not periodically build
+```
+
+---
+
 ## [cvmfs-ci-gc](https://cmssdt.cern.ch/jenkins/job/cvmfs-ci-gc)
 
 **Description:** This runs CVMFS GC (once a week)

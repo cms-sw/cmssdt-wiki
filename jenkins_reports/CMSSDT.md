@@ -31,6 +31,28 @@ Not periodically build
 
 ---
 
+## [cvmfs-ci-cleanup](https://cmssdt.cern.ch/jenkins/job/cvmfs-ci-cleanup)
+
+**Description:** This cleans up old cms.weekN.PR_* repositories from cmsrep.cern.ch server.
+
+**Project is `enabled`.**
+
+**Upstream projects:**
+
+**Downstream projects:**
+
+**Sub-projects:**
+
+**Triggers from:** []
+
+
+**Periodic builds:**
+```bash
+Not periodically build
+```
+
+---
+
 ## [cvmfs-install-pr](https://cmssdt.cern.ch/jenkins/job/cvmfs-install-pr)
 
 **Description:** To install PR externals
