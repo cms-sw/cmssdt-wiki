@@ -2519,6 +2519,7 @@ Not periodically build
 
 **Sub-projects:**
 * [cvmfs-deploy-baseline](#cvmfs-deploy-baseline):
+* [cvmfs-deploy-baseline](#cvmfs-deploy-baseline):
 
 **Triggers from:** []
 
