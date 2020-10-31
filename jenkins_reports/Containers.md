@@ -19,11 +19,9 @@
 
 **Downstream projects:**
 * [cms-containers-run-cmssw-test](#cms-containers-run-cmssw-test):
-* [cvmfs-unpack-container](#cvmfs-unpack-container):
 
 **Sub-projects:**
 * [cms-containers-run-cmssw-test](#cms-containers-run-cmssw-test):
-* [cvmfs-unpack-container](#cvmfs-unpack-container):
 
 **Triggers from:** []
 

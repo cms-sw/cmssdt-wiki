@@ -175,7 +175,6 @@ Not periodically build
 **Project is `enabled`.**
 
 **Upstream projects:**
-* [build-docker-container](#build-docker-container):
 
 **Downstream projects:**
 * [cvmfs_publish_remote_dir](#cvmfs_publish_remote_dir):

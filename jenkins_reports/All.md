@@ -228,11 +228,9 @@ Not periodically build
 
 **Downstream projects:**
 * [cms-containers-run-cmssw-test](#cms-containers-run-cmssw-test):
-* [cvmfs-unpack-container](#cvmfs-unpack-container):
 
 **Sub-projects:**
 * [cms-containers-run-cmssw-test](#cms-containers-run-cmssw-test):
-* [cvmfs-unpack-container](#cvmfs-unpack-container):
 
 **Triggers from:** []
 
@@ -1563,7 +1561,6 @@ Not periodically build
 **Project is `enabled`.**
 
 **Upstream projects:**
-* [build-docker-container](#build-docker-container):
 
 **Downstream projects:**
 * [cvmfs_publish_remote_dir](#cvmfs_publish_remote_dir):
