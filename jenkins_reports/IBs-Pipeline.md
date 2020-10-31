@@ -59,12 +59,13 @@ then triggers 'ib-install-cvmfs' sub-job to get the new cms.weekN deployed on th
 **Downstream projects:**
 * [build-any-ib](#build-any-ib):
 * [cleanup-cmsrep](#cleanup-cmsrep):
+* [cleanup-cvmfs-ci](#cleanup-cvmfs-ci):
 * [ib-install-cvmfs](#ib-install-cvmfs):
 
 **Sub-projects:**
 * [build-any-ib](#build-any-ib):
 * [ib-install-cvmfs](#ib-install-cvmfs):
-* [cleanup-cmsrep ](#cleanup-cmsrep ):
+* [cleanup-cmsrep,cleanup-cvmfs-ci](#cleanup-cmsrep,cleanup-cvmfs-ci):
 
 **Triggers from:** []
 
@@ -734,6 +735,29 @@ H 22-23 * * *
 ---
 
 ## [cleanup-cmsrep](https://cmssdt.cern.ch/jenkins/job/cleanup-cmsrep)
+
+**Description:** This cleans up old cms.weekN.PR_* repositories from cmsrep.cern.ch server.
+
+**Project is `enabled`.**
+
+**Upstream projects:**
+* [ib-tag-and-schdule](#ib-tag-and-schdule):
+
+**Downstream projects:**
+
+**Sub-projects:**
+
+**Triggers from:** []
+
+
+**Periodic builds:**
+```bash
+Not periodically build
+```
+
+---
+
+## [cleanup-cvmfs-ci](https://cmssdt.cern.ch/jenkins/job/cleanup-cvmfs-ci)
 
 **Description:** This cleans up old cms.weekN.PR_* repositories from cmsrep.cern.ch server.
 
