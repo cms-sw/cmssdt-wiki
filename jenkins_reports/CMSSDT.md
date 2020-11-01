@@ -2911,6 +2911,28 @@ Not periodically build
 
 ---
 
+## [run-cvmfs-commands](https://cmssdt.cern.ch/jenkins/job/run-cvmfs-commands)
+
+**Description:** None
+
+**Project is `enabled`.**
+
+**Upstream projects:**
+
+**Downstream projects:**
+
+**Sub-projects:**
+
+**Triggers from:** []
+
+
+**Periodic builds:**
+```bash
+Not periodically build
+```
+
+---
+
 ## [run-pr-code-checks](https://cmssdt.cern.ch/jenkins/job/run-pr-code-checks)
 
 **Description:** This run "scram build code-checks" for a cmssw PR to find out if it comply with cmssw code checks.
