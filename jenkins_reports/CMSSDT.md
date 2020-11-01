@@ -54,6 +54,31 @@ Not periodically build
 
 ---
 
+## [cvmfs-deploy-baseline](https://cmssdt.cern.ch/jenkins/job/cvmfs-deploy-baseline)
+
+**Description:** Copy baseline results from cmssdt for an IB
+
+**Project is `enabled`.**
+
+**Upstream projects:**
+* [ib-run-baseline](#ib-run-baseline):
+
+**Downstream projects:**
+* [cvmfs-publish-baseline](#cvmfs-publish-baseline):
+
+**Sub-projects:**
+* [cvmfs-publish-baseline](#cvmfs-publish-baseline):
+
+**Triggers from:** []
+
+
+**Periodic builds:**
+```bash
+Not periodically build
+```
+
+---
+
 ## [cvmfs-install-pr](https://cmssdt.cern.ch/jenkins/job/cvmfs-install-pr)
 
 **Description:** To install PR externals
@@ -62,6 +87,51 @@ Not periodically build
 
 **Upstream projects:**
 * [cmsrep-webhook](#cmsrep-webhook):
+
+**Downstream projects:**
+
+**Sub-projects:**
+
+**Triggers from:** []
+
+
+**Periodic builds:**
+```bash
+Not periodically build
+```
+
+---
+
+## [cvmfs-publish-baseline](https://cmssdt.cern.ch/jenkins/job/cvmfs-publish-baseline)
+
+**Description:** Copy baseline results from cmssdt for an IB and deploy them on cvmfs
+
+**Project is `enabled`.**
+
+**Upstream projects:**
+* [cvmfs-deploy-baseline](#cvmfs-deploy-baseline):
+
+**Downstream projects:**
+
+**Sub-projects:**
+
+**Triggers from:** []
+
+
+**Periodic builds:**
+```bash
+Not periodically build
+```
+
+---
+
+## [cvmfs_publish_remote_dir](https://cmssdt.cern.ch/jenkins/job/cvmfs_publish_remote_dir)
+
+**Description:** This jobs install an IB on /cvmfs/cms-ib.cern.ch.
+
+**Project is `enabled`.**
+
+**Upstream projects:**
 
 **Downstream projects:**
 
@@ -975,28 +1045,6 @@ Not periodically build
 
 **Upstream projects:**
 * [ib-run-pr-tests](#ib-run-pr-tests):
-
-**Downstream projects:**
-
-**Sub-projects:**
-
-**Triggers from:** []
-
-
-**Periodic builds:**
-```bash
-Not periodically build
-```
-
----
-
-## [cvmfs_publish_remote_dir](https://cmssdt.cern.ch/jenkins/job/cvmfs_publish_remote_dir)
-
-**Description:** This jobs install an IB on /cvmfs/cms-ib.cern.ch.
-
-**Project is `enabled`.**
-
-**Upstream projects:**
 
 **Downstream projects:**
 

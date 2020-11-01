@@ -52,31 +52,6 @@ Not periodically build
 
 ---
 
-## [cvmfs-deploy-baseline](https://cmssdt.cern.ch/jenkins/job/cvmfs-deploy-baseline)
-
-**Description:** Copy baseline results from cmssdt for an IB
-
-**Project is `enabled`.**
-
-**Upstream projects:**
-* [ib-run-baseline](#ib-run-baseline):
-
-**Downstream projects:**
-* [cvmfs-publish-baseline](#cvmfs-publish-baseline):
-
-**Sub-projects:**
-* [cvmfs-publish-baseline](#cvmfs-publish-baseline):
-
-**Triggers from:** []
-
-
-**Periodic builds:**
-```bash
-Not periodically build
-```
-
----
-
 ## [cvmfs-ci-gc](https://cmssdt.cern.ch/jenkins/job/cvmfs-ci-gc)
 
 **Description:** This runs CVMFS GC (once a week)
@@ -141,29 +116,6 @@ H 19  * *  4
 **Periodic builds:**
 ```bash
 0 8,20 * * *
-```
-
----
-
-## [cvmfs-publish-baseline](https://cmssdt.cern.ch/jenkins/job/cvmfs-publish-baseline)
-
-**Description:** Copy baseline results from cmssdt for an IB and deploy them on cvmfs
-
-**Project is `enabled`.**
-
-**Upstream projects:**
-* [cvmfs-deploy-baseline](#cvmfs-deploy-baseline):
-
-**Downstream projects:**
-
-**Sub-projects:**
-
-**Triggers from:** []
-
-
-**Periodic builds:**
-```bash
-Not periodically build
 ```
 
 ---
