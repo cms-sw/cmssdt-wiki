@@ -611,14 +611,14 @@ This job is also triggered via github web hook. Please do not add/remove any par
 * [cms-containers-checks-tags](#cms-containers-checks-tags):
 * [deploy-cms-repo](#deploy-cms-repo):
 * [git-mirror-repository](#git-mirror-repository):
-* [git-reference-cms-ib](#git-reference-cms-ib):
+* [git-reference-cvmfs](#git-reference-cvmfs):
 * [web-update-cmssdt-ib](#web-update-cmssdt-ib):
 * [web-update-logReader](#web-update-logReader):
 
 **Sub-projects:**
 * [deploy-cms-repo](#deploy-cms-repo):
 * [auto-forward-port](#auto-forward-port):
-* [git-reference-cms-ib](#git-reference-cms-ib):
+* [git-reference-cvmfs](#git-reference-cvmfs):
 * [git-mirror-repository](#git-mirror-repository):
 * [web-update-cmssdt-ib](#web-update-cmssdt-ib):
 * [cms-containers-checks-tags](#cms-containers-checks-tags):
@@ -784,7 +784,7 @@ Not periodically build
 
 ---
 
-## [git-reference-cms-ib](https://cmssdt.cern.ch/jenkins/job/git-reference-cms-ib)
+## [git-reference-cvmfs](https://cmssdt.cern.ch/jenkins/job/git-reference-cvmfs)
 
 **Description:** Create GIT Reference for cms-sw/cmssw repository in /cvmfs/cms-ib.cern.ch/git/cms-sw.
 This is automatically triggered by "git push" to cmssw repo.
