@@ -132,6 +132,7 @@ Not periodically build
 **Project is `enabled`.**
 
 **Upstream projects:**
+* [cvmfs-unpack-container](#cvmfs-unpack-container):
 
 **Downstream projects:**
 
