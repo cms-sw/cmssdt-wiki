@@ -411,10 +411,12 @@ Not periodically build
 * [check-docker-container](#check-docker-container):
 
 **Downstream projects:**
+* [cms-containers-checks-tags](#cms-containers-checks-tags):
 * [cms-containers-run-cmssw-test](#cms-containers-run-cmssw-test):
 
 **Sub-projects:**
 * [cms-containers-run-cmssw-test](#cms-containers-run-cmssw-test):
+* [cms-containers-checks-tags](#cms-containers-checks-tags):
 
 **Triggers from:** []
 
@@ -715,6 +717,7 @@ Not periodically build
 **Project is `enabled`.**
 
 **Upstream projects:**
+* [build-docker-container](#build-docker-container):
 * [github-push-hook](#github-push-hook):
 
 **Downstream projects:**

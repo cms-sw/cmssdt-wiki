@@ -690,6 +690,7 @@ Not periodically build
 **Project is `enabled`.**
 
 **Upstream projects:**
+* [build-docker-container](#build-docker-container):
 * [github-push-hook](#github-push-hook):
 
 **Downstream projects:**
