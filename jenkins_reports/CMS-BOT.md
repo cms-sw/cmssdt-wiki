@@ -148,7 +148,6 @@ Same puprose as `ib-any-integration`, just different script is called.
 
 **Sub-projects:**
 * [abort-pr-tests](#abort-pr-tests):
-* [abort-pr-tests](#abort-pr-tests):
 * [compare-root-files-short-matrix](#compare-root-files-short-matrix):
 
 **Triggers from:** []
