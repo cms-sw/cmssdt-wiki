@@ -305,11 +305,13 @@ Same puprose as `ib-any-integration`, just different script is called.
 * [abort-pr-tests](#abort-pr-tests):
 * [cms-bot](#cms-bot):
 * [compare-root-files-short-matrix](#compare-root-files-short-matrix):
+* [pr-publish-cmssw](#pr-publish-cmssw):
 
 **Sub-projects:**
 * [abort-pr-tests](#abort-pr-tests):
 * [compare-root-files-short-matrix](#compare-root-files-short-matrix):
 * [cms-bot](#cms-bot):
+* [pr-publish-cmssw](#pr-publish-cmssw):
 
 **Triggers from:** []
 
@@ -388,6 +390,29 @@ Not periodically build
 
 **Sub-projects:**
 * [cms-bot](#cms-bot):
+
+**Triggers from:** []
+
+
+**Periodic builds:**
+```bash
+Not periodically build
+```
+
+---
+
+## [pr-publish-cmssw](https://cmssdt.cern.ch/jenkins/job/pr-publish-cmssw)
+
+**Description:** None
+
+**Project is `enabled`.**
+
+**Upstream projects:**
+* [ib-run-pr-tests](#ib-run-pr-tests):
+
+**Downstream projects:**
+
+**Sub-projects:**
 
 **Triggers from:** []
 

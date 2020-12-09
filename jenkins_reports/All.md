@@ -2834,11 +2834,13 @@ Same puprose as `ib-any-integration`, just different script is called.
 * [abort-pr-tests](#abort-pr-tests):
 * [cms-bot](#cms-bot):
 * [compare-root-files-short-matrix](#compare-root-files-short-matrix):
+* [pr-publish-cmssw](#pr-publish-cmssw):
 
 **Sub-projects:**
 * [abort-pr-tests](#abort-pr-tests):
 * [compare-root-files-short-matrix](#compare-root-files-short-matrix):
 * [cms-bot](#cms-bot):
+* [pr-publish-cmssw](#pr-publish-cmssw):
 
 **Triggers from:** []
 
@@ -4623,6 +4625,7 @@ Not periodically build
 **Project is `enabled`.**
 
 **Upstream projects:**
+* [ib-run-pr-tests](#ib-run-pr-tests):
 
 **Downstream projects:**
 
