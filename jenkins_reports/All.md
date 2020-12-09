@@ -573,6 +573,7 @@ Will kill a scheduled/running job acording to comments.
 
 **Upstream projects:**
 * [github-webhook](#github-webhook):
+* [ib-run-pr-tests](#ib-run-pr-tests):
 
 **Downstream projects:**
 * [abort-pr-tests](#abort-pr-tests):
@@ -2828,11 +2829,13 @@ Same puprose as `ib-any-integration`, just different script is called.
 
 **Downstream projects:**
 * [abort-pr-tests](#abort-pr-tests):
+* [cms-bot](#cms-bot):
 * [compare-root-files-short-matrix](#compare-root-files-short-matrix):
 
 **Sub-projects:**
 * [abort-pr-tests](#abort-pr-tests):
 * [compare-root-files-short-matrix](#compare-root-files-short-matrix):
+* [cms-bot](#cms-bot):
 
 **Triggers from:** []
 
