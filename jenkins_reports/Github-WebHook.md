@@ -309,6 +309,7 @@ Same puprose as `ib-any-integration`, just different script is called.
 
 **Sub-projects:**
 * [abort-pr-tests](#abort-pr-tests):
+* [cms-bot](#cms-bot):
 * [compare-root-files-short-matrix](#compare-root-files-short-matrix):
 * [pr-publish-cmssw](#pr-publish-cmssw):
 
