@@ -186,6 +186,7 @@ Will kill a scheduled/running job acording to comments.
 **Project is `enabled`.**
 
 **Upstream projects:**
+* [compare-root-files-short-matrix](#compare-root-files-short-matrix):
 * [github-webhook](#github-webhook):
 * [ib-run-pr-tests](#ib-run-pr-tests):
 
@@ -383,8 +384,10 @@ Not periodically build
 * [ib-run-pr-tests](#ib-run-pr-tests):
 
 **Downstream projects:**
+* [cms-bot](#cms-bot):
 
 **Sub-projects:**
+* [cms-bot](#cms-bot):
 
 **Triggers from:** []
 
