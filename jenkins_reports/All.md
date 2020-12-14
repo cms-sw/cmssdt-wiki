@@ -2832,6 +2832,7 @@ Same puprose as `ib-any-integration`, just different script is called.
 **Project is `enabled`.**
 
 **Upstream projects:**
+* [ib-run-pr-tests](#ib-run-pr-tests):
 
 **Downstream projects:**
 * [cms-bot](#cms-bot):
@@ -2860,6 +2861,7 @@ Same puprose as `ib-any-integration`, just different script is called.
 **Project is `enabled`.**
 
 **Upstream projects:**
+* [ib-run-pr-tests](#ib-run-pr-tests):
 
 **Downstream projects:**
 * [cms-bot](#cms-bot):
@@ -2888,6 +2890,7 @@ Same puprose as `ib-any-integration`, just different script is called.
 **Project is `enabled`.**
 
 **Upstream projects:**
+* [ib-run-pr-tests](#ib-run-pr-tests):
 
 **Downstream projects:**
 * [cms-bot](#cms-bot):
@@ -2924,13 +2927,19 @@ Same puprose as `ib-any-integration`, just different script is called.
 * [abort-pr-tests](#abort-pr-tests):
 * [cms-bot](#cms-bot):
 * [compare-root-files-short-matrix](#compare-root-files-short-matrix):
+* [ib-run-pr-addon](#ib-run-pr-addon):
+* [ib-run-pr-profiling](#ib-run-pr-profiling):
+* [ib-run-pr-relvals](#ib-run-pr-relvals):
 * [pr-publish-cmssw](#pr-publish-cmssw):
 
 **Sub-projects:**
 * [abort-pr-tests](#abort-pr-tests):
+* [pr-publish-cmssw](#pr-publish-cmssw):
+* [ib-run-pr-addon ](#ib-run-pr-addon ):
+* [ib-run-pr-relvals](#ib-run-pr-relvals):
+* [ib-run-pr-profiling ](#ib-run-pr-profiling ):
 * [cms-bot](#cms-bot):
 * [compare-root-files-short-matrix](#compare-root-files-short-matrix):
-* [pr-publish-cmssw](#pr-publish-cmssw):
 
 **Triggers from:** []
 
