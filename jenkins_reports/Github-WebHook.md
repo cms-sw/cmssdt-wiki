@@ -189,6 +189,7 @@ Will kill a scheduled/running job acording to comments.
 * [compare-root-files-short-matrix](#compare-root-files-short-matrix):
 * [github-webhook](#github-webhook):
 * [ib-run-pr-addon](#ib-run-pr-addon):
+* [ib-run-pr-profiling](#ib-run-pr-profiling):
 * [ib-run-pr-relvals](#ib-run-pr-relvals):
 * [ib-run-pr-tests](#ib-run-pr-tests):
 

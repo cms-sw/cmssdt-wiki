@@ -575,6 +575,7 @@ Will kill a scheduled/running job acording to comments.
 * [compare-root-files-short-matrix](#compare-root-files-short-matrix):
 * [github-webhook](#github-webhook):
 * [ib-run-pr-addon](#ib-run-pr-addon):
+* [ib-run-pr-profiling](#ib-run-pr-profiling):
 * [ib-run-pr-relvals](#ib-run-pr-relvals):
 * [ib-run-pr-tests](#ib-run-pr-tests):
 
@@ -2821,6 +2822,34 @@ Not periodically build
 ---
 
 ## [ib-run-pr-addon](https://cmssdt.cern.ch/jenkins/job/ib-run-pr-addon)
+
+**Description:** Build mutiple  a pull requests. 
+Same puprose as `ib-any-integration`, just different script is called.
+
+
+
+
+**Project is `enabled`.**
+
+**Upstream projects:**
+
+**Downstream projects:**
+* [cms-bot](#cms-bot):
+
+**Sub-projects:**
+* [cms-bot](#cms-bot):
+
+**Triggers from:** []
+
+
+**Periodic builds:**
+```bash
+Not periodically build
+```
+
+---
+
+## [ib-run-pr-profiling](https://cmssdt.cern.ch/jenkins/job/ib-run-pr-profiling)
 
 **Description:** Build mutiple  a pull requests. 
 Same puprose as `ib-any-integration`, just different script is called.
