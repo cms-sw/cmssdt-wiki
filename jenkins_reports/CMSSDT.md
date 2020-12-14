@@ -170,6 +170,36 @@ Not periodically build
 
 ---
 
+## [ib-run-pr-addon](https://cmssdt.cern.ch/jenkins/job/ib-run-pr-addon)
+
+**Description:** Build mutiple  a pull requests. 
+Same puprose as `ib-any-integration`, just different script is called.
+
+
+
+
+**Project is `enabled`.**
+
+**Upstream projects:**
+
+**Downstream projects:**
+* [cms-bot](#cms-bot):
+* [compare-root-files-short-matrix](#compare-root-files-short-matrix):
+
+**Sub-projects:**
+* [cms-bot](#cms-bot):
+* [compare-root-files-short-matrix](#compare-root-files-short-matrix):
+
+**Triggers from:** []
+
+
+**Periodic builds:**
+```bash
+Not periodically build
+```
+
+---
+
 ## [ib-run-pr-relvals](https://cmssdt.cern.ch/jenkins/job/ib-run-pr-relvals)
 
 **Description:** Build mutiple  a pull requests. 
@@ -183,16 +213,12 @@ Same puprose as `ib-any-integration`, just different script is called.
 **Upstream projects:**
 
 **Downstream projects:**
-* [abort-pr-tests](#abort-pr-tests):
 * [cms-bot](#cms-bot):
 * [compare-root-files-short-matrix](#compare-root-files-short-matrix):
-* [pr-publish-cmssw](#pr-publish-cmssw):
 
 **Sub-projects:**
-* [abort-pr-tests](#abort-pr-tests):
 * [cms-bot](#cms-bot):
 * [compare-root-files-short-matrix](#compare-root-files-short-matrix):
-* [pr-publish-cmssw](#pr-publish-cmssw):
 
 **Triggers from:** []
 
@@ -211,7 +237,6 @@ Not periodically build
 **Project is `enabled`.**
 
 **Upstream projects:**
-* [ib-run-pr-relvals](#ib-run-pr-relvals):
 * [ib-run-pr-tests](#ib-run-pr-tests):
 
 **Downstream projects:**
@@ -285,7 +310,6 @@ Not periodically build
 
 **Upstream projects:**
 * [cms-bot](#cms-bot):
-* [ib-run-pr-relvals](#ib-run-pr-relvals):
 * [ib-run-pr-tests](#ib-run-pr-tests):
 
 **Downstream projects:**
@@ -749,6 +773,7 @@ Will kill a scheduled/running job acording to comments.
 **Upstream projects:**
 * [compare-root-files-short-matrix](#compare-root-files-short-matrix):
 * [github-webhook](#github-webhook):
+* [ib-run-pr-addon](#ib-run-pr-addon):
 * [ib-run-pr-relvals](#ib-run-pr-relvals):
 * [ib-run-pr-tests](#ib-run-pr-tests):
 
@@ -1132,6 +1157,7 @@ Not periodically build
 **Project is `enabled`.**
 
 **Upstream projects:**
+* [ib-run-pr-addon](#ib-run-pr-addon):
 * [ib-run-pr-relvals](#ib-run-pr-relvals):
 * [ib-run-pr-tests](#ib-run-pr-tests):
 
