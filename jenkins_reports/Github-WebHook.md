@@ -385,7 +385,6 @@ Not periodically build
 **Project is `enabled`.**
 
 **Upstream projects:**
-* [ib-run-pr-addon](#ib-run-pr-addon):
 * [ib-run-pr-relvals](#ib-run-pr-relvals):
 * [ib-run-pr-tests](#ib-run-pr-tests):
 
