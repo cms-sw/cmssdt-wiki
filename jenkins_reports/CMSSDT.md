@@ -1960,8 +1960,10 @@ Not periodically build
 **Upstream projects:**
 
 **Downstream projects:**
+* [ib-run-qa](#ib-run-qa):
 
 **Sub-projects:**
+* [ib-run-qa](#ib-run-qa):
 
 **Triggers from:** []
 
@@ -2232,6 +2234,7 @@ Not periodically build
 **Project is `enabled`.**
 
 **Upstream projects:**
+* [ib-run-gpu](#ib-run-gpu):
 * [ib-validation](#ib-validation):
 
 **Downstream projects:**
