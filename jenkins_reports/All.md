@@ -2632,7 +2632,7 @@ Not periodically build
 **Description:** Runs Quality Assurance (QA) test on IB. Rezulst are available at 
 <a href="https://cmssdt.cern.ch/SDT/html/cmssdt-ib/">IB page's</a> Q/A section.
 
-**Project is `enabled`.**
+**Project is `disabled`.**
 
 **Upstream projects:**
 
