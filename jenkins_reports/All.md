@@ -3035,6 +3035,29 @@ Not periodically build
 
 ---
 
+## [ib-run-relvals-gpu](https://cmssdt.cern.ch/jenkins/job/ib-run-relvals-gpu)
+
+**Description:** Runs Quality Assurance (QA) test on IB. Rezulst are available at 
+<a href="https://cmssdt.cern.ch/SDT/html/cmssdt-ib/">IB page's</a> Q/A section.
+
+**Project is `enabled`.**
+
+**Upstream projects:**
+
+**Downstream projects:**
+
+**Sub-projects:**
+
+**Triggers from:** []
+
+
+**Periodic builds:**
+```bash
+Not periodically build
+```
+
+---
+
 ## [ib-run-static-checks](https://cmssdt.cern.ch/jenkins/job/ib-run-static-checks)
 
 **Description:** Runs a few tests only for the IB, for comparison with those ran by the pull request.
