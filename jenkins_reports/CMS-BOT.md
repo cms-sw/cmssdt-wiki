@@ -31,10 +31,6 @@ Will kill a scheduled/running job acording to comments.
 **Upstream projects:**
 * [compare-root-files-short-matrix](#compare-root-files-short-matrix):
 * [github-webhook](#github-webhook):
-* [ib-run-pr-addon](#ib-run-pr-addon):
-* [ib-run-pr-profiling](#ib-run-pr-profiling):
-* [ib-run-pr-relvals](#ib-run-pr-relvals):
-* [ib-run-pr-tests](#ib-run-pr-tests):
 
 **Downstream projects:**
 * [abort-pr-tests](#abort-pr-tests):
@@ -149,8 +145,6 @@ Same puprose as `ib-any-integration`, just different script is called.
 
 **Downstream projects:**
 * [abort-pr-tests](#abort-pr-tests):
-* [cms-bot](#cms-bot):
-* [compare-root-files-short-matrix](#compare-root-files-short-matrix):
 * [ib-run-pr-addon](#ib-run-pr-addon):
 * [ib-run-pr-profiling](#ib-run-pr-profiling):
 * [ib-run-pr-relvals](#ib-run-pr-relvals):
@@ -162,8 +156,6 @@ Same puprose as `ib-any-integration`, just different script is called.
 * [ib-run-pr-addon ](#ib-run-pr-addon ):
 * [ib-run-pr-relvals](#ib-run-pr-relvals):
 * [ib-run-pr-profiling ](#ib-run-pr-profiling ):
-* [cms-bot](#cms-bot):
-* [compare-root-files-short-matrix](#compare-root-files-short-matrix):
 
 **Triggers from:** []
 
@@ -228,32 +220,6 @@ Not periodically build
 
 ---
 
-## [compare-root-files-short-matrix](https://cmssdt.cern.ch/jenkins/job/compare-root-files-short-matrix)
-
-**Description:** Download the files of the baseline IB and compare them with the results of the ones of a pull request
-
-**Project is `enabled`.**
-
-**Upstream projects:**
-* [ib-run-pr-relvals](#ib-run-pr-relvals):
-* [ib-run-pr-tests](#ib-run-pr-tests):
-
-**Downstream projects:**
-* [cms-bot](#cms-bot):
-
-**Sub-projects:**
-* [cms-bot](#cms-bot):
-
-**Triggers from:** []
-
-
-**Periodic builds:**
-```bash
-Not periodically build
-```
-
----
-
 ## [ib-run-pr-addon](https://cmssdt.cern.ch/jenkins/job/ib-run-pr-addon)
 
 **Description:** Build mutiple  a pull requests. 
@@ -268,10 +234,8 @@ Same puprose as `ib-any-integration`, just different script is called.
 * [ib-run-pr-tests](#ib-run-pr-tests):
 
 **Downstream projects:**
-* [cms-bot](#cms-bot):
 
 **Sub-projects:**
-* [cms-bot](#cms-bot):
 
 **Triggers from:** []
 
@@ -297,10 +261,8 @@ Same puprose as `ib-any-integration`, just different script is called.
 * [ib-run-pr-tests](#ib-run-pr-tests):
 
 **Downstream projects:**
-* [cms-bot](#cms-bot):
 
 **Sub-projects:**
-* [cms-bot](#cms-bot):
 
 **Triggers from:** []
 
@@ -326,11 +288,9 @@ Same puprose as `ib-any-integration`, just different script is called.
 * [ib-run-pr-tests](#ib-run-pr-tests):
 
 **Downstream projects:**
-* [cms-bot](#cms-bot):
 * [compare-root-files-short-matrix](#compare-root-files-short-matrix):
 
 **Sub-projects:**
-* [cms-bot](#cms-bot):
 * [compare-root-files-short-matrix](#compare-root-files-short-matrix):
 
 **Triggers from:** []
@@ -351,7 +311,6 @@ Not periodically build
 
 **Upstream projects:**
 * [ib-run-pr-relvals](#ib-run-pr-relvals):
-* [ib-run-pr-tests](#ib-run-pr-tests):
 
 **Downstream projects:**
 * [cms-bot](#cms-bot):

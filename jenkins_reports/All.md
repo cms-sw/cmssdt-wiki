@@ -574,10 +574,6 @@ Will kill a scheduled/running job acording to comments.
 **Upstream projects:**
 * [compare-root-files-short-matrix](#compare-root-files-short-matrix):
 * [github-webhook](#github-webhook):
-* [ib-run-pr-addon](#ib-run-pr-addon):
-* [ib-run-pr-profiling](#ib-run-pr-profiling):
-* [ib-run-pr-relvals](#ib-run-pr-relvals):
-* [ib-run-pr-tests](#ib-run-pr-tests):
 
 **Downstream projects:**
 * [abort-pr-tests](#abort-pr-tests):
@@ -982,7 +978,6 @@ Not periodically build
 
 **Upstream projects:**
 * [ib-run-pr-relvals](#ib-run-pr-relvals):
-* [ib-run-pr-tests](#ib-run-pr-tests):
 
 **Downstream projects:**
 * [cms-bot](#cms-bot):
@@ -2835,10 +2830,8 @@ Same puprose as `ib-any-integration`, just different script is called.
 * [ib-run-pr-tests](#ib-run-pr-tests):
 
 **Downstream projects:**
-* [cms-bot](#cms-bot):
 
 **Sub-projects:**
-* [cms-bot](#cms-bot):
 
 **Triggers from:** []
 
@@ -2864,10 +2857,8 @@ Same puprose as `ib-any-integration`, just different script is called.
 * [ib-run-pr-tests](#ib-run-pr-tests):
 
 **Downstream projects:**
-* [cms-bot](#cms-bot):
 
 **Sub-projects:**
-* [cms-bot](#cms-bot):
 
 **Triggers from:** []
 
@@ -2893,11 +2884,9 @@ Same puprose as `ib-any-integration`, just different script is called.
 * [ib-run-pr-tests](#ib-run-pr-tests):
 
 **Downstream projects:**
-* [cms-bot](#cms-bot):
 * [compare-root-files-short-matrix](#compare-root-files-short-matrix):
 
 **Sub-projects:**
-* [cms-bot](#cms-bot):
 * [compare-root-files-short-matrix](#compare-root-files-short-matrix):
 
 **Triggers from:** []
@@ -2925,8 +2914,6 @@ Same puprose as `ib-any-integration`, just different script is called.
 
 **Downstream projects:**
 * [abort-pr-tests](#abort-pr-tests):
-* [cms-bot](#cms-bot):
-* [compare-root-files-short-matrix](#compare-root-files-short-matrix):
 * [ib-run-pr-addon](#ib-run-pr-addon):
 * [ib-run-pr-profiling](#ib-run-pr-profiling):
 * [ib-run-pr-relvals](#ib-run-pr-relvals):
@@ -2938,8 +2925,6 @@ Same puprose as `ib-any-integration`, just different script is called.
 * [ib-run-pr-addon ](#ib-run-pr-addon ):
 * [ib-run-pr-relvals](#ib-run-pr-relvals):
 * [ib-run-pr-profiling ](#ib-run-pr-profiling ):
-* [cms-bot](#cms-bot):
-* [compare-root-files-short-matrix](#compare-root-files-short-matrix):
 
 **Triggers from:** []
 
