@@ -506,7 +506,6 @@ Not periodically build
 **Project is `enabled`.**
 
 **Upstream projects:**
-* [ib-run-gpu](#ib-run-gpu):
 * [ib-validation](#ib-validation):
 
 **Downstream projects:**
@@ -895,7 +894,6 @@ Not periodically build
 **Project is `enabled`.**
 
 **Upstream projects:**
-* [ib-run-gpu](#ib-run-gpu):
 * [ib-validation](#ib-validation):
 
 **Downstream projects:**
