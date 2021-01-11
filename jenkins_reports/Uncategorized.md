@@ -10,7 +10,8 @@
 
 ## [list-storage-dev-machine](https://cmssdt.cern.ch/jenkins/job/list-storage-dev-machine)
 
-**Description:** Clean up disk space on cmsdev machines
+**Description:** List cmsdev machines and run a job to get the storage of each machine
+
 
 **Project is `disabled`.**
 
