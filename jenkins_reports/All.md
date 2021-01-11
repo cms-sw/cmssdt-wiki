@@ -460,7 +460,7 @@ Not periodically build
 
 ---
 
-## [cleanup-dev-machines](https://cmssdt.cern.ch/jenkins/job/cleanup-dev-machines)
+## [cleanup-dev-machine](https://cmssdt.cern.ch/jenkins/job/cleanup-dev-machine)
 
 **Description:** Clean up disk space on cmsdev machines
 
