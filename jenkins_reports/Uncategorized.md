@@ -98,28 +98,6 @@ H 19  * *  4
 
 ---
 
-## [cleanup-dev-machines](https://cmssdt.cern.ch/jenkins/job/cleanup-dev-machines)
-
-**Description:** Clean up disk space on cmsdev machines
-
-**Project is `disabled`.**
-
-**Upstream projects:**
-
-**Downstream projects:**
-
-**Sub-projects:**
-
-**Triggers from:** []
-
-
-**Periodic builds:**
-```bash
-0 8,20 * * *
-```
-
----
-
 ## [ib-run-geometry](https://cmssdt.cern.ch/jenkins/job/ib-run-geometry)
 
 **Description:** Runs geometry comparison tests for each IB
@@ -227,6 +205,28 @@ Not periodically build
 **Periodic builds:**
 ```bash
 Not periodically build
+```
+
+---
+
+## [cleanup-dev-machine](https://cmssdt.cern.ch/jenkins/job/cleanup-dev-machine)
+
+**Description:** Clean up disk space on cmsdev machines
+
+**Project is `disabled`.**
+
+**Upstream projects:**
+
+**Downstream projects:**
+
+**Sub-projects:**
+
+**Triggers from:** []
+
+
+**Periodic builds:**
+```bash
+0 8,20 * * *
 ```
 
 ---
