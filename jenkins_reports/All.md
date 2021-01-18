@@ -5139,6 +5139,28 @@ H/15 * * * *
 
 ---
 
+## [test-container-singularity](https://cmssdt.cern.ch/jenkins/job/test-container-singularity)
+
+**Description:** None
+
+**Project is `enabled`.**
+
+**Upstream projects:**
+
+**Downstream projects:**
+
+**Sub-projects:**
+
+**Triggers from:** []
+
+
+**Periodic builds:**
+```bash
+Not periodically build
+```
+
+---
+
 ## [test-docker](https://cmssdt.cern.ch/jenkins/job/test-docker)
 
 **Description:** Connects to the slave and checks if docker service is runable.
