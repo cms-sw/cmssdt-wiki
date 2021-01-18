@@ -20,9 +20,11 @@
 **Downstream projects:**
 * [cms-containers-checks-tags](#cms-containers-checks-tags):
 * [cms-containers-run-cmssw-test](#cms-containers-run-cmssw-test):
+* [test-containter-singularity](#test-containter-singularity):
 
 **Sub-projects:**
 * [cms-containers-run-cmssw-test](#cms-containers-run-cmssw-test):
+* [test-containter-singularity](#test-containter-singularity):
 * [cms-containers-checks-tags](#cms-containers-checks-tags):
 
 **Triggers from:** []
