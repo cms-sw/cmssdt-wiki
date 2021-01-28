@@ -1238,7 +1238,7 @@ Ignore any failed job if a newer job has succeeded.
 
 **Periodic builds:**
 ```bash
-H 9,21 * * *
+Not periodically build
 ```
 
 ---
