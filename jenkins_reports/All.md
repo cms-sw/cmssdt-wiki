@@ -5164,6 +5164,29 @@ Not periodically build
 
 ---
 
+## [test-dasgoclient](https://cmssdt.cern.ch/jenkins/job/test-dasgoclient)
+
+**Description:** Job to run das client and cache the results in github to be used by IBs.
+Ignore any failed job if a newer job has succeeded.
+
+**Project is `enabled`.**
+
+**Upstream projects:**
+
+**Downstream projects:**
+
+**Sub-projects:**
+
+**Triggers from:** []
+
+
+**Periodic builds:**
+```bash
+Not periodically build
+```
+
+---
+
 ## [test-docker](https://cmssdt.cern.ch/jenkins/job/test-docker)
 
 **Description:** Connects to the slave and checks if docker service is runable.
