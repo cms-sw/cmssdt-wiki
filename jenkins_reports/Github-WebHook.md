@@ -306,6 +306,7 @@ Same puprose as `ib-any-integration`, just different script is called.
 * [ib-run-pr-profiling](#ib-run-pr-profiling):
 * [ib-run-pr-relvals](#ib-run-pr-relvals):
 * [pr-publish-cmssw](#pr-publish-cmssw):
+* [test-dasgoclient](#test-dasgoclient):
 
 **Sub-projects:**
 * [abort-pr-tests](#abort-pr-tests):
@@ -313,6 +314,7 @@ Same puprose as `ib-any-integration`, just different script is called.
 * [ib-run-pr-addon ](#ib-run-pr-addon ):
 * [ib-run-pr-relvals](#ib-run-pr-relvals):
 * [ib-run-pr-profiling ](#ib-run-pr-profiling ):
+* [test-dasgoclient ](#test-dasgoclient ):
 
 **Triggers from:** []
 
@@ -488,6 +490,30 @@ Not periodically build
 ## [pr-publish-cmssw](https://cmssdt.cern.ch/jenkins/job/pr-publish-cmssw)
 
 **Description:** None
+
+**Project is `enabled`.**
+
+**Upstream projects:**
+* [ib-run-pr-tests](#ib-run-pr-tests):
+
+**Downstream projects:**
+
+**Sub-projects:**
+
+**Triggers from:** []
+
+
+**Periodic builds:**
+```bash
+Not periodically build
+```
+
+---
+
+## [test-dasgoclient](https://cmssdt.cern.ch/jenkins/job/test-dasgoclient)
+
+**Description:** Job to run das client and cache the results in github to be used by IBs.
+Ignore any failed job if a newer job has succeeded.
 
 **Project is `enabled`.**
 
