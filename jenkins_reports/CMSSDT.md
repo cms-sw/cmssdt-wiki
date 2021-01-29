@@ -310,8 +310,10 @@ Ignore any failed job if a newer job has succeeded.
 * [ib-run-pr-tests](#ib-run-pr-tests):
 
 **Downstream projects:**
+* [lfn-to-ibeos](#lfn-to-ibeos):
 
 **Sub-projects:**
+* [lfn-to-ibeos ](#lfn-to-ibeos ):
 
 **Triggers from:** []
 
@@ -2566,6 +2568,7 @@ H H/8 * * *
 
 **Upstream projects:**
 * [lfn-to-ibeos](#lfn-to-ibeos):
+* [test-dasgoclient](#test-dasgoclient):
 
 **Downstream projects:**
 * [lfn-to-ibeos](#lfn-to-ibeos):

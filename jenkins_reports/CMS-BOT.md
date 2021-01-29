@@ -364,6 +364,61 @@ Ignore any failed job if a newer job has succeeded.
 * [ib-run-pr-tests](#ib-run-pr-tests):
 
 **Downstream projects:**
+* [lfn-to-ibeos](#lfn-to-ibeos):
+
+**Sub-projects:**
+* [lfn-to-ibeos ](#lfn-to-ibeos ):
+
+**Triggers from:** []
+
+
+**Periodic builds:**
+```bash
+Not periodically build
+```
+
+---
+
+## [lfn-to-ibeos](https://cmssdt.cern.ch/jenkins/job/lfn-to-ibeos)
+
+**Description:** Job to run das client and cache the results in github to be used by IBs.
+
+**Project is `enabled`.**
+
+**Upstream projects:**
+* [lfn-to-ibeos](#lfn-to-ibeos):
+* [test-dasgoclient](#test-dasgoclient):
+
+**Downstream projects:**
+* [lfn-to-ibeos](#lfn-to-ibeos):
+* [update-ibeos-cache](#update-ibeos-cache):
+
+**Sub-projects:**
+* [update-ibeos-cache](#update-ibeos-cache):
+* [lfn-to-ibeos](#lfn-to-ibeos):
+
+**Triggers from:** []
+
+
+**Periodic builds:**
+```bash
+Not periodically build
+```
+
+---
+
+## [update-ibeos-cache](https://cmssdt.cern.ch/jenkins/job/update-ibeos-cache)
+
+**Description:** Job to run das client and cache the results in github to be used by IBs.
+
+**Project is `enabled`.**
+
+**Upstream projects:**
+* [dataset-to-ibeos](#dataset-to-ibeos):
+* [ib-cache-to-eos](#ib-cache-to-eos):
+* [lfn-to-ibeos](#lfn-to-ibeos):
+
+**Downstream projects:**
 
 **Sub-projects:**
 
@@ -372,7 +427,7 @@ Ignore any failed job if a newer job has succeeded.
 
 **Periodic builds:**
 ```bash
-Not periodically build
+H */6 * * *
 ```
 
 ---
