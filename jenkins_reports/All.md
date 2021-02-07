@@ -1650,7 +1650,7 @@ Ignore any failed job if a newer job has succeeded.
 
 **Periodic builds:**
 ```bash
-Not periodically build
+H 9,21 * * *
 ```
 
 ---
