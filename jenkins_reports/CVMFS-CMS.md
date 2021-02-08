@@ -198,8 +198,8 @@ Not periodically build
 
 ## [cvmfs-cms-update-ca-crl](https://cmssdt.cern.ch/jenkins/job/cvmfs-cms-update-ca-crl)
 
-**Description:** This job updates SITECONF on cvmfs as described here:
-<br> https://github.com/mrodozov/cvmfs-cms-install-scripts/blob/master/cron_install_cmssw.sh#L562 
+**Description:** This job updates CA/CRL under /cvmfs/cms.cern.ch/grid/etc/grid-security as in the following script:
+<br> https://github.com/bockjoo/cvmfs-cms-install-scripts/blob/master/update_ca_crl.sh
 
 **Project is `disabled`.**
 
