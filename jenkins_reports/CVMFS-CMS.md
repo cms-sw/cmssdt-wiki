@@ -196,6 +196,29 @@ Not periodically build
 
 ---
 
+## [cvmfs-cms-update-ca-crl](https://cmssdt.cern.ch/jenkins/job/cvmfs-cms-update-ca-crl)
+
+**Description:** This job updates SITECONF on cvmfs as described here:
+<br> https://github.com/mrodozov/cvmfs-cms-install-scripts/blob/master/cron_install_cmssw.sh#L562 
+
+**Project is `disabled`.**
+
+**Upstream projects:**
+
+**Downstream projects:**
+
+**Sub-projects:**
+
+**Triggers from:** []
+
+
+**Periodic builds:**
+```bash
+Not periodically build
+```
+
+---
+
 ## [cvmfs-cms-update-lhapdf](https://cmssdt.cern.ch/jenkins/job/cvmfs-cms-update-lhapdf)
 
 **Description:** This job updates gridpacks on cvmfs as described here:
