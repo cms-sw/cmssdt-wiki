@@ -197,6 +197,31 @@ Not periodically build
 
 ---
 
+## [ib-run-pr-dasgoclient](https://cmssdt.cern.ch/jenkins/job/ib-run-pr-dasgoclient)
+
+**Description:** Job to run das client and cache the results in github to be used by IBs.
+Ignore any failed job if a newer job has succeeded.
+
+**Project is `enabled`.**
+
+**Upstream projects:**
+
+**Downstream projects:**
+* [lfn-to-ibeos](#lfn-to-ibeos):
+
+**Sub-projects:**
+* [lfn-to-ibeos](#lfn-to-ibeos):
+
+**Triggers from:** []
+
+
+**Periodic builds:**
+```bash
+Not periodically build
+```
+
+---
+
 ## [ib-run-pr-profiling](https://cmssdt.cern.ch/jenkins/job/ib-run-pr-profiling)
 
 **Description:** Build mutiple  a pull requests. 
@@ -316,32 +341,6 @@ Not periodically build
 **Downstream projects:**
 
 **Sub-projects:**
-
-**Triggers from:** []
-
-
-**Periodic builds:**
-```bash
-Not periodically build
-```
-
----
-
-## [test-dasgoclient](https://cmssdt.cern.ch/jenkins/job/test-dasgoclient)
-
-**Description:** Job to run das client and cache the results in github to be used by IBs.
-Ignore any failed job if a newer job has succeeded.
-
-**Project is `enabled`.**
-
-**Upstream projects:**
-* [ib-run-pr-tests](#ib-run-pr-tests):
-
-**Downstream projects:**
-* [lfn-to-ibeos](#lfn-to-ibeos):
-
-**Sub-projects:**
-* [lfn-to-ibeos ](#lfn-to-ibeos ):
 
 **Triggers from:** []
 
@@ -2217,7 +2216,6 @@ Same puprose as `ib-any-integration`, just different script is called.
 * [ib-run-pr-relvals](#ib-run-pr-relvals):
 * [ib-run-pr-wait-deployment](#ib-run-pr-wait-deployment):
 * [pr-publish-cmssw](#pr-publish-cmssw):
-* [test-dasgoclient](#test-dasgoclient):
 
 **Sub-projects:**
 * [abort-pr-tests](#abort-pr-tests):
@@ -2597,8 +2595,8 @@ H H/8 * * *
 **Project is `enabled`.**
 
 **Upstream projects:**
+* [ib-run-pr-dasgoclient](#ib-run-pr-dasgoclient):
 * [lfn-to-ibeos](#lfn-to-ibeos):
-* [test-dasgoclient](#test-dasgoclient):
 
 **Downstream projects:**
 * [lfn-to-ibeos](#lfn-to-ibeos):
