@@ -2944,6 +2944,7 @@ Same puprose as `ib-any-integration`, just different script is called.
 * [ib-run-pr-addon](#ib-run-pr-addon):
 * [ib-run-pr-profiling](#ib-run-pr-profiling):
 * [ib-run-pr-relvals](#ib-run-pr-relvals):
+* [ib-run-pr-wait-deployment](#ib-run-pr-wait-deployment):
 * [pr-publish-cmssw](#pr-publish-cmssw):
 * [test-dasgoclient](#test-dasgoclient):
 
@@ -2954,6 +2955,7 @@ Same puprose as `ib-any-integration`, just different script is called.
 * [ib-run-pr-relvals](#ib-run-pr-relvals):
 * [ib-run-pr-profiling ](#ib-run-pr-profiling ):
 * [test-dasgoclient ](#test-dasgoclient ):
+* [ib-run-pr-wait-deployment](#ib-run-pr-wait-deployment):
 
 **Triggers from:** []
 
@@ -2976,6 +2978,7 @@ Same puprose as `ib-any-integration`, just different script is called.
 **Project is `enabled`.**
 
 **Upstream projects:**
+* [ib-run-pr-tests](#ib-run-pr-tests):
 
 **Downstream projects:**
 

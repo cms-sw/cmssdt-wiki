@@ -148,6 +148,7 @@ Same puprose as `ib-any-integration`, just different script is called.
 * [ib-run-pr-addon](#ib-run-pr-addon):
 * [ib-run-pr-profiling](#ib-run-pr-profiling):
 * [ib-run-pr-relvals](#ib-run-pr-relvals):
+* [ib-run-pr-wait-deployment](#ib-run-pr-wait-deployment):
 * [pr-publish-cmssw](#pr-publish-cmssw):
 * [test-dasgoclient](#test-dasgoclient):
 
@@ -158,6 +159,7 @@ Same puprose as `ib-any-integration`, just different script is called.
 * [ib-run-pr-relvals](#ib-run-pr-relvals):
 * [ib-run-pr-profiling ](#ib-run-pr-profiling ):
 * [test-dasgoclient ](#test-dasgoclient ):
+* [ib-run-pr-wait-deployment](#ib-run-pr-wait-deployment):
 
 **Triggers from:** []
 
@@ -319,6 +321,34 @@ Not periodically build
 
 **Sub-projects:**
 * [cms-bot](#cms-bot):
+
+**Triggers from:** []
+
+
+**Periodic builds:**
+```bash
+Not periodically build
+```
+
+---
+
+## [ib-run-pr-wait-deployment](https://cmssdt.cern.ch/jenkins/job/ib-run-pr-wait-deployment)
+
+**Description:** Build mutiple  a pull requests. 
+Same puprose as `ib-any-integration`, just different script is called.
+
+
+
+
+**Project is `enabled`.**
+
+**Upstream projects:**
+* [ib-run-pr-tests](#ib-run-pr-tests):
+
+**Downstream projects:**
+
+**Sub-projects:**
+* [ib-run-pr-${TEST_TYPE}](#ib-run-pr-${TEST_TYPE}):
 
 **Triggers from:** []
 
