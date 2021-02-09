@@ -157,7 +157,6 @@ Same puprose as `ib-any-integration`, just different script is called.
 * [ib-run-pr-addon ](#ib-run-pr-addon ):
 * [ib-run-pr-relvals](#ib-run-pr-relvals):
 * [ib-run-pr-profiling ](#ib-run-pr-profiling ):
-* [test-dasgoclient ](#test-dasgoclient ):
 * [ib-run-pr-wait-deployment](#ib-run-pr-wait-deployment):
 
 **Triggers from:** []
