@@ -2854,7 +2854,6 @@ Same puprose as `ib-any-integration`, just different script is called.
 **Project is `enabled`.**
 
 **Upstream projects:**
-* [ib-run-pr-tests](#ib-run-pr-tests):
 
 **Downstream projects:**
 
@@ -2906,7 +2905,6 @@ Same puprose as `ib-any-integration`, just different script is called.
 **Project is `enabled`.**
 
 **Upstream projects:**
-* [ib-run-pr-tests](#ib-run-pr-tests):
 
 **Downstream projects:**
 
@@ -2933,7 +2931,6 @@ Same puprose as `ib-any-integration`, just different script is called.
 **Project is `enabled`.**
 
 **Upstream projects:**
-* [ib-run-pr-tests](#ib-run-pr-tests):
 
 **Downstream projects:**
 * [compare-root-files-short-matrix](#compare-root-files-short-matrix):
@@ -2966,18 +2963,12 @@ Same puprose as `ib-any-integration`, just different script is called.
 
 **Downstream projects:**
 * [abort-pr-tests](#abort-pr-tests):
-* [ib-run-pr-addon](#ib-run-pr-addon):
-* [ib-run-pr-profiling](#ib-run-pr-profiling):
-* [ib-run-pr-relvals](#ib-run-pr-relvals):
 * [ib-run-pr-wait-deployment](#ib-run-pr-wait-deployment):
 * [pr-publish-cmssw](#pr-publish-cmssw):
 
 **Sub-projects:**
 * [abort-pr-tests](#abort-pr-tests):
 * [pr-publish-cmssw](#pr-publish-cmssw):
-* [ib-run-pr-addon ](#ib-run-pr-addon ):
-* [ib-run-pr-relvals](#ib-run-pr-relvals):
-* [ib-run-pr-profiling ](#ib-run-pr-profiling ):
 * [ib-run-pr-wait-deployment](#ib-run-pr-wait-deployment):
 
 **Triggers from:** []

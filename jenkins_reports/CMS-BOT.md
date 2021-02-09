@@ -145,18 +145,12 @@ Same puprose as `ib-any-integration`, just different script is called.
 
 **Downstream projects:**
 * [abort-pr-tests](#abort-pr-tests):
-* [ib-run-pr-addon](#ib-run-pr-addon):
-* [ib-run-pr-profiling](#ib-run-pr-profiling):
-* [ib-run-pr-relvals](#ib-run-pr-relvals):
 * [ib-run-pr-wait-deployment](#ib-run-pr-wait-deployment):
 * [pr-publish-cmssw](#pr-publish-cmssw):
 
 **Sub-projects:**
 * [abort-pr-tests](#abort-pr-tests):
 * [pr-publish-cmssw](#pr-publish-cmssw):
-* [ib-run-pr-addon ](#ib-run-pr-addon ):
-* [ib-run-pr-relvals](#ib-run-pr-relvals):
-* [ib-run-pr-profiling ](#ib-run-pr-profiling ):
 * [ib-run-pr-wait-deployment](#ib-run-pr-wait-deployment):
 
 **Triggers from:** []
@@ -211,114 +205,6 @@ PR and matching parameters. It will ignore given job ID - the ID of upstream job
 **Downstream projects:**
 
 **Sub-projects:**
-
-**Triggers from:** []
-
-
-**Periodic builds:**
-```bash
-Not periodically build
-```
-
----
-
-## [ib-run-pr-addon](https://cmssdt.cern.ch/jenkins/job/ib-run-pr-addon)
-
-**Description:** Build mutiple  a pull requests. 
-Same puprose as `ib-any-integration`, just different script is called.
-
-
-
-
-**Project is `enabled`.**
-
-**Upstream projects:**
-* [ib-run-pr-tests](#ib-run-pr-tests):
-
-**Downstream projects:**
-
-**Sub-projects:**
-
-**Triggers from:** []
-
-
-**Periodic builds:**
-```bash
-Not periodically build
-```
-
----
-
-## [ib-run-pr-profiling](https://cmssdt.cern.ch/jenkins/job/ib-run-pr-profiling)
-
-**Description:** Build mutiple  a pull requests. 
-Same puprose as `ib-any-integration`, just different script is called.
-
-
-
-
-**Project is `enabled`.**
-
-**Upstream projects:**
-* [ib-run-pr-tests](#ib-run-pr-tests):
-
-**Downstream projects:**
-
-**Sub-projects:**
-
-**Triggers from:** []
-
-
-**Periodic builds:**
-```bash
-Not periodically build
-```
-
----
-
-## [ib-run-pr-relvals](https://cmssdt.cern.ch/jenkins/job/ib-run-pr-relvals)
-
-**Description:** Build mutiple  a pull requests. 
-Same puprose as `ib-any-integration`, just different script is called.
-
-
-
-
-**Project is `enabled`.**
-
-**Upstream projects:**
-* [ib-run-pr-tests](#ib-run-pr-tests):
-
-**Downstream projects:**
-* [compare-root-files-short-matrix](#compare-root-files-short-matrix):
-
-**Sub-projects:**
-* [compare-root-files-short-matrix](#compare-root-files-short-matrix):
-
-**Triggers from:** []
-
-
-**Periodic builds:**
-```bash
-Not periodically build
-```
-
----
-
-## [compare-root-files-short-matrix](https://cmssdt.cern.ch/jenkins/job/compare-root-files-short-matrix)
-
-**Description:** Download the files of the baseline IB and compare them with the results of the ones of a pull request
-
-**Project is `enabled`.**
-
-**Upstream projects:**
-* [ib-run-pr-relvals](#ib-run-pr-relvals):
-
-**Downstream projects:**
-* [cms-bot](#cms-bot):
-
-**Sub-projects:**
-* [cms-bot](#cms-bot):
 
 **Triggers from:** []
 
