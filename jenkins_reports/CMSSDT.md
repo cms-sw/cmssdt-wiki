@@ -268,7 +268,7 @@ Same puprose as `ib-any-integration`, just different script is called.
 **Downstream projects:**
 
 **Sub-projects:**
-* [ib-run-pr-${PR_TEST_JOB}](#ib-run-pr-${PR_TEST_JOB}):
+* [ib-run-pr-${TEST_TYPE}](#ib-run-pr-${TEST_TYPE}):
 
 **Triggers from:** []
 
