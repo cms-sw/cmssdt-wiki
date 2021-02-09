@@ -2965,6 +2965,32 @@ Not periodically build
 
 ---
 
+## [ib-run-pr-wait-deployment](https://cmssdt.cern.ch/jenkins/job/ib-run-pr-wait-deployment)
+
+**Description:** Build mutiple  a pull requests. 
+Same puprose as `ib-any-integration`, just different script is called.
+
+
+
+
+**Project is `enabled`.**
+
+**Upstream projects:**
+
+**Downstream projects:**
+
+**Sub-projects:**
+
+**Triggers from:** []
+
+
+**Periodic builds:**
+```bash
+Not periodically build
+```
+
+---
+
 ## [ib-run-profiling](https://cmssdt.cern.ch/jenkins/job/ib-run-profiling)
 
 **Description:** Runs FastTimerService and Igprof on the RECO and PAT steps for high pileup workflow.
