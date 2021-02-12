@@ -34,8 +34,9 @@ H * * * *
 
 ## [cvmfs-cms-check-and-update-siteconf](https://cmssdt.cern.ch/jenkins/job/cvmfs-cms-check-and-update-siteconf)
 
-**Description:** This job checks and updates gridpacks based on 
-<br> https://github.com/bockjoo/cvmfs-cms-install-scripts/blob/master/cron_rsync_generator_package_from_eos_individual.sh
+**Description:** This job checks and updates siteconf based on 
+<br> https://github.com/bockjoo/cvmfs-cms-install-scripts/blob/master/cvmfs_check_and_update_siteconf.sh
+
 
 
 **Project is `disabled`.**
