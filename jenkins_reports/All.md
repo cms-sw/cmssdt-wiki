@@ -1044,10 +1044,11 @@ Not periodically build
 
 ## [cvmfs-cms-check-and-update-gridpacks](https://cmssdt.cern.ch/jenkins/job/cvmfs-cms-check-and-update-gridpacks)
 
-**Description:** This job updates CA/CRL under /cvmfs/cms.cern.ch/grid/etc/grid-security as in the following script:
-<br> https://github.com/bockjoo/cvmfs-cms-install-scripts/blob/master/update_ca_crl.sh
+**Description:** This job checks and updates gridpacks based on 
+<br> https://github.com/bockjoo/cvmfs-cms-install-scripts/blob/master/cron_rsync_generator_package_from_eos_individual.sh
 
-**Project is `disabled`.**
+
+**Project is `enabled`.**
 
 **Upstream projects:**
 
