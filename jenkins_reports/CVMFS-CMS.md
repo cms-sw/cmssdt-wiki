@@ -8,6 +8,29 @@
 
 # Projects:
 
+## [cvmfs-cms-check-and-update-gridpacks](https://cmssdt.cern.ch/jenkins/job/cvmfs-cms-check-and-update-gridpacks)
+
+**Description:** This job updates CA/CRL under /cvmfs/cms.cern.ch/grid/etc/grid-security as in the following script:
+<br> https://github.com/bockjoo/cvmfs-cms-install-scripts/blob/master/update_ca_crl.sh
+
+**Project is `enabled`.**
+
+**Upstream projects:**
+
+**Downstream projects:**
+
+**Sub-projects:**
+
+**Triggers from:** []
+
+
+**Periodic builds:**
+```bash
+H * * * *
+```
+
+---
+
 ## [cvmfs-cms-eos-list](https://cmssdt.cern.ch/jenkins/job/cvmfs-cms-eos-list)
 
 **Description:** None
