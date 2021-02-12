@@ -32,6 +32,30 @@ H * * * *
 
 ---
 
+## [cvmfs-cms-check-and-update-siteconf](https://cmssdt.cern.ch/jenkins/job/cvmfs-cms-check-and-update-siteconf)
+
+**Description:** This job checks and updates gridpacks based on 
+<br> https://github.com/bockjoo/cvmfs-cms-install-scripts/blob/master/cron_rsync_generator_package_from_eos_individual.sh
+
+
+**Project is `enabled`.**
+
+**Upstream projects:**
+
+**Downstream projects:**
+
+**Sub-projects:**
+
+**Triggers from:** []
+
+
+**Periodic builds:**
+```bash
+H * * * *
+```
+
+---
+
 ## [cvmfs-cms-eos-list](https://cmssdt.cern.ch/jenkins/job/cvmfs-cms-eos-list)
 
 **Description:** None
