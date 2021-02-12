@@ -1072,7 +1072,7 @@ H * * * *
 <br> https://github.com/bockjoo/cvmfs-cms-install-scripts/blob/master/cron_rsync_generator_package_from_eos_individual.sh
 
 
-**Project is `enabled`.**
+**Project is `disabled`.**
 
 **Upstream projects:**
 
