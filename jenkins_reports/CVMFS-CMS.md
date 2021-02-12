@@ -13,7 +13,7 @@
 **Description:** This job updates CA/CRL under /cvmfs/cms.cern.ch/grid/etc/grid-security as in the following script:
 <br> https://github.com/bockjoo/cvmfs-cms-install-scripts/blob/master/update_ca_crl.sh
 
-**Project is `enabled`.**
+**Project is `disabled`.**
 
 **Upstream projects:**
 
