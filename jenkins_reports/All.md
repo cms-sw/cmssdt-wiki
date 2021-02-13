@@ -1073,7 +1073,7 @@ H * * * *
 
 
 
-**Project is `disabled`.**
+**Project is `enabled`.**
 
 **Upstream projects:**
 
