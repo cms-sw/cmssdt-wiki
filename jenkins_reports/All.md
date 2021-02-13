@@ -1073,7 +1073,7 @@ H * * * *
 
 
 
-**Project is `enabled`.**
+**Project is `disabled`.**
 
 **Upstream projects:**
 
@@ -1086,7 +1086,7 @@ H * * * *
 
 **Periodic builds:**
 ```bash
-10 * * * *
+H * * * *
 ```
 
 ---
