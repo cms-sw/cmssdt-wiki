@@ -15,7 +15,7 @@
 
 
 
-**Project is `disabled`.**
+**Project is `enabled`.**
 
 **Upstream projects:**
 
@@ -28,7 +28,7 @@
 
 **Periodic builds:**
 ```bash
-19 20 * * *
+49 20 * * *
 ```
 
 ---

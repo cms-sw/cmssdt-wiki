@@ -1049,7 +1049,7 @@ Not periodically build
 
 
 
-**Project is `disabled`.**
+**Project is `enabled`.**
 
 **Upstream projects:**
 
@@ -1062,7 +1062,7 @@ Not periodically build
 
 **Periodic builds:**
 ```bash
-19 20 * * *
+49 20 * * *
 ```
 
 ---
