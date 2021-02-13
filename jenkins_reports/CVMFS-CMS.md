@@ -10,12 +10,12 @@
 
 ## [cvmfs-cms-check-and-update-cmssw-git-mirror](https://cmssdt.cern.ch/jenkins/job/cvmfs-cms-check-and-update-cmssw-git-mirror)
 
-**Description:** This job checks and updates lhapdf based on 
-<br> https://github.com/bockjoo/cvmfs-cms-install-scripts/blob/master/cron_download_lhapdf.sh
+**Description:** This job checks and updates the cmssw git mirror daily and monthly based on 
+<br> https://github.com/bockjoo/cvmfs-cms-install-scripts/blob/master/cvmfs_update_cmssw_git_mirror_v3.sh
 
 
 
-**Project is `disabled`.**
+**Project is `enabled`.**
 
 **Upstream projects:**
 
@@ -28,7 +28,7 @@
 
 **Periodic builds:**
 ```bash
-H * * * *
+H H * * *
 ```
 
 ---
