@@ -28,7 +28,7 @@
 
 **Periodic builds:**
 ```bash
-49 20 * * *
+H H * * *
 ```
 
 ---
