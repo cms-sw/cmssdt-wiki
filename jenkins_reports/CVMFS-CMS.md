@@ -77,7 +77,7 @@ H * * * *
 
 **Periodic builds:**
 ```bash
-H * * * *
+24 * * * *
 ```
 
 ---
