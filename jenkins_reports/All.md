@@ -1049,7 +1049,7 @@ Not periodically build
 
 
 
-**Project is `enabled`.**
+**Project is `disabled`.**
 
 **Upstream projects:**
 
