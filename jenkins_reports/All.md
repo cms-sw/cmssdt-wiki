@@ -1116,6 +1116,30 @@ H H * * *
 
 ---
 
+## [cvmfs-cms-check-and-update-report](https://cmssdt.cern.ch/jenkins/job/cvmfs-cms-check-and-update-report)
+
+**Description:** This job installs packages using cmspkg tool
+To be used for - CRAB3, PHEDEX, spacemon-client, python, releases(cmssw), cms-common
+Triggered by webhook
+
+**Project is `enabled`.**
+
+**Upstream projects:**
+
+**Downstream projects:**
+
+**Sub-projects:**
+
+**Triggers from:** []
+
+
+**Periodic builds:**
+```bash
+Not periodically build
+```
+
+---
+
 ## [cvmfs-cms-check-and-update-siteconf](https://cmssdt.cern.ch/jenkins/job/cvmfs-cms-check-and-update-siteconf)
 
 **Description:** This job checks and updates siteconf based on 
