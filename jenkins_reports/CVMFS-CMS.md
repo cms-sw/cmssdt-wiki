@@ -102,7 +102,7 @@ H H * * *
 
 **Periodic builds:**
 ```bash
-9 * * * *
+H * * * *
 ```
 
 ---
