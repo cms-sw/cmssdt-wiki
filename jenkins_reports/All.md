@@ -1078,8 +1078,10 @@ H H * * *
 **Upstream projects:**
 
 **Downstream projects:**
+* [cvmfs-cms-check-and-update-report](#cvmfs-cms-check-and-update-report):
 
 **Sub-projects:**
+* [cvmfs-cms-check-and-update-report](#cvmfs-cms-check-and-update-report):
 
 **Triggers from:** []
 
@@ -1118,13 +1120,13 @@ H H * * *
 
 ## [cvmfs-cms-check-and-update-report](https://cmssdt.cern.ch/jenkins/job/cvmfs-cms-check-and-update-report)
 
-**Description:** This job reports status of upstream projects
-To be used for - CRAB3, PHEDEX, spacemon-client, python, releases(cmssw), cms-common
-Triggered by webhook
+**Description:** This job reports status of upstream projects, siteconf and gridpacks.
+
 
 **Project is `disabled`.**
 
 **Upstream projects:**
+* [cvmfs-cms-check-and-update-gridpacks](#cvmfs-cms-check-and-update-gridpacks):
 
 **Downstream projects:**
 
