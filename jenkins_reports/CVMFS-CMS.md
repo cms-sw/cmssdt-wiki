@@ -89,7 +89,7 @@ H H * * *
 **Description:** This job reports status of upstream projects, siteconf and gridpacks.
 
 
-**Project is `disabled`.**
+**Project is `enabled`.**
 
 **Upstream projects:**
 * [cvmfs-cms-check-and-update-gridpacks](#cvmfs-cms-check-and-update-gridpacks):
