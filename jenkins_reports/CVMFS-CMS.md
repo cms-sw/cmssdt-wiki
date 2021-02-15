@@ -128,7 +128,7 @@ Not periodically build
 
 **Periodic builds:**
 ```bash
-11 * * * *
+H * * * *
 ```
 
 ---
