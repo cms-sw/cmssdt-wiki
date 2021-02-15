@@ -89,7 +89,7 @@ H H * * *
 
 
 
-**Project is `disabled`.**
+**Project is `enabled`.**
 
 **Upstream projects:**
 
@@ -102,7 +102,7 @@ H H * * *
 
 **Periodic builds:**
 ```bash
-58 * * * *
+9 * * * *
 ```
 
 ---
