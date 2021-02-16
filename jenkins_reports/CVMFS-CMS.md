@@ -54,7 +54,7 @@ H H * * *
 
 **Periodic builds:**
 ```bash
-13 * * * *
+54 * * * *
 ```
 
 ---
