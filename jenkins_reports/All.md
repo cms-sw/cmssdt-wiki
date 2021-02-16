@@ -1162,7 +1162,7 @@ Not periodically build
 
 **Periodic builds:**
 ```bash
-52 * * * *
+1 * * * *
 ```
 
 ---
