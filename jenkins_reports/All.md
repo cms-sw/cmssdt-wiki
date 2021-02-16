@@ -1165,7 +1165,7 @@ Not periodically build
 
 **Periodic builds:**
 ```bash
-30 * * * *
+H * * * *
 ```
 
 ---
