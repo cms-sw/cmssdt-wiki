@@ -1113,7 +1113,7 @@ H H * * *
 
 **Periodic builds:**
 ```bash
-H H * * *
+H * * * *
 ```
 
 ---
