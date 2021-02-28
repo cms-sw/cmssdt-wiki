@@ -79,7 +79,7 @@ H H * * *
 
 **Periodic builds:**
 ```bash
-49 * * * *
+55 * * * *
 ```
 
 ---
