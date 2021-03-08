@@ -3062,11 +3062,9 @@ Same puprose as `ib-any-integration`, just different script is called.
 
 **Downstream projects:**
 * [compare-root-files-short-matrix](#compare-root-files-short-matrix):
-* [update-das-queries](#update-das-queries):
 
 **Sub-projects:**
 * [compare-root-files-short-matrix](#compare-root-files-short-matrix):
-* [update-das-queries](#update-das-queries):
 
 **Triggers from:** []
 
@@ -5507,7 +5505,6 @@ H 10,22 * * *
 **Project is `enabled`.**
 
 **Upstream projects:**
-* [ib-run-pr-relvals](#ib-run-pr-relvals):
 * [ib-run-relvals](#ib-run-relvals):
 
 **Downstream projects:**
