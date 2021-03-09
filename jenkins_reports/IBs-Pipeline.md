@@ -647,6 +647,7 @@ Not periodically build
 **Project is `enabled`.**
 
 **Upstream projects:**
+* [ib-run-pr-tests](#ib-run-pr-tests):
 * [ib-run-relvals](#ib-run-relvals):
 
 **Downstream projects:**
@@ -1035,6 +1036,7 @@ Not periodically build
 **Project is `enabled`.**
 
 **Upstream projects:**
+* [ib-run-pr-tests](#ib-run-pr-tests):
 * [ib-run-relvals](#ib-run-relvals):
 
 **Downstream projects:**

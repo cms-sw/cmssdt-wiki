@@ -304,11 +304,13 @@ Same puprose as `ib-any-integration`, just different script is called.
 * [abort-pr-tests](#abort-pr-tests):
 * [ib-run-pr-wait-deployment](#ib-run-pr-wait-deployment):
 * [pr-publish-cmssw](#pr-publish-cmssw):
+* [update-das-queries](#update-das-queries):
 
 **Sub-projects:**
 * [abort-pr-tests](#abort-pr-tests):
 * [pr-publish-cmssw](#pr-publish-cmssw):
 * [ib-run-pr-wait-deployment](#ib-run-pr-wait-deployment):
+* [update-das-queries ](#update-das-queries ):
 
 **Triggers from:** []
 
@@ -409,6 +411,30 @@ Not periodically build
 
 **Upstream projects:**
 * [ib-run-pr-tests](#ib-run-pr-tests):
+
+**Downstream projects:**
+
+**Sub-projects:**
+
+**Triggers from:** []
+
+
+**Periodic builds:**
+```bash
+Not periodically build
+```
+
+---
+
+## [update-das-queries](https://cmssdt.cern.ch/jenkins/job/update-das-queries)
+
+**Description:** Job to run das client and cache the results in github to be used by IBs.
+
+**Project is `enabled`.**
+
+**Upstream projects:**
+* [ib-run-pr-tests](#ib-run-pr-tests):
+* [ib-run-relvals](#ib-run-relvals):
 
 **Downstream projects:**
 

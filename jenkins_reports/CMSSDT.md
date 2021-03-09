@@ -2276,11 +2276,13 @@ Same puprose as `ib-any-integration`, just different script is called.
 * [abort-pr-tests](#abort-pr-tests):
 * [ib-run-pr-wait-deployment](#ib-run-pr-wait-deployment):
 * [pr-publish-cmssw](#pr-publish-cmssw):
+* [update-das-queries](#update-das-queries):
 
 **Sub-projects:**
 * [abort-pr-tests](#abort-pr-tests):
 * [pr-publish-cmssw](#pr-publish-cmssw):
 * [ib-run-pr-wait-deployment](#ib-run-pr-wait-deployment):
+* [update-das-queries ](#update-das-queries ):
 
 **Triggers from:** []
 
@@ -3409,6 +3411,7 @@ H 10,22 * * *
 **Project is `enabled`.**
 
 **Upstream projects:**
+* [ib-run-pr-tests](#ib-run-pr-tests):
 * [ib-run-relvals](#ib-run-relvals):
 
 **Downstream projects:**
