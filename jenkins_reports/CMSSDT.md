@@ -1165,24 +1165,16 @@ Also it runsevery 30mins to make sure any webhooks were not missed.
 **Downstream projects:**
 * [cmspkg-clone](#cmspkg-clone):
 * [cvmfs-cms-install-COMP-python](#cvmfs-cms-install-COMP-python):
-* [cvmfs-cms-install-COMP-xrootd](#cvmfs-cms-install-COMP-xrootd):
 * [cvmfs-cms-install-cms](#cvmfs-cms-install-cms):
 * [cvmfs-cms-install-common](#cvmfs-cms-install-common):
-* [cvmfs-cms-install-crab3](#cvmfs-cms-install-crab3):
-* [cvmfs-cms-install-phedex](#cvmfs-cms-install-phedex):
-* [cvmfs-cms-install-spacemon-client](#cvmfs-cms-install-spacemon-client):
 * [cvmfs-install-pr](#cvmfs-install-pr):
 * [ib-install-cvmfs](#ib-install-cvmfs):
 
 **Sub-projects:**
 * [cvmfs-cms-install-common](#cvmfs-cms-install-common):
 * [cmspkg-clone](#cmspkg-clone):
-* [cvmfs-cms-install-crab3](#cvmfs-cms-install-crab3):
-* [cvmfs-cms-install-phedex](#cvmfs-cms-install-phedex):
-* [cvmfs-cms-install-spacemon-client](#cvmfs-cms-install-spacemon-client):
 * [cvmfs-cms-install-cms](#cvmfs-cms-install-cms):
 * [cvmfs-cms-install-COMP-python](#cvmfs-cms-install-COMP-python):
-* [cvmfs-cms-install-COMP-xrootd](#cvmfs-cms-install-COMP-xrootd):
 * [ib-install-cvmfs](#ib-install-cvmfs):
 * [cvmfs-install-pr](#cvmfs-install-pr):
 

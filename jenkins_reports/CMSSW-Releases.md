@@ -348,12 +348,8 @@ Triggered by webhook
 
 **Upstream projects:**
 * [cvmfs-cms-install-COMP-python](#cvmfs-cms-install-COMP-python):
-* [cvmfs-cms-install-COMP-xrootd](#cvmfs-cms-install-COMP-xrootd):
 * [cvmfs-cms-install-cms](#cvmfs-cms-install-cms):
 * [cvmfs-cms-install-common](#cvmfs-cms-install-common):
-* [cvmfs-cms-install-crab3](#cvmfs-cms-install-crab3):
-* [cvmfs-cms-install-phedex](#cvmfs-cms-install-phedex):
-* [cvmfs-cms-install-spacemon-client](#cvmfs-cms-install-spacemon-client):
 
 **Downstream projects:**
 
