@@ -2298,7 +2298,13 @@ H 10,22 * * *
 
 ## [ib-install-cvmfs](https://cmssdt.cern.ch/jenkins/job/ib-install-cvmfs)
 
-**Description:** This jobs install an IB on /cvmfs/cms-ib.cern.ch.
+**Description:** This jobs install an IB on /cvmfs/cms-ib.cern.ch. As this job runs on the CVMFS Stratum 0, so only one job can run at a time.
+Sometimes ( specially IBs for non-86-64 archs) are stuck and do nothing. In that case better to kill the job and re-try it.
+This gives chance to other IBs to get installed and at the end the re-tried job will re-run. 
+
+There is no automatic re-try setup for this job. It rarely fails but in case it fails then just re-try the failed job and
+either delete the failed job instance or update the "Build information" and mentioned that it has been re-tired. This allows others to not re-try it.
+
 
 **Project is `enabled`.**
 
