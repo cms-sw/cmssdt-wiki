@@ -289,8 +289,15 @@ Not periodically build
 
 ## [ib-run-pr-tests](https://cmssdt.cern.ch/jenkins/job/ib-run-pr-tests)
 
-**Description:** Build mutiple  a pull requests. 
-Same puprose as `ib-any-integration`, just different script is called.
+**Description:** This is CMSSw CI Job which runs the build and unit tests part of CI. 
+It first kills any other job whcih is running for same PullRequests/Architecture. and then starts the build process.
+Once the build process if done then it trigger other jobs to start the deployment of the build artifects on CVMFS and
+start the tests. at the end it run the unit tests. Unit tests are run here as it needs the CMSSW/tmp directory which
+is not deployed on CVMFS.
+
+<b>Q/A:</b>
+In case this job fails then in most cases just re-try it. In case it is failed due to network/github issues then it is
+better to wait for the service to get healthy.
 
 
 
