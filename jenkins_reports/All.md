@@ -86,32 +86,6 @@ Not periodically build
 
 ---
 
-## [auto-forward-port](https://cmssdt.cern.ch/jenkins/job/auto-forward-port)
-
-**Description:** This is triggered by github webhook for each cmssw/cmsdist branch merge event.
-This is just a place holder job to trigger one sub-job per destionation branch for which the forward porting should be done.
-
-**Project is `enabled`.**
-
-**Upstream projects:**
-* [github-push-hook](#github-push-hook):
-
-**Downstream projects:**
-* [auto-forward-port-branch](#auto-forward-port-branch):
-
-**Sub-projects:**
-* [auto-forward-port-branch](#auto-forward-port-branch):
-
-**Triggers from:** []
-
-
-**Periodic builds:**
-```bash
-Not periodically build
-```
-
----
-
 ## [auto-forward-port-branch](https://cmssdt.cern.ch/jenkins/job/auto-forward-port-branch)
 
 **Description:** None
@@ -119,7 +93,6 @@ Not periodically build
 **Project is `enabled`.**
 
 **Upstream projects:**
-* [auto-forward-port](#auto-forward-port):
 
 **Downstream projects:**
 
@@ -1889,7 +1862,6 @@ This job is also triggered via github web hook. Please do not add/remove any par
 * [github-webhook](#github-webhook):
 
 **Downstream projects:**
-* [auto-forward-port](#auto-forward-port):
 * [cms-containers-checks-tags](#cms-containers-checks-tags):
 * [deploy-cms-repo](#deploy-cms-repo):
 * [git-mirror-repository](#git-mirror-repository):
@@ -1899,7 +1871,6 @@ This job is also triggered via github web hook. Please do not add/remove any par
 
 **Sub-projects:**
 * [deploy-cms-repo](#deploy-cms-repo):
-* [auto-forward-port](#auto-forward-port):
 * [git-reference-cvmfs](#git-reference-cvmfs):
 * [git-mirror-repository](#git-mirror-repository):
 * [web-update-cmssdt-ib](#web-update-cmssdt-ib):
