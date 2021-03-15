@@ -941,7 +941,8 @@ Not periodically build
 
 ## [compare-root-files-short-matrix](https://cmssdt.cern.ch/jenkins/job/compare-root-files-short-matrix)
 
-**Description:** Download the files of the baseline IB and compare them with the results of the ones of a pull request
+**Description:** Download the files of the baseline IB and compare them with the results of the ones of a pull request.
+Rate of failure of this job is very low and when failed then just re-try it and either delete the failed job or update the build information that it has been re-tried.
 
 **Project is `enabled`.**
 
