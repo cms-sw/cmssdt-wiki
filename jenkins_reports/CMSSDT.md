@@ -928,7 +928,9 @@ Will kill a scheduled/running job acording to comments.
     <b>Q:</b> Job 'cms-sw/cmssw #****' failed. What to do?
   </li>
   <li>
-    <b>A:</b> If cause of failure is fixed (bug in cms-bot, github servers issue), job should be restarted. Otherwise PR will not be procesed unless someone retrigers it by writing a comment.
+    <b>A:</b>
+    Job is configured to do few re-tries, so in case of github or network glitches the job will recover. If it keeps on failing then one need to check the logs. 
+    Mostly it fails due to github/ssh connection, so it will automatically recover.
   </li>
 </ul>
 
