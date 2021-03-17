@@ -2567,7 +2567,11 @@ Not periodically build
 
 ## [ib-validation](https://cmssdt.cern.ch/jenkins/job/ib-validation)
 
-**Description:** Validates the integration builds.
+**Description:** This job waits for the recently installed IB on CVMFS to be visible on CERN Stratum 1.
+Once the IB is available on Stratum 1 then it triggers various validation jobs.
+If this job fails or timeout then just re-run it. Failure rate is very low but on 
+Wednesday CERN IT runs CVMFS Stratum 1 garbage collection which can add extra few hours
+delay and may cause this job to timeout.
 
 **Project is `enabled`.**
 
