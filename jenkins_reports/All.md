@@ -4213,6 +4213,28 @@ Not periodically build
 
 ---
 
+## [jenkins-update-cmsbuild-access](https://cmssdt.cern.ch/jenkins/job/jenkins-update-cmsbuild-access)
+
+**Description:** None
+
+**Project is `enabled`.**
+
+**Upstream projects:**
+
+**Downstream projects:**
+
+**Sub-projects:**
+
+**Triggers from:** []
+
+
+**Periodic builds:**
+```bash
+Not periodically build
+```
+
+---
+
 ## [jenkins-webhook](https://cmssdt.cern.ch/jenkins/job/jenkins-webhook)
 
 **Description:** None
