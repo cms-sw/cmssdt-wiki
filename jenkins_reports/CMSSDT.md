@@ -1343,6 +1343,7 @@ Not periodically build
 
 **Description:** Job to run das client and cache the results in github to be used by IBs.
 Ignore any failed job if a newer job has succeeded.
+Retry if last run is failed.
 
 **Project is `enabled`.**
 
@@ -3196,6 +3197,8 @@ Not periodically build
 In a CMSSW dev area, it runs 
   git cms-merge-topic -u PR
   scram build code-checks
+
+This job re-tries twice to recover. If it still fails after two retires then try to understand the failure and re-try again.
 
 **Project is `enabled`.**
 

@@ -474,6 +474,8 @@ In a CMSSW dev area, it runs
   git cms-merge-topic -u PR
   scram build code-checks
 
+This job re-tries twice to recover. If it still fails after two retires then try to understand the failure and re-try again.
+
 **Project is `enabled`.**
 
 **Upstream projects:**
