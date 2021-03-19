@@ -183,6 +183,14 @@ Will kill a scheduled/running job acording to comments.
     Job is configured to do few re-tries, so in case of github or network glitches the job will recover. If it keeps on failing then one need to check the logs. 
     Mostly it fails due to github/ssh connection, so it will automatically recover.
   </li>
+  <li>
+    <b>Q:</b> Job failed with ssh timeout?
+  </li>
+  <li>
+    <b>A:</b>
+    Nothing to do, job will re-try 3 time to recover. If it keeps on failing for few hours then better to disable it an re-enable once issue is solved e.g. github is back or CERN network is working again.
+  </li>
+  
 </ul>
 
 **Project is `enabled`.**
