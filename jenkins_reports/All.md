@@ -523,6 +523,30 @@ H 0 * * *
 
 ---
 
+## [cleanup-github-repository-history](https://cmssdt.cern.ch/jenkins/job/cleanup-github-repository-history)
+
+**Description:** This job cleanup the cms-sw/cms-sw.github.io repository history. Specially the data and _data directories history.
+
+
+**Project is `enabled`.**
+
+**Upstream projects:**
+
+**Downstream projects:**
+* [update-github-pages](#update-github-pages):
+
+**Sub-projects:**
+
+**Triggers from:** []
+
+
+**Periodic builds:**
+```bash
+H 1 * * 0
+```
+
+---
+
 ## [cleanup-tags](https://cmssdt.cern.ch/jenkins/job/cleanup-tags)
 
 **Description:** Cleanup IB tags from the official CMSSW repository.
@@ -5352,6 +5376,7 @@ Not periodically build
 
 **Upstream projects:**
 * [cleanup-cms-sw-io-history](#cleanup-cms-sw-io-history):
+* [cleanup-github-repository-history](#cleanup-github-repository-history):
 * [ib-build-logs](#ib-build-logs):
 * [process-relval-logs](#process-relval-logs):
 
@@ -5361,7 +5386,7 @@ Not periodically build
 
 **Sub-projects:**
 
-**Triggers from:** [u'cleanup-cms-sw-io-history', u'ib-build-logs']
+**Triggers from:** [u'cleanup-cms-sw-io-history', u'cleanup-github-repository-history', u'ib-build-logs']
 
 
 **Periodic builds:**

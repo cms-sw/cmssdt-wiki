@@ -84,6 +84,7 @@ H 1 * * 0
 
 **Upstream projects:**
 * [cleanup-cms-sw-io-history](#cleanup-cms-sw-io-history):
+* [cleanup-github-repository-history](#cleanup-github-repository-history):
 * [ib-build-logs](#ib-build-logs):
 * [process-relval-logs](#process-relval-logs):
 
@@ -93,7 +94,7 @@ H 1 * * 0
 
 **Sub-projects:**
 
-**Triggers from:** [u'cleanup-cms-sw-io-history', u'ib-build-logs']
+**Triggers from:** [u'cleanup-cms-sw-io-history', u'cleanup-github-repository-history', u'ib-build-logs']
 
 
 **Periodic builds:**
