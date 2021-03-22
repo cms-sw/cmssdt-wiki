@@ -739,7 +739,10 @@ Not periodically build
 
 ## [auto-forward-port-branch](https://cmssdt.cern.ch/jenkins/job/auto-forward-port-branch)
 
-**Description:** None
+**Description:** This job forward ports git changes from one branch to another. If it fails due to network of github related issues then just re-try it.
+Most of the times this job fails due to merge conflicts e.g. cmsdist master branch has different version of root as compare of rootmaster
+rootnext branch. If merge conflicts are just the version differences then re-build the job with "STRATEGY=ours" parameter but if there
+are complex conflicts then better to resolve the issue by hand and directly push changes to github
 
 **Project is `enabled`.**
 
