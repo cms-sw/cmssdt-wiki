@@ -90,6 +90,7 @@ Not periodically build
 
 **Description:** This is triggered by github webhook for each cmssw/cmsdist branch merge event.
 This is just a place holder job to trigger one sub-job per destionation branch for which the forward porting should be done.
+If this fails then this mans one of its sub-job failed. There is no need to re-try this job. Retry the failed sub-jobs only.
 
 **Project is `enabled`.**
 
