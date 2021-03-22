@@ -2418,6 +2418,12 @@ Not periodically build
     The file is inaccessible, it should not appear on the list, but it does. 
     Restarting the job did the trick since another file, that actually exist was selected. 
   </li>
+  <li>
+    For 71X release cycles, couple of workflows are missing input data, that is why this job fails for 71X IBs.
+    There is no need to re-try it for 71X if it fails due to those two workflows input data issues otherwise
+    re-try is needed.
+  </li>
+
 </ul>
 
 **Project is `enabled`.**
