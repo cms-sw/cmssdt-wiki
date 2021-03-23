@@ -3818,28 +3818,6 @@ Not periodically build
 
 ---
 
-## [jenkins-test-email](https://cmssdt.cern.ch/jenkins/job/jenkins-test-email)
-
-**Description:** This job is to test if Jenkins can send an email
-
-**Project is `enabled`.**
-
-**Upstream projects:**
-
-**Downstream projects:**
-
-**Sub-projects:**
-
-**Triggers from:** []
-
-
-**Periodic builds:**
-```bash
-Not periodically build
-```
-
----
-
 ## [jenkins-test-gpu](https://cmssdt.cern.ch/jenkins/job/jenkins-test-gpu)
 
 **Description:** None
@@ -4409,7 +4387,7 @@ Not periodically build
 
 **Description:** This job checks if https://cmssdt.cern.ch/lxr/ is acessable and if not, starts <a href="https://cmssdt.cern.ch/jenkins/view/All/job/lxr-run-container/">lxr-run-container<a/> job to restart the service.
 
-**Project is `disabled`.**
+**Project is `enabled`.**
 
 **Upstream projects:**
 
@@ -4991,29 +4969,6 @@ This job re-tries twice to recover. If it still fails after two retires then try
 **Sub-projects:**
 * [abort-jenkins-job](#abort-jenkins-job):
 * [cms-prs-files](#cms-prs-files):
-
-**Triggers from:** []
-
-
-**Periodic builds:**
-```bash
-Not periodically build
-```
-
----
-
-## [schedule-docker-build](https://cmssdt.cern.ch/jenkins/job/schedule-docker-build)
-
-**Description:** A glue job to connect github-webhook with build-container. 
-Should check only folder containing *EXECUTE_BUILD.sh  
-
-**Project is `disabled`.**
-
-**Upstream projects:**
-
-**Downstream projects:**
-
-**Sub-projects:**
 
 **Triggers from:** []
 

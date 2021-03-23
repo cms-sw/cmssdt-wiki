@@ -165,29 +165,6 @@ Not periodically build
 
 ---
 
-## [schedule-docker-build](https://cmssdt.cern.ch/jenkins/job/schedule-docker-build)
-
-**Description:** A glue job to connect github-webhook with build-container. 
-Should check only folder containing *EXECUTE_BUILD.sh  
-
-**Project is `disabled`.**
-
-**Upstream projects:**
-
-**Downstream projects:**
-
-**Sub-projects:**
-
-**Triggers from:** []
-
-
-**Periodic builds:**
-```bash
-Not periodically build
-```
-
----
-
 ## [slc7](https://cmssdt.cern.ch/jenkins/job/slc7)
 
 **Description:** None
@@ -228,30 +205,6 @@ Not periodically build
 **Periodic builds:**
 ```bash
 0 8,20 * * *
-```
-
----
-
-## [lxr-check](https://cmssdt.cern.ch/jenkins/job/lxr-check)
-
-**Description:** This job checks if https://cmssdt.cern.ch/lxr/ is acessable and if not, starts <a href="https://cmssdt.cern.ch/jenkins/view/All/job/lxr-run-container/">lxr-run-container<a/> job to restart the service.
-
-**Project is `disabled`.**
-
-**Upstream projects:**
-
-**Downstream projects:**
-* [lxr-run-container](#lxr-run-container):
-
-**Sub-projects:**
-* [lxr-run-container](#lxr-run-container):
-
-**Triggers from:** []
-
-
-**Periodic builds:**
-```bash
-H/20 * * * *
 ```
 
 ---
