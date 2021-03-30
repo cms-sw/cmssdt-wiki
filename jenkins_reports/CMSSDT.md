@@ -879,7 +879,7 @@ H 0 * * *
 
 **Periodic builds:**
 ```bash
-0 8,20 * * *
+Not periodically build
 ```
 
 ---
