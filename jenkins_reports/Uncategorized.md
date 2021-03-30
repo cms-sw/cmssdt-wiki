@@ -187,25 +187,3 @@ Not periodically build
 
 ---
 
-## [cleanup-dev-machine](https://cmssdt.cern.ch/jenkins/job/cleanup-dev-machine)
-
-**Description:** Clean up disk space on cmsdev machines
-
-**Project is `disabled`.**
-
-**Upstream projects:**
-
-**Downstream projects:**
-
-**Sub-projects:**
-
-**Triggers from:** []
-
-
-**Periodic builds:**
-```bash
-0 8,20 * * *
-```
-
----
-

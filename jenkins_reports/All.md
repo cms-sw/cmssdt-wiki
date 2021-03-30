@@ -483,7 +483,7 @@ Not periodically build
 
 **Description:** Clean up disk space on cmsdev machines
 
-**Project is `disabled`.**
+**Project is `enabled`.**
 
 **Upstream projects:**
 
