@@ -355,12 +355,14 @@ Not periodically build
 **Project is `enabled`.**
 
 **Upstream projects:**
+* [ib-run-igprof](#ib-run-igprof):
+* [ib-run-profiling](#ib-run-profiling):
 
 **Downstream projects:**
 
 **Sub-projects:**
 
-**Triggers from:** []
+**Triggers from:** [u'ib-run-igprof', u'ib-run-profiling']
 
 
 **Periodic builds:**
@@ -2232,6 +2234,7 @@ run-ib-igprof is executed with `pp` flag for `performance profiling`.
 **Upstream projects:**
 
 **Downstream projects:**
+* [sync-profile-data](#sync-profile-data):
 
 **Sub-projects:**
 
@@ -2391,6 +2394,7 @@ Not periodically build
 **Upstream projects:**
 
 **Downstream projects:**
+* [sync-profile-data](#sync-profile-data):
 
 **Sub-projects:**
 
