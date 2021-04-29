@@ -258,6 +258,7 @@ H */6 * * *
 **Project is `enabled`.**
 
 **Upstream projects:**
+* [check-cvmfs-releases-map](#check-cvmfs-releases-map):
 
 **Downstream projects:**
 

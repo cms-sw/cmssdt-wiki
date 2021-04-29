@@ -17,15 +17,17 @@
 **Upstream projects:**
 
 **Downstream projects:**
+* [cvmfs-cms-update-releases-map](#cvmfs-cms-update-releases-map):
 
 **Sub-projects:**
+* [cvmfs-cms-update-releases-map ](#cvmfs-cms-update-releases-map ):
 
 **Triggers from:** []
 
 
 **Periodic builds:**
 ```bash
-Not periodically build
+H H/4 * * *
 ```
 
 ---

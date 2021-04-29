@@ -347,15 +347,17 @@ Not periodically build
 **Upstream projects:**
 
 **Downstream projects:**
+* [cvmfs-cms-update-releases-map](#cvmfs-cms-update-releases-map):
 
 **Sub-projects:**
+* [cvmfs-cms-update-releases-map ](#cvmfs-cms-update-releases-map ):
 
 **Triggers from:** []
 
 
 **Periodic builds:**
 ```bash
-Not periodically build
+H H/4 * * *
 ```
 
 ---
@@ -1417,6 +1419,7 @@ H */6 * * *
 **Project is `enabled`.**
 
 **Upstream projects:**
+* [check-cvmfs-releases-map](#check-cvmfs-releases-map):
 
 **Downstream projects:**
 
