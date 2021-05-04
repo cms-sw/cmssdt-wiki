@@ -88,8 +88,10 @@ It then trigger the cvmfs installation job to install the newly build packages.
 **Upstream projects:**
 
 **Downstream projects:**
+* [cvmfs-cms-install-cms](#cvmfs-cms-install-cms):
 
 **Sub-projects:**
+* [cvmfs-cms-install-cms ](#cvmfs-cms-install-cms ):
 
 **Triggers from:** []
 

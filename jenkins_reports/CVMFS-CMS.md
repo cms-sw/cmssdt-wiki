@@ -284,6 +284,7 @@ it would get from upload-release job, but without using upload-release instance 
 **Project is `enabled`.**
 
 **Upstream projects:**
+* [cms-build-package](#cms-build-package):
 * [cmsrep-webhook](#cmsrep-webhook):
 * [update-release-map](#update-release-map):
 

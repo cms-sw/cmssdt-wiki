@@ -658,8 +658,10 @@ It then trigger the cvmfs installation job to install the newly build packages.
 **Upstream projects:**
 
 **Downstream projects:**
+* [cvmfs-cms-install-cms](#cvmfs-cms-install-cms):
 
 **Sub-projects:**
+* [cvmfs-cms-install-cms ](#cvmfs-cms-install-cms ):
 
 **Triggers from:** []
 
@@ -1247,6 +1249,7 @@ it would get from upload-release job, but without using upload-release instance 
 **Project is `enabled`.**
 
 **Upstream projects:**
+* [cms-build-package](#cms-build-package):
 * [cmsrep-webhook](#cmsrep-webhook):
 * [update-release-map](#update-release-map):
 
