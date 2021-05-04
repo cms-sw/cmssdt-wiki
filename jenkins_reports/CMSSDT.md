@@ -78,6 +78,28 @@ Not periodically build
 
 ---
 
+## [cms-build-package](https://cmssdt.cern.ch/jenkins/job/cms-build-package)
+
+**Description:** None
+
+**Project is `enabled`.**
+
+**Upstream projects:**
+
+**Downstream projects:**
+
+**Sub-projects:**
+
+**Triggers from:** []
+
+
+**Periodic builds:**
+```bash
+Not periodically build
+```
+
+---
+
 ## [cms-ib-new-test](https://cmssdt.cern.ch/jenkins/job/cms-ib-new-test)
 
 **Description:** None

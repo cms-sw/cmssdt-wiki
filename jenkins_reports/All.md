@@ -648,6 +648,28 @@ Not periodically build
 
 ---
 
+## [cms-build-package](https://cmssdt.cern.ch/jenkins/job/cms-build-package)
+
+**Description:** None
+
+**Project is `enabled`.**
+
+**Upstream projects:**
+
+**Downstream projects:**
+
+**Sub-projects:**
+
+**Triggers from:** []
+
+
+**Periodic builds:**
+```bash
+Not periodically build
+```
+
+---
+
 ## [cms-containers-checks-tags](https://cmssdt.cern.ch/jenkins/job/cms-containers-checks-tags)
 
 **Description:** This project search for tags.yaml files in cms-sw/cms-docker repostory and create new image tags if needed
