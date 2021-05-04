@@ -650,7 +650,8 @@ Not periodically build
 
 ## [cms-build-package](https://cmssdt.cern.ch/jenkins/job/cms-build-package)
 
-**Description:** None
+**Description:** This job builds a cmssw external package ( e.g. crab , SCRAMV1 ) using the master cmsdist/pkgtools branches.
+It then trigger the cvmfs installation job to install the newly build packages.
 
 **Project is `enabled`.**
 
