@@ -1463,9 +1463,8 @@ Not periodically build
 
 ## [cvmfs-create-directory-on-cvmfs](https://cmssdt.cern.ch/jenkins/job/cvmfs-create-directory-on-cvmfs)
 
-**Description:** This job installs packages using cmspkg tool
-To be used for - CRAB3, PHEDEX, spacemon-client, python, releases(cmssw), cms-common
-Triggered by webhook
+**Description:** This is a copy of cvmfs-cms-install-package to create directories on /cvmfs/cms.cern.ch without login on the machine
+
 
 **Project is `enabled`.**
 
