@@ -20,7 +20,7 @@
 * [cvmfs-cms-update-releases-map](#cvmfs-cms-update-releases-map):
 
 **Sub-projects:**
-* [cvmfs-cms-update-releases-map ](#cvmfs-cms-update-releases-map ):
+* [cvmfs-cms-update-releases-map](#cvmfs-cms-update-releases-map):
 
 **Triggers from:** []
 
@@ -91,7 +91,7 @@ It then trigger the cvmfs installation job to install the newly build packages.
 * [cvmfs-cms-install-cms](#cvmfs-cms-install-cms):
 
 **Sub-projects:**
-* [cvmfs-cms-install-cms ](#cvmfs-cms-install-cms ):
+* [cvmfs-cms-install-cms](#cvmfs-cms-install-cms):
 
 **Triggers from:** []
 
@@ -3484,28 +3484,6 @@ Not periodically build
 
 ---
 
-## [test](https://cmssdt.cern.ch/jenkins/job/test)
-
-**Description:** None
-
-**Project is `enabled`.**
-
-**Upstream projects:**
-
-**Downstream projects:**
-
-**Sub-projects:**
-
-**Triggers from:** []
-
-
-**Periodic builds:**
-```bash
-Not periodically build
-```
-
----
-
 ## [test-build-periodic](https://cmssdt.cern.ch/jenkins/job/test-build-periodic)
 
 **Description:** None
@@ -3536,6 +3514,28 @@ H/15 * * * *
 
 **Upstream projects:**
 * [slaves-checks](#slaves-checks):
+
+**Downstream projects:**
+
+**Sub-projects:**
+
+**Triggers from:** []
+
+
+**Periodic builds:**
+```bash
+Not periodically build
+```
+
+---
+
+## [test-gartung](https://cmssdt.cern.ch/jenkins/job/test-gartung)
+
+**Description:** None
+
+**Project is `enabled`.**
+
+**Upstream projects:**
 
 **Downstream projects:**
 
