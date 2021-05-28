@@ -419,6 +419,28 @@ Not periodically build
 
 ---
 
+## [send-profiling-data](https://cmssdt.cern.ch/jenkins/job/send-profiling-data)
+
+**Description:** None
+
+**Project is `enabled`.**
+
+**Upstream projects:**
+
+**Downstream projects:**
+
+**Sub-projects:**
+
+**Triggers from:** []
+
+
+**Periodic builds:**
+```bash
+Not periodically build
+```
+
+---
+
 ## [sync-profile-data](https://cmssdt.cern.ch/jenkins/job/sync-profile-data)
 
 **Description:** None
