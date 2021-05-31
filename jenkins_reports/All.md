@@ -1241,7 +1241,9 @@ H * * * *
 
 ## [cvmfs-cms-crab-symlink](https://cmssdt.cern.ch/jenkins/job/cvmfs-cms-crab-symlink)
 
-**Description:** None
+**Description:** This changes the /cvmfs/cms.cern.ch/common/crab symlink to point to either crab-pre, crab-prod or crab-dev.<br/>
+
+<b>Note any cmssw release which installs a different crab version will revert the symlink back to crab-prod</b>
 
 **Project is `enabled`.**
 
