@@ -140,7 +140,10 @@ H * * * *
 
 **Description:** This changes the /cvmfs/cms.cern.ch/common/crab symlink to point to either crab-pre, crab-prod or crab-dev.<br/>
 
-<b>Note any cmssw release which installs a different crab version will revert the symlink back to crab-prod</b>
+<b>Note any cmssw release which installs a different crab version will revert the symlink back to crab-prod</b><br/>
+
+Note that this only changes the /cvmfs/cms.cern.ch/common/crab symlink. For crab python api, one still needs to source /cvmfs/cms.cern.ch/common/crab-setup.sh prod|pre|dev
+
 
 **Project is `enabled`.**
 
