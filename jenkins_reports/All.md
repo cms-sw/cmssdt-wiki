@@ -4927,7 +4927,7 @@ There is no need to re-try this is a newer run is successful. If it keeps on fai
 to check the logs and find out the reason of failure. In that case some manual work is needed to cleanup
 cmssdt.cern.ch logs.
 
-**Project is `disabled`.**
+**Project is `enabled`.**
 
 **Upstream projects:**
 * [ib-run-relvals](#ib-run-relvals):
@@ -4972,33 +4972,6 @@ cmssdt.cern.ch logs.
 **Periodic builds:**
 ```bash
 Not periodically build
-```
-
----
-
-## [process-relval-logs-new](https://cmssdt.cern.ch/jenkins/job/process-relval-logs-new)
-
-**Description:** This job process partial logs of Relvals and place files accordingly.<br/>
-There is no need to re-try this is a newer run is successful. If it keeps on failing then one need 
-to check the logs and find out the reason of failure. In that case some manual work is needed to cleanup
-cmssdt.cern.ch logs.
-
-**Project is `disabled`.**
-
-**Upstream projects:**
-
-**Downstream projects:**
-* [update-github-pages](#update-github-pages):
-
-**Sub-projects:**
-* [update-github-pages](#update-github-pages):
-
-**Triggers from:** []
-
-
-**Periodic builds:**
-```bash
-H/20 * * * *
 ```
 
 ---
@@ -5560,7 +5533,6 @@ Not periodically build
 * [cleanup-cms-sw-io-history](#cleanup-cms-sw-io-history):
 * [ib-build-logs](#ib-build-logs):
 * [process-relval-logs](#process-relval-logs):
-* [process-relval-logs-new](#process-relval-logs-new):
 
 **Downstream projects:**
 * [refresh-cmssdt](#refresh-cmssdt):

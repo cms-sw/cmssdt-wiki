@@ -86,7 +86,6 @@ H 1 * * 0
 * [cleanup-cms-sw-io-history](#cleanup-cms-sw-io-history):
 * [ib-build-logs](#ib-build-logs):
 * [process-relval-logs](#process-relval-logs):
-* [process-relval-logs-new](#process-relval-logs-new):
 
 **Downstream projects:**
 * [refresh-cmssdt](#refresh-cmssdt):

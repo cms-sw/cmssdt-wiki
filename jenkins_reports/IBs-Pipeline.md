@@ -211,7 +211,6 @@ H/30 * * * *
 * [cleanup-cms-sw-io-history](#cleanup-cms-sw-io-history):
 * [ib-build-logs](#ib-build-logs):
 * [process-relval-logs](#process-relval-logs):
-* [process-relval-logs-new](#process-relval-logs-new):
 
 **Downstream projects:**
 * [refresh-cmssdt](#refresh-cmssdt):
@@ -326,7 +325,6 @@ H/30 * * * *
 * [cleanup-cms-sw-io-history](#cleanup-cms-sw-io-history):
 * [ib-build-logs](#ib-build-logs):
 * [process-relval-logs](#process-relval-logs):
-* [process-relval-logs-new](#process-relval-logs-new):
 
 **Downstream projects:**
 * [refresh-cmssdt](#refresh-cmssdt):
@@ -556,7 +554,7 @@ There is no need to re-try this is a newer run is successful. If it keeps on fai
 to check the logs and find out the reason of failure. In that case some manual work is needed to cleanup
 cmssdt.cern.ch logs.
 
-**Project is `disabled`.**
+**Project is `enabled`.**
 
 **Upstream projects:**
 * [ib-run-relvals](#ib-run-relvals):
@@ -615,7 +613,6 @@ Not periodically build
 * [cleanup-cms-sw-io-history](#cleanup-cms-sw-io-history):
 * [ib-build-logs](#ib-build-logs):
 * [process-relval-logs](#process-relval-logs):
-* [process-relval-logs-new](#process-relval-logs-new):
 
 **Downstream projects:**
 * [refresh-cmssdt](#refresh-cmssdt):
@@ -987,7 +984,7 @@ There is no need to re-try this is a newer run is successful. If it keeps on fai
 to check the logs and find out the reason of failure. In that case some manual work is needed to cleanup
 cmssdt.cern.ch logs.
 
-**Project is `disabled`.**
+**Project is `enabled`.**
 
 **Upstream projects:**
 * [ib-run-relvals](#ib-run-relvals):
@@ -1046,7 +1043,6 @@ Not periodically build
 * [cleanup-cms-sw-io-history](#cleanup-cms-sw-io-history):
 * [ib-build-logs](#ib-build-logs):
 * [process-relval-logs](#process-relval-logs):
-* [process-relval-logs-new](#process-relval-logs-new):
 
 **Downstream projects:**
 * [refresh-cmssdt](#refresh-cmssdt):
