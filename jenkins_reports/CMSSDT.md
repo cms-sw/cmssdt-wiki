@@ -397,33 +397,6 @@ Not periodically build
 
 ---
 
-## [process-relval-logs-new](https://cmssdt.cern.ch/jenkins/job/process-relval-logs-new)
-
-**Description:** This job process partial logs of Relvals and place files accordingly.<br/>
-There is no need to re-try this is a newer run is successful. If it keeps on failing then one need 
-to check the logs and find out the reason of failure. In that case some manual work is needed to cleanup
-cmssdt.cern.ch logs.
-
-**Project is `enabled`.**
-
-**Upstream projects:**
-
-**Downstream projects:**
-* [update-github-pages](#update-github-pages):
-
-**Sub-projects:**
-* [update-github-pages](#update-github-pages):
-
-**Triggers from:** []
-
-
-**Periodic builds:**
-```bash
-H/20 * * * *
-```
-
----
-
 ## [release-run-reco-profiling](https://cmssdt.cern.ch/jenkins/job/release-run-reco-profiling)
 
 **Description:** None
