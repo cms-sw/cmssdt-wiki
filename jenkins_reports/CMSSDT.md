@@ -1683,29 +1683,6 @@ H 0 * * *
 
 ---
 
-## [dxr-cmssw-index](https://cmssdt.cern.ch/jenkins/job/dxr-cmssw-index)
-
-**Description:** Index <a href="https://cmssdt.cern.ch/dxr">CMSSW</a> documentation using DXR. 
-
-**Project is `enabled`.**
-
-**Upstream projects:**
-* [ib-run-cfipython](#ib-run-cfipython):
-
-**Downstream projects:**
-
-**Sub-projects:**
-
-**Triggers from:** []
-
-
-**Periodic builds:**
-```bash
-Not periodically build
-```
-
----
-
 ## [es-close-indexes](https://cmssdt.cern.ch/jenkins/job/es-close-indexes)
 
 **Description:** This job keeps last 6 weeks (1.5 months) of data in Elasticsearch open, and it closes older indexes (archive it).
