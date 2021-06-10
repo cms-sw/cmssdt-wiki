@@ -1329,7 +1329,7 @@ Not periodically build
 
 **Description:** Index <a href="https://cmssdt.cern.ch/dxr">CMSSW</a> documentation using DXR. 
 
-**Project is `disabled`.**
+**Project is `enabled`.**
 
 **Upstream projects:**
 * [ib-run-cfipython](#ib-run-cfipython):
