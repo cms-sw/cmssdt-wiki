@@ -747,28 +747,6 @@ Not periodically build
 
 ---
 
-## [cms-ib-new-test](https://cmssdt.cern.ch/jenkins/job/cms-ib-new-test)
-
-**Description:** None
-
-**Project is `enabled`.**
-
-**Upstream projects:**
-
-**Downstream projects:**
-
-**Sub-projects:**
-
-**Triggers from:** []
-
-
-**Periodic builds:**
-```bash
-Not periodically build
-```
-
----
-
 ## [cms-prs-cache](https://cmssdt.cern.ch/jenkins/job/cms-prs-cache)
 
 **Description:** This job collects metadata for pull requests since reading github directly when necessary might become time consuming or rejected by github
@@ -5347,6 +5325,28 @@ Not periodically build
 
 **Upstream projects:**
 * [slaves-checks](#slaves-checks):
+
+**Downstream projects:**
+
+**Sub-projects:**
+
+**Triggers from:** []
+
+
+**Periodic builds:**
+```bash
+Not periodically build
+```
+
+---
+
+## [test-new-cvmfs-publisher](https://cmssdt.cern.ch/jenkins/job/test-new-cvmfs-publisher)
+
+**Description:** None
+
+**Project is `enabled`.**
+
+**Upstream projects:**
 
 **Downstream projects:**
 

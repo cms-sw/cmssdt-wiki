@@ -103,28 +103,6 @@ Not periodically build
 
 ---
 
-## [cms-ib-new-test](https://cmssdt.cern.ch/jenkins/job/cms-ib-new-test)
-
-**Description:** None
-
-**Project is `enabled`.**
-
-**Upstream projects:**
-
-**Downstream projects:**
-
-**Sub-projects:**
-
-**Triggers from:** []
-
-
-**Periodic builds:**
-```bash
-Not periodically build
-```
-
----
-
 ## [cvmfs-deploy-baseline](https://cmssdt.cern.ch/jenkins/job/cvmfs-deploy-baseline)
 
 **Description:** Copy baseline results from cmssdt for an IB
@@ -499,6 +477,28 @@ Not periodically build
 
 **Upstream projects:**
 * [build-docker-container](#build-docker-container):
+
+**Downstream projects:**
+
+**Sub-projects:**
+
+**Triggers from:** []
+
+
+**Periodic builds:**
+```bash
+Not periodically build
+```
+
+---
+
+## [test-new-cvmfs-publisher](https://cmssdt.cern.ch/jenkins/job/test-new-cvmfs-publisher)
+
+**Description:** None
+
+**Project is `enabled`.**
+
+**Upstream projects:**
 
 **Downstream projects:**
 
