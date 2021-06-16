@@ -1062,7 +1062,7 @@ Not periodically build
 **Periodic builds:**
 ```bash
 #Run once on Thursday at 23h05
-H 23  * *  4
+H 23  * *  2
 ```
 
 ---
