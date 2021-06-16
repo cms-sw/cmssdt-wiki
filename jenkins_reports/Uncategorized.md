@@ -116,7 +116,7 @@ H 23  * *  4
 **Periodic builds:**
 ```bash
 #Run once on Thursday at 23h05
-H 19  * *  4
+H 19  * *  2
 ```
 
 ---
