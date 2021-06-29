@@ -54,7 +54,7 @@ H H * * *
 
 **Periodic builds:**
 ```bash
-H H/2 * * *
+H * * * *
 ```
 
 ---
