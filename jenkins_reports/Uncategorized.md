@@ -53,28 +53,6 @@ Not periodically build
 
 ---
 
-## [aarch64](https://cmssdt.cern.ch/jenkins/job/aarch64)
-
-**Description:** None
-
-**Project is `enabled`.**
-
-**Upstream projects:**
-
-**Downstream projects:**
-
-**Sub-projects:**
-
-**Triggers from:** []
-
-
-**Periodic builds:**
-```bash
-Not periodically build
-```
-
----
-
 ## [cvmfs-ci-gc](https://cmssdt.cern.ch/jenkins/job/cvmfs-ci-gc)
 
 **Description:** This runs CVMFS GC (once a week)
@@ -126,50 +104,6 @@ H 19  * *  2
 **Description:** Runs geometry comparison tests for each IB
 
 **Project is `disabled`.**
-
-**Upstream projects:**
-
-**Downstream projects:**
-
-**Sub-projects:**
-
-**Triggers from:** []
-
-
-**Periodic builds:**
-```bash
-Not periodically build
-```
-
----
-
-## [slc6](https://cmssdt.cern.ch/jenkins/job/slc6)
-
-**Description:** None
-
-**Project is `enabled`.**
-
-**Upstream projects:**
-
-**Downstream projects:**
-
-**Sub-projects:**
-
-**Triggers from:** []
-
-
-**Periodic builds:**
-```bash
-Not periodically build
-```
-
----
-
-## [slc7](https://cmssdt.cern.ch/jenkins/job/slc7)
-
-**Description:** None
-
-**Project is `enabled`.**
 
 **Upstream projects:**
 

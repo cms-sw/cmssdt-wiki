@@ -310,28 +310,6 @@ Not periodically build
 
 ---
 
-## [jenkins-test-build-any-ib](https://cmssdt.cern.ch/jenkins/job/jenkins-test-build-any-ib)
-
-**Description:** None
-
-**Project is `enabled`.**
-
-**Upstream projects:**
-
-**Downstream projects:**
-
-**Sub-projects:**
-
-**Triggers from:** []
-
-
-**Periodic builds:**
-```bash
-Not periodically build
-```
-
----
-
 ## [jenkins-test-code-format](https://cmssdt.cern.ch/jenkins/job/jenkins-test-code-format)
 
 **Description:** None
@@ -509,29 +487,6 @@ Not periodically build
 
 ---
 
-## [jenkins-test-kerberos](https://cmssdt.cern.ch/jenkins/job/jenkins-test-kerberos)
-
-**Description:** None
-
-**Project is `enabled`.**
-
-**Upstream projects:**
-* [jenkins-test-slaves](#jenkins-test-slaves):
-
-**Downstream projects:**
-
-**Sub-projects:**
-
-**Triggers from:** []
-
-
-**Periodic builds:**
-```bash
-Not periodically build
-```
-
----
-
 ## [jenkins-test-localcli](https://cmssdt.cern.ch/jenkins/job/jenkins-test-localcli)
 
 **Description:** None
@@ -555,28 +510,6 @@ Not periodically build
 ---
 
 ## [jenkins-test-lxplus-future](https://cmssdt.cern.ch/jenkins/job/jenkins-test-lxplus-future)
-
-**Description:** None
-
-**Project is `enabled`.**
-
-**Upstream projects:**
-
-**Downstream projects:**
-
-**Sub-projects:**
-
-**Triggers from:** []
-
-
-**Periodic builds:**
-```bash
-Not periodically build
-```
-
----
-
-## [jenkins-test-multi-job](https://cmssdt.cern.ch/jenkins/job/jenkins-test-multi-job)
 
 **Description:** None
 
@@ -643,28 +576,6 @@ H/10 * * * *
 ---
 
 ## [jenkins-test-singularity-slave](https://cmssdt.cern.ch/jenkins/job/jenkins-test-singularity-slave)
-
-**Description:** None
-
-**Project is `enabled`.**
-
-**Upstream projects:**
-
-**Downstream projects:**
-
-**Sub-projects:**
-
-**Triggers from:** []
-
-
-**Periodic builds:**
-```bash
-Not periodically build
-```
-
----
-
-## [jenkins-test-workspace](https://cmssdt.cern.ch/jenkins/job/jenkins-test-workspace)
 
 **Description:** None
 
@@ -1104,12 +1015,10 @@ Not periodically build
 **Upstream projects:**
 
 **Downstream projects:**
-* [jenkins-test-kerberos](#jenkins-test-kerberos):
 * [jenkins-test-slave](#jenkins-test-slave):
 
 **Sub-projects:**
 * [jenkins-test-slave](#jenkins-test-slave):
-* [jenkins-test-kerberos](#jenkins-test-kerberos):
 
 **Triggers from:** []
 
