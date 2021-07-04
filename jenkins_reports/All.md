@@ -369,6 +369,7 @@ H H/4 * * *
 **Project is `enabled`.**
 
 **Upstream projects:**
+* [slaves-checks](#slaves-checks):
 
 **Downstream projects:**
 
@@ -416,6 +417,7 @@ Not periodically build
 **Project is `enabled`.**
 
 **Upstream projects:**
+* [slaves-checks](#slaves-checks):
 
 **Downstream projects:**
 
@@ -5144,11 +5146,14 @@ and <a href="https://cmssdt.cern.ch/jenkins/job/test-docker">test-docker</a> job
 **Upstream projects:**
 
 **Downstream projects:**
+* [check-docker](#check-docker):
+* [check-zombie](#check-zombie):
 * [workspace-cleanup-slave](#workspace-cleanup-slave):
 
 **Sub-projects:**
 * [workspace-cleanup-slave](#workspace-cleanup-slave):
-* [test-docker ](#test-docker ):
+* [check-docker ](#check-docker ):
+* [check-zombie ](#check-zombie ):
 
 **Triggers from:** []
 
