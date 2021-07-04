@@ -32,6 +32,28 @@ H H/4 * * *
 
 ---
 
+## [check-zombie](https://cmssdt.cern.ch/jenkins/job/check-zombie)
+
+**Description:** Connects to the slave and checks if docker service is runable.
+
+**Project is `enabled`.**
+
+**Upstream projects:**
+
+**Downstream projects:**
+
+**Sub-projects:**
+
+**Triggers from:** []
+
+
+**Periodic builds:**
+```bash
+Not periodically build
+```
+
+---
+
 ## [cleanup-cmsrep](https://cmssdt.cern.ch/jenkins/job/cleanup-cmsrep)
 
 **Description:** This cleans up old cms.weekN.PR_* repositories from cmsrep.cern.ch server.
@@ -895,6 +917,28 @@ as one of the aarch64 machine does not have enought disk. In that case one needs
 
 **Upstream projects:**
 * [query-build-release-issues](#query-build-release-issues):
+
+**Downstream projects:**
+
+**Sub-projects:**
+
+**Triggers from:** []
+
+
+**Periodic builds:**
+```bash
+Not periodically build
+```
+
+---
+
+## [check-docker](https://cmssdt.cern.ch/jenkins/job/check-docker)
+
+**Description:** Connects to the slave and checks if docker service is runable.
+
+**Project is `enabled`.**
+
+**Upstream projects:**
 
 **Downstream projects:**
 
@@ -3499,7 +3543,6 @@ and <a href="https://cmssdt.cern.ch/jenkins/job/test-docker">test-docker</a> job
 **Upstream projects:**
 
 **Downstream projects:**
-* [test-docker](#test-docker):
 * [workspace-cleanup-slave](#workspace-cleanup-slave):
 
 **Sub-projects:**
@@ -3596,29 +3639,6 @@ Not periodically build
 **Periodic builds:**
 ```bash
 H/15 * * * *
-```
-
----
-
-## [test-docker](https://cmssdt.cern.ch/jenkins/job/test-docker)
-
-**Description:** Connects to the slave and checks if docker service is runable.
-
-**Project is `enabled`.**
-
-**Upstream projects:**
-* [slaves-checks](#slaves-checks):
-
-**Downstream projects:**
-
-**Sub-projects:**
-
-**Triggers from:** []
-
-
-**Periodic builds:**
-```bash
-Not periodically build
 ```
 
 ---
