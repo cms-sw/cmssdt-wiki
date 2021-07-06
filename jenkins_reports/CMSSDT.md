@@ -935,7 +935,12 @@ Not periodically build
 
 ## [check-docker](https://cmssdt.cern.ch/jenkins/job/check-docker)
 
-**Description:** Connects to the slave and checks if docker service is runable.
+**Description:** Connects to the slave and checks if docker service is useable.<br/>
+Job can fail for two reasons<br/>
+1. user is not in docker group<br/>
+2. docker service is not running on the machine<br/><br/>
+
+If machine is in our control then we should take the appropriate action but if machine is in CERN IT control e.g OpenLab machines then we should open a SNOW ticket.
 
 **Project is `enabled`.**
 
