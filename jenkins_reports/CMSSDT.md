@@ -34,7 +34,9 @@ H H/4 * * *
 
 ## [check-zombie](https://cmssdt.cern.ch/jenkins/job/check-zombie)
 
-**Description:** Connects to the slave and checks if docker service is runable.
+**Description:** Connects to the slave and look for runaway process. This job fails when it find such processes.<br/>
+In case of failure we need to check the runaway process list (e.g. see the job log) and make sure that these processes are really runaway (e.g. cmsRun jobs running with parent PID 1).
+If all looks good then restart the job with  KILL_HANGING_PROCESSES=true.
 
 **Project is `enabled`.**
 
