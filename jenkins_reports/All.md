@@ -1257,7 +1257,7 @@ H * * * *
 
 **Periodic builds:**
 ```bash
-H 15 * * *
+H H * * *
 ```
 
 ---
