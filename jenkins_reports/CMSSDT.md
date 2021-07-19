@@ -1979,10 +1979,13 @@ and then a jenkins job is triggered based on the information passed from the web
 **Project is `enabled`.**
 
 **Upstream projects:**
+* [github-labels](#github-labels):
 
 **Downstream projects:**
+* [github-labels](#github-labels):
 
 **Sub-projects:**
+* [github-labels](#github-labels):
 
 **Triggers from:** []
 
