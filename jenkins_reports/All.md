@@ -5191,7 +5191,7 @@ as deploys on the web server. It is used to generate <a href="https://cmssdt.cer
   </li>
   <li>
     <b>A:</b> Most likely Github rejected push request because other job pushed after `git pull --rebase`
-	. Do not worry - job builds quite ofthen and next build shouls be succesful.
+	. Do not worry - job builds quite often and next build shouls be succesful. But if it keeps on failing (over 3 times) then try to re-run the job with "RESET" enabled.
   </li>
 </ul>
 
