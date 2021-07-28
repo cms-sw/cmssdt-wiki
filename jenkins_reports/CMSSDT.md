@@ -3569,7 +3569,8 @@ and <a href="https://cmssdt.cern.ch/jenkins/job/test-docker">test-docker</a> job
 
 **Periodic builds:**
 ```bash
-H 7,19 * * *
+H 07 * * *
+56 16 * * *
 ```
 
 ---
