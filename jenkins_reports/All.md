@@ -338,6 +338,28 @@ Not periodically build
 
 ---
 
+## [check-cmsdev-disk](https://cmssdt.cern.ch/jenkins/job/check-cmsdev-disk)
+
+**Description:** Clean up disk space on cmsdev machines
+
+**Project is `enabled`.**
+
+**Upstream projects:**
+
+**Downstream projects:**
+
+**Sub-projects:**
+
+**Triggers from:** []
+
+
+**Periodic builds:**
+```bash
+Not periodically build
+```
+
+---
+
 ## [check-cvmfs-releases-map](https://cmssdt.cern.ch/jenkins/job/check-cvmfs-releases-map)
 
 **Description:** None
@@ -541,28 +563,6 @@ H 0 * * *
 
 **Upstream projects:**
 * [ib-tag-and-schdule](#ib-tag-and-schdule):
-
-**Downstream projects:**
-
-**Sub-projects:**
-
-**Triggers from:** []
-
-
-**Periodic builds:**
-```bash
-Not periodically build
-```
-
----
-
-## [cleanup-dev-machine](https://cmssdt.cern.ch/jenkins/job/cleanup-dev-machine)
-
-**Description:** Clean up disk space on cmsdev machines
-
-**Project is `enabled`.**
-
-**Upstream projects:**
 
 **Downstream projects:**
 
@@ -4490,29 +4490,6 @@ H H/8 * * *
 **Periodic builds:**
 ```bash
 Not periodically build
-```
-
----
-
-## [list-storage-dev-machine](https://cmssdt.cern.ch/jenkins/job/list-storage-dev-machine)
-
-**Description:** List cmsdev machines and run a job to get the storage of each machine
-
-
-**Project is `disabled`.**
-
-**Upstream projects:**
-
-**Downstream projects:**
-
-**Sub-projects:**
-
-**Triggers from:** []
-
-
-**Periodic builds:**
-```bash
-0 8,20 * * *
 ```
 
 ---

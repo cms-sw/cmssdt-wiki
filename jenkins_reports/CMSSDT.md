@@ -935,6 +935,28 @@ Not periodically build
 
 ---
 
+## [check-cmsdev-disk](https://cmssdt.cern.ch/jenkins/job/check-cmsdev-disk)
+
+**Description:** Clean up disk space on cmsdev machines
+
+**Project is `enabled`.**
+
+**Upstream projects:**
+
+**Downstream projects:**
+
+**Sub-projects:**
+
+**Triggers from:** []
+
+
+**Periodic builds:**
+```bash
+Not periodically build
+```
+
+---
+
 ## [check-docker](https://cmssdt.cern.ch/jenkins/job/check-docker)
 
 **Description:** Connects to the slave and checks if docker service is useable.<br/>
@@ -1054,28 +1076,6 @@ H 1 * * 0
 **Periodic builds:**
 ```bash
 H 0 * * *
-```
-
----
-
-## [cleanup-dev-machine](https://cmssdt.cern.ch/jenkins/job/cleanup-dev-machine)
-
-**Description:** Clean up disk space on cmsdev machines
-
-**Project is `enabled`.**
-
-**Upstream projects:**
-
-**Downstream projects:**
-
-**Sub-projects:**
-
-**Triggers from:** []
-
-
-**Periodic builds:**
-```bash
-Not periodically build
 ```
 
 ---
