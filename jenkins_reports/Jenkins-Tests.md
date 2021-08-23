@@ -30,6 +30,28 @@ Not periodically build
 
 ---
 
+## [cms-spack-clean](https://cmssdt.cern.ch/jenkins/job/cms-spack-clean)
+
+**Description:** None
+
+**Project is `enabled`.**
+
+**Upstream projects:**
+
+**Downstream projects:**
+
+**Sub-projects:**
+
+**Triggers from:** []
+
+
+**Periodic builds:**
+```bash
+Not periodically build
+```
+
+---
+
 ## [cms-spack-install](https://cmssdt.cern.ch/jenkins/job/cms-spack-install)
 
 **Description:** None
