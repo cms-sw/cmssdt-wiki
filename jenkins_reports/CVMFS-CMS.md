@@ -165,7 +165,8 @@ Not periodically build
 
 ## [cvmfs-cms-deploy-cuda-compatible-runtime](https://cmssdt.cern.ch/jenkins/job/cvmfs-cms-deploy-cuda-compatible-runtime)
 
-**Description:** This job checks and updates cuda-compatible-runtime.
+**Description:** This job checks and updates cuda-compatible-runtime. This is used by CMS pilot jobs to find available gpu on the worker node.<br/>
+
 Requestsed by marco.mascheroni@cern.ch and andrea.bocci@cern.ch
 
 
@@ -182,7 +183,7 @@ Requestsed by marco.mascheroni@cern.ch and andrea.bocci@cern.ch
 
 **Periodic builds:**
 ```bash
-H H * * *
+Not periodically build
 ```
 
 ---
