@@ -165,9 +165,8 @@ Not periodically build
 
 ## [cvmfs-cms-deploy-cuda-compatible-runtime](https://cmssdt.cern.ch/jenkins/job/cvmfs-cms-deploy-cuda-compatible-runtime)
 
-**Description:** This job checks and updates lhapdf based on 
-<br> https://github.com/bockjoo/cvmfs-cms-install-scripts/blob/master/cron_download_lhapdf.sh
-
+**Description:** This job checks and updates cuda-compatible-runtime.
+Requestsed by marco.mascheroni@cern.ch and andrea.bocci@cern.ch
 
 
 **Project is `enabled`.**
