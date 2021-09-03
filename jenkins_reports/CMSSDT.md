@@ -20,8 +20,10 @@ Requestsed by marco.mascheroni@cern.ch and andrea.bocci@cern.ch
 **Upstream projects:**
 
 **Downstream projects:**
+* [cvmfs-cms-deploy-cuda-compatible-runtime](#cvmfs-cms-deploy-cuda-compatible-runtime):
 
 **Sub-projects:**
+* [cvmfs-cms-deploy-cuda-compatible-runtime](#cvmfs-cms-deploy-cuda-compatible-runtime):
 
 **Triggers from:** []
 
