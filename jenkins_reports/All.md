@@ -1363,6 +1363,31 @@ Not periodically build
 
 ---
 
+## [cvmfs-cms-deploy-cuda-compatible-runtime](https://cmssdt.cern.ch/jenkins/job/cvmfs-cms-deploy-cuda-compatible-runtime)
+
+**Description:** This job checks and updates lhapdf based on 
+<br> https://github.com/bockjoo/cvmfs-cms-install-scripts/blob/master/cron_download_lhapdf.sh
+
+
+
+**Project is `enabled`.**
+
+**Upstream projects:**
+
+**Downstream projects:**
+
+**Sub-projects:**
+
+**Triggers from:** []
+
+
+**Periodic builds:**
+```bash
+H H * * *
+```
+
+---
+
 ## [cvmfs-cms-install-cms](https://cmssdt.cern.ch/jenkins/job/cvmfs-cms-install-cms)
 
 **Description:** Job to install (test) releases (and IBs) once the upload is completed.
