@@ -360,6 +360,31 @@ Not periodically build
 
 ---
 
+## [check-cuda-compatible-runtime](https://cmssdt.cern.ch/jenkins/job/check-cuda-compatible-runtime)
+
+**Description:** This job checks and updates cuda-compatible-runtime. This is used by CMS pilot jobs to find available gpu on the worker node.<br/>
+
+Requestsed by marco.mascheroni@cern.ch and andrea.bocci@cern.ch
+
+
+**Project is `enabled`.**
+
+**Upstream projects:**
+
+**Downstream projects:**
+
+**Sub-projects:**
+
+**Triggers from:** []
+
+
+**Periodic builds:**
+```bash
+Not periodically build
+```
+
+---
+
 ## [check-cvmfs-releases-map](https://cmssdt.cern.ch/jenkins/job/check-cvmfs-releases-map)
 
 **Description:** None
