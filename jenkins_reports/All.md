@@ -1049,6 +1049,28 @@ Not periodically build
 
 ---
 
+## [cmssw-afs-eos-comparison](https://cmssdt.cern.ch/jenkins/job/cmssw-afs-eos-comparison)
+
+**Description:** None
+
+**Project is `enabled`.**
+
+**Upstream projects:**
+
+**Downstream projects:**
+
+**Sub-projects:**
+
+**Triggers from:** []
+
+
+**Periodic builds:**
+```bash
+Not periodically build
+```
+
+---
+
 ## [cmssw-container](https://cmssdt.cern.ch/jenkins/job/cmssw-container)
 
 **Description:** None
@@ -1079,28 +1101,6 @@ Not periodically build
 
 **Upstream projects:**
 * [update-release-map](#update-release-map):
-
-**Downstream projects:**
-
-**Sub-projects:**
-
-**Triggers from:** []
-
-
-**Periodic builds:**
-```bash
-Not periodically build
-```
-
----
-
-## [cmssw-eos-afs-comparison](https://cmssdt.cern.ch/jenkins/job/cmssw-eos-afs-comparison)
-
-**Description:** None
-
-**Project is `enabled`.**
-
-**Upstream projects:**
 
 **Downstream projects:**
 

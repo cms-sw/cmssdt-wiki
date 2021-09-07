@@ -155,7 +155,7 @@ Not periodically build
 
 ---
 
-## [cmssw-eos-afs-comparison](https://cmssdt.cern.ch/jenkins/job/cmssw-eos-afs-comparison)
+## [cmssw-afs-eos-comparison](https://cmssdt.cern.ch/jenkins/job/cmssw-afs-eos-comparison)
 
 **Description:** None
 
