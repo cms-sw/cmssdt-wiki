@@ -155,6 +155,28 @@ Not periodically build
 
 ---
 
+## [cmssw-eos-afs-comparison](https://cmssdt.cern.ch/jenkins/job/cmssw-eos-afs-comparison)
+
+**Description:** None
+
+**Project is `enabled`.**
+
+**Upstream projects:**
+
+**Downstream projects:**
+
+**Sub-projects:**
+
+**Triggers from:** []
+
+
+**Periodic builds:**
+```bash
+Not periodically build
+```
+
+---
+
 ## [cvmfs-deploy-baseline](https://cmssdt.cern.ch/jenkins/job/cvmfs-deploy-baseline)
 
 **Description:** Copy baseline results from cmssdt for an IB
@@ -500,28 +522,6 @@ Not periodically build
 ---
 
 ## [test-cmssdt](https://cmssdt.cern.ch/jenkins/job/test-cmssdt)
-
-**Description:** None
-
-**Project is `enabled`.**
-
-**Upstream projects:**
-
-**Downstream projects:**
-
-**Sub-projects:**
-
-**Triggers from:** []
-
-
-**Periodic builds:**
-```bash
-Not periodically build
-```
-
----
-
-## [test-cmssw-build](https://cmssdt.cern.ch/jenkins/job/test-cmssw-build)
 
 **Description:** None
 

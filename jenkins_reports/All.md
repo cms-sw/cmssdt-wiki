@@ -1094,6 +1094,28 @@ Not periodically build
 
 ---
 
+## [cmssw-eos-afs-comparison](https://cmssdt.cern.ch/jenkins/job/cmssw-eos-afs-comparison)
+
+**Description:** None
+
+**Project is `enabled`.**
+
+**Upstream projects:**
+
+**Downstream projects:**
+
+**Sub-projects:**
+
+**Triggers from:** []
+
+
+**Periodic builds:**
+```bash
+Not periodically build
+```
+
+---
+
 ## [cmssw-to-stitched](https://cmssdt.cern.ch/jenkins/job/cmssw-to-stitched)
 
 **Description:** None
@@ -5337,28 +5359,6 @@ H/15 * * * *
 ---
 
 ## [test-cmssdt](https://cmssdt.cern.ch/jenkins/job/test-cmssdt)
-
-**Description:** None
-
-**Project is `enabled`.**
-
-**Upstream projects:**
-
-**Downstream projects:**
-
-**Sub-projects:**
-
-**Triggers from:** []
-
-
-**Periodic builds:**
-```bash
-Not periodically build
-```
-
----
-
-## [test-cmssw-build](https://cmssdt.cern.ch/jenkins/job/test-cmssw-build)
 
 **Description:** None
 
