@@ -1056,6 +1056,7 @@ Not periodically build
 **Project is `enabled`.**
 
 **Upstream projects:**
+* [ib-schedule-additional-tests](#ib-schedule-additional-tests):
 
 **Downstream projects:**
 
@@ -3436,10 +3437,12 @@ This was created to avoid the issue with <a href="https://wiki.jenkins.io/displa
 * [ib-validation](#ib-validation):
 
 **Downstream projects:**
+* [cmssw-afs-eos-comparison](#cmssw-afs-eos-comparison):
 * [ib-run-additional-tests](#ib-run-additional-tests):
 
 **Sub-projects:**
 * [ib-run-additional-tests](#ib-run-additional-tests):
+* [cmssw-afs-eos-comparison ](#cmssw-afs-eos-comparison ):
 
 **Triggers from:** []
 
