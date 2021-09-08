@@ -165,10 +165,8 @@ Not periodically build
 * [ib-schedule-additional-tests](#ib-schedule-additional-tests):
 
 **Downstream projects:**
-* [es-cmssw-afs-eos](#es-cmssw-afs-eos):
 
 **Sub-projects:**
-* [es-cmssw-afs-eos ](#es-cmssw-afs-eos ):
 
 **Triggers from:** []
 
@@ -303,7 +301,6 @@ H 7 * * *
 **Project is `enabled`.**
 
 **Upstream projects:**
-* [cmssw-afs-eos-comparison](#cmssw-afs-eos-comparison):
 
 **Downstream projects:**
 
