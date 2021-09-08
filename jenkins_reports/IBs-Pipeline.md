@@ -753,6 +753,31 @@ Not periodically build
 * [ib-schedule-additional-tests](#ib-schedule-additional-tests):
 
 **Downstream projects:**
+* [es-cmssw-afs-eos](#es-cmssw-afs-eos):
+
+**Sub-projects:**
+* [es-cmssw-afs-eos ](#es-cmssw-afs-eos ):
+
+**Triggers from:** []
+
+
+**Periodic builds:**
+```bash
+Not periodically build
+```
+
+---
+
+## [es-cmssw-afs-eos](https://cmssdt.cern.ch/jenkins/job/es-cmssw-afs-eos)
+
+**Description:** None
+
+**Project is `enabled`.**
+
+**Upstream projects:**
+* [cmssw-afs-eos-comparison](#cmssw-afs-eos-comparison):
+
+**Downstream projects:**
 
 **Sub-projects:**
 
@@ -761,7 +786,7 @@ Not periodically build
 
 **Periodic builds:**
 ```bash
-Not periodically build
+H H * * *
 ```
 
 ---
@@ -1208,6 +1233,31 @@ Not periodically build
 * [ib-schedule-additional-tests](#ib-schedule-additional-tests):
 
 **Downstream projects:**
+* [es-cmssw-afs-eos](#es-cmssw-afs-eos):
+
+**Sub-projects:**
+* [es-cmssw-afs-eos ](#es-cmssw-afs-eos ):
+
+**Triggers from:** []
+
+
+**Periodic builds:**
+```bash
+Not periodically build
+```
+
+---
+
+## [es-cmssw-afs-eos](https://cmssdt.cern.ch/jenkins/job/es-cmssw-afs-eos)
+
+**Description:** None
+
+**Project is `enabled`.**
+
+**Upstream projects:**
+* [cmssw-afs-eos-comparison](#cmssw-afs-eos-comparison):
+
+**Downstream projects:**
 
 **Sub-projects:**
 
@@ -1216,7 +1266,7 @@ Not periodically build
 
 **Periodic builds:**
 ```bash
-Not periodically build
+H H * * *
 ```
 
 ---
