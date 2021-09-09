@@ -731,7 +731,7 @@ Not periodically build
 
 **Sub-projects:**
 * [ib-run-additional-tests](#ib-run-additional-tests):
-* [cmssw-afs-eos-comparison ](#cmssw-afs-eos-comparison ):
+* [cmssw-afs-eos-comparison](#cmssw-afs-eos-comparison):
 
 **Triggers from:** []
 
@@ -1186,7 +1186,7 @@ Not periodically build
 
 **Sub-projects:**
 * [ib-run-additional-tests](#ib-run-additional-tests):
-* [cmssw-afs-eos-comparison ](#cmssw-afs-eos-comparison ):
+* [cmssw-afs-eos-comparison](#cmssw-afs-eos-comparison):
 
 **Triggers from:** []
 

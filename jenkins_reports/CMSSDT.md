@@ -8,33 +8,6 @@
 
 # Projects:
 
-## [check-cuda-compatible-runtime](https://cmssdt.cern.ch/jenkins/job/check-cuda-compatible-runtime)
-
-**Description:** This job checks and updates cuda-compatible-runtime. This is used by CMS pilot jobs to find available gpu on the worker node.<br/>
-
-Requestsed by marco.mascheroni@cern.ch and andrea.bocci@cern.ch
-
-
-**Project is `enabled`.**
-
-**Upstream projects:**
-
-**Downstream projects:**
-* [cvmfs-cms-deploy-cuda-compatible-runtime](#cvmfs-cms-deploy-cuda-compatible-runtime):
-
-**Sub-projects:**
-* [cvmfs-cms-deploy-cuda-compatible-runtime](#cvmfs-cms-deploy-cuda-compatible-runtime):
-
-**Triggers from:** []
-
-
-**Periodic builds:**
-```bash
-Not periodically build
-```
-
----
-
 ## [check-cvmfs-releases-map](https://cmssdt.cern.ch/jenkins/job/check-cvmfs-releases-map)
 
 **Description:** None
@@ -167,6 +140,33 @@ Not periodically build
 **Downstream projects:**
 
 **Sub-projects:**
+
+**Triggers from:** []
+
+
+**Periodic builds:**
+```bash
+Not periodically build
+```
+
+---
+
+## [cvmfs-check-cuda-compatible-runtime](https://cmssdt.cern.ch/jenkins/job/cvmfs-check-cuda-compatible-runtime)
+
+**Description:** This job checks and updates cuda-compatible-runtime. This is used by CMS pilot jobs to find available gpu on the worker node.<br/>
+
+Requestsed by marco.mascheroni@cern.ch and andrea.bocci@cern.ch
+
+
+**Project is `enabled`.**
+
+**Upstream projects:**
+
+**Downstream projects:**
+* [cvmfs-cms-deploy-cuda-compatible-runtime](#cvmfs-cms-deploy-cuda-compatible-runtime):
+
+**Sub-projects:**
+* [cvmfs-cms-deploy-cuda-compatible-runtime](#cvmfs-cms-deploy-cuda-compatible-runtime):
 
 **Triggers from:** []
 
@@ -2887,7 +2887,7 @@ This was created to avoid the issue with <a href="https://wiki.jenkins.io/displa
 
 **Sub-projects:**
 * [ib-run-additional-tests](#ib-run-additional-tests):
-* [cmssw-afs-eos-comparison ](#cmssw-afs-eos-comparison ):
+* [cmssw-afs-eos-comparison](#cmssw-afs-eos-comparison):
 
 **Triggers from:** []
 

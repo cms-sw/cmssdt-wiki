@@ -173,7 +173,7 @@ Requestsed by marco.mascheroni@cern.ch and andrea.bocci@cern.ch
 **Project is `enabled`.**
 
 **Upstream projects:**
-* [check-cuda-compatible-runtime](#check-cuda-compatible-runtime):
+* [cvmfs-check-cuda-compatible-runtime](#cvmfs-check-cuda-compatible-runtime):
 
 **Downstream projects:**
 
