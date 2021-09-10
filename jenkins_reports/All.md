@@ -437,6 +437,28 @@ Not periodically build
 
 ---
 
+## [check-unused-cmsdist-packages](https://cmssdt.cern.ch/jenkins/job/check-unused-cmsdist-packages)
+
+**Description:** None
+
+**Project is `enabled`.**
+
+**Upstream projects:**
+
+**Downstream projects:**
+
+**Sub-projects:**
+
+**Triggers from:** []
+
+
+**Periodic builds:**
+```bash
+Not periodically build
+```
+
+---
+
 ## [check-zombie](https://cmssdt.cern.ch/jenkins/job/check-zombie)
 
 **Description:** Connects to the slave and look for runaway process. This job fails when it find such processes.<br/>
