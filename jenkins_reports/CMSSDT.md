@@ -34,7 +34,7 @@ H H/4 * * *
 
 ## [check-unused-cmsdist-packages](https://cmssdt.cern.ch/jenkins/job/check-unused-cmsdist-packages)
 
-**Description:** None
+**Description:** Check for unused cmsdist files so that one can do the cleanup
 
 **Project is `enabled`.**
 
