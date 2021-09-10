@@ -39,10 +39,13 @@ H H/4 * * *
 **Project is `enabled`.**
 
 **Upstream projects:**
+* [check-unused-cmsdist-packages](#check-unused-cmsdist-packages):
 
 **Downstream projects:**
+* [check-unused-cmsdist-packages](#check-unused-cmsdist-packages):
 
 **Sub-projects:**
+* [check-unused-cmsdist-packages](#check-unused-cmsdist-packages):
 
 **Triggers from:** []
 
