@@ -25,7 +25,7 @@
 
 **Periodic builds:**
 ```bash
-Not periodically build
+H H * * *
 ```
 
 ---
