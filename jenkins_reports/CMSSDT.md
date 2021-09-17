@@ -10,7 +10,7 @@
 
 ## [check-cms-container-certificates](https://cmssdt.cern.ch/jenkins/job/check-cms-container-certificates)
 
-**Description:** None
+**Description:** This job checks for HOST certificate in cmssw/cms:rhelX images and fail if host certificate is going to expire in less than 60 days and
 
 **Project is `enabled`.**
 
