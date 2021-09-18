@@ -33,6 +33,28 @@ H H * * *
 
 ---
 
+## [check-cvmfs-deploy-baseline](https://cmssdt.cern.ch/jenkins/job/check-cvmfs-deploy-baseline)
+
+**Description:** None
+
+**Project is `enabled`.**
+
+**Upstream projects:**
+
+**Downstream projects:**
+
+**Sub-projects:**
+
+**Triggers from:** []
+
+
+**Periodic builds:**
+```bash
+Not periodically build
+```
+
+---
+
 ## [check-cvmfs-releases-map](https://cmssdt.cern.ch/jenkins/job/check-cvmfs-releases-map)
 
 **Description:** None
