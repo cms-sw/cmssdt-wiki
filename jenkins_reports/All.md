@@ -394,8 +394,10 @@ Not periodically build
 **Upstream projects:**
 
 **Downstream projects:**
+* [cvmfs-deploy-baseline](#cvmfs-deploy-baseline):
 
 **Sub-projects:**
+* [cvmfs-deploy-baseline](#cvmfs-deploy-baseline):
 
 **Triggers from:** []
 
@@ -1244,11 +1246,9 @@ Rate of failure of this job is very low and when failed then just re-try it and 
 
 **Downstream projects:**
 * [cms-bot](#cms-bot):
-* [cvmfs-deploy-baseline](#cvmfs-deploy-baseline):
 
 **Sub-projects:**
 * [cms-bot](#cms-bot):
-* [cvmfs-deploy-baseline](#cvmfs-deploy-baseline):
 
 **Triggers from:** []
 
@@ -1765,7 +1765,7 @@ Not periodically build
 **Project is `enabled`.**
 
 **Upstream projects:**
-* [compare-root-files-short-matrix](#compare-root-files-short-matrix):
+* [check-cvmfs-deploy-baseline](#check-cvmfs-deploy-baseline):
 * [ib-run-baseline](#ib-run-baseline):
 
 **Downstream projects:**
