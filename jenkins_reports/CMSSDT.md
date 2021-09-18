@@ -235,6 +235,7 @@ Not periodically build
 **Project is `enabled`.**
 
 **Upstream projects:**
+* [compare-root-files-short-matrix](#compare-root-files-short-matrix):
 * [ib-run-baseline](#ib-run-baseline):
 
 **Downstream projects:**
@@ -1748,9 +1749,11 @@ Rate of failure of this job is very low and when failed then just re-try it and 
 
 **Downstream projects:**
 * [cms-bot](#cms-bot):
+* [cvmfs-deploy-baseline](#cvmfs-deploy-baseline):
 
 **Sub-projects:**
 * [cms-bot](#cms-bot):
+* [cvmfs-deploy-baseline](#cvmfs-deploy-baseline):
 
 **Triggers from:** []
 
