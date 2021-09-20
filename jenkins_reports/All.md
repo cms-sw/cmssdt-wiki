@@ -2285,10 +2285,13 @@ and then a jenkins job is triggered based on the information passed from the web
 **Project is `enabled`.**
 
 **Upstream projects:**
+* [github-hooks](#github-hooks):
 
 **Downstream projects:**
+* [github-hooks](#github-hooks):
 
 **Sub-projects:**
+* [github-hooks](#github-hooks):
 
 **Triggers from:** []
 
