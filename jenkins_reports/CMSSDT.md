@@ -2026,10 +2026,13 @@ H * * * *
 **Project is `enabled`.**
 
 **Upstream projects:**
+* [gh-teams](#gh-teams):
 
 **Downstream projects:**
+* [gh-teams](#gh-teams):
 
 **Sub-projects:**
+* [gh-teams](#gh-teams):
 
 **Triggers from:** []
 
