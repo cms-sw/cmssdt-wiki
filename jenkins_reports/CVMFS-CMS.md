@@ -163,6 +163,28 @@ Not periodically build
 
 ---
 
+## [cvmfs-cms-deploy-cms-nanoAOD-jsonpog-integration](https://cmssdt.cern.ch/jenkins/job/cvmfs-cms-deploy-cms-nanoAOD-jsonpog-integration)
+
+**Description:** None
+
+**Project is `enabled`.**
+
+**Upstream projects:**
+
+**Downstream projects:**
+
+**Sub-projects:**
+
+**Triggers from:** []
+
+
+**Periodic builds:**
+```bash
+Not periodically build
+```
+
+---
+
 ## [cvmfs-cms-deploy-cuda-compatible-runtime](https://cmssdt.cern.ch/jenkins/job/cvmfs-cms-deploy-cuda-compatible-runtime)
 
 **Description:** This job checks and updates cuda-compatible-runtime. This is used by CMS pilot jobs to find available gpu on the worker node.<br/>
@@ -239,7 +261,8 @@ Not periodically build
 
 ## [cvmfs-cms-rsync-gitlab-repo](https://cmssdt.cern.ch/jenkins/job/cvmfs-cms-rsync-gitlab-repo)
 
-**Description:** This deploys a gitlab repository under /cvmfs/cms.cern.ch/rsync/repository/name
+**Description:** This deploys a gitlab repository under /cvmfs/cms.cern.ch/rsync/repository/name<br/>
+- POG scale factors on CVMFS: Requested by XPOG silvio.donato@cern.ch
 
 **Project is `enabled`.**
 
