@@ -165,22 +165,25 @@ Not periodically build
 
 ## [cvmfs-cms-deploy-cms-nanoAOD-jsonpog-integration](https://cmssdt.cern.ch/jenkins/job/cvmfs-cms-deploy-cms-nanoAOD-jsonpog-integration)
 
-**Description:** None
+**Description:** This deploys a gitlab repository under /cvmfs/cms.cern.ch/rsync/repository/name<br/>
+- POG scale factors on CVMFS: Requested by XPOG silvio.donato@cern.ch
 
 **Project is `enabled`.**
 
 **Upstream projects:**
 
 **Downstream projects:**
+* [cvmfs-cms-rsync-gitlab-repo](#cvmfs-cms-rsync-gitlab-repo):
 
 **Sub-projects:**
+* [cvmfs-cms-rsync-gitlab-repo](#cvmfs-cms-rsync-gitlab-repo):
 
 **Triggers from:** []
 
 
 **Periodic builds:**
 ```bash
-Not periodically build
+H H * * *
 ```
 
 ---
@@ -262,11 +265,12 @@ Not periodically build
 ## [cvmfs-cms-rsync-gitlab-repo](https://cmssdt.cern.ch/jenkins/job/cvmfs-cms-rsync-gitlab-repo)
 
 **Description:** This deploys a gitlab repository under /cvmfs/cms.cern.ch/rsync/repository/name<br/>
-- POG scale factors on CVMFS: Requested by XPOG silvio.donato@cern.ch
+
 
 **Project is `enabled`.**
 
 **Upstream projects:**
+* [cvmfs-cms-deploy-cms-nanoAOD-jsonpog-integration](#cvmfs-cms-deploy-cms-nanoAOD-jsonpog-integration):
 
 **Downstream projects:**
 
@@ -277,7 +281,7 @@ Not periodically build
 
 **Periodic builds:**
 ```bash
-H H * * *
+Not periodically build
 ```
 
 ---
