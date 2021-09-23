@@ -1647,10 +1647,7 @@ Not periodically build
 
 ## [cvmfs-cms-rsync-gitlab-repo](https://cmssdt.cern.ch/jenkins/job/cvmfs-cms-rsync-gitlab-repo)
 
-**Description:** This job checks and updates cuda-compatible-runtime. This is used by CMS pilot jobs to find available gpu on the worker node.<br/>
-
-Requestsed by marco.mascheroni@cern.ch and andrea.bocci@cern.ch
-
+**Description:** This deploys a gitlab repository under /cvmfs/cms.cern.ch/rsync/repository/name
 
 **Project is `enabled`.**
 
