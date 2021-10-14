@@ -2626,7 +2626,7 @@ Not periodically build
 
 **Description:** Check if there are jobs queued for condor nodes, and if so kill placeholder job.
 
-**Project is `enabled`.**
+**Project is `disabled`.**
 
 **Upstream projects:**
 
