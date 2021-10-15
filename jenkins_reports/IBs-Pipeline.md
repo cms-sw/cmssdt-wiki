@@ -274,6 +274,7 @@ as deploys on the web server. It is used to generate <a href="https://cmssdt.cer
 **Project is `enabled`.**
 
 **Upstream projects:**
+* [ib-validation](#ib-validation):
 * [update-github-pages](#update-github-pages):
 
 **Downstream projects:**
@@ -388,6 +389,7 @@ as deploys on the web server. It is used to generate <a href="https://cmssdt.cer
 **Project is `enabled`.**
 
 **Upstream projects:**
+* [ib-validation](#ib-validation):
 * [update-github-pages](#update-github-pages):
 
 **Downstream projects:**
@@ -454,12 +456,14 @@ delay and may cause this job to timeout.
 * [ib-run-qa](#ib-run-qa):
 * [ib-run-relvals](#ib-run-relvals):
 * [ib-schedule-additional-tests](#ib-schedule-additional-tests):
+* [summary-of-merged-prs](#summary-of-merged-prs):
 
 **Sub-projects:**
 * [ib-run-addons](#ib-run-addons):
 * [ib-run-qa ](#ib-run-qa ):
 * [ib-run-relvals ](#ib-run-relvals ):
 * [ib-schedule-additional-tests](#ib-schedule-additional-tests):
+* [summary-of-merged-prs](#summary-of-merged-prs):
 
 **Triggers from:** []
 
@@ -676,6 +680,7 @@ as deploys on the web server. It is used to generate <a href="https://cmssdt.cer
 **Project is `enabled`.**
 
 **Upstream projects:**
+* [ib-validation](#ib-validation):
 * [update-github-pages](#update-github-pages):
 
 **Downstream projects:**
@@ -781,6 +786,46 @@ Not periodically build
 * [ib-run-${ADDITIONAL_TEST_NAME}](#ib-run-${ADDITIONAL_TEST_NAME}):
 
 **Triggers from:** []
+
+
+**Periodic builds:**
+```bash
+Not periodically build
+```
+
+---
+
+## [summary-of-merged-prs](https://cmssdt.cern.ch/jenkins/job/summary-of-merged-prs)
+
+**Description:** Generates statistics for each IB ( merged pull request since last IB, test result summary, .etc)
+as well as structure of release que and stores it in .json files. It then push it to <b>cms-sw.github.io</b> repo as well
+as deploys on the web server. It is used to generate <a href="https://cmssdt.cern.ch/SDT/html/cmssdt-ib">IB page</a>.
+
+
+<br><br>
+<b>Q/A</b>
+
+<ul>
+  <li>
+    <b>Q:</b> The job failed.
+  </li>
+  <li>
+    <b>A:</b> Most likely Github rejected push request because other job pushed after `git pull --rebase`
+	. Do not worry - job builds quite often and next build shouls be succesful. But if it keeps on failing (over 3 times) then try to re-run the job with "RESET" enabled.
+  </li>
+</ul>
+
+**Project is `enabled`.**
+
+**Upstream projects:**
+* [ib-validation](#ib-validation):
+* [update-github-pages](#update-github-pages):
+
+**Downstream projects:**
+
+**Sub-projects:**
+
+**Triggers from:** [u'update-github-pages']
 
 
 **Periodic builds:**
@@ -909,12 +954,14 @@ delay and may cause this job to timeout.
 * [ib-run-qa](#ib-run-qa):
 * [ib-run-relvals](#ib-run-relvals):
 * [ib-schedule-additional-tests](#ib-schedule-additional-tests):
+* [summary-of-merged-prs](#summary-of-merged-prs):
 
 **Sub-projects:**
 * [ib-run-addons](#ib-run-addons):
 * [ib-run-qa ](#ib-run-qa ):
 * [ib-run-relvals ](#ib-run-relvals ):
 * [ib-schedule-additional-tests](#ib-schedule-additional-tests):
+* [summary-of-merged-prs](#summary-of-merged-prs):
 
 **Triggers from:** []
 
@@ -1131,6 +1178,7 @@ as deploys on the web server. It is used to generate <a href="https://cmssdt.cer
 **Project is `enabled`.**
 
 **Upstream projects:**
+* [ib-validation](#ib-validation):
 * [update-github-pages](#update-github-pages):
 
 **Downstream projects:**
@@ -1236,6 +1284,46 @@ Not periodically build
 * [ib-run-${ADDITIONAL_TEST_NAME}](#ib-run-${ADDITIONAL_TEST_NAME}):
 
 **Triggers from:** []
+
+
+**Periodic builds:**
+```bash
+Not periodically build
+```
+
+---
+
+## [summary-of-merged-prs](https://cmssdt.cern.ch/jenkins/job/summary-of-merged-prs)
+
+**Description:** Generates statistics for each IB ( merged pull request since last IB, test result summary, .etc)
+as well as structure of release que and stores it in .json files. It then push it to <b>cms-sw.github.io</b> repo as well
+as deploys on the web server. It is used to generate <a href="https://cmssdt.cern.ch/SDT/html/cmssdt-ib">IB page</a>.
+
+
+<br><br>
+<b>Q/A</b>
+
+<ul>
+  <li>
+    <b>Q:</b> The job failed.
+  </li>
+  <li>
+    <b>A:</b> Most likely Github rejected push request because other job pushed after `git pull --rebase`
+	. Do not worry - job builds quite often and next build shouls be succesful. But if it keeps on failing (over 3 times) then try to re-run the job with "RESET" enabled.
+  </li>
+</ul>
+
+**Project is `enabled`.**
+
+**Upstream projects:**
+* [ib-validation](#ib-validation):
+* [update-github-pages](#update-github-pages):
+
+**Downstream projects:**
+
+**Sub-projects:**
+
+**Triggers from:** [u'update-github-pages']
 
 
 **Periodic builds:**

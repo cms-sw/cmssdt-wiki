@@ -149,6 +149,7 @@ as deploys on the web server. It is used to generate <a href="https://cmssdt.cer
 **Project is `enabled`.**
 
 **Upstream projects:**
+* [ib-validation](#ib-validation):
 * [update-github-pages](#update-github-pages):
 
 **Downstream projects:**
