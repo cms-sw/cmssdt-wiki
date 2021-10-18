@@ -177,6 +177,28 @@ Not periodically build
 
 ---
 
+## [cleanup-release-build](https://cmssdt.cern.ch/jenkins/job/cleanup-release-build)
+
+**Description:** Connect to selected slave and cleans (deletes) workspace.
+
+**Project is `enabled`.**
+
+**Upstream projects:**
+
+**Downstream projects:**
+
+**Sub-projects:**
+
+**Triggers from:** []
+
+
+**Periodic builds:**
+```bash
+Not periodically build
+```
+
+---
+
 ## [cms-build-package](https://cmssdt.cern.ch/jenkins/job/cms-build-package)
 
 **Description:** This job builds a cmssw external package ( e.g. crab , SCRAMV1 ) using the master cmsdist/pkgtools branches.

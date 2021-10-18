@@ -674,6 +674,28 @@ H 0 * * *
 
 ---
 
+## [cleanup-release-build](https://cmssdt.cern.ch/jenkins/job/cleanup-release-build)
+
+**Description:** Connect to selected slave and cleans (deletes) workspace.
+
+**Project is `enabled`.**
+
+**Upstream projects:**
+
+**Downstream projects:**
+
+**Sub-projects:**
+
+**Triggers from:** []
+
+
+**Periodic builds:**
+```bash
+Not periodically build
+```
+
+---
+
 ## [cleanup-tags](https://cmssdt.cern.ch/jenkins/job/cleanup-tags)
 
 **Description:** Cleanup IB tags from the official CMSSW repository.
