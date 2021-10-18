@@ -179,11 +179,12 @@ Not periodically build
 
 ## [cleanup-release-build](https://cmssdt.cern.ch/jenkins/job/cleanup-release-build)
 
-**Description:** Connect to selected slave and cleans (deletes) workspace.
+**Description:** Connect to selected slave and cleans the auto-builds directories
 
 **Project is `enabled`.**
 
 **Upstream projects:**
+* [workspace-cleanup-slave](#workspace-cleanup-slave):
 
 **Downstream projects:**
 
@@ -3990,8 +3991,10 @@ Not periodically build
 * [slaves-checks](#slaves-checks):
 
 **Downstream projects:**
+* [cleanup-release-build](#cleanup-release-build):
 
 **Sub-projects:**
+* [cleanup-release-build ](#cleanup-release-build ):
 
 **Triggers from:** []
 
