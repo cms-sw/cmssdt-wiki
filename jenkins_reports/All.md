@@ -3476,28 +3476,6 @@ Not periodically build
 
 ---
 
-## [ib-run-reco-profiling](https://cmssdt.cern.ch/jenkins/job/ib-run-reco-profiling)
-
-**Description:** None
-
-**Project is `enabled`.**
-
-**Upstream projects:**
-
-**Downstream projects:**
-
-**Sub-projects:**
-
-**Triggers from:** []
-
-
-**Periodic builds:**
-```bash
-Not periodically build
-```
-
----
-
 ## [ib-run-relvals](https://cmssdt.cern.ch/jenkins/job/ib-run-relvals)
 
 **Description:** The job runs release validations, as validations are separated on pieces (1of6 2of6 etc)
