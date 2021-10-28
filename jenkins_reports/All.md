@@ -3318,9 +3318,11 @@ Same puprose as `ib-any-integration`, just different script is called.
 
 **Downstream projects:**
 * [compare-root-files-short-matrix](#compare-root-files-short-matrix):
+* [lfn-to-ibeos](#lfn-to-ibeos):
 
 **Sub-projects:**
 * [compare-root-files-short-matrix](#compare-root-files-short-matrix):
+* [lfn-to-ibeos](#lfn-to-ibeos):
 
 **Triggers from:** []
 
@@ -4751,6 +4753,7 @@ H H/8 * * *
 
 **Upstream projects:**
 * [ib-run-pr-dasgoclient](#ib-run-pr-dasgoclient):
+* [ib-run-pr-relvals](#ib-run-pr-relvals):
 * [lfn-to-ibeos](#lfn-to-ibeos):
 
 **Downstream projects:**
