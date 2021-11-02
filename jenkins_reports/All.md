@@ -4214,7 +4214,7 @@ Not periodically build
 
 ## [jenkins-test-bootstrap](https://cmssdt.cern.ch/jenkins/job/jenkins-test-bootstrap)
 
-**Description:** None
+**Description:** Test new bootstrap for cmssw
 
 **Project is `enabled`.**
 
