@@ -4212,6 +4212,28 @@ Not periodically build
 
 ---
 
+## [jenkins-test-bootstrap](https://cmssdt.cern.ch/jenkins/job/jenkins-test-bootstrap)
+
+**Description:** None
+
+**Project is `enabled`.**
+
+**Upstream projects:**
+
+**Downstream projects:**
+
+**Sub-projects:**
+
+**Triggers from:** []
+
+
+**Periodic builds:**
+```bash
+Not periodically build
+```
+
+---
+
 ## [jenkins-test-buggy-node](https://cmssdt.cern.ch/jenkins/job/jenkins-test-buggy-node)
 
 **Description:** None
