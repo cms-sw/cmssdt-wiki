@@ -131,7 +131,7 @@ Not periodically build
 
 **Periodic builds:**
 ```bash
-3 18 * * *
+17 18 * * *
 ```
 
 ---
