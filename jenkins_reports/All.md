@@ -1478,7 +1478,7 @@ Not periodically build
 
 **Periodic builds:**
 ```bash
-H * * * *
+3 18 * * *
 ```
 
 ---
