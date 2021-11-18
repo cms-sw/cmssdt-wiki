@@ -689,6 +689,7 @@ This job is also triggered via github web hook. Please do not add/remove any par
 * [deploy-cms-repo](#deploy-cms-repo):
 * [git-mirror-repository](#git-mirror-repository):
 * [git-reference-cvmfs](#git-reference-cvmfs):
+* [update-cmssw-l2-histroy](#update-cmssw-l2-histroy):
 * [web-update-cmssdt-ib](#web-update-cmssdt-ib):
 * [web-update-logReader](#web-update-logReader):
 
@@ -700,6 +701,7 @@ This job is also triggered via github web hook. Please do not add/remove any par
 * [cms-containers-checks-tags](#cms-containers-checks-tags):
 * [web-update-logReader](#web-update-logReader):
 * [auto-forward-port](#auto-forward-port):
+* [update-cmssw-l2-histroy](#update-cmssw-l2-histroy):
 
 **Triggers from:** []
 
@@ -870,6 +872,29 @@ Not periodically build
 
 **Description:** Create GIT Reference for cms-sw/cmssw repository in /cvmfs/cms-ci.cern.ch/git/cms-sw.
 This is automatically triggered by "git push" to cmssw repo.
+
+**Project is `enabled`.**
+
+**Upstream projects:**
+* [github-push-hook](#github-push-hook):
+
+**Downstream projects:**
+
+**Sub-projects:**
+
+**Triggers from:** []
+
+
+**Periodic builds:**
+```bash
+Not periodically build
+```
+
+---
+
+## [update-cmssw-l2-histroy](https://cmssdt.cern.ch/jenkins/job/update-cmssw-l2-histroy)
+
+**Description:** None
 
 **Project is `enabled`.**
 
