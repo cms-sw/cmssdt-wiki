@@ -4688,28 +4688,6 @@ Not periodically build
 
 ---
 
-## [jenkins-update-cmsbuild-access](https://cmssdt.cern.ch/jenkins/job/jenkins-update-cmsbuild-access)
-
-**Description:** None
-
-**Project is `enabled`.**
-
-**Upstream projects:**
-
-**Downstream projects:**
-
-**Sub-projects:**
-
-**Triggers from:** []
-
-
-**Periodic builds:**
-```bash
-Not periodically build
-```
-
----
-
 ## [jenkins-webhook](https://cmssdt.cern.ch/jenkins/job/jenkins-webhook)
 
 **Description:** None
@@ -5703,6 +5681,28 @@ Not periodically build
 ---
 
 ## [update-circles-eos](https://cmssdt.cern.ch/jenkins/job/update-circles-eos)
+
+**Description:** None
+
+**Project is `enabled`.**
+
+**Upstream projects:**
+
+**Downstream projects:**
+
+**Sub-projects:**
+
+**Triggers from:** []
+
+
+**Periodic builds:**
+```bash
+Not periodically build
+```
+
+---
+
+## [update-cmsbuild-access](https://cmssdt.cern.ch/jenkins/job/update-cmsbuild-access)
 
 **Description:** None
 

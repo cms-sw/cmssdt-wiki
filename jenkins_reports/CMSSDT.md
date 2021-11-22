@@ -3740,6 +3740,28 @@ H 0 * * *
 
 ---
 
+## [update-cmsbuild-access](https://cmssdt.cern.ch/jenkins/job/update-cmsbuild-access)
+
+**Description:** None
+
+**Project is `enabled`.**
+
+**Upstream projects:**
+
+**Downstream projects:**
+
+**Sub-projects:**
+
+**Triggers from:** []
+
+
+**Periodic builds:**
+```bash
+Not periodically build
+```
+
+---
+
 ## [update-config-guess](https://cmssdt.cern.ch/jenkins/job/update-config-guess)
 
 **Description:** None
