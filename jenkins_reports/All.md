@@ -724,7 +724,7 @@ H 0 * * *
 
 **Description:** None
 
-**Project is `enabled`.**
+**Project is `disabled`.**
 
 **Upstream projects:**
 
