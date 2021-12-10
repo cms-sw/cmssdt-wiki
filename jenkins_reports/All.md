@@ -4214,28 +4214,6 @@ Not periodically build
 
 ---
 
-## [jenkins-test-arm102](https://cmssdt.cern.ch/jenkins/job/jenkins-test-arm102)
-
-**Description:** None
-
-**Project is `enabled`.**
-
-**Upstream projects:**
-
-**Downstream projects:**
-
-**Sub-projects:**
-
-**Triggers from:** []
-
-
-**Periodic builds:**
-```bash
-Not periodically build
-```
-
----
-
 ## [jenkins-test-bootstrap](https://cmssdt.cern.ch/jenkins/job/jenkins-test-bootstrap)
 
 **Description:** Test new bootstrap for cmssw
