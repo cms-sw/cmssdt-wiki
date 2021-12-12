@@ -5117,6 +5117,28 @@ Not periodically build
 
 ---
 
+## [openstack-set-property](https://cmssdt.cern.ch/jenkins/job/openstack-set-property)
+
+**Description:** Job to delete openstack instances providing only the name
+
+**Project is `enabled`.**
+
+**Upstream projects:**
+
+**Downstream projects:**
+
+**Sub-projects:**
+
+**Triggers from:** []
+
+
+**Periodic builds:**
+```bash
+Not periodically build
+```
+
+---
+
 ## [pr-publish-cmssw](https://cmssdt.cern.ch/jenkins/job/pr-publish-cmssw)
 
 **Description:** None

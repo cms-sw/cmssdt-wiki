@@ -55,6 +55,28 @@ Not periodically build
 
 ---
 
+## [openstack-set-property](https://cmssdt.cern.ch/jenkins/job/openstack-set-property)
+
+**Description:** Job to delete openstack instances providing only the name
+
+**Project is `enabled`.**
+
+**Upstream projects:**
+
+**Downstream projects:**
+
+**Sub-projects:**
+
+**Triggers from:** []
+
+
+**Periodic builds:**
+```bash
+Not periodically build
+```
+
+---
+
 ## [openstack-add-jenkins-slave](https://cmssdt.cern.ch/jenkins/job/openstack-add-jenkins-slave)
 
 **Description:** Find all hosts in an hostgroup and add them to jenkins
