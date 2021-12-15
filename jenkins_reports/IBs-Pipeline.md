@@ -1335,7 +1335,9 @@ Not periodically build
 
 ## [sync-patatrack-branch](https://cmssdt.cern.ch/jenkins/job/sync-patatrack-branch)
 
-**Description:** None
+**Description:** - this is to sync patatrack branches <br/>
+- Currently this job does not do any thing (kind of disabled)
+
 
 **Project is `enabled`.**
 
