@@ -4550,7 +4550,7 @@ Not periodically build
 
 **Description:** None
 
-**Project is `enabled`.**
+**Project is `disabled`.**
 
 **Upstream projects:**
 
