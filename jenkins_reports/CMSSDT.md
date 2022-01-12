@@ -2375,30 +2375,6 @@ H/30 * * * *
 
 ---
 
-## [ib-cache-to-eos](https://cmssdt.cern.ch/jenkins/job/ib-cache-to-eos)
-
-**Description:** Job to run das client and cache the results in github to be used by IBs.
-
-**Project is `enabled`.**
-
-**Upstream projects:**
-
-**Downstream projects:**
-* [update-ibeos-cache](#update-ibeos-cache):
-
-**Sub-projects:**
-* [update-ibeos-cache](#update-ibeos-cache):
-
-**Triggers from:** []
-
-
-**Periodic builds:**
-```bash
-H 10,22 * * *
-```
-
----
-
 ## [ib-install-cvmfs](https://cmssdt.cern.ch/jenkins/job/ib-install-cvmfs)
 
 **Description:** This jobs install an IB on /cvmfs/cms-ib.cern.ch. As this job runs on the CVMFS Stratum 0, so only one job can run at a time.
