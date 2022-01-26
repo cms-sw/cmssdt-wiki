@@ -376,29 +376,6 @@ Not periodically build
 
 ---
 
-## [cvmfs-create-directory-on-cvmfs](https://cmssdt.cern.ch/jenkins/job/cvmfs-create-directory-on-cvmfs)
-
-**Description:** This is a copy of cvmfs-cms-install-package to create directories on /cvmfs/cms.cern.ch without login on the machine
-
-
-**Project is `enabled`.**
-
-**Upstream projects:**
-
-**Downstream projects:**
-
-**Sub-projects:**
-
-**Triggers from:** []
-
-
-**Periodic builds:**
-```bash
-Not periodically build
-```
-
----
-
 ## [cvmfs-cms-install-cms](https://cmssdt.cern.ch/jenkins/job/cvmfs-cms-install-cms)
 
 **Description:** Job to install (test) releases (and IBs) once the upload is completed.
