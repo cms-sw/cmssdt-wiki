@@ -76,29 +76,6 @@ H 19  * *  2
 
 ---
 
-## [es-close-indexes](https://cmssdt.cern.ch/jenkins/job/es-close-indexes)
-
-**Description:** This job keeps last 6 weeks (1.5 months) of data in Elasticsearch open, and it closes older indexes (archive it).
-We do not care about older data. By doing it we make Elasticsearch faster. 
-
-**Project is `disabled`.**
-
-**Upstream projects:**
-
-**Downstream projects:**
-
-**Sub-projects:**
-
-**Triggers from:** []
-
-
-**Periodic builds:**
-```bash
-H 0  * *  0
-```
-
----
-
 ## [ib-run-geometry](https://cmssdt.cern.ch/jenkins/job/ib-run-geometry)
 
 **Description:** Runs geometry comparison tests for each IB
