@@ -733,7 +733,7 @@ Not periodically build
 
 ---
 
-## [test-os](https://cmssdt.cern.ch/jenkins/job/test-os)
+## [test-os-alma8](https://cmssdt.cern.ch/jenkins/job/test-os-alma8)
 
 **Description:** None
 
@@ -755,7 +755,7 @@ Not periodically build
 
 ---
 
-## [test-os-alma8](https://cmssdt.cern.ch/jenkins/job/test-os-alma8)
+## [test-os-cs8](https://cmssdt.cern.ch/jenkins/job/test-os-cs8)
 
 **Description:** None
 
