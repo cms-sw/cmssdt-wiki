@@ -755,6 +755,28 @@ Not periodically build
 
 ---
 
+## [test-os-alma8](https://cmssdt.cern.ch/jenkins/job/test-os-alma8)
+
+**Description:** None
+
+**Project is `enabled`.**
+
+**Upstream projects:**
+
+**Downstream projects:**
+
+**Sub-projects:**
+
+**Triggers from:** []
+
+
+**Periodic builds:**
+```bash
+Not periodically build
+```
+
+---
+
 ## [update-circles-cmssdt](https://cmssdt.cern.ch/jenkins/job/update-circles-cmssdt)
 
 **Description:** None

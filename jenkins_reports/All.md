@@ -5678,6 +5678,28 @@ Not periodically build
 
 ---
 
+## [test-os-alma8](https://cmssdt.cern.ch/jenkins/job/test-os-alma8)
+
+**Description:** None
+
+**Project is `enabled`.**
+
+**Upstream projects:**
+
+**Downstream projects:**
+
+**Sub-projects:**
+
+**Triggers from:** []
+
+
+**Periodic builds:**
+```bash
+Not periodically build
+```
+
+---
+
 ## [update-categories-page](https://cmssdt.cern.ch/jenkins/job/update-categories-page)
 
 **Description:** Generates categories.json file and uploads it to this <a href="https://github.com/cms-sw/cms-sw.github.io">github repo</a>. 
