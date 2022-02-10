@@ -733,6 +733,28 @@ Not periodically build
 
 ---
 
+## [test-os](https://cmssdt.cern.ch/jenkins/job/test-os)
+
+**Description:** None
+
+**Project is `enabled`.**
+
+**Upstream projects:**
+
+**Downstream projects:**
+
+**Sub-projects:**
+
+**Triggers from:** []
+
+
+**Periodic builds:**
+```bash
+Not periodically build
+```
+
+---
+
 ## [update-circles-cmssdt](https://cmssdt.cern.ch/jenkins/job/update-circles-cmssdt)
 
 **Description:** None
