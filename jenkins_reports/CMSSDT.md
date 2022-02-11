@@ -742,15 +742,24 @@ Not periodically build
 **Upstream projects:**
 
 **Downstream projects:**
+* [test-os-alma8](#test-os-alma8):
+* [test-os-cs8](#test-os-cs8):
 
 **Sub-projects:**
+* [test-os-alma8](#test-os-alma8):
+* [test-os-alma8](#test-os-alma8):
+* [test-os-alma8](#test-os-alma8):
+* [test-os-alma8](#test-os-alma8):
+* [test-os-cs8](#test-os-cs8):
+* [test-os-cs8](#test-os-cs8):
+* [test-os-cs8](#test-os-cs8):
 
 **Triggers from:** []
 
 
 **Periodic builds:**
 ```bash
-Not periodically build
+H */4 * * *
 ```
 
 ---
@@ -762,6 +771,7 @@ Not periodically build
 **Project is `enabled`.**
 
 **Upstream projects:**
+* [test-os](#test-os):
 
 **Downstream projects:**
 
@@ -784,6 +794,7 @@ Not periodically build
 **Project is `enabled`.**
 
 **Upstream projects:**
+* [test-os](#test-os):
 
 **Downstream projects:**
 
