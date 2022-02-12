@@ -742,24 +742,15 @@ Not periodically build
 **Upstream projects:**
 
 **Downstream projects:**
-* [test-os-alma8](#test-os-alma8):
-* [test-os-cs8](#test-os-cs8):
 
 **Sub-projects:**
-* [test-os-alma8](#test-os-alma8):
-* [test-os-alma8](#test-os-alma8):
-* [test-os-alma8](#test-os-alma8):
-* [test-os-alma8](#test-os-alma8):
-* [test-os-cs8](#test-os-cs8):
-* [test-os-cs8](#test-os-cs8):
-* [test-os-cs8](#test-os-cs8):
 
 **Triggers from:** []
 
 
 **Periodic builds:**
 ```bash
-H */6 * * *
+Not periodically build
 ```
 
 ---
@@ -771,7 +762,6 @@ H */6 * * *
 **Project is `enabled`.**
 
 **Upstream projects:**
-* [test-os](#test-os):
 
 **Downstream projects:**
 
@@ -794,7 +784,28 @@ Not periodically build
 **Project is `enabled`.**
 
 **Upstream projects:**
-* [test-os](#test-os):
+
+**Downstream projects:**
+
+**Sub-projects:**
+
+**Triggers from:** []
+
+
+**Periodic builds:**
+```bash
+Not periodically build
+```
+
+---
+
+## [test-os-ubi8](https://cmssdt.cern.ch/jenkins/job/test-os-ubi8)
+
+**Description:** None
+
+**Project is `enabled`.**
+
+**Upstream projects:**
 
 **Downstream projects:**
 
