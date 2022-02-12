@@ -5665,8 +5665,14 @@ Not periodically build
 **Upstream projects:**
 
 **Downstream projects:**
+* [test-os-alma8](#test-os-alma8):
+* [test-os-cs8](#test-os-cs8):
+* [test-os-ubi8](#test-os-ubi8):
 
 **Sub-projects:**
+* [test-os-cs8](#test-os-cs8):
+* [test-os-ubi8](#test-os-ubi8):
+* [test-os-alma8](#test-os-alma8):
 
 **Triggers from:** []
 
@@ -5685,6 +5691,7 @@ Not periodically build
 **Project is `enabled`.**
 
 **Upstream projects:**
+* [test-os](#test-os):
 
 **Downstream projects:**
 
@@ -5707,6 +5714,7 @@ Not periodically build
 **Project is `enabled`.**
 
 **Upstream projects:**
+* [test-os](#test-os):
 
 **Downstream projects:**
 
@@ -5729,6 +5737,7 @@ Not periodically build
 **Project is `enabled`.**
 
 **Upstream projects:**
+* [test-os](#test-os):
 
 **Downstream projects:**
 
