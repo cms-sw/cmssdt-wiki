@@ -5325,7 +5325,7 @@ Not periodically build
 
 ## [release-analyze-reco-profiling](https://cmssdt.cern.ch/jenkins/job/release-analyze-reco-profiling)
 
-**Description:** None
+**Description:** This job processes data from release-run-reco-profiling and prepares https://cms-reco-profiling.web.cern.ch/cms-reco-profiling/
 
 **Project is `enabled`.**
 
