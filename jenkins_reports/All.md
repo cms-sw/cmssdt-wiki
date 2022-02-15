@@ -5681,7 +5681,7 @@ Not periodically build
 
 **Periodic builds:**
 ```bash
-H */8 * * *
+H 10,22 * * *
 ```
 
 ---
