@@ -758,7 +758,7 @@ Not periodically build
 
 **Periodic builds:**
 ```bash
-H 10,22 * * *
+H 20 * * *
 ```
 
 ---
