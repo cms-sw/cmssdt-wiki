@@ -1757,6 +1757,28 @@ Not periodically build
 
 ---
 
+## [cmsbuild-access](https://cmssdt.cern.ch/jenkins/job/cmsbuild-access)
+
+**Description:** None
+
+**Project is `enabled`.**
+
+**Upstream projects:**
+
+**Downstream projects:**
+
+**Sub-projects:**
+
+**Triggers from:** []
+
+
+**Periodic builds:**
+```bash
+Not periodically build
+```
+
+---
+
 ## [cmspkg-clone](https://cmssdt.cern.ch/jenkins/job/cmspkg-clone)
 
 **Description:** None
@@ -3882,28 +3904,6 @@ The date is later used to generate <a href="http://cms-sw.github.io/categories.h
 **Periodic builds:**
 ```bash
 H 0 * * *
-```
-
----
-
-## [update-cmsbuild-access](https://cmssdt.cern.ch/jenkins/job/update-cmsbuild-access)
-
-**Description:** None
-
-**Project is `enabled`.**
-
-**Upstream projects:**
-
-**Downstream projects:**
-
-**Sub-projects:**
-
-**Triggers from:** []
-
-
-**Periodic builds:**
-```bash
-Not periodically build
 ```
 
 ---
