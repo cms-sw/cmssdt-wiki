@@ -1977,7 +1977,7 @@ Not periodically build
 Ignore any failed job if a newer job has succeeded.
 Retry if last run is failed.
 
-**Project is `disabled`.**
+**Project is `enabled`.**
 
 **Upstream projects:**
 
@@ -1990,7 +1990,7 @@ Retry if last run is failed.
 
 **Periodic builds:**
 ```bash
-H 9,21 * * *
+Not periodically build
 ```
 
 ---
