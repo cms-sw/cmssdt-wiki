@@ -30,6 +30,30 @@ Not periodically build
 
 ---
 
+## [das-query](https://cmssdt.cern.ch/jenkins/job/das-query)
+
+**Description:** Job to run das client and cache the results in github to be used by IBs.
+Ignore any failed job if a newer job has succeeded.
+Retry if last run is failed.
+
+**Project is `disabled`.**
+
+**Upstream projects:**
+
+**Downstream projects:**
+
+**Sub-projects:**
+
+**Triggers from:** []
+
+
+**Periodic builds:**
+```bash
+H 9,21 * * *
+```
+
+---
+
 ## [cvmfs-ci-gc](https://cmssdt.cern.ch/jenkins/job/cvmfs-ci-gc)
 
 **Description:** This runs CVMFS GC (once a week)

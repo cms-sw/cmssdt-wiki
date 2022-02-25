@@ -1977,7 +1977,7 @@ Not periodically build
 Ignore any failed job if a newer job has succeeded.
 Retry if last run is failed.
 
-**Project is `enabled`.**
+**Project is `disabled`.**
 
 **Upstream projects:**
 

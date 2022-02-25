@@ -2001,30 +2001,6 @@ Not periodically build
 
 ---
 
-## [das-query](https://cmssdt.cern.ch/jenkins/job/das-query)
-
-**Description:** Job to run das client and cache the results in github to be used by IBs.
-Ignore any failed job if a newer job has succeeded.
-Retry if last run is failed.
-
-**Project is `enabled`.**
-
-**Upstream projects:**
-
-**Downstream projects:**
-
-**Sub-projects:**
-
-**Triggers from:** []
-
-
-**Periodic builds:**
-```bash
-H 9,21 * * *
-```
-
----
-
 ## [dataset-to-ibeos](https://cmssdt.cern.ch/jenkins/job/dataset-to-ibeos)
 
 **Description:** Copies root files for a given dataset localy on eos to be used from local cache (eos) if they diasappear from the site where they resided. 
