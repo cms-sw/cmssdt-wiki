@@ -642,6 +642,28 @@ Not periodically build
 
 ---
 
+## [run-vtune-profiling](https://cmssdt.cern.ch/jenkins/job/run-vtune-profiling)
+
+**Description:** Profiling jobs that are submitted manually for each CMSSW release. The performance is summarized on https://cms-reco-profiling.web.cern.ch/. Managed by cms-offline-conveners-reco@cern.ch.
+
+**Project is `enabled`.**
+
+**Upstream projects:**
+
+**Downstream projects:**
+
+**Sub-projects:**
+
+**Triggers from:** []
+
+
+**Periodic builds:**
+```bash
+Not periodically build
+```
+
+---
+
 ## [sync-profile-data](https://cmssdt.cern.ch/jenkins/job/sync-profile-data)
 
 **Description:** None
