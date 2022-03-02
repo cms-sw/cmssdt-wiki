@@ -5116,6 +5116,28 @@ Not periodically build
 
 ---
 
+## [openstack-set-flavor](https://cmssdt.cern.ch/jenkins/job/openstack-set-flavor)
+
+**Description:** Job to delete openstack instances providing only the name
+
+**Project is `enabled`.**
+
+**Upstream projects:**
+
+**Downstream projects:**
+
+**Sub-projects:**
+
+**Triggers from:** []
+
+
+**Periodic builds:**
+```bash
+Not periodically build
+```
+
+---
+
 ## [openstack-set-property](https://cmssdt.cern.ch/jenkins/job/openstack-set-property)
 
 **Description:** Job to delete openstack instances providing only the name
