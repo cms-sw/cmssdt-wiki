@@ -5116,7 +5116,7 @@ Not periodically build
 
 ---
 
-## [openstack-set-flavor](https://cmssdt.cern.ch/jenkins/job/openstack-set-flavor)
+## [openstack-set-property](https://cmssdt.cern.ch/jenkins/job/openstack-set-property)
 
 **Description:** Job to delete openstack instances providing only the name
 
@@ -5138,7 +5138,7 @@ Not periodically build
 
 ---
 
-## [openstack-set-property](https://cmssdt.cern.ch/jenkins/job/openstack-set-property)
+## [openstack-show-flavor](https://cmssdt.cern.ch/jenkins/job/openstack-show-flavor)
 
 **Description:** Job to delete openstack instances providing only the name
 
