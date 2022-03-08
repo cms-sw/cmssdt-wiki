@@ -284,6 +284,7 @@ Not periodically build
 **Upstream projects:**
 * [check-cvmfs-deploy-baseline](#check-cvmfs-deploy-baseline):
 * [ib-run-baseline](#ib-run-baseline):
+* [run-pr-baseline](#run-pr-baseline):
 
 **Downstream projects:**
 * [cvmfs-publish-baseline](#cvmfs-publish-baseline):
@@ -631,6 +632,47 @@ Not periodically build
 **Downstream projects:**
 
 **Sub-projects:**
+
+**Triggers from:** []
+
+
+**Periodic builds:**
+```bash
+Not periodically build
+```
+
+---
+
+## [run-pr-baseline](https://cmssdt.cern.ch/jenkins/job/run-pr-baseline)
+
+**Description:** This job runs a few tests only for the IB, for comparison with those ran by the pull request.
+
+<p><b> Latest failures.</b></p>
+<ul>
+  <li>
+    Failed due to RelVal Error. The problem was that RelVal nr. 
+    10224 was unable to download a randomly chosen sample file 
+    (file is stored somewhere on the GRID and then must be fetched using a client). 
+    The file is inaccessible, it should not appear on the list, but it does. 
+    Restarting the job did the trick since another file, that actually exist was selected. 
+  </li>
+  <li>
+    For 71X release cycles, couple of workflows are missing input data, that is why this job fails for 71X IBs.
+    There is no need to re-try it for 71X if it fails due to those two workflows input data issues otherwise
+    re-try is needed.
+  </li>
+
+</ul>
+
+**Project is `enabled`.**
+
+**Upstream projects:**
+
+**Downstream projects:**
+* [cvmfs-deploy-baseline](#cvmfs-deploy-baseline):
+
+**Sub-projects:**
+* [cvmfs-deploy-baseline](#cvmfs-deploy-baseline):
 
 **Triggers from:** []
 
