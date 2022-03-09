@@ -385,30 +385,6 @@ Not periodically build
 
 ---
 
-## [check-cvmfs-deploy-baseline](https://cmssdt.cern.ch/jenkins/job/check-cvmfs-deploy-baseline)
-
-**Description:** None
-
-**Project is `enabled`.**
-
-**Upstream projects:**
-
-**Downstream projects:**
-* [cvmfs-deploy-baseline](#cvmfs-deploy-baseline):
-
-**Sub-projects:**
-* [cvmfs-deploy-baseline](#cvmfs-deploy-baseline):
-
-**Triggers from:** []
-
-
-**Periodic builds:**
-```bash
-H/5 * * * *
-```
-
----
-
 ## [check-cvmfs-releases-map](https://cmssdt.cern.ch/jenkins/job/check-cvmfs-releases-map)
 
 **Description:** None
@@ -1836,7 +1812,6 @@ Not periodically build
 **Project is `enabled`.**
 
 **Upstream projects:**
-* [check-cvmfs-deploy-baseline](#check-cvmfs-deploy-baseline):
 * [ib-run-baseline](#ib-run-baseline):
 * [ib-run-pr-baseline](#ib-run-pr-baseline):
 
@@ -1991,7 +1966,7 @@ Retry if last run is failed.
 
 **Periodic builds:**
 ```bash
-Not periodically build
+H 9,21 * * *
 ```
 
 ---

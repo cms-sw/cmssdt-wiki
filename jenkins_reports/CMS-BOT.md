@@ -269,7 +269,6 @@ Not periodically build
 **Project is `enabled`.**
 
 **Upstream projects:**
-* [check-cvmfs-deploy-baseline](#check-cvmfs-deploy-baseline):
 * [ib-run-baseline](#ib-run-baseline):
 * [ib-run-pr-baseline](#ib-run-pr-baseline):
 
