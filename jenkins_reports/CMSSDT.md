@@ -284,6 +284,7 @@ Not periodically build
 **Upstream projects:**
 * [check-cvmfs-deploy-baseline](#check-cvmfs-deploy-baseline):
 * [ib-run-baseline](#ib-run-baseline):
+* [run-pr-baseline](#run-pr-baseline):
 
 **Downstream projects:**
 * [cvmfs-publish-baseline](#cvmfs-publish-baseline):
@@ -651,8 +652,10 @@ Not periodically build
 **Upstream projects:**
 
 **Downstream projects:**
+* [cvmfs-deploy-baseline](#cvmfs-deploy-baseline):
 
 **Sub-projects:**
+* [cvmfs-deploy-baseline](#cvmfs-deploy-baseline):
 
 **Triggers from:** []
 
