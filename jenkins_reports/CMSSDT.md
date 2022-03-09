@@ -284,7 +284,7 @@ Not periodically build
 **Upstream projects:**
 * [check-cvmfs-deploy-baseline](#check-cvmfs-deploy-baseline):
 * [ib-run-baseline](#ib-run-baseline):
-* [run-pr-baseline](#run-pr-baseline):
+* [ib-run-pr-baseline](#ib-run-pr-baseline):
 
 **Downstream projects:**
 * [cvmfs-publish-baseline](#cvmfs-publish-baseline):
@@ -430,6 +430,30 @@ Same puprose as `ib-any-integration`, just different script is called.
 **Downstream projects:**
 
 **Sub-projects:**
+
+**Triggers from:** []
+
+
+**Periodic builds:**
+```bash
+Not periodically build
+```
+
+---
+
+## [ib-run-pr-baseline](https://cmssdt.cern.ch/jenkins/job/ib-run-pr-baseline)
+
+**Description:** None
+
+**Project is `enabled`.**
+
+**Upstream projects:**
+
+**Downstream projects:**
+* [cvmfs-deploy-baseline](#cvmfs-deploy-baseline):
+
+**Sub-projects:**
+* [cvmfs-deploy-baseline](#cvmfs-deploy-baseline):
 
 **Triggers from:** []
 
@@ -632,30 +656,6 @@ Not periodically build
 **Downstream projects:**
 
 **Sub-projects:**
-
-**Triggers from:** []
-
-
-**Periodic builds:**
-```bash
-Not periodically build
-```
-
----
-
-## [run-pr-baseline](https://cmssdt.cern.ch/jenkins/job/run-pr-baseline)
-
-**Description:** None
-
-**Project is `enabled`.**
-
-**Upstream projects:**
-
-**Downstream projects:**
-* [cvmfs-deploy-baseline](#cvmfs-deploy-baseline):
-
-**Sub-projects:**
-* [cvmfs-deploy-baseline](#cvmfs-deploy-baseline):
 
 **Triggers from:** []
 
