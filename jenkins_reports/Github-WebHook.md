@@ -427,6 +427,7 @@ Not periodically build
 **Project is `enabled`.**
 
 **Upstream projects:**
+* [cms-run-baseline](#cms-run-baseline):
 * [ib-run-baseline](#ib-run-baseline):
 * [ib-run-pr-baseline](#ib-run-pr-baseline):
 
