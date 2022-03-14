@@ -213,7 +213,7 @@ Not periodically build
 * [cms-run-baseline](#cms-run-baseline):
 
 **Sub-projects:**
-* [cms-run-baseline ](#cms-run-baseline ):
+* [cms-run-baseline](#cms-run-baseline):
 
 **Triggers from:** []
 
@@ -254,10 +254,10 @@ Not periodically build
 
 **Downstream projects:**
 * [cms-run-baseline](#cms-run-baseline):
-* [cvmfs-deploy-baseline](#cvmfs-deploy-baseline):
+* [cvmfs-deploy-artifacts](#cvmfs-deploy-artifacts):
 
 **Sub-projects:**
-* [cvmfs-deploy-baseline](#cvmfs-deploy-baseline):
+* [cvmfs-deploy-artifacts](#cvmfs-deploy-artifacts):
 * [cms-run-baseline](#cms-run-baseline):
 
 **Triggers from:** []
@@ -320,7 +320,7 @@ Not periodically build
 
 ---
 
-## [cvmfs-deploy-baseline](https://cmssdt.cern.ch/jenkins/job/cvmfs-deploy-baseline)
+## [cvmfs-deploy-artifacts](https://cmssdt.cern.ch/jenkins/job/cvmfs-deploy-artifacts)
 
 **Description:** Copy baseline results from cmssdt for an IB
 
@@ -332,10 +332,10 @@ Not periodically build
 * [ib-run-pr-baseline](#ib-run-pr-baseline):
 
 **Downstream projects:**
-* [cvmfs-publish-baseline](#cvmfs-publish-baseline):
+* [cvmfs-publish-artifacts](#cvmfs-publish-artifacts):
 
 **Sub-projects:**
-* [cvmfs-publish-baseline](#cvmfs-publish-baseline):
+* [cvmfs-publish-artifacts](#cvmfs-publish-artifacts):
 
 **Triggers from:** []
 
@@ -370,14 +370,14 @@ Not periodically build
 
 ---
 
-## [cvmfs-publish-baseline](https://cmssdt.cern.ch/jenkins/job/cvmfs-publish-baseline)
+## [cvmfs-publish-artifacts](https://cmssdt.cern.ch/jenkins/job/cvmfs-publish-artifacts)
 
 **Description:** Copy baseline results from cmssdt for an IB and deploy them on cvmfs
 
 **Project is `enabled`.**
 
 **Upstream projects:**
-* [cvmfs-deploy-baseline](#cvmfs-deploy-baseline):
+* [cvmfs-deploy-artifacts](#cvmfs-deploy-artifacts):
 
 **Downstream projects:**
 
@@ -496,10 +496,10 @@ Not periodically build
 * [ib-run-pr-tests](#ib-run-pr-tests):
 
 **Downstream projects:**
-* [cvmfs-deploy-baseline](#cvmfs-deploy-baseline):
+* [cvmfs-deploy-artifacts](#cvmfs-deploy-artifacts):
 
 **Sub-projects:**
-* [cvmfs-deploy-baseline](#cvmfs-deploy-baseline):
+* [cvmfs-deploy-artifacts](#cvmfs-deploy-artifacts):
 
 **Triggers from:** []
 
@@ -2789,10 +2789,10 @@ Not periodically build
 **Upstream projects:**
 
 **Downstream projects:**
-* [cvmfs-deploy-baseline](#cvmfs-deploy-baseline):
+* [cvmfs-deploy-artifacts](#cvmfs-deploy-artifacts):
 
 **Sub-projects:**
-* [cvmfs-deploy-baseline](#cvmfs-deploy-baseline):
+* [cvmfs-deploy-artifacts](#cvmfs-deploy-artifacts):
 
 **Triggers from:** []
 
