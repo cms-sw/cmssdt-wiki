@@ -201,6 +201,30 @@ Not periodically build
 
 ---
 
+## [cms-check-baseline](https://cmssdt.cern.ch/jenkins/job/cms-check-baseline)
+
+**Description:** None
+
+**Project is `enabled`.**
+
+**Upstream projects:**
+
+**Downstream projects:**
+* [cms-run-baseline](#cms-run-baseline):
+
+**Sub-projects:**
+* [cms-run-baseline ](#cms-run-baseline ):
+
+**Triggers from:** []
+
+
+**Periodic builds:**
+```bash
+Not periodically build
+```
+
+---
+
 ## [cms-run-baseline](https://cmssdt.cern.ch/jenkins/job/cms-run-baseline)
 
 **Description:** This job runs a few tests only for the IB, for comparison with those ran by the pull request.
@@ -225,6 +249,7 @@ Not periodically build
 **Project is `enabled`.**
 
 **Upstream projects:**
+* [cms-check-baseline](#cms-check-baseline):
 
 **Downstream projects:**
 * [cvmfs-deploy-baseline](#cvmfs-deploy-baseline):

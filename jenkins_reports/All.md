@@ -803,20 +803,22 @@ Not periodically build
 
 **Description:** None
 
-**Project is `disabled`.**
+**Project is `enabled`.**
 
 **Upstream projects:**
 
 **Downstream projects:**
+* [cms-run-baseline](#cms-run-baseline):
 
 **Sub-projects:**
+* [cms-run-baseline ](#cms-run-baseline ):
 
 **Triggers from:** []
 
 
 **Periodic builds:**
 ```bash
-H/2 * * * *
+Not periodically build
 ```
 
 ---
@@ -971,6 +973,7 @@ H H/2 * * *
 **Project is `enabled`.**
 
 **Upstream projects:**
+* [cms-check-baseline](#cms-check-baseline):
 
 **Downstream projects:**
 * [cvmfs-deploy-baseline](#cvmfs-deploy-baseline):

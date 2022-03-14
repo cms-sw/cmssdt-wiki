@@ -98,25 +98,3 @@ Not periodically build
 
 ---
 
-## [cms-check-baseline](https://cmssdt.cern.ch/jenkins/job/cms-check-baseline)
-
-**Description:** None
-
-**Project is `disabled`.**
-
-**Upstream projects:**
-
-**Downstream projects:**
-
-**Sub-projects:**
-
-**Triggers from:** []
-
-
-**Periodic builds:**
-```bash
-H/2 * * * *
-```
-
----
-
