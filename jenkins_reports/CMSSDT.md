@@ -218,7 +218,7 @@ Not periodically build
 
 **Periodic builds:**
 ```bash
-* * * * *
+H/2 * * * *
 ```
 
 ---
