@@ -974,12 +974,15 @@ H H/2 * * *
 
 **Upstream projects:**
 * [cms-check-baseline](#cms-check-baseline):
+* [cms-run-baseline](#cms-run-baseline):
 
 **Downstream projects:**
+* [cms-run-baseline](#cms-run-baseline):
 * [cvmfs-deploy-baseline](#cvmfs-deploy-baseline):
 
 **Sub-projects:**
 * [cvmfs-deploy-baseline](#cvmfs-deploy-baseline):
+* [cms-run-baseline](#cms-run-baseline):
 
 **Triggers from:** []
 
