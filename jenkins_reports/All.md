@@ -801,7 +801,7 @@ Not periodically build
 
 ## [cms-check-baseline](https://cmssdt.cern.ch/jenkins/job/cms-check-baseline)
 
-**Description:** None
+**Description:** This jobs look for on demand baseline generation requests (made by ib-run-pr-tests job) and start the baseline generation job ( if not already started).
 
 **Project is `enabled`.**
 
