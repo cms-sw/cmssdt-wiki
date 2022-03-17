@@ -216,6 +216,7 @@ Not periodically build
 * [openstack-delete-vms](#openstack-delete-vms):
 * [openstack-delete-vm-foreman ](#openstack-delete-vm-foreman ):
 * [openstack-delete-volume](#openstack-delete-volume):
+* [jenkins-delete-node](#jenkins-delete-node):
 
 **Triggers from:** []
 
