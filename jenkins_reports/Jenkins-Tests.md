@@ -464,6 +464,28 @@ Not periodically build
 
 ---
 
+## [jenkins-test-install-rpm417](https://cmssdt.cern.ch/jenkins/job/jenkins-test-install-rpm417)
+
+**Description:** None
+
+**Project is `enabled`.**
+
+**Upstream projects:**
+
+**Downstream projects:**
+
+**Sub-projects:**
+
+**Triggers from:** []
+
+
+**Periodic builds:**
+```bash
+Not periodically build
+```
+
+---
+
 ## [jenkins-test-install-rucio](https://cmssdt.cern.ch/jenkins/job/jenkins-test-install-rucio)
 
 **Description:** None
