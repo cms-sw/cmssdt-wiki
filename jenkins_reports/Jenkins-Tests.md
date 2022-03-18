@@ -471,6 +471,7 @@ Not periodically build
 **Project is `enabled`.**
 
 **Upstream projects:**
+* [jenkins-test-rpm417-scalibility](#jenkins-test-rpm417-scalibility):
 
 **Downstream projects:**
 
@@ -606,8 +607,10 @@ Not periodically build
 **Upstream projects:**
 
 **Downstream projects:**
+* [jenkins-test-install-rpm417](#jenkins-test-install-rpm417):
 
 **Sub-projects:**
+* [jenkins-test-install-rpm417 ](#jenkins-test-install-rpm417 ):
 
 **Triggers from:** []
 
