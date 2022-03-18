@@ -1529,7 +1529,7 @@ Not periodically build
 
 **Periodic builds:**
 ```bash
-28 * * * *
+H * * * *
 ```
 
 ---
