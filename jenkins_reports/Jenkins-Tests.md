@@ -398,6 +398,28 @@ Not periodically build
 
 ---
 
+## [jenkins-test-docker_launcher](https://cmssdt.cern.ch/jenkins/job/jenkins-test-docker_launcher)
+
+**Description:** None
+
+**Project is `enabled`.**
+
+**Upstream projects:**
+
+**Downstream projects:**
+
+**Sub-projects:**
+
+**Triggers from:** []
+
+
+**Periodic builds:**
+```bash
+Not periodically build
+```
+
+---
+
 ## [jenkins-test-gpu](https://cmssdt.cern.ch/jenkins/job/jenkins-test-gpu)
 
 **Description:** None
