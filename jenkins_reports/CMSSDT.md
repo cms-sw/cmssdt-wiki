@@ -810,38 +810,6 @@ Not periodically build
 
 ---
 
-## [test-os](https://cmssdt.cern.ch/jenkins/job/test-os)
-
-**Description:** None
-
-**Project is `enabled`.**
-
-**Upstream projects:**
-
-**Downstream projects:**
-* [test-os-alma8](#test-os-alma8):
-* [test-os-cs8](#test-os-cs8):
-* [test-os-lxplus8](#test-os-lxplus8):
-* [test-os-rhel8](#test-os-rhel8):
-* [test-os-ubi8](#test-os-ubi8):
-
-**Sub-projects:**
-* [test-os-cs8](#test-os-cs8):
-* [test-os-ubi8](#test-os-ubi8):
-* [test-os-alma8](#test-os-alma8):
-* [test-os-lxplus8](#test-os-lxplus8):
-* [test-os-rhel8](#test-os-rhel8):
-
-**Triggers from:** []
-
-
-**Periodic builds:**
-```bash
-H 20 * * *
-```
-
----
-
 ## [test-os-alma8](https://cmssdt.cern.ch/jenkins/job/test-os-alma8)
 
 **Description:** None
