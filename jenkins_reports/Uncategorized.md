@@ -8,6 +8,30 @@
 
 # Projects:
 
+## [vtune-check](https://cmssdt.cern.ch/jenkins/job/vtune-check)
+
+**Description:** This job checks if https://cmssdt.cern.ch/vtune/ is acessable and if not, starts <a href="https://cmssdt.cern.ch/jenkins/view/All/job/vtune-run-container/">vtune-run-container<a/> job to restart the service.
+
+**Project is `disabled`.**
+
+**Upstream projects:**
+
+**Downstream projects:**
+* [vtune-run-container](#vtune-run-container):
+
+**Sub-projects:**
+* [vtune-run-container](#vtune-run-container):
+
+**Triggers from:** []
+
+
+**Periodic builds:**
+```bash
+H/30 * * * *
+```
+
+---
+
 ## [test-os](https://cmssdt.cern.ch/jenkins/job/test-os)
 
 **Description:** None

@@ -6383,7 +6383,7 @@ Not periodically build
 
 **Description:** This job checks if https://cmssdt.cern.ch/vtune/ is acessable and if not, starts <a href="https://cmssdt.cern.ch/jenkins/view/All/job/vtune-run-container/">vtune-run-container<a/> job to restart the service.
 
-**Project is `enabled`.**
+**Project is `disabled`.**
 
 **Upstream projects:**
 
