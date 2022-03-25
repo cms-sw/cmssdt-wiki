@@ -1016,24 +1016,24 @@ Not periodically build
 
 ## [vtune-check](https://cmssdt.cern.ch/jenkins/job/vtune-check)
 
-**Description:** This job checks if https://cmssdt.cern.ch/lxr/ is acessable and if not, starts <a href="https://cmssdt.cern.ch/jenkins/view/All/job/lxr-run-container/">lxr-run-container<a/> job to restart the service.
+**Description:** This job checks if https://cmssdt.cern.ch/vtune/ is acessable and if not, starts <a href="https://cmssdt.cern.ch/jenkins/view/All/job/vtune-run-container/">vtune-run-container<a/> job to restart the service.
 
 **Project is `enabled`.**
 
 **Upstream projects:**
 
 **Downstream projects:**
-* [lxr-run-container](#lxr-run-container):
+* [vtune-run-container](#vtune-run-container):
 
 **Sub-projects:**
-* [lxr-run-container](#lxr-run-container):
+* [vtune-run-container](#vtune-run-container):
 
 **Triggers from:** []
 
 
 **Periodic builds:**
 ```bash
-H/20 * * * *
+H/30 * * * *
 ```
 
 ---
@@ -1045,6 +1045,7 @@ H/20 * * * *
 **Project is `enabled`.**
 
 **Upstream projects:**
+* [vtune-check](#vtune-check):
 
 **Downstream projects:**
 
@@ -3586,7 +3587,6 @@ H 5  * * *
 
 **Upstream projects:**
 * [lxr-check](#lxr-check):
-* [vtune-check](#vtune-check):
 
 **Downstream projects:**
 
