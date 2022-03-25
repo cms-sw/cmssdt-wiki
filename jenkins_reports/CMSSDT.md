@@ -1014,9 +1014,33 @@ Not periodically build
 
 ---
 
+## [vtune-check](https://cmssdt.cern.ch/jenkins/job/vtune-check)
+
+**Description:** This job checks if https://cmssdt.cern.ch/lxr/ is acessable and if not, starts <a href="https://cmssdt.cern.ch/jenkins/view/All/job/lxr-run-container/">lxr-run-container<a/> job to restart the service.
+
+**Project is `enabled`.**
+
+**Upstream projects:**
+
+**Downstream projects:**
+* [lxr-run-container](#lxr-run-container):
+
+**Sub-projects:**
+* [lxr-run-container](#lxr-run-container):
+
+**Triggers from:** []
+
+
+**Periodic builds:**
+```bash
+H/20 * * * *
+```
+
+---
+
 ## [vtune-run-container](https://cmssdt.cern.ch/jenkins/job/vtune-run-container)
 
-**Description:** This job stops and deletes old docker contaner of LXR service and starts new one.
+**Description:** This job stops and deletes old docker contaner of Vtune service and starts new one.
 
 **Project is `enabled`.**
 
@@ -3562,6 +3586,7 @@ H 5  * * *
 
 **Upstream projects:**
 * [lxr-check](#lxr-check):
+* [vtune-check](#vtune-check):
 
 **Downstream projects:**
 
