@@ -2916,8 +2916,8 @@ Not periodically build
 * [ib-run-baseline](#ib-run-baseline):
 
 **Downstream projects:**
-* [ib-run-baseline](#ib-run-baseline):
 * [cvmfs-deploy-artifacts](#cvmfs-deploy-artifacts):
+* [ib-run-baseline](#ib-run-baseline):
 
 **Sub-projects:**
 * [cvmfs-deploy-artifacts](#cvmfs-deploy-artifacts):
@@ -3299,6 +3299,32 @@ Not periodically build
 
 **Sub-projects:**
 * [cvmfs-deploy-artifacts](#cvmfs-deploy-artifacts):
+
+**Triggers from:** []
+
+
+**Periodic builds:**
+```bash
+Not periodically build
+```
+
+---
+
+## [ib-run-pr-crab](https://cmssdt.cern.ch/jenkins/job/ib-run-pr-crab)
+
+**Description:** Build mutiple  a pull requests. 
+Same puprose as `ib-any-integration`, just different script is called.
+
+
+
+
+**Project is `enabled`.**
+
+**Upstream projects:**
+
+**Downstream projects:**
+
+**Sub-projects:**
 
 **Triggers from:** []
 
