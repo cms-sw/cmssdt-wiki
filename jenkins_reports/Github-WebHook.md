@@ -222,7 +222,7 @@ Not periodically build
 
 ## [abort-pr-tests](https://cmssdt.cern.ch/jenkins/job/abort-pr-tests)
 
-**Description:** None
+**Description:** This basically triiger abort-jenkins-jobs for all the jobs related to PR tests
 
 **Project is `enabled`.**
 
@@ -248,10 +248,10 @@ Not periodically build
 
 ## [abort-jenkins-job](https://cmssdt.cern.ch/jenkins/job/abort-jenkins-job)
 
-**Description:** Kill a running job (by default it is 'ib-any-integration'). 
+**Description:** Kill a running job (by default it is 'ib-run-pr-tests and jobs started by it'). 
 
-The idea is that if pull reguest was updated, all the test should be restarted. This job will kill all the running jobs for that
-PR and matching parameters. It will ignore given job ID - the ID of upstream job that started this job.
+The idea is that if pull request was updated, all the test should be restarted. This job will kill all the running jobs for that
+PR (with matching parameters). It will ignore given job ID - the ID of upstream job that started this job.
 
 **Project is `enabled`.**
 
@@ -344,7 +344,7 @@ Not periodically build
 
 ## [abort-pr-tests](https://cmssdt.cern.ch/jenkins/job/abort-pr-tests)
 
-**Description:** None
+**Description:** This basically triiger abort-jenkins-jobs for all the jobs related to PR tests
 
 **Project is `enabled`.**
 
@@ -370,10 +370,10 @@ Not periodically build
 
 ## [abort-jenkins-job](https://cmssdt.cern.ch/jenkins/job/abort-jenkins-job)
 
-**Description:** Kill a running job (by default it is 'ib-any-integration'). 
+**Description:** Kill a running job (by default it is 'ib-run-pr-tests and jobs started by it'). 
 
-The idea is that if pull reguest was updated, all the test should be restarted. This job will kill all the running jobs for that
-PR and matching parameters. It will ignore given job ID - the ID of upstream job that started this job.
+The idea is that if pull request was updated, all the test should be restarted. This job will kill all the running jobs for that
+PR (with matching parameters). It will ignore given job ID - the ID of upstream job that started this job.
 
 **Project is `enabled`.**
 
@@ -579,10 +579,10 @@ Not periodically build
 
 ## [abort-jenkins-job](https://cmssdt.cern.ch/jenkins/job/abort-jenkins-job)
 
-**Description:** Kill a running job (by default it is 'ib-any-integration'). 
+**Description:** Kill a running job (by default it is 'ib-run-pr-tests and jobs started by it'). 
 
-The idea is that if pull reguest was updated, all the test should be restarted. This job will kill all the running jobs for that
-PR and matching parameters. It will ignore given job ID - the ID of upstream job that started this job.
+The idea is that if pull request was updated, all the test should be restarted. This job will kill all the running jobs for that
+PR (with matching parameters). It will ignore given job ID - the ID of upstream job that started this job.
 
 **Project is `enabled`.**
 
