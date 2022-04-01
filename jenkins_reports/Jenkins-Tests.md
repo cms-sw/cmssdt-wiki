@@ -499,7 +499,7 @@ Not periodically build
 * [jenkins-test-rpm417-scalibility](#jenkins-test-rpm417-scalibility):
 
 **Sub-projects:**
-* [jenkins-test-rpm417-scalibility ](#jenkins-test-rpm417-scalibility ):
+* [jenkins-test-rpm417-scalibility](#jenkins-test-rpm417-scalibility):
 
 **Triggers from:** []
 
@@ -657,7 +657,7 @@ Not periodically build
 * [jenkins-test-install-rpm417](#jenkins-test-install-rpm417):
 
 **Sub-projects:**
-* [jenkins-test-install-rpm417 ](#jenkins-test-install-rpm417 ):
+* [jenkins-test-install-rpm417](#jenkins-test-install-rpm417):
 
 **Triggers from:** []
 

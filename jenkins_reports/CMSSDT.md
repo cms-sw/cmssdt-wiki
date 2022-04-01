@@ -202,59 +202,6 @@ Not periodically build
 
 ---
 
-## [cms-check-baseline](https://cmssdt.cern.ch/jenkins/job/cms-check-baseline)
-
-**Description:** This jobs look for on demand baseline generation requests (made by ib-run-pr-tests job) and start the baseline generation job ( if not already started).
-
-**Project is `enabled`.**
-
-**Upstream projects:**
-
-**Downstream projects:**
-* [cms-run-baseline](#cms-run-baseline):
-
-**Sub-projects:**
-* [cms-run-baseline](#cms-run-baseline):
-
-**Triggers from:** []
-
-
-**Periodic builds:**
-```bash
-H/3 * * * *
-```
-
----
-
-## [cms-run-baseline](https://cmssdt.cern.ch/jenkins/job/cms-run-baseline)
-
-**Description:** This job generates the IB baseline. It is two phase job<br/>
-- First it runs on any suitable node and look for workflows for which the baseline should be generated. It then re-run itself with the list of workflows and build an upload the actual baseline.
-
-**Project is `enabled`.**
-
-**Upstream projects:**
-* [cms-check-baseline](#cms-check-baseline):
-* [cms-run-baseline](#cms-run-baseline):
-
-**Downstream projects:**
-* [cms-run-baseline](#cms-run-baseline):
-* [cvmfs-deploy-artifacts](#cvmfs-deploy-artifacts):
-
-**Sub-projects:**
-* [cvmfs-deploy-artifacts](#cvmfs-deploy-artifacts):
-* [cms-run-baseline](#cms-run-baseline):
-
-**Triggers from:** []
-
-
-**Periodic builds:**
-```bash
-Not periodically build
-```
-
----
-
 ## [cmssw-afs-eos-comparison](https://cmssdt.cern.ch/jenkins/job/cmssw-afs-eos-comparison)
 
 **Description:** None
@@ -312,8 +259,8 @@ Not periodically build
 **Project is `enabled`.**
 
 **Upstream projects:**
-* [cms-run-baseline](#cms-run-baseline):
 * [ib-run-baseline](#ib-run-baseline):
+* [ib-run-baseline-old](#ib-run-baseline-old):
 * [ib-run-pr-baseline](#ib-run-pr-baseline):
 
 **Downstream projects:**
@@ -441,6 +388,59 @@ H 7 * * *
 **Periodic builds:**
 ```bash
 H H * * *
+```
+
+---
+
+## [ib-check-baseline-requests](https://cmssdt.cern.ch/jenkins/job/ib-check-baseline-requests)
+
+**Description:** This jobs look for on demand baseline generation requests (made by ib-run-pr-tests job) and start the baseline generation job ( if not already started).
+
+**Project is `enabled`.**
+
+**Upstream projects:**
+
+**Downstream projects:**
+* [ib-run-baseline](#ib-run-baseline):
+
+**Sub-projects:**
+* [ib-run-baseline](#ib-run-baseline):
+
+**Triggers from:** []
+
+
+**Periodic builds:**
+```bash
+H/3 * * * *
+```
+
+---
+
+## [ib-run-baseline](https://cmssdt.cern.ch/jenkins/job/ib-run-baseline)
+
+**Description:** This job generates the IB baseline. It is two phase job<br/>
+- First it runs on any suitable node and look for workflows for which the baseline should be generated. It then re-run itself with the list of workflows and build an upload the actual baseline.
+
+**Project is `enabled`.**
+
+**Upstream projects:**
+* [ib-check-baseline-requests](#ib-check-baseline-requests):
+* [ib-run-baseline](#ib-run-baseline):
+
+**Downstream projects:**
+* [ib-run-baseline](#ib-run-baseline):
+* [cvmfs-deploy-artifacts](#cvmfs-deploy-artifacts):
+
+**Sub-projects:**
+* [cvmfs-deploy-artifacts](#cvmfs-deploy-artifacts):
+* [ib-run-baseline](#ib-run-baseline):
+
+**Triggers from:** []
+
+
+**Periodic builds:**
+```bash
+Not periodically build
 ```
 
 ---
@@ -2752,47 +2752,6 @@ Not periodically build
 **Downstream projects:**
 
 **Sub-projects:**
-
-**Triggers from:** []
-
-
-**Periodic builds:**
-```bash
-Not periodically build
-```
-
----
-
-## [ib-run-baseline](https://cmssdt.cern.ch/jenkins/job/ib-run-baseline)
-
-**Description:** This job runs a few tests only for the IB, for comparison with those ran by the pull request.
-
-<p><b> Latest failures.</b></p>
-<ul>
-  <li>
-    Failed due to RelVal Error. The problem was that RelVal nr. 
-    10224 was unable to download a randomly chosen sample file 
-    (file is stored somewhere on the GRID and then must be fetched using a client). 
-    The file is inaccessible, it should not appear on the list, but it does. 
-    Restarting the job did the trick since another file, that actually exist was selected. 
-  </li>
-  <li>
-    For 71X release cycles, couple of workflows are missing input data, that is why this job fails for 71X IBs.
-    There is no need to re-try it for 71X if it fails due to those two workflows input data issues otherwise
-    re-try is needed.
-  </li>
-
-</ul>
-
-**Project is `enabled`.**
-
-**Upstream projects:**
-
-**Downstream projects:**
-* [cvmfs-deploy-artifacts](#cvmfs-deploy-artifacts):
-
-**Sub-projects:**
-* [cvmfs-deploy-artifacts](#cvmfs-deploy-artifacts):
 
 **Triggers from:** []
 
