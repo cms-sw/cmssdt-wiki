@@ -10,7 +10,8 @@
 
 ## [check-cms-container-certificates](https://cmssdt.cern.ch/jenkins/job/check-cms-container-certificates)
 
-**Description:** This job checks for HOST certificate in cmssw/cms:rhelX images and fail if host certificate is going to expire in less than CERT_EXPIRY_DAYS days and
+**Description:** This job checks for HOST certificate in cmssw/cms:rhelX images and fail if host certificate is going to expire in less than CERT_EXPIRY_DAYS days.<br/>
+In such case we need to check if there is already updated osg-ca-certs package available and rebuild the contains
 
 **Project is `enabled`.**
 
