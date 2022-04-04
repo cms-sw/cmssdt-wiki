@@ -3100,7 +3100,11 @@ Not periodically build
 
 **Description:** Runs FastTimerService and Igprof on the RECO and PAT steps for high pileup workflow.
 
-
+<ul>
+  <li>
+    If it fails, we should normally retry since IT used to kill this job.
+  </li>  
+</ul>
 
 
 
