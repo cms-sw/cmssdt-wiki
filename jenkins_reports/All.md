@@ -2907,7 +2907,8 @@ Not periodically build
 ## [ib-run-baseline](https://cmssdt.cern.ch/jenkins/job/ib-run-baseline)
 
 **Description:** This job generates the IB baseline. It is two phase job<br/>
-- First it runs on any suitable node and look for workflows for which the baseline should be generated. It then re-run itself with the list of workflows and build an upload the actual baseline.
+- First it runs on any suitable node and look for workflows for which the baseline should be generated. It then re-run itself with the list of workflows and build an upload the actual baseline.<br/>
+- In case of failure, just retry this job (Unless there are network/github issues)
 
 **Project is `enabled`.**
 
