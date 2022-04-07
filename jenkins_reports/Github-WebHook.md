@@ -523,7 +523,9 @@ Not periodically build
 
 ## [update-das-queries](https://cmssdt.cern.ch/jenkins/job/update-das-queries)
 
-**Description:** Job to run das client and cache the results in github to be used by IBs.
+**Description:** Job to run das client and cache the results in github to be used by IBs.<br/>
+Job could fail due to github issues or disk related issue. Normally it is safe to just retry it once github/disk issues are resolved.<br/>
+There is no need to retry if it has been rerun successfully after the last failure.
 
 **Project is `enabled`.**
 
