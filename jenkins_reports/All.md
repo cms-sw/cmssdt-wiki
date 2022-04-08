@@ -2726,7 +2726,28 @@ Not periodically build
 
 ## [grid-webhook](https://cmssdt.cern.ch/jenkins/job/grid-webhook)
 
-**Description:** None
+**Description:** This job is triggered by HTCondor pilot jobs. When we submit a request to get a HTCondor node then first pilot start runs and trigger this job at various stages with different "STATUS"<br/>
+
+- STATUS=online<br/>
+  - When pilot script first runs on the HTCondor node then it sends an "online" event along with CONDOR_JOB_ID. In this case this job tried to add the new HTCondor node as jenkins agent. 
+In case a job with "online" status fails then please first run https://cmssdt.cern.ch/jenkins/job/grid-check-jobs/ job and see if HTCondor job with 
+CONDOR_JOB_ID is still running. For example look for messages like<br/>
+OWNER        BATCH_NAME       SUBMITTED     DONE   RUN    IDLE   HOLD  TOTAL JOB_IDS<br/>
+cmsbuild ID: CONDOR_JOB_ID    DATE TIME      _      1      _      _      1 CONDOR_JOB_ID"<br/>
+If it is still in "RUN" sstate then just re-try this job. If it is in "IDLE" state then do not do any thing and it is it in "DONE" state then better 
+to run https://cmssdt.cern.ch/jenkins/view/Grid/job/grid-shutdown-node/ to kill it.<br/><br/>
+
+- STATUS=offline<br/>
+  - This event is sent when HTCondor pilot has run 90% of its max allocated time. When this event is received then this jobs marks the grid${CONDOR_JOB_ID} jenkins agent as offline
+so that no new job can be run on this agent. When grid${CONDOR_JOB_ID} is offline and it is not running any job then this agent is automatically 
+deleted by https://cmssdt.cern.ch/jenkins/view/Grid/job/grid-check-nodes/. Depending on the agent "LABELS" (e.g. auto-recreate) , this job can request a new HTCondor node to replace it.<br/><br/>
+
+- STATUS=shutdown<br/>
+  - This event is sent when a pilot has reached its max life and going to shutdown. In this case this job tried to delete the agent from the jenkins.
+
+
+
+
 
 **Project is `enabled`.**
 
