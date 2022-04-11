@@ -816,6 +816,28 @@ Not periodically build
 
 ---
 
+## [test-jenkins-parser](https://cmssdt.cern.ch/jenkins/job/test-jenkins-parser)
+
+**Description:** This is a trial to parse Jenkins Console Output and take actions depending on the parsed information.
+
+**Project is `enabled`.**
+
+**Upstream projects:**
+
+**Downstream projects:**
+
+**Sub-projects:**
+
+**Triggers from:** []
+
+
+**Periodic builds:**
+```bash
+Not periodically build
+```
+
+---
+
 ## [test-new-cvmfs-publisher](https://cmssdt.cern.ch/jenkins/job/test-new-cvmfs-publisher)
 
 **Description:** None
