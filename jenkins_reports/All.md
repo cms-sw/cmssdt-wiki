@@ -5951,7 +5951,7 @@ Not periodically build
 
 ## [test-delete-build](https://cmssdt.cern.ch/jenkins/job/test-delete-build)
 
-**Description:** None
+**Description:** This is a trial to delete builds once they have been automatically retried by Naginator.
 
 **Project is `enabled`.**
 
