@@ -6533,7 +6533,7 @@ H/30 * * * *
 
 **Description:** This job stops and deletes old docker contaner of Vtune service and starts new one.
 
-**Project is `disabled`.**
+**Project is `enabled`.**
 
 **Upstream projects:**
 * [vtune-check](#vtune-check):
