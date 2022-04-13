@@ -5959,6 +5959,7 @@ Not periodically build
 **Project is `enabled`.**
 
 **Upstream projects:**
+* [test-jenkins-parser](#test-jenkins-parser):
 
 **Downstream projects:**
 
@@ -5983,6 +5984,7 @@ Not periodically build
 **Upstream projects:**
 
 **Downstream projects:**
+* [test-delete-build](#test-delete-build):
 
 **Sub-projects:**
 
