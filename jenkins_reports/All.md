@@ -6098,6 +6098,28 @@ Not periodically build
 
 ---
 
+## [test-os-el8](https://cmssdt.cern.ch/jenkins/job/test-os-el8)
+
+**Description:** None
+
+**Project is `enabled`.**
+
+**Upstream projects:**
+
+**Downstream projects:**
+
+**Sub-projects:**
+
+**Triggers from:** []
+
+
+**Periodic builds:**
+```bash
+Not periodically build
+```
+
+---
+
 ## [test-os-lxplus8](https://cmssdt.cern.ch/jenkins/job/test-os-lxplus8)
 
 **Description:** None
@@ -6129,6 +6151,28 @@ Not periodically build
 
 **Upstream projects:**
 * [test-os](#test-os):
+
+**Downstream projects:**
+
+**Sub-projects:**
+
+**Triggers from:** []
+
+
+**Periodic builds:**
+```bash
+Not periodically build
+```
+
+---
+
+## [test-os-rocky8](https://cmssdt.cern.ch/jenkins/job/test-os-rocky8)
+
+**Description:** None
+
+**Project is `enabled`.**
+
+**Upstream projects:**
 
 **Downstream projects:**
 
