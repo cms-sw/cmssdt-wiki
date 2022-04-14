@@ -5956,7 +5956,7 @@ Not periodically build
 
 **Description:** This is a trial to delete builds once they have been automatically retried by Naginator.
 
-**Project is `enabled`.**
+**Project is `disabled`.**
 
 **Upstream projects:**
 * [test-jenkins-parser](#test-jenkins-parser):
@@ -5979,7 +5979,7 @@ Not periodically build
 
 **Description:** This is a trial to parse Jenkins Console Output and take actions depending on the parsed information.
 
-**Project is `enabled`.**
+**Project is `disabled`.**
 
 **Upstream projects:**
 

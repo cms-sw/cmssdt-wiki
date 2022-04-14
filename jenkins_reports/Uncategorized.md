@@ -98,6 +98,29 @@ Not periodically build
 
 ---
 
+## [test-delete-build](https://cmssdt.cern.ch/jenkins/job/test-delete-build)
+
+**Description:** This is a trial to delete builds once they have been automatically retried by Naginator.
+
+**Project is `disabled`.**
+
+**Upstream projects:**
+* [test-jenkins-parser](#test-jenkins-parser):
+
+**Downstream projects:**
+
+**Sub-projects:**
+
+**Triggers from:** []
+
+
+**Periodic builds:**
+```bash
+Not periodically build
+```
+
+---
+
 ## [ib-run-baseline-old](https://cmssdt.cern.ch/jenkins/job/ib-run-baseline-old)
 
 **Description:** This job runs a few tests only for the IB, for comparison with those ran by the pull request.
@@ -128,6 +151,29 @@ Not periodically build
 
 **Sub-projects:**
 * [cvmfs-deploy-artifacts](#cvmfs-deploy-artifacts):
+
+**Triggers from:** []
+
+
+**Periodic builds:**
+```bash
+Not periodically build
+```
+
+---
+
+## [test-jenkins-parser](https://cmssdt.cern.ch/jenkins/job/test-jenkins-parser)
+
+**Description:** This is a trial to parse Jenkins Console Output and take actions depending on the parsed information.
+
+**Project is `disabled`.**
+
+**Upstream projects:**
+
+**Downstream projects:**
+* [test-delete-build](#test-delete-build):
+
+**Sub-projects:**
 
 **Triggers from:** []
 
