@@ -3769,7 +3769,7 @@ H 22-23 * * *
 ## [process-relval-logs](https://cmssdt.cern.ch/jenkins/job/process-relval-logs)
 
 **Description:** This job process partial logs of Relvals and place files accordingly.<br/>
-There is no need to re-try this is a newer run is successful. If it keeps on failing then one need 
+There is no need to re-try newer run is successful or running. If it keeps on failing then one need 
 to check the logs and find out the reason of failure. In that case some manual work is needed to cleanup
 cmssdt.cern.ch logs.
 
