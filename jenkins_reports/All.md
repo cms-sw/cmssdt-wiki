@@ -3337,8 +3337,7 @@ Not periodically build
 
 ## [ib-run-pr-crab](https://cmssdt.cern.ch/jenkins/job/ib-run-pr-crab)
 
-**Description:** Build mutiple  a pull requests. 
-Same puprose as `ib-any-integration`, just different script is called.
+**Description:** 
 
 
 
