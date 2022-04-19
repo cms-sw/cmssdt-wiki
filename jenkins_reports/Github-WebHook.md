@@ -78,7 +78,10 @@ H 1 * * 0
 
 ## [update-github-pages](https://cmssdt.cern.ch/jenkins/job/update-github-pages)
 
-**Description:** This job update contents of the "data" directory in cms-sw.github.io
+**Description:** This job update contents of the "data" directory in cms-sw.github.io. 
+It downloads our github pages, parses the log files, updates the documentation accordingly, and uploads the pages again.
+In this case, the job is automatically triggered after some minutes. 
+If it fails, one just needs to check that the next build was successful so that pages are updated correctly.
 
 **Project is `enabled`.**
 
