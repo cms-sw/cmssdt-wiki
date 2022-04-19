@@ -1529,7 +1529,7 @@ Job can fail for two reasons<br/>
 1. user is not in docker group<br/>
 2. docker service is not running on the machine<br/><br/>
 
-If machine is in our control then we should take the appropriate action but if machine is in CERN IT control e.g OpenLab machines then we should open a SNOW ticket.
+If machine is in our control then we should take the appropriate action (e.g. login into the machine and manually run the ssh command) but if machine is in CERN IT control e.g OpenLab machines then we should open a SNOW ticket.
 
 **Project is `enabled`.**
 
