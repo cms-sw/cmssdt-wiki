@@ -1284,7 +1284,8 @@ Not periodically build
 
 ## [crab-cleanup](https://cmssdt.cern.ch/jenkins/job/crab-cleanup)
 
-**Description:** None
+**Description:** This job runs once a day to clean up the /eos/cms/store/user/cmsbot/CRAB_PrivateMC directory e.g. delete every thing older than X days.<br/>
+In case of failure , just re-run it.
 
 **Project is `enabled`.**
 
