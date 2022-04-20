@@ -446,6 +446,29 @@ Not periodically build
 
 ---
 
+## [ib-run-crab](https://cmssdt.cern.ch/jenkins/job/ib-run-crab)
+
+**Description:** Runs addons test on IB. Results are shown as "Other test" in the 
+<a href="https://cmssdt.cern.ch/SDT/html/cmssdt-ib/">IB page</a> for the IB.  
+
+**Project is `enabled`.**
+
+**Upstream projects:**
+
+**Downstream projects:**
+
+**Sub-projects:**
+
+**Triggers from:** []
+
+
+**Periodic builds:**
+```bash
+Not periodically build
+```
+
+---
+
 ## [ib-run-pr-addon](https://cmssdt.cern.ch/jenkins/job/ib-run-pr-addon)
 
 **Description:** Build mutiple  a pull requests. 
