@@ -225,6 +225,28 @@ Not periodically build
 
 ---
 
+## [crab-cleanup](https://cmssdt.cern.ch/jenkins/job/crab-cleanup)
+
+**Description:** None
+
+**Project is `enabled`.**
+
+**Upstream projects:**
+
+**Downstream projects:**
+
+**Sub-projects:**
+
+**Triggers from:** []
+
+
+**Periodic builds:**
+```bash
+Not periodically build
+```
+
+---
+
 ## [cvmfs-check-cuda-compatible-runtime](https://cmssdt.cern.ch/jenkins/job/cvmfs-check-cuda-compatible-runtime)
 
 **Description:** This job checks and updates cuda-compatible-runtime. This is used by CMS pilot jobs to find available gpu on the worker node.<br/>
