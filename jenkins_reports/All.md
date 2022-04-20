@@ -1300,7 +1300,7 @@ In case of failure , just re-run it.
 
 **Periodic builds:**
 ```bash
-Not periodically build
+H 0 * * *
 ```
 
 ---
