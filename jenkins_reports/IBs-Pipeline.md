@@ -532,7 +532,11 @@ Not periodically build
 
 ## [ib-run-relvals](https://cmssdt.cern.ch/jenkins/job/ib-run-relvals)
 
-**Description:** The job runs release validations, as validations are separated on pieces (1of6 2of6 etc)
+**Description:** The job runs release validations, as validations are separated on pieces (1of6 2of6 etc).<br>
+It can fail due to connection issues (e.g. Remote call on machine-XYZ failed).<br>
+
+Sometimes it can also hang during scp copy / ssh (which is usually the last job).
+This failure can be found by looking for a gap of several hours in the log file where the Jenkins job is trying to finish the last test job.
 
 **Project is `enabled`.**
 
@@ -1035,7 +1039,11 @@ Not periodically build
 
 ## [ib-run-relvals](https://cmssdt.cern.ch/jenkins/job/ib-run-relvals)
 
-**Description:** The job runs release validations, as validations are separated on pieces (1of6 2of6 etc)
+**Description:** The job runs release validations, as validations are separated on pieces (1of6 2of6 etc).<br>
+It can fail due to connection issues (e.g. Remote call on machine-XYZ failed).<br>
+
+Sometimes it can also hang during scp copy / ssh (which is usually the last job).
+This failure can be found by looking for a gap of several hours in the log file where the Jenkins job is trying to finish the last test job.
 
 **Project is `enabled`.**
 
