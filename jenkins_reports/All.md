@@ -3050,8 +3050,7 @@ Not periodically build
 
 ## [ib-run-crab](https://cmssdt.cern.ch/jenkins/job/ib-run-crab)
 
-**Description:** Runs addons test on IB. Results are shown as "Other test" in the 
-<a href="https://cmssdt.cern.ch/SDT/html/cmssdt-ib/">IB page</a> for the IB.  
+**Description:** Runs CRAB jobs on IB.
 
 **Project is `enabled`.**
 
