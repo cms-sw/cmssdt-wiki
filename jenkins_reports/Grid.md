@@ -237,7 +237,7 @@ the agent should work.<br/>
 CONDOR_JOB_ID is still running. For example look for messages like:<br/>
 OWNER        BATCH_NAME       SUBMITTED     DONE   RUN    IDLE   HOLD  TOTAL JOB_IDS<br/>
 cmsbuild ID: CONDOR_JOB_ID    DATE TIME      _      1      _      _      1 CONDOR_JOB_ID"<br/>
-If it is still in "RUN" state, then just re-try this job. If it is in "IDLE" state then do not do any thing and it is it in "DONE" state then better 
+If it is still in "RUN" state, then just re-try this job. If it is in "IDLE" state then do not do anything and if it is in "DONE" state then better 
 to run https://cmssdt.cern.ch/jenkins/view/Grid/job/grid-shutdown-node/ to kill it.<br/><br/>
 
 - STATUS=offline<br/>
