@@ -650,8 +650,10 @@ Not periodically build
 
 ## [ib-run-pr-wait-deployment](https://cmssdt.cern.ch/jenkins/job/ib-run-pr-wait-deployment)
 
-**Description:** Build mutiple  a pull requests. 
-Same puprose as `ib-any-integration`, just different script is called.
+**Description:** Same puprose as `ib-any-integration`, just different script is called.<br>
+This job waits until the build has been deployed into cvmfs (cms-ci.cern.ch repository).<br>
+If the job fails, it could be because of a failure in the previous job (cvmfs-install-pr) that produces and uploads the build. Therefore, the current job will time out.<br>
+The way to proceed in case of failure is to look for the PR number present in the build name and trace back what has happened. It could be that the PR test were stuck and the build was never produced or uploaded.
 
 
 
