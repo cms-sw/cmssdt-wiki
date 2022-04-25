@@ -441,7 +441,7 @@ H/3 * * * *
 
 ## [ib-monitor-crab](https://cmssdt.cern.ch/jenkins/job/ib-monitor-crab)
 
-**Description:** Runs CRAB jobs on IB.
+**Description:** Monitors CRAB job status.
 
 **Project is `enabled`.**
 
