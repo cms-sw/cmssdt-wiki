@@ -2910,6 +2910,7 @@ Not periodically build
 **Project is `enabled`.**
 
 **Upstream projects:**
+* [ib-run-crab](#ib-run-crab):
 
 **Downstream projects:**
 
@@ -3102,6 +3103,7 @@ Not periodically build
 **Upstream projects:**
 
 **Downstream projects:**
+* [ib-monitor-crab](#ib-monitor-crab):
 
 **Sub-projects:**
 
