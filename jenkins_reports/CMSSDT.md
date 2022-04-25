@@ -439,6 +439,28 @@ H/3 * * * *
 
 ---
 
+## [ib-monitor-crab](https://cmssdt.cern.ch/jenkins/job/ib-monitor-crab)
+
+**Description:** Runs CRAB jobs on IB.
+
+**Project is `enabled`.**
+
+**Upstream projects:**
+
+**Downstream projects:**
+
+**Sub-projects:**
+
+**Triggers from:** []
+
+
+**Periodic builds:**
+```bash
+Not periodically build
+```
+
+---
+
 ## [ib-run-baseline](https://cmssdt.cern.ch/jenkins/job/ib-run-baseline)
 
 **Description:** This job generates the IB baseline. It is two phase job<br/>

@@ -2903,6 +2903,28 @@ Not periodically build
 
 ---
 
+## [ib-monitor-crab](https://cmssdt.cern.ch/jenkins/job/ib-monitor-crab)
+
+**Description:** Runs CRAB jobs on IB.
+
+**Project is `enabled`.**
+
+**Upstream projects:**
+
+**Downstream projects:**
+
+**Sub-projects:**
+
+**Triggers from:** []
+
+
+**Periodic builds:**
+```bash
+Not periodically build
+```
+
+---
+
 ## [ib-run-additional-tests](https://cmssdt.cern.ch/jenkins/job/ib-run-additional-tests)
 
 **Description:** None
@@ -4239,6 +4261,28 @@ Not periodically build
 
 **Upstream projects:**
 * [jenkins-initialize](#jenkins-initialize):
+
+**Downstream projects:**
+
+**Sub-projects:**
+
+**Triggers from:** []
+
+
+**Periodic builds:**
+```bash
+Not periodically build
+```
+
+---
+
+## [jenkins-job-frequency](https://cmssdt.cern.ch/jenkins/job/jenkins-job-frequency)
+
+**Description:** None
+
+**Project is `enabled`.**
+
+**Upstream projects:**
 
 **Downstream projects:**
 
