@@ -6052,7 +6052,7 @@ Not periodically build
 
 **Description:** This is a trial to delete builds once they have been automatically retried by Naginator.
 
-**Project is `disabled`.**
+**Project is `enabled`.**
 
 **Upstream projects:**
 * [test-jenkins-parser](#test-jenkins-parser):

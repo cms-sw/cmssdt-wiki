@@ -886,6 +886,29 @@ Not periodically build
 
 ---
 
+## [test-delete-build](https://cmssdt.cern.ch/jenkins/job/test-delete-build)
+
+**Description:** This is a trial to delete builds once they have been automatically retried by Naginator.
+
+**Project is `enabled`.**
+
+**Upstream projects:**
+* [test-jenkins-parser](#test-jenkins-parser):
+
+**Downstream projects:**
+
+**Sub-projects:**
+
+**Triggers from:** []
+
+
+**Periodic builds:**
+```bash
+Not periodically build
+```
+
+---
+
 ## [test-new-cvmfs-publisher](https://cmssdt.cern.ch/jenkins/job/test-new-cvmfs-publisher)
 
 **Description:** None
