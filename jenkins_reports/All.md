@@ -2562,12 +2562,10 @@ Not periodically build
 **Upstream projects:**
 
 **Downstream projects:**
-* [grid-keep-node-busy](#grid-keep-node-busy):
 * [grid-webhook](#grid-webhook):
 
 **Sub-projects:**
 * [grid-webhook](#grid-webhook):
-* [grid-keep-node-busy](#grid-keep-node-busy):
 
 **Triggers from:** []
 
@@ -2631,7 +2629,6 @@ Not periodically build
 **Project is `disabled`.**
 
 **Upstream projects:**
-* [grid-check-nodes](#grid-check-nodes):
 
 **Downstream projects:**
 
