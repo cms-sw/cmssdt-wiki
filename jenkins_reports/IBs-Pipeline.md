@@ -508,7 +508,10 @@ Not periodically build
 ## [ib-run-qa](https://cmssdt.cern.ch/jenkins/job/ib-run-qa)
 
 **Description:** Runs Quality Assurance (QA) test on IB. Rezulst are available at 
-<a href="https://cmssdt.cern.ch/SDT/html/cmssdt-ib/">IB page's</a> Q/A section.
+<a href="https://cmssdt.cern.ch/SDT/html/cmssdt-ib/">IB page's</a> Q/A section.<br>
+
+Sometimes it can hang during scp copy / ssh. This failure can be found by looking for a gap of several hours in the log file during scp / ssh.<br>
+If the job runs for more than several hours, the procedure is to login to build node, check which job is hanging and take the appropiate action, if necessary.
 
 **Project is `enabled`.**
 
@@ -1015,7 +1018,10 @@ Not periodically build
 ## [ib-run-qa](https://cmssdt.cern.ch/jenkins/job/ib-run-qa)
 
 **Description:** Runs Quality Assurance (QA) test on IB. Rezulst are available at 
-<a href="https://cmssdt.cern.ch/SDT/html/cmssdt-ib/">IB page's</a> Q/A section.
+<a href="https://cmssdt.cern.ch/SDT/html/cmssdt-ib/">IB page's</a> Q/A section.<br>
+
+Sometimes it can hang during scp copy / ssh. This failure can be found by looking for a gap of several hours in the log file during scp / ssh.<br>
+If the job runs for more than several hours, the procedure is to login to build node, check which job is hanging and take the appropiate action, if necessary.
 
 **Project is `enabled`.**
 
