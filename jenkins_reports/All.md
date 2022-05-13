@@ -524,7 +524,7 @@ Not periodically build
 
 ## [clean-docker-machine](https://cmssdt.cern.ch/jenkins/job/clean-docker-machine)
 
-**Description:** This job cleans the machines used to build container images (e.g., the ones used for running the build-docker-container job).
+**Description:** This job prevents running out of disk in the machines used to build container images (e.g., the ones used for running the build-docker-container job).
 
 **Project is `enabled`.**
 
