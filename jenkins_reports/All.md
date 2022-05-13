@@ -234,8 +234,7 @@ Not periodically build
 
 **Description:** This job builds container images and uploads them to dockerhub.<br/>
 Since the container images are left on the machine, this job can fail due to disk full.<br/>
-There is a separate jenkins job (clean-docker-machine) cleaning the images left on the device that runs once a week.<br/>
-In any case, one can always log into the machine and run the docker cleanup as follows:<br/>
+There is a separate jenkins job (clean-docker-machine) cleaning the images left on the device that runs once a week. In any case, one can always log into the machine and run the docker cleanup as follows:<br/>
 <br/>
 $ docker image prune<br/>
 $ docker system prune --volumes<br/>
