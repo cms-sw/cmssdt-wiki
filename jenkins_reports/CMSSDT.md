@@ -108,6 +108,28 @@ Not periodically build
 
 ---
 
+## [clean-docker-machine](https://cmssdt.cern.ch/jenkins/job/clean-docker-machine)
+
+**Description:** None
+
+**Project is `enabled`.**
+
+**Upstream projects:**
+
+**Downstream projects:**
+
+**Sub-projects:**
+
+**Triggers from:** []
+
+
+**Periodic builds:**
+```bash
+Not periodically build
+```
+
+---
+
 ## [cleanup-cmsrep](https://cmssdt.cern.ch/jenkins/job/cleanup-cmsrep)
 
 **Description:** This cleans up old cms.weekN.PR_* repositories from cmsrep.cern.ch server.
