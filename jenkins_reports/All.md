@@ -232,7 +232,16 @@ Not periodically build
 
 ## [build-docker-container](https://cmssdt.cern.ch/jenkins/job/build-docker-container)
 
-**Description:** None
+**Description:** This job builds container images and uploads them to dockerhub.<br/>
+Since the container images are left on the machine, this job can fail due to disk full.<br/>
+There is a separate jenkins job cleaning the images left on the device that runs once a week.<br/>
+In any case, one can always log into the machine and run the docker cleanup as follows:<br/>
+<br/>
+$ docker image prune<br/>
+$ docker system prune --volumes<br/>
+<br/>
+If the ./singularity folder is big enough ($ du -hs /build/cmsbld/jenkins/workspace/.singularity), it can be also removed.
+
 
 **Project is `enabled`.**
 
