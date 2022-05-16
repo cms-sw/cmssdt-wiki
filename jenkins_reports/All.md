@@ -6060,32 +6060,8 @@ Not periodically build
 **Project is `enabled`.**
 
 **Upstream projects:**
-* [test-jenkins-parser](#test-jenkins-parser):
 
 **Downstream projects:**
-
-**Sub-projects:**
-
-**Triggers from:** []
-
-
-**Periodic builds:**
-```bash
-Not periodically build
-```
-
----
-
-## [test-jenkins-parser](https://cmssdt.cern.ch/jenkins/job/test-jenkins-parser)
-
-**Description:** This is a trial to parse Jenkins Console Output and take actions depending on the parsed information.
-
-**Project is `disabled`.**
-
-**Upstream projects:**
-
-**Downstream projects:**
-* [test-delete-build](#test-delete-build):
 
 **Sub-projects:**
 

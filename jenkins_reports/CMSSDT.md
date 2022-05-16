@@ -890,7 +890,6 @@ Not periodically build
 **Project is `enabled`.**
 
 **Upstream projects:**
-* [test-jenkins-parser](#test-jenkins-parser):
 
 **Downstream projects:**
 
