@@ -701,7 +701,7 @@ Not periodically build
 
 ## [jenkins-test-retry](https://cmssdt.cern.ch/jenkins/job/jenkins-test-retry)
 
-**Description:** This is a trial to delete builds once they have been automatically retried by Naginator.
+**Description:** This is a trial to trigger automatic retries of builds with known failures
 
 **Project is `enabled`.**
 
