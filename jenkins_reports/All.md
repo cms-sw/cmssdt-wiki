@@ -4872,6 +4872,28 @@ Not periodically build
 
 ---
 
+## [jenkins-test-retry](https://cmssdt.cern.ch/jenkins/job/jenkins-test-retry)
+
+**Description:** This is a trial to delete builds once they have been automatically retried by Naginator.
+
+**Project is `enabled`.**
+
+**Upstream projects:**
+
+**Downstream projects:**
+
+**Sub-projects:**
+
+**Triggers from:** []
+
+
+**Periodic builds:**
+```bash
+Not periodically build
+```
+
+---
+
 ## [jenkins-test-rpm417-scalibility](https://cmssdt.cern.ch/jenkins/job/jenkins-test-rpm417-scalibility)
 
 **Description:** None
@@ -6038,28 +6060,6 @@ Not periodically build
 
 **Upstream projects:**
 * [build-docker-container](#build-docker-container):
-
-**Downstream projects:**
-
-**Sub-projects:**
-
-**Triggers from:** []
-
-
-**Periodic builds:**
-```bash
-Not periodically build
-```
-
----
-
-## [test-delete-build](https://cmssdt.cern.ch/jenkins/job/test-delete-build)
-
-**Description:** This is a trial to delete builds once they have been automatically retried by Naginator.
-
-**Project is `enabled`.**
-
-**Upstream projects:**
 
 **Downstream projects:**
 
