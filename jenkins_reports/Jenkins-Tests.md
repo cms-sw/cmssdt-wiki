@@ -444,7 +444,7 @@ Not periodically build
 
 ## [jenkins-test-dummyjob](https://cmssdt.cern.ch/jenkins/job/jenkins-test-dummyjob)
 
-**Description:** This is a trial to trigger automatic retries of builds with known failures
+**Description:** Dummy job for testing purposes (@avalenzu)
 
 **Project is `enabled`.**
 
