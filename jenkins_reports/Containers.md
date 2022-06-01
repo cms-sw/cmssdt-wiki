@@ -11,13 +11,18 @@
 ## [build-docker-container](https://cmssdt.cern.ch/jenkins/job/build-docker-container)
 
 **Description:** This job builds container images and uploads them to dockerhub.<br/>
+<br/>
 Since the container images are left on the machine, this job can fail due to disk full.<br/>
 There is a separate jenkins job (clean-docker-machine) cleaning the images left on the device that runs once a week. In any case, one can always log into the machine and run the docker cleanup as follows:<br/>
 <br/>
 $ docker image prune<br/>
 $ docker system prune --volumes<br/>
 <br/>
-If the ./singularity folder is big enough ($ du -hs /build/cmsbld/jenkins/workspace/.singularity), it can be also removed.
+If the ./singularity folder is big enough ($ du -hs /build/cmsbld/jenkins/workspace/.singularity), it can be also removed.<br/>
+<br/>
+All containers are built when either their base image is updated or if changes were made to dockerfile. Failures may also arise from the changes in the base image. In this case, the best approach is to log into the machine, reproduce the issue
+and try to adapt the Dokerfile accordingly (e.g., changing dependencies, ordering, etc).
+
 
 
 **Project is `enabled`.**
