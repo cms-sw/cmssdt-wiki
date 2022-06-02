@@ -701,7 +701,9 @@ Not periodically build
 
 ## [jenkins-test-retry](https://cmssdt.cern.ch/jenkins/job/jenkins-test-retry)
 
-**Description:** This is a trial to trigger automatic retries of builds with known failures
+**Description:** This job retries a build given the job name and the build number to retry. It copies the build parameters from the given build and adds a retry counter as an environmental variable to keep track of the number of retries. <br>
+<br>
+This job is automatically triggered by the job "jenkins-test-parser" when a build fails due to a known issue and a retry action is needed.
 
 **Project is `enabled`.**
 
