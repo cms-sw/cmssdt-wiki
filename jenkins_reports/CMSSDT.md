@@ -1632,7 +1632,7 @@ Not periodically build
 ## [check-docker](https://cmssdt.cern.ch/jenkins/job/check-docker)
 
 **Description:** Connects to the slave and checks if docker service is useable.<br/>
-Job can fail for two reasons<br/>
+Job can fail for two reasons:<br/>
 1. user is not in docker group<br/>
 2. docker service is not running on the machine<br/><br/>
 
