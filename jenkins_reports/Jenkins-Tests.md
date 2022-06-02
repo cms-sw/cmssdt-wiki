@@ -1153,6 +1153,7 @@ Not periodically build
 **Downstream projects:**
 
 **Sub-projects:**
+* [${JOB_TO_RETRY}](#${JOB_TO_RETRY}):
 
 **Triggers from:** []
 
