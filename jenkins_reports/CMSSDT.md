@@ -305,7 +305,6 @@ Not periodically build
 
 **Upstream projects:**
 * [ib-run-baseline](#ib-run-baseline):
-* [ib-run-baseline-old](#ib-run-baseline-old):
 * [ib-run-pr-baseline](#ib-run-pr-baseline):
 
 **Downstream projects:**
