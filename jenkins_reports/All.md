@@ -1051,6 +1051,28 @@ Not periodically build
 
 ---
 
+## [cms-spack-install-cvmfs](https://cmssdt.cern.ch/jenkins/job/cms-spack-install-cvmfs)
+
+**Description:** None
+
+**Project is `enabled`.**
+
+**Upstream projects:**
+
+**Downstream projects:**
+
+**Sub-projects:**
+
+**Triggers from:** []
+
+
+**Periodic builds:**
+```bash
+Not periodically build
+```
+
+---
+
 ## [cms-tag-container](https://cmssdt.cern.ch/jenkins/job/cms-tag-container)
 
 **Description:** None
