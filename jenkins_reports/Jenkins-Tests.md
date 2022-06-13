@@ -665,7 +665,7 @@ If the parser founds a failure of such type, it triggers the Jenkins job "test-j
 
 **Periodic builds:**
 ```bash
-*/1 * * * *
+H * * * *
 ```
 
 ---
