@@ -376,7 +376,7 @@ Not periodically build
 
 ---
 
-## [cvmfs-install-pip-package](https://cmssdt.cern.ch/jenkins/job/cvmfs-install-pip-package)
+## [cvmfs-install-shared-pip-package](https://cmssdt.cern.ch/jenkins/job/cvmfs-install-shared-pip-package)
 
 **Description:** None
 

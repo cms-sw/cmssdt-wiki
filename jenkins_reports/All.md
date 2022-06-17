@@ -1959,13 +1959,14 @@ H 19  * *  2
 
 ---
 
-## [cvmfs-install-pip-package](https://cmssdt.cern.ch/jenkins/job/cvmfs-install-pip-package)
+## [cvmfs-install-pr](https://cmssdt.cern.ch/jenkins/job/cvmfs-install-pr)
 
-**Description:** None
+**Description:** To install PR externals
 
 **Project is `enabled`.**
 
 **Upstream projects:**
+* [cmsrep-webhook](#cmsrep-webhook):
 
 **Downstream projects:**
 
@@ -1981,14 +1982,13 @@ Not periodically build
 
 ---
 
-## [cvmfs-install-pr](https://cmssdt.cern.ch/jenkins/job/cvmfs-install-pr)
+## [cvmfs-install-shared-pip-package](https://cmssdt.cern.ch/jenkins/job/cvmfs-install-shared-pip-package)
 
-**Description:** To install PR externals
+**Description:** None
 
 **Project is `enabled`.**
 
 **Upstream projects:**
-* [cmsrep-webhook](#cmsrep-webhook):
 
 **Downstream projects:**
 
