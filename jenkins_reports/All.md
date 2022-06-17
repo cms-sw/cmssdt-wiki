@@ -4845,7 +4845,7 @@ The purpose of this job is to reduce manual retries of builds that fail due to a
 If the parser founds a failure of such type, it triggers the Jenkins job "test-jenkins-retry" that takes care of retying the failed build with the appropriate parameters, and marks it as "Retried", so anybody looking at the jobs can see that an action has been taken.<br>
 <br>
 
-**Project is `disabled`.**
+**Project is `enabled`.**
 
 **Upstream projects:**
 
