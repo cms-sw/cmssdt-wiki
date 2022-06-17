@@ -376,6 +376,28 @@ Not periodically build
 
 ---
 
+## [cvmfs-install-pip-package](https://cmssdt.cern.ch/jenkins/job/cvmfs-install-pip-package)
+
+**Description:** None
+
+**Project is `enabled`.**
+
+**Upstream projects:**
+
+**Downstream projects:**
+
+**Sub-projects:**
+
+**Triggers from:** []
+
+
+**Periodic builds:**
+```bash
+Not periodically build
+```
+
+---
+
 ## [cvmfs-cms-install-cms](https://cmssdt.cern.ch/jenkins/job/cvmfs-cms-install-cms)
 
 **Description:** Job to install (test) releases (and IBs) once the upload is completed.

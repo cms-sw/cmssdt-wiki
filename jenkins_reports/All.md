@@ -1959,6 +1959,28 @@ H 19  * *  2
 
 ---
 
+## [cvmfs-install-pip-package](https://cmssdt.cern.ch/jenkins/job/cvmfs-install-pip-package)
+
+**Description:** None
+
+**Project is `enabled`.**
+
+**Upstream projects:**
+
+**Downstream projects:**
+
+**Sub-projects:**
+
+**Triggers from:** []
+
+
+**Periodic builds:**
+```bash
+Not periodically build
+```
+
+---
+
 ## [cvmfs-install-pr](https://cmssdt.cern.ch/jenkins/job/cvmfs-install-pr)
 
 **Description:** To install PR externals
