@@ -2848,12 +2848,13 @@ Not periodically build
 
 ## [grid-webhook](https://cmssdt.cern.ch/jenkins/job/grid-webhook)
 
-**Description:** This job is triggered by HTCondor pilot jobs. When we submit a request to get a HTCondor node then first pilot start runs and trigger this job at various stages with different "STATUS"<br/>
+**Description:** This job is triggered by HTCondor pilot jobs. When we submit a request to get a HTCondor node then first pilot runs and triggers this job at various stages with different "STATUS"<br/>
 
 - STATUS=online<br/>
   - When pilot script first runs on the HTCondor node then it sends an "online" event along with CONDOR_JOB_ID. In this case, this job tried to add the new HTCondor node as jenkins agent. 
 In case a job with "online" status fails:<br/>
-1. First check if the new HTCondor node has been successfully added as a Jenkins agent (https://cmssdt.cern.ch/jenkins/computer/). It can happen that the agent is created, but the connection failed. In this case, just re-starting
+1. First check if the new HTCondor node has been successfully added as a Jenkins agent (https://cmssdt.cern.ch/jenkins/computer/). It can happen that the agent is created, 
+but the connection failed. In this case, just re-starting
 the agent should work.<br/>
 2. If the node has not been successfully added, then please first run https://cmssdt.cern.ch/jenkins/job/grid-check-jobs/ job and see if HTCondor job with 
 CONDOR_JOB_ID is still running. For example look for messages like:<br/>
