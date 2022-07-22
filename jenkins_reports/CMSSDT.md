@@ -1727,11 +1727,8 @@ Not periodically build
 
 ## [check-node-status](https://cmssdt.cern.ch/jenkins/job/check-node-status)
 
-**Description:** This job parses the log file of the jobs present in "path/to/cms-bot/jobs-info.json" searching for failures due common error messages defined in "path/to/cms-bot/error-msg.json".<br>
-The purpose of this job is to reduce manual retries of builds that fail due to already know issues (e.g., disconnection, time out, etc). <br>
-<br>
-If the parser founds a failure of such type, it triggers the Jenkins job "test-jenkins-retry" that takes care of retying the failed build with the appropriate parameters, and marks it as "Retried", so anybody looking at the jobs can see that an action has been taken.<br>
-<br>
+**Description:** This job checks the status of the Jenkins nodes every day to verify that none of them has been manually disconnected and not bring back online.<br>
+
 
 **Project is `enabled`.**
 
@@ -1746,7 +1743,7 @@ If the parser founds a failure of such type, it triggers the Jenkins job "test-j
 
 **Periodic builds:**
 ```bash
-H * * * *
+H 16 * * *
 ```
 
 ---
