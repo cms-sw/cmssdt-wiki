@@ -478,6 +478,32 @@ Not periodically build
 
 ---
 
+## [check-node-status](https://cmssdt.cern.ch/jenkins/job/check-node-status)
+
+**Description:** This job parses the log file of the jobs present in "path/to/cms-bot/jobs-info.json" searching for failures due common error messages defined in "path/to/cms-bot/error-msg.json".<br>
+The purpose of this job is to reduce manual retries of builds that fail due to already know issues (e.g., disconnection, time out, etc). <br>
+<br>
+If the parser founds a failure of such type, it triggers the Jenkins job "test-jenkins-retry" that takes care of retying the failed build with the appropriate parameters, and marks it as "Retried", so anybody looking at the jobs can see that an action has been taken.<br>
+<br>
+
+**Project is `enabled`.**
+
+**Upstream projects:**
+
+**Downstream projects:**
+
+**Sub-projects:**
+
+**Triggers from:** []
+
+
+**Periodic builds:**
+```bash
+H * * * *
+```
+
+---
+
 ## [check-unused-cmsdist-packages](https://cmssdt.cern.ch/jenkins/job/check-unused-cmsdist-packages)
 
 **Description:** Check for unused cmsdist files so that one can do the cleanup
