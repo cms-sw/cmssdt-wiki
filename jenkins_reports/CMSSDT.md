@@ -108,28 +108,6 @@ Not periodically build
 
 ---
 
-## [clean-docker-machine](https://cmssdt.cern.ch/jenkins/job/clean-docker-machine)
-
-**Description:** This job prevents running out of disk in the machines used to build container images (e.g., the ones used for running the build-docker-container job).
-
-**Project is `enabled`.**
-
-**Upstream projects:**
-
-**Downstream projects:**
-
-**Sub-projects:**
-
-**Triggers from:** []
-
-
-**Periodic builds:**
-```bash
-H 9 * * 1
-```
-
----
-
 ## [cleanup-cmsrep](https://cmssdt.cern.ch/jenkins/job/cleanup-cmsrep)
 
 **Description:** This cleans up old cms.weekN.PR_* repositories from cmsrep.cern.ch server.
@@ -1749,6 +1727,28 @@ Not periodically build
 **Periodic builds:**
 ```bash
 H 16 * * *
+```
+
+---
+
+## [clean-build-docker-container](https://cmssdt.cern.ch/jenkins/job/clean-build-docker-container)
+
+**Description:** This job prevents running out of disk in the machines used to build container images (e.g., the ones used for running the build-docker-container job).
+
+**Project is `enabled`.**
+
+**Upstream projects:**
+
+**Downstream projects:**
+
+**Sub-projects:**
+
+**Triggers from:** []
+
+
+**Periodic builds:**
+```bash
+H 9 * * 1
 ```
 
 ---

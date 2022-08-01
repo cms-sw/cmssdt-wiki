@@ -556,9 +556,9 @@ Not periodically build
 
 ---
 
-## [clean-check-docker](https://cmssdt.cern.ch/jenkins/job/clean-check-docker)
+## [clean-build-docker-container](https://cmssdt.cern.ch/jenkins/job/clean-build-docker-container)
 
-**Description:** This job cleans the indicated machine when docker daemon reports errors of the type "no space left on device" in job check-docker.
+**Description:** This job prevents running out of disk in the machines used to build container images (e.g., the ones used for running the build-docker-container job).
 
 **Project is `enabled`.**
 
@@ -578,9 +578,9 @@ H 9 * * 1
 
 ---
 
-## [clean-docker-machine](https://cmssdt.cern.ch/jenkins/job/clean-docker-machine)
+## [clean-check-docker](https://cmssdt.cern.ch/jenkins/job/clean-check-docker)
 
-**Description:** This job prevents running out of disk in the machines used to build container images (e.g., the ones used for running the build-docker-container job).
+**Description:** This job cleans the indicated machine when docker daemon reports errors of the type "no space left on device" in job check-docker.
 
 **Project is `enabled`.**
 
