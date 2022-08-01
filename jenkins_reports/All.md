@@ -556,6 +556,28 @@ Not periodically build
 
 ---
 
+## [clean-check-docker](https://cmssdt.cern.ch/jenkins/job/clean-check-docker)
+
+**Description:** This job prevents running out of disk in the machines used to build container images (e.g., the ones used for running the build-docker-container job).
+
+**Project is `enabled`.**
+
+**Upstream projects:**
+
+**Downstream projects:**
+
+**Sub-projects:**
+
+**Triggers from:** []
+
+
+**Periodic builds:**
+```bash
+H 9 * * 1
+```
+
+---
+
 ## [clean-docker-machine](https://cmssdt.cern.ch/jenkins/job/clean-docker-machine)
 
 **Description:** This job prevents running out of disk in the machines used to build container images (e.g., the ones used for running the build-docker-container job).
