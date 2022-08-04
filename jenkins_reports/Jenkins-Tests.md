@@ -661,7 +661,7 @@ The parser jobs takes two main actions that are defined in "errormsg-action.json
  </ul>  
 Finally, it also monitors the running time of the builds and sends an email if a build is pending, so that anybody can take the appropiate action.
 
-**Project is `enabled`.**
+**Project is `disabled`.**
 
 **Upstream projects:**
 
