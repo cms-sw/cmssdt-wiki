@@ -433,11 +433,14 @@ H H/4 * * *
 ## [check-docker](https://cmssdt.cern.ch/jenkins/job/check-docker)
 
 **Description:** This job connects to the slave and checks if docker service is useable.<br/>
-Job can fail for two reasons:<br/>
+Job can fail for three reasons:<br/>
 1. user is not in docker group<br/>
-2. docker service is not running on the machine<br/><br/>
+2. docker service is not running on the machine<br/>
+3. docker daemon reports that there isn't space in the machine ("no space left on device").<br/>
 
 If machine is in our control, we should take the appropriate action (e.g. login into the machine and manually run the ssh command), but if machine is in CERN IT control (e.g OpenLab machines), we should open a SNOW ticket.
+<br>
+In case of no space on the device, one can manually run the job clean-check-docker indicating the name of the machine as an input parameter.
 
 **Project is `enabled`.**
 
@@ -600,7 +603,7 @@ It is necessay to indicate the machine name as an input parameter.
 
 **Periodic builds:**
 ```bash
-H 9 * * 1
+Not periodically build
 ```
 
 ---
