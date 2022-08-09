@@ -1761,6 +1761,8 @@ H 9 * * 1
 ## [clean-check-docker](https://cmssdt.cern.ch/jenkins/job/clean-check-docker)
 
 **Description:** This job cleans the indicated machine when docker daemon reports errors of the type "no space left on device" in job check-docker.
+<br>
+It is necessay to indicate the machine name as an input parameter.
 
 **Project is `enabled`.**
 
