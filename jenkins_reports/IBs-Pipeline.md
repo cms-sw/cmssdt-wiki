@@ -81,7 +81,7 @@ Not periodically build
 
 ## [build-any-ib](https://cmssdt.cern.ch/jenkins/job/build-any-ib)
 
-**Description:** This jobs starts an Integration Build(IB). Base on state of <a href="https://github.com/cms-sw/cmsdist">CMSDIST</a>/<a href="https://github.com/cms-sw/cmssw">CMSSW</a> git repositories, it builds either a full release or patch release.
+**Description:** This jobs starts an Integration Build (IB). Base on state of <a href="https://github.com/cms-sw/cmsdist">CMSDIST</a>/<a href="https://github.com/cms-sw/cmssw">CMSSW</a> git repositories, it builds either a full release or patch release.
 <br>Build Full IB if:
 
 <ul>
@@ -118,7 +118,7 @@ Otherwise build a patch release.
     <b>Q:</b> What to do if it fails?
   </li>
   <li>
-    <b>A:</b> If it fails due to network/github issues then just re-try it but if it fails to build then we need to understand the build issues before retry.
+    <b>A:</b> If it fails due to network/github issues then just re-try it, but if it fails to build then we need to understand the build issues before retry.
   </li>
 </ul>
 
