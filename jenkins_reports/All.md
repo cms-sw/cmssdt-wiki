@@ -13,7 +13,7 @@
 **Description:** Kill a running job (by default it is 'ib-run-pr-tests and jobs started by it'). 
 
 The idea is that if pull request was updated, all the test should be restarted. This job will kill all the running jobs for that
-PR (with matching parameters). It will ignore given job ID - the ID of upstream job that started this job.
+PR (with matching parameters). It will ignore the given job ID - the ID of upstream job that started this job.
 
 **Project is `enabled`.**
 
@@ -4924,7 +4924,7 @@ The parser jobs takes three main actions that are defined in "errormsg-action.js
 <ul>
   <li>Retry: If the parser founds a failure of such type, it triggers the Jenkins job "test-jenkins-retry" that takes care of retying the failed build with the appropriate parameters, and marks it as "Retried", so that anybody looking at the jobs can see that an action has been taken.
   <li>Node off: If the parser found an error reporting a bad status of a node, it brings the node off and sends an email, so that anybody receives this notification to take the appropiate action.<br>
-  <li>Reconnect node:
+  <li>Reconnect node: If the parser found the errors related to the workspace, it disconnects and force connect the node and retries the failed build.
   </ul>  
 Finally, it also monitors the running time of the builds and sends an email if a build is pending, so that anybody can take the appropiate action.
 
