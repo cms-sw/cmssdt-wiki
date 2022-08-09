@@ -901,7 +901,7 @@ Not periodically build
 
 ## [cleanup-cvmfs-ci](https://cmssdt.cern.ch/jenkins/job/cleanup-cvmfs-ci)
 
-**Description:** This cleans up old cms.weekN.PR_* repositories from cmsrep.cern.ch server.
+**Description:** This job cleans up old cms.weekN.PR_* repositories from cmsrep.cern.ch server.
 
 **Project is `enabled`.**
 

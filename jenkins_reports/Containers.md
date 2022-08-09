@@ -79,7 +79,7 @@ Not periodically build
 
 ## [cleanup-docker-tags](https://cmssdt.cern.ch/jenkins/job/cleanup-docker-tags)
 
-**Description:** Removes outdated tags from docker repository.
+**Description:** This job removes outdated tags from docker repository.
 
 **Project is `enabled`.**
 

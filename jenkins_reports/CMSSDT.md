@@ -136,7 +136,7 @@ Not periodically build
 
 ## [cleanup-cvmfs-ci](https://cmssdt.cern.ch/jenkins/job/cleanup-cvmfs-ci)
 
-**Description:** This cleans up old cms.weekN.PR_* repositories from cmsrep.cern.ch server.
+**Description:** This job cleans up old cms.weekN.PR_* repositories from cmsrep.cern.ch server.
 
 **Project is `enabled`.**
 
@@ -1835,7 +1835,7 @@ H 1 * * 0
 
 ## [cleanup-cmssdt](https://cmssdt.cern.ch/jenkins/job/cleanup-cmssdt)
 
-**Description:** Clean up disk space on cmssdt
+**Description:** This job cleans up disk space on cmssdt.
 
 **Project is `enabled`.**
 
@@ -1857,7 +1857,7 @@ H 0 * * *
 
 ## [cleanup-docker-tags](https://cmssdt.cern.ch/jenkins/job/cleanup-docker-tags)
 
-**Description:** Removes outdated tags from docker repository.
+**Description:** This job removes outdated tags from docker repository.
 
 **Project is `enabled`.**
 
