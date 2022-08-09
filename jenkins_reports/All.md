@@ -4913,18 +4913,19 @@ Not periodically build
 ## [jenkins-test-parser](https://cmssdt.cern.ch/jenkins/job/jenkins-test-parser)
 
 **Description:** This job parses the log file of the jobs present in file "jobs-info.json" searching for failures due common error messages defined in "errormsg-action.json". Note that both files are stored in the workspace of the job itself.<br>
-The purpose of this job is to reduce manual retries of builds that fail due to already know issues (e.g., disconnection, time out, etc), bring nodes off if their are not in good state and report pending builds.<br>
+The purpose of this job is to reduce manual retries of builds that fail due to already know issues (e.g., disconnection, time out, etc), bring nodes off and force reconnecting nodes if their are not in good state and report pending builds.<br>
 <br>
 If you want to add a new error string to the list of known errors, you need to modify "errormsg-action.json". <br> Please note that error strings are grouped by category and that each category has its corresponding action. Therefore, you can either create a new category or update the list of error strings of an existing category.
 <br>
 If you want to add a new job to the list of jobs to be monitored, you need to modify "jobs-info.json". <br> Please follow the existing format of the file and indicate the name of the job, the error categories that you want to monitor and the maximum time that there build should be running.<br>
 In addition, you need to modify "last-parsed-log.json" (also stored in the workspace) to indicate the first build number that the parser should consider. <br>
 <br>
-The parser jobs takes two main actions that are defined in "errormsg-action.json" depending on the error message:
+The parser jobs takes three main actions that are defined in "errormsg-action.json" depending on the error message:
 <ul>
   <li>Retry: If the parser founds a failure of such type, it triggers the Jenkins job "test-jenkins-retry" that takes care of retying the failed build with the appropriate parameters, and marks it as "Retried", so that anybody looking at the jobs can see that an action has been taken.
   <li>Node off: If the parser found an error reporting a bad status of a node, it brings the node off and sends an email, so that anybody receives this notification to take the appropiate action.<br>
- </ul>  
+  <li>Reconnect node:
+  </ul>  
 Finally, it also monitors the running time of the builds and sends an email if a build is pending, so that anybody can take the appropiate action.
 
 **Project is `enabled`.**
