@@ -17,7 +17,7 @@ Failures may arise from the changes in the base image. In this case, the best ap
 and try to adapt the Dokerfile accordingly (e.g., changing dependencies, ordering, etc).<br/>
 <br/>
 Since the built container images are left on the machine, this job can also fail due to disk full.<br/>
-There is a separate jenkins job (clean-docker-machine) cleaning the images left on the device that runs once a week. In any case, one can always log into the machine and run the docker cleanup as follows:<br/>
+There is a separate jenkins job (clean-build-docker-machine) cleaning the images left on the device that runs once a week. In any case, one can always log into the machine and run the docker cleanup as follows:<br/>
 <br/>
 $ docker image prune<br/>
 $ docker system prune --volumes<br/>

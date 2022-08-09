@@ -239,7 +239,7 @@ Failures may arise from the changes in the base image. In this case, the best ap
 and try to adapt the Dokerfile accordingly (e.g., changing dependencies, ordering, etc).<br/>
 <br/>
 Since the built container images are left on the machine, this job can also fail due to disk full.<br/>
-There is a separate jenkins job (clean-docker-machine) cleaning the images left on the device that runs once a week. In any case, one can always log into the machine and run the docker cleanup as follows:<br/>
+There is a separate jenkins job (clean-build-docker-machine) cleaning the images left on the device that runs once a week. In any case, one can always log into the machine and run the docker cleanup as follows:<br/>
 <br/>
 $ docker image prune<br/>
 $ docker system prune --volumes<br/>
@@ -276,7 +276,7 @@ Not periodically build
 
 ## [build-fwlite](https://cmssdt.cern.ch/jenkins/job/build-fwlite)
 
-**Description:** TO build a CMSSW_X_Y_Z_FWLITE release based on an existing CMSSW_X_Y_Z release. CMSSW_X_Y_Z should already be build/uploaded before building its FWLITE version.
+**Description:** This job builds a CMSSW_X_Y_Z_FWLITE release based on an existing CMSSW_X_Y_Z release. CMSSW_X_Y_Z should be already build/uploaded before building its FWLITE version.
 
 **Project is `enabled`.**
 
@@ -299,7 +299,7 @@ Not periodically build
 
 ## [build-fwlite-ib](https://cmssdt.cern.ch/jenkins/job/build-fwlite-ib)
 
-**Description:** This job is responsible for building FWLITE release for each Integration build(IB). 
+**Description:** This job is responsible for building FWLITE release for each Integration Build (IB). 
 Results of this build can be seen via <a href="https://cmssdt.cern.ch/SDT/">CMSSDT</a> 
 <a href="https://cmssdt.cern.ch/SDT/html/cmssdt-ib">IB page</a> 
 <a href="https://cmssdt.cern.ch/SDT/html/showIB.html">(old page)</a>.
@@ -328,12 +328,12 @@ Not periodically build
 ## [build-release](https://cmssdt.cern.ch/jenkins/job/build-release)
 
 **Description:** This job actually builds a release.
-It is triggered by cms-bot after the <a href="https://github.com/cms-sw/cmssw/issues?q=label%3Arelease-notes-requested">Release build Issue</a> is approved by release manager.
+It is triggered by cms-bot after the <a href="https://github.com/cms-sw/cmssw/issues?q=label%3Arelease-notes-requested">Release build Issue</a> is approved by the release manager.
 <br/>
 <ul>
   <li> In case the job fails:<br/>
 Depending on the type of failure, most of the time re-try works. In some cases (specially for aarch64 builds), it fails due to disk quota issues 
-as one of the aarch64 machine does not have enought disk. In that case one needs to login to aarch64 machine and cleanup old/unused stuff and then re-try this job.
+as one of the aarch64 machine does not have enought disk. In that case, one needs to login to the corresponding aarch64 machine and cleanup old/unused stuff and then re-try this job.
   <li> In case there is a build error in a release:<br/>
 It can happen that the job succeed, but there have been build errors that the bot reports in the corresponding issue.
     In this case, the <it>Rebuild</it> button can be used to re-trigger the build. The bot will automatically remove the build-error labels and inform that a new build has been started.
@@ -360,8 +360,8 @@ Not periodically build
 
 ## [check-cms-container-certificates](https://cmssdt.cern.ch/jenkins/job/check-cms-container-certificates)
 
-**Description:** This job checks for HOST certificate in cmssw/cms:rhelX images and fail if host certificate is going to expire in less than CERT_EXPIRY_DAYS days.<br/>
-In such case we need to check if there is already updated osg-ca-certs package available and rebuild the contains
+**Description:** This job checks for HOST certificate in cmssw/cms:rhelX images, and fail if host certificate is going to expire in less than CERT_EXPIRY_DAYS days.<br/>
+In such case, we need to check if there is already an updated osg-ca-certs package available and rebuild the container.
 
 **Project is `enabled`.**
 
@@ -386,7 +386,7 @@ H H * * *
 
 ## [check-cmsdev-disk](https://cmssdt.cern.ch/jenkins/job/check-cmsdev-disk)
 
-**Description:** Clean up disk space on cmsdev machines
+**Description:** This job cleans up disk space on cmsdev machines.
 
 **Project is `enabled`.**
 
@@ -432,12 +432,12 @@ H H/4 * * *
 
 ## [check-docker](https://cmssdt.cern.ch/jenkins/job/check-docker)
 
-**Description:** Connects to the slave and checks if docker service is useable.<br/>
+**Description:** This job connects to the slave and checks if docker service is useable.<br/>
 Job can fail for two reasons:<br/>
 1. user is not in docker group<br/>
 2. docker service is not running on the machine<br/><br/>
 
-If machine is in our control then we should take the appropriate action (e.g. login into the machine and manually run the ssh command) but if machine is in CERN IT control e.g OpenLab machines then we should open a SNOW ticket.
+If machine is in our control, we should take the appropriate action (e.g. login into the machine and manually run the ssh command), but if machine is in CERN IT control (e.g OpenLab machines), we should open a SNOW ticket.
 
 **Project is `enabled`.**
 
@@ -508,7 +508,7 @@ H 16 * * *
 
 ## [check-unused-cmsdist-packages](https://cmssdt.cern.ch/jenkins/job/check-unused-cmsdist-packages)
 
-**Description:** Check for unused cmsdist files so that one can do the cleanup
+**Description:** This job check for unused cmsdist files so that one can do the cleanup.
 
 **Project is `enabled`.**
 
@@ -533,9 +533,12 @@ Not periodically build
 
 ## [check-zombie](https://cmssdt.cern.ch/jenkins/job/check-zombie)
 
-**Description:** Connects to the slave and look for runaway process. This job fails when it find such processes.<br/>
-In case of failure we need to check the runaway process list (e.g. see the job log) and make sure that these processes are really runaway (e.g. cmsRun jobs running with parent PID 1).
-If all looks good then restart the job with  KILL_HANGING_PROCESSES=true.
+**Description:** Connects to the slave and look for runaway process. This job fails when it finds such processes.<br/>
+In case of failure, we need to check the runaway process list (e.g. see the job log) and make sure that these processes are really runaway (e.g. cmsRun jobs running with parent PID 1).
+If all looks good, then one can restart the job with KILL_HANGING_PROCESSES=true.
+<br>
+<br>
+Note: A runaway process is a process that enters an infinite loop and spawns new processes.
 
 **Project is `enabled`.**
 

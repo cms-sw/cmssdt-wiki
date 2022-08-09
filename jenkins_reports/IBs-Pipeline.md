@@ -150,7 +150,7 @@ Not periodically build
 
 ## [build-fwlite-ib](https://cmssdt.cern.ch/jenkins/job/build-fwlite-ib)
 
-**Description:** This job is responsible for building FWLITE release for each Integration build(IB). 
+**Description:** This job is responsible for building FWLITE release for each Integration Build (IB). 
 Results of this build can be seen via <a href="https://cmssdt.cern.ch/SDT/">CMSSDT</a> 
 <a href="https://cmssdt.cern.ch/SDT/html/cmssdt-ib">IB page</a> 
 <a href="https://cmssdt.cern.ch/SDT/html/showIB.html">(old page)</a>.
