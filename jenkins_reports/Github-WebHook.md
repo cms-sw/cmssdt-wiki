@@ -1162,7 +1162,7 @@ Not periodically build
 
 ## [cleanup-auto-build](https://cmssdt.cern.ch/jenkins/job/cleanup-auto-build)
 
-**Description:** This job deletes the relsease build areas after three days.
+**Description:** This job deletes the release build areas after three days.
 
 **Project is `enabled`.**
 
