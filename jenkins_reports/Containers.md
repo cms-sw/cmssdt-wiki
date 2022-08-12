@@ -14,7 +14,7 @@
 <br/>
 Containers are built when either their base image is updated or if changes were made to dockerfile.<br/>
 Failures may arise from the changes in the base image. In this case, the best approach is to log into the machine, reproduce the issue
-and try to adapt the Dokerfile accordingly (e.g., changing dependencies, ordering, etc).<br/>
+and try to adapt the dokerfile accordingly (e.g., changing dependencies, ordering, etc).<br/>
 <br/>
 Since the built container images are left on the machine, this job can also fail due to disk full.<br/>
 There is a separate jenkins job (clean-build-docker-machine) cleaning the images left on the device that runs once a week. In any case, one can always log into the machine and run the docker cleanup as follows:<br/>
