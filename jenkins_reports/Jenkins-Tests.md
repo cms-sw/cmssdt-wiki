@@ -749,28 +749,6 @@ Not periodically build
 
 ---
 
-## [jenkins-test-s3](https://cmssdt.cern.ch/jenkins/job/jenkins-test-s3)
-
-**Description:** Stress test on s3 (@avalenzu)
-
-**Project is `enabled`.**
-
-**Upstream projects:**
-
-**Downstream projects:**
-
-**Sub-projects:**
-
-**Triggers from:** []
-
-
-**Periodic builds:**
-```bash
-Not periodically build
-```
-
----
-
 ## [jenkins-test-shared-node](https://cmssdt.cern.ch/jenkins/job/jenkins-test-shared-node)
 
 **Description:** None
