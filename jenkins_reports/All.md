@@ -10,7 +10,7 @@
 
 ## [abort-jenkins-job](https://cmssdt.cern.ch/jenkins/job/abort-jenkins-job)
 
-**Description:** Kill a running job (by default it is 'ib-run-pr-tests and jobs started by it'). 
+**Description:** Kill a running job (by default it is 'ib-run-pr-tests' and jobs started by it). 
 
 The idea is that if pull request was updated, all the test should be restarted. This job will kill all the running jobs for that
 PR (with matching parameters). It will ignore the given job ID - the ID of upstream job that started this job.
