@@ -1693,7 +1693,7 @@ Not periodically build
 
 ## [check-docker-container](https://cmssdt.cern.ch/jenkins/job/check-docker-container)
 
-**Description:** None
+**Description:** This job checks for changes in the parent image. If there are changes, it triggers the `build-docker-container` job so that our based image is updated and uploaded to the registry.
 
 **Project is `enabled`.**
 
