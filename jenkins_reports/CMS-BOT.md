@@ -64,7 +64,7 @@ Not periodically build
 
 ## [abort-pr-tests](https://cmssdt.cern.ch/jenkins/job/abort-pr-tests)
 
-**Description:** This basically triiger abort-jenkins-jobs for all the jobs related to PR tests
+**Description:** This job basically triggers the `abort-jenkins-jobs` job for all the jobs related to PR tests.
 
 **Project is `enabled`.**
 
@@ -186,7 +186,7 @@ Not periodically build
 
 ## [abort-pr-tests](https://cmssdt.cern.ch/jenkins/job/abort-pr-tests)
 
-**Description:** This basically triiger abort-jenkins-jobs for all the jobs related to PR tests
+**Description:** This job basically triggers the `abort-jenkins-jobs` job for all the jobs related to PR tests.
 
 **Project is `enabled`.**
 
