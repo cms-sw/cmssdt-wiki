@@ -3063,7 +3063,9 @@ Not periodically build
 
 ## [ib-monitor-crab](https://cmssdt.cern.ch/jenkins/job/ib-monitor-crab)
 
-**Description:** Monitors CRAB job status.
+**Description:** This job is triggered by 'ib-run-crab' once a test analysis is submitted to CRAB. It monitors the status of the CRAB job by using curl calls until the job finishes/
+<br>
+Finally, it generates a status file that is visible in the IB page (https://cmssdt.cern.ch/SDT/jenkins-artifacts/ib-run-crab).
 
 **Project is `enabled`.**
 
