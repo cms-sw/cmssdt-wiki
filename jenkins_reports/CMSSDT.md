@@ -1723,7 +1723,7 @@ Not periodically build
 
 ## [check-node-status](https://cmssdt.cern.ch/jenkins/job/check-node-status)
 
-**Description:** This job checks the status of the Jenkins nodes every day to verify that none of them has been manually disconnected and not bring back online.<br>
+**Description:** This job checks the status of the Jenkins nodes every day to verify that none of them has been manually disconnected/or disconnected by CLI and not bring back online.<br>
 
 
 **Project is `enabled`.**
