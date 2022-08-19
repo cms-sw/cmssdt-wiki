@@ -6233,7 +6233,7 @@ Not periodically build
 
 ## [test-os](https://cmssdt.cern.ch/jenkins/job/test-os)
 
-**Description:** None
+**Description:** This job generates property files for triggering os test jobs (e.g., test-os-cs8, test-os-alma8, etc) for any  os_arch_compiler combination.
 
 **Project is `enabled`.**
 
