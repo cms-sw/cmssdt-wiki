@@ -4981,28 +4981,6 @@ Not periodically build
 
 ---
 
-## [jenkins-test-python3or2](https://cmssdt.cern.ch/jenkins/job/jenkins-test-python3or2)
-
-**Description:** None
-
-**Project is `enabled`.**
-
-**Upstream projects:**
-
-**Downstream projects:**
-
-**Sub-projects:**
-
-**Triggers from:** []
-
-
-**Periodic builds:**
-```bash
-Not periodically build
-```
-
----
-
 ## [jenkins-test-retry](https://cmssdt.cern.ch/jenkins/job/jenkins-test-retry)
 
 **Description:** This job retries a build given the job name and the build number to retry.<br>
@@ -5072,28 +5050,6 @@ Not periodically build
 **Periodic builds:**
 ```bash
 H/10 * * * *
-```
-
----
-
-## [jenkins-test-singularity-slave](https://cmssdt.cern.ch/jenkins/job/jenkins-test-singularity-slave)
-
-**Description:** None
-
-**Project is `enabled`.**
-
-**Upstream projects:**
-
-**Downstream projects:**
-
-**Sub-projects:**
-
-**Triggers from:** []
-
-
-**Periodic builds:**
-```bash
-Not periodically build
 ```
 
 ---
