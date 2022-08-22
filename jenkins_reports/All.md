@@ -4786,31 +4786,6 @@ Not periodically build
 
 ---
 
-## [jenkins-test-install-rpm417](https://cmssdt.cern.ch/jenkins/job/jenkins-test-install-rpm417)
-
-**Description:** None
-
-**Project is `enabled`.**
-
-**Upstream projects:**
-* [jenkins-test-rpm417-scalibility](#jenkins-test-rpm417-scalibility):
-
-**Downstream projects:**
-* [jenkins-test-rpm417-scalibility](#jenkins-test-rpm417-scalibility):
-
-**Sub-projects:**
-* [jenkins-test-rpm417-scalibility](#jenkins-test-rpm417-scalibility):
-
-**Triggers from:** []
-
-
-**Periodic builds:**
-```bash
-Not periodically build
-```
-
----
-
 ## [jenkins-test-install-rucio](https://cmssdt.cern.ch/jenkins/job/jenkins-test-install-rucio)
 
 **Description:** None
@@ -4996,31 +4971,6 @@ This job is expected to fail if the same build has been retried more than 3 time
 
 **Sub-projects:**
 * [${JOB_TO_RETRY}](#${JOB_TO_RETRY}):
-
-**Triggers from:** []
-
-
-**Periodic builds:**
-```bash
-Not periodically build
-```
-
----
-
-## [jenkins-test-rpm417-scalibility](https://cmssdt.cern.ch/jenkins/job/jenkins-test-rpm417-scalibility)
-
-**Description:** None
-
-**Project is `enabled`.**
-
-**Upstream projects:**
-* [jenkins-test-install-rpm417](#jenkins-test-install-rpm417):
-
-**Downstream projects:**
-* [jenkins-test-install-rpm417](#jenkins-test-install-rpm417):
-
-**Sub-projects:**
-* [jenkins-test-install-rpm417](#jenkins-test-install-rpm417):
 
 **Triggers from:** []
 
