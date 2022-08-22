@@ -173,28 +173,6 @@ Not periodically build
 
 ---
 
-## [openstack-create-volume](https://cmssdt.cern.ch/jenkins/job/openstack-create-volume)
-
-**Description:** Job to delete openstack instances providing only the name
-
-**Project is `enabled`.**
-
-**Upstream projects:**
-
-**Downstream projects:**
-
-**Sub-projects:**
-
-**Triggers from:** []
-
-
-**Periodic builds:**
-```bash
-Not periodically build
-```
-
----
-
 ## [openstack-delete-vms](https://cmssdt.cern.ch/jenkins/job/openstack-delete-vms)
 
 **Description:** Job to delete openstack instances providing only the name.
