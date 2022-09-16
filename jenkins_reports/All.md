@@ -4872,7 +4872,7 @@ The parser jobs takes three main actions depending on the error message:
   </ul>  
 Finally, it also monitors the running time of the builds and sends an email if a build is pending, so that anybody can take the appropiate action.
 
-**Project is `enabled`.**
+**Project is `disabled`.**
 
 **Upstream projects:**
 
