@@ -848,6 +848,28 @@ Not periodically build
 
 ---
 
+## [reco-profiling-eos-cleanup](https://cmssdt.cern.ch/jenkins/job/reco-profiling-eos-cleanup)
+
+**Description:** None
+
+**Project is `enabled`.**
+
+**Upstream projects:**
+
+**Downstream projects:**
+
+**Sub-projects:**
+
+**Triggers from:** []
+
+
+**Periodic builds:**
+```bash
+Not periodically build
+```
+
+---
+
 ## [release-analyze-reco-profiling](https://cmssdt.cern.ch/jenkins/job/release-analyze-reco-profiling)
 
 **Description:** This job processes data from release-run-reco-profiling and prepares https://cms-reco-profiling.web.cern.ch/cms-reco-profiling/

@@ -5716,6 +5716,28 @@ H/15 * * * *
 
 ---
 
+## [reco-profiling-eos-cleanup](https://cmssdt.cern.ch/jenkins/job/reco-profiling-eos-cleanup)
+
+**Description:** None
+
+**Project is `enabled`.**
+
+**Upstream projects:**
+
+**Downstream projects:**
+
+**Sub-projects:**
+
+**Triggers from:** []
+
+
+**Periodic builds:**
+```bash
+Not periodically build
+```
+
+---
+
 ## [refresh-cmssdt](https://cmssdt.cern.ch/jenkins/job/refresh-cmssdt)
 
 **Description:** This job updates the cmssw IB page on cmssdt.
