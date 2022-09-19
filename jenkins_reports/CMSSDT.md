@@ -642,7 +642,7 @@ Not periodically build
 
 ---
 
-## [ib-run-pr-externals-checks](https://cmssdt.cern.ch/jenkins/job/ib-run-pr-externals-checks)
+## [ib-run-pr-external-checks](https://cmssdt.cern.ch/jenkins/job/ib-run-pr-external-checks)
 
 **Description:** Build mutiple  a pull requests. 
 Same puprose as `ib-any-integration`, just different script is called.
