@@ -3433,11 +3433,8 @@ Not periodically build
 
 ## [ib-run-pr-addon](https://cmssdt.cern.ch/jenkins/job/ib-run-pr-addon)
 
-**Description:** Build mutiple  a pull requests. 
-Same puprose as `ib-any-integration`, just different script is called.
-
-
-
+**Description:** Build mutiple pull requests. 
+Run cmssw addON (HLT tests)
 
 **Project is `enabled`.**
 
@@ -3509,8 +3506,8 @@ Not periodically build
 
 ## [ib-run-pr-external-checks](https://cmssdt.cern.ch/jenkins/job/ib-run-pr-external-checks)
 
-**Description:** Build mutiple  a pull requests. 
-Same puprose as `ib-any-integration`, just different script is called.
+**Description:** Build mutiple pull requests. 
+test cmssw externals packages static checks e.g. hardcoded buld paths etc.
 
 
 
