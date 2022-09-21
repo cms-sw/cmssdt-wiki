@@ -3528,7 +3528,7 @@ Not periodically build
 ## [ib-run-pr-external_checks](https://cmssdt.cern.ch/jenkins/job/ib-run-pr-external_checks)
 
 **Description:** Build mutiple pull requests. 
-test cmssw externals packages static checks e.g. hardcoded buld paths etc.
+test cmssw externals packages static checks e.g. hardcoded build paths etc.
 
 
 
