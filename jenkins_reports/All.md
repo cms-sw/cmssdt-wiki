@@ -3480,10 +3480,9 @@ Not periodically build
 
 **Description:** None
 
-**Project is `enabled`.**
+**Project is `disabled`.**
 
 **Upstream projects:**
-* [ib-run-pr-tests](#ib-run-pr-tests):
 
 **Downstream projects:**
 * [cvmfs-deploy-artifacts](#cvmfs-deploy-artifacts):
@@ -3630,7 +3629,6 @@ better to wait for the service to get healthy.
 
 **Downstream projects:**
 * [abort-pr-tests](#abort-pr-tests):
-* [ib-run-pr-baseline](#ib-run-pr-baseline):
 * [ib-run-pr-wait-deployment](#ib-run-pr-wait-deployment):
 * [pr-publish-cmssw](#pr-publish-cmssw):
 * [update-das-queries](#update-das-queries):
@@ -3639,7 +3637,6 @@ better to wait for the service to get healthy.
 * [abort-pr-tests](#abort-pr-tests):
 * [pr-publish-cmssw](#pr-publish-cmssw):
 * [ib-run-pr-wait-deployment](#ib-run-pr-wait-deployment):
-* [ib-run-pr-baseline ](#ib-run-pr-baseline ):
 * [update-das-queries ](#update-das-queries ):
 
 **Triggers from:** []

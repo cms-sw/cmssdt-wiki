@@ -162,7 +162,6 @@ better to wait for the service to get healthy.
 
 **Downstream projects:**
 * [abort-pr-tests](#abort-pr-tests):
-* [ib-run-pr-baseline](#ib-run-pr-baseline):
 * [ib-run-pr-wait-deployment](#ib-run-pr-wait-deployment):
 * [pr-publish-cmssw](#pr-publish-cmssw):
 * [update-das-queries](#update-das-queries):
@@ -171,7 +170,6 @@ better to wait for the service to get healthy.
 * [abort-pr-tests](#abort-pr-tests):
 * [pr-publish-cmssw](#pr-publish-cmssw):
 * [ib-run-pr-wait-deployment](#ib-run-pr-wait-deployment):
-* [ib-run-pr-baseline ](#ib-run-pr-baseline ):
 * [update-das-queries ](#update-das-queries ):
 
 **Triggers from:** []
@@ -222,80 +220,6 @@ PR (with matching parameters). It will ignore the given job ID - the ID of upstr
 **Upstream projects:**
 * [abort-pr-tests](#abort-pr-tests):
 * [run-pr-code-checks](#run-pr-code-checks):
-
-**Downstream projects:**
-
-**Sub-projects:**
-
-**Triggers from:** []
-
-
-**Periodic builds:**
-```bash
-Not periodically build
-```
-
----
-
-## [ib-run-pr-baseline](https://cmssdt.cern.ch/jenkins/job/ib-run-pr-baseline)
-
-**Description:** None
-
-**Project is `enabled`.**
-
-**Upstream projects:**
-* [ib-run-pr-tests](#ib-run-pr-tests):
-
-**Downstream projects:**
-* [cvmfs-deploy-artifacts](#cvmfs-deploy-artifacts):
-
-**Sub-projects:**
-* [cvmfs-deploy-artifacts](#cvmfs-deploy-artifacts):
-
-**Triggers from:** []
-
-
-**Periodic builds:**
-```bash
-Not periodically build
-```
-
----
-
-## [cvmfs-deploy-artifacts](https://cmssdt.cern.ch/jenkins/job/cvmfs-deploy-artifacts)
-
-**Description:** Copy baseline results from cmssdt for an IB
-
-**Project is `enabled`.**
-
-**Upstream projects:**
-* [ib-run-baseline](#ib-run-baseline):
-* [ib-run-pr-baseline](#ib-run-pr-baseline):
-
-**Downstream projects:**
-* [cvmfs-publish-artifacts](#cvmfs-publish-artifacts):
-
-**Sub-projects:**
-* [cvmfs-publish-artifacts](#cvmfs-publish-artifacts):
-
-**Triggers from:** []
-
-
-**Periodic builds:**
-```bash
-Not periodically build
-```
-
----
-
-## [cvmfs-publish-artifacts](https://cmssdt.cern.ch/jenkins/job/cvmfs-publish-artifacts)
-
-**Description:** Copy baseline results from cmssdt for an IB and deploy them on cvmfs
-
-**Project is `enabled`.**
-
-**Upstream projects:**
-* [cvmfs-deploy-artifacts](#cvmfs-deploy-artifacts):
 
 **Downstream projects:**
 
