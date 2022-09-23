@@ -2760,28 +2760,6 @@ Not periodically build
 
 ---
 
-## [grid-keep-node-busy](https://cmssdt.cern.ch/jenkins/job/grid-keep-node-busy)
-
-**Description:** None
-
-**Project is `disabled`.**
-
-**Upstream projects:**
-
-**Downstream projects:**
-
-**Sub-projects:**
-
-**Triggers from:** []
-
-
-**Periodic builds:**
-```bash
-Not periodically build
-```
-
----
-
 ## [grid-make-node-available](https://cmssdt.cern.ch/jenkins/job/grid-make-node-available)
 
 **Description:** Check if there are jobs queued for condor nodes, and if so kill placeholder job.
