@@ -655,6 +655,32 @@ H * * * *
 
 ---
 
+## [jenkins-test-parser-monitor](https://cmssdt.cern.ch/jenkins/job/jenkins-test-parser-monitor)
+
+**Description:** This job retries a build given the job name and the build number to retry.<br>
+It copies the build parameters from the given build and adds a retry counter as an environmental variable to keep track of the number of retries (a maximum of 3 retries per build has been set). <br>
+This job is automatically triggered by the job "jenkins-test-parser" when a build fails due to a known issue and a retry action is needed.<br>
+This job is expected to fail if the same build has been retried more than 3 times. If it fails due to another issue, we need to take the appropiate action.
+
+**Project is `enabled`.**
+
+**Upstream projects:**
+
+**Downstream projects:**
+
+**Sub-projects:**
+* [${JOB_TO_RETRY}](#${JOB_TO_RETRY}):
+
+**Triggers from:** []
+
+
+**Periodic builds:**
+```bash
+Not periodically build
+```
+
+---
+
 ## [jenkins-test-patch-checkout](https://cmssdt.cern.ch/jenkins/job/jenkins-test-patch-checkout)
 
 **Description:** None
