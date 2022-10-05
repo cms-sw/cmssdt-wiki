@@ -659,7 +659,7 @@ H * * * *
 
 **Description:** This job monitors parser retries.
 
-**Project is `disabled`.**
+**Project is `enabled`.**
 
 **Upstream projects:**
 
