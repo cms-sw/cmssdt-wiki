@@ -308,6 +308,7 @@ Results of this build can be seen via <a href="https://cmssdt.cern.ch/SDT/">CMSS
 
 **Upstream projects:**
 * [build-any-ib](#build-any-ib):
+* [build-spack-ib](#build-spack-ib):
 
 **Downstream projects:**
 * [ib-build-logs](#ib-build-logs):
@@ -347,6 +348,74 @@ It can happen that the job succeed, but there have been build errors that the bo
 **Downstream projects:**
 
 **Sub-projects:**
+
+**Triggers from:** []
+
+
+**Periodic builds:**
+```bash
+Not periodically build
+```
+
+---
+
+## [build-spack-ib](https://cmssdt.cern.ch/jenkins/job/build-spack-ib)
+
+**Description:** This jobs starts an Integration Build (IB). Base on state of <a href="https://github.com/cms-sw/cmsdist">CMSDIST</a>/<a href="https://github.com/cms-sw/cmssw">CMSSW</a> git repositories, it builds either a full release or patch release.
+<br>Build Full IB if:
+
+<ul>
+  <li> There are changes in <a href="https://github.com/cms-sw/cmsdist">CMSDIST</a></li>
+  <li> There is no full IB available based on current <a href="https://github.com/cms-sw/cmsdist">CMSDIST</a></li>
+  <li> Previous full IB had build errors</li>
+</ul>
+
+Otherwise build a patch release.
+
+<br><br>
+<b>Q/A</b>
+
+<ul>
+  <li>
+    <b>Q:</b> The job is scheduled with a clock simbol. Jenkins also complains that there are not agents with labels THIS and THIS.
+  </li>
+  <li>
+    <b>A:</b> Jenkins should automaticly launch agents with specific labels for the job. However, for some reason it does not work for this job. For now, launch agent manually.
+  </li>
+</ul>
+
+<ul>
+  <li>
+    <b>Q:</b> How to manually build an IB?
+  </li>
+  <li>
+    <b>A:</b> Go to upstream job (ib-tag-and-schdule) and start a job.
+  </li>
+</ul>
+
+<ul>
+  <li>
+    <b>Q:</b> What to do if it fails?
+  </li>
+  <li>
+    <b>A:</b> If it fails due to network/github issues then just re-try it, but if it fails to build then we need to understand the build issues before retry.
+  </li>
+</ul>
+
+**Project is `enabled`.**
+
+**Upstream projects:**
+
+**Downstream projects:**
+* [build-fwlite-ib](#build-fwlite-ib):
+* [ib-build-logs](#ib-build-logs):
+* [ib-install-cvmfs](#ib-install-cvmfs):
+* [process-external-elastic-stats](#process-external-elastic-stats):
+
+**Sub-projects:**
+* [ib-install-cvmfs](#ib-install-cvmfs):
+* [ib-build-logs,process-external-elastic-stats](#ib-build-logs,process-external-elastic-stats):
+* [build-fwlite-ib](#build-fwlite-ib):
 
 **Triggers from:** []
 
@@ -2924,6 +2993,7 @@ Not periodically build
 **Upstream projects:**
 * [build-any-ib](#build-any-ib):
 * [build-fwlite-ib](#build-fwlite-ib):
+* [build-spack-ib](#build-spack-ib):
 
 **Downstream projects:**
 * [update-github-pages](#update-github-pages):
@@ -3002,6 +3072,7 @@ either delete the failed job instance or update the "Build information" and ment
 
 **Upstream projects:**
 * [build-any-ib](#build-any-ib):
+* [build-spack-ib](#build-spack-ib):
 * [cmsrep-webhook](#cmsrep-webhook):
 * [ib-tag-and-schdule](#ib-tag-and-schdule):
 
@@ -5619,6 +5690,7 @@ Not periodically build
 
 **Upstream projects:**
 * [build-any-ib](#build-any-ib):
+* [build-spack-ib](#build-spack-ib):
 
 **Downstream projects:**
 
