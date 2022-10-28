@@ -484,28 +484,6 @@ Not periodically build
 
 ---
 
-## [cvmfs-setup-cms-ib](https://cmssdt.cern.ch/jenkins/job/cvmfs-setup-cms-ib)
-
-**Description:** None
-
-**Project is `enabled`.**
-
-**Upstream projects:**
-
-**Downstream projects:**
-
-**Sub-projects:**
-
-**Triggers from:** []
-
-
-**Periodic builds:**
-```bash
-Not periodically build
-```
-
----
-
 ## [cvmfs_publish_remote_dir](https://cmssdt.cern.ch/jenkins/job/cvmfs_publish_remote_dir)
 
 **Description:** This jobs install an IB on /cvmfs/cms-ib.cern.ch.
@@ -3141,10 +3119,13 @@ Not periodically build
 **Project is `enabled`.**
 
 **Upstream projects:**
+* [ib-install-cvmfs-gateway](#ib-install-cvmfs-gateway):
 
 **Downstream projects:**
+* [ib-install-cvmfs-gateway](#ib-install-cvmfs-gateway):
 
 **Sub-projects:**
+* [ib-install-cvmfs-gateway](#ib-install-cvmfs-gateway):
 
 **Triggers from:** []
 
