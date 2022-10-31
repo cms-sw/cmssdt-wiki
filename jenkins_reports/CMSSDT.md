@@ -592,7 +592,8 @@ H/3 * * * *
 
 **Periodic builds:**
 ```bash
-Not periodically build
+H * * * *
+
 ```
 
 ---
