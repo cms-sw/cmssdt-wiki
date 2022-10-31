@@ -15,13 +15,10 @@
 **Project is `enabled`.**
 
 **Upstream projects:**
-* [ib-install-cvmfs-gateway](#ib-install-cvmfs-gateway):
 
 **Downstream projects:**
-* [ib-install-cvmfs-gateway](#ib-install-cvmfs-gateway):
 
 **Sub-projects:**
-* [ib-install-cvmfs-gateway](#ib-install-cvmfs-gateway):
 
 **Triggers from:** []
 
