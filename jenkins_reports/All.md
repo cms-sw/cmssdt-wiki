@@ -2522,11 +2522,14 @@ This is automatically triggered by "git push" to cmssw repo.
 **Project is `enabled`.**
 
 **Upstream projects:**
+* [git-reference-cvmfs](#git-reference-cvmfs):
 * [github-push-hook](#github-push-hook):
 
 **Downstream projects:**
+* [git-reference-cvmfs](#git-reference-cvmfs):
 
 **Sub-projects:**
+* [git-reference-cvmfs](#git-reference-cvmfs):
 
 **Triggers from:** []
 
