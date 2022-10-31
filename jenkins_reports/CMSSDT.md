@@ -2375,13 +2375,14 @@ Also it runsevery 30mins to make sure any webhooks were not missed.
 * [cvmfs-cms-install-common](#cvmfs-cms-install-common):
 * [cvmfs-install-pr](#cvmfs-install-pr):
 * [ib-install-cvmfs](#ib-install-cvmfs):
+* [ib-install-cvmfs-gateway](#ib-install-cvmfs-gateway):
 
 **Sub-projects:**
 * [cvmfs-cms-install-common](#cvmfs-cms-install-common):
 * [cmspkg-clone](#cmspkg-clone):
 * [cvmfs-cms-install-cms](#cvmfs-cms-install-cms):
 * [cvmfs-cms-install-COMP-python](#cvmfs-cms-install-COMP-python):
-* [ib-install-cvmfs](#ib-install-cvmfs):
+* [ib-install-cvmfs,ib-install-cvmfs-gateway](#ib-install-cvmfs,ib-install-cvmfs-gateway):
 * [cvmfs-install-pr](#cvmfs-install-pr):
 
 **Triggers from:** []
@@ -3144,6 +3145,7 @@ Not periodically build
 
 **Upstream projects:**
 * [build-any-ib](#build-any-ib):
+* [cmsrep-webhook](#cmsrep-webhook):
 
 **Downstream projects:**
 
