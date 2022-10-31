@@ -575,6 +575,28 @@ H/3 * * * *
 
 ---
 
+## [ib-install-siteconf](https://cmssdt.cern.ch/jenkins/job/ib-install-siteconf)
+
+**Description:** None
+
+**Project is `enabled`.**
+
+**Upstream projects:**
+
+**Downstream projects:**
+
+**Sub-projects:**
+
+**Triggers from:** []
+
+
+**Periodic builds:**
+```bash
+Not periodically build
+```
+
+---
+
 ## [ib-monitor-crab](https://cmssdt.cern.ch/jenkins/job/ib-monitor-crab)
 
 **Description:** This job is triggered by 'ib-run-crab' once a test analysis is submitted to CRAB. It monitors the status of the CRAB job by using curl calls until the job finishes.
@@ -1610,10 +1632,11 @@ Otherwise build a patch release.
 * [build-fwlite-ib](#build-fwlite-ib):
 * [ib-build-logs](#ib-build-logs):
 * [ib-install-cvmfs](#ib-install-cvmfs):
+* [ib-install-cvmfs-gateway](#ib-install-cvmfs-gateway):
 * [process-external-elastic-stats](#process-external-elastic-stats):
 
 **Sub-projects:**
-* [ib-install-cvmfs](#ib-install-cvmfs):
+* [ib-install-cvmfs,ib-install-cvmfs-gateway](#ib-install-cvmfs,ib-install-cvmfs-gateway):
 * [ib-build-logs,process-external-elastic-stats](#ib-build-logs,process-external-elastic-stats):
 * [build-fwlite-ib](#build-fwlite-ib):
 
@@ -3119,6 +3142,7 @@ Not periodically build
 **Project is `enabled`.**
 
 **Upstream projects:**
+* [build-any-ib](#build-any-ib):
 
 **Downstream projects:**
 

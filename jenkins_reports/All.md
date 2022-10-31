@@ -213,10 +213,11 @@ Otherwise build a patch release.
 * [build-fwlite-ib](#build-fwlite-ib):
 * [ib-build-logs](#ib-build-logs):
 * [ib-install-cvmfs](#ib-install-cvmfs):
+* [ib-install-cvmfs-gateway](#ib-install-cvmfs-gateway):
 * [process-external-elastic-stats](#process-external-elastic-stats):
 
 **Sub-projects:**
-* [ib-install-cvmfs](#ib-install-cvmfs):
+* [ib-install-cvmfs,ib-install-cvmfs-gateway](#ib-install-cvmfs,ib-install-cvmfs-gateway):
 * [ib-build-logs,process-external-elastic-stats](#ib-build-logs,process-external-elastic-stats):
 * [build-fwlite-ib](#build-fwlite-ib):
 
@@ -3094,6 +3095,29 @@ Not periodically build
 ## [ib-install-cvmfs-gateway](https://cmssdt.cern.ch/jenkins/job/ib-install-cvmfs-gateway)
 
 **Description:** Test job to install IBs in parallel (cvmfs gateway).
+
+**Project is `enabled`.**
+
+**Upstream projects:**
+* [build-any-ib](#build-any-ib):
+
+**Downstream projects:**
+
+**Sub-projects:**
+
+**Triggers from:** []
+
+
+**Periodic builds:**
+```bash
+Not periodically build
+```
+
+---
+
+## [ib-install-siteconf](https://cmssdt.cern.ch/jenkins/job/ib-install-siteconf)
+
+**Description:** None
 
 **Project is `enabled`.**
 
