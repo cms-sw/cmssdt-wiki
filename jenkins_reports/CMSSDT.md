@@ -495,6 +495,29 @@ Not periodically build
 **Downstream projects:**
 
 **Sub-projects:**
+* [](#):
+
+**Triggers from:** []
+
+
+**Periodic builds:**
+```bash
+Not periodically build
+```
+
+---
+
+## [cvmfs-run-gw-gc](https://cmssdt.cern.ch/jenkins/job/cvmfs-run-gw-gc)
+
+**Description:** This runs CVMFS GC on the Gateway, make sure that top level path "/" has a lease.
+
+**Project is `enabled`.**
+
+**Upstream projects:**
+
+**Downstream projects:**
+
+**Sub-projects:**
 
 **Triggers from:** []
 
