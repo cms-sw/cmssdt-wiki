@@ -86,8 +86,10 @@ H 23  * *  2
 **Upstream projects:**
 
 **Downstream projects:**
+* [cvmfs-run-gc](#cvmfs-run-gc):
 
 **Sub-projects:**
+* [cvmfs-run-gc](#cvmfs-run-gc):
 
 **Triggers from:** []
 

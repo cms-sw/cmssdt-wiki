@@ -2030,8 +2030,10 @@ Not periodically build
 **Upstream projects:**
 
 **Downstream projects:**
+* [cvmfs-run-gc](#cvmfs-run-gc):
 
 **Sub-projects:**
+* [cvmfs-run-gc](#cvmfs-run-gc):
 
 **Triggers from:** []
 
@@ -2141,6 +2143,7 @@ Not periodically build
 **Project is `enabled`.**
 
 **Upstream projects:**
+* [cvmfs-gc](#cvmfs-gc):
 
 **Downstream projects:**
 * [cvmfs-run-gw-gc](#cvmfs-run-gw-gc):

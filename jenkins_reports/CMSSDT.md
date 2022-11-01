@@ -491,6 +491,7 @@ Not periodically build
 **Project is `enabled`.**
 
 **Upstream projects:**
+* [cvmfs-gc](#cvmfs-gc):
 
 **Downstream projects:**
 * [cvmfs-run-gw-gc](#cvmfs-run-gw-gc):
