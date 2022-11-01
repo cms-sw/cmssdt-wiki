@@ -58,7 +58,7 @@ Not periodically build
 
 **Description:** This runs CVMFS GC (once a week)
 
-**Project is `enabled`.**
+**Project is `disabled`.**
 
 **Upstream projects:**
 
