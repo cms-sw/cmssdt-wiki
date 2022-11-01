@@ -575,6 +575,28 @@ H/3 * * * *
 
 ---
 
+## [ib-check-siteconf](https://cmssdt.cern.ch/jenkins/job/ib-check-siteconf)
+
+**Description:** None
+
+**Project is `enabled`.**
+
+**Upstream projects:**
+
+**Downstream projects:**
+
+**Sub-projects:**
+
+**Triggers from:** []
+
+
+**Periodic builds:**
+```bash
+Not periodically build
+```
+
+---
+
 ## [ib-install-siteconf](https://cmssdt.cern.ch/jenkins/job/ib-install-siteconf)
 
 **Description:** None
