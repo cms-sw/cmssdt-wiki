@@ -577,7 +577,8 @@ H/3 * * * *
 
 ## [ib-check-siteconf](https://cmssdt.cern.ch/jenkins/job/ib-check-siteconf)
 
-**Description:** None
+**Description:** This check for /cvmfs/REPO/SITECONF contents and triggers ib-install-siteconf (for each repo) if https://github.com/cms-sw/siteconf has updates.
+Thsi jobs runs every hour
 
 **Project is `enabled`.**
 
@@ -594,14 +595,14 @@ H/3 * * * *
 
 **Periodic builds:**
 ```bash
-Not periodically build
+H * * * *
 ```
 
 ---
 
 ## [ib-install-siteconf](https://cmssdt.cern.ch/jenkins/job/ib-install-siteconf)
 
-**Description:** None
+**Description:** Update the contents of/cvmfs/REPO/SITECONF from https://github.com/cms-sw/siteconf
 
 **Project is `enabled`.**
 
