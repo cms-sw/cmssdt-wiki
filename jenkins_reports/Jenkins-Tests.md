@@ -8,30 +8,6 @@
 
 # Projects:
 
-## [ib-install-cvmfs-gateway](https://cmssdt.cern.ch/jenkins/job/ib-install-cvmfs-gateway)
-
-**Description:** Test job to install IBs in parallel (cvmfs gateway).
-
-**Project is `enabled`.**
-
-**Upstream projects:**
-* [build-any-ib](#build-any-ib):
-* [cmsrep-webhook](#cmsrep-webhook):
-
-**Downstream projects:**
-
-**Sub-projects:**
-
-**Triggers from:** []
-
-
-**Periodic builds:**
-```bash
-Not periodically build
-```
-
----
-
 ## [jenkins-add-job](https://cmssdt.cern.ch/jenkins/job/jenkins-add-job)
 
 **Description:** None

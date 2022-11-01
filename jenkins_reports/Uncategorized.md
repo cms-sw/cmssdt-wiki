@@ -77,31 +77,6 @@ H 23  * *  2
 
 ---
 
-## [cvmfs-gc](https://cmssdt.cern.ch/jenkins/job/cvmfs-gc)
-
-**Description:** This runs CVMFS GC (once a week)
-
-**Project is `enabled`.**
-
-**Upstream projects:**
-
-**Downstream projects:**
-* [cvmfs-run-gc](#cvmfs-run-gc):
-
-**Sub-projects:**
-* [cvmfs-run-gc](#cvmfs-run-gc):
-
-**Triggers from:** []
-
-
-**Periodic builds:**
-```bash
-#Run once on Thursday at 23h05
-H 19  * *  2
-```
-
----
-
 ## [ib-run-geometry](https://cmssdt.cern.ch/jenkins/job/ib-run-geometry)
 
 **Description:** Runs geometry comparison tests for each IB

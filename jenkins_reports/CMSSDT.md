@@ -416,6 +416,31 @@ Not periodically build
 
 ---
 
+## [cvmfs-gc](https://cmssdt.cern.ch/jenkins/job/cvmfs-gc)
+
+**Description:** This runs CVMFS GC (once a week)
+
+**Project is `enabled`.**
+
+**Upstream projects:**
+
+**Downstream projects:**
+* [cvmfs-run-gc](#cvmfs-run-gc):
+
+**Sub-projects:**
+* [cvmfs-run-gc](#cvmfs-run-gc):
+
+**Triggers from:** []
+
+
+**Periodic builds:**
+```bash
+#Run once on Thursday at 23h05
+H 19  * *  2
+```
+
+---
+
 ## [cvmfs-install-pr](https://cmssdt.cern.ch/jenkins/job/cvmfs-install-pr)
 
 **Description:** To install PR externals
@@ -644,6 +669,63 @@ Thsi jobs runs every hour
 **Periodic builds:**
 ```bash
 H * * * *
+```
+
+---
+
+## [ib-install-cvmfs](https://cmssdt.cern.ch/jenkins/job/ib-install-cvmfs)
+
+**Description:** This jobs install an IB on /cvmfs/cms-ib.cern.ch. As this job runs on the CVMFS Stratum 0, so only one job can run at a time.
+Sometimes ( specially IBs for non-86-64 archs) are stuck and do nothing. In that case better to kill the job and re-try it.
+This gives chance to other IBs to get installed and at the end the re-tried job will re-run. 
+
+There is no automatic re-try setup for this job. It rarely fails but in case it fails then just re-try the failed job and
+either delete the failed job instance or update the "Build information" and mentioned that it has been re-tired. This allows others to not re-try it.
+
+
+**Project is `enabled`.**
+
+**Upstream projects:**
+* [build-any-ib](#build-any-ib):
+* [build-spack-ib](#build-spack-ib):
+* [cmsrep-webhook](#cmsrep-webhook):
+* [ib-tag-and-schdule](#ib-tag-and-schdule):
+
+**Downstream projects:**
+* [ib-validation](#ib-validation):
+
+**Sub-projects:**
+
+**Triggers from:** []
+
+
+**Periodic builds:**
+```bash
+Not periodically build
+```
+
+---
+
+## [ib-install-cvmfs-gateway](https://cmssdt.cern.ch/jenkins/job/ib-install-cvmfs-gateway)
+
+**Description:** Test job to install IBs in parallel (cvmfs gateway).
+
+**Project is `enabled`.**
+
+**Upstream projects:**
+* [build-any-ib](#build-any-ib):
+* [cmsrep-webhook](#cmsrep-webhook):
+
+**Downstream projects:**
+
+**Sub-projects:**
+
+**Triggers from:** []
+
+
+**Periodic builds:**
+```bash
+Not periodically build
 ```
 
 ---
@@ -3174,63 +3256,6 @@ H/30 * * * *
 **Periodic builds:**
 ```bash
 H 10,22 * * *
-```
-
----
-
-## [ib-install-cvmfs](https://cmssdt.cern.ch/jenkins/job/ib-install-cvmfs)
-
-**Description:** This jobs install an IB on /cvmfs/cms-ib.cern.ch. As this job runs on the CVMFS Stratum 0, so only one job can run at a time.
-Sometimes ( specially IBs for non-86-64 archs) are stuck and do nothing. In that case better to kill the job and re-try it.
-This gives chance to other IBs to get installed and at the end the re-tried job will re-run. 
-
-There is no automatic re-try setup for this job. It rarely fails but in case it fails then just re-try the failed job and
-either delete the failed job instance or update the "Build information" and mentioned that it has been re-tired. This allows others to not re-try it.
-
-
-**Project is `enabled`.**
-
-**Upstream projects:**
-* [build-any-ib](#build-any-ib):
-* [build-spack-ib](#build-spack-ib):
-* [cmsrep-webhook](#cmsrep-webhook):
-* [ib-tag-and-schdule](#ib-tag-and-schdule):
-
-**Downstream projects:**
-* [ib-validation](#ib-validation):
-
-**Sub-projects:**
-
-**Triggers from:** []
-
-
-**Periodic builds:**
-```bash
-Not periodically build
-```
-
----
-
-## [ib-install-cvmfs-gateway](https://cmssdt.cern.ch/jenkins/job/ib-install-cvmfs-gateway)
-
-**Description:** Test job to install IBs in parallel (cvmfs gateway).
-
-**Project is `enabled`.**
-
-**Upstream projects:**
-* [build-any-ib](#build-any-ib):
-* [cmsrep-webhook](#cmsrep-webhook):
-
-**Downstream projects:**
-
-**Sub-projects:**
-
-**Triggers from:** []
-
-
-**Periodic builds:**
-```bash
-Not periodically build
 ```
 
 ---
