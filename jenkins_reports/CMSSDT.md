@@ -584,8 +584,10 @@ H/3 * * * *
 **Upstream projects:**
 
 **Downstream projects:**
+* [ib-install-siteconf](#ib-install-siteconf):
 
 **Sub-projects:**
+* [ib-install-siteconf](#ib-install-siteconf):
 
 **Triggers from:** []
 
@@ -604,6 +606,7 @@ Not periodically build
 **Project is `enabled`.**
 
 **Upstream projects:**
+* [ib-check-siteconf](#ib-check-siteconf):
 
 **Downstream projects:**
 
@@ -614,8 +617,7 @@ Not periodically build
 
 **Periodic builds:**
 ```bash
-H * * * *
-
+Not periodically build
 ```
 
 ---
