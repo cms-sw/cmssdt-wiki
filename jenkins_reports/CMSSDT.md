@@ -681,6 +681,7 @@ Finally, it generates a status file that is visible in the IB page (https://cmss
 
 **Upstream projects:**
 * [ib-run-crab](#ib-run-crab):
+* [pr-run-crab](#pr-run-crab):
 
 **Downstream projects:**
 
@@ -4130,6 +4131,32 @@ Not periodically build
 **Periodic builds:**
 ```bash
 @hourly
+```
+
+---
+
+## [pr-run-crab](https://cmssdt.cern.ch/jenkins/job/pr-run-crab)
+
+**Description:** This job integrates CRAB into the CI system.
+<br>
+<br>
+Note: CRAB is the CMS Computing tool to submit CMSSW users' analysis jobs to distributed computing resources (https://twiki.cern.ch/twiki/bin/view/CMSPublic/SWGuideCrab).
+
+**Project is `enabled`.**
+
+**Upstream projects:**
+
+**Downstream projects:**
+* [ib-monitor-crab](#ib-monitor-crab):
+
+**Sub-projects:**
+
+**Triggers from:** []
+
+
+**Periodic builds:**
+```bash
+Not periodically build
 ```
 
 ---
