@@ -303,9 +303,63 @@ Not periodically build
 * [ib-run-pr-tests](#ib-run-pr-tests):
 
 **Downstream projects:**
+* [pr-run-crab](#pr-run-crab):
 
 **Sub-projects:**
-* [ib-run-pr-${TEST_TYPE}](#ib-run-pr-${TEST_TYPE}):
+* [pr-run-crab](#pr-run-crab):
+
+**Triggers from:** []
+
+
+**Periodic builds:**
+```bash
+Not periodically build
+```
+
+---
+
+## [pr-run-crab](https://cmssdt.cern.ch/jenkins/job/pr-run-crab)
+
+**Description:** This job integrates CRAB into the CI system.
+<br>
+<br>
+Note: CRAB is the CMS Computing tool to submit CMSSW users' analysis jobs to distributed computing resources (https://twiki.cern.ch/twiki/bin/view/CMSPublic/SWGuideCrab).
+
+**Project is `enabled`.**
+
+**Upstream projects:**
+* [pr-wait-crab-deployment](#pr-wait-crab-deployment):
+
+**Downstream projects:**
+* [ib-monitor-crab](#ib-monitor-crab):
+
+**Sub-projects:**
+
+**Triggers from:** []
+
+
+**Periodic builds:**
+```bash
+Not periodically build
+```
+
+---
+
+## [ib-monitor-crab](https://cmssdt.cern.ch/jenkins/job/ib-monitor-crab)
+
+**Description:** This job is triggered by 'ib-run-crab' once a test analysis is submitted to CRAB. It monitors the status of the CRAB job by using curl calls until the job finishes.
+<br>
+Finally, it generates a status file that is visible in the IB page (https://cmssdt.cern.ch/SDT/jenkins-artifacts/ib-run-crab).
+
+**Project is `enabled`.**
+
+**Upstream projects:**
+* [ib-run-crab](#ib-run-crab):
+* [pr-run-crab](#pr-run-crab):
+
+**Downstream projects:**
+
+**Sub-projects:**
 
 **Triggers from:** []
 
