@@ -160,7 +160,7 @@ Results of this build can be seen via <a href="https://cmssdt.cern.ch/SDT/">CMSS
 
 **Upstream projects:**
 * [build-any-ib](#build-any-ib):
-* [build-spack-ib](#build-spack-ib):
+* [cms-spack-ib](#cms-spack-ib):
 
 **Downstream projects:**
 * [ib-build-logs](#ib-build-logs):
@@ -187,7 +187,7 @@ Not periodically build
 **Upstream projects:**
 * [build-any-ib](#build-any-ib):
 * [build-fwlite-ib](#build-fwlite-ib):
-* [build-spack-ib](#build-spack-ib):
+* [cms-spack-ib](#cms-spack-ib):
 
 **Downstream projects:**
 * [update-github-pages](#update-github-pages):
@@ -306,7 +306,7 @@ Not periodically build
 **Upstream projects:**
 * [build-any-ib](#build-any-ib):
 * [build-fwlite-ib](#build-fwlite-ib):
-* [build-spack-ib](#build-spack-ib):
+* [cms-spack-ib](#cms-spack-ib):
 
 **Downstream projects:**
 * [update-github-pages](#update-github-pages):
@@ -430,7 +430,7 @@ either delete the failed job instance or update the "Build information" and ment
 
 **Upstream projects:**
 * [build-any-ib](#build-any-ib):
-* [build-spack-ib](#build-spack-ib):
+* [cms-spack-ib](#cms-spack-ib):
 * [cmsrep-webhook](#cmsrep-webhook):
 * [ib-tag-and-schdule](#ib-tag-and-schdule):
 
@@ -866,6 +866,7 @@ Not periodically build
 
 **Upstream projects:**
 * [build-any-ib](#build-any-ib):
+* [cms-spack-ib](#cms-spack-ib):
 * [cmsrep-webhook](#cmsrep-webhook):
 
 **Downstream projects:**
@@ -890,7 +891,7 @@ Not periodically build
 
 **Upstream projects:**
 * [build-any-ib](#build-any-ib):
-* [build-spack-ib](#build-spack-ib):
+* [cms-spack-ib](#cms-spack-ib):
 
 **Downstream projects:**
 
@@ -966,7 +967,7 @@ either delete the failed job instance or update the "Build information" and ment
 
 **Upstream projects:**
 * [build-any-ib](#build-any-ib):
-* [build-spack-ib](#build-spack-ib):
+* [cms-spack-ib](#cms-spack-ib):
 * [cmsrep-webhook](#cmsrep-webhook):
 * [ib-tag-and-schdule](#ib-tag-and-schdule):
 
