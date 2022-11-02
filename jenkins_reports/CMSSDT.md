@@ -3595,6 +3595,7 @@ better to wait for the service to get healthy.
 * [abort-pr-tests](#abort-pr-tests):
 * [ib-run-pr-wait-deployment](#ib-run-pr-wait-deployment):
 * [pr-publish-cmssw](#pr-publish-cmssw):
+* [pr-run-crab](#pr-run-crab):
 * [update-das-queries](#update-das-queries):
 
 **Sub-projects:**
@@ -3602,6 +3603,7 @@ better to wait for the service to get healthy.
 * [pr-publish-cmssw](#pr-publish-cmssw):
 * [ib-run-pr-wait-deployment](#ib-run-pr-wait-deployment):
 * [update-das-queries ](#update-das-queries ):
+* [pr-run-crab](#pr-run-crab):
 
 **Triggers from:** []
 
@@ -4170,6 +4172,7 @@ Note: CRAB is the CMS Computing tool to submit CMSSW users' analysis jobs to dis
 **Project is `enabled`.**
 
 **Upstream projects:**
+* [ib-run-pr-tests](#ib-run-pr-tests):
 
 **Downstream projects:**
 * [ib-monitor-crab](#ib-monitor-crab):
