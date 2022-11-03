@@ -3833,7 +3833,6 @@ better to wait for the service to get healthy.
 * [abort-pr-tests](#abort-pr-tests):
 * [ib-run-pr-wait-deployment](#ib-run-pr-wait-deployment):
 * [pr-publish-cmssw](#pr-publish-cmssw):
-* [pr-wait-crab-deployment](#pr-wait-crab-deployment):
 * [update-das-queries](#update-das-queries):
 
 **Sub-projects:**
@@ -3841,7 +3840,6 @@ better to wait for the service to get healthy.
 * [pr-publish-cmssw](#pr-publish-cmssw):
 * [ib-run-pr-wait-deployment](#ib-run-pr-wait-deployment):
 * [update-das-queries ](#update-das-queries ):
-* [pr-wait-crab-deployment](#pr-wait-crab-deployment):
 
 **Triggers from:** []
 
@@ -5772,39 +5770,11 @@ Not periodically build
 **Project is `enabled`.**
 
 **Upstream projects:**
-* [pr-wait-crab-deployment](#pr-wait-crab-deployment):
 
 **Downstream projects:**
 * [ib-monitor-crab](#ib-monitor-crab):
 
 **Sub-projects:**
-
-**Triggers from:** []
-
-
-**Periodic builds:**
-```bash
-Not periodically build
-```
-
----
-
-## [pr-wait-crab-deployment](https://cmssdt.cern.ch/jenkins/job/pr-wait-crab-deployment)
-
-**Description:** avalenzu: TO BE DELETED
-
-
-
-**Project is `enabled`.**
-
-**Upstream projects:**
-* [ib-run-pr-tests](#ib-run-pr-tests):
-
-**Downstream projects:**
-* [pr-run-crab](#pr-run-crab):
-
-**Sub-projects:**
-* [pr-run-crab](#pr-run-crab):
 
 **Triggers from:** []
 
