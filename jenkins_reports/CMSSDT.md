@@ -3573,6 +3573,29 @@ Not periodically build
 
 ---
 
+## [ib-run-pr-crab](https://cmssdt.cern.ch/jenkins/job/ib-run-pr-crab)
+
+**Description:** Build mutiple pull requests. 
+Run cmssw addON (HLT tests)
+
+**Project is `enabled`.**
+
+**Upstream projects:**
+
+**Downstream projects:**
+
+**Sub-projects:**
+
+**Triggers from:** []
+
+
+**Periodic builds:**
+```bash
+Not periodically build
+```
+
+---
+
 ## [ib-run-pr-tests](https://cmssdt.cern.ch/jenkins/job/ib-run-pr-tests)
 
 **Description:** This is CMSSw CI Job which runs the build and unit tests part of CI. 

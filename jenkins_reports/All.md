@@ -3679,6 +3679,29 @@ Not periodically build
 
 ---
 
+## [ib-run-pr-crab](https://cmssdt.cern.ch/jenkins/job/ib-run-pr-crab)
+
+**Description:** Build mutiple pull requests. 
+Run cmssw addON (HLT tests)
+
+**Project is `enabled`.**
+
+**Upstream projects:**
+
+**Downstream projects:**
+
+**Sub-projects:**
+
+**Triggers from:** []
+
+
+**Periodic builds:**
+```bash
+Not periodically build
+```
+
+---
+
 ## [ib-run-pr-dasgoclient](https://cmssdt.cern.ch/jenkins/job/ib-run-pr-dasgoclient)
 
 **Description:** Job to run das client and cache the results in github to be used by IBs.
