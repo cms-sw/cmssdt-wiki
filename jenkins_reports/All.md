@@ -3227,7 +3227,7 @@ Finally, it generates a status file that is visible in the IB page (https://cmss
 
 **Upstream projects:**
 * [ib-run-crab](#ib-run-crab):
-* [pr-run-crab](#pr-run-crab):
+* [ib-run-pr-crab](#ib-run-pr-crab):
 
 **Downstream projects:**
 
@@ -3689,6 +3689,7 @@ Run cmssw addON (HLT tests)
 **Upstream projects:**
 
 **Downstream projects:**
+* [ib-monitor-crab](#ib-monitor-crab):
 
 **Sub-projects:**
 
@@ -5750,29 +5751,6 @@ Not periodically build
 * [ib-run-pr-tests](#ib-run-pr-tests):
 
 **Downstream projects:**
-
-**Sub-projects:**
-
-**Triggers from:** []
-
-
-**Periodic builds:**
-```bash
-Not periodically build
-```
-
----
-
-## [pr-run-crab](https://cmssdt.cern.ch/jenkins/job/pr-run-crab)
-
-**Description:** avalenzu: TO BE DELETED
-
-**Project is `enabled`.**
-
-**Upstream projects:**
-
-**Downstream projects:**
-* [ib-monitor-crab](#ib-monitor-crab):
 
 **Sub-projects:**
 
