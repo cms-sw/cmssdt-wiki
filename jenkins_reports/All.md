@@ -5744,10 +5744,7 @@ Not periodically build
 
 ## [pr-run-crab](https://cmssdt.cern.ch/jenkins/job/pr-run-crab)
 
-**Description:** This job integrates CRAB into the CI system.
-<br>
-<br>
-Note: CRAB is the CMS Computing tool to submit CMSSW users' analysis jobs to distributed computing resources (https://twiki.cern.ch/twiki/bin/view/CMSPublic/SWGuideCrab).
+**Description:** avalenzu: TO BE DELETED
 
 **Project is `enabled`.**
 
@@ -5771,8 +5768,7 @@ Not periodically build
 
 ## [pr-wait-crab-deployment](https://cmssdt.cern.ch/jenkins/job/pr-wait-crab-deployment)
 
-**Description:** This job waits until CRAB has been deployed into cvmfs (cms-ci.cern.ch repository).<br>
-
+**Description:** avalenzu: TO BE DELETED
 
 
 
