@@ -757,7 +757,7 @@ Not periodically build
 
 ## [ib-monitor-crab](https://cmssdt.cern.ch/jenkins/job/ib-monitor-crab)
 
-**Description:** This job is triggered by 'ib-run-crab' once a test analysis is submitted to CRAB. It monitors the status of the CRAB job by using curl calls until the job finishes.
+**Description:** This job is triggered by `ib-run-crab` or `ib-run-pr-crab` once a test analysis is submitted to CRAB. It monitors the status of the CRAB job by using curl calls until the job finishes.
 <br>
 Finally, it generates a status file that is visible in the IB page (https://cmssdt.cern.ch/SDT/jenkins-artifacts/ib-run-crab).
 
@@ -3575,8 +3575,7 @@ Not periodically build
 
 ## [ib-run-pr-crab](https://cmssdt.cern.ch/jenkins/job/ib-run-pr-crab)
 
-**Description:** Build mutiple pull requests. 
-Run cmssw addON (HLT tests)
+**Description:** PR Unit Test for CRAB updates.
 
 **Project is `enabled`.**
 
