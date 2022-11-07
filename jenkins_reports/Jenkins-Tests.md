@@ -601,7 +601,7 @@ Not periodically build
 
 **Description:** avalenzu: debug
 
-**Project is `disabled`.**
+**Project is `enabled`.**
 
 **Upstream projects:**
 
