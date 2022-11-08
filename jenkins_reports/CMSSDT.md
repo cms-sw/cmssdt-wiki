@@ -1799,7 +1799,6 @@ Otherwise build a patch release.
 * [ib-install-cvmfs,ib-install-cvmfs-gateway](#ib-install-cvmfs,ib-install-cvmfs-gateway):
 * [ib-build-logs,process-external-elastic-stats](#ib-build-logs,process-external-elastic-stats):
 * [build-fwlite-ib](#build-fwlite-ib):
-* [ib-install-cvmfs](#ib-install-cvmfs):
 
 **Triggers from:** []
 
