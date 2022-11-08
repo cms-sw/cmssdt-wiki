@@ -3692,6 +3692,7 @@ Not periodically build
 * [ib-monitor-crab](#ib-monitor-crab):
 
 **Sub-projects:**
+* [ib-monitor-crab](#ib-monitor-crab):
 
 **Triggers from:** []
 
