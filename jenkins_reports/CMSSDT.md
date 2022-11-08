@@ -826,6 +826,7 @@ Note: CRAB is the CMS Computing tool to submit CMSSW users' analysis jobs to dis
 * [ib-monitor-crab](#ib-monitor-crab):
 
 **Sub-projects:**
+* [ib-monitor-crab](#ib-monitor-crab):
 
 **Triggers from:** []
 
