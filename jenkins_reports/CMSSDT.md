@@ -1338,7 +1338,10 @@ Not periodically build
 
 ## [test-os-el8](https://cmssdt.cern.ch/jenkins/job/test-os-el8)
 
-**Description:** None
+**Description:** [11/11 - avalenzu]: Failures when getting latest bootstrap driver file from cmsrep: \n
++ wget --no-check-certificate '--header=Cache-Control: max-age=0' --user-agent=CMSPKG/1.0 --timeout=600 -q -O /tmp/tmpuBC1G/el8_amd64_gcc10-driver.txt.tmp 'cmsrep.cern.ch/cgi-bin/cmspkg/driver/cms.sw/el8_amd64_gcc10?repo_uri=cmssw'
+
+
 
 **Project is `enabled`.**
 
