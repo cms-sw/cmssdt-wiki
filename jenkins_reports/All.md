@@ -6412,10 +6412,22 @@ Not periodically build
 
 ## [test-os-el8](https://cmssdt.cern.ch/jenkins/job/test-os-el8)
 
-**Description:** [11/11 - avalenzu]: Failures when getting latest bootstrap driver file from cmsrep: \n
-+ wget --no-check-certificate '--header=Cache-Control: max-age=0' --user-agent=CMSPKG/1.0 --timeout=600 -q -O /tmp/tmpuBC1G/el8_amd64_gcc10-driver.txt.tmp 'cmsrep.cern.ch/cgi-bin/cmspkg/driver/cms.sw/el8_amd64_gcc10?repo_uri=cmssw'
+**Description:** [11/11 - avalenzu]: Failures when getting latest bootstrap driver file from cmsrep (file not found):
+<br><br>
 
-
+-bash-4.2$ wget --no-check-certificate '--header=Cache-Control: max-age=0' --user-agent=CMSPKG/1.0 --timeout=600 -O /tmp/tmpuBC1G/el8_amd64_gcc10-driver.txt.tmp 'cmsrep.cern.ch/cgi-bin/cmspkg/driver/cms.sw/el8_amd64_gcc10?repo_uri=cmssw'
+<br><br>
+--2022-11-11 11:19:47--  http://cmsrep.cern.ch/cgi-bin/cmspkg/driver/cms.sw/el8_amd64_gcc10?repo_uri=cmssw
+<br>
+Resolving cmsrep.cern.ch (cmsrep.cern.ch)... 188.184.102.160
+<br>
+Connecting to cmsrep.cern.ch (cmsrep.cern.ch)|188.184.102.160|:80... connected.
+<br>
+HTTP request sent, awaiting response... 404 Not Found
+<br>
+2022-11-11 11:19:47 ERROR 404: Not Found.
+<br><br>
+Workspace for #634 at cmsbuild70.
 
 **Project is `enabled`.**
 
