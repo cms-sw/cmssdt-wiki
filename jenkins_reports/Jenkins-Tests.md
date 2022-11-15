@@ -424,7 +424,7 @@ Not periodically build
 
 **Description:** Dummy job for testing purposes (@avalenzu)
 
-**Project is `disabled`.**
+**Project is `enabled`.**
 
 **Upstream projects:**
 
