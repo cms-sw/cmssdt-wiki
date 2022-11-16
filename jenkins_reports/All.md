@@ -4895,7 +4895,7 @@ Not periodically build
 
 **Periodic builds:**
 ```bash
-H/15 * * * *
+Not periodically build
 ```
 
 ---
