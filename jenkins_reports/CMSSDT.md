@@ -717,10 +717,13 @@ Not periodically build
 * [build-any-ib](#build-any-ib):
 * [cms-spack-ib](#cms-spack-ib):
 * [cmsrep-webhook](#cmsrep-webhook):
+* [ib-install-cvmfs-gateway](#ib-install-cvmfs-gateway):
 
 **Downstream projects:**
+* [ib-install-cvmfs-gateway](#ib-install-cvmfs-gateway):
 
 **Sub-projects:**
+* [ib-install-cvmfs-gateway](#ib-install-cvmfs-gateway):
 
 **Triggers from:** []
 
