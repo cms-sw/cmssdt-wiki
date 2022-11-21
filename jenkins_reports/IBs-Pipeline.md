@@ -63,10 +63,11 @@ This job re-tries itself on failure. So there is no need to re-try it manually (
 * [cleanup-cmsrep](#cleanup-cmsrep):
 * [cleanup-cvmfs-ci](#cleanup-cvmfs-ci):
 * [ib-install-cvmfs](#ib-install-cvmfs):
+* [ib-install-cvmfs-gateway](#ib-install-cvmfs-gateway):
 
 **Sub-projects:**
 * [build-any-ib](#build-any-ib):
-* [ib-install-cvmfs](#ib-install-cvmfs):
+* [ib-install-cvmfs,ib-install-cvmfs-gateway](#ib-install-cvmfs,ib-install-cvmfs-gateway):
 * [cleanup-cmsrep,cleanup-cvmfs-ci](#cleanup-cmsrep,cleanup-cvmfs-ci):
 
 **Triggers from:** []
@@ -869,6 +870,7 @@ Not periodically build
 * [cms-spack-ib](#cms-spack-ib):
 * [cmsrep-webhook](#cmsrep-webhook):
 * [ib-install-cvmfs-gateway](#ib-install-cvmfs-gateway):
+* [ib-tag-and-schdule](#ib-tag-and-schdule):
 
 **Downstream projects:**
 * [ib-install-cvmfs-gateway](#ib-install-cvmfs-gateway):
@@ -1389,6 +1391,35 @@ as deploys on the web server. It is used to generate <a href="https://cmssdt.cer
 **Sub-projects:**
 
 **Triggers from:** [u'update-github-pages']
+
+
+**Periodic builds:**
+```bash
+Not periodically build
+```
+
+---
+
+## [ib-install-cvmfs-gateway](https://cmssdt.cern.ch/jenkins/job/ib-install-cvmfs-gateway)
+
+**Description:** Test job to install IBs in parallel (cvmfs gateway).
+
+**Project is `enabled`.**
+
+**Upstream projects:**
+* [build-any-ib](#build-any-ib):
+* [cms-spack-ib](#cms-spack-ib):
+* [cmsrep-webhook](#cmsrep-webhook):
+* [ib-install-cvmfs-gateway](#ib-install-cvmfs-gateway):
+* [ib-tag-and-schdule](#ib-tag-and-schdule):
+
+**Downstream projects:**
+* [ib-install-cvmfs-gateway](#ib-install-cvmfs-gateway):
+
+**Sub-projects:**
+* [ib-install-cvmfs-gateway](#ib-install-cvmfs-gateway):
+
+**Triggers from:** []
 
 
 **Periodic builds:**
