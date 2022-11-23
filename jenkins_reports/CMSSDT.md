@@ -1221,6 +1221,28 @@ Not periodically build
 
 ---
 
+## [test-check-nodes](https://cmssdt.cern.ch/jenkins/job/test-check-nodes)
+
+**Description:** avalenzu: debug
+
+**Project is `enabled`.**
+
+**Upstream projects:**
+
+**Downstream projects:**
+
+**Sub-projects:**
+
+**Triggers from:** []
+
+
+**Periodic builds:**
+```bash
+H * * * *
+```
+
+---
+
 ## [test-cmssdt](https://cmssdt.cern.ch/jenkins/job/test-cmssdt)
 
 **Description:** None
