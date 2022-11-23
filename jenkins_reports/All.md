@@ -513,7 +513,15 @@ H 16 * * *
 
 ## [check-pending-job](https://cmssdt.cern.ch/jenkins/job/check-pending-job)
 
-**Description:** None
+**Description:** <pre>The project checks for a running job and shows the status of process running on a remote machine.
+This can be useful to see if any process is handing and kill it. To run this job
+- Copy the url of a running job e.g.
+  - https://cmssdt.cern.ch/jenkins/job/ib-run-relvals/243936/
+  - https://cmssdt.cern.ch/jenkins/job/ib-run-relvals/243936/console
+- Start the job with JOB_URL=url-of-a-running-job
+- Check the outout and see if any process is running for too long and should be killed?
+- If a process should be killed then return the job with KILL_PID
+</pre>
 
 **Project is `enabled`.**
 
