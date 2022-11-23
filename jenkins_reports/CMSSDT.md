@@ -58,6 +58,28 @@ H H/4 * * *
 
 ---
 
+## [check-pending-job](https://cmssdt.cern.ch/jenkins/job/check-pending-job)
+
+**Description:** None
+
+**Project is `enabled`.**
+
+**Upstream projects:**
+
+**Downstream projects:**
+
+**Sub-projects:**
+
+**Triggers from:** []
+
+
+**Periodic builds:**
+```bash
+Not periodically build
+```
+
+---
+
 ## [check-unused-cmsdist-packages](https://cmssdt.cern.ch/jenkins/job/check-unused-cmsdist-packages)
 
 **Description:** This job check for unused cmsdist files so that one can do the cleanup.
@@ -1238,7 +1260,7 @@ Not periodically build
 
 **Periodic builds:**
 ```bash
-H * * * *
+Not periodically build
 ```
 
 ---
