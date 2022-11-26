@@ -14,16 +14,14 @@
 This was created to avoid the issue with <a href="https://wiki.jenkins.io/display/JENKINS/Dynamic+Parameter+Plug-in">Jenkins Dynamic Parameters</a>.
 
 
-**Project is `disabled`.**
+**Project is `enabled`.**
 
 **Upstream projects:**
 
 **Downstream projects:**
 * [ib-tag-and-schdule](#ib-tag-and-schdule):
-* [sync-patatrack-branch](#sync-patatrack-branch):
 
 **Sub-projects:**
-* [sync-patatrack-branch](#sync-patatrack-branch):
 * [ib-tag-and-schdule](#ib-tag-and-schdule):
 
 **Triggers from:** []
@@ -1425,31 +1423,6 @@ Not periodically build
 **Periodic builds:**
 ```bash
 Not periodically build
-```
-
----
-
-## [sync-patatrack-branch](https://cmssdt.cern.ch/jenkins/job/sync-patatrack-branch)
-
-**Description:** - this is to sync patatrack branches <br/>
-- Currently this job does not do any thing (kind of disabled)
-
-
-**Project is `enabled`.**
-
-**Upstream projects:**
-* [ib-schedule](#ib-schedule):
-
-**Downstream projects:**
-
-**Sub-projects:**
-
-**Triggers from:** []
-
-
-**Periodic builds:**
-```bash
-55 * * * *
 ```
 
 ---
