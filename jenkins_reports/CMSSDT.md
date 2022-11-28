@@ -4289,6 +4289,28 @@ Not periodically build
 
 ---
 
+## [nodes-sanity-check](https://cmssdt.cern.ch/jenkins/job/nodes-sanity-check)
+
+**Description:** avalenzu: debug
+
+**Project is `enabled`.**
+
+**Upstream projects:**
+
+**Downstream projects:**
+
+**Sub-projects:**
+
+**Triggers from:** []
+
+
+**Periodic builds:**
+```bash
+Not periodically build
+```
+
+---
+
 ## [process-deprecate-releases](https://cmssdt.cern.ch/jenkins/job/process-deprecate-releases)
 
 **Description:** This job marks selected realeases depricated in realease map. Grid jobs will not use depricated release and posibly uninstall it.
