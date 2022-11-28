@@ -5610,7 +5610,13 @@ Not periodically build
 
 ## [nodes-sanity-check](https://cmssdt.cern.ch/jenkins/job/nodes-sanity-check)
 
-**Description:** avalenzu: debug
+**Description:** 
+
+This job runs a check that makes sure /afs, /cvmfs, /cvmfs/cms.cern.ch, /cvmfs/cms-ci.cern.ch, /cvmfs/cms-ib.cern.ch, /cvmfs/grid.cern.ch and /cvmfs/unpacked.cern.ch are mounted and that singularity can start a container in the node. It runs on lxplus7, lxplus8 and lxplus9 considering the available hosts at the time of running and both aarch64 and ppc64le machines.<br>
+<br>
+If any of the checks fails, it sends an email notification and writes the node name into a blacklist. For lxplus nodes, this blacklist is checked before connecting any node to make sure Jenkins does not connect to a blacklisted node. For aarch64 and ppc64le machines, it takes the corresponding nodes offline.<br>
+<br>
+The blacklist is cleaned up for lxplus nodes if the tests run again successfully in any of the nodes or if the host is not in the list of available hosts anymore. The aarch64 and ppc64le nodes must be taken online manually after receiving the email notification and fixing the issue.
 
 **Project is `enabled`.**
 
@@ -6341,28 +6347,6 @@ Not periodically build
 **Periodic builds:**
 ```bash
 H/15 * * * *
-```
-
----
-
-## [test-check-nodes](https://cmssdt.cern.ch/jenkins/job/test-check-nodes)
-
-**Description:** avalenzu: debug
-
-**Project is `enabled`.**
-
-**Upstream projects:**
-
-**Downstream projects:**
-
-**Sub-projects:**
-
-**Triggers from:** []
-
-
-**Periodic builds:**
-```bash
-Not periodically build
 ```
 
 ---
