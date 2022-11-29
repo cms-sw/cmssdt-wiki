@@ -5630,6 +5630,29 @@ Not periodically build
 
 ---
 
+## [nodes-status-summary](https://cmssdt.cern.ch/jenkins/job/nodes-status-summary)
+
+**Description:** This job checks the status of the Jenkins nodes every day to verify that none of them has been manually disconnected/or disconnected by CLI and not bring back online.<br>
+
+
+**Project is `enabled`.**
+
+**Upstream projects:**
+
+**Downstream projects:**
+
+**Sub-projects:**
+
+**Triggers from:** []
+
+
+**Periodic builds:**
+```bash
+H 16 * * *
+```
+
+---
+
 ## [openstack-add-jenkins-slave](https://cmssdt.cern.ch/jenkins/job/openstack-add-jenkins-slave)
 
 **Description:** Find all hosts in an hostgroup and add them to jenkins
