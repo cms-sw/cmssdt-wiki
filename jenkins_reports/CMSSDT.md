@@ -2092,29 +2092,6 @@ Not periodically build
 
 ---
 
-## [check-node-status](https://cmssdt.cern.ch/jenkins/job/check-node-status)
-
-**Description:** This job checks the status of the Jenkins nodes every day to verify that none of them has been manually disconnected/or disconnected by CLI and not bring back online.<br>
-
-
-**Project is `enabled`.**
-
-**Upstream projects:**
-
-**Downstream projects:**
-
-**Sub-projects:**
-
-**Triggers from:** []
-
-
-**Periodic builds:**
-```bash
-H 16 * * *
-```
-
----
-
 ## [clean-build-docker-container](https://cmssdt.cern.ch/jenkins/job/clean-build-docker-container)
 
 **Description:** This job prevents running out of disk in the machines used to build container images (e.g., the ones used for running the build-docker-container job).
@@ -4292,6 +4269,7 @@ Not periodically build
 ## [nodes-status-summary](https://cmssdt.cern.ch/jenkins/job/nodes-status-summary)
 
 **Description:** This job checks the status of the Jenkins nodes every day to verify that none of them has been manually disconnected/or disconnected by CLI and not bring back online.<br>
+It also notifies about the blacklisted nodes.
 
 
 **Project is `enabled`.**

@@ -488,29 +488,6 @@ Not periodically build
 
 ---
 
-## [check-node-status](https://cmssdt.cern.ch/jenkins/job/check-node-status)
-
-**Description:** This job checks the status of the Jenkins nodes every day to verify that none of them has been manually disconnected/or disconnected by CLI and not bring back online.<br>
-
-
-**Project is `enabled`.**
-
-**Upstream projects:**
-
-**Downstream projects:**
-
-**Sub-projects:**
-
-**Triggers from:** []
-
-
-**Periodic builds:**
-```bash
-H 16 * * *
-```
-
----
-
 ## [check-pending-job](https://cmssdt.cern.ch/jenkins/job/check-pending-job)
 
 **Description:** <pre>The project checks for a running job and shows the status of process running on a remote machine.
@@ -5633,6 +5610,7 @@ Not periodically build
 ## [nodes-status-summary](https://cmssdt.cern.ch/jenkins/job/nodes-status-summary)
 
 **Description:** This job checks the status of the Jenkins nodes every day to verify that none of them has been manually disconnected/or disconnected by CLI and not bring back online.<br>
+It also notifies about the blacklisted nodes.
 
 
 **Project is `enabled`.**
