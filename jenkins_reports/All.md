@@ -3180,7 +3180,7 @@ Not periodically build
 
 **Description:** Test job to install IBs in parallel (cvmfs gateway).
 
-**Project is `enabled`.**
+**Project is `disabled`.**
 
 **Upstream projects:**
 * [build-any-ib](#build-any-ib):
