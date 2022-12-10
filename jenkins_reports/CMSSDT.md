@@ -4403,29 +4403,6 @@ H/15 * * * *
 
 ---
 
-## [refresh-cmssdt](https://cmssdt.cern.ch/jenkins/job/refresh-cmssdt)
-
-**Description:** This job updates the cmssw IB page on cmssdt.
-
-**Project is `enabled`.**
-
-**Upstream projects:**
-* [update-github-pages](#update-github-pages):
-
-**Downstream projects:**
-
-**Sub-projects:**
-
-**Triggers from:** [u'update-github-pages']
-
-
-**Periodic builds:**
-```bash
-Not periodically build
-```
-
----
-
 ## [reindex-elasticsearch-indexes](https://cmssdt.cern.ch/jenkins/job/reindex-elasticsearch-indexes)
 
 **Description:** Job to reindex existing indexes whenever the template schema is changed or for whatever other reason

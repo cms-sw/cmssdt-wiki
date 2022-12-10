@@ -110,7 +110,7 @@ Not periodically build
 
 **Description:** This job updates the cmssw IB page on cmssdt.
 
-**Project is `enabled`.**
+**Project is `disabled`.**
 
 **Upstream projects:**
 * [update-github-pages](#update-github-pages):
