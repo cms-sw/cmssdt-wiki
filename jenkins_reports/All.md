@@ -6946,38 +6946,13 @@ Not periodically build
 
 ---
 
-## [vtune-check](https://cmssdt.cern.ch/jenkins/job/vtune-check)
-
-**Description:** This job checks if https://cmssdt.cern.ch/vtune/ is acessable and if not, starts <a href="https://cmssdt.cern.ch/jenkins/view/All/job/vtune-run-container/">vtune-run-container<a/> job to restart the service.
-
-**Project is `enabled`.**
-
-**Upstream projects:**
-
-**Downstream projects:**
-* [vtune-run-container](#vtune-run-container):
-
-**Sub-projects:**
-* [vtune-run-container](#vtune-run-container):
-
-**Triggers from:** []
-
-
-**Periodic builds:**
-```bash
-H/30 * * * *
-```
-
----
-
 ## [vtune-run-container](https://cmssdt.cern.ch/jenkins/job/vtune-run-container)
 
 **Description:** This job stops and deletes old docker contaner of Vtune service and starts new one.
 
-**Project is `enabled`.**
+**Project is `disabled`.**
 
 **Upstream projects:**
-* [vtune-check](#vtune-check):
 
 **Downstream projects:**
 

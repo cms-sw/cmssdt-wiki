@@ -54,6 +54,28 @@ Not periodically build
 
 ---
 
+## [vtune-run-container](https://cmssdt.cern.ch/jenkins/job/vtune-run-container)
+
+**Description:** This job stops and deletes old docker contaner of Vtune service and starts new one.
+
+**Project is `disabled`.**
+
+**Upstream projects:**
+
+**Downstream projects:**
+
+**Sub-projects:**
+
+**Triggers from:** []
+
+
+**Periodic builds:**
+```bash
+Not periodically build
+```
+
+---
+
 ## [cvmfs-ci-gc](https://cmssdt.cern.ch/jenkins/job/cvmfs-ci-gc)
 
 **Description:** This runs CVMFS GC (once a week)
