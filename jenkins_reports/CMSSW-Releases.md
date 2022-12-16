@@ -208,6 +208,7 @@ Not periodically build
 * [upload-release](#upload-release):
 
 **Sub-projects:**
+* [upload-release](#upload-release):
 
 **Triggers from:** []
 
