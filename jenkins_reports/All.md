@@ -2432,7 +2432,7 @@ Not periodically build
 **Description:** This job keeps last 6 weeks (1.5 months) of data in Elasticsearch open, and it closes older indexes (archive it).
 We do not care about older data. By doing it we make Elasticsearch faster. 
 
-**Project is `enabled`.**
+**Project is `disabled`.**
 
 **Upstream projects:**
 
