@@ -4440,7 +4440,7 @@ H * * * *
 
 **Periodic builds:**
 ```bash
-Not periodically build
+H/5 * * * *
 ```
 
 ---
