@@ -8,6 +8,29 @@
 
 # Projects:
 
+## [refresh-cmssdt](https://cmssdt.cern.ch/jenkins/job/refresh-cmssdt)
+
+**Description:** This job updates the cmssw IB page on cmssdt.
+
+**Project is `disabled`.**
+
+**Upstream projects:**
+* [update-github-pages](#update-github-pages):
+
+**Downstream projects:**
+
+**Sub-projects:**
+
+**Triggers from:** [u'update-github-pages']
+
+
+**Periodic builds:**
+```bash
+Not periodically build
+```
+
+---
+
 ## [ib-run-pr-baseline](https://cmssdt.cern.ch/jenkins/job/ib-run-pr-baseline)
 
 **Description:** None
