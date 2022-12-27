@@ -56,7 +56,6 @@
   * [All](jenkins_reports/All.md)
   * [CVMFS-CMS](jenkins_reports/CVMFS-CMS.md)
   * [Jenkins Tests](jenkins_reports/Jenkins-Tests.md)
-  * [Shared Agents](jenkins_reports/Shared-Agents.md)
   * [Grid](jenkins_reports/Grid.md)
   * [CMSSDT](jenkins_reports/CMSSDT.md)
   * [Openstack](jenkins_reports/Openstack.md)
