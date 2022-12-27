@@ -663,28 +663,6 @@ Not periodically build
 
 ---
 
-## [jenkins-test-shared-node](https://cmssdt.cern.ch/jenkins/job/jenkins-test-shared-node)
-
-**Description:** None
-
-**Project is `disabled`.**
-
-**Upstream projects:**
-
-**Downstream projects:**
-
-**Sub-projects:**
-
-**Triggers from:** []
-
-
-**Periodic builds:**
-```bash
-H/10 * * * *
-```
-
----
-
 ## [jenkins-test-ws-trigger-job](https://cmssdt.cern.ch/jenkins/job/jenkins-test-ws-trigger-job)
 
 **Description:** None

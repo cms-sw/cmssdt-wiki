@@ -5205,28 +5205,6 @@ Not periodically build
 
 ---
 
-## [jenkins-test-shared-node](https://cmssdt.cern.ch/jenkins/job/jenkins-test-shared-node)
-
-**Description:** None
-
-**Project is `disabled`.**
-
-**Upstream projects:**
-
-**Downstream projects:**
-
-**Sub-projects:**
-
-**Triggers from:** []
-
-
-**Periodic builds:**
-```bash
-H/10 * * * *
-```
-
----
-
 ## [jenkins-test-slave](https://cmssdt.cern.ch/jenkins/job/jenkins-test-slave)
 
 **Description:** This Jenkins project test various CMS Jenkins slaves and makes sure that various communication channels 
