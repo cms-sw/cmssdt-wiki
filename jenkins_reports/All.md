@@ -3391,12 +3391,15 @@ Note: CRAB is the CMS Computing tool to submit CMSSW users' analysis jobs to dis
 **Project is `enabled`.**
 
 **Upstream projects:**
+* [ib-run-crab](#ib-run-crab):
 
 **Downstream projects:**
 * [ib-monitor-crab](#ib-monitor-crab):
+* [ib-run-crab](#ib-run-crab):
 
 **Sub-projects:**
 * [ib-monitor-crab](#ib-monitor-crab):
+* [ib-run-crab ](#ib-run-crab ):
 
 **Triggers from:** []
 
