@@ -5497,6 +5497,30 @@ H 5  * * *
 
 ---
 
+## [lxr-repair-table](https://cmssdt.cern.ch/jenkins/job/lxr-repair-table)
+
+**Description:** Deletes index of of IB's older then treshold on LXR ( default 14 days).
+If specified, it also deletes Release index.
+
+**Project is `enabled`.**
+
+**Upstream projects:**
+
+**Downstream projects:**
+
+**Sub-projects:**
+
+**Triggers from:** []
+
+
+**Periodic builds:**
+```bash
+H 5  * * *
+
+```
+
+---
+
 ## [lxr-run-container](https://cmssdt.cern.ch/jenkins/job/lxr-run-container)
 
 **Description:** This job stops and deletes old docker contaner of LXR service and starts new one.

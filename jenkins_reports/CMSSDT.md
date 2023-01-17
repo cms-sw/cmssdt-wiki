@@ -1086,6 +1086,30 @@ Not periodically build
 
 ---
 
+## [lxr-repair-table](https://cmssdt.cern.ch/jenkins/job/lxr-repair-table)
+
+**Description:** Deletes index of of IB's older then treshold on LXR ( default 14 days).
+If specified, it also deletes Release index.
+
+**Project is `enabled`.**
+
+**Upstream projects:**
+
+**Downstream projects:**
+
+**Sub-projects:**
+
+**Triggers from:** []
+
+
+**Periodic builds:**
+```bash
+H 5  * * *
+
+```
+
+---
+
 ## [pr-publish-cmssw](https://cmssdt.cern.ch/jenkins/job/pr-publish-cmssw)
 
 **Description:** None
