@@ -1088,8 +1088,9 @@ Not periodically build
 
 ## [lxr-repair-table](https://cmssdt.cern.ch/jenkins/job/lxr-repair-table)
 
-**Description:** Deletes index of of IB's older then treshold on LXR ( default 14 days).
-If specified, it also deletes Release index.
+**Description:** Run this if there is any MySQL table to repair e.g. if lxr-remove-idex fails with error <br/>
+ERROR 144 (HY000) at line 3: Table './lxr/lxr_usages' is marked as crashed and last (automatic?) repair failed<br/>
+then run it with LXR_TABLE=lxr_usages
 
 **Project is `enabled`.**
 
