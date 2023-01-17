@@ -1104,8 +1104,7 @@ If specified, it also deletes Release index.
 
 **Periodic builds:**
 ```bash
-H 5  * * *
-
+Not periodically build
 ```
 
 ---
