@@ -6160,6 +6160,29 @@ Not periodically build
 
 ---
 
+## [run-container-tests](https://cmssdt.cern.ch/jenkins/job/run-container-tests)
+
+**Description:** None
+
+**Project is `enabled`.**
+
+**Upstream projects:**
+
+**Downstream projects:**
+
+**Sub-projects:**
+* [run-container-${CI_TEST}](#run-container-${CI_TEST}):
+
+**Triggers from:** []
+
+
+**Periodic builds:**
+```bash
+Not periodically build
+```
+
+---
+
 ## [run-cvmfs-commands](https://cmssdt.cern.ch/jenkins/job/run-cvmfs-commands)
 
 **Description:** None
