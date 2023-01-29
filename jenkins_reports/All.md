@@ -6161,7 +6161,7 @@ Not periodically build
 **Periodic builds:**
 ```bash
 H 0,12 * * *
-42 16 * * *
+58 16 * * *
 ```
 
 ---
