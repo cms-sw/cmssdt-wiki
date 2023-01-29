@@ -6160,7 +6160,7 @@ Not periodically build
 
 **Periodic builds:**
 ```bash
-5 2,14 * * *
+7 2,14 * * *
 ```
 
 ---
