@@ -1245,7 +1245,7 @@ Not periodically build
 
 **Periodic builds:**
 ```bash
-57 1,13 * * *
+5 2,14 * * *
 ```
 
 ---
