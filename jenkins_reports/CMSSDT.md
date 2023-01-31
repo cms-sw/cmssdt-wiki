@@ -1060,6 +1060,37 @@ Not periodically build
 
 ---
 
+## [ib-run-profiling-test](https://cmssdt.cern.ch/jenkins/job/ib-run-profiling-test)
+
+**Description:** Runs FastTimerService and Igprof on the RECO and PAT steps for high pileup workflow.
+
+<ul>
+  <li>
+    If it fails, we should normally retry since IT used to kill this job.
+  </li>  
+</ul>
+
+
+
+**Project is `enabled`.**
+
+**Upstream projects:**
+
+**Downstream projects:**
+* [sync-profile-data](#sync-profile-data):
+
+**Sub-projects:**
+
+**Triggers from:** []
+
+
+**Periodic builds:**
+```bash
+Not periodically build
+```
+
+---
+
 ## [jenkins-test-retry](https://cmssdt.cern.ch/jenkins/job/jenkins-test-retry)
 
 **Description:** This job retries a build given the job name and the build number to retry.<br>
@@ -1307,12 +1338,13 @@ Not periodically build
 * [ib-run-igprof](#ib-run-igprof):
 * [ib-run-profiling](#ib-run-profiling):
 * [ib-run-profiling-gpu](#ib-run-profiling-gpu):
+* [ib-run-profiling-test](#ib-run-profiling-test):
 
 **Downstream projects:**
 
 **Sub-projects:**
 
-**Triggers from:** [u'ib-run-igprof', u'ib-run-profiling', u'ib-run-profiling-gpu']
+**Triggers from:** [u'ib-run-igprof', u'ib-run-profiling', u'ib-run-profiling-gpu', u'ib-run-profiling-test']
 
 
 **Periodic builds:**
