@@ -5723,6 +5723,11 @@ H * * * *
 ## [openstack-create-vms](https://cmssdt.cern.ch/jenkins/job/openstack-create-vms)
 
 **Description:** Create Openstack VMs for a selected hostgroup.
+Node configuration is obtained from  https://github.com/cms-sw/cms-bot/tree/master/openstack/hg/<host/group/name>.
+In order to create a new VM please do
+- provide the name of VM
+- select the Forman Host group for the node.
+  If for any reason, you have to change any parameters e.g different VM size, or attach extra volume then just set those in the job parameters.
 
 **Project is `enabled`.**
 
