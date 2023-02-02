@@ -863,7 +863,7 @@ Note: CRAB is the CMS Computing tool to submit CMSSW users' analysis jobs to dis
 
 **Sub-projects:**
 * [ib-monitor-crab](#ib-monitor-crab):
-* [ib-run-crab ](#ib-run-crab ):
+* [ib-run-crab](#ib-run-crab):
 
 **Triggers from:** []
 
@@ -1060,9 +1060,9 @@ Not periodically build
 
 ---
 
-## [ib-run-profiling-test](https://cmssdt.cern.ch/jenkins/job/ib-run-profiling-test)
+## [ib-run-profiling-mem](https://cmssdt.cern.ch/jenkins/job/ib-run-profiling-mem)
 
-**Description:** Runs FastTimerService and Igprof on the RECO and PAT steps for high pileup workflow.
+**Description:** Runs Igprof memory profiling on the RECO and PAT steps for high pileup workflow.
 
 <ul>
   <li>
@@ -1338,13 +1338,13 @@ Not periodically build
 * [ib-run-igprof](#ib-run-igprof):
 * [ib-run-profiling](#ib-run-profiling):
 * [ib-run-profiling-gpu](#ib-run-profiling-gpu):
-* [ib-run-profiling-test](#ib-run-profiling-test):
+* [ib-run-profiling-mem](#ib-run-profiling-mem):
 
 **Downstream projects:**
 
 **Sub-projects:**
 
-**Triggers from:** [u'ib-run-igprof', u'ib-run-profiling', u'ib-run-profiling-gpu', u'ib-run-profiling-test']
+**Triggers from:** [u'ib-run-igprof', u'ib-run-profiling', u'ib-run-profiling-gpu', u'ib-run-profiling-mem']
 
 
 **Periodic builds:**
@@ -1962,7 +1962,7 @@ If the ./singularity folder is big enough ($ du -hs /build/cmsbld/jenkins/worksp
 **Sub-projects:**
 * [cms-containers-run-cmssw-test](#cms-containers-run-cmssw-test):
 * [test-containter-singularity](#test-containter-singularity):
-* [run-container-tests ](#run-container-tests ):
+* [run-container-tests](#run-container-tests):
 * [cms-containers-checks-tags](#cms-containers-checks-tags):
 
 **Triggers from:** []
