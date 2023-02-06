@@ -5160,8 +5160,10 @@ Not periodically build
 **Project is `enabled`.**
 
 **Upstream projects:**
+* [jenkins-test-parser](#jenkins-test-parser):
 
 **Downstream projects:**
+* [jenkins-test-parser](#jenkins-test-parser):
 
 **Sub-projects:**
 
@@ -5170,7 +5172,7 @@ Not periodically build
 
 **Periodic builds:**
 ```bash
-H * * * *
+
 ```
 
 ---
