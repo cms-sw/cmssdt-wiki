@@ -167,3 +167,34 @@ Not periodically build
 
 ---
 
+## [ib-run-profiling](https://cmssdt.cern.ch/jenkins/job/ib-run-profiling)
+
+**Description:** Runs FastTimerService and Igprof on the RECO and PAT steps for high pileup workflow.
+
+<ul>
+  <li>
+    If it fails, we should normally retry since IT used to kill this job.
+  </li>  
+</ul>
+
+
+
+**Project is `disabled`.**
+
+**Upstream projects:**
+
+**Downstream projects:**
+* [sync-profile-data](#sync-profile-data):
+
+**Sub-projects:**
+
+**Triggers from:** []
+
+
+**Periodic builds:**
+```bash
+Not periodically build
+```
+
+---
+
