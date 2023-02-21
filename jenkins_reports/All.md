@@ -4015,8 +4015,9 @@ Not periodically build
 ## [ib-run-qa](https://cmssdt.cern.ch/jenkins/job/ib-run-qa)
 
 **Description:** Runs Quality Assurance (QA) test on IB. Results are available at 
-<a href="https://cmssdt.cern.ch/SDT/html/cmssdt-ib/">IB page's</a> Q/A section.<br>
-
+<a href="https://cmssdt.cern.ch/SDT/html/cmssdt-ib/">IB page's</a> Q/A section.<br> If this job fails, logs can be found under 
+<a href=https://cmssdt.cern.ch/buildlogs/>https://cmssdt.cern.ch/buildlogs//os_arch_compiler/www/week_day/...</a><br>
+<br>
 Sometimes it can hang during scp copy / ssh. This failure can be found by looking for a gap of several hours in the log file during scp / ssh.<br>
 If the job runs for more than several hours, the procedure is to login to build node, check which job is hanging and take the appropiate action, if necessary.
 
