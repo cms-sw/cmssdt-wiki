@@ -31,6 +31,35 @@ Not periodically build
 
 ---
 
+## [ib-install-cvmfs-gateway](https://cmssdt.cern.ch/jenkins/job/ib-install-cvmfs-gateway)
+
+**Description:** Test job to install IBs in parallel (cvmfs gateway).
+
+**Project is `disabled`.**
+
+**Upstream projects:**
+* [build-any-ib](#build-any-ib):
+* [cms-spack-ib](#cms-spack-ib):
+* [cmsrep-webhook](#cmsrep-webhook):
+* [ib-install-cvmfs-gateway](#ib-install-cvmfs-gateway):
+* [ib-tag-and-schdule](#ib-tag-and-schdule):
+
+**Downstream projects:**
+* [ib-install-cvmfs-gateway](#ib-install-cvmfs-gateway):
+
+**Sub-projects:**
+* [ib-install-cvmfs-gateway](#ib-install-cvmfs-gateway):
+
+**Triggers from:** []
+
+
+**Periodic builds:**
+```bash
+Not periodically build
+```
+
+---
+
 ## [ib-run-pr-baseline](https://cmssdt.cern.ch/jenkins/job/ib-run-pr-baseline)
 
 **Description:** None
