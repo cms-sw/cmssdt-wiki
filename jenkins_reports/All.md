@@ -3159,7 +3159,7 @@ There is no automatic re-try setup for this job. It rarely fails but in case it 
 either delete the failed job instance or update the "Build information" and mentioned that it has been re-tired. This allows others to not re-try it.
 
 
-**Project is `enabled`.**
+**Project is `disabled`.**
 
 **Upstream projects:**
 * [build-any-ib](#build-any-ib):
