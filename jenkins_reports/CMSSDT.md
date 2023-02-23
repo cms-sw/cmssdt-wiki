@@ -704,6 +704,39 @@ H * * * *
 
 ---
 
+## [ib-install-cvmfs](https://cmssdt.cern.ch/jenkins/job/ib-install-cvmfs)
+
+**Description:** This jobs install an IB on /cvmfs/cms-ib.cern.ch. As this job runs on the CVMFS Stratum 0, so only one job can run at a time.
+Sometimes ( specially IBs for non-86-64 archs) are stuck and do nothing. In that case better to kill the job and re-try it.
+This gives chance to other IBs to get installed and at the end the re-tried job will re-run. 
+
+There is no automatic re-try setup for this job. It rarely fails but in case it fails then just re-try the failed job and
+either delete the failed job instance or update the "Build information" and mentioned that it has been re-tired. This allows others to not re-try it.
+
+
+**Project is `enabled`.**
+
+**Upstream projects:**
+* [build-any-ib](#build-any-ib):
+* [cms-spack-ib](#cms-spack-ib):
+* [cmsrep-webhook](#cmsrep-webhook):
+* [ib-tag-and-schdule](#ib-tag-and-schdule):
+
+**Downstream projects:**
+* [ib-validation](#ib-validation):
+
+**Sub-projects:**
+
+**Triggers from:** []
+
+
+**Periodic builds:**
+```bash
+Not periodically build
+```
+
+---
+
 ## [ib-install-siteconf](https://cmssdt.cern.ch/jenkins/job/ib-install-siteconf)
 
 **Description:** Update the contents of/cvmfs/REPO/SITECONF from https://github.com/cms-sw/siteconf
