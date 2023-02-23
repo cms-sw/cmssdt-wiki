@@ -60,30 +60,6 @@ Not periodically build
 
 ---
 
-## [ib-run-pr-baseline](https://cmssdt.cern.ch/jenkins/job/ib-run-pr-baseline)
-
-**Description:** None
-
-**Project is `disabled`.**
-
-**Upstream projects:**
-
-**Downstream projects:**
-* [cvmfs-deploy-artifacts](#cvmfs-deploy-artifacts):
-
-**Sub-projects:**
-* [cvmfs-deploy-artifacts](#cvmfs-deploy-artifacts):
-
-**Triggers from:** []
-
-
-**Periodic builds:**
-```bash
-Not periodically build
-```
-
----
-
 ## [cvmfs-cleanup-containers](https://cmssdt.cern.ch/jenkins/job/cvmfs-cleanup-containers)
 
 **Description:** None

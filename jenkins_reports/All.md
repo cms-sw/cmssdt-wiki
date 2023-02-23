@@ -2017,7 +2017,6 @@ Not periodically build
 
 **Upstream projects:**
 * [ib-run-baseline](#ib-run-baseline):
-* [ib-run-pr-baseline](#ib-run-pr-baseline):
 
 **Downstream projects:**
 * [cvmfs-publish-artifacts](#cvmfs-publish-artifacts):
@@ -3665,30 +3664,6 @@ Run cmssw addON (HLT tests)
 **Downstream projects:**
 
 **Sub-projects:**
-
-**Triggers from:** []
-
-
-**Periodic builds:**
-```bash
-Not periodically build
-```
-
----
-
-## [ib-run-pr-baseline](https://cmssdt.cern.ch/jenkins/job/ib-run-pr-baseline)
-
-**Description:** None
-
-**Project is `disabled`.**
-
-**Upstream projects:**
-
-**Downstream projects:**
-* [cvmfs-deploy-artifacts](#cvmfs-deploy-artifacts):
-
-**Sub-projects:**
-* [cvmfs-deploy-artifacts](#cvmfs-deploy-artifacts):
 
 **Triggers from:** []
 
