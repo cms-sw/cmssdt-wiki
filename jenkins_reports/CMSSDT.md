@@ -2347,6 +2347,32 @@ Not periodically build
 
 ---
 
+## [cms-containers-checks-tags](https://cmssdt.cern.ch/jenkins/job/cms-containers-checks-tags)
+
+**Description:** This project search for tags.yaml files in cms-sw/cms-docker repostory and create new image tags if needed
+
+**Project is `enabled`.**
+
+**Upstream projects:**
+* [build-docker-container](#build-docker-container):
+* [github-push-hook](#github-push-hook):
+
+**Downstream projects:**
+* [cms-tag-container](#cms-tag-container):
+
+**Sub-projects:**
+* [cms-tag-container](#cms-tag-container):
+
+**Triggers from:** []
+
+
+**Periodic builds:**
+```bash
+Not periodically build
+```
+
+---
+
 ## [cms-containers-run-cmssw-test](https://cmssdt.cern.ch/jenkins/job/cms-containers-run-cmssw-test)
 
 **Description:** None
