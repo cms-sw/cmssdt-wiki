@@ -104,29 +104,6 @@ Not periodically build
 
 ---
 
-## [lxr-run-container](https://cmssdt.cern.ch/jenkins/job/lxr-run-container)
-
-**Description:** This job stops and deletes old docker contaner of LXR service and starts new one.
-
-**Project is `disabled`.**
-
-**Upstream projects:**
-* [lxr-check](#lxr-check):
-
-**Downstream projects:**
-
-**Sub-projects:**
-
-**Triggers from:** []
-
-
-**Periodic builds:**
-```bash
-Not periodically build
-```
-
----
-
 ## [cvmfs-ci-gc](https://cmssdt.cern.ch/jenkins/job/cvmfs-ci-gc)
 
 **Description:** This runs CVMFS GC (once a week)

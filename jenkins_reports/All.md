@@ -5536,7 +5536,7 @@ Not periodically build
 
 **Description:** This job stops and deletes old docker contaner of LXR service and starts new one.
 
-**Project is `disabled`.**
+**Project is `enabled`.**
 
 **Upstream projects:**
 * [lxr-check](#lxr-check):
