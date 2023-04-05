@@ -5489,7 +5489,7 @@ Not periodically build
 **Description:** Deletes index of of IB's older then treshold on LXR ( default 14 days).
 If specified, it also deletes Release index.
 
-**Project is `disabled`.**
+**Project is `enabled`.**
 
 **Upstream projects:**
 

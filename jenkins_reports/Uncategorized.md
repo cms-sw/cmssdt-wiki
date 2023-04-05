@@ -31,30 +31,6 @@ Not periodically build
 
 ---
 
-## [lxr-remove-index](https://cmssdt.cern.ch/jenkins/job/lxr-remove-index)
-
-**Description:** Deletes index of of IB's older then treshold on LXR ( default 14 days).
-If specified, it also deletes Release index.
-
-**Project is `disabled`.**
-
-**Upstream projects:**
-
-**Downstream projects:**
-
-**Sub-projects:**
-
-**Triggers from:** []
-
-
-**Periodic builds:**
-```bash
-H 5  * * *
-
-```
-
----
-
 ## [ib-install-cvmfs-gateway](https://cmssdt.cern.ch/jenkins/job/ib-install-cvmfs-gateway)
 
 **Description:** Test job to install IBs in parallel (cvmfs gateway).
