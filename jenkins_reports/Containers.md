@@ -137,7 +137,6 @@ H 10 * * *
 
 **Upstream projects:**
 * [build-docker-container](#build-docker-container):
-* [docker-images-to-github](#docker-images-to-github):
 * [github-push-hook](#github-push-hook):
 
 **Downstream projects:**
@@ -165,7 +164,6 @@ Not periodically build
 **Upstream projects:**
 * [build-docker-container](#build-docker-container):
 * [cms-containers-schedule-cmssw-test](#cms-containers-schedule-cmssw-test):
-* [docker-images-to-github](#docker-images-to-github):
 
 **Downstream projects:**
 

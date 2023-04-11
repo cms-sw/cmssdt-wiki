@@ -918,7 +918,6 @@ Not periodically build
 
 **Upstream projects:**
 * [build-docker-container](#build-docker-container):
-* [docker-images-to-github](#docker-images-to-github):
 * [github-push-hook](#github-push-hook):
 
 **Downstream projects:**
@@ -946,7 +945,6 @@ Not periodically build
 **Upstream projects:**
 * [build-docker-container](#build-docker-container):
 * [cms-containers-schedule-cmssw-test](#cms-containers-schedule-cmssw-test):
-* [docker-images-to-github](#docker-images-to-github):
 
 **Downstream projects:**
 
@@ -2377,16 +2375,8 @@ Not periodically build
 **Upstream projects:**
 
 **Downstream projects:**
-* [cms-containers-checks-tags](#cms-containers-checks-tags):
-* [cms-containers-run-cmssw-test](#cms-containers-run-cmssw-test):
-* [run-container-tests](#run-container-tests):
-* [test-containter-singularity](#test-containter-singularity):
 
 **Sub-projects:**
-* [cms-containers-run-cmssw-test](#cms-containers-run-cmssw-test):
-* [test-containter-singularity](#test-containter-singularity):
-* [run-container-tests](#run-container-tests):
-* [cms-containers-checks-tags](#cms-containers-checks-tags):
 
 **Triggers from:** []
 
@@ -6222,7 +6212,6 @@ H 0,12 * * *
 
 **Upstream projects:**
 * [build-docker-container](#build-docker-container):
-* [docker-images-to-github](#docker-images-to-github):
 
 **Downstream projects:**
 
@@ -6465,7 +6454,6 @@ H/15 * * * *
 
 **Upstream projects:**
 * [build-docker-container](#build-docker-container):
-* [docker-images-to-github](#docker-images-to-github):
 
 **Downstream projects:**
 
