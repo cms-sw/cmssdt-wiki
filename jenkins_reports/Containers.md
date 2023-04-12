@@ -62,7 +62,7 @@ Not periodically build
 
 **Description:** This job checks for changes in the parent image. If there are changes, it triggers the `build-docker-container` job so that our based image is updated and uploaded to the registry.
 
-**Project is `disabled`.**
+**Project is `enabled`.**
 
 **Upstream projects:**
 * [cms-auto-build-container](#cms-auto-build-container):
