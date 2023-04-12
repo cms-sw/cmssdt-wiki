@@ -8,6 +8,30 @@
 
 # Projects:
 
+## [sync-patatrack-branch](https://cmssdt.cern.ch/jenkins/job/sync-patatrack-branch)
+
+**Description:** - this is to sync patatrack branches <br/>
+- Currently this job does not do any thing (kind of disabled)
+
+
+**Project is `disabled`.**
+
+**Upstream projects:**
+
+**Downstream projects:**
+
+**Sub-projects:**
+
+**Triggers from:** []
+
+
+**Periodic builds:**
+```bash
+55 * * * *
+```
+
+---
+
 ## [refresh-cmssdt](https://cmssdt.cern.ch/jenkins/job/refresh-cmssdt)
 
 **Description:** This job updates the cmssw IB page on cmssdt.

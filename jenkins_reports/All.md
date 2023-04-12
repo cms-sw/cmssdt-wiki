@@ -6380,7 +6380,7 @@ Not periodically build
 - Currently this job does not do any thing (kind of disabled)
 
 
-**Project is `enabled`.**
+**Project is `disabled`.**
 
 **Upstream projects:**
 

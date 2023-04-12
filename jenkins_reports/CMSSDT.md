@@ -4594,30 +4594,6 @@ Not periodically build
 
 ---
 
-## [sync-patatrack-branch](https://cmssdt.cern.ch/jenkins/job/sync-patatrack-branch)
-
-**Description:** - this is to sync patatrack branches <br/>
-- Currently this job does not do any thing (kind of disabled)
-
-
-**Project is `enabled`.**
-
-**Upstream projects:**
-
-**Downstream projects:**
-
-**Sub-projects:**
-
-**Triggers from:** []
-
-
-**Periodic builds:**
-```bash
-55 * * * *
-```
-
----
-
 ## [test-build-periodic](https://cmssdt.cern.ch/jenkins/job/test-build-periodic)
 
 **Description:** None
