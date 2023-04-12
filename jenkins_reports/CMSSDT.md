@@ -1228,7 +1228,7 @@ Not periodically build
 
 ## [run-container-stageout](https://cmssdt.cern.ch/jenkins/job/run-container-stageout)
 
-**Description:** None
+**Description:** This job tests submission to multiple sites. Some of them are expected to fail.
 
 **Project is `enabled`.**
 
