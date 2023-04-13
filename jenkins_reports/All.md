@@ -370,6 +370,13 @@ Not periodically build
 
 **Description:** This job checks for HOST certificate in cmssw/cms:rhelX images, and fail if host certificate is going to expire in less than CERT_EXPIRY_DAYS days.<br/>
 In such case, we need to check if there is already an updated osg-ca-certs package available and rebuild the container.
+<br/>
+<br/>
+One can rerun the job with LOCAL_CERTIFICATE=/cvmfs/grid.cern.ch/etc/grid-security/certificates and CHECK_LOCAL_CERTIFICATE=true to see it new certificates are already available. <br/>
+If the job still fails, this means that new root certificates are still not available.
+<br/>
+<br/>
+Note that the job fails some days before the actual expiration (CERT_EXPIRY_DAYS).
 
 **Project is `enabled`.**
 
