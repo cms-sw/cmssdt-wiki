@@ -59,6 +59,32 @@ H * * * *
 
 ---
 
+## [cvmfs-cms-check-and-update-gridpacks-test](https://cmssdt.cern.ch/jenkins/job/cvmfs-cms-check-and-update-gridpacks-test)
+
+**Description:** This job checks and updates gridpacks based on 
+<br> https://github.com/bockjoo/cvmfs-cms-install-scripts/blob/master/cron_rsync_generator_package_from_eos_individual.sh
+
+
+**Project is `enabled`.**
+
+**Upstream projects:**
+
+**Downstream projects:**
+* [cvmfs-cms-check-and-update-report](#cvmfs-cms-check-and-update-report):
+
+**Sub-projects:**
+* [cvmfs-cms-check-and-update-report](#cvmfs-cms-check-and-update-report):
+
+**Triggers from:** []
+
+
+**Periodic builds:**
+```bash
+H * * * *
+```
+
+---
+
 ## [cvmfs-cms-check-and-update-lhapdf](https://cmssdt.cern.ch/jenkins/job/cvmfs-cms-check-and-update-lhapdf)
 
 **Description:** This job checks and updates lhapdf based on 
@@ -93,6 +119,7 @@ H H * * *
 
 **Upstream projects:**
 * [cvmfs-cms-check-and-update-gridpacks](#cvmfs-cms-check-and-update-gridpacks):
+* [cvmfs-cms-check-and-update-gridpacks-test](#cvmfs-cms-check-and-update-gridpacks-test):
 * [cvmfs-cms-check-and-update-siteconf](#cvmfs-cms-check-and-update-siteconf):
 
 **Downstream projects:**
