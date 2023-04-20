@@ -70,17 +70,15 @@ H * * * *
 **Upstream projects:**
 
 **Downstream projects:**
-* [cvmfs-cms-check-and-update-report](#cvmfs-cms-check-and-update-report):
 
 **Sub-projects:**
-* [cvmfs-cms-check-and-update-report](#cvmfs-cms-check-and-update-report):
 
 **Triggers from:** []
 
 
 **Periodic builds:**
 ```bash
-H * * * *
+Not periodically build
 ```
 
 ---
@@ -119,7 +117,6 @@ H H * * *
 
 **Upstream projects:**
 * [cvmfs-cms-check-and-update-gridpacks](#cvmfs-cms-check-and-update-gridpacks):
-* [cvmfs-cms-check-and-update-gridpacks-test](#cvmfs-cms-check-and-update-gridpacks-test):
 * [cvmfs-cms-check-and-update-siteconf](#cvmfs-cms-check-and-update-siteconf):
 
 **Downstream projects:**
