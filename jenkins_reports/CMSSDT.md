@@ -926,6 +926,29 @@ Not periodically build
 
 ---
 
+## [ib-run-pr-gpu](https://cmssdt.cern.ch/jenkins/job/ib-run-pr-gpu)
+
+**Description:** Build mutiple pull requests. 
+Run cmssw addON (HLT tests)
+
+**Project is `enabled`.**
+
+**Upstream projects:**
+
+**Downstream projects:**
+
+**Sub-projects:**
+
+**Triggers from:** []
+
+
+**Periodic builds:**
+```bash
+Not periodically build
+```
+
+---
+
 ## [ib-run-pr-profiling](https://cmssdt.cern.ch/jenkins/job/ib-run-pr-profiling)
 
 **Description:** Build mutiple  a pull requests. 
