@@ -929,7 +929,7 @@ Not periodically build
 ## [ib-run-pr-gpu](https://cmssdt.cern.ch/jenkins/job/ib-run-pr-gpu)
 
 **Description:** Build mutiple pull requests. 
-Run cmssw addON (HLT tests)
+Run cmssw GPU unit tests
 
 **Project is `enabled`.**
 
