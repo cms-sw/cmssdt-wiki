@@ -3998,7 +3998,6 @@ Not periodically build
 **Upstream projects:**
 
 **Downstream projects:**
-* [sync-profile-data](#sync-profile-data):
 
 **Sub-projects:**
 
@@ -6461,14 +6460,13 @@ Not periodically build
 **Upstream projects:**
 * [ib-run-igprof](#ib-run-igprof):
 * [ib-run-profiling](#ib-run-profiling):
-* [ib-run-profiling-gpu](#ib-run-profiling-gpu):
 * [ib-run-profiling-mem](#ib-run-profiling-mem):
 
 **Downstream projects:**
 
 **Sub-projects:**
 
-**Triggers from:** [u'ib-run-igprof', u'ib-run-profiling', u'ib-run-profiling-gpu', u'ib-run-profiling-mem']
+**Triggers from:** [u'ib-run-igprof', u'ib-run-profiling', u'ib-run-profiling-mem']
 
 
 **Periodic builds:**
