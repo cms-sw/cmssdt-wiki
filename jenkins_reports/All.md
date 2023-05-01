@@ -3973,9 +3973,11 @@ Not periodically build
 **Upstream projects:**
 
 **Downstream projects:**
+* [ib-run-profiling-mem](#ib-run-profiling-mem):
 * [sync-profile-data](#sync-profile-data):
 
 **Sub-projects:**
+* [ib-run-profiling-mem](#ib-run-profiling-mem):
 
 **Triggers from:** []
 
@@ -4026,6 +4028,7 @@ Not periodically build
 **Project is `enabled`.**
 
 **Upstream projects:**
+* [ib-run-profiling](#ib-run-profiling):
 
 **Downstream projects:**
 * [sync-profile-data](#sync-profile-data):
