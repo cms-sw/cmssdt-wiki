@@ -3990,7 +3990,7 @@ Not periodically build
 
 ## [ib-run-profiling-gpu](https://cmssdt.cern.ch/jenkins/job/ib-run-profiling-gpu)
 
-**Description:** Runs FastTimerService and Igprof on the RECO and PAT steps for high pileup workflow.
+**Description:** Runs NSYS on the RECO and PAT steps for high pileup workflow.
 
 
 
