@@ -3805,29 +3805,6 @@ Not periodically build
 
 ---
 
-## [ib-run-pr-gpu](https://cmssdt.cern.ch/jenkins/job/ib-run-pr-gpu)
-
-**Description:** Build mutiple pull requests. 
-Run cmssw GPU unit tests
-
-**Project is `enabled`.**
-
-**Upstream projects:**
-
-**Downstream projects:**
-
-**Sub-projects:**
-
-**Triggers from:** []
-
-
-**Periodic builds:**
-```bash
-Not periodically build
-```
-
----
-
 ## [ib-run-pr-profiling](https://cmssdt.cern.ch/jenkins/job/ib-run-pr-profiling)
 
 **Description:** Build mutiple  a pull requests. 
@@ -3915,6 +3892,29 @@ better to wait for the service to get healthy.
 * [pr-publish-cmssw](#pr-publish-cmssw):
 * [ib-run-pr-wait-deployment](#ib-run-pr-wait-deployment):
 * [update-das-queries ](#update-das-queries ):
+
+**Triggers from:** []
+
+
+**Periodic builds:**
+```bash
+Not periodically build
+```
+
+---
+
+## [ib-run-pr-unittests](https://cmssdt.cern.ch/jenkins/job/ib-run-pr-unittests)
+
+**Description:** Build mutiple pull requests. 
+Run cmssw GPU unit tests
+
+**Project is `enabled`.**
+
+**Upstream projects:**
+
+**Downstream projects:**
+
+**Sub-projects:**
 
 **Triggers from:** []
 
