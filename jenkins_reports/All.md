@@ -4000,6 +4000,7 @@ Not periodically build
 * [ib-run-profiling](#ib-run-profiling):
 
 **Downstream projects:**
+* [sync-profile-data](#sync-profile-data):
 
 **Sub-projects:**
 
@@ -6484,6 +6485,7 @@ Not periodically build
 **Upstream projects:**
 * [ib-run-igprof](#ib-run-igprof):
 * [ib-run-profiling](#ib-run-profiling):
+* [ib-run-profiling-gpu](#ib-run-profiling-gpu):
 * [ib-run-profiling-mem](#ib-run-profiling-mem):
 
 **Downstream projects:**
