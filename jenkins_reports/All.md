@@ -2563,7 +2563,6 @@ Not periodically build
 
 **Upstream projects:**
 * [trigger-docker-packages-check](#trigger-docker-packages-check):
-* [trigger-package-analysis](#trigger-package-analysis):
 
 **Downstream projects:**
 
@@ -6822,29 +6821,6 @@ Not periodically build
 
 **Sub-projects:**
 * [find-cmssw-install-packages](#find-cmssw-install-packages):
-
-**Triggers from:** []
-
-
-**Periodic builds:**
-```bash
-Not periodically build
-```
-
----
-
-## [trigger-package-analysis](https://cmssdt.cern.ch/jenkins/job/trigger-package-analysis)
-
-**Description:** None
-
-**Project is `enabled`.**
-
-**Upstream projects:**
-
-**Downstream projects:**
-* [find-cmssw-install-packages](#find-cmssw-install-packages):
-
-**Sub-projects:**
 
 **Triggers from:** []
 
