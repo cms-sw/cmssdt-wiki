@@ -3015,6 +3015,7 @@ Not periodically build
 **Project is `enabled`.**
 
 **Upstream projects:**
+* [trigger-docker-packages-check](#trigger-docker-packages-check):
 * [trigger-package-analysis](#trigger-package-analysis):
 
 **Downstream projects:**
@@ -4644,6 +4645,30 @@ Not periodically build
 **Periodic builds:**
 ```bash
 H/15 * * * *
+```
+
+---
+
+## [trigger-docker-packages-check](https://cmssdt.cern.ch/jenkins/job/trigger-docker-packages-check)
+
+**Description:** This job checks for changes in the parent image. If there are changes, it triggers the `build-docker-container` job so that our based image is updated and uploaded to the registry.
+
+**Project is `enabled`.**
+
+**Upstream projects:**
+
+**Downstream projects:**
+* [find-cmssw-install-packages](#find-cmssw-install-packages):
+
+**Sub-projects:**
+* [find-cmssw-install-packages](#find-cmssw-install-packages):
+
+**Triggers from:** []
+
+
+**Periodic builds:**
+```bash
+Not periodically build
 ```
 
 ---
