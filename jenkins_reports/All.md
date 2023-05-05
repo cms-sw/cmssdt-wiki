@@ -2562,6 +2562,7 @@ Not periodically build
 **Project is `enabled`.**
 
 **Upstream projects:**
+* [trigger-package-analysis](#trigger-package-analysis):
 
 **Downstream projects:**
 
@@ -6816,6 +6817,7 @@ Not periodically build
 **Upstream projects:**
 
 **Downstream projects:**
+* [find-cmssw-install-packages](#find-cmssw-install-packages):
 
 **Sub-projects:**
 

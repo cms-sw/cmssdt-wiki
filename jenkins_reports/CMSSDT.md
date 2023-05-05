@@ -3015,6 +3015,7 @@ Not periodically build
 **Project is `enabled`.**
 
 **Upstream projects:**
+* [trigger-package-analysis](#trigger-package-analysis):
 
 **Downstream projects:**
 
@@ -4656,6 +4657,7 @@ H/15 * * * *
 **Upstream projects:**
 
 **Downstream projects:**
+* [find-cmssw-install-packages](#find-cmssw-install-packages):
 
 **Sub-projects:**
 
