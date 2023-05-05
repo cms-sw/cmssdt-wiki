@@ -2555,6 +2555,28 @@ Not periodically build
 
 ---
 
+## [find-cmssw-install-packages](https://cmssdt.cern.ch/jenkins/job/find-cmssw-install-packages)
+
+**Description:** None
+
+**Project is `enabled`.**
+
+**Upstream projects:**
+
+**Downstream projects:**
+
+**Sub-projects:**
+
+**Triggers from:** []
+
+
+**Periodic builds:**
+```bash
+Not periodically build
+```
+
+---
+
 ## [fix-backport-prs](https://cmssdt.cern.ch/jenkins/job/fix-backport-prs)
 
 **Description:** Periodicaly runs https://github.com/cms-sw/cms-bot/blob/master/fix-backport-labels.py to check if the PR on master, which backport has been requested, is merged.
