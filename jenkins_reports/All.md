@@ -4291,7 +4291,7 @@ then triggers 'ib-install-cvmfs' sub-job to get the new cms.weekN deployed on th
 
 This job re-tries itself on failure. So there is no need to re-try it manually (unless all re-tries failed).
 
-**Project is `enabled`.**
+**Project is `disabled`.**
 
 **Upstream projects:**
 * [ib-schedule](#ib-schedule):
