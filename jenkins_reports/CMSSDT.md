@@ -1063,13 +1063,7 @@ Not periodically build
 
 ## [ib-run-profiling-mem](https://cmssdt.cern.ch/jenkins/job/ib-run-profiling-mem)
 
-**Description:** Runs Igprof memory profiling on the RECO and PAT steps for high pileup workflow.
-
-<ul>
-  <li>
-    If it fails, we should normally retry since IT used to kill this job.
-  </li>  
-</ul>
+**Description:** Runs Jemalloc memory profiling on the RECO and PAT steps for high pileup workflow.
 
 
 
