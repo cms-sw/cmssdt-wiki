@@ -2090,6 +2090,28 @@ H 19  * *  2
 
 ---
 
+## [cvmfs-install-cuda](https://cmssdt.cern.ch/jenkins/job/cvmfs-install-cuda)
+
+**Description:** None
+
+**Project is `enabled`.**
+
+**Upstream projects:**
+
+**Downstream projects:**
+
+**Sub-projects:**
+
+**Triggers from:** []
+
+
+**Periodic builds:**
+```bash
+Not periodically build
+```
+
+---
+
 ## [cvmfs-install-pr](https://cmssdt.cern.ch/jenkins/job/cvmfs-install-pr)
 
 **Description:** To install PR externals
