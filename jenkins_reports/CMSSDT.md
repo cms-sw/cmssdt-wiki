@@ -710,6 +710,30 @@ H * * * *
 
 ---
 
+## [ib-inject-profiling-data](https://cmssdt.cern.ch/jenkins/job/ib-inject-profiling-data)
+
+**Description:** Inject the FastTimerService files to CMSMonit
+
+
+**Project is `enabled`.**
+
+**Upstream projects:**
+* [ib-run-profiling-gpu](#ib-run-profiling-gpu):
+
+**Downstream projects:**
+
+**Sub-projects:**
+
+**Triggers from:** []
+
+
+**Periodic builds:**
+```bash
+Not periodically build
+```
+
+---
+
 ## [ib-install-cvmfs](https://cmssdt.cern.ch/jenkins/job/ib-install-cvmfs)
 
 **Description:** This jobs install an IB on /cvmfs/cms-ib.cern.ch. As this job runs on the CVMFS Stratum 0, so only one job can run at a time.
@@ -1047,6 +1071,7 @@ Not periodically build
 * [ib-run-profiling](#ib-run-profiling):
 
 **Downstream projects:**
+* [ib-inject-profiling-data](#ib-inject-profiling-data):
 * [sync-profile-data](#sync-profile-data):
 
 **Sub-projects:**
@@ -1074,29 +1099,6 @@ Not periodically build
 
 **Downstream projects:**
 * [sync-profile-data](#sync-profile-data):
-
-**Sub-projects:**
-
-**Triggers from:** []
-
-
-**Periodic builds:**
-```bash
-Not periodically build
-```
-
----
-
-## [inject-profiling-data](https://cmssdt.cern.ch/jenkins/job/inject-profiling-data)
-
-**Description:** Inject the FastTimerService files to CMSMonit
-
-
-**Project is `enabled`.**
-
-**Upstream projects:**
-
-**Downstream projects:**
 
 **Sub-projects:**
 
