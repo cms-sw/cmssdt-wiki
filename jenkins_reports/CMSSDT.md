@@ -1045,7 +1045,6 @@ Not periodically build
 
 **Upstream projects:**
 * [ib-run-profiling](#ib-run-profiling):
-* [inject-profiling-data](#inject-profiling-data):
 
 **Downstream projects:**
 * [sync-profile-data](#sync-profile-data):
@@ -1072,7 +1071,6 @@ Not periodically build
 
 **Upstream projects:**
 * [ib-run-profiling](#ib-run-profiling):
-* [inject-profiling-data](#inject-profiling-data):
 
 **Downstream projects:**
 * [sync-profile-data](#sync-profile-data):
@@ -1091,8 +1089,7 @@ Not periodically build
 
 ## [inject-profiling-data](https://cmssdt.cern.ch/jenkins/job/inject-profiling-data)
 
-**Description:** Runs FastTimerService and Igprof on the RECO and PAT steps for high pileup workflow.
-
+**Description:** Inject the FastTimerService files to CMSMonit
 
 
 **Project is `enabled`.**
@@ -1100,9 +1097,6 @@ Not periodically build
 **Upstream projects:**
 
 **Downstream projects:**
-* [ib-run-profiling-gpu](#ib-run-profiling-gpu):
-* [ib-run-profiling-mem](#ib-run-profiling-mem):
-* [sync-profile-data](#sync-profile-data):
 
 **Sub-projects:**
 
@@ -1364,13 +1358,12 @@ Not periodically build
 * [ib-run-profiling](#ib-run-profiling):
 * [ib-run-profiling-gpu](#ib-run-profiling-gpu):
 * [ib-run-profiling-mem](#ib-run-profiling-mem):
-* [inject-profiling-data](#inject-profiling-data):
 
 **Downstream projects:**
 
 **Sub-projects:**
 
-**Triggers from:** [u'ib-run-igprof', u'ib-run-profiling', u'ib-run-profiling-mem', u'inject-profiling-data']
+**Triggers from:** [u'ib-run-igprof', u'ib-run-profiling', u'ib-run-profiling-mem']
 
 
 **Periodic builds:**
