@@ -1723,6 +1723,28 @@ Not periodically build
 
 ---
 
+## [vtune-run-container](https://cmssdt.cern.ch/jenkins/job/vtune-run-container)
+
+**Description:** This job stops and deletes old docker contaner of Vtune service and starts new one.
+
+**Project is `enabled`.**
+
+**Upstream projects:**
+
+**Downstream projects:**
+
+**Sub-projects:**
+
+**Triggers from:** []
+
+
+**Periodic builds:**
+```bash
+Not periodically build
+```
+
+---
+
 ## [abort-jenkins-job](https://cmssdt.cern.ch/jenkins/job/abort-jenkins-job)
 
 **Description:** Kill a running job (by default it is 'ib-run-pr-tests' and jobs started by it). 
