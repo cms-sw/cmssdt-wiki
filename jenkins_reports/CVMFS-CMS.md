@@ -422,6 +422,28 @@ Not periodically build
 
 ---
 
+## [cvmfs-install-fix-cuda](https://cmssdt.cern.ch/jenkins/job/cvmfs-install-fix-cuda)
+
+**Description:** None
+
+**Project is `enabled`.**
+
+**Upstream projects:**
+
+**Downstream projects:**
+
+**Sub-projects:**
+
+**Triggers from:** []
+
+
+**Periodic builds:**
+```bash
+Not periodically build
+```
+
+---
+
 ## [cvmfs-install-shared-pip-package](https://cmssdt.cern.ch/jenkins/job/cvmfs-install-shared-pip-package)
 
 **Description:** None
