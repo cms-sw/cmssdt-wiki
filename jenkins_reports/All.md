@@ -2707,6 +2707,7 @@ Not periodically build
 **Project is `enabled`.**
 
 **Upstream projects:**
+* [github-push-hook](#github-push-hook):
 
 **Downstream projects:**
 
@@ -2835,6 +2836,7 @@ This job is also triggered via github web hook. Please do not add/remove any par
 * [cms-containers-checks-tags](#cms-containers-checks-tags):
 * [deploy-cms-repo](#deploy-cms-repo):
 * [git-mirror-repository](#git-mirror-repository):
+* [git-notify-build-results](#git-notify-build-results):
 * [git-reference-cvmfs](#git-reference-cvmfs):
 * [update-cmssw-l2-histroy](#update-cmssw-l2-histroy):
 * [web-update-cmssdt-ib](#web-update-cmssdt-ib):
@@ -2849,6 +2851,7 @@ This job is also triggered via github web hook. Please do not add/remove any par
 * [web-update-logReader](#web-update-logReader):
 * [auto-forward-port](#auto-forward-port):
 * [update-cmssw-l2-histroy](#update-cmssw-l2-histroy):
+* [git-notify-build-results](#git-notify-build-results):
 
 **Triggers from:** []
 
