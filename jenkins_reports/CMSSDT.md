@@ -663,7 +663,7 @@ H H * * *
 
 ## [git-notify-build-results](https://cmssdt.cern.ch/jenkins/job/git-notify-build-results)
 
-**Description:** None
+**Description:** Triggered when new IB results are available and send a Mattermost notification if there are new failures
 
 **Project is `enabled`.**
 
