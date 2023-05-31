@@ -2700,6 +2700,28 @@ Not periodically build
 
 ---
 
+## [git-notify-build-results](https://cmssdt.cern.ch/jenkins/job/git-notify-build-results)
+
+**Description:** None
+
+**Project is `enabled`.**
+
+**Upstream projects:**
+
+**Downstream projects:**
+
+**Sub-projects:**
+
+**Triggers from:** []
+
+
+**Periodic builds:**
+```bash
+Not periodically build
+```
+
+---
+
 ## [git-reference-cvmfs](https://cmssdt.cern.ch/jenkins/job/git-reference-cvmfs)
 
 **Description:** Create GIT Reference for cms-sw/cmssw repository in /cvmfs/cms-ci.cern.ch/git/cms-sw.

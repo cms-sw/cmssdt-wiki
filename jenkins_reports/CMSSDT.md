@@ -661,6 +661,28 @@ H H * * *
 
 ---
 
+## [git-notify-build-results](https://cmssdt.cern.ch/jenkins/job/git-notify-build-results)
+
+**Description:** None
+
+**Project is `enabled`.**
+
+**Upstream projects:**
+
+**Downstream projects:**
+
+**Sub-projects:**
+
+**Triggers from:** []
+
+
+**Periodic builds:**
+```bash
+Not periodically build
+```
+
+---
+
 ## [ib-check-baseline-requests](https://cmssdt.cern.ch/jenkins/job/ib-check-baseline-requests)
 
 **Description:** This jobs look for on demand baseline generation requests (made by ib-run-pr-tests job) and start the baseline generation job ( if not already started).
