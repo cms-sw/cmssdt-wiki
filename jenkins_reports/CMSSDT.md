@@ -661,6 +661,29 @@ H H * * *
 
 ---
 
+## [git-notify-build-results](https://cmssdt.cern.ch/jenkins/job/git-notify-build-results)
+
+**Description:** Triggered when new IB results are available and send a Mattermost notification if there are new failures
+
+**Project is `enabled`.**
+
+**Upstream projects:**
+* [github-push-hook](#github-push-hook):
+
+**Downstream projects:**
+
+**Sub-projects:**
+
+**Triggers from:** []
+
+
+**Periodic builds:**
+```bash
+Not periodically build
+```
+
+---
+
 ## [ib-check-baseline-requests](https://cmssdt.cern.ch/jenkins/job/ib-check-baseline-requests)
 
 **Description:** This jobs look for on demand baseline generation requests (made by ib-run-pr-tests job) and start the baseline generation job ( if not already started).
