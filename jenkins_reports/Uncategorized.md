@@ -84,6 +84,29 @@ Not periodically build
 
 ---
 
+## [git-notify-build-results](https://cmssdt.cern.ch/jenkins/job/git-notify-build-results)
+
+**Description:** Triggered when new IB results are available and send a Mattermost notification if there are new failures
+
+**Project is `disabled`.**
+
+**Upstream projects:**
+* [github-push-hook](#github-push-hook):
+
+**Downstream projects:**
+
+**Sub-projects:**
+
+**Triggers from:** []
+
+
+**Periodic builds:**
+```bash
+Not periodically build
+```
+
+---
+
 ## [cvmfs-cleanup-containers](https://cmssdt.cern.ch/jenkins/job/cvmfs-cleanup-containers)
 
 **Description:** None
