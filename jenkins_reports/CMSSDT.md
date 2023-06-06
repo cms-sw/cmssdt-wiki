@@ -661,6 +661,28 @@ H H * * *
 
 ---
 
+## [find-cmssw-build-packages](https://cmssdt.cern.ch/jenkins/job/find-cmssw-build-packages)
+
+**Description:** None
+
+**Project is `enabled`.**
+
+**Upstream projects:**
+
+**Downstream projects:**
+
+**Sub-projects:**
+
+**Triggers from:** []
+
+
+**Periodic builds:**
+```bash
+Not periodically build
+```
+
+---
+
 ## [git-notify-build-results](https://cmssdt.cern.ch/jenkins/job/git-notify-build-results)
 
 **Description:** Triggered when new IB results are available and send a Mattermost notification if there are new failures
