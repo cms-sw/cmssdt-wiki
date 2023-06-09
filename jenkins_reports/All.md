@@ -213,11 +213,10 @@ Otherwise build a patch release.
 * [build-fwlite-ib](#build-fwlite-ib):
 * [ib-build-logs](#ib-build-logs):
 * [ib-install-cvmfs](#ib-install-cvmfs):
-* [ib-install-cvmfs-gateway](#ib-install-cvmfs-gateway):
 * [process-external-elastic-stats](#process-external-elastic-stats):
 
 **Sub-projects:**
-* [ib-install-cvmfs,ib-install-cvmfs-gateway](#ib-install-cvmfs,ib-install-cvmfs-gateway):
+* [ib-install-cvmfs](#ib-install-cvmfs):
 * [ib-build-logs,process-external-elastic-stats](#ib-build-logs,process-external-elastic-stats):
 * [build-fwlite-ib](#build-fwlite-ib):
 
@@ -3381,7 +3380,6 @@ Not periodically build
 **Project is `disabled`.**
 
 **Upstream projects:**
-* [build-any-ib](#build-any-ib):
 * [cms-spack-ib](#cms-spack-ib):
 * [cmsrep-webhook](#cmsrep-webhook):
 * [ib-install-cvmfs-gateway](#ib-install-cvmfs-gateway):
