@@ -4729,6 +4729,38 @@ H/15 * * * *
 
 ---
 
+## [test-build-release](https://cmssdt.cern.ch/jenkins/job/test-build-release)
+
+**Description:** This job actually builds a release.
+It is triggered by cms-bot after the <a href="https://github.com/cms-sw/cmssw/issues?q=label%3Arelease-notes-requested">Release build Issue</a> is approved by the release manager.
+<br/>
+<ul>
+  <li> In case the job fails:<br/>
+Depending on the type of failure, most of the time re-try works. In some cases (specially for aarch64 builds), it fails due to disk quota issues 
+as one of the aarch64 machine does not have enought disk. In that case, one needs to login to the corresponding aarch64 machine and cleanup old/unused stuff and then re-try this job.
+  <li> In case there is a build error in a release:<br/>
+It can happen that the job succeed, but there have been build errors that the bot reports in the corresponding issue.
+    In this case, the <it>Rebuild</it> button can be used to re-trigger the build. The bot will automatically remove the build-error labels and inform that a new build has been started.
+</ul>
+
+**Project is `enabled`.**
+
+**Upstream projects:**
+
+**Downstream projects:**
+
+**Sub-projects:**
+
+**Triggers from:** []
+
+
+**Periodic builds:**
+```bash
+Not periodically build
+```
+
+---
+
 ## [trigger-docker-packages-check](https://cmssdt.cern.ch/jenkins/job/trigger-docker-packages-check)
 
 **Description:** This job checks for changes in the parent image. If there are changes, it triggers the `build-docker-container` job so that our based image is updated and uploaded to the registry.
