@@ -118,6 +118,7 @@ H H * * *
 **Upstream projects:**
 * [cvmfs-cms-check-and-update-gridpacks](#cvmfs-cms-check-and-update-gridpacks):
 * [cvmfs-cms-check-and-update-siteconf](#cvmfs-cms-check-and-update-siteconf):
+* [test-cvmfs-cms-check-and-update-gridpacks](#test-cvmfs-cms-check-and-update-gridpacks):
 
 **Downstream projects:**
 

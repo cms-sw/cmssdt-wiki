@@ -4773,6 +4773,32 @@ Not periodically build
 
 ---
 
+## [test-cvmfs-cms-check-and-update-gridpacks](https://cmssdt.cern.ch/jenkins/job/test-cvmfs-cms-check-and-update-gridpacks)
+
+**Description:** This job checks and updates gridpacks based on 
+<br> https://github.com/bockjoo/cvmfs-cms-install-scripts/blob/master/cron_rsync_generator_package_from_eos_individual.sh
+
+
+**Project is `enabled`.**
+
+**Upstream projects:**
+
+**Downstream projects:**
+* [cvmfs-cms-check-and-update-report](#cvmfs-cms-check-and-update-report):
+
+**Sub-projects:**
+* [cvmfs-cms-check-and-update-report](#cvmfs-cms-check-and-update-report):
+
+**Triggers from:** []
+
+
+**Periodic builds:**
+```bash
+H * * * *
+```
+
+---
+
 ## [trigger-docker-packages-check](https://cmssdt.cern.ch/jenkins/job/trigger-docker-packages-check)
 
 **Description:** This job checks for changes in the parent image. If there are changes, it triggers the `build-docker-container` job so that our based image is updated and uploaded to the registry.
