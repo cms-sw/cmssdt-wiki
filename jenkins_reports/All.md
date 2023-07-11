@@ -5206,7 +5206,7 @@ Not periodically build
 
 **Description:** Dummy job for testing purposes (@avalenzu)
 
-**Project is `enabled`.**
+**Project is `disabled`.**
 
 **Upstream projects:**
 
