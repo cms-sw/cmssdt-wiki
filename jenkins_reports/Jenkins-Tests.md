@@ -1093,6 +1093,28 @@ Not periodically build
 
 ---
 
+## [jenkins-test-cmssw-build-docker2](https://cmssdt.cern.ch/jenkins/job/jenkins-test-cmssw-build-docker2)
+
+**Description:** None
+
+**Project is `enabled`.**
+
+**Upstream projects:**
+
+**Downstream projects:**
+
+**Sub-projects:**
+
+**Triggers from:** []
+
+
+**Periodic builds:**
+```bash
+Not periodically build
+```
+
+---
+
 ## [jenkins-test-job2](https://cmssdt.cern.ch/jenkins/job/jenkins-test-job2)
 
 **Description:** Jenkins tests Project to test jenkins functionality.
