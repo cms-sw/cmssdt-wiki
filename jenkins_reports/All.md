@@ -1064,28 +1064,6 @@ Not periodically build
 
 ---
 
-## [cms-spack-clean](https://cmssdt.cern.ch/jenkins/job/cms-spack-clean)
-
-**Description:** None
-
-**Project is `enabled`.**
-
-**Upstream projects:**
-
-**Downstream projects:**
-
-**Sub-projects:**
-
-**Triggers from:** []
-
-
-**Periodic builds:**
-```bash
-Not periodically build
-```
-
----
-
 ## [cms-spack-ib](https://cmssdt.cern.ch/jenkins/job/cms-spack-ib)
 
 **Description:** This jobs starts an Integration Build (IB). Base on state of <a href="https://github.com/cms-sw/cmsdist">CMSDIST</a>/<a href="https://github.com/cms-sw/cmssw">CMSSW</a> git repositories, it builds either a full release or patch release.
@@ -6556,6 +6534,28 @@ Not periodically build
 ## [run-vtune-profiling](https://cmssdt.cern.ch/jenkins/job/run-vtune-profiling)
 
 **Description:** Profiling jobs that are submitted manually for each CMSSW release. The performance is summarized on https://cms-reco-profiling.web.cern.ch/. Managed by cms-offline-conveners-reco@cern.ch.
+
+**Project is `enabled`.**
+
+**Upstream projects:**
+
+**Downstream projects:**
+
+**Sub-projects:**
+
+**Triggers from:** []
+
+
+**Periodic builds:**
+```bash
+Not periodically build
+```
+
+---
+
+## [set-shifter](https://cmssdt.cern.ch/jenkins/job/set-shifter)
+
+**Description:** Run this job at the start of your shift to receive MM pings from failed builds/tests
 
 **Project is `enabled`.**
 

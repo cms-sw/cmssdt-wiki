@@ -1394,6 +1394,28 @@ Not periodically build
 
 ---
 
+## [set-shifter](https://cmssdt.cern.ch/jenkins/job/set-shifter)
+
+**Description:** Run this job at the start of your shift to receive MM pings from failed builds/tests
+
+**Project is `enabled`.**
+
+**Upstream projects:**
+
+**Downstream projects:**
+
+**Sub-projects:**
+
+**Triggers from:** []
+
+
+**Periodic builds:**
+```bash
+Not periodically build
+```
+
+---
+
 ## [sync-profile-data](https://cmssdt.cern.ch/jenkins/job/sync-profile-data)
 
 **Description:** None
@@ -2586,28 +2608,6 @@ H 20 * * *
 **Periodic builds:**
 ```bash
 H H/2 * * *
-```
-
----
-
-## [cms-spack-clean](https://cmssdt.cern.ch/jenkins/job/cms-spack-clean)
-
-**Description:** None
-
-**Project is `enabled`.**
-
-**Upstream projects:**
-
-**Downstream projects:**
-
-**Sub-projects:**
-
-**Triggers from:** []
-
-
-**Periodic builds:**
-```bash
-Not periodically build
 ```
 
 ---
