@@ -4160,28 +4160,6 @@ Not periodically build
 
 ---
 
-## [jenkin-test-docker-followup](https://cmssdt.cern.ch/jenkins/job/jenkin-test-docker-followup)
-
-**Description:** None
-
-**Project is `enabled`.**
-
-**Upstream projects:**
-
-**Downstream projects:**
-
-**Sub-projects:**
-
-**Triggers from:** []
-
-
-**Periodic builds:**
-```bash
-Not periodically build
-```
-
----
-
 ## [kill-build-release](https://cmssdt.cern.ch/jenkins/job/kill-build-release)
 
 **Description:** Aborts and kills a release building process. 
