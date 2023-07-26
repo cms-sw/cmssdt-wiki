@@ -1164,8 +1164,10 @@ Not periodically build
 **Project is `enabled`.**
 
 **Upstream projects:**
+* [jenkins-infrastructure-sanity](#jenkins-infrastructure-sanity):
 
 **Downstream projects:**
+* [jenkins-infrastructure-sanity](#jenkins-infrastructure-sanity):
 
 **Sub-projects:**
 
