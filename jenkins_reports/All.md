@@ -4762,6 +4762,31 @@ Not periodically build
 
 ---
 
+## [jenkins-infrastructure-sanity-check](https://cmssdt.cern.ch/jenkins/job/jenkins-infrastructure-sanity-check)
+
+**Description:** None
+
+**Project is `enabled`.**
+
+**Upstream projects:**
+* [jenkins-infrastructure-sanity-check](#jenkins-infrastructure-sanity-check):
+
+**Downstream projects:**
+* [jenkins-infrastructure-sanity-check](#jenkins-infrastructure-sanity-check):
+
+**Sub-projects:**
+* [jenkins-infrastructure-sanity-check](#jenkins-infrastructure-sanity-check):
+
+**Triggers from:** []
+
+
+**Periodic builds:**
+```bash
+Not periodically build
+```
+
+---
+
 ## [jenkins-initialize](https://cmssdt.cern.ch/jenkins/job/jenkins-initialize)
 
 **Description:** This project is run once a new Jenkins instance is setup or upgrated to a new version.
