@@ -4738,30 +4738,6 @@ Not periodically build
 
 ---
 
-## [jenkins-infrastructure-sanity](https://cmssdt.cern.ch/jenkins/job/jenkins-infrastructure-sanity)
-
-**Description:** None
-
-**Project is `enabled`.**
-
-**Upstream projects:**
-* [jenkins-infrastructure-sanity](#jenkins-infrastructure-sanity):
-
-**Downstream projects:**
-* [jenkins-infrastructure-sanity](#jenkins-infrastructure-sanity):
-
-**Sub-projects:**
-
-**Triggers from:** []
-
-
-**Periodic builds:**
-```bash
-Not periodically build
-```
-
----
-
 ## [jenkins-infrastructure-sanity-check](https://cmssdt.cern.ch/jenkins/job/jenkins-infrastructure-sanity-check)
 
 **Description:** None
