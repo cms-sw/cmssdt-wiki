@@ -6764,6 +6764,28 @@ Not periodically build
 
 ---
 
+## [test-cmssw-images](https://cmssdt.cern.ch/jenkins/job/test-cmssw-images)
+
+**Description:** avalenzu: Jenkins job to test the new runtime and buildtime images. I will delete this job after the tests.
+
+**Project is `enabled`.**
+
+**Upstream projects:**
+
+**Downstream projects:**
+
+**Sub-projects:**
+
+**Triggers from:** []
+
+
+**Periodic builds:**
+```bash
+Not periodically build
+```
+
+---
+
 ## [test-containter-singularity](https://cmssdt.cern.ch/jenkins/job/test-containter-singularity)
 
 **Description:** None
