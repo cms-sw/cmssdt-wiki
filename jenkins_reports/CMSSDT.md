@@ -4773,28 +4773,6 @@ Not periodically build
 
 ---
 
-## [test-cmssw-images](https://cmssdt.cern.ch/jenkins/job/test-cmssw-images)
-
-**Description:** avalenzu: Jenkins job to test the new runtime and buildtime images. I will delete this job after the tests.
-
-**Project is `enabled`.**
-
-**Upstream projects:**
-
-**Downstream projects:**
-
-**Sub-projects:**
-
-**Triggers from:** []
-
-
-**Periodic builds:**
-```bash
-Not periodically build
-```
-
----
-
 ## [trigger-docker-packages-check](https://cmssdt.cern.ch/jenkins/job/trigger-docker-packages-check)
 
 **Description:** This job checks for changes in the parent image. If there are changes, it triggers the `build-docker-container` job so that our based image is updated and uploaded to the registry.

@@ -6768,7 +6768,7 @@ Not periodically build
 
 **Description:** avalenzu: Jenkins job to test the new runtime and buildtime images. I will delete this job after the tests.
 
-**Project is `enabled`.**
+**Project is `disabled`.**
 
 **Upstream projects:**
 
