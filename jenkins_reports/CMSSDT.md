@@ -4468,6 +4468,60 @@ Not periodically build
 
 ---
 
+## [process-external-elastic-stats](https://cmssdt.cern.ch/jenkins/job/process-external-elastic-stats)
+
+**Description:** This job process resource metrics jsons for externals
+
+**Project is `enabled`.**
+
+**Upstream projects:**
+* [build-any-ib](#build-any-ib):
+* [cms-spack-ib](#cms-spack-ib):
+
+**Downstream projects:**
+
+**Sub-projects:**
+
+**Triggers from:** []
+
+
+**Periodic builds:**
+```bash
+H 22-23 * * *
+```
+
+---
+
+## [process-relval-logs](https://cmssdt.cern.ch/jenkins/job/process-relval-logs)
+
+**Description:** This job process partial logs of Relvals and place files accordingly.<br/>
+There is no need to re-try newer run is successful or running. If it keeps on failing then one need 
+to check the logs and find out the reason of failure. In that case some manual work is needed to cleanup
+cmssdt.cern.ch logs.
+
+**Project is `enabled`.**
+
+**Upstream projects:**
+* [ib-run-relvals](#ib-run-relvals):
+
+**Downstream projects:**
+* [process-relval-logs-cleanup](#process-relval-logs-cleanup):
+* [update-github-pages](#update-github-pages):
+
+**Sub-projects:**
+* [update-github-pages](#update-github-pages):
+* [process-relval-logs-cleanup](#process-relval-logs-cleanup):
+
+**Triggers from:** []
+
+
+**Periodic builds:**
+```bash
+H/20 * * * *
+```
+
+---
+
 ## [query-build-release-issues](https://cmssdt.cern.ch/jenkins/job/query-build-release-issues)
 
 **Description:** Processes a github issue to check if it is requesting the build of a new release.
