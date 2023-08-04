@@ -6204,7 +6204,7 @@ Not periodically build
 
 **Description:** This job process resource metrics jsons for externals
 
-**Project is `enabled`.**
+**Project is `disabled`.**
 
 **Upstream projects:**
 * [build-any-ib](#build-any-ib):
@@ -6231,7 +6231,7 @@ There is no need to re-try newer run is successful or running. If it keeps on fa
 to check the logs and find out the reason of failure. In that case some manual work is needed to cleanup
 cmssdt.cern.ch logs.
 
-**Project is `enabled`.**
+**Project is `disabled`.**
 
 **Upstream projects:**
 * [ib-run-relvals](#ib-run-relvals):
