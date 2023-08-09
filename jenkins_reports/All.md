@@ -4908,6 +4908,28 @@ Not periodically build
 
 ---
 
+## [jenkins-monitor-queue](https://cmssdt.cern.ch/jenkins/job/jenkins-monitor-queue)
+
+**Description:** None
+
+**Project is `enabled`.**
+
+**Upstream projects:**
+
+**Downstream projects:**
+
+**Sub-projects:**
+
+**Triggers from:** []
+
+
+**Periodic builds:**
+```bash
+H * * * *
+```
+
+---
+
 ## [jenkins-projects-report](https://cmssdt.cern.ch/jenkins/job/jenkins-projects-report)
 
 **Description:** This job runs a groovy script to dump jenkins
