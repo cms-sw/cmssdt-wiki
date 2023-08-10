@@ -7433,28 +7433,6 @@ Not periodically build
 
 ---
 
-## [vtune-run-container](https://cmssdt.cern.ch/jenkins/job/vtune-run-container)
-
-**Description:** This job stops and deletes old docker contaner of Vtune service and starts new one.
-
-**Project is `enabled`.**
-
-**Upstream projects:**
-
-**Downstream projects:**
-
-**Sub-projects:**
-
-**Triggers from:** []
-
-
-**Periodic builds:**
-```bash
-Not periodically build
-```
-
----
-
 ## [web-update-cmssdt-ib](https://cmssdt.cern.ch/jenkins/job/web-update-cmssdt-ib)
 
 **Description:** Job used to transpile cmssdt ib page from ECMAscript6 to regular javascript and push changes to github.
