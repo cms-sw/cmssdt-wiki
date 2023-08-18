@@ -6956,7 +6956,7 @@ HTTP request sent, awaiting response... 404 Not Found
 <br><br>
 Workspace for #634 at cmsbuild70.
 
-**Project is `disabled`.**
+**Project is `enabled`.**
 
 **Upstream projects:**
 * [test-os](#test-os):
