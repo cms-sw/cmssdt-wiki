@@ -8,9 +8,11 @@
 
 # Projects:
 
-## [cvmfs-ci-gc](https://cmssdt.cern.ch/jenkins/job/cvmfs-ci-gc)
+## [sync-patatrack-branch](https://cmssdt.cern.ch/jenkins/job/sync-patatrack-branch)
 
-**Description:** This runs CVMFS GC (once a week)
+**Description:** - this is to sync patatrack branches <br/>
+- Currently this job does not do any thing (kind of disabled)
+
 
 **Project is `disabled`.**
 
@@ -25,53 +27,30 @@
 
 **Periodic builds:**
 ```bash
-#Run once on Thursday at 23h05
-H 23  * *  2
+55 * * * *
 ```
 
 ---
 
-## [cvmfs-cleanup-containers](https://cmssdt.cern.ch/jenkins/job/cvmfs-cleanup-containers)
+## [refresh-cmssdt](https://cmssdt.cern.ch/jenkins/job/refresh-cmssdt)
 
-**Description:** None
+**Description:** This job updates the cmssw IB page on cmssdt.
 
-**Project is `enabled`.**
+**Project is `disabled`.**
 
 **Upstream projects:**
+* [update-github-pages](#update-github-pages):
 
 **Downstream projects:**
 
 **Sub-projects:**
 
-**Triggers from:** []
+**Triggers from:** [u'update-github-pages']
 
 
 **Periodic builds:**
 ```bash
 Not periodically build
-```
-
----
-
-## [es-close-indexes](https://cmssdt.cern.ch/jenkins/job/es-close-indexes)
-
-**Description:** This job keeps last 6 weeks (1.5 months) of data in Elasticsearch open, and it closes older indexes (archive it).
-We do not care about older data. By doing it we make Elasticsearch faster. 
-
-**Project is `disabled`.**
-
-**Upstream projects:**
-
-**Downstream projects:**
-
-**Sub-projects:**
-
-**Triggers from:** []
-
-
-**Periodic builds:**
-```bash
-H 0  * *  0
 ```
 
 ---
@@ -100,6 +79,96 @@ H 0  * *  0
 **Periodic builds:**
 ```bash
 Not periodically build
+```
+
+---
+
+## [cvmfs-cleanup-containers](https://cmssdt.cern.ch/jenkins/job/cvmfs-cleanup-containers)
+
+**Description:** None
+
+**Project is `enabled`.**
+
+**Upstream projects:**
+
+**Downstream projects:**
+
+**Sub-projects:**
+
+**Triggers from:** []
+
+
+**Periodic builds:**
+```bash
+Not periodically build
+```
+
+---
+
+## [test-cmssw-images](https://cmssdt.cern.ch/jenkins/job/test-cmssw-images)
+
+**Description:** avalenzu: Jenkins job to test the new runtime and buildtime images. I will delete this job after the tests.
+
+**Project is `disabled`.**
+
+**Upstream projects:**
+
+**Downstream projects:**
+
+**Sub-projects:**
+
+**Triggers from:** []
+
+
+**Periodic builds:**
+```bash
+Not periodically build
+```
+
+---
+
+## [cvmfs-ci-gc](https://cmssdt.cern.ch/jenkins/job/cvmfs-ci-gc)
+
+**Description:** This runs CVMFS GC (once a week)
+
+**Project is `disabled`.**
+
+**Upstream projects:**
+
+**Downstream projects:**
+
+**Sub-projects:**
+
+**Triggers from:** []
+
+
+**Periodic builds:**
+```bash
+#Run once on Thursday at 23h05
+H 23  * *  2
+```
+
+---
+
+## [es-close-indexes](https://cmssdt.cern.ch/jenkins/job/es-close-indexes)
+
+**Description:** This job keeps last 6 weeks (1.5 months) of data in Elasticsearch open, and it closes older indexes (archive it).
+We do not care about older data. By doing it we make Elasticsearch faster. 
+
+**Project is `disabled`.**
+
+**Upstream projects:**
+
+**Downstream projects:**
+
+**Sub-projects:**
+
+**Triggers from:** []
+
+
+**Periodic builds:**
+```bash
+H 0  * *  0
 ```
 
 ---
@@ -140,75 +209,6 @@ Not periodically build
 
 **Sub-projects:**
 * [ib-run-qa](#ib-run-qa):
-
-**Triggers from:** []
-
-
-**Periodic builds:**
-```bash
-Not periodically build
-```
-
----
-
-## [refresh-cmssdt](https://cmssdt.cern.ch/jenkins/job/refresh-cmssdt)
-
-**Description:** This job updates the cmssw IB page on cmssdt.
-
-**Project is `disabled`.**
-
-**Upstream projects:**
-* [update-github-pages](#update-github-pages):
-
-**Downstream projects:**
-
-**Sub-projects:**
-
-**Triggers from:** ['update-github-pages']
-
-
-**Periodic builds:**
-```bash
-Not periodically build
-```
-
----
-
-## [sync-patatrack-branch](https://cmssdt.cern.ch/jenkins/job/sync-patatrack-branch)
-
-**Description:** - this is to sync patatrack branches <br/>
-- Currently this job does not do any thing (kind of disabled)
-
-
-**Project is `disabled`.**
-
-**Upstream projects:**
-
-**Downstream projects:**
-
-**Sub-projects:**
-
-**Triggers from:** []
-
-
-**Periodic builds:**
-```bash
-55 * * * *
-```
-
----
-
-## [test-cmssw-images](https://cmssdt.cern.ch/jenkins/job/test-cmssw-images)
-
-**Description:** avalenzu: Jenkins job to test the new runtime and buildtime images. I will delete this job after the tests.
-
-**Project is `disabled`.**
-
-**Upstream projects:**
-
-**Downstream projects:**
-
-**Sub-projects:**
 
 **Triggers from:** []
 
