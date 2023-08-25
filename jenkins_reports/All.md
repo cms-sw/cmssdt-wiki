@@ -7116,28 +7116,6 @@ H 0 * * *
 
 ---
 
-## [update-circles-cmssdt](https://cmssdt.cern.ch/jenkins/job/update-circles-cmssdt)
-
-**Description:** None
-
-**Project is `enabled`.**
-
-**Upstream projects:**
-
-**Downstream projects:**
-
-**Sub-projects:**
-
-**Triggers from:** []
-
-
-**Periodic builds:**
-```bash
-Not periodically build
-```
-
----
-
 ## [update-circles-eos](https://cmssdt.cern.ch/jenkins/job/update-circles-eos)
 
 **Description:** None
