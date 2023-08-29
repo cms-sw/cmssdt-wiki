@@ -1166,6 +1166,7 @@ Not periodically build
 **Project is `enabled`.**
 
 **Upstream projects:**
+* [ib-run-profiling](#ib-run-profiling):
 
 **Downstream projects:**
 * [sync-profile-data](#sync-profile-data):
@@ -3843,6 +3844,7 @@ Not periodically build
 **Downstream projects:**
 * [ib-run-profiling-gpu](#ib-run-profiling-gpu):
 * [ib-run-profiling-mem](#ib-run-profiling-mem):
+* [ib-run-profiling-mem-GC](#ib-run-profiling-mem-GC):
 * [sync-profile-data](#sync-profile-data):
 
 **Sub-projects:**
