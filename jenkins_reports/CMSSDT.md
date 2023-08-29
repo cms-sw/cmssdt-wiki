@@ -1157,6 +1157,31 @@ Not periodically build
 
 ---
 
+## [ib-run-profiling-mem-GC](https://cmssdt.cern.ch/jenkins/job/ib-run-profiling-mem-GC)
+
+**Description:** Runs FastTimerService and Igprof on the RECO and PAT steps for high pileup workflow.
+
+
+
+**Project is `enabled`.**
+
+**Upstream projects:**
+
+**Downstream projects:**
+* [sync-profile-data](#sync-profile-data):
+
+**Sub-projects:**
+
+**Triggers from:** []
+
+
+**Periodic builds:**
+```bash
+Not periodically build
+```
+
+---
+
 ## [jenkins-test-retry](https://cmssdt.cern.ch/jenkins/job/jenkins-test-retry)
 
 **Description:** This job retries a build given the job name and the build number to retry.<br>
@@ -1427,12 +1452,13 @@ Not periodically build
 * [ib-run-profiling](#ib-run-profiling):
 * [ib-run-profiling-gpu](#ib-run-profiling-gpu):
 * [ib-run-profiling-mem](#ib-run-profiling-mem):
+* [ib-run-profiling-mem-GC](#ib-run-profiling-mem-GC):
 
 **Downstream projects:**
 
 **Sub-projects:**
 
-**Triggers from:** ['ib-run-igprof', 'ib-run-profiling', 'ib-run-profiling-mem']
+**Triggers from:** ['ib-run-igprof', 'ib-run-profiling', 'ib-run-profiling-mem', 'ib-run-profiling-mem-GC']
 
 
 **Periodic builds:**
