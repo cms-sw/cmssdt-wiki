@@ -4765,6 +4765,28 @@ Not periodically build
 
 ---
 
+## [jenkins-infrastructure-sanity](https://cmssdt.cern.ch/jenkins/job/jenkins-infrastructure-sanity)
+
+**Description:** None
+
+**Project is `disabled`.**
+
+**Upstream projects:**
+
+**Downstream projects:**
+
+**Sub-projects:**
+
+**Triggers from:** []
+
+
+**Periodic builds:**
+```bash
+Not periodically build
+```
+
+---
+
 ## [jenkins-infrastructure-sanity-check](https://cmssdt.cern.ch/jenkins/job/jenkins-infrastructure-sanity-check)
 
 **Description:** None
