@@ -2600,7 +2600,7 @@ Not periodically build
 
 ## [find-cmssw-install-packages](https://cmssdt.cern.ch/jenkins/job/find-cmssw-install-packages)
 
-**Description:** None
+**Description:** avalenzu(testing): dummy job for builid cmssw images.
 
 **Project is `enabled`.**
 
