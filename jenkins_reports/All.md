@@ -520,7 +520,7 @@ If the original PR has been merged, it changes all opened backport PRs of it fro
 
 **Periodic builds:**
 ```bash
-H/5 * * * *
+H/10 * * * *
 ```
 
 ---
