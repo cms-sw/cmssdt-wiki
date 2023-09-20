@@ -75,15 +75,17 @@ If the original PR has been merged, it changes all opened backport PRs of it fro
 **Upstream projects:**
 
 **Downstream projects:**
+* [cms-bot](#cms-bot):
 
 **Sub-projects:**
+* [cms-bot](#cms-bot):
 
 **Triggers from:** []
 
 
 **Periodic builds:**
 ```bash
-H * * * *
+H/5 * * * *
 ```
 
 ---
@@ -2469,6 +2471,7 @@ Will kill a scheduled/running job acording to comments.
 **Project is `enabled`.**
 
 **Upstream projects:**
+* [check-future-commit-prs](#check-future-commit-prs):
 * [compare-root-files-short-matrix](#compare-root-files-short-matrix):
 * [github-webhook](#github-webhook):
 
