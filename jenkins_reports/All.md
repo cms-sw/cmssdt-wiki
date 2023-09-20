@@ -500,6 +500,29 @@ Not periodically build
 
 ---
 
+## [check-future-commit-prs](https://cmssdt.cern.ch/jenkins/job/check-future-commit-prs)
+
+**Description:** Periodicaly runs https://github.com/cms-sw/cms-bot/blob/master/fix-backport-labels.py to check if the PR on master, which backport has been requested, is merged.
+If the original PR has been merged, it changes all opened backport PRs of it from backport(blue) to backport-ok(green)
+
+**Project is `enabled`.**
+
+**Upstream projects:**
+
+**Downstream projects:**
+
+**Sub-projects:**
+
+**Triggers from:** []
+
+
+**Periodic builds:**
+```bash
+H * * * *
+```
+
+---
+
 ## [check-pending-job](https://cmssdt.cern.ch/jenkins/job/check-pending-job)
 
 **Description:** <pre>The project checks for a running job and shows the status of process running on a remote machine.
