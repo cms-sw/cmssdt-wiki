@@ -2829,6 +2829,7 @@ and then a jenkins job is triggered based on the information passed from the web
 
 **Upstream projects:**
 * [github-labels](#github-labels):
+* [query-new-data-repo-issues](#query-new-data-repo-issues):
 
 **Downstream projects:**
 * [github-labels](#github-labels):
@@ -6443,8 +6444,10 @@ If the issue is not requesting any release, it ignores it.
 **Upstream projects:**
 
 **Downstream projects:**
+* [github-labels](#github-labels):
 
 **Sub-projects:**
+* [github-labels](#github-labels):
 
 **Triggers from:** []
 
