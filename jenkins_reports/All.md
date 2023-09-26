@@ -6433,6 +6433,28 @@ H/15 * * * *
 
 ---
 
+## [query-new-data-repo-issues](https://cmssdt.cern.ch/jenkins/job/query-new-data-repo-issues)
+
+**Description:** None
+
+**Project is `enabled`.**
+
+**Upstream projects:**
+
+**Downstream projects:**
+
+**Sub-projects:**
+
+**Triggers from:** []
+
+
+**Periodic builds:**
+```bash
+Not periodically build
+```
+
+---
+
 ## [reco-profiling-eos-cleanup](https://cmssdt.cern.ch/jenkins/job/reco-profiling-eos-cleanup)
 
 **Description:** None
