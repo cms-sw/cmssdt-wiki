@@ -900,12 +900,14 @@ Will kill a scheduled/running job acording to comments.
 **Downstream projects:**
 * [abort-pr-tests](#abort-pr-tests):
 * [ib-schedule-pr-tests](#ib-schedule-pr-tests):
+* [query-new-data-repo-issues](#query-new-data-repo-issues):
 * [run-pr-code-checks](#run-pr-code-checks):
 
 **Sub-projects:**
 * [ib-schedule-pr-tests](#ib-schedule-pr-tests):
 * [abort-pr-tests ](#abort-pr-tests ):
 * [run-pr-code-checks](#run-pr-code-checks):
+* [query-new-data-repo-issues](#query-new-data-repo-issues):
 
 **Triggers from:** []
 
@@ -2803,6 +2805,7 @@ and then a jenkins job is triggered based on the information passed from the web
 
 **Upstream projects:**
 * [github-hooks](#github-hooks):
+* [query-new-data-repo-issues](#query-new-data-repo-issues):
 
 **Downstream projects:**
 * [github-hooks](#github-hooks):
@@ -6442,12 +6445,14 @@ If the issue is not requesting any release, it ignores it.
 **Project is `enabled`.**
 
 **Upstream projects:**
+* [cms-bot](#cms-bot):
 
 **Downstream projects:**
+* [github-hooks](#github-hooks):
 * [github-labels](#github-labels):
 
 **Sub-projects:**
-* [github-labels](#github-labels):
+* [github-labels, github-hooks](#github-labels, github-hooks):
 
 **Triggers from:** []
 
