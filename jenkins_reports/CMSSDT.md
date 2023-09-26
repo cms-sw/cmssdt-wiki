@@ -1309,7 +1309,8 @@ Not periodically build
 
 ## [query-new-data-repo-issues](https://cmssdt.cern.ch/jenkins/job/query-new-data-repo-issues)
 
-**Description:** None
+**Description:** Processes a github issue to check if it is requesting the creation of a new data repository.
+If the issue is not requesting any release, it ignores it. 
 
 **Project is `enabled`.**
 
@@ -1507,6 +1508,28 @@ Not periodically build
 **Sub-projects:**
 
 **Triggers from:** ['ib-run-igprof', 'ib-run-profiling', 'ib-run-profiling-mem', 'ib-run-profiling-mem-GC']
+
+
+**Periodic builds:**
+```bash
+Not periodically build
+```
+
+---
+
+## [test-cms-containers-run-cmssw-test](https://cmssdt.cern.ch/jenkins/job/test-cms-containers-run-cmssw-test)
+
+**Description:** avalenzu: Debug (I will delete it afterwards)
+
+**Project is `enabled`.**
+
+**Upstream projects:**
+
+**Downstream projects:**
+
+**Sub-projects:**
+
+**Triggers from:** []
 
 
 **Periodic builds:**
