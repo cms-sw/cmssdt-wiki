@@ -1322,7 +1322,7 @@ If the issue is not requesting any release, it ignores it.
 * [github-labels](#github-labels):
 
 **Sub-projects:**
-* [github-labels, github-hooks](#github-labels, github-hooks):
+* [github-labels,github-hooks](#github-labels,github-hooks):
 
 **Triggers from:** []
 

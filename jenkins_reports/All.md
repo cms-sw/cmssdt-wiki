@@ -6452,7 +6452,7 @@ If the issue is not requesting any release, it ignores it.
 * [github-labels](#github-labels):
 
 **Sub-projects:**
-* [github-labels, github-hooks](#github-labels, github-hooks):
+* [github-labels,github-hooks](#github-labels,github-hooks):
 
 **Triggers from:** []
 
@@ -6898,28 +6898,6 @@ H/15 * * * *
 **Description:** avalenzu: Testing build error in release https://github.com/cms-sw/cmssw/issues/41976 for el8_amd64_gcc12
 
 **Project is `enabled`.**
-
-**Upstream projects:**
-
-**Downstream projects:**
-
-**Sub-projects:**
-
-**Triggers from:** []
-
-
-**Periodic builds:**
-```bash
-Not periodically build
-```
-
----
-
-## [test-cms-containers-run-cmssw-test](https://cmssdt.cern.ch/jenkins/job/test-cms-containers-run-cmssw-test)
-
-**Description:** avalenzu: Debug (I will delete it afterwards)
-
-**Project is `disabled`.**
 
 **Upstream projects:**
 
