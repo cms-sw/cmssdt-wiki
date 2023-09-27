@@ -6919,7 +6919,7 @@ Not periodically build
 
 **Description:** avalenzu: Debug (I will delete it afterwards)
 
-**Project is `enabled`.**
+**Project is `disabled`.**
 
 **Upstream projects:**
 

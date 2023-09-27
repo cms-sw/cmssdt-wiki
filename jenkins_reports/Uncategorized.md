@@ -198,6 +198,28 @@ Not periodically build
 
 ---
 
+## [test-cms-containers-run-cmssw-test](https://cmssdt.cern.ch/jenkins/job/test-cms-containers-run-cmssw-test)
+
+**Description:** avalenzu: Debug (I will delete it afterwards)
+
+**Project is `disabled`.**
+
+**Upstream projects:**
+
+**Downstream projects:**
+
+**Sub-projects:**
+
+**Triggers from:** []
+
+
+**Periodic builds:**
+```bash
+Not periodically build
+```
+
+---
+
 ## [test-cmssw-images](https://cmssdt.cern.ch/jenkins/job/test-cmssw-images)
 
 **Description:** avalenzu: Jenkins job to test the new runtime and buildtime images. I will delete this job after the tests.

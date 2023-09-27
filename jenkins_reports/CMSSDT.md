@@ -1521,28 +1521,6 @@ Not periodically build
 
 ---
 
-## [test-cms-containers-run-cmssw-test](https://cmssdt.cern.ch/jenkins/job/test-cms-containers-run-cmssw-test)
-
-**Description:** avalenzu: Debug (I will delete it afterwards)
-
-**Project is `enabled`.**
-
-**Upstream projects:**
-
-**Downstream projects:**
-
-**Sub-projects:**
-
-**Triggers from:** []
-
-
-**Periodic builds:**
-```bash
-Not periodically build
-```
-
----
-
 ## [test-containter-singularity](https://cmssdt.cern.ch/jenkins/job/test-containter-singularity)
 
 **Description:** None
