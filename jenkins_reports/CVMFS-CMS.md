@@ -288,9 +288,9 @@ Not periodically build
 
 ## [cvmfs-cms-reseed-architecture](https://cmssdt.cern.ch/jenkins/job/cvmfs-cms-reseed-architecture)
 
-**Description:** This job installs packages using cmspkg tool
-To be used for - CRAB3, PHEDEX, spacemon-client, python, releases(cmssw), cms-common
-Triggered by webhook
+**Description:** This job is to reseed a already installed architecture.
+This is needed when we have updated the packages to be seeded from the system installation.
+
 
 **Project is `enabled`.**
 
