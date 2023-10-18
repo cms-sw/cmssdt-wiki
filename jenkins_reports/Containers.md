@@ -39,6 +39,7 @@ If the ./singularity folder is big enough ($ du -hs /build/cmsbld/jenkins/worksp
 **Downstream projects:**
 * [cms-containers-checks-tags](#cms-containers-checks-tags):
 * [cms-containers-run-cmssw-test](#cms-containers-run-cmssw-test):
+* [compare-docker-images](#compare-docker-images):
 * [run-container-tests](#run-container-tests):
 * [test-containter-singularity](#test-containter-singularity):
 
@@ -46,6 +47,7 @@ If the ./singularity folder is big enough ($ du -hs /build/cmsbld/jenkins/worksp
 * [cms-containers-run-cmssw-test](#cms-containers-run-cmssw-test):
 * [test-containter-singularity](#test-containter-singularity):
 * [run-container-tests](#run-container-tests):
+* [compare-docker-images](#compare-docker-images):
 * [cms-containers-checks-tags](#cms-containers-checks-tags):
 
 **Triggers from:** []
