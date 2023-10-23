@@ -403,29 +403,6 @@ Not periodically build
 
 ---
 
-## [compare-docker-images](https://cmssdt.cern.ch/jenkins/job/compare-docker-images)
-
-**Description:** avalenzu: testing docker image comparison
-
-**Project is `enabled`.**
-
-**Upstream projects:**
-* [build-docker-container](#build-docker-container):
-
-**Downstream projects:**
-
-**Sub-projects:**
-
-**Triggers from:** []
-
-
-**Periodic builds:**
-```bash
-Not periodically build
-```
-
----
-
 ## [crab-cleanup](https://cmssdt.cern.ch/jenkins/job/crab-cleanup)
 
 **Description:** This job runs once a day to clean up the /eos/cms/store/user/cmsbot/CRAB_PrivateMC directory e.g. delete every thing older than X days.<br/>

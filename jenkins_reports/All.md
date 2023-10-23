@@ -1430,7 +1430,7 @@ Not periodically build
 
 **Description:** avalenzu: testing docker image comparison
 
-**Project is `enabled`.**
+**Project is `disabled`.**
 
 **Upstream projects:**
 * [build-docker-container](#build-docker-container):
