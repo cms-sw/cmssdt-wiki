@@ -1257,34 +1257,6 @@ Not periodically build
 
 ---
 
-## [lxr-generate-index-6](https://cmssdt.cern.ch/jenkins/job/lxr-generate-index-6)
-
-**Description:** This job sets modification timestamp of CMSSW source code according to commit history before 
-indexing it using LXR.<br>
-
-
-LXR index files based on modification timestamp. `<code>git clone</code>` ,however, sets files timestamps 
-to command's execution time. Without it, LXR would index every file, increasing jobs execution duration 
-and database size.
-
-**Project is `enabled`.**
-
-**Upstream projects:**
-
-**Downstream projects:**
-
-**Sub-projects:**
-
-**Triggers from:** []
-
-
-**Periodic builds:**
-```bash
-Not periodically build
-```
-
----
-
 ## [lxr-repair-table](https://cmssdt.cern.ch/jenkins/job/lxr-repair-table)
 
 **Description:** Run this if there is any MySQL table to repair e.g. if lxr-remove-idex fails with error <br/>
