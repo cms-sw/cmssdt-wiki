@@ -108,6 +108,29 @@ H H * * *
 
 ---
 
+## [cvmfs-cms-check-and-update-metadata](https://cmssdt.cern.ch/jenkins/job/cvmfs-cms-check-and-update-metadata)
+
+**Description:** FIXME
+
+
+**Project is `enabled`.**
+
+**Upstream projects:**
+
+**Downstream projects:**
+
+**Sub-projects:**
+
+**Triggers from:** []
+
+
+**Periodic builds:**
+```bash
+H * * * *
+```
+
+---
+
 ## [cvmfs-cms-check-and-update-report](https://cmssdt.cern.ch/jenkins/job/cvmfs-cms-check-and-update-report)
 
 **Description:** This job reports status of upstream projects, siteconf and gridpacks.
