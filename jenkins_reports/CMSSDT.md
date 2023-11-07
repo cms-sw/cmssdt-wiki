@@ -2121,6 +2121,7 @@ If the ./singularity folder is big enough ($ du -hs /build/cmsbld/jenkins/worksp
 * [check-docker-container](#check-docker-container):
 
 **Downstream projects:**
+* [check-docker-container](#check-docker-container):
 * [cms-containers-checks-tags](#cms-containers-checks-tags):
 * [cms-containers-run-cmssw-test](#cms-containers-run-cmssw-test):
 * [compare-docker-images](#compare-docker-images):
@@ -2289,6 +2290,7 @@ Not periodically build
 **Project is `enabled`.**
 
 **Upstream projects:**
+* [build-docker-container](#build-docker-container):
 * [cms-auto-build-container](#cms-auto-build-container):
 
 **Downstream projects:**
