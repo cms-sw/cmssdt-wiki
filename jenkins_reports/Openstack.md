@@ -101,7 +101,11 @@ Not periodically build
 
 ## [openstack-add-jenkins-slave](https://cmssdt.cern.ch/jenkins/job/openstack-add-jenkins-slave)
 
-**Description:** Find all hosts in an hostgroup and add them to jenkins
+**Description:** Find all hosts in an hostgroup and add them to jenkins. This job needs to run `ai-*` commands
+to be run on aiadm nodes. As due to 2FA we can not do a batch login to aiadm nodes so `ai-*`
+commands are run via a acrontab job <br/>
+~cmsbuild/private/jenkins/scripts/process.sh ~/private/jenkins
+
 
 **Project is `enabled`.**
 
