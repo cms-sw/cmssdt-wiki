@@ -5063,9 +5063,9 @@ Not periodically build
 
 ## [jenkins-monitor-queue](https://cmssdt.cern.ch/jenkins/job/jenkins-monitor-queue)
 
-**Description:** None
+**Description:** avalenzu: Fixing this job.
 
-**Project is `enabled`.**
+**Project is `disabled`.**
 
 **Upstream projects:**
 
