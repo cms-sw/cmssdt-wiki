@@ -2926,7 +2926,7 @@ H 1 * * *
 
 ## [github-monitor-api](https://cmssdt.cern.ch/jenkins/job/github-monitor-api)
 
-**Description:** None
+**Description:** https://pygithub.readthedocs.io/en/latest/github.html
 
 **Project is `enabled`.**
 
