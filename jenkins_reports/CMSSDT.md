@@ -3359,6 +3359,28 @@ H 1 * * *
 
 ---
 
+## [github-monitor-api](https://cmssdt.cern.ch/jenkins/job/github-monitor-api)
+
+**Description:** None
+
+**Project is `enabled`.**
+
+**Upstream projects:**
+
+**Downstream projects:**
+
+**Sub-projects:**
+
+**Triggers from:** []
+
+
+**Periodic builds:**
+```bash
+H 0 * * *
+```
+
+---
+
 ## [github-push-hook](https://cmssdt.cern.ch/jenkins/job/github-push-hook)
 
 **Description:** Updates cms-bot clone on cmssdt.
