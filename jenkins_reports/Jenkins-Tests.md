@@ -1117,7 +1117,7 @@ Not periodically build
 
 **Description:** avalenzu: Fixing this job.
 
-**Project is `disabled`.**
+**Project is `enabled`.**
 
 **Upstream projects:**
 
