@@ -59,7 +59,7 @@ H * * * *
 
 ---
 
-## [cvmfs-cms-check-and-update-gridpacks-test](https://cmssdt.cern.ch/jenkins/job/cvmfs-cms-check-and-update-gridpacks-test)
+## [cvmfs-cms-check-and-update-gridpacks-new-generation](https://cmssdt.cern.ch/jenkins/job/cvmfs-cms-check-and-update-gridpacks-new-generation)
 
 **Description:** This job checks and updates gridpacks based on 
 <br> https://github.com/bockjoo/cvmfs-cms-install-scripts/blob/master/cron_rsync_generator_package_from_eos_individual.sh
