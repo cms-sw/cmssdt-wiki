@@ -4458,7 +4458,7 @@ Not periodically build
 This was created to avoid the issue with <a href="https://wiki.jenkins.io/display/JENKINS/Dynamic+Parameter+Plug-in">Jenkins Dynamic Parameters</a>.
 
 
-**Project is `disabled`.**
+**Project is `enabled`.**
 
 **Upstream projects:**
 
@@ -4547,7 +4547,7 @@ then triggers 'ib-install-cvmfs' sub-job to get the new cms.weekN deployed on th
 
 This job re-tries itself on failure. So there is no need to re-try it manually (unless all re-tries failed).
 
-**Project is `disabled`.**
+**Project is `enabled`.**
 
 **Upstream projects:**
 * [ib-schedule](#ib-schedule):
