@@ -71,6 +71,7 @@ Not periodically build
 **Upstream projects:**
 * [build-docker-container](#build-docker-container):
 * [cms-auto-build-container](#cms-auto-build-container):
+* [test-build-docker-container](#test-build-docker-container):
 
 **Downstream projects:**
 * [build-docker-container](#build-docker-container):
@@ -143,6 +144,7 @@ H 10 * * *
 **Upstream projects:**
 * [build-docker-container](#build-docker-container):
 * [github-push-hook](#github-push-hook):
+* [test-build-docker-container](#test-build-docker-container):
 
 **Downstream projects:**
 * [cms-tag-container](#cms-tag-container):
@@ -169,6 +171,7 @@ H 2 * * *
 **Upstream projects:**
 * [build-docker-container](#build-docker-container):
 * [cms-containers-schedule-cmssw-test](#cms-containers-schedule-cmssw-test):
+* [test-build-docker-container](#test-build-docker-container):
 
 **Downstream projects:**
 
