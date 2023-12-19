@@ -143,7 +143,6 @@ H 10 * * *
 **Upstream projects:**
 * [build-docker-container](#build-docker-container):
 * [github-push-hook](#github-push-hook):
-* [test-build-docker-container](#test-build-docker-container):
 
 **Downstream projects:**
 * [cms-tag-container](#cms-tag-container):

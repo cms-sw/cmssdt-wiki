@@ -958,7 +958,6 @@ Not periodically build
 **Upstream projects:**
 * [build-docker-container](#build-docker-container):
 * [github-push-hook](#github-push-hook):
-* [test-build-docker-container](#test-build-docker-container):
 
 **Downstream projects:**
 * [cms-tag-container](#cms-tag-container):
@@ -2542,6 +2541,29 @@ Not periodically build
 **Periodic builds:**
 ```bash
 H H * * *
+```
+
+---
+
+## [docker-issue-comment](https://cmssdt.cern.ch/jenkins/job/docker-issue-comment)
+
+**Description:** avalenzu: testing docker image comparison
+
+**Project is `enabled`.**
+
+**Upstream projects:**
+* [test-build-docker-container](#test-build-docker-container):
+
+**Downstream projects:**
+
+**Sub-projects:**
+
+**Triggers from:** []
+
+
+**Periodic builds:**
+```bash
+Not periodically build
 ```
 
 ---
@@ -7011,9 +7033,9 @@ Not periodically build
 
 **Downstream projects:**
 * [check-docker-container](#check-docker-container):
-* [cms-containers-checks-tags](#cms-containers-checks-tags):
 * [cms-containers-run-cmssw-test](#cms-containers-run-cmssw-test):
 * [compare-docker-images](#compare-docker-images):
+* [docker-issue-comment](#docker-issue-comment):
 * [run-container-tests](#run-container-tests):
 * [test-containter-singularity](#test-containter-singularity):
 
@@ -7022,7 +7044,7 @@ Not periodically build
 * [test-containter-singularity](#test-containter-singularity):
 * [run-container-tests](#run-container-tests):
 * [compare-docker-images](#compare-docker-images):
-* [cms-containers-checks-tags](#cms-containers-checks-tags):
+* [docker-issue-comment](#docker-issue-comment):
 * [check-docker-container](#check-docker-container):
 
 **Triggers from:** []
