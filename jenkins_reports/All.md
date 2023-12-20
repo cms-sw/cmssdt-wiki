@@ -2568,6 +2568,28 @@ Not periodically build
 
 ---
 
+## [docker-watch-pkgs](https://cmssdt.cern.ch/jenkins/job/docker-watch-pkgs)
+
+**Description:** avalenzu: testing watching concrete pkgs
+
+**Project is `enabled`.**
+
+**Upstream projects:**
+
+**Downstream projects:**
+
+**Sub-projects:**
+
+**Triggers from:** []
+
+
+**Periodic builds:**
+```bash
+Not periodically build
+```
+
+---
+
 ## [dockerhub_synchronization](https://cmssdt.cern.ch/jenkins/job/dockerhub_synchronization)
 
 **Description:** Synchronizes Docker Hub Organization's setup (repositories/teams/members/permissions) with docker configuration yaml file.
