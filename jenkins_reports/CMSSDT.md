@@ -1617,42 +1617,6 @@ Not periodically build
 
 ---
 
-## [test-build-docker-container](https://cmssdt.cern.ch/jenkins/job/test-build-docker-container)
-
-**Description:** avalenzu: Test purposes
-
-
-
-**Project is `enabled`.**
-
-**Upstream projects:**
-
-**Downstream projects:**
-* [check-docker-container](#check-docker-container):
-* [cms-containers-run-cmssw-test](#cms-containers-run-cmssw-test):
-* [compare-docker-images](#compare-docker-images):
-* [docker-issue-comment](#docker-issue-comment):
-* [run-container-tests](#run-container-tests):
-* [test-containter-singularity](#test-containter-singularity):
-
-**Sub-projects:**
-* [cms-containers-run-cmssw-test](#cms-containers-run-cmssw-test):
-* [test-containter-singularity](#test-containter-singularity):
-* [run-container-tests](#run-container-tests):
-* [compare-docker-images](#compare-docker-images):
-* [docker-issue-comment](#docker-issue-comment):
-* [check-docker-container](#check-docker-container):
-
-**Triggers from:** []
-
-
-**Periodic builds:**
-```bash
-Not periodically build
-```
-
----
-
 ## [test-containter-singularity](https://cmssdt.cern.ch/jenkins/job/test-containter-singularity)
 
 **Description:** None
