@@ -73,9 +73,10 @@ Not periodically build
 * [test-build-docker-container](#test-build-docker-container):
 
 **Downstream projects:**
+* [test-build-docker-container](#test-build-docker-container):
 
 **Sub-projects:**
-* [3test-build-docker-container](#3test-build-docker-container):
+* [test-build-docker-container](#test-build-docker-container):
 
 **Triggers from:** []
 
