@@ -668,7 +668,7 @@ Not periodically build
 
 ## [docker-issue-comment](https://cmssdt.cern.ch/jenkins/job/docker-issue-comment)
 
-**Description:** avalenzu: testing docker image comparison
+**Description:** avalenzu: reporting back on existing issues
 
 **Project is `enabled`.**
 
