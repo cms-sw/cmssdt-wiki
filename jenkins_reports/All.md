@@ -2575,8 +2575,10 @@ Not periodically build
 **Project is `enabled`.**
 
 **Upstream projects:**
+* [docker-watch-pkgs](#docker-watch-pkgs):
 
 **Downstream projects:**
+* [docker-watch-pkgs](#docker-watch-pkgs):
 
 **Sub-projects:**
 
