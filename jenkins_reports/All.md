@@ -2552,6 +2552,7 @@ H H * * *
 **Project is `enabled`.**
 
 **Upstream projects:**
+* [docker-watch-pkgs](#docker-watch-pkgs):
 * [test-build-docker-container](#test-build-docker-container):
 
 **Downstream projects:**
@@ -2578,6 +2579,7 @@ Not periodically build
 * [docker-watch-pkgs](#docker-watch-pkgs):
 
 **Downstream projects:**
+* [docker-issue-comment](#docker-issue-comment):
 * [docker-watch-pkgs](#docker-watch-pkgs):
 
 **Sub-projects:**
