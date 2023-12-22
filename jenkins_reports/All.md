@@ -256,6 +256,7 @@ If the ./singularity folder is big enough ($ du -hs /build/cmsbld/jenkins/worksp
 **Project is `enabled`.**
 
 **Upstream projects:**
+* [check-docker-container](#check-docker-container):
 
 **Downstream projects:**
 * [check-docker-container](#check-docker-container):
@@ -490,10 +491,10 @@ Not periodically build
 * [test-build-docker-container](#test-build-docker-container):
 
 **Downstream projects:**
-* [test-build-docker-container](#test-build-docker-container):
+* [build-docker-container](#build-docker-container):
 
 **Sub-projects:**
-* [test-build-docker-container](#test-build-docker-container):
+* [build-docker-container](#build-docker-container):
 
 **Triggers from:** []
 
@@ -7055,7 +7056,6 @@ Not periodically build
 **Project is `enabled`.**
 
 **Upstream projects:**
-* [check-docker-container](#check-docker-container):
 
 **Downstream projects:**
 * [check-docker-container](#check-docker-container):
