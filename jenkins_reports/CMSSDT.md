@@ -1641,6 +1641,28 @@ Not periodically build
 
 ---
 
+## [test-gh-api](https://cmssdt.cern.ch/jenkins/job/test-gh-api)
+
+**Description:** None
+
+**Project is `enabled`.**
+
+**Upstream projects:**
+
+**Downstream projects:**
+
+**Sub-projects:**
+
+**Triggers from:** []
+
+
+**Periodic builds:**
+```bash
+Not periodically build
+```
+
+---
+
 ## [test-new-cvmfs-publisher](https://cmssdt.cern.ch/jenkins/job/test-new-cvmfs-publisher)
 
 **Description:** None
