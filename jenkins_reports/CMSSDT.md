@@ -673,6 +673,7 @@ Not periodically build
 **Project is `enabled`.**
 
 **Upstream projects:**
+* [build-docker-container](#build-docker-container):
 * [docker-watch-pkgs](#docker-watch-pkgs):
 * [test-build-docker-container](#test-build-docker-container):
 
@@ -2206,6 +2207,7 @@ If the ./singularity folder is big enough ($ du -hs /build/cmsbld/jenkins/worksp
 * [cms-containers-checks-tags](#cms-containers-checks-tags):
 * [cms-containers-run-cmssw-test](#cms-containers-run-cmssw-test):
 * [compare-docker-images](#compare-docker-images):
+* [docker-issue-comment](#docker-issue-comment):
 * [run-container-tests](#run-container-tests):
 * [test-containter-singularity](#test-containter-singularity):
 
@@ -2216,6 +2218,7 @@ If the ./singularity folder is big enough ($ du -hs /build/cmsbld/jenkins/worksp
 * [compare-docker-images](#compare-docker-images):
 * [cms-containers-checks-tags](#cms-containers-checks-tags):
 * [check-docker-container](#check-docker-container):
+* [docker-issue-comment](#docker-issue-comment):
 
 **Triggers from:** []
 
