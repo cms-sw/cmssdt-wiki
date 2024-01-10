@@ -2368,33 +2368,6 @@ Not periodically build
 
 ---
 
-## [check-docker-container](https://cmssdt.cern.ch/jenkins/job/check-docker-container)
-
-**Description:** This job checks for changes in the parent image. If there are changes, it triggers the `build-docker-container` job so that our based image is updated and uploaded to the registry.
-
-**Project is `enabled`.**
-
-**Upstream projects:**
-* [build-docker-container](#build-docker-container):
-* [cms-auto-build-container](#cms-auto-build-container):
-* [test-build-docker-container](#test-build-docker-container):
-
-**Downstream projects:**
-* [build-docker-container](#build-docker-container):
-
-**Sub-projects:**
-* [build-docker-container](#build-docker-container):
-
-**Triggers from:** []
-
-
-**Periodic builds:**
-```bash
-Not periodically build
-```
-
----
-
 ## [clean-build-docker-container](https://cmssdt.cern.ch/jenkins/job/clean-build-docker-container)
 
 **Description:** This job prevents running out of disk in the machines used to build container images (e.g., the ones used for running the build-docker-container job).
