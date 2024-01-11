@@ -711,7 +711,7 @@ Not periodically build
 
 **Periodic builds:**
 ```bash
-H 10 * * 0
+H 15 * * 0
 ```
 
 ---
