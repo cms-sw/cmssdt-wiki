@@ -198,42 +198,6 @@ Not periodically build
 
 ---
 
-## [test-build-docker-container](https://cmssdt.cern.ch/jenkins/job/test-build-docker-container)
-
-**Description:** avalenzu: Test purposes
-
-
-
-**Project is `disabled`.**
-
-**Upstream projects:**
-
-**Downstream projects:**
-* [check-docker-container](#check-docker-container):
-* [cms-containers-run-cmssw-test](#cms-containers-run-cmssw-test):
-* [compare-docker-images](#compare-docker-images):
-* [docker-issue-comment](#docker-issue-comment):
-* [run-container-tests](#run-container-tests):
-* [test-containter-singularity](#test-containter-singularity):
-
-**Sub-projects:**
-* [cms-containers-run-cmssw-test](#cms-containers-run-cmssw-test):
-* [test-containter-singularity](#test-containter-singularity):
-* [run-container-tests](#run-container-tests):
-* [compare-docker-images](#compare-docker-images):
-* [docker-issue-comment](#docker-issue-comment):
-* [check-docker-container](#check-docker-container):
-
-**Triggers from:** []
-
-
-**Periodic builds:**
-```bash
-Not periodically build
-```
-
----
-
 ## [test-cmssw-images](https://cmssdt.cern.ch/jenkins/job/test-cmssw-images)
 
 **Description:** avalenzu: Jenkins job to test the new runtime and buildtime images. I will delete this job after the tests.

@@ -490,7 +490,6 @@ Not periodically build
 **Upstream projects:**
 * [build-docker-container](#build-docker-container):
 * [cms-auto-build-container](#cms-auto-build-container):
-* [test-build-docker-container](#test-build-docker-container):
 
 **Downstream projects:**
 * [build-docker-container](#build-docker-container):
@@ -987,7 +986,6 @@ H 2 * * *
 **Upstream projects:**
 * [build-docker-container](#build-docker-container):
 * [cms-containers-schedule-cmssw-test](#cms-containers-schedule-cmssw-test):
-* [test-build-docker-container](#test-build-docker-container):
 
 **Downstream projects:**
 
@@ -1441,7 +1439,6 @@ Not periodically build
 
 **Upstream projects:**
 * [build-docker-container](#build-docker-container):
-* [test-build-docker-container](#test-build-docker-container):
 
 **Downstream projects:**
 
@@ -2557,7 +2554,6 @@ H H * * *
 **Upstream projects:**
 * [build-docker-container](#build-docker-container):
 * [docker-watch-pkgs](#docker-watch-pkgs):
-* [test-build-docker-container](#test-build-docker-container):
 
 **Downstream projects:**
 
@@ -6814,7 +6810,6 @@ H 0,12 * * *
 
 **Upstream projects:**
 * [build-docker-container](#build-docker-container):
-* [test-build-docker-container](#test-build-docker-container):
 
 **Downstream projects:**
 
@@ -7050,42 +7045,6 @@ Not periodically build
 
 ---
 
-## [test-build-docker-container](https://cmssdt.cern.ch/jenkins/job/test-build-docker-container)
-
-**Description:** avalenzu: Test purposes
-
-
-
-**Project is `disabled`.**
-
-**Upstream projects:**
-
-**Downstream projects:**
-* [check-docker-container](#check-docker-container):
-* [cms-containers-run-cmssw-test](#cms-containers-run-cmssw-test):
-* [compare-docker-images](#compare-docker-images):
-* [docker-issue-comment](#docker-issue-comment):
-* [run-container-tests](#run-container-tests):
-* [test-containter-singularity](#test-containter-singularity):
-
-**Sub-projects:**
-* [cms-containers-run-cmssw-test](#cms-containers-run-cmssw-test):
-* [test-containter-singularity](#test-containter-singularity):
-* [run-container-tests](#run-container-tests):
-* [compare-docker-images](#compare-docker-images):
-* [docker-issue-comment](#docker-issue-comment):
-* [check-docker-container](#check-docker-container):
-
-**Triggers from:** []
-
-
-**Periodic builds:**
-```bash
-Not periodically build
-```
-
----
-
 ## [test-build-periodic](https://cmssdt.cern.ch/jenkins/job/test-build-periodic)
 
 **Description:** None
@@ -7160,7 +7119,6 @@ Not periodically build
 
 **Upstream projects:**
 * [build-docker-container](#build-docker-container):
-* [test-build-docker-container](#test-build-docker-container):
 
 **Downstream projects:**
 
