@@ -1615,28 +1615,6 @@ Not periodically build
 
 ---
 
-## [test-check-docker-container](https://cmssdt.cern.ch/jenkins/job/test-check-docker-container)
-
-**Description:** This job checks for changes in the parent image. If there are changes, it triggers the `build-docker-container` job so that our based image is updated and uploaded to the registry.
-
-**Project is `enabled`.**
-
-**Upstream projects:**
-
-**Downstream projects:**
-
-**Sub-projects:**
-
-**Triggers from:** []
-
-
-**Periodic builds:**
-```bash
-Not periodically build
-```
-
----
-
 ## [test-containter-singularity](https://cmssdt.cern.ch/jenkins/job/test-containter-singularity)
 
 **Description:** None
