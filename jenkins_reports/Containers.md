@@ -35,6 +35,7 @@ If the ./singularity folder is big enough ($ du -hs /build/cmsbld/jenkins/worksp
 
 **Upstream projects:**
 * [check-docker-container](#check-docker-container):
+* [test-check-docker-container](#test-check-docker-container):
 
 **Downstream projects:**
 * [check-docker-container](#check-docker-container):

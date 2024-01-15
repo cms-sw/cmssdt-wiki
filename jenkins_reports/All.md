@@ -257,6 +257,7 @@ If the ./singularity folder is big enough ($ du -hs /build/cmsbld/jenkins/worksp
 
 **Upstream projects:**
 * [check-docker-container](#check-docker-container):
+* [test-check-docker-container](#test-check-docker-container):
 
 **Downstream projects:**
 * [check-docker-container](#check-docker-container):
@@ -7078,6 +7079,30 @@ H/15 * * * *
 **Downstream projects:**
 
 **Sub-projects:**
+
+**Triggers from:** []
+
+
+**Periodic builds:**
+```bash
+Not periodically build
+```
+
+---
+
+## [test-check-docker-container](https://cmssdt.cern.ch/jenkins/job/test-check-docker-container)
+
+**Description:** This job checks for changes in the parent image. If there are changes, it triggers the `build-docker-container` job so that our based image is updated and uploaded to the registry.
+
+**Project is `enabled`.**
+
+**Upstream projects:**
+
+**Downstream projects:**
+* [build-docker-container](#build-docker-container):
+
+**Sub-projects:**
+* [build-docker-container](#build-docker-container):
 
 **Triggers from:** []
 
