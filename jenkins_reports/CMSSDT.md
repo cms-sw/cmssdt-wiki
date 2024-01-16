@@ -2421,7 +2421,6 @@ Not periodically build
 * [build-docker-container](#build-docker-container):
 
 **Sub-projects:**
-* [build-docker-container](#build-docker-container):
 
 **Triggers from:** []
 
