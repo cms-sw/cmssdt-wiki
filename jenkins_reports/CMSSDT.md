@@ -411,7 +411,6 @@ Not periodically build
 
 **Upstream projects:**
 * [build-docker-container](#build-docker-container):
-* [test-build-docker-container](#test-build-docker-container):
 
 **Downstream projects:**
 
@@ -675,7 +674,6 @@ Not periodically build
 **Upstream projects:**
 * [build-docker-container](#build-docker-container):
 * [docker-watch-pkgs](#docker-watch-pkgs):
-* [test-build-docker-container](#test-build-docker-container):
 
 **Downstream projects:**
 
@@ -1530,7 +1528,6 @@ H 0,12 * * *
 
 **Upstream projects:**
 * [build-docker-container](#build-docker-container):
-* [test-build-docker-container](#test-build-docker-container):
 
 **Downstream projects:**
 
@@ -1646,22 +1643,30 @@ If the ./singularity folder is big enough ($ du -hs /build/cmsbld/jenkins/worksp
 **Upstream projects:**
 
 **Downstream projects:**
-* [check-docker-container](#check-docker-container):
-* [cms-containers-checks-tags](#cms-containers-checks-tags):
-* [cms-containers-run-cmssw-test](#cms-containers-run-cmssw-test):
-* [compare-docker-images](#compare-docker-images):
-* [docker-issue-comment](#docker-issue-comment):
-* [run-container-tests](#run-container-tests):
-* [test-containter-singularity](#test-containter-singularity):
 
 **Sub-projects:**
-* [cms-containers-run-cmssw-test](#cms-containers-run-cmssw-test):
-* [test-containter-singularity](#test-containter-singularity):
-* [run-container-tests](#run-container-tests):
-* [compare-docker-images](#compare-docker-images):
-* [cms-containers-checks-tags](#cms-containers-checks-tags):
-* [check-docker-container](#check-docker-container):
-* [docker-issue-comment](#docker-issue-comment):
+
+**Triggers from:** []
+
+
+**Periodic builds:**
+```bash
+Not periodically build
+```
+
+---
+
+## [test-check-docker-container](https://cmssdt.cern.ch/jenkins/job/test-check-docker-container)
+
+**Description:** This job checks for changes in the parent image. If there are changes, it triggers the `build-docker-container` job so that our based image is updated and uploaded to the registry.
+
+**Project is `enabled`.**
+
+**Upstream projects:**
+
+**Downstream projects:**
+
+**Sub-projects:**
 
 **Triggers from:** []
 
@@ -1681,7 +1686,6 @@ Not periodically build
 
 **Upstream projects:**
 * [build-docker-container](#build-docker-container):
-* [test-build-docker-container](#test-build-docker-container):
 
 **Downstream projects:**
 
@@ -2410,7 +2414,6 @@ Not periodically build
 **Upstream projects:**
 * [build-docker-container](#build-docker-container):
 * [cms-auto-build-container](#cms-auto-build-container):
-* [test-build-docker-container](#test-build-docker-container):
 
 **Downstream projects:**
 * [build-docker-container](#build-docker-container):
@@ -2679,7 +2682,6 @@ Not periodically build
 **Upstream projects:**
 * [build-docker-container](#build-docker-container):
 * [github-push-hook](#github-push-hook):
-* [test-build-docker-container](#test-build-docker-container):
 
 **Downstream projects:**
 * [cms-tag-container](#cms-tag-container):
@@ -2706,7 +2708,6 @@ H 2 * * *
 **Upstream projects:**
 * [build-docker-container](#build-docker-container):
 * [cms-containers-schedule-cmssw-test](#cms-containers-schedule-cmssw-test):
-* [test-build-docker-container](#test-build-docker-container):
 
 **Downstream projects:**
 
