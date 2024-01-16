@@ -1641,6 +1641,7 @@ If the ./singularity folder is big enough ($ du -hs /build/cmsbld/jenkins/worksp
 **Project is `enabled`.**
 
 **Upstream projects:**
+* [test-check-docker-container](#test-check-docker-container):
 
 **Downstream projects:**
 
@@ -1665,6 +1666,7 @@ Not periodically build
 **Upstream projects:**
 
 **Downstream projects:**
+* [test-build-docker-container](#test-build-docker-container):
 
 **Sub-projects:**
 
