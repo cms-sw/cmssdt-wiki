@@ -37,11 +37,8 @@ If the ./singularity folder is big enough ($ du -hs /build/cmsbld/jenkins/worksp
 * [check-docker-container](#check-docker-container):
 
 **Downstream projects:**
-* [check-docker-container](#check-docker-container):
-* [cms-containers-checks-tags](#cms-containers-checks-tags):
 * [cms-containers-run-cmssw-test](#cms-containers-run-cmssw-test):
 * [compare-docker-images](#compare-docker-images):
-* [docker-issue-comment](#docker-issue-comment):
 * [run-container-tests](#run-container-tests):
 * [test-containter-singularity](#test-containter-singularity):
 
@@ -50,9 +47,9 @@ If the ./singularity folder is big enough ($ du -hs /build/cmsbld/jenkins/worksp
 * [test-containter-singularity](#test-containter-singularity):
 * [run-container-tests](#run-container-tests):
 * [compare-docker-images](#compare-docker-images):
-* [cms-containers-checks-tags](#cms-containers-checks-tags):
-* [check-docker-container](#check-docker-container):
-* [docker-issue-comment](#docker-issue-comment):
+* [2cms-containers-checks-tags](#2cms-containers-checks-tags):
+* [2check-docker-container](#2check-docker-container):
+* [2docker-issue-comment](#2docker-issue-comment):
 
 **Triggers from:** []
 
@@ -71,7 +68,6 @@ Not periodically build
 **Project is `enabled`.**
 
 **Upstream projects:**
-* [build-docker-container](#build-docker-container):
 * [cms-auto-build-container](#cms-auto-build-container):
 
 **Downstream projects:**
@@ -143,7 +139,6 @@ H 10 * * *
 **Project is `enabled`.**
 
 **Upstream projects:**
-* [build-docker-container](#build-docker-container):
 * [github-push-hook](#github-push-hook):
 
 **Downstream projects:**
