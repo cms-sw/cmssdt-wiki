@@ -253,7 +253,7 @@ If the ./singularity folder is big enough ($ du -hs /build/cmsbld/jenkins/worksp
 
 
 
-**Project is `disabled`.**
+**Project is `enabled`.**
 
 **Upstream projects:**
 * [check-docker-container](#check-docker-container):
