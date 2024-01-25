@@ -2148,6 +2148,62 @@ Not periodically build
 
 ---
 
+## [build-docker-container](https://cmssdt.cern.ch/jenkins/job/build-docker-container)
+
+**Description:** This job builds container images and uploads them to dockerhub.<br/>
+<br/>
+Containers are built when either their base image is updated or if changes were made to dockerfile.<br/>
+Failures may arise from the changes in the base image. In this case, the best approach is to log into the machine, reproduce the issue
+and try to adapt the dokerfile accordingly (e.g., changing dependencies, ordering, etc).<br/>
+<br/>
+If the job fails due to a glitch in the infrastructure, retry should work. If the container image is changed, we need to retrigger this job from check-docker-container job (so that the correct checksum is passed to build-docker-container job).
+<br/>
+<br/>
+<br/>
+Since the built container images are left on the machine, this job can also fail due to disk full.<br/>
+There is a separate jenkins job (clean-build-docker-machine) cleaning the images left on the device that runs once a week. In any case, one can always log into the machine and run the docker cleanup as follows:<br/>
+<br/>
+$ docker image prune<br/>
+$ docker system prune --volumes<br/>
+<br/>
+If the ./singularity folder is big enough ($ du -hs /build/cmsbld/jenkins/workspace/.singularity), it can be also removed.<br/>
+
+
+
+
+**Project is `enabled`.**
+
+**Upstream projects:**
+* [check-docker-container](#check-docker-container):
+
+**Downstream projects:**
+* [check-docker-container](#check-docker-container):
+* [cms-containers-checks-tags](#cms-containers-checks-tags):
+* [cms-containers-run-cmssw-test](#cms-containers-run-cmssw-test):
+* [compare-docker-images](#compare-docker-images):
+* [docker-issue-comment](#docker-issue-comment):
+* [run-container-tests](#run-container-tests):
+* [test-containter-singularity](#test-containter-singularity):
+
+**Sub-projects:**
+* [cms-containers-run-cmssw-test](#cms-containers-run-cmssw-test):
+* [test-containter-singularity](#test-containter-singularity):
+* [run-container-tests](#run-container-tests):
+* [compare-docker-images](#compare-docker-images):
+* [cms-containers-checks-tags](#cms-containers-checks-tags):
+* [check-docker-container](#check-docker-container):
+* [docker-issue-comment](#docker-issue-comment):
+
+**Triggers from:** []
+
+
+**Periodic builds:**
+```bash
+Not periodically build
+```
+
+---
+
 ## [build-fwlite](https://cmssdt.cern.ch/jenkins/job/build-fwlite)
 
 **Description:** This job builds a CMSSW_X_Y_Z_FWLITE release based on an existing CMSSW_X_Y_Z release. CMSSW_X_Y_Z should be already build/uploaded before building its FWLITE version.
