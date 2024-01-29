@@ -53,7 +53,6 @@ If the ./singularity folder is big enough ($ du -hs /build/cmsbld/jenkins/worksp
 * [cms-containers-checks-tags](#cms-containers-checks-tags):
 * [check-docker-container](#check-docker-container):
 * [docker-issue-comment](#docker-issue-comment):
-* [](#):
 
 **Triggers from:** []
 
