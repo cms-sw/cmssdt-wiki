@@ -1615,6 +1615,28 @@ Not periodically build
 
 ---
 
+## [test-cmsdocker06-py](https://cmssdt.cern.ch/jenkins/job/test-cmsdocker06-py)
+
+**Description:** None
+
+**Project is `enabled`.**
+
+**Upstream projects:**
+
+**Downstream projects:**
+
+**Sub-projects:**
+
+**Triggers from:** []
+
+
+**Periodic builds:**
+```bash
+Not periodically build
+```
+
+---
+
 ## [test-containter-singularity](https://cmssdt.cern.ch/jenkins/job/test-containter-singularity)
 
 **Description:** None

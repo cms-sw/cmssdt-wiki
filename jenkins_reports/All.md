@@ -7130,6 +7130,28 @@ Not periodically build
 
 ---
 
+## [test-cmsdocker06-py](https://cmssdt.cern.ch/jenkins/job/test-cmsdocker06-py)
+
+**Description:** None
+
+**Project is `enabled`.**
+
+**Upstream projects:**
+
+**Downstream projects:**
+
+**Sub-projects:**
+
+**Triggers from:** []
+
+
+**Periodic builds:**
+```bash
+Not periodically build
+```
+
+---
+
 ## [test-cmssw-images](https://cmssdt.cern.ch/jenkins/job/test-cmssw-images)
 
 **Description:** avalenzu: Jenkins job to test the new runtime and buildtime images. I will delete this job after the tests.
