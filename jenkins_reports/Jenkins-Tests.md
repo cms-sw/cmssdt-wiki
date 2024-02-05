@@ -689,7 +689,7 @@ Not periodically build
 
 **Description:** avalenzu: debug
 
-**Project is `enabled`.**
+**Project is `disabled`.**
 
 **Upstream projects:**
 * [jenkins-test-parser](#jenkins-test-parser):
