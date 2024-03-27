@@ -6213,7 +6213,7 @@ The blacklist is cleaned up for lxplus nodes if the tests run again successfully
 
 **Periodic builds:**
 ```bash
-H/30 * * * *
+Not periodically build
 ```
 
 ---
