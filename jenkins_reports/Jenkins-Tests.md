@@ -171,7 +171,7 @@ Not periodically build
 
 ---
 
-## [jenkins-env](https://cmssdt.cern.ch/jenkins/job/jenkins-env)
+## [${HOST}](https://cmssdt.cern.ch/jenkins/job/${HOST})
 
 **Description:** None
 
