@@ -4943,7 +4943,7 @@ Not periodically build
 
 ---
 
-## [${HOST}](https://cmssdt.cern.ch/jenkins/job/${HOST})
+## [jenkins-env](https://cmssdt.cern.ch/jenkins/job/jenkins-env)
 
 **Description:** None
 
