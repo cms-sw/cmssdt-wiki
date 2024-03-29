@@ -1768,7 +1768,7 @@ Not periodically build
 
 **Periodic builds:**
 ```bash
-23 * * * *
+32 * * * *
 ```
 
 ---
