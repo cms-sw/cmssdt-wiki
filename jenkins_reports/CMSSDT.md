@@ -380,6 +380,28 @@ Not periodically build
 
 ---
 
+## [cmsrep-eos-backup](https://cmssdt.cern.ch/jenkins/job/cmsrep-eos-backup)
+
+**Description:** None
+
+**Project is `enabled`.**
+
+**Upstream projects:**
+
+**Downstream projects:**
+
+**Sub-projects:**
+
+**Triggers from:** []
+
+
+**Periodic builds:**
+```bash
+Not periodically build
+```
+
+---
+
 ## [cmssw-afs-eos-comparison](https://cmssdt.cern.ch/jenkins/job/cmssw-afs-eos-comparison)
 
 **Description:** None
