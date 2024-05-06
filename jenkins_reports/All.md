@@ -1283,7 +1283,7 @@ Not periodically build
 
 ## [cmsrep-eos-backup](https://cmssdt.cern.ch/jenkins/job/cmsrep-eos-backup)
 
-**Description:** None
+**Description:** Copy unused Os/archs RPMs to EOS
 
 **Project is `enabled`.**
 
