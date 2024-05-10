@@ -7765,17 +7765,15 @@ Not periodically build
 
 ## [vtune-check](https://cmssdt.cern.ch/jenkins/job/vtune-check)
 
-**Description:** This job checks if https://cmssdt.cern.ch/vtune/ is acessable and if not, starts <a href="https://cmssdt.cern.ch/jenkins/view/All/job/vtune-restart/">vtune-restart<a/> job to restart the service.
+**Description:** Checks if vtune-server is running and restarts it if needed.
 
 **Project is `enabled`.**
 
 **Upstream projects:**
 
 **Downstream projects:**
-* [vtune-restart](#vtune-restart):
 
 **Sub-projects:**
-* [vtune-restart](#vtune-restart):
 
 **Triggers from:** []
 
@@ -7805,29 +7803,6 @@ H/20 * * * *
 **Periodic builds:**
 ```bash
 H 7 * * *
-```
-
----
-
-## [vtune-restart](https://cmssdt.cern.ch/jenkins/job/vtune-restart)
-
-**Description:** This job stops and deletes old docker contaner of LXR service and starts new one.
-
-**Project is `enabled`.**
-
-**Upstream projects:**
-* [vtune-check](#vtune-check):
-
-**Downstream projects:**
-
-**Sub-projects:**
-
-**Triggers from:** []
-
-
-**Periodic builds:**
-```bash
-Not periodically build
 ```
 
 ---
