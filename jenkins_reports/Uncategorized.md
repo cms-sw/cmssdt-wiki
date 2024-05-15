@@ -8,6 +8,29 @@
 
 # Projects:
 
+## [compare-docker-images](https://cmssdt.cern.ch/jenkins/job/compare-docker-images)
+
+**Description:** avalenzu: testing docker image comparison
+
+**Project is `disabled`.**
+
+**Upstream projects:**
+* [build-docker-container](#build-docker-container):
+
+**Downstream projects:**
+
+**Sub-projects:**
+
+**Triggers from:** []
+
+
+**Periodic builds:**
+```bash
+Not periodically build
+```
+
+---
+
 ## [cvmfs-ci-gc](https://cmssdt.cern.ch/jenkins/job/cvmfs-ci-gc)
 
 **Description:** This runs CVMFS GC (once a week)
