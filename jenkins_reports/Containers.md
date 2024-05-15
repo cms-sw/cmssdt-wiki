@@ -50,10 +50,10 @@ If the ./singularity folder is big enough ($ du -hs /build/cmsbld/jenkins/worksp
 * [cms-containers-run-cmssw-test](#cms-containers-run-cmssw-test):
 * [test-containter-singularity](#test-containter-singularity):
 * [run-container-tests](#run-container-tests):
-* [docker-packages-info](#docker-packages-info):
 * [cms-containers-checks-tags](#cms-containers-checks-tags):
 * [check-docker-container](#check-docker-container):
 * [docker-issue-comment](#docker-issue-comment):
+* [docker-packages-info](#docker-packages-info):
 
 **Triggers from:** []
 
