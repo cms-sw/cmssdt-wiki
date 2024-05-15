@@ -2595,7 +2595,7 @@ Not periodically build
 
 **Description:** avalenzu: testing docker image comparison
 
-**Project is `disabled`.**
+**Project is `enabled`.**
 
 **Upstream projects:**
 

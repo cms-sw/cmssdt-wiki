@@ -688,6 +688,28 @@ Not periodically build
 
 ---
 
+## [docker-packages-info](https://cmssdt.cern.ch/jenkins/job/docker-packages-info)
+
+**Description:** avalenzu: testing docker image comparison
+
+**Project is `enabled`.**
+
+**Upstream projects:**
+
+**Downstream projects:**
+
+**Sub-projects:**
+
+**Triggers from:** []
+
+
+**Periodic builds:**
+```bash
+Not periodically build
+```
+
+---
+
 ## [docker-watch-pkgs](https://cmssdt.cern.ch/jenkins/job/docker-watch-pkgs)
 
 **Description:** avalenzu: testing watching concrete pkgs
