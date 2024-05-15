@@ -15,7 +15,6 @@
 **Project is `disabled`.**
 
 **Upstream projects:**
-* [build-docker-container](#build-docker-container):
 
 **Downstream projects:**
 
