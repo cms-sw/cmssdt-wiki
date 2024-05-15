@@ -268,6 +268,7 @@ If the ./singularity folder is big enough ($ du -hs /build/cmsbld/jenkins/worksp
 * [test-containter-singularity](#test-containter-singularity):
 
 **Sub-projects:**
+* [](#):
 * [cms-containers-run-cmssw-test](#cms-containers-run-cmssw-test):
 * [test-containter-singularity](#test-containter-singularity):
 * [run-container-tests](#run-container-tests):
@@ -2575,6 +2576,28 @@ H H * * *
 **Upstream projects:**
 * [build-docker-container](#build-docker-container):
 * [docker-watch-pkgs](#docker-watch-pkgs):
+
+**Downstream projects:**
+
+**Sub-projects:**
+
+**Triggers from:** []
+
+
+**Periodic builds:**
+```bash
+Not periodically build
+```
+
+---
+
+## [docker-packages-info](https://cmssdt.cern.ch/jenkins/job/docker-packages-info)
+
+**Description:** avalenzu: testing docker image comparison
+
+**Project is `disabled`.**
+
+**Upstream projects:**
 
 **Downstream projects:**
 
