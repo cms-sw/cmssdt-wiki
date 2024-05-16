@@ -1040,6 +1040,28 @@ Not periodically build
 
 ---
 
+## [ib-run-hlt-timing](https://cmssdt.cern.ch/jenkins/job/ib-run-hlt-timing)
+
+**Description:** None
+
+**Project is `enabled`.**
+
+**Upstream projects:**
+
+**Downstream projects:**
+
+**Sub-projects:**
+
+**Triggers from:** []
+
+
+**Periodic builds:**
+```bash
+Not periodically build
+```
+
+---
+
 ## [ib-run-pr-addon](https://cmssdt.cern.ch/jenkins/job/ib-run-pr-addon)
 
 **Description:** Build mutiple pull requests. 
@@ -1555,28 +1577,6 @@ H 0,12 * * *
 
 **Sub-projects:**
 * [run-container-${CI_TEST}](#run-container-${CI_TEST}):
-
-**Triggers from:** []
-
-
-**Periodic builds:**
-```bash
-Not periodically build
-```
-
----
-
-## [run-hlt-timing-test](https://cmssdt.cern.ch/jenkins/job/run-hlt-timing-test)
-
-**Description:** None
-
-**Project is `enabled`.**
-
-**Upstream projects:**
-
-**Downstream projects:**
-
-**Sub-projects:**
 
 **Triggers from:** []
 

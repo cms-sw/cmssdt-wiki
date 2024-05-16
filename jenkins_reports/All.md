@@ -3920,6 +3920,28 @@ Not periodically build
 
 ---
 
+## [ib-run-hlt-timing](https://cmssdt.cern.ch/jenkins/job/ib-run-hlt-timing)
+
+**Description:** None
+
+**Project is `enabled`.**
+
+**Upstream projects:**
+
+**Downstream projects:**
+
+**Sub-projects:**
+
+**Triggers from:** []
+
+
+**Periodic builds:**
+```bash
+Not periodically build
+```
+
+---
+
 ## [ib-run-igprof](https://cmssdt.cern.ch/jenkins/job/ib-run-igprof)
 
 **Description:** Runs <a href="https://igprof.org/">IgProf</a> on IB.
@@ -6872,28 +6894,6 @@ Not periodically build
 ---
 
 ## [run-cvmfs-commands](https://cmssdt.cern.ch/jenkins/job/run-cvmfs-commands)
-
-**Description:** None
-
-**Project is `enabled`.**
-
-**Upstream projects:**
-
-**Downstream projects:**
-
-**Sub-projects:**
-
-**Triggers from:** []
-
-
-**Periodic builds:**
-```bash
-Not periodically build
-```
-
----
-
-## [run-hlt-timing-test](https://cmssdt.cern.ch/jenkins/job/run-hlt-timing-test)
 
 **Description:** None
 
