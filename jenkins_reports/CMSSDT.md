@@ -1049,8 +1049,10 @@ Not periodically build
 **Upstream projects:**
 
 **Downstream projects:**
+* [update-circle-dataset](#update-circle-dataset):
 
 **Sub-projects:**
+* [update-circle-dataset](#update-circle-dataset):
 
 **Triggers from:** []
 
@@ -1647,8 +1649,10 @@ Not periodically build
 * [ib-run-profiling-mem-GC](#ib-run-profiling-mem-GC):
 
 **Downstream projects:**
+* [update-circle-dataset](#update-circle-dataset):
 
 **Sub-projects:**
+* [update-circle-dataset](#update-circle-dataset):
 
 **Triggers from:** ['ib-run-igprof', 'ib-run-profiling', 'ib-run-profiling-mem', 'ib-run-profiling-mem-GC']
 
@@ -1911,6 +1915,8 @@ Not periodically build
 **Project is `enabled`.**
 
 **Upstream projects:**
+* [ib-run-hlt-timing](#ib-run-hlt-timing):
+* [sync-profile-data](#sync-profile-data):
 
 **Downstream projects:**
 
