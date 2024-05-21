@@ -256,30 +256,6 @@ Not periodically build
 
 ---
 
-## [cvmfs-unpack-container](https://cmssdt.cern.ch/jenkins/job/cvmfs-unpack-container)
-
-**Description:** This jobs install an IB on /cvmfs/cms-ib.cern.ch.
-
-**Project is `enabled`.**
-
-**Upstream projects:**
-
-**Downstream projects:**
-* [cvmfs_publish_remote_dir](#cvmfs_publish_remote_dir):
-
-**Sub-projects:**
-* [cvmfs_publish_remote_dir](#cvmfs_publish_remote_dir):
-
-**Triggers from:** []
-
-
-**Periodic builds:**
-```bash
-Not periodically build
-```
-
----
-
 ## [dockerhub_synchronization](https://cmssdt.cern.ch/jenkins/job/dockerhub_synchronization)
 
 **Description:** Synchronizes Docker Hub Organization's setup (repositories/teams/members/permissions) with docker configuration yaml file.
