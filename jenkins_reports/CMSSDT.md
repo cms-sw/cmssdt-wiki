@@ -4524,6 +4524,7 @@ Not periodically build
 **Project is `enabled`.**
 
 **Upstream projects:**
+* [lumi-webhook](#lumi-webhook):
 
 **Downstream projects:**
 
@@ -4572,6 +4573,7 @@ Not periodically build
 **Upstream projects:**
 
 **Downstream projects:**
+* [lumi-create-node](#lumi-create-node):
 
 **Sub-projects:**
 
