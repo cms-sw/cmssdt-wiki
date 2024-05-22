@@ -3225,6 +3225,7 @@ Not periodically build
 
 **Upstream projects:**
 * [grid-webhook](#grid-webhook):
+* [lumi-webhook](#lumi-webhook):
 
 **Downstream projects:**
 
@@ -3277,6 +3278,7 @@ TODO: needs to check if manuall deletion is working.
 **Upstream projects:**
 * [grid-shutdown-node](#grid-shutdown-node):
 * [grid-webhook](#grid-webhook):
+* [lumi-webhook](#lumi-webhook):
 
 **Downstream projects:**
 * [grid-shutdown-node](#grid-shutdown-node):
@@ -4151,6 +4153,30 @@ test cmssw externals packages static checks e.g. hardcoded build paths etc.
 **Downstream projects:**
 
 **Sub-projects:**
+
+**Triggers from:** []
+
+
+**Periodic builds:**
+```bash
+Not periodically build
+```
+
+---
+
+## [ib-run-pr-hlt-p2-timing](https://cmssdt.cern.ch/jenkins/job/ib-run-pr-hlt-p2-timing)
+
+**Description:** None
+
+**Project is `enabled`.**
+
+**Upstream projects:**
+
+**Downstream projects:**
+* [update-circle-dataset](#update-circle-dataset):
+
+**Sub-projects:**
+* [update-circle-dataset](#update-circle-dataset):
 
 **Triggers from:** []
 
@@ -6066,6 +6092,57 @@ Not periodically build
 
 ---
 
+## [lumi-webhook](https://cmssdt.cern.ch/jenkins/job/lumi-webhook)
+
+**Description:** This job is triggered by HTCondor pilot jobs. When we submit a request to get a HTCondor node then first pilot runs and triggers this job at various stages with different "STATUS"<br/>
+
+- STATUS=online<br/>
+  - When pilot script first runs on the HTCondor node then it sends an "online" event along with CONDOR_JOB_ID. In this case, this job tried to add the new HTCondor node as jenkins agent. 
+In case a job with "online" status fails:<br/>
+1. First check if the new HTCondor node has been successfully added as a Jenkins agent (https://cmssdt.cern.ch/jenkins/computer/). It can happen that the agent is created, 
+but the connection failed. In this case, just re-starting
+the agent should work.<br/>
+2. If the node has not been successfully added, then please first run https://cmssdt.cern.ch/jenkins/job/grid-check-jobs/ job and see if HTCondor job with 
+CONDOR_JOB_ID is still running. For example look for messages like:<br/>
+OWNER        BATCH_NAME       SUBMITTED     DONE   RUN    IDLE   HOLD  TOTAL JOB_IDS<br/>
+cmsbuild ID: CONDOR_JOB_ID    DATE TIME      _      1      _      _      1 CONDOR_JOB_ID"<br/>
+If it is still in "RUN" state, then just re-try this job. If it is in "IDLE" state then do not do anything and if it is in "DONE" state then better 
+to run https://cmssdt.cern.ch/jenkins/view/Grid/job/grid-shutdown-node/ to kill it.<br/><br/>
+
+- STATUS=offline<br/>
+  - This event is sent when HTCondor pilot has run 90% of its max allocated time. When this event is received then this jobs marks the grid${CONDOR_JOB_ID} jenkins agent as offline
+so that no new job can be run on this agent. When grid${CONDOR_JOB_ID} is offline, and it is not running any job then this agent is automatically 
+deleted by https://cmssdt.cern.ch/jenkins/view/Grid/job/grid-check-nodes/. Depending on the agent "LABELS" (e.g. auto-recreate) , this job can request a new HTCondor node to replace it.<br/><br/>
+
+- STATUS=shutdown<br/>
+  - This event is sent when a pilot has reached its max life and going to shutdown. In this case this job tried to delete the agent from the jenkins.
+
+
+
+
+
+**Project is `enabled`.**
+
+**Upstream projects:**
+
+**Downstream projects:**
+* [grid-create-node](#grid-create-node):
+* [grid-shutdown-node](#grid-shutdown-node):
+
+**Sub-projects:**
+* [grid-shutdown-node](#grid-shutdown-node):
+* [grid-create-node](#grid-create-node):
+
+**Triggers from:** []
+
+
+**Periodic builds:**
+```bash
+Not periodically build
+```
+
+---
+
 ## [lxr-check](https://cmssdt.cern.ch/jenkins/job/lxr-check)
 
 **Description:** This job checks if https://cmssdt.cern.ch/lxr/ is acessable and if not, starts <a href="https://cmssdt.cern.ch/jenkins/view/All/job/lxr-run-container/">lxr-run-container<a/> job to restart the service.
@@ -7500,6 +7577,7 @@ H 0 * * *
 
 **Upstream projects:**
 * [ib-run-hlt-p2-timing](#ib-run-hlt-p2-timing):
+* [ib-run-pr-hlt-p2-timing](#ib-run-pr-hlt-p2-timing):
 * [sync-profile-data](#sync-profile-data):
 
 **Downstream projects:**
