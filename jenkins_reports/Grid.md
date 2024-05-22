@@ -152,6 +152,28 @@ Not periodically build
 
 ---
 
+## [lumi-create-node](https://cmssdt.cern.ch/jenkins/job/lumi-create-node)
+
+**Description:** Connect to a lumi slot
+
+**Project is `enabled`.**
+
+**Upstream projects:**
+
+**Downstream projects:**
+
+**Sub-projects:**
+
+**Triggers from:** []
+
+
+**Periodic builds:**
+```bash
+Not periodically build
+```
+
+---
+
 ## [lumi-webhook](https://cmssdt.cern.ch/jenkins/job/lumi-webhook)
 
 **Description:** Asking for an allocation to lumi
