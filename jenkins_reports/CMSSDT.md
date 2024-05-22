@@ -4541,7 +4541,7 @@ Not periodically build
 
 ## [lumi-shutdown-node](https://cmssdt.cern.ch/jenkins/job/lumi-shutdown-node)
 
-**Description:** Connect to a lumi slot
+**Description:** Cancel lumi slot
 
 **Project is `enabled`.**
 
