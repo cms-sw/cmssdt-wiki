@@ -4539,6 +4539,28 @@ Not periodically build
 
 ---
 
+## [lumi-shutdown-node](https://cmssdt.cern.ch/jenkins/job/lumi-shutdown-node)
+
+**Description:** Connect to a lumi slot
+
+**Project is `enabled`.**
+
+**Upstream projects:**
+
+**Downstream projects:**
+
+**Sub-projects:**
+
+**Triggers from:** []
+
+
+**Periodic builds:**
+```bash
+Not periodically build
+```
+
+---
+
 ## [lumi-webhook](https://cmssdt.cern.ch/jenkins/job/lumi-webhook)
 
 **Description:** Asking for an allocation to lumi
