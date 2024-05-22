@@ -1039,7 +1039,7 @@ Not periodically build
 
 ---
 
-## [ib-run-hlt-timing](https://cmssdt.cern.ch/jenkins/job/ib-run-hlt-timing)
+## [ib-run-hlt-p2-timing](https://cmssdt.cern.ch/jenkins/job/ib-run-hlt-p2-timing)
 
 **Description:** None
 
@@ -1914,7 +1914,7 @@ Not periodically build
 **Project is `enabled`.**
 
 **Upstream projects:**
-* [ib-run-hlt-timing](#ib-run-hlt-timing):
+* [ib-run-hlt-p2-timing](#ib-run-hlt-p2-timing):
 * [sync-profile-data](#sync-profile-data):
 
 **Downstream projects:**
