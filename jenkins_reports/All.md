@@ -4852,6 +4852,7 @@ H/5 * * * *
 
 **Upstream projects:**
 * [grid-shutdown-node](#grid-shutdown-node):
+* [lumi-shutdown-node](#lumi-shutdown-node):
 * [openstack-delete-vms](#openstack-delete-vms):
 
 **Downstream projects:**
@@ -6121,6 +6122,7 @@ Not periodically build
 **Upstream projects:**
 
 **Downstream projects:**
+* [jenkins-delete-node](#jenkins-delete-node):
 
 **Sub-projects:**
 

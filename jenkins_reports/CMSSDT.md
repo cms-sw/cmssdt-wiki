@@ -4548,6 +4548,7 @@ Not periodically build
 **Upstream projects:**
 
 **Downstream projects:**
+* [jenkins-delete-node](#jenkins-delete-node):
 
 **Sub-projects:**
 
