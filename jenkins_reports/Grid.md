@@ -156,7 +156,7 @@ Not periodically build
 
 **Description:** Connect to a lumi slot
 
-**Project is `enabled`.**
+**Project is `disabled`.**
 
 **Upstream projects:**
 * [lumi-webhook](#lumi-webhook):
@@ -179,7 +179,7 @@ Not periodically build
 
 **Description:** Cancel lumi slot
 
-**Project is `enabled`.**
+**Project is `disabled`.**
 
 **Upstream projects:**
 
