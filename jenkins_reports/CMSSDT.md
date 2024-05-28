@@ -4516,10 +4516,9 @@ Not periodically build
 
 ---
 
-## [lumi-webhook](https://cmssdt.cern.ch/jenkins/job/lumi-webhook)
+## [lumi-image-update](https://cmssdt.cern.ch/jenkins/job/lumi-image-update)
 
-**Description:** Asking for an allocation to lumi
-
+**Description:** Update sif image for LUMI HPC
 
 **Project is `enabled`.**
 

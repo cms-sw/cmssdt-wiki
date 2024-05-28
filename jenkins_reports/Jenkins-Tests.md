@@ -901,7 +901,6 @@ H/5 * * * *
 
 **Upstream projects:**
 * [grid-shutdown-node](#grid-shutdown-node):
-* [lumi-shutdown-node](#lumi-shutdown-node):
 * [openstack-delete-vms](#openstack-delete-vms):
 
 **Downstream projects:**

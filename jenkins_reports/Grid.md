@@ -152,55 +152,9 @@ Not periodically build
 
 ---
 
-## [lumi-create-node](https://cmssdt.cern.ch/jenkins/job/lumi-create-node)
+## [lumi-image-update](https://cmssdt.cern.ch/jenkins/job/lumi-image-update)
 
-**Description:** Connect to a lumi slot
-
-**Project is `disabled`.**
-
-**Upstream projects:**
-
-**Downstream projects:**
-
-**Sub-projects:**
-
-**Triggers from:** []
-
-
-**Periodic builds:**
-```bash
-Not periodically build
-```
-
----
-
-## [lumi-shutdown-node](https://cmssdt.cern.ch/jenkins/job/lumi-shutdown-node)
-
-**Description:** Cancel lumi slot
-
-**Project is `disabled`.**
-
-**Upstream projects:**
-
-**Downstream projects:**
-* [jenkins-delete-node](#jenkins-delete-node):
-
-**Sub-projects:**
-
-**Triggers from:** []
-
-
-**Periodic builds:**
-```bash
-Not periodically build
-```
-
----
-
-## [lumi-webhook](https://cmssdt.cern.ch/jenkins/job/lumi-webhook)
-
-**Description:** Asking for an allocation to lumi
-
+**Description:** Update sif image for LUMI HPC
 
 **Project is `enabled`.**
 
