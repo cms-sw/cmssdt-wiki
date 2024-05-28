@@ -4526,7 +4526,6 @@ Not periodically build
 **Upstream projects:**
 
 **Downstream projects:**
-* [lumi-create-node](#lumi-create-node):
 
 **Sub-projects:**
 
