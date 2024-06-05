@@ -7014,6 +7014,28 @@ Not periodically build
 
 ---
 
+## [s3-run-speed-test](https://cmssdt.cern.ch/jenkins/job/s3-run-speed-test)
+
+**Description:** None
+
+**Project is `enabled`.**
+
+**Upstream projects:**
+
+**Downstream projects:**
+
+**Sub-projects:**
+
+**Triggers from:** []
+
+
+**Periodic builds:**
+```bash
+Not periodically build
+```
+
+---
+
 ## [s3-speet-test](https://cmssdt.cern.ch/jenkins/job/s3-speet-test)
 
 **Description:** None
