@@ -242,25 +242,3 @@ Not periodically build
 
 ---
 
-## [vtune-check](https://cmssdt.cern.ch/jenkins/job/vtune-check)
-
-**Description:** None
-
-**Project is `disabled`.**
-
-**Upstream projects:**
-
-**Downstream projects:**
-
-**Sub-projects:**
-
-**Triggers from:** []
-
-
-**Periodic builds:**
-```bash
-H/20 * * * *
-```
-
----
-
