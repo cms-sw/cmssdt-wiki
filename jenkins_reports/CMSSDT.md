@@ -1645,15 +1645,17 @@ Not periodically build
 **Upstream projects:**
 
 **Downstream projects:**
+* [s3-speet-test](#s3-speet-test):
 
 **Sub-projects:**
+* [s3-speet-test](#s3-speet-test):
 
 **Triggers from:** []
 
 
 **Periodic builds:**
 ```bash
-Not periodically build
+H 22 * * *
 ```
 
 ---
@@ -1665,6 +1667,7 @@ Not periodically build
 **Project is `enabled`.**
 
 **Upstream projects:**
+* [s3-run-speed-test](#s3-run-speed-test):
 
 **Downstream projects:**
 
