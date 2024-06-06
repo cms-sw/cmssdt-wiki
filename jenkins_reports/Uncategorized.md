@@ -196,30 +196,6 @@ Not periodically build
 
 ---
 
-## [s3-run-speed-test](https://cmssdt.cern.ch/jenkins/job/s3-run-speed-test)
-
-**Description:** None
-
-**Project is `disabled`.**
-
-**Upstream projects:**
-
-**Downstream projects:**
-* [s3-speet-test](#s3-speet-test):
-
-**Sub-projects:**
-* [s3-speet-test](#s3-speet-test):
-
-**Triggers from:** []
-
-
-**Periodic builds:**
-```bash
-H 22 * * *
-```
-
----
-
 ## [sync-patatrack-branch](https://cmssdt.cern.ch/jenkins/job/sync-patatrack-branch)
 
 **Description:** - this is to sync patatrack branches <br/>
