@@ -5320,6 +5320,28 @@ Not periodically build
 
 ---
 
+## [jenkins-s3-test](https://cmssdt.cern.ch/jenkins/job/jenkins-s3-test)
+
+**Description:** None
+
+**Project is `enabled`.**
+
+**Upstream projects:**
+
+**Downstream projects:**
+
+**Sub-projects:**
+
+**Triggers from:** []
+
+
+**Periodic builds:**
+```bash
+Not periodically build
+```
+
+---
+
 ## [jenkins-search-release-build](https://cmssdt.cern.ch/jenkins/job/jenkins-search-release-build)
 
 **Description:** None
