@@ -1954,6 +1954,28 @@ Not periodically build
 
 ---
 
+## [tmp-node-get-config](https://cmssdt.cern.ch/jenkins/job/tmp-node-get-config)
+
+**Description:** None
+
+**Project is `enabled`.**
+
+**Upstream projects:**
+
+**Downstream projects:**
+
+**Sub-projects:**
+
+**Triggers from:** []
+
+
+**Periodic builds:**
+```bash
+Not periodically build
+```
+
+---
+
 ## [update-circle-dataset](https://cmssdt.cern.ch/jenkins/job/update-circle-dataset)
 
 **Description:** None
