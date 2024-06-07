@@ -270,10 +270,13 @@ H/5 * * * *
 **Project is `enabled`.**
 
 **Upstream projects:**
+* [jenkins-s3-test](#jenkins-s3-test):
 
 **Downstream projects:**
+* [jenkins-s3-test](#jenkins-s3-test):
 
 **Sub-projects:**
+* [jenkins-s3-test](#jenkins-s3-test):
 
 **Triggers from:** []
 
