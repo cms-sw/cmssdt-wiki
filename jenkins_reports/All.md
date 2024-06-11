@@ -4865,6 +4865,28 @@ H/5 * * * *
 
 ---
 
+## [jenkins-build-externals-for-testing](https://cmssdt.cern.ch/jenkins/job/jenkins-build-externals-for-testing)
+
+**Description:** None
+
+**Project is `enabled`.**
+
+**Upstream projects:**
+
+**Downstream projects:**
+
+**Sub-projects:**
+
+**Triggers from:** []
+
+
+**Periodic builds:**
+```bash
+Not periodically build
+```
+
+---
+
 ## [jenkins-delete-node](https://cmssdt.cern.ch/jenkins/job/jenkins-delete-node)
 
 **Description:** Deletes nodes from jenkins and then deletes it on openstack.
