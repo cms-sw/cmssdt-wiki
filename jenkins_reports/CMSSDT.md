@@ -5315,6 +5315,36 @@ Not periodically build
 
 ---
 
+## [update-github-pages](https://cmssdt.cern.ch/jenkins/job/update-github-pages)
+
+**Description:** This job update contents of the "data" directory in cms-sw.github.io. 
+It downloads our github pages, parses the log files, updates the documentation accordingly, and uploads the pages again.
+In this case, the job is automatically triggered after some minutes. 
+If it fails, one just needs to check that the next build was successful so that pages are updated correctly.
+
+**Project is `enabled`.**
+
+**Upstream projects:**
+* [cleanup-cms-sw-io-history](#cleanup-cms-sw-io-history):
+* [ib-build-logs](#ib-build-logs):
+* [process-relval-logs](#process-relval-logs):
+
+**Downstream projects:**
+* [refresh-cmssdt](#refresh-cmssdt):
+* [summary-of-merged-prs](#summary-of-merged-prs):
+
+**Sub-projects:**
+
+**Triggers from:** ['cleanup-cms-sw-io-history', 'ib-build-logs']
+
+
+**Periodic builds:**
+```bash
+Not periodically build
+```
+
+---
+
 ## [update-ibeos-cache](https://cmssdt.cern.ch/jenkins/job/update-ibeos-cache)
 
 **Description:** Job to run das client and cache the results in github to be used by IBs.
