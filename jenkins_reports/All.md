@@ -5878,6 +5878,28 @@ Not periodically build
 
 ---
 
+## [jenkins-test-lumi-xrootd](https://cmssdt.cern.ch/jenkins/job/jenkins-test-lumi-xrootd)
+
+**Description:** None
+
+**Project is `enabled`.**
+
+**Upstream projects:**
+
+**Downstream projects:**
+
+**Sub-projects:**
+
+**Triggers from:** []
+
+
+**Periodic builds:**
+```bash
+Not periodically build
+```
+
+---
+
 ## [jenkins-test-lxplus-future](https://cmssdt.cern.ch/jenkins/job/jenkins-test-lxplus-future)
 
 **Description:** None
