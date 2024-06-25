@@ -2189,6 +2189,28 @@ Not periodically build
 
 ---
 
+## [cvmfs-deploy-py23](https://cmssdt.cern.ch/jenkins/job/cvmfs-deploy-py23)
+
+**Description:** None
+
+**Project is `enabled`.**
+
+**Upstream projects:**
+
+**Downstream projects:**
+
+**Sub-projects:**
+
+**Triggers from:** []
+
+
+**Periodic builds:**
+```bash
+Not periodically build
+```
+
+---
+
 ## [cvmfs-gc](https://cmssdt.cern.ch/jenkins/job/cvmfs-gc)
 
 **Description:** This runs CVMFS GC (once a week)
