@@ -1240,8 +1240,10 @@ Same puprose as `ib-any-integration`, just different script is called.
 **Upstream projects:**
 
 **Downstream projects:**
+* [update-circle-dataset](#update-circle-dataset):
 
 **Sub-projects:**
+* [update-circle-dataset](#update-circle-dataset):
 
 **Triggers from:** []
 
@@ -2051,6 +2053,7 @@ Not periodically build
 **Upstream projects:**
 * [ib-run-hlt-p2-timing](#ib-run-hlt-p2-timing):
 * [ib-run-pr-hlt_p2_timing](#ib-run-pr-hlt_p2_timing):
+* [ib-run-pr-profiling](#ib-run-pr-profiling):
 * [sync-profile-data](#sync-profile-data):
 
 **Downstream projects:**
