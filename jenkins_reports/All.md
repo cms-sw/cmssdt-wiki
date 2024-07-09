@@ -7053,6 +7053,7 @@ Not periodically build
 **Project is `enabled`.**
 
 **Upstream projects:**
+* [release-run-reco-profiling](#release-run-reco-profiling):
 
 **Downstream projects:**
 
@@ -7077,8 +7078,10 @@ Not periodically build
 **Upstream projects:**
 
 **Downstream projects:**
+* [release-rsync-reco-profiling](#release-rsync-reco-profiling):
 
 **Sub-projects:**
+* [release-rsync-reco-profiling](#release-rsync-reco-profiling):
 
 **Triggers from:** []
 
