@@ -260,6 +260,28 @@ Not periodically build
 
 ---
 
+## [jenkins-process](https://cmssdt.cern.ch/jenkins/job/jenkins-process)
+
+**Description:** None
+
+**Project is `enabled`.**
+
+**Upstream projects:**
+
+**Downstream projects:**
+
+**Sub-projects:**
+
+**Triggers from:** []
+
+
+**Periodic builds:**
+```bash
+Not periodically build
+```
+
+---
+
 ## [jenkins-projects-wiki-update](https://cmssdt.cern.ch/jenkins/job/jenkins-projects-wiki-update)
 
 **Description:** This job runs a groovy script to dump jenkinsprojects info , which is further read by python to 
