@@ -4666,7 +4666,7 @@ Not periodically build
 This was created to avoid the issue with <a href="https://wiki.jenkins.io/display/JENKINS/Dynamic+Parameter+Plug-in">Jenkins Dynamic Parameters</a>.
 
 
-**Project is `disabled`.**
+**Project is `enabled`.**
 
 **Upstream projects:**
 
@@ -4684,7 +4684,7 @@ This was created to avoid the issue with <a href="https://wiki.jenkins.io/displa
 #Special IB at 0h on Sunday
 5  0   * *  0
 #We skip Sunday 11h IB to leave resources for special Sunday's 0h IB
-5 11  * * 1,2,3,4,5,6
+40 11  * * 1,2,3,4,5,6
 #We do not run SAT 23H IB instead we start a special SUN 00h00 IB.
 5 23  * *  0,1,2,3,4,5
 ```
