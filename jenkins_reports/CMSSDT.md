@@ -1075,7 +1075,7 @@ Not periodically build
 
 ---
 
-## [ib-run-class_version](https://cmssdt.cern.ch/jenkins/job/ib-run-class_version)
+## [ib-run-class-version](https://cmssdt.cern.ch/jenkins/job/ib-run-class-version)
 
 **Description:** Runs edm class version checks for IB
 
@@ -1214,30 +1214,6 @@ test cmssw externals packages static checks e.g. hardcoded build paths etc.
 **Downstream projects:**
 
 **Sub-projects:**
-
-**Triggers from:** []
-
-
-**Periodic builds:**
-```bash
-Not periodically build
-```
-
----
-
-## [ib-run-pr-hlt_p2_timing](https://cmssdt.cern.ch/jenkins/job/ib-run-pr-hlt_p2_timing)
-
-**Description:** None
-
-**Project is `enabled`.**
-
-**Upstream projects:**
-
-**Downstream projects:**
-* [update-circle-dataset](#update-circle-dataset):
-
-**Sub-projects:**
-* [update-circle-dataset](#update-circle-dataset):
 
 **Triggers from:** []
 
@@ -2099,7 +2075,6 @@ Not periodically build
 
 **Upstream projects:**
 * [ib-run-hlt-p2-timing](#ib-run-hlt-p2-timing):
-* [ib-run-pr-hlt_p2_timing](#ib-run-pr-hlt_p2_timing):
 * [ib-run-pr-profiling](#ib-run-pr-profiling):
 * [sync-profile-data](#sync-profile-data):
 
