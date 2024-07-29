@@ -3861,6 +3861,28 @@ Not periodically build
 
 ---
 
+## [ib-run-classversion](https://cmssdt.cern.ch/jenkins/job/ib-run-classversion)
+
+**Description:** Runs iwyu logs parsing for each IB
+
+**Project is `enabled`.**
+
+**Upstream projects:**
+
+**Downstream projects:**
+
+**Sub-projects:**
+
+**Triggers from:** []
+
+
+**Periodic builds:**
+```bash
+Not periodically build
+```
+
+---
+
 ## [ib-run-crab](https://cmssdt.cern.ch/jenkins/job/ib-run-crab)
 
 **Description:** This job integrates CRAB into the CI system.
