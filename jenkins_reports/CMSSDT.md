@@ -1075,7 +1075,7 @@ Not periodically build
 
 ---
 
-## [ib-run-class-version](https://cmssdt.cern.ch/jenkins/job/ib-run-class-version)
+## [ib-run-class-versions](https://cmssdt.cern.ch/jenkins/job/ib-run-class-versions)
 
 **Description:** Runs edm class version checks for IB
 
