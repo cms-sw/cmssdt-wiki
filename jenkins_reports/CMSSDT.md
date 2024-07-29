@@ -1077,7 +1077,7 @@ Not periodically build
 
 ## [ib-run-classversion](https://cmssdt.cern.ch/jenkins/job/ib-run-classversion)
 
-**Description:** Runs iwyu logs parsing for each IB
+**Description:** Runs edm class version checks for IB
 
 **Project is `enabled`.**
 
