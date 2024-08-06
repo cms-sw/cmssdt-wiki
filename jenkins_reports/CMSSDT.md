@@ -845,6 +845,28 @@ H H * * *
 
 ---
 
+## [es-insert-failure-data](https://cmssdt.cern.ch/jenkins/job/es-insert-failure-data)
+
+**Description:** None
+
+**Project is `enabled`.**
+
+**Upstream projects:**
+
+**Downstream projects:**
+
+**Sub-projects:**
+
+**Triggers from:** []
+
+
+**Periodic builds:**
+```bash
+Not periodically build
+```
+
+---
+
 ## [find-cmssw-build-packages](https://cmssdt.cern.ch/jenkins/job/find-cmssw-build-packages)
 
 **Description:** None

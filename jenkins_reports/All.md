@@ -2813,6 +2813,28 @@ H H * * *
 
 ---
 
+## [es-insert-failure-data](https://cmssdt.cern.ch/jenkins/job/es-insert-failure-data)
+
+**Description:** None
+
+**Project is `enabled`.**
+
+**Upstream projects:**
+
+**Downstream projects:**
+
+**Sub-projects:**
+
+**Triggers from:** []
+
+
+**Periodic builds:**
+```bash
+Not periodically build
+```
+
+---
+
 ## [es-open-indexes](https://cmssdt.cern.ch/jenkins/job/es-open-indexes)
 
 **Description:** This job keeps last 4 weeks of data in Elasticsearch open, and it closes older indexes (archive it).
