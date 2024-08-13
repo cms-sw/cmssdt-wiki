@@ -423,28 +423,6 @@ Not periodically build
 
 ---
 
-## [jenkins-test-cmssw-build-docker](https://cmssdt.cern.ch/jenkins/job/jenkins-test-cmssw-build-docker)
-
-**Description:** None
-
-**Project is `enabled`.**
-
-**Upstream projects:**
-
-**Downstream projects:**
-
-**Sub-projects:**
-
-**Triggers from:** []
-
-
-**Periodic builds:**
-```bash
-Not periodically build
-```
-
----
-
 ## [jenkins-test-command-on-slave](https://cmssdt.cern.ch/jenkins/job/jenkins-test-command-on-slave)
 
 **Description:** None
