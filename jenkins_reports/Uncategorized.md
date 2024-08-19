@@ -98,6 +98,28 @@ H 0  * *  0
 
 ---
 
+## [es-insert-failure-data](https://cmssdt.cern.ch/jenkins/job/es-insert-failure-data)
+
+**Description:** Insert record into ES linking Issue/PR and error in IB
+
+**Project is `disabled`.**
+
+**Upstream projects:**
+
+**Downstream projects:**
+
+**Sub-projects:**
+
+**Triggers from:** []
+
+
+**Periodic builds:**
+```bash
+Not periodically build
+```
+
+---
+
 ## [ib-install-cvmfs-gateway](https://cmssdt.cern.ch/jenkins/job/ib-install-cvmfs-gateway)
 
 **Description:** Test job to install IBs in parallel (cvmfs gateway).

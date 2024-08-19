@@ -2815,9 +2815,9 @@ H H * * *
 
 ## [es-insert-failure-data](https://cmssdt.cern.ch/jenkins/job/es-insert-failure-data)
 
-**Description:** None
+**Description:** Insert record into ES linking Issue/PR and error in IB
 
-**Project is `enabled`.**
+**Project is `disabled`.**
 
 **Upstream projects:**
 
