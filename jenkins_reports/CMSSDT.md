@@ -3519,6 +3519,28 @@ Not periodically build
 
 ---
 
+## [es-push-pkginfo](https://cmssdt.cern.ch/jenkins/job/es-push-pkginfo)
+
+**Description:** None
+
+**Project is `enabled`.**
+
+**Upstream projects:**
+
+**Downstream projects:**
+
+**Sub-projects:**
+
+**Triggers from:** []
+
+
+**Periodic builds:**
+```bash
+Not periodically build
+```
+
+---
+
 ## [find-cmssw-install-packages](https://cmssdt.cern.ch/jenkins/job/find-cmssw-install-packages)
 
 **Description:** avalenzu(testing): dummy job for builid cmssw images.
