@@ -2875,7 +2875,8 @@ Not periodically build
 
 **Periodic builds:**
 ```bash
-Not periodically build
+H 3 * * *
+H 15 * * *
 ```
 
 ---
