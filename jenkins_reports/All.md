@@ -2817,7 +2817,7 @@ H H * * *
 
 **Description:** Insert record into ES linking Issue/PR and error in IB
 
-**Project is `disabled`.**
+**Project is `enabled`.**
 
 **Upstream projects:**
 
