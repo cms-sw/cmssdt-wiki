@@ -4316,6 +4316,30 @@ Not periodically build
 
 ---
 
+## [ib-run-pr-hlt_p2_integration](https://cmssdt.cern.ch/jenkins/job/ib-run-pr-hlt_p2_integration)
+
+**Description:** None
+
+**Project is `enabled`.**
+
+**Upstream projects:**
+
+**Downstream projects:**
+* [update-circle-dataset](#update-circle-dataset):
+
+**Sub-projects:**
+* [update-circle-dataset](#update-circle-dataset):
+
+**Triggers from:** []
+
+
+**Periodic builds:**
+```bash
+Not periodically build
+```
+
+---
+
 ## [ib-run-pr-hlt_p2_timing](https://cmssdt.cern.ch/jenkins/job/ib-run-pr-hlt_p2_timing)
 
 **Description:** None
@@ -7975,6 +7999,7 @@ H 0 * * *
 
 **Upstream projects:**
 * [ib-run-hlt-p2-timing](#ib-run-hlt-p2-timing):
+* [ib-run-pr-hlt_p2_integration](#ib-run-pr-hlt_p2_integration):
 * [ib-run-pr-hlt_p2_timing](#ib-run-pr-hlt_p2_timing):
 * [ib-run-pr-profiling](#ib-run-pr-profiling):
 * [sync-profile-data](#sync-profile-data):
