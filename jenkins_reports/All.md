@@ -5004,7 +5004,7 @@ H * * * *
 **Description:** This job takes the backup of Jenkins master configuration (which includes projects, jenkins configuration, slaves, secrets etc.)
 Backups jenkins scripts on https://github.com/cms-sw/jenkins-backup.git
 
-**Project is `disabled`.**
+**Project is `enabled`.**
 
 **Upstream projects:**
 
@@ -5145,7 +5145,7 @@ H * * * *
 
 
 
-**Project is `disabled`.**
+**Project is `enabled`.**
 
 **Upstream projects:**
 
@@ -5158,7 +5158,7 @@ H * * * *
 
 **Periodic builds:**
 ```bash
-H/5 * * * * 
+H/30 * * * * 
 ```
 
 ---
