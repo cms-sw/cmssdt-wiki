@@ -5017,7 +5017,7 @@ Backups jenkins scripts on https://github.com/cms-sw/jenkins-backup.git
 
 **Periodic builds:**
 ```bash
-H/5 * * * *
+H/20 * * * *
 ```
 
 ---
