@@ -4893,6 +4893,28 @@ Not periodically build
 
 ---
 
+## [ib-test-lto-openstack](https://cmssdt.cern.ch/jenkins/job/ib-test-lto-openstack)
+
+**Description:** None
+
+**Project is `enabled`.**
+
+**Upstream projects:**
+
+**Downstream projects:**
+
+**Sub-projects:**
+
+**Triggers from:** []
+
+
+**Periodic builds:**
+```bash
+Not periodically build
+```
+
+---
+
 ## [ib-validation](https://cmssdt.cern.ch/jenkins/job/ib-validation)
 
 **Description:** This job waits for the recently installed IB on CVMFS to be visible on CERN Stratum 1.
