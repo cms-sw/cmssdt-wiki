@@ -969,7 +969,6 @@ H * * * *
 **Project is `enabled`.**
 
 **Upstream projects:**
-* [ib-run-profiling-gpu](#ib-run-profiling-gpu):
 
 **Downstream projects:**
 
@@ -1393,32 +1392,6 @@ The way to proceed in case of failure is to look for the PR number present in th
 
 **Sub-projects:**
 * [ib-run-pr-${TEST_TYPE}](#ib-run-pr-${TEST_TYPE}):
-
-**Triggers from:** []
-
-
-**Periodic builds:**
-```bash
-Not periodically build
-```
-
----
-
-## [ib-run-profiling-gpu](https://cmssdt.cern.ch/jenkins/job/ib-run-profiling-gpu)
-
-**Description:** Runs NSYS on the RECO and PAT steps for high pileup workflow.
-
-
-
-**Project is `enabled`.**
-
-**Upstream projects:**
-
-**Downstream projects:**
-* [ib-inject-profiling-data](#ib-inject-profiling-data):
-* [sync-profile-data](#sync-profile-data):
-
-**Sub-projects:**
 
 **Triggers from:** []
 
@@ -1892,7 +1865,6 @@ Not periodically build
 **Upstream projects:**
 * [ib-run-igprof](#ib-run-igprof):
 * [ib-run-profiling](#ib-run-profiling):
-* [ib-run-profiling-gpu](#ib-run-profiling-gpu):
 * [ib-run-profiling-mem](#ib-run-profiling-mem):
 * [ib-run-profiling-mem-GC](#ib-run-profiling-mem-GC):
 
