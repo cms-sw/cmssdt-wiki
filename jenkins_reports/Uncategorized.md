@@ -173,6 +173,32 @@ Not periodically build
 
 ---
 
+## [ib-run-profiling-gpu](https://cmssdt.cern.ch/jenkins/job/ib-run-profiling-gpu)
+
+**Description:** Runs NSYS on the RECO and PAT steps for high pileup workflow.
+
+
+
+**Project is `disabled`.**
+
+**Upstream projects:**
+
+**Downstream projects:**
+* [ib-inject-profiling-data](#ib-inject-profiling-data):
+* [sync-profile-data](#sync-profile-data):
+
+**Sub-projects:**
+
+**Triggers from:** []
+
+
+**Periodic builds:**
+```bash
+Not periodically build
+```
+
+---
+
 ## [refresh-cmssdt](https://cmssdt.cern.ch/jenkins/job/refresh-cmssdt)
 
 **Description:** This job updates the cmssw IB page on cmssdt.

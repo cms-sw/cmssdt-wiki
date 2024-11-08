@@ -3631,6 +3631,7 @@ H * * * *
 **Project is `enabled`.**
 
 **Upstream projects:**
+* [ib-run-profiling-gpu](#ib-run-profiling-gpu):
 
 **Downstream projects:**
 
@@ -4528,6 +4529,32 @@ Not periodically build
 * [ib-run-profiling-mem](#ib-run-profiling-mem):
 * [ib-run-profiling-mem-GC](#ib-run-profiling-mem-GC):
 * [run-vtune-profiling](#run-vtune-profiling):
+* [sync-profile-data](#sync-profile-data):
+
+**Sub-projects:**
+
+**Triggers from:** []
+
+
+**Periodic builds:**
+```bash
+Not periodically build
+```
+
+---
+
+## [ib-run-profiling-gpu](https://cmssdt.cern.ch/jenkins/job/ib-run-profiling-gpu)
+
+**Description:** Runs NSYS on the RECO and PAT steps for high pileup workflow.
+
+
+
+**Project is `disabled`.**
+
+**Upstream projects:**
+
+**Downstream projects:**
+* [ib-inject-profiling-data](#ib-inject-profiling-data):
 * [sync-profile-data](#sync-profile-data):
 
 **Sub-projects:**
@@ -7562,6 +7589,7 @@ Not periodically build
 **Upstream projects:**
 * [ib-run-igprof](#ib-run-igprof):
 * [ib-run-profiling](#ib-run-profiling):
+* [ib-run-profiling-gpu](#ib-run-profiling-gpu):
 * [ib-run-profiling-mem](#ib-run-profiling-mem):
 * [ib-run-profiling-mem-GC](#ib-run-profiling-mem-GC):
 

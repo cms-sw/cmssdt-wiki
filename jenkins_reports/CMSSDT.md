@@ -969,6 +969,7 @@ H * * * *
 **Project is `enabled`.**
 
 **Upstream projects:**
+* [ib-run-profiling-gpu](#ib-run-profiling-gpu):
 
 **Downstream projects:**
 
@@ -1865,6 +1866,7 @@ Not periodically build
 **Upstream projects:**
 * [ib-run-igprof](#ib-run-igprof):
 * [ib-run-profiling](#ib-run-profiling):
+* [ib-run-profiling-gpu](#ib-run-profiling-gpu):
 * [ib-run-profiling-mem](#ib-run-profiling-mem):
 * [ib-run-profiling-mem-GC](#ib-run-profiling-mem-GC):
 
