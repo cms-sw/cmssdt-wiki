@@ -1413,7 +1413,6 @@ Not periodically build
 **Project is `enabled`.**
 
 **Upstream projects:**
-* [ib-run-profiling](#ib-run-profiling):
 
 **Downstream projects:**
 * [ib-inject-profiling-data](#ib-inject-profiling-data):
@@ -4420,7 +4419,6 @@ Not periodically build
 **Upstream projects:**
 
 **Downstream projects:**
-* [ib-run-profiling-gpu](#ib-run-profiling-gpu):
 * [ib-run-profiling-mem](#ib-run-profiling-mem):
 * [ib-run-profiling-mem-GC](#ib-run-profiling-mem-GC):
 * [run-vtune-profiling](#run-vtune-profiling):
