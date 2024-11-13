@@ -1500,6 +1500,28 @@ Not periodically build
 
 ---
 
+## [ib-test-lto-openstack-hlt](https://cmssdt.cern.ch/jenkins/job/ib-test-lto-openstack-hlt)
+
+**Description:** None
+
+**Project is `enabled`.**
+
+**Upstream projects:**
+
+**Downstream projects:**
+
+**Sub-projects:**
+
+**Triggers from:** []
+
+
+**Periodic builds:**
+```bash
+Not periodically build
+```
+
+---
+
 ## [install-qemu](https://cmssdt.cern.ch/jenkins/job/install-qemu)
 
 **Description:** None
