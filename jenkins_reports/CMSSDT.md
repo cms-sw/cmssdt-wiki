@@ -3173,7 +3173,6 @@ H 14 * * *
 **Project is `enabled`.**
 
 **Upstream projects:**
-* [cmsrep-webhook](#cmsrep-webhook):
 
 **Downstream projects:**
 
@@ -3184,8 +3183,7 @@ H 14 * * *
 
 **Periodic builds:**
 ```bash
-#Run on Monday at 2h to do the cleanup
-H 2 * * 1
+Not periodically build
 ```
 
 ---

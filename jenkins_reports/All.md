@@ -1242,7 +1242,6 @@ H 14 * * *
 **Project is `enabled`.**
 
 **Upstream projects:**
-* [cmsrep-webhook](#cmsrep-webhook):
 
 **Downstream projects:**
 
@@ -1253,8 +1252,7 @@ H 14 * * *
 
 **Periodic builds:**
 ```bash
-#Run on Monday at 2h to do the cleanup
-H 2 * * 1
+Not periodically build
 ```
 
 ---
@@ -5966,6 +5964,28 @@ Not periodically build
 ---
 
 ## [jenkins-test-install-rucio](https://cmssdt.cern.ch/jenkins/job/jenkins-test-install-rucio)
+
+**Description:** None
+
+**Project is `enabled`.**
+
+**Upstream projects:**
+
+**Downstream projects:**
+
+**Sub-projects:**
+
+**Triggers from:** []
+
+
+**Periodic builds:**
+```bash
+Not periodically build
+```
+
+---
+
+## [jenkins-test-java-version](https://cmssdt.cern.ch/jenkins/job/jenkins-test-java-version)
 
 **Description:** None
 
