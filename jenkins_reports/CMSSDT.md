@@ -340,11 +340,10 @@ Otherwise build a patch release.
 * [build-fwlite-ib](#build-fwlite-ib):
 * [ib-build-logs](#ib-build-logs):
 * [ib-install-cvmfs](#ib-install-cvmfs):
-* [ib-install-cvmfs-gateway](#ib-install-cvmfs-gateway):
 * [process-external-elastic-stats](#process-external-elastic-stats):
 
 **Sub-projects:**
-* [ib-install-cvmfs,ib-install-cvmfs-gateway](#ib-install-cvmfs,ib-install-cvmfs-gateway):
+* [ib-install-cvmfs](#ib-install-cvmfs):
 * [ib-build-logs,process-external-elastic-stats](#ib-build-logs,process-external-elastic-stats):
 * [build-fwlite-ib](#build-fwlite-ib):
 
@@ -3226,14 +3225,13 @@ Also it runsevery 30mins to make sure any webhooks were not missed.
 * [cvmfs-cms-install-common](#cvmfs-cms-install-common):
 * [cvmfs-install-pr](#cvmfs-install-pr):
 * [ib-install-cvmfs](#ib-install-cvmfs):
-* [ib-install-cvmfs-gateway](#ib-install-cvmfs-gateway):
 
 **Sub-projects:**
 * [cvmfs-cms-install-common](#cvmfs-cms-install-common):
 * [cmspkg-clone](#cmspkg-clone):
 * [cvmfs-cms-install-cms](#cvmfs-cms-install-cms):
 * [cvmfs-cms-install-COMP-python](#cvmfs-cms-install-COMP-python):
-* [ib-install-cvmfs,ib-install-cvmfs-gateway](#ib-install-cvmfs,ib-install-cvmfs-gateway):
+* [ib-install-cvmfs](#ib-install-cvmfs):
 * [cvmfs-install-pr](#cvmfs-install-pr):
 
 **Triggers from:** []
@@ -4661,11 +4659,10 @@ This job re-tries itself on failure. So there is no need to re-try it manually (
 * [cleanup-cmsrep](#cleanup-cmsrep):
 * [cleanup-cvmfs-ci](#cleanup-cvmfs-ci):
 * [ib-install-cvmfs](#ib-install-cvmfs):
-* [ib-install-cvmfs-gateway](#ib-install-cvmfs-gateway):
 
 **Sub-projects:**
 * [build-any-ib](#build-any-ib):
-* [ib-install-cvmfs,ib-install-cvmfs-gateway](#ib-install-cvmfs,ib-install-cvmfs-gateway):
+* [ib-install-cvmfs](#ib-install-cvmfs):
 * [cleanup-cmsrep,cleanup-cvmfs-ci](#cleanup-cmsrep,cleanup-cvmfs-ci):
 
 **Triggers from:** []

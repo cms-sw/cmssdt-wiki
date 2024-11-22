@@ -98,34 +98,6 @@ H 0  * *  0
 
 ---
 
-## [ib-install-cvmfs-gateway](https://cmssdt.cern.ch/jenkins/job/ib-install-cvmfs-gateway)
-
-**Description:** Test job to install IBs in parallel (cvmfs gateway).
-
-**Project is `disabled`.**
-
-**Upstream projects:**
-* [cms-spack-ib](#cms-spack-ib):
-* [cmsrep-webhook](#cmsrep-webhook):
-* [ib-install-cvmfs-gateway](#ib-install-cvmfs-gateway):
-* [ib-tag-and-schdule](#ib-tag-and-schdule):
-
-**Downstream projects:**
-* [ib-install-cvmfs-gateway](#ib-install-cvmfs-gateway):
-
-**Sub-projects:**
-* [ib-install-cvmfs-gateway](#ib-install-cvmfs-gateway):
-
-**Triggers from:** []
-
-
-**Periodic builds:**
-```bash
-Not periodically build
-```
-
----
-
 ## [ib-run-geometry](https://cmssdt.cern.ch/jenkins/job/ib-run-geometry)
 
 **Description:** Runs geometry comparison tests for each IB
