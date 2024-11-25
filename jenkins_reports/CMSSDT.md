@@ -866,6 +866,29 @@ Not periodically build
 
 ---
 
+## [es-push-release-pkginfo](https://cmssdt.cern.ch/jenkins/job/es-push-release-pkginfo)
+
+**Description:** None
+
+**Project is `enabled`.**
+
+**Upstream projects:**
+
+**Downstream projects:**
+
+**Sub-projects:**
+
+**Triggers from:** []
+
+
+**Periodic builds:**
+```bash
+H 3 * * *
+H 15 * * *
+```
+
+---
+
 ## [find-cmssw-build-packages](https://cmssdt.cern.ch/jenkins/job/find-cmssw-build-packages)
 
 **Description:** None
