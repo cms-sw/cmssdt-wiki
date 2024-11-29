@@ -3676,6 +3676,28 @@ Not periodically build
 
 ---
 
+## [ib-install-cvmfs-gateway](https://cmssdt.cern.ch/jenkins/job/ib-install-cvmfs-gateway)
+
+**Description:** Test job to install IBs in parallel (cvmfs gateway).
+
+**Project is `disabled`.**
+
+**Upstream projects:**
+
+**Downstream projects:**
+
+**Sub-projects:**
+
+**Triggers from:** []
+
+
+**Periodic builds:**
+```bash
+Not periodically build
+```
+
+---
+
 ## [ib-install-siteconf](https://cmssdt.cern.ch/jenkins/job/ib-install-siteconf)
 
 **Description:** Update the contents of/cvmfs/REPO/SITECONF from https://github.com/cms-sw/siteconf
