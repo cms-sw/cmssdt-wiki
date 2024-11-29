@@ -237,28 +237,6 @@ Not periodically build
 
 ---
 
-## [cmsbuild901](https://cmssdt.cern.ch/jenkins/job/cmsbuild901)
-
-**Description:** None
-
-**Project is `enabled`.**
-
-**Upstream projects:**
-
-**Downstream projects:**
-
-**Sub-projects:**
-
-**Triggers from:** []
-
-
-**Periodic builds:**
-```bash
-Not periodically build
-```
-
----
-
 ## [cmsbuild950](https://cmssdt.cern.ch/jenkins/job/cmsbuild950)
 
 **Description:** None
@@ -1843,50 +1821,6 @@ Not periodically build
 
 ---
 
-## [grid427548](https://cmssdt.cern.ch/jenkins/job/grid427548)
-
-**Description:** None
-
-**Project is `enabled`.**
-
-**Upstream projects:**
-
-**Downstream projects:**
-
-**Sub-projects:**
-
-**Triggers from:** []
-
-
-**Periodic builds:**
-```bash
-Not periodically build
-```
-
----
-
-## [grid456662](https://cmssdt.cern.ch/jenkins/job/grid456662)
-
-**Description:** None
-
-**Project is `enabled`.**
-
-**Upstream projects:**
-
-**Downstream projects:**
-
-**Sub-projects:**
-
-**Triggers from:** []
-
-
-**Periodic builds:**
-```bash
-Not periodically build
-```
-
----
-
 ## [grid458750](https://cmssdt.cern.ch/jenkins/job/grid458750)
 
 **Description:** None
@@ -2306,28 +2240,6 @@ Not periodically build
 ---
 
 ## [lxplus8-arm-01](https://cmssdt.cern.ch/jenkins/job/lxplus8-arm-01)
-
-**Description:** None
-
-**Project is `enabled`.**
-
-**Upstream projects:**
-
-**Downstream projects:**
-
-**Sub-projects:**
-
-**Triggers from:** []
-
-
-**Periodic builds:**
-```bash
-Not periodically build
-```
-
----
-
-## [riscv64-milkv-01](https://cmssdt.cern.ch/jenkins/job/riscv64-milkv-01)
 
 **Description:** None
 
