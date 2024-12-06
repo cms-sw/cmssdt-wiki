@@ -5690,28 +5690,6 @@ Not periodically build
 
 ---
 
-## [jenkins-test-cmssw-build-docker2](https://cmssdt.cern.ch/jenkins/job/jenkins-test-cmssw-build-docker2)
-
-**Description:** None
-
-**Project is `enabled`.**
-
-**Upstream projects:**
-
-**Downstream projects:**
-
-**Sub-projects:**
-
-**Triggers from:** []
-
-
-**Periodic builds:**
-```bash
-Not periodically build
-```
-
----
-
 ## [jenkins-test-code-format](https://cmssdt.cern.ch/jenkins/job/jenkins-test-code-format)
 
 **Description:** None
@@ -7688,28 +7666,6 @@ H/15 * * * *
 **Description:** avalenzu: Testing build error in release https://github.com/cms-sw/cmssw/issues/41976 for el8_amd64_gcc12
 
 **Project is `enabled`.**
-
-**Upstream projects:**
-
-**Downstream projects:**
-
-**Sub-projects:**
-
-**Triggers from:** []
-
-
-**Periodic builds:**
-```bash
-Not periodically build
-```
-
----
-
-## [test-cmssw-images](https://cmssdt.cern.ch/jenkins/job/test-cmssw-images)
-
-**Description:** avalenzu: Jenkins job to test the new runtime and buildtime images. I will delete this job after the tests.
-
-**Project is `disabled`.**
 
 **Upstream projects:**
 

@@ -2398,25 +2398,3 @@ H 22 * * *
 
 ---
 
-## [test-cmssw-images](https://cmssdt.cern.ch/jenkins/job/test-cmssw-images)
-
-**Description:** avalenzu: Jenkins job to test the new runtime and buildtime images. I will delete this job after the tests.
-
-**Project is `disabled`.**
-
-**Upstream projects:**
-
-**Downstream projects:**
-
-**Sub-projects:**
-
-**Triggers from:** []
-
-
-**Periodic builds:**
-```bash
-Not periodically build
-```
-
----
-
