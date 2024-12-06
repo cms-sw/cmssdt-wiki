@@ -1388,7 +1388,7 @@ Not periodically build
 
 ## [jenkins-test-pgo](https://cmssdt.cern.ch/jenkins/job/jenkins-test-pgo)
 
-**Description:** None
+**Description:** avalenzu: Doing some cleanup (06-12-2024) - Possibly to be deleted.
 
 **Project is `enabled`.**
 
