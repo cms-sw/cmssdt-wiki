@@ -1479,7 +1479,7 @@ Not periodically build
 
 ## [ib-test-lto-openstack-hlt](https://cmssdt.cern.ch/jenkins/job/ib-test-lto-openstack-hlt)
 
-**Description:** None
+**Description:** avalenzu: To be removed soon. HLT test can run as part of https://cmssdt.cern.ch/jenkins/job/ib-test-lto-openstack/
 
 **Project is `enabled`.**
 
