@@ -2195,28 +2195,6 @@ Not periodically build
 
 ---
 
-## [lumi-hpc-el9-01](https://cmssdt.cern.ch/jenkins/job/lumi-hpc-el9-01)
-
-**Description:** None
-
-**Project is `enabled`.**
-
-**Upstream projects:**
-
-**Downstream projects:**
-
-**Sub-projects:**
-
-**Triggers from:** []
-
-
-**Periodic builds:**
-```bash
-Not periodically build
-```
-
----
-
 ## [lxplus-01](https://cmssdt.cern.ch/jenkins/job/lxplus-01)
 
 **Description:** None
