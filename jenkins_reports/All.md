@@ -5131,6 +5131,7 @@ Not periodically build
 **Project is `enabled`.**
 
 **Upstream projects:**
+* [jenkins-infrastructure-sanity-check](#jenkins-infrastructure-sanity-check):
 
 **Downstream projects:**
 
@@ -5296,10 +5297,12 @@ Not periodically build
 * [jenkins-infrastructure-sanity-check](#jenkins-infrastructure-sanity-check):
 
 **Downstream projects:**
+* [jenkins-disable-nodes](#jenkins-disable-nodes):
 * [jenkins-infrastructure-sanity-check](#jenkins-infrastructure-sanity-check):
 
 **Sub-projects:**
 * [jenkins-infrastructure-sanity-check](#jenkins-infrastructure-sanity-check):
+* [jenkins-disable-nodes](#jenkins-disable-nodes):
 
 **Triggers from:** []
 
