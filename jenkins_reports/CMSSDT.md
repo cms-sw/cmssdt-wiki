@@ -1390,6 +1390,7 @@ Not periodically build
 **Project is `enabled`.**
 
 **Upstream projects:**
+* [ib-run-profiling](#ib-run-profiling):
 
 **Downstream projects:**
 * [sync-profile-data](#sync-profile-data):
@@ -4387,6 +4388,7 @@ Not periodically build
 **Upstream projects:**
 
 **Downstream projects:**
+* [ib-run-profiling-mem](#ib-run-profiling-mem):
 * [run-vtune-profiling](#run-vtune-profiling):
 * [sync-profile-data](#sync-profile-data):
 
