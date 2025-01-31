@@ -1022,8 +1022,10 @@ H * * * *
 **Upstream projects:**
 
 **Downstream projects:**
+* [abort-jenkins-job](#abort-jenkins-job):
 
 **Sub-projects:**
+* [abort-jenkins-job](#abort-jenkins-job):
 
 **Triggers from:** []
 
