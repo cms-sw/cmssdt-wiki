@@ -2228,6 +2228,7 @@ Not periodically build
 **Project is `enabled`.**
 
 **Upstream projects:**
+* [jenkins-elasticsearch-monitor](#jenkins-elasticsearch-monitor):
 
 **Downstream projects:**
 

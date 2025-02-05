@@ -1023,9 +1023,11 @@ H * * * *
 
 **Downstream projects:**
 * [abort-jenkins-job](#abort-jenkins-job):
+* [update-pr-status](#update-pr-status):
 
 **Sub-projects:**
 * [abort-jenkins-job](#abort-jenkins-job):
+* [update-pr-status](#update-pr-status):
 
 **Triggers from:** []
 

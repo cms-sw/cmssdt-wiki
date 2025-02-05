@@ -5182,9 +5182,11 @@ H * * * *
 
 **Downstream projects:**
 * [abort-jenkins-job](#abort-jenkins-job):
+* [update-pr-status](#update-pr-status):
 
 **Sub-projects:**
 * [abort-jenkins-job](#abort-jenkins-job):
+* [update-pr-status](#update-pr-status):
 
 **Triggers from:** []
 
@@ -8166,6 +8168,7 @@ H */6 * * *
 **Project is `enabled`.**
 
 **Upstream projects:**
+* [jenkins-elasticsearch-monitor](#jenkins-elasticsearch-monitor):
 
 **Downstream projects:**
 
