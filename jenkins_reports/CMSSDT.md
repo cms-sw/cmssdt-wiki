@@ -1855,6 +1855,28 @@ Not periodically build
 
 ---
 
+## [simple-cms-bot](https://cmssdt.cern.ch/jenkins/job/simple-cms-bot)
+
+**Description:** None
+
+**Project is `enabled`.**
+
+**Upstream projects:**
+
+**Downstream projects:**
+
+**Sub-projects:**
+
+**Triggers from:** []
+
+
+**Periodic builds:**
+```bash
+Not periodically build
+```
+
+---
+
 ## [sync-profile-data](https://cmssdt.cern.ch/jenkins/job/sync-profile-data)
 
 **Description:** None
