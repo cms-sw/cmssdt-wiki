@@ -1546,6 +1546,30 @@ Not periodically build
 
 ---
 
+## [kill-stuck-pr-test](https://cmssdt.cern.ch/jenkins/job/kill-stuck-pr-test)
+
+**Description:** Kill stuck PR testing job and update PR accordingly
+
+**Project is `enabled`.**
+
+**Upstream projects:**
+
+**Downstream projects:**
+* [update-pr-status](#update-pr-status):
+
+**Sub-projects:**
+* [update-pr-status](#update-pr-status):
+
+**Triggers from:** []
+
+
+**Periodic builds:**
+```bash
+Not periodically build
+```
+
+---
+
 ## [lxr-repair-table](https://cmssdt.cern.ch/jenkins/job/lxr-repair-table)
 
 **Description:** Run this if there is any MySQL table to repair e.g. if lxr-remove-idex fails with error <br/>
@@ -2243,30 +2267,6 @@ Not periodically build
 
 ---
 
-## [update-pr-for-unique-id](https://cmssdt.cern.ch/jenkins/job/update-pr-for-unique-id)
-
-**Description:** Get commit id from upload_unique_id and pr identifier (repo+number)
-
-**Project is `enabled`.**
-
-**Upstream projects:**
-
-**Downstream projects:**
-* [update-pr-status](#update-pr-status):
-
-**Sub-projects:**
-* [update-pr-status](#update-pr-status):
-
-**Triggers from:** []
-
-
-**Periodic builds:**
-```bash
-Not periodically build
-```
-
----
-
 ## [update-pr-status](https://cmssdt.cern.ch/jenkins/job/update-pr-status)
 
 **Description:** None
@@ -2275,7 +2275,7 @@ Not periodically build
 
 **Upstream projects:**
 * [jenkins-elasticsearch-monitor](#jenkins-elasticsearch-monitor):
-* [update-pr-for-unique-id](#update-pr-for-unique-id):
+* [kill-stuck-pr-test](#kill-stuck-pr-test):
 
 **Downstream projects:**
 
