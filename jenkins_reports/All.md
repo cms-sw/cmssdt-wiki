@@ -20,6 +20,7 @@ PR (with matching parameters). It will ignore the given job ID - the ID of upstr
 **Upstream projects:**
 * [abort-pr-tests](#abort-pr-tests):
 * [jenkins-elasticsearch-monitor](#jenkins-elasticsearch-monitor):
+* [kill-stuck-pr-test](#kill-stuck-pr-test):
 * [run-pr-code-checks](#run-pr-code-checks):
 
 **Downstream projects:**
@@ -6464,10 +6465,12 @@ H H/8 * * *
 **Upstream projects:**
 
 **Downstream projects:**
+* [abort-jenkins-job](#abort-jenkins-job):
 * [update-pr-status](#update-pr-status):
 
 **Sub-projects:**
 * [update-pr-status](#update-pr-status):
+* [abort-jenkins-job](#abort-jenkins-job):
 
 **Triggers from:** []
 
