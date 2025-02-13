@@ -7960,28 +7960,6 @@ Not periodically build
 
 ---
 
-## [unique-id-to-commit](https://cmssdt.cern.ch/jenkins/job/unique-id-to-commit)
-
-**Description:** None
-
-**Project is `enabled`.**
-
-**Upstream projects:**
-
-**Downstream projects:**
-
-**Sub-projects:**
-
-**Triggers from:** []
-
-
-**Periodic builds:**
-```bash
-Not periodically build
-```
-
----
-
 ## [update-categories-page](https://cmssdt.cern.ch/jenkins/job/update-categories-page)
 
 **Description:** Generates categories.json file and uploads it to this <a href="https://github.com/cms-sw/cms-sw.github.io">github repo</a>. 
@@ -8205,6 +8183,30 @@ H */6 * * *
 
 ---
 
+## [update-pr-for-unique-id](https://cmssdt.cern.ch/jenkins/job/update-pr-for-unique-id)
+
+**Description:** Get commit id from upload_unique_id and pr identifier (repo+number)
+
+**Project is `enabled`.**
+
+**Upstream projects:**
+
+**Downstream projects:**
+* [update-pr-status](#update-pr-status):
+
+**Sub-projects:**
+* [update-pr-status](#update-pr-status):
+
+**Triggers from:** []
+
+
+**Periodic builds:**
+```bash
+Not periodically build
+```
+
+---
+
 ## [update-pr-status](https://cmssdt.cern.ch/jenkins/job/update-pr-status)
 
 **Description:** None
@@ -8213,6 +8215,7 @@ H */6 * * *
 
 **Upstream projects:**
 * [jenkins-elasticsearch-monitor](#jenkins-elasticsearch-monitor):
+* [update-pr-for-unique-id](#update-pr-for-unique-id):
 
 **Downstream projects:**
 

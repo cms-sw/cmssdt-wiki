@@ -2172,28 +2172,6 @@ Not periodically build
 
 ---
 
-## [unique-id-to-commit](https://cmssdt.cern.ch/jenkins/job/unique-id-to-commit)
-
-**Description:** None
-
-**Project is `enabled`.**
-
-**Upstream projects:**
-
-**Downstream projects:**
-
-**Sub-projects:**
-
-**Triggers from:** []
-
-
-**Periodic builds:**
-```bash
-Not periodically build
-```
-
----
-
 ## [update-circle-dataset](https://cmssdt.cern.ch/jenkins/job/update-circle-dataset)
 
 **Description:** None
@@ -2265,6 +2243,30 @@ Not periodically build
 
 ---
 
+## [update-pr-for-unique-id](https://cmssdt.cern.ch/jenkins/job/update-pr-for-unique-id)
+
+**Description:** Get commit id from upload_unique_id and pr identifier (repo+number)
+
+**Project is `enabled`.**
+
+**Upstream projects:**
+
+**Downstream projects:**
+* [update-pr-status](#update-pr-status):
+
+**Sub-projects:**
+* [update-pr-status](#update-pr-status):
+
+**Triggers from:** []
+
+
+**Periodic builds:**
+```bash
+Not periodically build
+```
+
+---
+
 ## [update-pr-status](https://cmssdt.cern.ch/jenkins/job/update-pr-status)
 
 **Description:** None
@@ -2273,6 +2275,7 @@ Not periodically build
 
 **Upstream projects:**
 * [jenkins-elasticsearch-monitor](#jenkins-elasticsearch-monitor):
+* [update-pr-for-unique-id](#update-pr-for-unique-id):
 
 **Downstream projects:**
 
