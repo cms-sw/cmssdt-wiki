@@ -1022,12 +1022,10 @@ H * * * *
 **Upstream projects:**
 
 **Downstream projects:**
-* [abort-jenkins-job](#abort-jenkins-job):
-* [update-pr-status](#update-pr-status):
+* [kill-stuck-pr-test](#kill-stuck-pr-test):
 
 **Sub-projects:**
-* [abort-jenkins-job](#abort-jenkins-job):
-* [update-pr-status](#update-pr-status):
+* [kill-stuck-pr-test](#kill-stuck-pr-test):
 
 **Triggers from:** []
 

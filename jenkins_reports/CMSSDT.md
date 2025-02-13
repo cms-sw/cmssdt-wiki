@@ -1553,6 +1553,7 @@ Not periodically build
 **Project is `enabled`.**
 
 **Upstream projects:**
+* [jenkins-elasticsearch-monitor](#jenkins-elasticsearch-monitor):
 
 **Downstream projects:**
 * [abort-jenkins-job](#abort-jenkins-job):
@@ -2276,7 +2277,6 @@ Not periodically build
 **Project is `enabled`.**
 
 **Upstream projects:**
-* [jenkins-elasticsearch-monitor](#jenkins-elasticsearch-monitor):
 * [kill-stuck-pr-test](#kill-stuck-pr-test):
 
 **Downstream projects:**
@@ -2348,7 +2348,6 @@ PR (with matching parameters). It will ignore the given job ID - the ID of upstr
 
 **Upstream projects:**
 * [abort-pr-tests](#abort-pr-tests):
-* [jenkins-elasticsearch-monitor](#jenkins-elasticsearch-monitor):
 * [kill-stuck-pr-test](#kill-stuck-pr-test):
 * [run-pr-code-checks](#run-pr-code-checks):
 
