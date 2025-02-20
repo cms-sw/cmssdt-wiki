@@ -6464,10 +6464,8 @@ H H/8 * * *
 
 **Downstream projects:**
 * [abort-jenkins-job](#abort-jenkins-job):
-* [update-pr-status](#update-pr-status):
 
 **Sub-projects:**
-* [update-pr-status](#update-pr-status):
 * [abort-jenkins-job](#abort-jenkins-job):
 
 **Triggers from:** []
@@ -8215,7 +8213,6 @@ H */6 * * *
 **Project is `enabled`.**
 
 **Upstream projects:**
-* [kill-stuck-pr-test](#kill-stuck-pr-test):
 
 **Downstream projects:**
 

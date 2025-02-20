@@ -1557,10 +1557,8 @@ Not periodically build
 
 **Downstream projects:**
 * [abort-jenkins-job](#abort-jenkins-job):
-* [update-pr-status](#update-pr-status):
 
 **Sub-projects:**
-* [update-pr-status](#update-pr-status):
 * [abort-jenkins-job](#abort-jenkins-job):
 
 **Triggers from:** []
@@ -2277,7 +2275,6 @@ Not periodically build
 **Project is `enabled`.**
 
 **Upstream projects:**
-* [kill-stuck-pr-test](#kill-stuck-pr-test):
 
 **Downstream projects:**
 
