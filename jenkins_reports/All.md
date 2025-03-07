@@ -5482,6 +5482,29 @@ H * * * *
 
 ---
 
+## [jenkins-node-online-recorder](https://cmssdt.cern.ch/jenkins/job/jenkins-node-online-recorder)
+
+**Description:** avalenzu: debug
+
+**Project is `enabled`.**
+
+**Upstream projects:**
+* [jenkins-test-parser](#jenkins-test-parser):
+
+**Downstream projects:**
+
+**Sub-projects:**
+
+**Triggers from:** []
+
+
+**Periodic builds:**
+```bash
+
+```
+
+---
+
 ## [jenkins-process](https://cmssdt.cern.ch/jenkins/job/jenkins-process)
 
 **Description:** None
@@ -6168,6 +6191,7 @@ Not periodically build
 * [jenkins-test-parser](#jenkins-test-parser):
 
 **Downstream projects:**
+* [jenkins-node-online-recorder](#jenkins-node-online-recorder):
 * [jenkins-test-parser](#jenkins-test-parser):
 
 **Sub-projects:**

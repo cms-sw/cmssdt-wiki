@@ -1520,6 +1520,29 @@ Not periodically build
 
 ---
 
+## [jenkins-node-online-recorder](https://cmssdt.cern.ch/jenkins/job/jenkins-node-online-recorder)
+
+**Description:** avalenzu: debug
+
+**Project is `enabled`.**
+
+**Upstream projects:**
+* [jenkins-test-parser](#jenkins-test-parser):
+
+**Downstream projects:**
+
+**Sub-projects:**
+
+**Triggers from:** []
+
+
+**Periodic builds:**
+```bash
+
+```
+
+---
+
 ## [jenkins-test-retry](https://cmssdt.cern.ch/jenkins/job/jenkins-test-retry)
 
 **Description:** This job retries a build given the job name and the build number to retry.<br>
