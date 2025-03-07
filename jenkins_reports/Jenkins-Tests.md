@@ -787,7 +787,6 @@ Not periodically build
 * [jenkins-test-parser](#jenkins-test-parser):
 
 **Downstream projects:**
-* [jenkins-node-online-recorder](#jenkins-node-online-recorder):
 * [jenkins-test-parser](#jenkins-test-parser):
 
 **Sub-projects:**
@@ -1234,14 +1233,15 @@ H * * * *
 
 ## [jenkins-node-online-recorder](https://cmssdt.cern.ch/jenkins/job/jenkins-node-online-recorder)
 
-**Description:** avalenzu: debug
+**Description:** None
 
 **Project is `enabled`.**
 
 **Upstream projects:**
-* [jenkins-test-parser](#jenkins-test-parser):
+* [jenkins-node-online-recorder](#jenkins-node-online-recorder):
 
 **Downstream projects:**
+* [jenkins-node-online-recorder](#jenkins-node-online-recorder):
 
 **Sub-projects:**
 
