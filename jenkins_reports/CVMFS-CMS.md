@@ -132,8 +132,8 @@ H * * * *
 
 ## [cvmfs-cms-check-and-update-premixPUlist](https://cmssdt.cern.ch/jenkins/job/cvmfs-cms-check-and-update-premixPUlist)
 
-**Description:** This job checks and updates lhapdf based on 
-<br> https://github.com/bockjoo/cvmfs-cms-install-scripts/blob/master/cron_download_lhapdf.sh
+**Description:** This job checks and updates premixPUlist
+<br>https://its.cern.ch/jira/browse/CMSVOC-616</br>
 
 
 
