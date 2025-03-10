@@ -8,32 +8,6 @@
 
 # Projects:
 
-## [cvmfs-cms-check-and-sync-eos-dir](https://cmssdt.cern.ch/jenkins/job/cvmfs-cms-check-and-sync-eos-dir)
-
-**Description:** This job checks/compares EOS directory with cvmfs nd trigger the sync if there are changes
-
-
-
-**Project is `enabled`.**
-
-**Upstream projects:**
-
-**Downstream projects:**
-* [cvmfs-cms-check-and-update-premixPUlist](#cvmfs-cms-check-and-update-premixPUlist):
-
-**Sub-projects:**
-* [cvmfs-cms-check-and-update-premixPUlist](#cvmfs-cms-check-and-update-premixPUlist):
-
-**Triggers from:** []
-
-
-**Periodic builds:**
-```bash
-Not periodically build
-```
-
----
-
 ## [cvmfs-cms-check-and-update-cmssw-git-mirror](https://cmssdt.cern.ch/jenkins/job/cvmfs-cms-check-and-update-cmssw-git-mirror)
 
 **Description:** This job checks and updates the cmssw git mirror daily and monthly based on 
@@ -166,8 +140,9 @@ H * * * *
 **Project is `enabled`.**
 
 **Upstream projects:**
-* [cvmfs-cms-check-and-sync-eos-dir](#cvmfs-cms-check-and-sync-eos-dir):
 * [cvmfs-cms-check-and-update-premixPUlist](#cvmfs-cms-check-and-update-premixPUlist):
+* [cvmfs-cms-check-eos-dir](#cvmfs-cms-check-eos-dir):
+* [cvmfs-cms-sync-eos-dir](#cvmfs-cms-sync-eos-dir):
 
 **Downstream projects:**
 * [cvmfs-cms-check-and-update-premixPUlist](#cvmfs-cms-check-and-update-premixPUlist):
@@ -233,6 +208,32 @@ Not periodically build
 **Periodic builds:**
 ```bash
 H * * * *
+```
+
+---
+
+## [cvmfs-cms-check-eos-dir](https://cmssdt.cern.ch/jenkins/job/cvmfs-cms-check-eos-dir)
+
+**Description:** This job checks/compares EOS directory with cvmfs nd trigger the sync if there are changes
+
+
+
+**Project is `enabled`.**
+
+**Upstream projects:**
+
+**Downstream projects:**
+* [cvmfs-cms-check-and-update-premixPUlist](#cvmfs-cms-check-and-update-premixPUlist):
+
+**Sub-projects:**
+* [cvmfs-cms-check-and-update-premixPUlist](#cvmfs-cms-check-and-update-premixPUlist):
+
+**Triggers from:** []
+
+
+**Periodic builds:**
+```bash
+Not periodically build
 ```
 
 ---
@@ -429,6 +430,33 @@ Not periodically build
 **Periodic builds:**
 ```bash
 H */2 * * *
+```
+
+---
+
+## [cvmfs-cms-sync-eos-dir](https://cmssdt.cern.ch/jenkins/job/cvmfs-cms-sync-eos-dir)
+
+**Description:** This job checks and updates premixPUlist
+<br>https://its.cern.ch/jira/browse/CMSVOC-616</br>
+
+
+
+**Project is `enabled`.**
+
+**Upstream projects:**
+
+**Downstream projects:**
+* [cvmfs-cms-check-and-update-premixPUlist](#cvmfs-cms-check-and-update-premixPUlist):
+
+**Sub-projects:**
+* [cvmfs-cms-check-and-update-premixPUlist](#cvmfs-cms-check-and-update-premixPUlist):
+
+**Triggers from:** []
+
+
+**Periodic builds:**
+```bash
+Not periodically build
 ```
 
 ---
