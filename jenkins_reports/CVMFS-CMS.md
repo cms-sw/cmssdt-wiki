@@ -10,7 +10,7 @@
 
 ## [cvmfs-cms-check-and-sync-eos-dir](https://cmssdt.cern.ch/jenkins/job/cvmfs-cms-check-and-sync-eos-dir)
 
-**Description:** This job checks and sync an EOS directory on cvmfs
+**Description:** This job checks/compares EOS directory with cvmfs nd trigger the sync if there are changes
 
 
 
