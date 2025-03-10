@@ -130,6 +130,31 @@ H * * * *
 
 ---
 
+## [cvmfs-cms-check-and-update-premixPUlist](https://cmssdt.cern.ch/jenkins/job/cvmfs-cms-check-and-update-premixPUlist)
+
+**Description:** This job checks and updates lhapdf based on 
+<br> https://github.com/bockjoo/cvmfs-cms-install-scripts/blob/master/cron_download_lhapdf.sh
+
+
+
+**Project is `enabled`.**
+
+**Upstream projects:**
+
+**Downstream projects:**
+
+**Sub-projects:**
+
+**Triggers from:** []
+
+
+**Periodic builds:**
+```bash
+H H * * *
+```
+
+---
+
 ## [cvmfs-cms-check-and-update-report](https://cmssdt.cern.ch/jenkins/job/cvmfs-cms-check-and-update-report)
 
 **Description:** This job reports status of upstream projects, siteconf and gridpacks.
