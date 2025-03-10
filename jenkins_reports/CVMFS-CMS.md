@@ -141,8 +141,6 @@ H * * * *
 
 **Upstream projects:**
 * [cvmfs-cms-check-and-update-premixPUlist](#cvmfs-cms-check-and-update-premixPUlist):
-* [cvmfs-cms-check-eos-dir](#cvmfs-cms-check-eos-dir):
-* [cvmfs-cms-sync-eos-dir](#cvmfs-cms-sync-eos-dir):
 
 **Downstream projects:**
 * [cvmfs-cms-check-and-update-premixPUlist](#cvmfs-cms-check-and-update-premixPUlist):
@@ -223,10 +221,10 @@ H * * * *
 **Upstream projects:**
 
 **Downstream projects:**
-* [cvmfs-cms-check-and-update-premixPUlist](#cvmfs-cms-check-and-update-premixPUlist):
+* [cvmfs-cms-sync-eos-dir](#cvmfs-cms-sync-eos-dir):
 
 **Sub-projects:**
-* [cvmfs-cms-check-and-update-premixPUlist](#cvmfs-cms-check-and-update-premixPUlist):
+* [cvmfs-cms-sync-eos-dir](#cvmfs-cms-sync-eos-dir):
 
 **Triggers from:** []
 
@@ -436,20 +434,18 @@ H */2 * * *
 
 ## [cvmfs-cms-sync-eos-dir](https://cmssdt.cern.ch/jenkins/job/cvmfs-cms-sync-eos-dir)
 
-**Description:** This job checks and updates premixPUlist
-<br>https://its.cern.ch/jira/browse/CMSVOC-616</br>
+**Description:** This job syncs an EOS directory on to CVMFS
 
 
 
 **Project is `enabled`.**
 
 **Upstream projects:**
+* [cvmfs-cms-check-eos-dir](#cvmfs-cms-check-eos-dir):
 
 **Downstream projects:**
-* [cvmfs-cms-check-and-update-premixPUlist](#cvmfs-cms-check-and-update-premixPUlist):
 
 **Sub-projects:**
-* [cvmfs-cms-check-and-update-premixPUlist](#cvmfs-cms-check-and-update-premixPUlist):
 
 **Triggers from:** []
 
