@@ -1749,10 +1749,13 @@ H * * * *
 **Project is `enabled`.**
 
 **Upstream projects:**
+* [cvmfs-cms-check-and-update-premixPUlist](#cvmfs-cms-check-and-update-premixPUlist):
 
 **Downstream projects:**
+* [cvmfs-cms-check-and-update-premixPUlist](#cvmfs-cms-check-and-update-premixPUlist):
 
 **Sub-projects:**
+* [cvmfs-cms-check-and-update-premixPUlist](#cvmfs-cms-check-and-update-premixPUlist):
 
 **Triggers from:** []
 
