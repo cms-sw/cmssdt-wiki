@@ -1519,30 +1519,6 @@ Not periodically build
 
 ---
 
-## [jenkins-node-online-recorder](https://cmssdt.cern.ch/jenkins/job/jenkins-node-online-recorder)
-
-**Description:** None
-
-**Project is `enabled`.**
-
-**Upstream projects:**
-* [jenkins-node-online-recorder](#jenkins-node-online-recorder):
-
-**Downstream projects:**
-* [jenkins-node-online-recorder](#jenkins-node-online-recorder):
-
-**Sub-projects:**
-
-**Triggers from:** []
-
-
-**Periodic builds:**
-```bash
-
-```
-
----
-
 ## [jenkins-test-retry](https://cmssdt.cern.ch/jenkins/job/jenkins-test-retry)
 
 **Description:** This job retries a build given the job name and the build number to retry.<br>

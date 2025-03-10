@@ -5480,30 +5480,6 @@ H * * * *
 
 ---
 
-## [jenkins-node-online-recorder](https://cmssdt.cern.ch/jenkins/job/jenkins-node-online-recorder)
-
-**Description:** None
-
-**Project is `enabled`.**
-
-**Upstream projects:**
-* [jenkins-node-online-recorder](#jenkins-node-online-recorder):
-
-**Downstream projects:**
-* [jenkins-node-online-recorder](#jenkins-node-online-recorder):
-
-**Sub-projects:**
-
-**Triggers from:** []
-
-
-**Periodic builds:**
-```bash
-
-```
-
----
-
 ## [jenkins-process](https://cmssdt.cern.ch/jenkins/job/jenkins-process)
 
 **Description:** None
