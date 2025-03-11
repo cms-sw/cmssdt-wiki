@@ -1642,6 +1642,32 @@ H H * * *
 
 ---
 
+## [cvmfs-cms-check-and-update-gen-model_config](https://cmssdt.cern.ch/jenkins/job/cvmfs-cms-check-and-update-gen-model_config)
+
+**Description:** This job checks and updates generators model configurations
+
+
+
+**Project is `enabled`.**
+
+**Upstream projects:**
+
+**Downstream projects:**
+* [cvmfs-cms-check-eos-dir](#cvmfs-cms-check-eos-dir):
+
+**Sub-projects:**
+* [cvmfs-cms-check-eos-dir](#cvmfs-cms-check-eos-dir):
+
+**Triggers from:** []
+
+
+**Periodic builds:**
+```bash
+Not periodically build
+```
+
+---
+
 ## [cvmfs-cms-check-and-update-gridpacks](https://cmssdt.cern.ch/jenkins/job/cvmfs-cms-check-and-update-gridpacks)
 
 **Description:** This job checks and updates gridpacks based on 
@@ -1827,6 +1853,7 @@ H * * * *
 **Project is `enabled`.**
 
 **Upstream projects:**
+* [cvmfs-cms-check-and-update-gen-model_config](#cvmfs-cms-check-and-update-gen-model_config):
 * [cvmfs-cms-check-and-update-premixPUlist](#cvmfs-cms-check-and-update-premixPUlist):
 
 **Downstream projects:**
