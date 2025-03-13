@@ -390,6 +390,28 @@ Not periodically build
 
 ---
 
+## [cvmfs-cms-deploy-gridpacks-untar](https://cmssdt.cern.ch/jenkins/job/cvmfs-cms-deploy-gridpacks-untar)
+
+**Description:** None
+
+**Project is `enabled`.**
+
+**Upstream projects:**
+
+**Downstream projects:**
+
+**Sub-projects:**
+
+**Triggers from:** []
+
+
+**Periodic builds:**
+```bash
+Not periodically build
+```
+
+---
+
 ## [cvmfs-cms-install-COMP-python](https://cmssdt.cern.ch/jenkins/job/cvmfs-cms-install-COMP-python)
 
 **Description:** Job to install python whenever there is a new version pushed on cmsrep.cern.ch <br>
