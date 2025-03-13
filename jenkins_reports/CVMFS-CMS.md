@@ -290,6 +290,28 @@ Not periodically build
 
 ---
 
+## [cvmfs-cms-check-gridpacks-untar](https://cmssdt.cern.ch/jenkins/job/cvmfs-cms-check-gridpacks-untar)
+
+**Description:** None
+
+**Project is `enabled`.**
+
+**Upstream projects:**
+
+**Downstream projects:**
+
+**Sub-projects:**
+
+**Triggers from:** []
+
+
+**Periodic builds:**
+```bash
+Not periodically build
+```
+
+---
+
 ## [cvmfs-cms-crab-symlink](https://cmssdt.cern.ch/jenkins/job/cvmfs-cms-crab-symlink)
 
 **Description:** This changes the /cvmfs/cms.cern.ch/common/crab symlink to point to either crab-pre, crab-prod or crab-dev.<br/>
