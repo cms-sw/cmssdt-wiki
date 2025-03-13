@@ -1908,8 +1908,10 @@ Not periodically build
 **Upstream projects:**
 
 **Downstream projects:**
+* [cvmfs-cms-deploy-gridpacks-untar](#cvmfs-cms-deploy-gridpacks-untar):
 
 **Sub-projects:**
+* [cvmfs-cms-deploy-gridpacks-untar](#cvmfs-cms-deploy-gridpacks-untar):
 
 **Triggers from:** []
 
@@ -2006,6 +2008,7 @@ Not periodically build
 **Project is `enabled`.**
 
 **Upstream projects:**
+* [cvmfs-cms-check-gridpacks-untar](#cvmfs-cms-check-gridpacks-untar):
 
 **Downstream projects:**
 
