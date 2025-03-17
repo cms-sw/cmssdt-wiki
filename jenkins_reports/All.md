@@ -1663,7 +1663,7 @@ H H * * *
 
 **Periodic builds:**
 ```bash
-Not periodically build
+H H * * *
 ```
 
 ---
@@ -1689,7 +1689,7 @@ Not periodically build
 
 **Periodic builds:**
 ```bash
-Not periodically build
+H H * * *
 ```
 
 ---
