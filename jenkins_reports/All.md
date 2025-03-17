@@ -1801,6 +1801,7 @@ H * * * *
 **Project is `enabled`.**
 
 **Upstream projects:**
+* [eos-premixPUlist-list](#eos-premixPUlist-list):
 
 **Downstream projects:**
 * [cvmfs-cms-check-eos-dir](#cvmfs-cms-check-eos-dir):
@@ -2956,8 +2957,10 @@ Not periodically build
 **Upstream projects:**
 
 **Downstream projects:**
+* [cvmfs-cms-check-and-update-premixPUlist](#cvmfs-cms-check-and-update-premixPUlist):
 
 **Sub-projects:**
+* [cvmfs-cms-check-and-update-premixPUlist](#cvmfs-cms-check-and-update-premixPUlist):
 
 **Triggers from:** []
 
