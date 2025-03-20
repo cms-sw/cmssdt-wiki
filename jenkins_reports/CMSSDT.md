@@ -778,6 +778,28 @@ H 15 * * 0
 
 ---
 
+## [doxygen-zip-to-squashFS](https://cmssdt.cern.ch/jenkins/job/doxygen-zip-to-squashFS)
+
+**Description:** None
+
+**Project is `enabled`.**
+
+**Upstream projects:**
+
+**Downstream projects:**
+
+**Sub-projects:**
+
+**Triggers from:** []
+
+
+**Periodic builds:**
+```bash
+Not periodically build
+```
+
+---
+
 ## [dxr-cmssw-cleanup](https://cmssdt.cern.ch/jenkins/job/dxr-cmssw-cleanup)
 
 **Description:** None
