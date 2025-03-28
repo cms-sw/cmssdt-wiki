@@ -1866,7 +1866,7 @@ Not periodically build
 
 **Periodic builds:**
 ```bash
-40 * * * *
+H * * * *
 ```
 
 ---
