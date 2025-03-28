@@ -898,7 +898,7 @@ Will kill a scheduled/running job acording to comments.
   
 </ul>
 
-**Project is `enabled`.**
+**Project is `disabled`.**
 
 **Upstream projects:**
 * [check-future-commit-prs](#check-future-commit-prs):
