@@ -257,7 +257,7 @@ Not periodically build
 
 **Periodic builds:**
 ```bash
-51 * * * *
+H * * * *
 ```
 
 ---
