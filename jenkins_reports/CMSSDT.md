@@ -4530,7 +4530,6 @@ If the job runs for more than several hours, the procedure is to login to build 
 **Project is `enabled`.**
 
 **Upstream projects:**
-* [ib-run-gpu](#ib-run-gpu):
 * [ib-validation](#ib-validation):
 
 **Downstream projects:**

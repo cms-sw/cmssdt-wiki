@@ -1450,28 +1450,6 @@ Not periodically build
 
 ---
 
-## [compare-docker-images](https://cmssdt.cern.ch/jenkins/job/compare-docker-images)
-
-**Description:** avalenzu: testing docker image comparison
-
-**Project is `disabled`.**
-
-**Upstream projects:**
-
-**Downstream projects:**
-
-**Sub-projects:**
-
-**Triggers from:** []
-
-
-**Periodic builds:**
-```bash
-Not periodically build
-```
-
----
-
 ## [compare-material-budget](https://cmssdt.cern.ch/jenkins/job/compare-material-budget)
 
 **Description:** Comopare results of material budget of two releases using Validation/Geometry/test/TrackerMaterialBudgetComparison.C macro
@@ -1568,29 +1546,6 @@ Requestsed by marco.mascheroni@cern.ch and andrea.bocci@cern.ch
 **Periodic builds:**
 ```bash
 Not periodically build
-```
-
----
-
-## [cvmfs-ci-gc](https://cmssdt.cern.ch/jenkins/job/cvmfs-ci-gc)
-
-**Description:** This runs CVMFS GC (once a week)
-
-**Project is `disabled`.**
-
-**Upstream projects:**
-
-**Downstream projects:**
-
-**Sub-projects:**
-
-**Triggers from:** []
-
-
-**Periodic builds:**
-```bash
-#Run once on Thursday at 23h05
-H 23  * *  2
 ```
 
 ---
@@ -3906,28 +3861,6 @@ Not periodically build
 
 ---
 
-## [ib-install-cvmfs-gateway](https://cmssdt.cern.ch/jenkins/job/ib-install-cvmfs-gateway)
-
-**Description:** Test job to install IBs in parallel (cvmfs gateway).
-
-**Project is `disabled`.**
-
-**Upstream projects:**
-
-**Downstream projects:**
-
-**Sub-projects:**
-
-**Triggers from:** []
-
-
-**Periodic builds:**
-```bash
-Not periodically build
-```
-
----
-
 ## [ib-install-siteconf](https://cmssdt.cern.ch/jenkins/job/ib-install-siteconf)
 
 **Description:** Update the contents of/cvmfs/REPO/SITECONF from https://github.com/cms-sw/siteconf
@@ -4189,53 +4122,6 @@ Not periodically build
 **Downstream projects:**
 
 **Sub-projects:**
-
-**Triggers from:** []
-
-
-**Periodic builds:**
-```bash
-Not periodically build
-```
-
----
-
-## [ib-run-geometry](https://cmssdt.cern.ch/jenkins/job/ib-run-geometry)
-
-**Description:** Runs geometry comparison tests for each IB
-
-**Project is `disabled`.**
-
-**Upstream projects:**
-
-**Downstream projects:**
-
-**Sub-projects:**
-
-**Triggers from:** []
-
-
-**Periodic builds:**
-```bash
-Not periodically build
-```
-
----
-
-## [ib-run-gpu](https://cmssdt.cern.ch/jenkins/job/ib-run-gpu)
-
-**Description:** Runs Quality Assurance (QA) test on IB. Rezulst are available at 
-<a href="https://cmssdt.cern.ch/SDT/html/cmssdt-ib/">IB page's</a> Q/A section.
-
-**Project is `disabled`.**
-
-**Upstream projects:**
-
-**Downstream projects:**
-* [ib-run-qa](#ib-run-qa):
-
-**Sub-projects:**
-* [ib-run-qa](#ib-run-qa):
 
 **Triggers from:** []
 
@@ -4871,7 +4757,6 @@ If the job runs for more than several hours, the procedure is to login to build 
 **Project is `enabled`.**
 
 **Upstream projects:**
-* [ib-run-gpu](#ib-run-gpu):
 * [ib-validation](#ib-validation):
 
 **Downstream projects:**

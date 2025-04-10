@@ -8,51 +8,6 @@
 
 # Projects:
 
-## [compare-docker-images](https://cmssdt.cern.ch/jenkins/job/compare-docker-images)
-
-**Description:** avalenzu: testing docker image comparison
-
-**Project is `disabled`.**
-
-**Upstream projects:**
-
-**Downstream projects:**
-
-**Sub-projects:**
-
-**Triggers from:** []
-
-
-**Periodic builds:**
-```bash
-Not periodically build
-```
-
----
-
-## [cvmfs-ci-gc](https://cmssdt.cern.ch/jenkins/job/cvmfs-ci-gc)
-
-**Description:** This runs CVMFS GC (once a week)
-
-**Project is `disabled`.**
-
-**Upstream projects:**
-
-**Downstream projects:**
-
-**Sub-projects:**
-
-**Triggers from:** []
-
-
-**Periodic builds:**
-```bash
-#Run once on Thursday at 23h05
-H 23  * *  2
-```
-
----
-
 ## [cvmfs-cleanup-containers](https://cmssdt.cern.ch/jenkins/job/cvmfs-cleanup-containers)
 
 **Description:** None
@@ -94,75 +49,6 @@ We do not care about older data. By doing it we make Elasticsearch faster.
 **Periodic builds:**
 ```bash
 H 0  * *  0
-```
-
----
-
-## [ib-install-cvmfs-gateway](https://cmssdt.cern.ch/jenkins/job/ib-install-cvmfs-gateway)
-
-**Description:** Test job to install IBs in parallel (cvmfs gateway).
-
-**Project is `disabled`.**
-
-**Upstream projects:**
-
-**Downstream projects:**
-
-**Sub-projects:**
-
-**Triggers from:** []
-
-
-**Periodic builds:**
-```bash
-Not periodically build
-```
-
----
-
-## [ib-run-geometry](https://cmssdt.cern.ch/jenkins/job/ib-run-geometry)
-
-**Description:** Runs geometry comparison tests for each IB
-
-**Project is `disabled`.**
-
-**Upstream projects:**
-
-**Downstream projects:**
-
-**Sub-projects:**
-
-**Triggers from:** []
-
-
-**Periodic builds:**
-```bash
-Not periodically build
-```
-
----
-
-## [ib-run-gpu](https://cmssdt.cern.ch/jenkins/job/ib-run-gpu)
-
-**Description:** Runs Quality Assurance (QA) test on IB. Rezulst are available at 
-<a href="https://cmssdt.cern.ch/SDT/html/cmssdt-ib/">IB page's</a> Q/A section.
-
-**Project is `disabled`.**
-
-**Upstream projects:**
-
-**Downstream projects:**
-* [ib-run-qa](#ib-run-qa):
-
-**Sub-projects:**
-* [ib-run-qa](#ib-run-qa):
-
-**Triggers from:** []
-
-
-**Periodic builds:**
-```bash
-Not periodically build
 ```
 
 ---
