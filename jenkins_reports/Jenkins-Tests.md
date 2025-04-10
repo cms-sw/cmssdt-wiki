@@ -512,28 +512,6 @@ Not periodically build
 
 ---
 
-## [jenkins-test-dummyjob](https://cmssdt.cern.ch/jenkins/job/jenkins-test-dummyjob)
-
-**Description:** Dummy job for testing purposes (@avalenzu)
-
-**Project is `disabled`.**
-
-**Upstream projects:**
-
-**Downstream projects:**
-
-**Sub-projects:**
-
-**Triggers from:** []
-
-
-**Periodic builds:**
-```bash
-Not periodically build
-```
-
----
-
 ## [jenkins-test-gpu](https://cmssdt.cern.ch/jenkins/job/jenkins-test-gpu)
 
 **Description:** None
@@ -1045,28 +1023,6 @@ H/30 * * * *
 
 **Upstream projects:**
 * [jenkins-initialize](#jenkins-initialize):
-
-**Downstream projects:**
-
-**Sub-projects:**
-
-**Triggers from:** []
-
-
-**Periodic builds:**
-```bash
-Not periodically build
-```
-
----
-
-## [jenkins-infrastructure-sanity](https://cmssdt.cern.ch/jenkins/job/jenkins-infrastructure-sanity)
-
-**Description:** None
-
-**Project is `disabled`.**
-
-**Upstream projects:**
 
 **Downstream projects:**
 

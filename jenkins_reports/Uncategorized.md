@@ -30,29 +30,6 @@ Not periodically build
 
 ---
 
-## [es-close-indexes](https://cmssdt.cern.ch/jenkins/job/es-close-indexes)
-
-**Description:** This job keeps last 6 weeks (1.5 months) of data in Elasticsearch open, and it closes older indexes (archive it).
-We do not care about older data. By doing it we make Elasticsearch faster. 
-
-**Project is `disabled`.**
-
-**Upstream projects:**
-
-**Downstream projects:**
-
-**Sub-projects:**
-
-**Triggers from:** []
-
-
-**Periodic builds:**
-```bash
-H 0  * *  0
-```
-
----
-
 ## [ib-run-profiling-gpu](https://cmssdt.cern.ch/jenkins/job/ib-run-profiling-gpu)
 
 **Description:** Runs NSYS on the RECO and PAT steps for high pileup workflow.
@@ -2191,29 +2168,6 @@ Not periodically build
 
 ---
 
-## [refresh-cmssdt](https://cmssdt.cern.ch/jenkins/job/refresh-cmssdt)
-
-**Description:** This job updates the cmssw IB page on cmssdt.
-
-**Project is `disabled`.**
-
-**Upstream projects:**
-* [update-github-pages](#update-github-pages):
-
-**Downstream projects:**
-
-**Sub-projects:**
-
-**Triggers from:** ['update-github-pages']
-
-
-**Periodic builds:**
-```bash
-Not periodically build
-```
-
----
-
 ## [s3-run-speed-test](https://cmssdt.cern.ch/jenkins/job/s3-run-speed-test)
 
 **Description:** None
@@ -2234,30 +2188,6 @@ Not periodically build
 **Periodic builds:**
 ```bash
 H 22 * * *
-```
-
----
-
-## [sync-patatrack-branch](https://cmssdt.cern.ch/jenkins/job/sync-patatrack-branch)
-
-**Description:** - this is to sync patatrack branches <br/>
-- Currently this job does not do any thing (kind of disabled)
-
-
-**Project is `disabled`.**
-
-**Upstream projects:**
-
-**Downstream projects:**
-
-**Sub-projects:**
-
-**Triggers from:** []
-
-
-**Periodic builds:**
-```bash
-55 * * * *
 ```
 
 ---

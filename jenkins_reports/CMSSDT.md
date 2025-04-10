@@ -1901,28 +1901,6 @@ Not periodically build
 
 ---
 
-## [simple-cms-bot](https://cmssdt.cern.ch/jenkins/job/simple-cms-bot)
-
-**Description:** None
-
-**Project is `enabled`.**
-
-**Upstream projects:**
-
-**Downstream projects:**
-
-**Sub-projects:**
-
-**Triggers from:** []
-
-
-**Periodic builds:**
-```bash
-Not periodically build
-```
-
----
-
 ## [sync-profile-data](https://cmssdt.cern.ch/jenkins/job/sync-profile-data)
 
 **Description:** None
@@ -5550,7 +5528,6 @@ If it fails, one just needs to check that the next build was successful so that 
 * [process-relval-logs](#process-relval-logs):
 
 **Downstream projects:**
-* [refresh-cmssdt](#refresh-cmssdt):
 * [summary-of-merged-prs](#summary-of-merged-prs):
 
 **Sub-projects:**

@@ -2949,29 +2949,6 @@ H H * * *
 
 ---
 
-## [es-close-indexes](https://cmssdt.cern.ch/jenkins/job/es-close-indexes)
-
-**Description:** This job keeps last 6 weeks (1.5 months) of data in Elasticsearch open, and it closes older indexes (archive it).
-We do not care about older data. By doing it we make Elasticsearch faster. 
-
-**Project is `disabled`.**
-
-**Upstream projects:**
-
-**Downstream projects:**
-
-**Sub-projects:**
-
-**Triggers from:** []
-
-
-**Periodic builds:**
-```bash
-H 0  * *  0
-```
-
----
-
 ## [es-cmssw-afs-eos](https://cmssdt.cern.ch/jenkins/job/es-cmssw-afs-eos)
 
 **Description:** None
@@ -5400,28 +5377,6 @@ Not periodically build
 
 ---
 
-## [jenkins-infrastructure-sanity](https://cmssdt.cern.ch/jenkins/job/jenkins-infrastructure-sanity)
-
-**Description:** None
-
-**Project is `disabled`.**
-
-**Upstream projects:**
-
-**Downstream projects:**
-
-**Sub-projects:**
-
-**Triggers from:** []
-
-
-**Periodic builds:**
-```bash
-Not periodically build
-```
-
----
-
 ## [jenkins-infrastructure-sanity-check](https://cmssdt.cern.ch/jenkins/job/jenkins-infrastructure-sanity-check)
 
 **Description:** None
@@ -5921,28 +5876,6 @@ Not periodically build
 **Description:** None
 
 **Project is `enabled`.**
-
-**Upstream projects:**
-
-**Downstream projects:**
-
-**Sub-projects:**
-
-**Triggers from:** []
-
-
-**Periodic builds:**
-```bash
-Not periodically build
-```
-
----
-
-## [jenkins-test-dummyjob](https://cmssdt.cern.ch/jenkins/job/jenkins-test-dummyjob)
-
-**Description:** Dummy job for testing purposes (@avalenzu)
-
-**Project is `disabled`.**
 
 **Upstream projects:**
 
@@ -7301,29 +7234,6 @@ Not periodically build
 
 ---
 
-## [refresh-cmssdt](https://cmssdt.cern.ch/jenkins/job/refresh-cmssdt)
-
-**Description:** This job updates the cmssw IB page on cmssdt.
-
-**Project is `disabled`.**
-
-**Upstream projects:**
-* [update-github-pages](#update-github-pages):
-
-**Downstream projects:**
-
-**Sub-projects:**
-
-**Triggers from:** ['update-github-pages']
-
-
-**Periodic builds:**
-```bash
-Not periodically build
-```
-
----
-
 ## [reindex-elasticsearch-indexes](https://cmssdt.cern.ch/jenkins/job/reindex-elasticsearch-indexes)
 
 **Description:** Job to reindex existing indexes whenever the template schema is changed or for whatever other reason
@@ -7638,28 +7548,6 @@ Not periodically build
 
 ---
 
-## [simple-cms-bot](https://cmssdt.cern.ch/jenkins/job/simple-cms-bot)
-
-**Description:** None
-
-**Project is `enabled`.**
-
-**Upstream projects:**
-
-**Downstream projects:**
-
-**Sub-projects:**
-
-**Triggers from:** []
-
-
-**Periodic builds:**
-```bash
-Not periodically build
-```
-
----
-
 ## [slaves-checks](https://cmssdt.cern.ch/jenkins/job/slaves-checks)
 
 **Description:** A wrapper project that starts a 
@@ -7726,30 +7614,6 @@ as deploys on the web server. It is used to generate <a href="https://cmssdt.cer
 **Periodic builds:**
 ```bash
 Not periodically build
-```
-
----
-
-## [sync-patatrack-branch](https://cmssdt.cern.ch/jenkins/job/sync-patatrack-branch)
-
-**Description:** - this is to sync patatrack branches <br/>
-- Currently this job does not do any thing (kind of disabled)
-
-
-**Project is `disabled`.**
-
-**Upstream projects:**
-
-**Downstream projects:**
-
-**Sub-projects:**
-
-**Triggers from:** []
-
-
-**Periodic builds:**
-```bash
-55 * * * *
 ```
 
 ---
@@ -8300,7 +8164,6 @@ If it fails, one just needs to check that the next build was successful so that 
 * [process-relval-logs](#process-relval-logs):
 
 **Downstream projects:**
-* [refresh-cmssdt](#refresh-cmssdt):
 * [summary-of-merged-prs](#summary-of-merged-prs):
 
 **Sub-projects:**
