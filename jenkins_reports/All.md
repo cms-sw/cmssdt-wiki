@@ -2949,6 +2949,29 @@ H H * * *
 
 ---
 
+## [es-close-indexes](https://cmssdt.cern.ch/jenkins/job/es-close-indexes)
+
+**Description:** This job keeps last 4 weeks of data in Elasticsearch open, and it closes older indexes (archive it).
+We do not care about older data. By doing it we make Elasticsearch faster. 
+
+**Project is `enabled`.**
+
+**Upstream projects:**
+
+**Downstream projects:**
+
+**Sub-projects:**
+
+**Triggers from:** []
+
+
+**Periodic builds:**
+```bash
+Not periodically build
+```
+
+---
+
 ## [es-cmssw-afs-eos](https://cmssdt.cern.ch/jenkins/job/es-cmssw-afs-eos)
 
 **Description:** None
