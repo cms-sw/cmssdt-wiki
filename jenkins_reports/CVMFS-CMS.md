@@ -80,7 +80,7 @@ H * * * *
 
 **Periodic builds:**
 ```bash
-H * * * *
+H/10 * * * *
 ```
 
 ---
