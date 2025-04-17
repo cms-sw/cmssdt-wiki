@@ -54,7 +54,7 @@ H H * * *
 
 **Periodic builds:**
 ```bash
-H H * * *
+H * * * *
 ```
 
 ---
@@ -80,7 +80,7 @@ H H * * *
 
 **Periodic builds:**
 ```bash
-H H * * *
+H * * * *
 ```
 
 ---
@@ -310,7 +310,7 @@ Not periodically build
 
 **Periodic builds:**
 ```bash
-H H * * *
+H * * * *
 ```
 
 ---
