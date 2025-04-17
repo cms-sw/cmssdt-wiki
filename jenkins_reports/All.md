@@ -2460,6 +2460,28 @@ Not periodically build
 
 ---
 
+## [cvmfs-list-catalogs](https://cmssdt.cern.ch/jenkins/job/cvmfs-list-catalogs)
+
+**Description:** None
+
+**Project is `enabled`.**
+
+**Upstream projects:**
+
+**Downstream projects:**
+
+**Sub-projects:**
+
+**Triggers from:** []
+
+
+**Periodic builds:**
+```bash
+Not periodically build
+```
+
+---
+
 ## [cvmfs-list-catelogs](https://cmssdt.cern.ch/jenkins/job/cvmfs-list-catelogs)
 
 **Description:** None
