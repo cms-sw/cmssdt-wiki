@@ -680,6 +680,7 @@ Not periodically build
 **Project is `enabled`.**
 
 **Upstream projects:**
+* [cvmfs-project-install-cuda](#cvmfs-project-install-cuda):
 
 **Downstream projects:**
 
@@ -770,8 +771,10 @@ Not periodically build
 **Upstream projects:**
 
 **Downstream projects:**
+* [cvmfs-install-cuda](#cvmfs-install-cuda):
 
 **Sub-projects:**
+* [cvmfs-install-cuda](#cvmfs-install-cuda):
 
 **Triggers from:** []
 
