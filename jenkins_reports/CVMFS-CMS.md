@@ -761,6 +761,28 @@ Not periodically build
 
 ---
 
+## [cvmfs-project-install-cuda](https://cmssdt.cern.ch/jenkins/job/cvmfs-project-install-cuda)
+
+**Description:** None
+
+**Project is `enabled`.**
+
+**Upstream projects:**
+
+**Downstream projects:**
+
+**Sub-projects:**
+
+**Triggers from:** []
+
+
+**Periodic builds:**
+```bash
+Not periodically build
+```
+
+---
+
 ## [eos-premixPUlist-list](https://cmssdt.cern.ch/jenkins/job/eos-premixPUlist-list)
 
 **Description:** None
