@@ -1663,7 +1663,7 @@ Not periodically build
 
 ## [ngt-create-session](https://cmssdt.cern.ch/jenkins/job/ngt-create-session)
 
-**Description:** None
+**Description:** Job to create NGT Session and add it a jenkins agent
 
 **Project is `enabled`.**
 
