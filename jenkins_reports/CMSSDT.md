@@ -1661,6 +1661,28 @@ Not periodically build
 
 ---
 
+## [ngt-create-session](https://cmssdt.cern.ch/jenkins/job/ngt-create-session)
+
+**Description:** None
+
+**Project is `enabled`.**
+
+**Upstream projects:**
+
+**Downstream projects:**
+
+**Sub-projects:**
+
+**Triggers from:** []
+
+
+**Periodic builds:**
+```bash
+Not periodically build
+```
+
+---
+
 ## [pr-publish-cmssw](https://cmssdt.cern.ch/jenkins/job/pr-publish-cmssw)
 
 **Description:** None

@@ -6856,6 +6856,28 @@ Not periodically build
 
 ---
 
+## [ngt-create-session](https://cmssdt.cern.ch/jenkins/job/ngt-create-session)
+
+**Description:** None
+
+**Project is `enabled`.**
+
+**Upstream projects:**
+
+**Downstream projects:**
+
+**Sub-projects:**
+
+**Triggers from:** []
+
+
+**Periodic builds:**
+```bash
+Not periodically build
+```
+
+---
+
 ## [nodes-sanity-check](https://cmssdt.cern.ch/jenkins/job/nodes-sanity-check)
 
 **Description:** 
