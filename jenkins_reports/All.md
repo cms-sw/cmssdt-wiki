@@ -6317,6 +6317,28 @@ Not periodically build
 
 ---
 
+## [jenkins-test-ngt-amd](https://cmssdt.cern.ch/jenkins/job/jenkins-test-ngt-amd)
+
+**Description:** None
+
+**Project is `enabled`.**
+
+**Upstream projects:**
+
+**Downstream projects:**
+
+**Sub-projects:**
+
+**Triggers from:** []
+
+
+**Periodic builds:**
+```bash
+Not periodically build
+```
+
+---
+
 ## [jenkins-test-parser](https://cmssdt.cern.ch/jenkins/job/jenkins-test-parser)
 
 **Description:** avalenzu: debug
