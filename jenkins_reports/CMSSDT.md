@@ -3060,11 +3060,13 @@ Will kill a scheduled/running job acording to comments.
 
 **Upstream projects:**
 * [check-future-commit-prs](#check-future-commit-prs):
+* [cms-bot](#cms-bot):
 * [compare-root-files-short-matrix](#compare-root-files-short-matrix):
 * [github-webhook](#github-webhook):
 
 **Downstream projects:**
 * [abort-pr-tests](#abort-pr-tests):
+* [cms-bot](#cms-bot):
 * [ib-schedule-pr-tests](#ib-schedule-pr-tests):
 * [query-new-data-repo-issues](#query-new-data-repo-issues):
 * [run-pr-code-checks](#run-pr-code-checks):
@@ -3074,6 +3076,7 @@ Will kill a scheduled/running job acording to comments.
 * [abort-pr-tests ](#abort-pr-tests ):
 * [run-pr-code-checks](#run-pr-code-checks):
 * [query-new-data-repo-issues](#query-new-data-repo-issues):
+* [cms-bot](#cms-bot):
 
 **Triggers from:** []
 
