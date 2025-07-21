@@ -1202,10 +1202,10 @@ Not periodically build
 **Upstream projects:**
 
 **Downstream projects:**
-* [ib-run-relvals](#ib-run-relvals):
+* [ib-run-qa](#ib-run-qa):
 
 **Sub-projects:**
-* [ib-run-relvals](#ib-run-relvals):
+* [ib-run-qa](#ib-run-qa):
 
 **Triggers from:** []
 
@@ -4626,6 +4626,7 @@ If the job runs for more than several hours, the procedure is to login to build 
 **Project is `enabled`.**
 
 **Upstream projects:**
+* [ib-run-gpu-qa](#ib-run-gpu-qa):
 * [ib-validation](#ib-validation):
 
 **Downstream projects:**
@@ -4653,7 +4654,6 @@ This failure can be found by looking for a gap of several hours in the log file 
 **Project is `enabled`.**
 
 **Upstream projects:**
-* [ib-run-gpu-qa](#ib-run-gpu-qa):
 * [ib-run-gpu-relvals](#ib-run-gpu-relvals):
 * [ib-validation](#ib-validation):
 
