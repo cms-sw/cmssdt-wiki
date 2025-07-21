@@ -4205,6 +4205,30 @@ Not periodically build
 
 ---
 
+## [ib-run-gpu-qa](https://cmssdt.cern.ch/jenkins/job/ib-run-gpu-qa)
+
+**Description:** None
+
+**Project is `enabled`.**
+
+**Upstream projects:**
+
+**Downstream projects:**
+* [ib-run-relvals](#ib-run-relvals):
+
+**Sub-projects:**
+* [ib-run-relvals](#ib-run-relvals):
+
+**Triggers from:** []
+
+
+**Periodic builds:**
+```bash
+Not periodically build
+```
+
+---
+
 ## [ib-run-gpu-relvals](https://cmssdt.cern.ch/jenkins/job/ib-run-gpu-relvals)
 
 **Description:** None
@@ -4880,6 +4904,7 @@ This failure can be found by looking for a gap of several hours in the log file 
 **Project is `enabled`.**
 
 **Upstream projects:**
+* [ib-run-gpu-qa](#ib-run-gpu-qa):
 * [ib-run-gpu-relvals](#ib-run-gpu-relvals):
 * [ib-validation](#ib-validation):
 
