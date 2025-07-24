@@ -8345,7 +8345,7 @@ It downloads our github pages, parses the log files, updates the documentation a
 In this case, the job is automatically triggered after some minutes. 
 If it fails, one just needs to check that the next build was successful so that pages are updated correctly.
 
-**Project is `enabled`.**
+**Project is `disabled`.**
 
 **Upstream projects:**
 * [cleanup-cms-sw-io-history](#cleanup-cms-sw-io-history):
