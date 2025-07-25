@@ -2168,36 +2168,6 @@ Not periodically build
 
 ---
 
-## [process-relval-logs](https://cmssdt.cern.ch/jenkins/job/process-relval-logs)
-
-**Description:** This job process partial logs of Relvals and place files accordingly.<br/>
-There is no need to re-try newer run is successful or running. If it keeps on failing then one need 
-to check the logs and find out the reason of failure. In that case some manual work is needed to cleanup
-cmssdt.cern.ch logs.
-
-**Project is `disabled`.**
-
-**Upstream projects:**
-* [ib-run-relvals](#ib-run-relvals):
-
-**Downstream projects:**
-* [process-relval-logs-cleanup](#process-relval-logs-cleanup):
-* [update-github-pages](#update-github-pages):
-
-**Sub-projects:**
-* [update-github-pages](#update-github-pages):
-* [process-relval-logs-cleanup](#process-relval-logs-cleanup):
-
-**Triggers from:** []
-
-
-**Periodic builds:**
-```bash
-H/20 * * * *
-```
-
----
-
 ## [s3-run-speed-test](https://cmssdt.cern.ch/jenkins/job/s3-run-speed-test)
 
 **Description:** None

@@ -7291,7 +7291,7 @@ There is no need to re-try newer run is successful or running. If it keeps on fa
 to check the logs and find out the reason of failure. In that case some manual work is needed to cleanup
 cmssdt.cern.ch logs.
 
-**Project is `disabled`.**
+**Project is `enabled`.**
 
 **Upstream projects:**
 * [ib-run-relvals](#ib-run-relvals):
