@@ -636,6 +636,7 @@ H */6 * * *
 
 **Upstream projects:**
 * [check-cvmfs-releases-map](#check-cvmfs-releases-map):
+* [update-release-map](#update-release-map):
 
 **Downstream projects:**
 

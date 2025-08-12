@@ -5701,6 +5701,7 @@ CVMFS installation is started once a release is available in this file.
 * [build-fwlite](#build-fwlite):
 * [cmssw-doxygen](#cmssw-doxygen):
 * [cvmfs-cms-install-cms](#cvmfs-cms-install-cms):
+* [cvmfs-cms-update-releases-map](#cvmfs-cms-update-releases-map):
 * [ib-run-cfipython](#ib-run-cfipython):
 
 **Sub-projects:**
