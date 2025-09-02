@@ -3130,7 +3130,7 @@ H 15 * * *
 
 **Periodic builds:**
 ```bash
-Not periodically build
+H/10 * * * *
 ```
 
 ---
