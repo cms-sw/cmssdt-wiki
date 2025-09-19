@@ -162,7 +162,7 @@ H H * * *
 
 ## [cvmfs-cms-check-and-update-metadata](https://cmssdt.cern.ch/jenkins/job/cvmfs-cms-check-and-update-metadata)
 
-**Description:** Job to deploy the contents of https://gitlab.cern.ch/cms-analysis-metadata to /cvmfs/cms-griddata.cern.ch/cat
+**Description:** Job to deploy the contents of https://gitlab.cern.ch/cms-analysis-corrections to /cvmfs/cms-griddata.cern.ch/cat
 
 **Project is `enabled`.**
 
