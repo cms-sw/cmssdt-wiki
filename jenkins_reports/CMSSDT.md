@@ -1133,6 +1133,31 @@ Not periodically build
 
 ---
 
+## [ib-run-allocmon-profiling](https://cmssdt.cern.ch/jenkins/job/ib-run-allocmon-profiling)
+
+**Description:** Runs FastTimerService and Igprof on the RECO and PAT steps for high pileup workflow.
+
+
+
+**Project is `enabled`.**
+
+**Upstream projects:**
+* [ib-run-profiling](#ib-run-profiling):
+
+**Downstream projects:**
+
+**Sub-projects:**
+
+**Triggers from:** []
+
+
+**Periodic builds:**
+```bash
+Not periodically build
+```
+
+---
+
 ## [ib-run-baseline](https://cmssdt.cern.ch/jenkins/job/ib-run-baseline)
 
 **Description:** This job generates the IB baseline. It is two phase job<br/>
@@ -4599,6 +4624,7 @@ Not periodically build
 **Upstream projects:**
 
 **Downstream projects:**
+* [ib-run-allocmon-profiling](#ib-run-allocmon-profiling):
 * [run-vtune-profiling](#run-vtune-profiling):
 * [sync-profile-data](#sync-profile-data):
 
