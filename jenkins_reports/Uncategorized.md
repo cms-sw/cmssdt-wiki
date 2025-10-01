@@ -30,6 +30,29 @@ Not periodically build
 
 ---
 
+## [git-notify-build-results](https://cmssdt.cern.ch/jenkins/job/git-notify-build-results)
+
+**Description:** Triggered when new IB results are available and send a Mattermost notification if there are new failures
+
+**Project is `disabled`.**
+
+**Upstream projects:**
+* [github-push-hook](#github-push-hook):
+
+**Downstream projects:**
+
+**Sub-projects:**
+
+**Triggers from:** []
+
+
+**Periodic builds:**
+```bash
+Not periodically build
+```
+
+---
+
 ## [ib-run-profiling-gpu](https://cmssdt.cern.ch/jenkins/job/ib-run-profiling-gpu)
 
 **Description:** Runs NSYS on the RECO and PAT steps for high pileup workflow.
