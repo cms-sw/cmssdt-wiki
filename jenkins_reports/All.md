@@ -3284,7 +3284,7 @@ Not periodically build
 
 **Description:** Triggered when new IB results are available and send a Mattermost notification if there are new failures
 
-**Project is `disabled`.**
+**Project is `enabled`.**
 
 **Upstream projects:**
 * [github-push-hook](#github-push-hook):
