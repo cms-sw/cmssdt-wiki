@@ -466,9 +466,15 @@ Not periodically build
 
 ## [cvmfs-cms-reseed](https://cmssdt.cern.ch/jenkins/job/cvmfs-cms-reseed)
 
-**Description:** This job installs packages using cmspkg tool
-To be used for - CRAB3, PHEDEX, spacemon-client, python, releases(cmssw), cms-common
-Triggered by webhook
+**Description:** This rebuild the RPM DB on cvmfs by re-seeding the system packages. This is needed in order to get the newer features provides by new versions of system packages.<br/>
+For exmaple, sometime an expternal builds and installs fine for IBs but when build and uploaded for Release then we might get install errors like<br/>
+<pre>
+  error: Failed dependencies:
+    libcrypto.so.3(OPENSSL_3.2.0)(64bit) is needed by external+py3-cryptography+45.0.4-bbe4987a111798bac173b7ad286acc92-1-1.x86_64
+</pre>
+
+this is because we might have updated our cmssw-elX image and it might have a newer feature of OpenSSL. As RPM database was generated using old image so that is why it does not contain the new feature. Running this job will use the new image and re-seed the OpenSSL.
+
 
 **Project is `enabled`.**
 
