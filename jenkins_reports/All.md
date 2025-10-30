@@ -4715,7 +4715,7 @@ better to wait for the service to get healthy.
 
 
 
-**Project is `enabled`.**
+**Project is `disabled`.**
 
 **Upstream projects:**
 * [ib-schedule-pr-tests](#ib-schedule-pr-tests):
