@@ -53,48 +53,6 @@ Not periodically build
 
 ---
 
-## [ib-run-pr-tests](https://cmssdt.cern.ch/jenkins/job/ib-run-pr-tests)
-
-**Description:** This is CMSSw CI Job which runs the build and unit tests part of CI. 
-It first kills any other job whcih is running for same PullRequests/Architecture. and then starts the build process.
-Once the build process if done then it trigger other jobs to start the deployment of the build artifects on CVMFS and
-start the tests. at the end it run the unit tests. Unit tests are run here as it needs the CMSSW/tmp directory which
-is not deployed on CVMFS.
-
-<b>Q/A:</b>
-In case this job fails then in most cases just re-try it. In case it is failed due to network/github issues then it is
-better to wait for the service to get healthy.
-
-
-
-
-**Project is `disabled`.**
-
-**Upstream projects:**
-* [ib-schedule-pr-tests](#ib-schedule-pr-tests):
-
-**Downstream projects:**
-* [abort-pr-tests](#abort-pr-tests):
-* [ib-run-pr-wait-deployment](#ib-run-pr-wait-deployment):
-* [pr-publish-cmssw](#pr-publish-cmssw):
-* [update-das-queries](#update-das-queries):
-
-**Sub-projects:**
-* [abort-pr-tests](#abort-pr-tests):
-* [pr-publish-cmssw](#pr-publish-cmssw):
-* [ib-run-pr-wait-deployment](#ib-run-pr-wait-deployment):
-* [update-das-queries ](#update-das-queries ):
-
-**Triggers from:** []
-
-
-**Periodic builds:**
-```bash
-Not periodically build
-```
-
----
-
 ## [ib-run-profiling-gpu](https://cmssdt.cern.ch/jenkins/job/ib-run-profiling-gpu)
 
 **Description:** Runs NSYS on the RECO and PAT steps for high pileup workflow.
