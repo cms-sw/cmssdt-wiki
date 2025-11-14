@@ -8393,6 +8393,28 @@ Not periodically build
 
 ---
 
+## [update-external-elastic-stats](https://cmssdt.cern.ch/jenkins/job/update-external-elastic-stats)
+
+**Description:** This job process resource metrics jsons for externals
+
+**Project is `enabled`.**
+
+**Upstream projects:**
+
+**Downstream projects:**
+
+**Sub-projects:**
+
+**Triggers from:** []
+
+
+**Periodic builds:**
+```bash
+H 22-23 * * *
+```
+
+---
+
 ## [update-github-pages](https://cmssdt.cern.ch/jenkins/job/update-github-pages)
 
 **Description:** This job update contents of the "data" directory in cms-sw.github.io. 
