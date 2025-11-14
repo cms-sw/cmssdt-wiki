@@ -8410,7 +8410,7 @@ Not periodically build
 
 **Periodic builds:**
 ```bash
-H 22-23 * * *
+H 10,22 * * *
 ```
 
 ---

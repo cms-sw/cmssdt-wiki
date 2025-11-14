@@ -2406,6 +2406,28 @@ Not periodically build
 
 ---
 
+## [update-external-elastic-stats](https://cmssdt.cern.ch/jenkins/job/update-external-elastic-stats)
+
+**Description:** This job process resource metrics jsons for externals
+
+**Project is `enabled`.**
+
+**Upstream projects:**
+
+**Downstream projects:**
+
+**Sub-projects:**
+
+**Triggers from:** []
+
+
+**Periodic builds:**
+```bash
+H 10,22 * * *
+```
+
+---
+
 ## [update-pr-status](https://cmssdt.cern.ch/jenkins/job/update-pr-status)
 
 **Description:** None
@@ -5654,28 +5676,6 @@ It also creates cmsdist PR with the new release tag
 **Periodic builds:**
 ```bash
 Not periodically build
-```
-
----
-
-## [update-external-elastic-stats](https://cmssdt.cern.ch/jenkins/job/update-external-elastic-stats)
-
-**Description:** This job process resource metrics jsons for externals
-
-**Project is `enabled`.**
-
-**Upstream projects:**
-
-**Downstream projects:**
-
-**Sub-projects:**
-
-**Triggers from:** []
-
-
-**Periodic builds:**
-```bash
-H 22-23 * * *
 ```
 
 ---
