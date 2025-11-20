@@ -7319,7 +7319,7 @@ Not periodically build
 
 **Description:** This job process resource metrics jsons for externals
 
-**Project is `enabled`.**
+**Project is `disabled`.**
 
 **Upstream projects:**
 * [build-any-ib](#build-any-ib):
