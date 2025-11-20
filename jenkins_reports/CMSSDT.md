@@ -5254,6 +5254,30 @@ Not periodically build
 
 ---
 
+## [process-external-elastic-stats](https://cmssdt.cern.ch/jenkins/job/process-external-elastic-stats)
+
+**Description:** This job process resource metrics jsons for externals
+
+**Project is `enabled`.**
+
+**Upstream projects:**
+* [build-any-ib](#build-any-ib):
+* [cms-spack-ib](#cms-spack-ib):
+
+**Downstream projects:**
+
+**Sub-projects:**
+
+**Triggers from:** []
+
+
+**Periodic builds:**
+```bash
+H 22-23 * * *
+```
+
+---
+
 ## [process-relval-logs](https://cmssdt.cern.ch/jenkins/job/process-relval-logs)
 
 **Description:** This job process partial logs of Relvals and place files accordingly.<br/>
