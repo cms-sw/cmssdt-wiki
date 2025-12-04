@@ -733,6 +733,28 @@ Not periodically build
 
 ---
 
+## [jenkins-test-lxplus-env](https://cmssdt.cern.ch/jenkins/job/jenkins-test-lxplus-env)
+
+**Description:** None
+
+**Project is `enabled`.**
+
+**Upstream projects:**
+
+**Downstream projects:**
+
+**Sub-projects:**
+
+**Triggers from:** []
+
+
+**Periodic builds:**
+```bash
+Not periodically build
+```
+
+---
+
 ## [jenkins-test-lxplus-future](https://cmssdt.cern.ch/jenkins/job/jenkins-test-lxplus-future)
 
 **Description:** None
