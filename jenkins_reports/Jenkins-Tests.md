@@ -735,7 +735,8 @@ Not periodically build
 
 ## [jenkins-test-lxplus-env](https://cmssdt.cern.ch/jenkins/job/jenkins-test-lxplus-env)
 
-**Description:** None
+**Description:** testing lxplus env.
+Delete me as soon as possible
 
 **Project is `enabled`.**
 
