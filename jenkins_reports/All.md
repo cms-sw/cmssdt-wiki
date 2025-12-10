@@ -10,10 +10,35 @@
 
 ## [abort-jenkins-job](https://cmssdt.cern.ch/jenkins/job/abort-jenkins-job)
 
-**Description:** Kill a running job (by default it is 'ib-run-pr-tests' and jobs started by it).
+**Description:** <h2 style="color:#c0392b; font-weight:bold;">🚨 abort-jenkins-job</h2>
 
-The idea is that if pull request was updated, all the test should be restarted. This job will kill all the running jobs for that
-PR (with matching parameters). It will ignore the given job ID - the ID of upstream job that started this job.
+<p style="font-size:14px; color:#2c3e50;">
+<b>Description:</b> Kill a running Jenkins job (default: <i>ib-run-pr-tests</i>) and any jobs started by it.  
+The purpose is to ensure that when a pull request (PR) is updated, all related tests restart cleanly.  
+This job terminates all matching running jobs for that PR, while ignoring the job ID of the upstream job that triggered it.
+</p>
+
+<h3 style="color:#8e44ad;">🎯 Purpose</h3>
+<p style="font-size:14px; line-height:1.6;">
+Kills running Jenkins jobs for a given pull request, except the upstream job that initiated this job.
+</p>
+
+<h3 style="color:#27ae60;">📌 Key Features</h3>
+<ul style="font-size:14px; line-height:1.6; padding-left:20px;">
+  <li>🔹 <strong>Kills matching Jenkins jobs</strong> based on <i>JENKINS_PROJECT_TO_KILL</i> and parameters (<i>JENKINS_PROJECT_PARAMS</i>).</li>
+  <li>🔹 <strong>Ignores upstream job</strong> identified by <i>IGNORE_JOB_BUILD_NUMBER</i> to prevent killing its own parent.</li>
+  <li>🔹 <strong>Supports extra filtering</strong> via <i>EXTRA_PARAMS</i> to refine which jobs should be terminated.</li>
+  <li>🔹 <strong>Auto-stops stuck jobs</strong> after 5 minutes to prevent unnecessary resource usage.</li>
+  <li>🔹 <strong>Automatically cleans old builds</strong> (keeps builds for 3 days or a maximum of 50).</li>
+  <li>🔹 <strong>Optimized for speed</strong> so PR test jobs can restart quickly without delays.</li>
+</ul>
+
+<hr/>
+
+<p style="color:#34495e; font-size:13px;">
+💡 <i>This job ensures killing a running Jenkin job with its children processes. </i>
+</p>
+
 
 **Project is `enabled`.**
 
