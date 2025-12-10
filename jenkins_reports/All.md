@@ -63,7 +63,35 @@ Not periodically build
 
 ## [abort-pr-tests](https://cmssdt.cern.ch/jenkins/job/abort-pr-tests)
 
-**Description:** This job basically triggers the `abort-jenkins-jobs` job for all the jobs related to PR tests.
+**Description:** <h2 style="color:#d35400; font-weight:bold;">🚨 abort-pr-tests</h2>
+
+<p style="font-size:14px; color:#2c3e50;">
+<b>Description:</b> This job triggers the <i>abort-jenkins-jobs</i> job for all Jenkins jobs related to PR tests.
+</p>
+
+<h3 style="color:#8e44ad;">🎯 Purpose</h3>
+<p style="font-size:14px; line-height:1.6;">
+This job aborts all Jenkins PR test jobs associated with a specific PR.
+</p>
+
+<h3 style="color:#27ae60;">📌 Key Features</h3>
+<ul style="font-size:14px; line-height:1.6; padding-left:20px;">
+  <li>🔹 <strong>Generates kill-job parameter files</strong> for each PR test job and triggers the <i>abort-jenkins-jobs</i> job to terminate them.</li>
+  <li>🔹 <strong>Protects the upstream job</strong> by excluding the parent job that matches <i>IGNORE_JOB_BUILD_NUMBER</i> from termination.</li>
+  <li>🔹 <strong>Automatically triggers abort-jenkins-job</strong> to kill all running processes for any project starting with <strong>ib-run-pr</strong>.</li>
+</ul>
+
+<h4 style="color:#c0392b;">📝 Note</h4>
+<p style="font-size:13px; color:#34495e;">
+In the future, if additional jobs need to be included, they must be added under the <strong>ib-run-pr</strong> naming prefix.
+</p>
+
+<hr/>
+
+<p style="color:#34495e; font-size:13px;">
+💡 <i>This job ensures killing all Jenkins jobs related to PR.</i>
+</p>
+
 
 **Project is `enabled`.**
 
@@ -90,6 +118,36 @@ Not periodically build
 ## [abort-release](https://cmssdt.cern.ch/jenkins/job/abort-release)
 
 **Description:** Aborts and kills a release building process.
+<h2 style="color:#e74c3c; font-weight:bold;">🛑 abort-release</h2>
+
+<p style="font-size:14px; color:#2c3e50;">
+<b>Description:</b> Aborts and kills a release building process.
+</p>
+
+<h3 style="color:#8e44ad;">🎯 Purpose</h3>
+<p style="font-size:14px; line-height:1.6;">
+This job detects, aborts, and cleans up any running or stuck CMSSW release build.  
+It terminates active build processes and removes leftover workspace files to ensure a clean, stable environment for new release builds.
+</p>
+
+<h3 style="color:#27ae60;">📌 How It Works</h3>
+<p style="font-size:14px;">Internally, the job executes two Groovy scripts via the Jenkins CLI:</p>
+
+<ul style="font-size:14px; line-height:1.6; padding-left:20px;">
+  <li>🔹 <strong>kill-jenkins-job.groovy</strong> — Aborts active Jenkins build jobs that match the specified CMSSW release version.</li>
+  <li>🔹 <strong>kill-build-release.groovy</strong> — Cleans up stale or incomplete build directories and artifacts, with optional <i>dry-run</i> support.</li>
+</ul>
+
+<p style="font-size:14px; line-height:1.6;">
+Together, these scripts ensure that no leftover processes or files interfere with new CMSSW release builds.
+</p>
+
+<hr/>
+
+<p style="color:#34495e; font-size:13px;">
+💡 <i>This job ensures clean, conflict-free CMSSW release builds.</i>
+</p>
+
 
 **Project is `enabled`.**
 
