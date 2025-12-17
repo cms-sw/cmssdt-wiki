@@ -5109,6 +5109,7 @@ This failure can be found by looking for a gap of several hours in the log file 
 
 **Upstream projects:**
 * [ib-run-gpu-relvals](#ib-run-gpu-relvals):
+* [ib-run-rntuple-relvals](#ib-run-rntuple-relvals):
 * [ib-validation](#ib-validation):
 
 **Downstream projects:**
@@ -5131,23 +5132,17 @@ Not periodically build
 
 ## [ib-run-rntuple-relvals](https://cmssdt.cern.ch/jenkins/job/ib-run-rntuple-relvals)
 
-**Description:** The job runs release validations, as validations are separated on pieces (1of6 2of6 etc).<br>
-It can fail due to connection issues (e.g. Remote call on machine-XYZ failed).<br>
-
-Sometimes it can also hang during scp copy / ssh (which is usually the last job).
-This failure can be found by looking for a gap of several hours in the log file where the Jenkins job is trying to finish the last test job.
+**Description:** This just triggers ib-run-relvals job with TEST_FLAVAR=rntuple
 
 **Project is `enabled`.**
 
 **Upstream projects:**
 
 **Downstream projects:**
-* [process-relval-logs](#process-relval-logs):
-* [update-das-queries](#update-das-queries):
+* [ib-run-relvals](#ib-run-relvals):
 
 **Sub-projects:**
-* [update-das-queries](#update-das-queries):
-* [process-relval-logs](#process-relval-logs):
+* [ib-run-relvals](#ib-run-relvals):
 
 **Triggers from:** []
 
@@ -7551,7 +7546,6 @@ cmssdt.cern.ch logs.
 
 **Upstream projects:**
 * [ib-run-relvals](#ib-run-relvals):
-* [ib-run-rntuple-relvals](#ib-run-rntuple-relvals):
 
 **Downstream projects:**
 * [process-relval-logs-cleanup](#process-relval-logs-cleanup):
@@ -8556,7 +8550,6 @@ There is no need to retry if it has been rerun successfully after the last failu
 **Upstream projects:**
 * [ib-run-pr-tests](#ib-run-pr-tests):
 * [ib-run-relvals](#ib-run-relvals):
-* [ib-run-rntuple-relvals](#ib-run-rntuple-relvals):
 
 **Downstream projects:**
 
