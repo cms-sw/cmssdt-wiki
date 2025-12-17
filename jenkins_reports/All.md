@@ -5109,7 +5109,6 @@ This failure can be found by looking for a gap of several hours in the log file 
 
 **Upstream projects:**
 * [ib-run-gpu-relvals](#ib-run-gpu-relvals):
-* [ib-run-rntuple-relvals](#ib-run-rntuple-relvals):
 * [ib-validation](#ib-validation):
 
 **Downstream projects:**
@@ -5119,30 +5118,6 @@ This failure can be found by looking for a gap of several hours in the log file 
 **Sub-projects:**
 * [update-das-queries](#update-das-queries):
 * [process-relval-logs](#process-relval-logs):
-
-**Triggers from:** []
-
-
-**Periodic builds:**
-```bash
-Not periodically build
-```
-
----
-
-## [ib-run-rntuple-relvals](https://cmssdt.cern.ch/jenkins/job/ib-run-rntuple-relvals)
-
-**Description:** This just triggers ib-run-relvals job with TEST_FLAVAR=rntuple
-
-**Project is `enabled`.**
-
-**Upstream projects:**
-
-**Downstream projects:**
-* [ib-run-relvals](#ib-run-relvals):
-
-**Sub-projects:**
-* [ib-run-relvals](#ib-run-relvals):
 
 **Triggers from:** []
 
