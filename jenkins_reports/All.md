@@ -409,23 +409,66 @@ Not periodically build
 
 ## [build-docker-container](https://cmssdt.cern.ch/jenkins/job/build-docker-container)
 
-**Description:** This job builds container images and uploads them to dockerhub.<br/>
-<br/>
-Containers are built when either their base image is updated or if changes were made to dockerfile.<br/>
-Failures may arise from the changes in the base image. In this case, the best approach is to log into the machine, reproduce the issue
-and try to adapt the dokerfile accordingly (e.g., changing dependencies, ordering, etc).<br/>
-<br/>
-If the job fails due to a glitch in the infrastructure, retry should work. If the container image is changed, we need to retrigger this job from check-docker-container job (so that the correct checksum is passed to build-docker-container job).
-<br/>
-<br/>
-<br/>
-Since the built container images are left on the machine, this job can also fail due to disk full.<br/>
-There is a separate jenkins job (clean-build-docker-machine) cleaning the images left on the device that runs once a week. In any case, one can always log into the machine and run the docker cleanup as follows:<br/>
-<br/>
-$ docker image prune<br/>
-$ docker system prune --volumes<br/>
-<br/>
-If the ./singularity folder is big enough ($ du -hs /build/cmsbld/jenkins/workspace/.singularity), it can be also removed.<br/>
+**Description:** <h2 style="color:#3498db; font-weight:bold;">🐳 Build Docker Containers</h2>
+
+<p style="font-size:14px; color:#2c3e50;">
+This job builds container images and uploads them to <strong>DockerHub</strong>.
+</p>
+
+<h3 style="color:#8e44ad;">🏗 Build Triggers</h3>
+<p style="font-size:14px; line-height:1.6;">
+Containers are built when either their <strong>base image</strong> is updated or when changes are made to the <strong>Dockerfile</strong>.
+</p>
+
+<h3 style="color:#27ae60;">⚠️ Failure Scenarios & Handling</h3>
+
+<ul style="font-size:14px; line-height:1.6; padding-left:20px;">
+  <li>
+    <strong>Base image changes:</strong> Failures may arise due to updates in the base image.  
+    In this case, log into the machine, reproduce the issue, and adapt the Dockerfile accordingly (e.g., adjusting dependencies or build order).
+  </li>
+
+  <li>
+    <strong>Infrastructure glitches:</strong> If the failure is caused by transient infrastructure issues, a simple retry should resolve the problem.
+  </li>
+
+  <li>
+    <strong>Checksum mismatch:</strong> If the container image definition changes, retrigger this job from the
+    <strong>check-docker-container</strong> job to ensure the correct checksum is passed to the
+    <strong>build-docker-container</strong> job.
+  </li>
+
+  <li>
+    <strong>Disk space issues:</strong> Since built container images remain on the machine, the job may fail due to insufficient disk space.
+  </li>
+</ul>
+
+<h3 style="color:#e67e22;">🧹 Cleanup & Maintenance</h3>
+
+<p style="font-size:14px; line-height:1.6;">
+A separate Jenkins job, <strong>clean-build-docker-machine</strong>, runs once a week to clean up unused images on the build machine.
+</p>
+
+<p style="font-size:14px; line-height:1.6;">
+If immediate cleanup is required, log into the machine and run:
+</p>
+
+<pre style="background:#f4f6f7; padding:10px; border-radius:5px; font-size:13px;">
+docker image prune
+docker system prune --volumes
+</pre>
+
+<p style="font-size:14px; line-height:1.6;">
+If the <code>./singularity</code> folder is large
+(<code>du -hs /build/cmsbld/jenkins/workspace/.singularity</code>),
+it can also be safely removed.
+</p>
+
+<hr/>
+
+<p style="color:#34495e; font-size:13px;">
+💡 <i>This job ensures container images are rebuilt, validated, and published while providing clear recovery paths for common failure scenarios.</i>
+</p>
 
 
 
