@@ -2776,7 +2776,33 @@ Not periodically build
 
 ## [backport-pull-request](https://cmssdt.cern.ch/jenkins/job/backport-pull-request)
 
-**Description:** Manually executed job for backporting pull requests given the repo name, the branch for which the PR should be created and the PR to be backported.
+**Description:** <h2 style="color:#1abc9c; font-weight:bold;">🔁 backport-pull-request</h2>
+
+<p style="font-size:14px; color:#2c3e50;">
+<b>Description:</b> Manually executed job for backporting pull requests given the repository name, the branch for which the PR should be created, and the pull request to be backported.
+</p>
+
+<h3 style="color:#8e44ad;">🎯 Purpose</h3>
+<p style="font-size:14px; line-height:1.6;">
+Manual Backporting: Manually backports an existing GitHub pull request to a specified branch.
+</p>
+
+<h3 style="color:#27ae60;">📌 Key Features</h3>
+<ul style="font-size:14px; line-height:1.6; padding-left:20px;">
+  <li><strong>Simple Inputs:</strong> Requires the repository name, target branch, and pull request number to backport.</li>
+  <li><strong>Automated Process:</strong> Uses the <i>backport-pr.py</i> script to apply the pull request changes automatically.</li>
+  <li><strong>Clean Environment:</strong> Deletes the workspace before starting to avoid conflicts from previous runs.</li>
+  <li><strong>Controlled Execution:</strong> Runs only on <strong>cmssdt</strong> nodes to ensure a stable execution environment.</li>
+  <li><strong>Timeout Protection:</strong> Stops the job automatically if it runs longer than <strong>30 minutes</strong>.</li>
+  <li><strong>Build History Management:</strong> Keeps build logs for <strong>30 days</strong> or up to <strong>100 builds</strong> for tracking and auditing.</li>
+</ul>
+
+<hr/>
+
+<p style="color:#34495e; font-size:13px;">
+💡 <i>This job provides a safe and controlled way to backport changes while maintaining clean build environments.</i>
+</p>
+
 
 **Project is `enabled`.**
 
@@ -2798,46 +2824,48 @@ Not periodically build
 
 ## [build-any-ib](https://cmssdt.cern.ch/jenkins/job/build-any-ib)
 
-**Description:** This jobs starts an Integration Build (IB). Base on state of <a href="https://github.com/cms-sw/cmsdist">CMSDIST</a>/<a href="https://github.com/cms-sw/cmssw">CMSSW</a> git repositories, it builds either a full release or patch release.
-<br>Build Full IB if:
+**Description:** <h2 style="color:#2c3e50; font-weight:bold;">🧱 Integration Build (IB)</h2>
 
-<ul>
-  <li> There are changes in <a href="https://github.com/cms-sw/cmsdist">CMSDIST</a></li>
-  <li> There is no full IB available based on current <a href="https://github.com/cms-sw/cmsdist">CMSDIST</a></li>
-  <li> Previous full IB had build errors</li>
+<p style="font-size:14px; color:#2c3e50;">
+This job starts an <strong>Integration Build (IB)</strong>. Based on the state of the <strong>CMSDIST</strong> and <strong>CMSSW</strong> Git repositories, it builds either a <strong>full release</strong> or a <strong>patch release</strong>.
+</p>
+
+<h3 style="color:#8e44ad;">🏗 Build Decision Logic</h3>
+<p style="font-size:14px;">A <strong>Full IB</strong> is built if:</p>
+<ul style="font-size:14px; line-height:1.6; padding-left:20px;">
+  <li>There are changes in <strong>CMSDIST</strong></li>
+  <li>There is no full IB available based on the current <strong>CMSDIST</strong></li>
+  <li>The previous full IB had build errors</li>
 </ul>
 
-Otherwise build a patch release.
+<p style="font-size:14px; line-height:1.6;">
+If none of the above conditions are met, the job builds a <strong>patch release</strong>.
+</p>
 
-<br><br>
-<b>Q/A</b>
+<h3 style="color:#27ae60;">❓ Q / A</h3>
 
-<ul>
-  <li>
-    <b>Q:</b> The job is scheduled with a clock simbol. Jenkins also complains that there are not agents with labels THIS and THIS.
-  </li>
-  <li>
-    <b>A:</b> Jenkins should automaticly launch agents with specific labels for the job. However, for some reason it does not work for this job. For now, launch agent manually.
-  </li>
-</ul>
+<p style="font-size:14px;"><strong>Q:</strong> The job is scheduled with a clock symbol. Jenkins also complains that there are no agents with labels <i>THIS</i> and <i>THIS</i>.</p>
+<p style="font-size:14px; line-height:1.6;">
+<strong>A:</strong> Jenkins should automatically launch agents with the required labels for this job. However, for some reason this does not work for this job. For now, launch the agent manually.
+</p>
 
-<ul>
-  <li>
-    <b>Q:</b> How to manually build an IB?
-  </li>
-  <li>
-    <b>A:</b> Go to upstream job (ib-tag-and-schdule) and start a job.
-  </li>
-</ul>
+<p style="font-size:14px;"><strong>Q:</strong> How to manually build an IB?</p>
+<p style="font-size:14px; line-height:1.6;">
+<strong>A:</strong> Go to the upstream job <strong>ib-tag-and-schdule</strong> and start the job.
+</p>
 
-<ul>
-  <li>
-    <b>Q:</b> What to do if it fails?
-  </li>
-  <li>
-    <b>A:</b> If it fails due to network/github issues then just re-try it, but if it fails to build then we need to understand the build issues before retry.
-  </li>
-</ul>
+<p style="font-size:14px;"><strong>Q:</strong> What to do if it fails?</p>
+<p style="font-size:14px; line-height:1.6;">
+<strong>A:</strong> If it fails due to network or GitHub issues, simply retry the job.  
+If it fails during the build, the build issues must be understood and resolved before retrying.
+</p>
+
+<hr/>
+
+<p style="color:#34495e; font-size:13px;">
+💡 <i>This job ensures consistent and reliable Integration Builds by selecting the correct build strategy based on repository state.</i>
+</p>
+
 
 **Project is `enabled`.**
 
