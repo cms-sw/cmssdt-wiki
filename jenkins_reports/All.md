@@ -653,10 +653,6 @@ This job actually builds a release. It is triggered by <strong>cms-bot</strong> 
 
 <hr/>
 
-<p style="color:#34495e; font-size:13px;">
-💡 <i>This job ensures that releases are built reliably, with clear steps for recovering from common failures and disk space issues.</i>
-</p>
-
 
 **Project is `enabled`.**
 
