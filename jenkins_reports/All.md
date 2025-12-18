@@ -508,7 +508,36 @@ Not periodically build
 
 ## [build-fwlite](https://cmssdt.cern.ch/jenkins/job/build-fwlite)
 
-**Description:** This job builds a CMSSW_X_Y_Z_FWLITE release based on an existing CMSSW_X_Y_Z release. CMSSW_X_Y_Z should be already build/uploaded before building its FWLITE version.
+**Description:** <h2 style="color:#16a085; font-weight:bold;">🧩 build-fwlite</h2>
+
+<p style="font-size:14px; color:#2c3e50;">
+<b>Description:</b> This job builds a <strong>CMSSW_X_Y_Z_FWLITE</strong> release based on an existing
+<strong>CMSSW_X_Y_Z</strong> release. The base CMSSW release must already be built and uploaded
+before running this job.
+</p>
+
+<h3 style="color:#8e44ad;">🎯 Purpose</h3>
+<p style="font-size:14px; line-height:1.6;">
+FWLite Release Build: Builds a <strong>CMSSW_X_Y_Z_FWLITE</strong> release from an already built and
+uploaded <strong>CMSSW_X_Y_Z</strong> release.
+</p>
+
+<h3 style="color:#27ae60;">📌 Key Features</h3>
+<ul style="font-size:14px; line-height:1.6; padding-left:20px;">
+  <li><strong>Prerequisite Required:</strong> The base <strong>CMSSW_X_Y_Z</strong> release must already exist before running this job.</li>
+  <li><strong>Architecture-Aware:</strong> Builds the FWLite release for the specified architecture and execution environment (native or container-based).</li>
+  <li><strong>Patch Release Handling:</strong> By default, FWLite is not built for patch releases unless <strong>FORCE_PATCH_BUILD</strong> is enabled.</li>
+  <li><strong>Version Safeguards:</strong> Automatically skips builds for unsupported CMSSW versions (FWLite is built only for <strong>CMSSW_8_1</strong> and above).</li>
+  <li><strong>Clean & Controlled Build:</strong> Starts from a clean workspace and runs with a <strong>120-minute timeout</strong> to prevent stuck builds.</li>
+  <li><strong>Automated Upload & Logging:</strong> Uploads the FWLite build and stores build logs for later inspection.</li>
+</ul>
+
+<hr/>
+
+<p style="color:#34495e; font-size:13px;">
+💡 <i>This job extends existing CMSSW releases with FWLite builds while enforcing version compatibility and build safety.</i>
+</p>
+
 
 **Project is `enabled`.**
 
