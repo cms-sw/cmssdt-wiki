@@ -560,10 +560,52 @@ Not periodically build
 
 ## [build-fwlite-ib](https://cmssdt.cern.ch/jenkins/job/build-fwlite-ib)
 
-**Description:** This job is responsible for building FWLITE release for each Integration Build (IB). 
-Results of this build can be seen via <a href="https://cmssdt.cern.ch/SDT/">CMSSDT</a> 
-<a href="https://cmssdt.cern.ch/SDT/html/cmssdt-ib">IB page</a> 
-<a href="https://cmssdt.cern.ch/SDT/html/showIB.html">(old page)</a>.
+**Description:** <h2 style="color:#8e44ad; font-weight:bold;">🧩 build-fwlite-ib</h2>
+
+<p style="font-size:14px; color:#2c3e50;">
+This job is responsible for building <strong>FWLite releases</strong> for each Integration Build (IB).  
+Results of this build can be seen via:  
+<a href="https://cmssdt.cern.ch/SDT/">CMSSDT</a> | 
+<a href="https://cmssdt.cern.ch/SDT/html/cmssdt-ib">IB page</a> | 
+<a href="https://cmssdt.cern.ch/SDT/html/showIB.html">(old page)</a>
+</p>
+
+<h3 style="color:#27ae60;">🎯 Purpose</h3>
+<p style="font-size:14px; line-height:1.6;">
+Builds FWLite releases for every Integration Build (IB) while ensuring controlled execution, clean workspaces, and reproducible results.
+</p>
+
+<h3 style="color:#2980b9;">📌 Parameters</h3>
+<ul style="font-size:14px; line-height:1.6; padding-left:20px;">
+  <li>Release format</li>
+  <li>Repository</li>
+  <li>Architecture</li>
+  <li>Release queue</li>
+  <li>Docker image</li>
+  <li>Specific commit hashes: <strong>CMSDIST_HASH</strong>, <strong>PKGTOOLS_HASH</strong></li>
+</ul>
+
+<h3 style="color:#27ae60;">🛠 Controlled Execution</h3>
+<ul style="font-size:14px; line-height:1.6; padding-left:20px;">
+  <li>Runs only on nodes appropriate for the specified architecture and environment labels.</li>
+  <li>Concurrency limited to <strong>10 total builds</strong> and <strong>1 per node</strong>.</li>
+  <li>Deletes workspace before starting to avoid conflicts from previous builds.</li>
+  <li>Stops builds longer than <strong>180 minutes</strong> to avoid stuck processes.</li>
+</ul>
+
+<h3 style="color:#e67e22;">⚙️ Build Process</h3>
+<ul style="font-size:14px; line-height:1.6; padding-left:20px;">
+  <li>Clones the CMS bot repository.</li>
+  <li>Sets up the environment architecture.</li>
+  <li>Launches the FWLite IB build using <strong>docker_launcher.sh</strong>.</li>
+</ul>
+
+<hr/>
+
+<p style="color:#34495e; font-size:13px;">
+💡 <i>This job ensures FWLite builds for Integration Builds are performed reliably, reproducibly, and within controlled execution limits.</i>
+</p>
+
 
 **Project is `enabled`.**
 
