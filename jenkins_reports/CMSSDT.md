@@ -10,15 +10,40 @@
 
 ## [check-cms-container-certificates](https://cmssdt.cern.ch/jenkins/job/check-cms-container-certificates)
 
-**Description:** This job checks for HOST certificate in cmssw/cms:rhelX images, and fail if host certificate is going to expire in less than CERT_EXPIRY_DAYS days.<br/>
-In such case, we need to check if there is already an updated osg-ca-certs package available and rebuild the container.
-<br/>
-<br/>
-One can rerun the job with LOCAL_CERTIFICATE=/cvmfs/grid.cern.ch/etc/grid-security/certificates and CHECK_LOCAL_CERTIFICATE=true to see it new certificates are already available. <br/>
-If the job still fails, this means that new root certificates are still not available.
-<br/>
-<br/>
-Note that the job fails some days before the actual expiration (CERT_EXPIRY_DAYS).
+**Description:** <h2 style="color:#2980b9; font-weight:bold;">🐳 check-cms-container-certificates</h2>
+
+<p style="font-size:14px; color:#2c3e50;">
+This job checks for <strong>HOST certificates</strong> in <strong>cmssw/cms:rhelX</strong> Docker images and fails if the host certificate is going to expire in less than <strong>CERT_EXPIRY_DAYS</strong> days.
+</p>
+
+<h3 style="color:#27ae60;">⚠️ Action on Expiring Certificates</h3>
+<p style="font-size:14px; line-height:1.6;">
+If the job fails due to an expiring certificate, check if there is an updated <strong>osg-ca-certs</strong> package available and rebuild the container.
+</p>
+
+<h3 style="color:#8e44ad;">🔄 Rerun Options</h3>
+<ul style="font-size:14px; line-height:1.6; padding-left:20px;">
+  <li>Rerun the job with:
+    <ul>
+      <li><strong>LOCAL_CERTIFICATE=/cvmfs/grid.cern.ch/etc/grid-security/certificates</strong></li>
+      <li><strong>CHECK_LOCAL_CERTIFICATE=true</strong></li>
+    </ul>
+    to check if new certificates are already available.
+  </li>
+  <li>If the job still fails, this indicates that new root certificates are not yet available.</li>
+</ul>
+
+<h3 style="color:#e67e22;">ℹ️ Notes</h3>
+<p style="font-size:14px; line-height:1.6;">
+The job fails some days before the actual expiration (<strong>CERT_EXPIRY_DAYS</strong>) to allow time for updates.
+</p>
+
+<hr/>
+
+<p style="color:#34495e; font-size:13px;">
+💡 <i>This job ensures that Docker container certificates are valid and proactively triggers rebuilds to avoid certificate expiration issues.</i>
+</p>
+
 
 **Project is `enabled`.**
 
