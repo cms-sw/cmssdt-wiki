@@ -92,8 +92,47 @@ H H/4 * * *
 
 ## [check-future-commit-prs](https://cmssdt.cern.ch/jenkins/job/check-future-commit-prs)
 
-**Description:** Periodicaly runs https://github.com/cms-sw/cms-bot/blob/master/fix-backport-labels.py to check if the PR on master, which backport has been requested, is merged.
-If the original PR has been merged, it changes all opened backport PRs of it from backport(blue) to backport-ok(green)
+**Description:** <h2 style="color:#2980b9; font-weight:bold;">🔍 check-future-commit-prs</h2>
+
+<p style="font-size:14px; color:#2c3e50;">
+Periodically runs the script
+<a href="https://github.com/cms-sw/cms-bot/blob/master/fix-backport-labels.py">fix-backport-labels.py</a>
+to check whether a pull request on <strong>master</strong>, for which a backport has been requested, has been merged.
+If the original PR is merged, the job updates all related open backport PRs from
+  <strong>backport</strong> <strong style="color:blue"> (blue) </strong> 🔵 to <strong>backport-ok</strong> <strong style="color:green"> (green)</strong> 🟢.
+</p>
+
+<h3 style="color:#27ae60;">🎯 Purpose</h3>
+<p style="font-size:14px; line-height:1.6;">
+Automatically monitors pull requests on the master branch that have requested backports and keeps their status up to date.
+</p>
+
+<h3 style="color:#8e44ad;">⏱ Periodic Execution</h3>
+<p style="font-size:14px; line-height:1.6;">
+Runs every <strong>15 minutes</strong> to ensure backport statuses are refreshed in a timely manner.
+</p>
+
+<h3 style="color:#27ae60;">🔄 Backport Status Update</h3>
+<ul style="font-size:14px; line-height:1.6; padding-left:20px;">
+  <li>Checks whether the original PR on <strong>master</strong> has been merged.</li>
+  <li>If merged, updates all associated open backport PRs from
+      <strong>backport</strong> 🔵 to <strong>backport-ok</strong> 🟢</li>
+</ul>
+
+<h3 style="color:#2980b9;">⚙️ Implementation Details</h3>
+<ul style="font-size:14px; line-height:1.6; padding-left:20px;">
+  <li>Uses the <strong>check-future-commits-prs.py</strong> script from <strong>cms-bot</strong>.</li>
+  <li>Designed to be fast and lightweight with a <strong>2-minute timeout</strong>.</li>
+  <li>Runs only on <strong>cmssdt</strong> nodes with elevated job priority.</li>
+  <li>Keeps build history for <strong>2 days</strong> or up to <strong>50 builds</strong> to reduce clutter.</li>
+</ul>
+
+<hr/>
+
+<p style="color:#34495e; font-size:13px;">
+💡 <i>This job ensures that backport pull requests accurately reflect the merge status of their original changes.</i>
+</p>
+
 
 **Project is `enabled`.**
 
