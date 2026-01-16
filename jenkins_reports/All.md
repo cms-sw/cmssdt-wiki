@@ -4102,6 +4102,28 @@ Not periodically build
 
 ---
 
+## [hlt-p2-timing-data-sync](https://cmssdt.cern.ch/jenkins/job/hlt-p2-timing-data-sync)
+
+**Description:** None
+
+**Project is `enabled`.**
+
+**Upstream projects:**
+
+**Downstream projects:**
+
+**Sub-projects:**
+
+**Triggers from:** []
+
+
+**Periodic builds:**
+```bash
+Not periodically build
+```
+
+---
+
 ## [ib-build-logs](https://cmssdt.cern.ch/jenkins/job/ib-build-logs)
 
 **Description:** It is build periodically (H/30 * * * *). Runs on cmssdt. Projects to build: update-github-pages
