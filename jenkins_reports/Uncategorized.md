@@ -145,6 +145,28 @@ Not periodically build
 
 ---
 
+## [cmsbuild](https://cmssdt.cern.ch/jenkins/job/cmsbuild)
+
+**Description:** None
+
+**Project is `enabled`.**
+
+**Upstream projects:**
+
+**Downstream projects:**
+
+**Sub-projects:**
+
+**Triggers from:** []
+
+
+**Periodic builds:**
+```bash
+Not periodically build
+```
+
+---
+
 ## [cmsbuild950](https://cmssdt.cern.ch/jenkins/job/cmsbuild950)
 
 **Description:** None
@@ -1179,6 +1201,28 @@ Not periodically build
 
 ---
 
+## [cmsdev](https://cmssdt.cern.ch/jenkins/job/cmsdev)
+
+**Description:** None
+
+**Project is `enabled`.**
+
+**Upstream projects:**
+
+**Downstream projects:**
+
+**Sub-projects:**
+
+**Triggers from:** []
+
+
+**Periodic builds:**
+```bash
+Not periodically build
+```
+
+---
+
 ## [cmsdev40](https://cmssdt.cern.ch/jenkins/job/cmsdev40)
 
 **Description:** None
@@ -1377,6 +1421,28 @@ Not periodically build
 
 ---
 
+## [cmsprofile](https://cmssdt.cern.ch/jenkins/job/cmsprofile)
+
+**Description:** None
+
+**Project is `enabled`.**
+
+**Upstream projects:**
+
+**Downstream projects:**
+
+**Sub-projects:**
+
+**Triggers from:** []
+
+
+**Periodic builds:**
+```bash
+Not periodically build
+```
+
+---
+
 ## [cmsprofile-12](https://cmssdt.cern.ch/jenkins/job/cmsprofile-12)
 
 **Description:** None
@@ -1488,6 +1554,28 @@ Not periodically build
 ---
 
 ## [cmsvtune](https://cmssdt.cern.ch/jenkins/job/cmsvtune)
+
+**Description:** None
+
+**Project is `enabled`.**
+
+**Upstream projects:**
+
+**Downstream projects:**
+
+**Sub-projects:**
+
+**Triggers from:** []
+
+
+**Periodic builds:**
+```bash
+Not periodically build
+```
+
+---
+
+## [condor](https://cmssdt.cern.ch/jenkins/job/condor)
 
 **Description:** None
 
@@ -2081,6 +2169,28 @@ Not periodically build
 
 ---
 
+## [lxplus](https://cmssdt.cern.ch/jenkins/job/lxplus)
+
+**Description:** None
+
+**Project is `enabled`.**
+
+**Upstream projects:**
+
+**Downstream projects:**
+
+**Sub-projects:**
+
+**Triggers from:** []
+
+
+**Periodic builds:**
+```bash
+Not periodically build
+```
+
+---
+
 ## [lxplus-01](https://cmssdt.cern.ch/jenkins/job/lxplus-01)
 
 **Description:** None
@@ -2126,6 +2236,50 @@ Not periodically build
 ---
 
 ## [lxplus8-arm-01](https://cmssdt.cern.ch/jenkins/job/lxplus8-arm-01)
+
+**Description:** None
+
+**Project is `enabled`.**
+
+**Upstream projects:**
+
+**Downstream projects:**
+
+**Sub-projects:**
+
+**Triggers from:** []
+
+
+**Periodic builds:**
+```bash
+Not periodically build
+```
+
+---
+
+## [no_label](https://cmssdt.cern.ch/jenkins/job/no_label)
+
+**Description:** None
+
+**Project is `enabled`.**
+
+**Upstream projects:**
+
+**Downstream projects:**
+
+**Sub-projects:**
+
+**Triggers from:** []
+
+
+**Periodic builds:**
+```bash
+Not periodically build
+```
+
+---
+
+## [nvidia](https://cmssdt.cern.ch/jenkins/job/nvidia)
 
 **Description:** None
 
