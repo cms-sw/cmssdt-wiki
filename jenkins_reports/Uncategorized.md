@@ -2169,28 +2169,6 @@ Not periodically build
 
 ---
 
-## [grid483578](https://cmssdt.cern.ch/jenkins/job/grid483578)
-
-**Description:** None
-
-**Project is `enabled`.**
-
-**Upstream projects:**
-
-**Downstream projects:**
-
-**Sub-projects:**
-
-**Triggers from:** []
-
-
-**Periodic builds:**
-```bash
-Not periodically build
-```
-
----
-
 ## [lxplus](https://cmssdt.cern.ch/jenkins/job/lxplus)
 
 **Description:** None
@@ -2918,28 +2896,6 @@ Not periodically build
 ---
 
 ## [scripts-aarch64-02](https://cmssdt.cern.ch/jenkins/job/scripts-aarch64-02)
-
-**Description:** None
-
-**Project is `enabled`.**
-
-**Upstream projects:**
-
-**Downstream projects:**
-
-**Sub-projects:**
-
-**Triggers from:** []
-
-
-**Periodic builds:**
-```bash
-Not periodically build
-```
-
----
-
-## [scripts-riscv64-01](https://cmssdt.cern.ch/jenkins/job/scripts-riscv64-01)
 
 **Description:** None
 
