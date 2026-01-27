@@ -3221,15 +3221,94 @@ Not periodically build
 
 ## [check-docker](https://cmssdt.cern.ch/jenkins/job/check-docker)
 
-**Description:** This job connects to the slave and checks if docker service is useable.<br/>
-Job can fail for three reasons:<br/>
-1. user is not in docker group<br/>
-2. docker service is not running on the machine<br/>
-3. docker daemon reports that there isn't space in the machine ("no space left on device").<br/>
+**Description:** <h2 style="color:#c0392b; font-weight:bold;">🔧 check-docker</h2>
 
-If machine is in our control, we should take the appropriate action (e.g. login into the machine and manually run the ssh command), but if machine is in CERN IT control (e.g OpenLab machines), we should open a SNOW ticket.
-<br>
-In case of no space on the device, one can manually run the job clean-check-docker indicating the name of the machine as an input parameter.
+<p style="font-size:14px; color:#2c3e50;">
+<b>Description:</b> Connects to Jenkins slave nodes and verifies Docker service functionality.  
+Performs health checks to ensure Docker is properly configured and operational for build/test execution.
+</p>
+
+<h3 style="color:#8e44ad;">🎯 Purpose</h3>
+<p style="font-size:14px; line-height:1.6;">
+Validates Docker service availability and configuration on Jenkins slave nodes. Ensures Docker environment is ready for containerized builds and tests.
+</p>
+
+<h3 style="color:#27ae60;">📌 Key Features</h3>
+<ul style="font-size:14px; line-height:1.6; padding-left:20px;">
+  <li>🔹 <strong>Docker service validation</strong> - checks if Docker daemon is running and accessible</li>
+  <li>🔹 <strong>Permission verification</strong> - confirms user has proper Docker group membership</li>
+  <li>🔹 <strong>Disk space monitoring</strong> - detects and reports insufficient disk space for Docker operations</li>
+  <li>🔹 <strong>Targeted execution</strong> - can be manually run against specific machines using machine name parameter</li>
+</ul>
+
+<h3 style="color:#e67e22;">🔍 Troubleshooting & Failure Resolution</h3>
+
+<h4 style="color:#d35400; font-size:15px; margin-top:15px;">🔴 Common Failure Scenarios:</h4>
+
+<table style="width:100%; font-size:14px; border-collapse: collapse; margin:15px 0;">
+  <thead style="background-color:#f1f2f6;">
+    <tr>
+      <th style="border:1px solid #ddd; padding:10px; text-align:left;">Failure Reason</th>
+      <th style="border:1px solid #ddd; padding:10px; text-align:left;">Symptoms</th>
+      <th style="border:1px solid #ddd; padding:10px; text-align:left;">Resolution Action</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="border:1px solid #ddd; padding:10px;"><strong>1. User not in Docker group</strong></td>
+      <td style="border:1px solid #ddd; padding:10px;">Permission denied errors when running Docker commands</td>
+      <td style="border:1px solid #ddd; padding:10px;">
+        <strong>For machines under our control:</strong><br>
+        • Login to machine and add user to Docker group<br>
+        • Run: <code>sudo usermod -aG docker &lt;username&gt;</code>
+      </td>
+    </tr>
+    <tr>
+      <td style="border:1px solid #ddd; padding:10px;"><strong>2. Docker service not running</strong></td>
+      <td style="border:1px solid #ddd; padding:10px;">Cannot connect to Docker daemon; service unavailable</td>
+      <td style="border:1px solid #ddd; padding:10px;">
+        <strong>For machines under our control:</strong><br>
+        • Start Docker service manually<br>
+        • Run: <code>sudo systemctl start docker</code><br><br>
+        <strong>For CERN IT controlled machines (e.g., OpenLab):</strong><br>
+        • Open a SNOW ticket for service restoration
+      </td>
+    </tr>
+    <tr>
+      <td style="border:1px solid #ddd; padding:10px;"><strong>3. Insufficient disk space</strong></td>
+      <td style="border:1px solid #ddd; padding:10px;">"No space left on device" errors from Docker daemon</td>
+      <td style="border:1px solid #ddd; padding:10px;">
+        • Manually trigger this job with machine name as parameter<br>
+        • Or run cleanup commands on affected machine:<br>
+        <code>docker system prune -a --volumes</code><br>
+        <code>docker image prune -a</code>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<h4 style="color:#d35400; font-size:15px; margin-top:20px;">🛠️ Resolution Workflow:</h4>
+<ol style="font-size:14px; line-height:1.6; padding-left:20px;">
+  <li><strong>Identify affected machine</strong> from job console output</li>
+  <li><strong>Determine machine ownership</strong> (our control vs. CERN IT control)</li>
+  <li><strong>For our machines</strong>: SSH into machine and execute appropriate remediation commands</li>
+  <li><strong>For CERN IT machines</strong>: Open SNOW ticket with detailed error information</li>
+  <li><strong>For disk space issues</strong>: Run <code>clean-check-docker</code> job with machine name parameter or execute manual cleanup</li>
+</ol>
+
+<h3 style="color:#c0392b;">⚠️ Critical Notes</h3>
+<ul style="font-size:14px; line-height:1.6; padding-left:20px; color:#7f8c8d;">
+  <li>❗ <strong>Build blockage</strong>: Failure prevents Docker-based builds/tests on affected nodes</li>
+  <li>⚠️ <strong>Ownership awareness</strong>: Critical to distinguish between self-managed and CERN IT-managed machines</li>
+  <li>💾 <strong>Space monitoring</strong>: Disk space issues are common and require regular cleanup</li>
+  <li>🎯 <strong>Quick resolution</strong>: Prompt action required to minimize impact on build pipelines</li>
+</ul>
+
+<hr style="border:1px solid #bdc3c7;"/>
+
+<p style="color:#34495e; font-size:13px;">
+💡 <i>This diagnostic job ensures Docker readiness across Jenkins infrastructure. Regular execution helps prevent build failures due to Docker environment issues.</i>
+</p>
 
 **Project is `enabled`.**
 
