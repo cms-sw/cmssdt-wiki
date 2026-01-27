@@ -3463,31 +3463,48 @@ H 10 * * *
 
 ## [cms-bot](https://cmssdt.cern.ch/jenkins/job/cms-bot)
 
-**Description:** This is cms bot job which is triggered by github webhooks ( https://cmssdt.cern.ch/SDT/cgi-bin/github_webhook ) for every valid comment added to github PRs.
+**Description:** <h2 style="color:#c0392b; font-weight:bold;">🤖 cms-bot</h2>
 
-Will kill a scheduled/running job acording to comments.
+<p style="font-size:14px; color:#2c3e50;">
+<b>Description:</b> Triggered by GitHub webhooks (<a href="https://cmssdt.cern.ch/SDT/cgi-bin/github_webhook" target="_blank">https://cmssdt.cern.ch/SDT/cgi-bin/github_webhook</a>) for every valid comment added to GitHub pull requests.
+Processes GitHub comments (e.g., "please test") and manages scheduled/running Jenkins jobs accordingly.
+</p>
 
-<br><br>
-<b>Q/A</b>
+<h3 style="color:#8e44ad;">🎯 Purpose</h3>
+<p style="font-size:14px; line-height:1.6;">
+Monitors GitHub PR comments and triggers appropriate Jenkins job actions. Acts as the bridge between GitHub PR interactions and Jenkins test execution.
+</p>
 
-<ul>
-  <li>
-    <b>Q:</b> Job 'cms-sw/cmssw #****' failed. What to do?
-  </li>
-  <li>
-    <b>A:</b>
-    Job is configured to do few re-tries, so in case of github or network glitches the job will recover. If it keeps on failing then one need to check the logs. 
-    Mostly it fails due to github/ssh connection, so it will automatically recover.
-  </li>
-  <li>
-    <b>Q:</b> Job failed with ssh timeout?
-  </li>
-  <li>
-    <b>A:</b>
-    Nothing to do, job will re-try 3 time to recover. If it keeps on failing for few hours then better to disable it an re-enable once issue is solved e.g. github is back or CERN network is working again.
-  </li>
-  
+<h3 style="color:#27ae60;">📌 Key Features</h3>
+<ul style="font-size:14px; line-height:1.6; padding-left:20px;">
+  <li>🔹 <strong>Real-time GitHub webhook processing</strong> for PR comments</li>
+  <li>🔹 <strong>Automated job scheduling/killing</strong> based on comment commands (e.g., "please test")</li>
+  <li>🔹 <strong>Built-in retry mechanism</strong> (3 retries) for transient failures</li>
 </ul>
+
+<h3 style="color:#e67e22;">🔍 Troubleshooting if this job fails:</h3>
+<ol style="font-size:14px; line-height:1.6; padding-left:20px;">
+  <li>📋 <strong>Check the console output</strong> for specific error messages - most failures are GitHub API or network connectivity issues</li>
+  <li>🔄 <strong>Verify automatic retries</strong> - job is configured with 3 retries for transient failures</li>
+  <li>⏳ <strong>For persistent SSH timeout failures</strong>, wait 1-2 hours as the job may recover when network connectivity is restored</li>
+  <li>⚙️ <strong>If failures persist beyond 3 hours</strong>, consider temporarily disabling and re-enabling the job</li>
+  <li>🔗 <strong>Check GitHub webhook configuration</strong> at the webhook URL if multiple PRs are affected</li>
+</ol>
+<br>
+<h3 style="color:#3498db;">❓ Frequently Asked Questions</h3>
+<div style="font-size:14px; line-height:1.6; background-color:#f8f9fa; padding:15px; border-left:4px solid #3498db; border-radius:5px;">
+  <p><b>Q:</b> Job 'cms-sw/cmssw #****' failed. What should I do?</p>
+  <p><b>A:</b> The job is configured with multiple retries. In case of GitHub or network glitches, it will automatically recover. If it continues failing, check the logs. Most failures are due to GitHub/SSH connection issues and will resolve automatically.</p>
+  
+  <p style="margin-top:15px;"><b>Q:</b> Job failed with SSH timeout. How should I proceed?</p>
+  <p><b>A:</b> The job will retry 3 times to recover. If it keeps failing for several hours, it's better to disable it temporarily and re-enable once the underlying issue is resolved (e.g., when GitHub is back online or CERN network is working again).</p>
+</div>
+
+<hr style="border:1px solid #bdc3c7;"/>
+
+<p style="color:#34495e; font-size:13px;">
+💡 <i>This bot processes GitHub comments and manages Jenkins test execution. Most failures are transient and resolve automatically through built-in retry mechanisms.</i>
+</p>
 
 **Project is `enabled`.**
 
