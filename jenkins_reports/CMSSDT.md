@@ -93,7 +93,6 @@ Maintains version consistency between the CVMFS releases.map file and its source
 <div style="background-color:#f8f9fa; padding:15px; border-radius:5px; border-left:4px solid #3498db; margin:10px 0;">
   <h4 style="margin-top:0; color:#2c3e50;">📊 Build Retention</h4>
   <ul style="margin:5px 0;">
-    <li><strong>Strategy:</strong> Log Rotation</li>
     <li><strong>Days to Keep Builds:</strong> 7</li>
     <li><strong>Max Builds to Keep:</strong> 30</li>
   </ul>
@@ -128,35 +127,6 @@ Maintains version consistency between the CVMFS releases.map file and its source
   </li>
   <li><strong>Update Signaling</strong>: The flag file serves as a trigger for downstream update processes</li>
 </ol>
-
-<h4 style="color:#d35400; font-size:15px;">📋 Key Logic Points:</h4>
-<div style="background-color:#fff8e1; padding:12px; border-radius:5px; margin:10px 0; border-left:4px solid #ffc107;">
-  <p style="margin:0; font-size:13px;">
-    <strong>Critical Behavior:</strong><br>
-    1. Only creates flag file when actual content differences are detected<br>
-    2. Performs binary/text comparison, not just timestamp or size checks<br>
-    3. Handles missing CVMFS file edge case gracefully<br>
-    4. Designed for minimal execution time when no changes exist
-  </p>
-</div>
-
-<h3 style="color:#c0392b;">⚠️ Critical Notes</h3>
-<ul style="font-size:14px; line-height:1.6; padding-left:20px; color:#7f8c8d;">
-  <li>❗ <strong>Detection Only</strong>: This job only identifies changes; another process must perform the actual CVMFS update</li>
-  <li>⚠️ <strong>Silent Success</strong>: Job may complete successfully (exit 0) without visible output when files match</li>
-  <li>🌐 <strong>External Dependency</strong>: Requires GitHub API accessibility; failures may indicate network issues</li>
-  <li>🔍 <strong>Content-Based Comparison</strong>: Uses diff for accurate change detection, not file metadata</li>
-  <li>⏱️ <strong>Update Lag</strong>: 4-hour check interval means updates may take time to propagate</li>
-</ul>
-
-<h3 style="color:#27ae60;">🎯 Benefits</h3>
-<ul style="font-size:14px; line-height:1.6; padding-left:20px;">
-  <li>✅ <strong>Automated synchronization monitoring</strong> between source and deployment</li>
-  <li>✅ <strong>Minimal resource usage</strong> - efficient exit when no changes detected</li>
-  <li>✅ <strong>Accurate change detection</strong> - content-based comparison prevents false positives</li>
-  <li>✅ <strong>Decoupled architecture</strong> - separation of detection and update responsibilities</li>
-  <li>✅ <strong>Audit capability</strong> - build history provides timeline of detected changes</li>
-</ul>
 
 <hr style="border:1px solid #bdc3c7;"/>
 
