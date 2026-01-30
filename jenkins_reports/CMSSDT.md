@@ -462,13 +462,7 @@ Not periodically build
 
 ## [check-zombie](https://cmssdt.cern.ch/jenkins/job/check-zombie)
 
-**Description:** Connects to the slave and look for runaway process. This job fails when it finds such processes.<br/>
-In case of failure, we need to check the runaway process list (e.g. see the job log) and make sure that these processes are really runaway (e.g. cmsRun jobs running with parent PID 1).
-If all looks good, then one can restart the job with KILL_HANGING_PROCESSES=true.
-<br>
-<br>
-Note: A runaway process is a process that enters an infinite loop and spawns new processes.
-<h2 style="color:#c0392b; font-weight:bold;">🧟 check-zombie</h2>
+**Description:** <h2 style="color:#c0392b; font-weight:bold;">🧟 check-zombie</h2>
 
 <p style="font-size:14px; color:#2c3e50;">
 <b>Description:</b> Detects and terminates runaway/zombie processes on Jenkins slave machines. Identifies processes orphaned from their parent (PPID=1) running for more than 4 hours and provides automated cleanup capabilities.
@@ -568,15 +562,6 @@ grep '^\s*1\s' | awk '\$4>14400'
     5. <strong>Note</strong>: Some cmsRun jobs legitimately run with PPID=1
   </p>
 </div>
-
-<h3 style="color:#e67e22;">🎯 Important Workflow</h3>
-<div style="background-color:#fff8e1; padding:12px; border-radius:5px; margin:10px 0; border-left:4px solid #ffc107;">
-  <p style="margin:0; font-size:13px;">
-    <strong>⚠️ Key Recovery Step:</strong><br>
-    After job failure, examine the detected processes in the logs. <strong>If all identified processes are confirmed to be legitimate orphaned/zombie processes</strong>, restart the job with <code>KILL_HANGING_PROCESSES=true</code> parameter to enable the automatic termination feature.
-  </p>
-</div>
-
 <hr style="border:1px solid #bdc3c7;"/>
 
 <p style="color:#34495e; font-size:13px;">
