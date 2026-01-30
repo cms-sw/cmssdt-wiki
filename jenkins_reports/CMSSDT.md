@@ -481,11 +481,11 @@ Monitors slave machines for orphaned processes consuming resources indefinitely.
 
 <h3 style="color:#27ae60;">📌 Key Features</h3>
 <ul style="font-size:14px; line-height:1.6; padding-left:20px;">
-  <li>🔹 <strong>Orphaned process detection</strong> - identifies processes with parent PID=1</li>
-  <li>🔹 <strong>Duration-based filtering</strong> - only targets processes running >4 hours (14400 seconds)</li>
-  <li>🔹 <strong>Process group termination</strong> - kills entire process groups using kill -- '-PGID'</li>
-  <li>🔹 <strong>Verification cycle</strong> - checks again after cleanup to confirm resolution</li>
-  <li>🔹 <strong>Email notifications</strong> - alerts cms-sdt-logs@cern.ch on failures</li>
+  <li> <strong>Orphaned process detection</strong> - identifies processes with parent PID=1</li>
+  <li> <strong>Duration-based filtering</strong> - only targets processes running >4 hours (14400 seconds)</li>
+  <li> <strong>Process group termination</strong> - kills entire process groups using kill -- '-PGID'</li>
+  <li> <strong>Verification cycle</strong> - checks again after cleanup to confirm resolution</li>
+  <li> <strong>Email notifications</strong> - alerts cms-sdt-logs@cern.ch on failures</li>
 </ul>
 
 <h3 style="color:#3498db;">⚙️ Configuration Settings</h3>
@@ -493,7 +493,6 @@ Monitors slave machines for orphaned processes consuming resources indefinitely.
 <div style="background-color:#f8f9fa; padding:15px; border-radius:5px; border-left:4px solid #3498db; margin:10px 0;">
   <h4 style="margin-top:0; color:#2c3e50;">📊 Build Retention</h4>
   <ul style="margin:5px 0;">
-    <li><strong>Strategy:</strong> Log Rotation</li>
     <li><strong>Days to Keep Builds:</strong> 2</li>
     <li><strong>Max Builds to Keep:</strong> 100</li>
   </ul>
@@ -555,20 +554,6 @@ grep '^\s*1\s' | awk '\$4>14400'
   <li>⏱️ <strong>Short Timeout</strong>: 3-minute timeout ensures job doesn't hang on unresponsive slaves</li>
   <li>📧 <strong>Failure Notification</strong>: Email sent to cms-sdt-logs@cern.ch for manual intervention</li>
 </ul>
-
-<h3 style="color:#27ae60;">🛠️ Troubleshooting</h3>
-
-<div style="background-color:#e8f4fd; padding:12px; border-radius:5px; margin:10px 0; border-left:4px solid #3498db;">
-  <p style="margin:0; font-size:13px;">
-    <strong>If Job Fails:</strong><br>
-    1. <strong>Check job logs</strong> for detected orphaned process details<br>
-    2. <strong>Verify</strong> if processes are truly runaway (PPID=1, etimes>14400)<br>
-    3. <strong>If legitimate</strong>: Restart job with <code>KILL_HANGING_PROCESSES=true</code><br>
-    4. <strong>If uncertain</strong>: Investigate process manually before killing<br>
-    5. <strong>Note</strong>: Some cmsRun jobs legitimately run with PPID=1
-  </p>
-</div>
-
 <hr style="border:1px solid #bdc3c7;"/>
 
 <p style="color:#34495e; font-size:13px;">
