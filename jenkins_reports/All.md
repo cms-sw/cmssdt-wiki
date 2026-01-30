@@ -1486,6 +1486,112 @@ If all looks good, then one can restart the job with KILL_HANGING_PROCESSES=true
 <br>
 <br>
 Note: A runaway process is a process that enters an infinite loop and spawns new processes.
+<h2 style="color:#c0392b; font-weight:bold;">🧟 check-zombie</h2>
+
+<p style="font-size:14px; color:#2c3e50;">
+<b>Description:</b> Detects and terminates runaway/zombie processes on Jenkins slave machines. Identifies processes orphaned from their parent (PPID=1) running for more than 4 hours and provides automated cleanup capabilities.
+</p>
+
+<h3 style="color:#8e44ad;">🎯 Purpose</h3>
+<p style="font-size:14px; line-height:1.6;">
+Monitors slave machines for orphaned processes consuming resources indefinitely. Automatically kills processes that have lost their parent and been running for excessive durations, preventing resource exhaustion on build nodes.
+</p>
+
+<h3 style="color:#27ae60;">📌 Key Features</h3>
+<ul style="font-size:14px; line-height:1.6; padding-left:20px;">
+  <li>🔹 <strong>Orphaned process detection</strong> - identifies processes with parent PID=1</li>
+  <li>🔹 <strong>Duration-based filtering</strong> - only targets processes running >4 hours (14400 seconds)</li>
+  <li>🔹 <strong>Process group termination</strong> - kills entire process groups using kill -- '-PGID'</li>
+  <li>🔹 <strong>Verification cycle</strong> - checks again after cleanup to confirm resolution</li>
+  <li>🔹 <strong>Email notifications</strong> - alerts cms-sdt-logs@cern.ch on failures</li>
+</ul>
+
+<h3 style="color:#3498db;">⚙️ Configuration Settings</h3>
+
+<div style="background-color:#f8f9fa; padding:15px; border-radius:5px; border-left:4px solid #3498db; margin:10px 0;">
+  <h4 style="margin-top:0; color:#2c3e50;">📊 Build Retention</h4>
+  <ul style="margin:5px 0;">
+    <li><strong>Strategy:</strong> Log Rotation</li>
+    <li><strong>Days to Keep Builds:</strong> 2</li>
+    <li><strong>Max Builds to Keep:</strong> 100</li>
+  </ul>
+
+  <h4 style="color:#2c3e50;">🎛️ Job Parameters</h4>
+  <table style="width:100%; font-size:13px; border-collapse: collapse;">
+    <tr style="background-color:#e9ecef;">
+      <th style="border:1px solid #ddd; padding:8px;">Parameter</th>
+      <th style="border:1px solid #ddd; padding:8px;">Description</th>
+    </tr>
+    <tr>
+      <td style="border:1px solid #ddd; padding:8px;"><code>SLAVE_CONNECTION</code></td>
+      <td style="border:1px solid #ddd; padding:8td;">SSH connection string (ex. cmsbld@cmsbuild58.cern.ch)</td>
+    </tr>
+    <tr>
+      <td style="border:1px solid #ddd; padding:8px;"><code>KILL_HANGING_PROCESSES</code></td>
+      <td style="border:1px solid #ddd; padding:8td;">Set to true to enable automatic termination</td>
+    </tr>
+  </table>
+
+  <h4 style="color:#2c3e50;">⚡ Execution Settings</h4>
+  <ul style="margin:5px 0;">
+    <li><strong>Build Name:</strong> #${BUILD_NUMBER} ${SLAVE_CONNECTION}</li>
+    <li><strong>Concurrency:</strong> Max 15 builds total, 15 per node</li>
+    <li><strong>Execution Nodes:</strong> lxplus-scripts, lxplus7, lxplus6, master</li>
+    <li><strong>Timeout:</strong> 3 minutes absolute timeout</li>
+    <li><strong>Email Notification:</strong> cms-sdt-logs@cern.ch on failure</li>
+  </ul>
+</div>
+
+<h3 style="color:#e67e22;">🔍 How It Works</h3>
+
+<h4 style="color:#d35400; font-size:15px;">🔄 Detection & Cleanup Logic:</h4>
+<ol style="font-size:14px; line-height:1.6; padding-left:20px;">
+  <li><strong>SSH Connection</strong>: Connects to specified slave machine with optimized SSH options</li>
+  <li><strong>Process Detection</strong>: Finds processes where:
+    <ul style="margin:5px 0 5px 20px;">
+      <li>Parent PID (PPID) = 1 (orphaned from init/systemd)</li>
+      <li>Running time > 4 hours (14400 seconds)</li>
+      <li>Owned by slave user (default: cmsbld)</li>
+    </ul>
+  </li>
+  <li><strong>Automatic Termination</strong>: Kills entire process groups using PGID</li>
+  <li><strong>Verification</strong>: Waits 3 seconds, re-checks for remaining orphaned processes</li>
+  <li><strong>Failure Condition</strong>: Job fails if orphaned processes remain after cleanup</li>
+</ol>
+
+<h4 style="color:#d35400; font-size:15px;">📋 Detection Command:</h4>
+<div style="background-color:#f0f0f0; padding:10px; border-radius:5px; margin:10px 0; font-family:monospace; font-size:12px;">
+ps -u ${USER} -o ppid,pgid,pid,etimes,start_time,cmd --forest |<br>
+grep '^\s*1\s' | awk '\$4>14400'
+</div>
+
+<h3 style="color:#c0392b;">⚠️ Critical Notes</h3>
+<ul style="font-size:14px; line-height:1.6; padding-left:20px; color:#7f8c8d;">
+  <li>❗ <strong>Orphaned Process Definition</strong>: PPID=1 indicates process lost its parent</li>
+  <li>⚠️ <strong>4-Hour Threshold</strong>: Only kills processes running >4 hours to avoid false positives</li>
+  <li>🔒 <strong>Process Group Termination</strong>: Kills entire process group to prevent orphaned children</li>
+  <li>⏱️ <strong>Short Timeout</strong>: 3-minute timeout ensures job doesn't hang on unresponsive slaves</li>
+  <li>📧 <strong>Failure Notification</strong>: Email sent to cms-sdt-logs@cern.ch for manual intervention</li>
+</ul>
+
+<h3 style="color:#27ae60;">🛠️ Troubleshooting</h3>
+
+<div style="background-color:#e8f4fd; padding:12px; border-radius:5px; margin:10px 0; border-left:4px solid #3498db;">
+  <p style="margin:0; font-size:13px;">
+    <strong>If Job Fails:</strong><br>
+    1. <strong>Check job logs</strong> for detected orphaned process details<br>
+    2. <strong>Verify</strong> if processes are truly runaway (PPID=1, etimes>14400)<br>
+    3. <strong>If legitimate</strong>: Restart job with <code>KILL_HANGING_PROCESSES=true</code><br>
+    4. <strong>If uncertain</strong>: Investigate process manually before killing<br>
+    5. <strong>Note</strong>: Some cmsRun jobs legitimately run with PPID=1
+  </p>
+</div>
+
+<hr style="border:1px solid #bdc3c7;"/>
+
+<p style="color:#34495e; font-size:13px;">
+💡 <i>Automated orphaned process cleanup for Jenkins slave nodes. Prevents resource exhaustion by identifying and terminating processes that have lost parent connections and run for excessive durations.</i>
+</p>
 
 **Project is `enabled`.**
 
