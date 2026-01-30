@@ -68,7 +68,101 @@ H H * * *
 
 ## [check-cvmfs-releases-map](https://cmssdt.cern.ch/jenkins/job/check-cvmfs-releases-map)
 
-**Description:** None
+**Description:** <h2 style="color:#c0392b; font-weight:bold;">🗺️ check-cvmfs-releases-map</h2>
+
+<p style="font-size:14px; color:#2c3e50;">
+<b>Description:</b> Monitors and detects changes between the CVMFS releases.map file and its authoritative source in the cms-bot GitHub repository. This job performs periodic synchronization checks to ensure the distributed file system version matches the source control version.
+</p>
+
+<h3 style="color:#8e44ad;">🎯 Purpose</h3>
+<p style="font-size:14px; line-height:1.6;">
+Maintains version consistency between the CVMFS releases.map file and its source in GitHub. Acts as a change detection mechanism that triggers downstream update processes when discrepancies are identified.
+</p>
+
+<h3 style="color:#27ae60;">📌 Key Features</h3>
+<ul style="font-size:14px; line-height:1.6; padding-left:20px;">
+  <li>🔹 <strong>Automated periodic checking</strong> - runs every 4 hours</li>
+  <li>🔹 <strong>Intelligent comparison</strong> - detects actual content differences, not just timestamp changes</li>
+  <li>🔹 <strong>Efficient execution</strong> - exits immediately if files are identical</li>
+  <li>🔹 <strong>Change flag creation</strong> - creates an update marker file when differences are detected</li>
+  <li>🔹 <strong>GitHub integration</strong> - fetches the latest authoritative version for comparison</li>
+</ul>
+
+<h3 style="color:#3498db;">⚙️ Configuration Settings</h3>
+
+<div style="background-color:#f8f9fa; padding:15px; border-radius:5px; border-left:4px solid #3498db; margin:10px 0;">
+  <h4 style="margin-top:0; color:#2c3e50;">📊 Build Retention</h4>
+  <ul style="margin:5px 0;">
+    <li><strong>Strategy:</strong> Log Rotation</li>
+    <li><strong>Days to Keep Builds:</strong> 7</li>
+    <li><strong>Max Builds to Keep:</strong> 30</li>
+  </ul>
+
+  <h4 style="color:#2c3e50;">⚡ Execution Settings</h4>
+  <ul style="margin:5px 0;">
+    <li><strong>Rebuild Options:</strong> Enabled</li>
+    <li><strong>Execution Nodes:</strong> Restricted to lxplus-scripts, lxplus, or cmsdev machines</li>
+    <li><strong>Schedule:</strong> Runs every 4 hours (H H/4 * * *)</li>
+    <li><strong>Trigger:</strong> Build periodically (scheduled)</li>
+  </ul>
+
+  <h4 style="color:#2c3e50;">📁 File Locations</h4>
+  <ul style="margin:5px 0;">
+    <li><strong>CVMFS Location:</strong> <code>/cvmfs/cms.cern.ch/releases.map</code></li>
+    <li><strong>GitHub Source:</strong> cms-sw/cms-bot repository master branch</li>
+  </ul>
+</div>
+
+<h3 style="color:#e67e22;">🔍 How It Works</h3>
+
+<h4 style="color:#d35400; font-size:15px;">🔄 Execution Logic:</h4>
+<ol style="font-size:14px; line-height:1.6; padding-left:20px;">
+  <li><strong>Scheduled Execution</strong>: Automatically triggers every 4 hours</li>
+  <li><strong>Source Retrieval</strong>: Downloads the latest releases.map file from the cms-bot GitHub repository</li>
+  <li><strong>File Comparison</strong>: Compares the downloaded file with the existing CVMFS version using content-based diff</li>
+  <li><strong>Conditional Processing</strong>:
+    <ul style="margin:5px 0 5px 20px;">
+      <li>If files are identical → Job completes successfully (exit code 0)</li>
+      <li>If differences exist → Creates an <code>update-releases-map</code> flag file</li>
+    </ul>
+  </li>
+  <li><strong>Update Signaling</strong>: The flag file serves as a trigger for downstream update processes</li>
+</ol>
+
+<h4 style="color:#d35400; font-size:15px;">📋 Key Logic Points:</h4>
+<div style="background-color:#fff8e1; padding:12px; border-radius:5px; margin:10px 0; border-left:4px solid #ffc107;">
+  <p style="margin:0; font-size:13px;">
+    <strong>Critical Behavior:</strong><br>
+    1. Only creates flag file when actual content differences are detected<br>
+    2. Performs binary/text comparison, not just timestamp or size checks<br>
+    3. Handles missing CVMFS file edge case gracefully<br>
+    4. Designed for minimal execution time when no changes exist
+  </p>
+</div>
+
+<h3 style="color:#c0392b;">⚠️ Critical Notes</h3>
+<ul style="font-size:14px; line-height:1.6; padding-left:20px; color:#7f8c8d;">
+  <li>❗ <strong>Detection Only</strong>: This job only identifies changes; another process must perform the actual CVMFS update</li>
+  <li>⚠️ <strong>Silent Success</strong>: Job may complete successfully (exit 0) without visible output when files match</li>
+  <li>🌐 <strong>External Dependency</strong>: Requires GitHub API accessibility; failures may indicate network issues</li>
+  <li>🔍 <strong>Content-Based Comparison</strong>: Uses diff for accurate change detection, not file metadata</li>
+  <li>⏱️ <strong>Update Lag</strong>: 4-hour check interval means updates may take time to propagate</li>
+</ul>
+
+<h3 style="color:#27ae60;">🎯 Benefits</h3>
+<ul style="font-size:14px; line-height:1.6; padding-left:20px;">
+  <li>✅ <strong>Automated synchronization monitoring</strong> between source and deployment</li>
+  <li>✅ <strong>Minimal resource usage</strong> - efficient exit when no changes detected</li>
+  <li>✅ <strong>Accurate change detection</strong> - content-based comparison prevents false positives</li>
+  <li>✅ <strong>Decoupled architecture</strong> - separation of detection and update responsibilities</li>
+  <li>✅ <strong>Audit capability</strong> - build history provides timeline of detected changes</li>
+</ul>
+
+<hr style="border:1px solid #bdc3c7;"/>
+
+<p style="color:#34495e; font-size:13px;">
+💡 <i>This change detection job ensures the CVMFS releases.map is monitored for synchronization with its GitHub source. It serves as the first step in a pipeline that maintains consistency across distributed CMS infrastructure.</i>
+</p>
 
 **Project is `enabled`.**
 
