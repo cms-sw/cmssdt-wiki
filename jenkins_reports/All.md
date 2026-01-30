@@ -1459,16 +1459,6 @@ Performs repository cleanup analysis by identifying orphaned files in cmsdist br
     5. <strong>Branch Coverage</strong>: All active cmsdist branches in master queue
   </p>
 </div>
-
-<h3 style="color:#c0392b;">⚠️ Critical Notes</h3>
-<ul style="font-size:14px; line-height:1.6; padding-left:20px; color:#7f8c8d;">
-  <li>❗ <strong>Manual Trigger Required</strong>: Primary analysis only runs on manual job trigger</li>
-  <li>⚠️ <strong>Artifact Dependency</strong>: Worker phase requires artifacts from previous manual runs</li>
-  <li>🔍 <strong>Conservative Detection</strong>: May report false positives; manual verification recommended</li>
-  <li>🌐 <strong>GitHub Access Required</strong>: Needs access to cms-sw repositories for branch cloning</li>
-  <li>🔄 <strong>Idempotent Operation</strong>: Can reuse previous analysis with UPLOAD_ID parameter</li>
-</ul>
-
 <h3 style="color:#27ae60;">🎯 Benefits</h3>
 <ul style="font-size:14px; line-height:1.6; padding-left:20px;">
   <li>✅ <strong>Repository optimization</strong> - Identifies files that can be safely removed</li>
