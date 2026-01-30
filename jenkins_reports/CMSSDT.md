@@ -220,15 +220,107 @@ H/15 * * * *
 
 ## [check-pending-job](https://cmssdt.cern.ch/jenkins/job/check-pending-job)
 
-**Description:** <pre>The project checks for a running job and shows the status of process running on a remote machine.
-This can be useful to see if any process is handing and kill it. To run this job
-- Copy the url of a running job e.g.
-  - https://cmssdt.cern.ch/jenkins/job/ib-run-relvals/243936/
-  - https://cmssdt.cern.ch/jenkins/job/ib-run-relvals/243936/console
-- Start the job with JOB_URL=url-of-a-running-job
-- Check the outout and see if any process is running for too long and should be killed?
-- If a process should be killed then return the job with KILL_PID
-</pre>
+**Description:** <h2 style="color:#c0392b; font-weight:bold;">🔍 Process Status & Killer</h2>
+
+<p style="font-size:14px; color:#2c3e50;">
+<b>Description:</b> Monitors and manages processes on remote Jenkins slave machines for running jobs. This diagnostic tool allows administrators to inspect long-running or potentially stuck processes and terminate them if necessary, providing visibility and control over remote execution environments.
+</p>
+
+<h3 style="color:#8e44ad;">🎯 Purpose</h3>
+<p style="font-size:14px; line-height:1.6;">
+Provides remote process monitoring and intervention capabilities for Jenkins jobs. Enables administrators to diagnose hanging processes, view execution trees, and safely terminate problematic processes on remote build machines.
+</p>
+
+<h3 style="color:#27ae60;">📌 Key Features</h3>
+<ul style="font-size:14px; line-height:1.6; padding-left:20px;">
+  <li>🔹 <strong>Remote process inspection</strong> - displays process trees with PID, start time, and command details</li>
+  <li>🔹 <strong>Targeted process termination</strong> - allows killing specific processes by PID</li>
+  <li>🔹 <strong>Job context awareness</strong> - automatically identifies the remote machine where a job is running</li>
+  <li>🔹 <strong>Safety checks</strong> - verifies process ownership before allowing termination</li>
+  <li>🔹 <strong>Forest view display</h> - shows parent-child process relationships for better debugging</li>
+</ul>
+
+<h3 style="color:#3498db;">⚙️ Configuration Settings</h3>
+
+<div style="background-color:#f8f9fa; padding:15px; border-radius:5px; border-left:4px solid #3498db; margin:10px 0;">
+  <h4 style="margin-top:0; color:#2c3e50;">📊 Build Retention</h4>
+  <ul style="margin:5px 0;">
+    <li><strong>Days to Keep Builds:</strong> 10</li>
+    <li><strong>Max Builds to Keep:</strong> 10</li>
+  </ul>
+
+  <h4 style="color:#2c3e50;">🎛️ Job Parameters</h4>
+  <table style="width:100%; font-size:13px; border-collapse: collapse;">
+    <tr style="background-color:#e9ecef;">
+      <th style="border:1px solid #ddd; padding:8px;">Parameter</th>
+      <th style="border:1px solid #ddd; padding:8px;">Type</th>
+      <th style="border:1px solid #ddd; padding:8px;">Description</th>
+    </tr>
+    <tr>
+      <td style="border:1px solid #ddd; padding:8px;"><code>JOB_URL</code></td>
+      <td style="border:1px solid #ddd; padding:8px;">String</td>
+      <td style="border:1px solid #ddd; padding:8td;">URL of the running Jenkins job to inspect (e.g., https://cmssdt.cern.ch/jenkins/job/ib-run-relvals/243936/)</td>
+    </tr>
+    <tr>
+      <td style="border:1px solid #ddd; padding:8px;"><code>KILL_PID</code></td>
+      <td style="border:1px solid #ddd; padding:8px;">String</td>
+      <td style="border:1px solid #ddd; padding:8td;">Optional: Process ID to terminate (must match a process owned by the job user)</td>
+    </tr>
+  </table>
+
+  <h4 style="color:#2c3e50;">⚡ Execution Settings</h4>
+  <ul style="margin:5px 0;">
+    <li><strong>Build Name Format:</strong> #${BUILD_NUMBER} ${KILL_PID} ${JOB_URL}</li>
+  </ul>
+</div>
+
+<h3 style="color:#e67e22;">🔍 How It Works</h3>
+
+<h4 style="color:#d35400; font-size:15px;">🔄 Execution Workflow:</h4>
+<ol style="font-size:14px; line-height:1.6; padding-left:20px;">
+  <li><strong>Job URL Processing</strong>:
+    <ul style="margin:5px 0 5px 20px;">
+      <li>Accepts Jenkins job URLs (with or without /console suffix)</li>
+      <li>Extracts job path and locates build configuration files</li>
+    </ul>
+  </li>
+  <li><strong>Remote Machine Identification</strong>:
+    <ul style="margin:5px 0 5px 20px;">
+      <li>Parses build.xml to determine which slave machine is executing the job</li>
+      <li>Extracts SSH connection string from node configuration</li>
+    </ul>
+  </li>
+  <li><strong>Process Inspection</strong>:
+    <ul style="margin:5px 0 5px 20px;">
+      <li>SSHes to remote machine and runs: <code>ps -u ${USER} -o pid,start_time,cmd --forest</code></li>
+      <li>Displays hierarchical process tree with timestamps</li>
+    </ul>
+  </li>
+  <li><strong>Conditional Termination</strong> (if KILL_PID provided):
+    <ul style="margin:5px 0 5px 20px;">
+      <li>Verifies the PID belongs to the job user</li>
+      <li>Executes <code>kill -9 ${PID}</code> on the remote machine</li>
+      <li>Re-displays process tree to confirm termination</li>
+    </ul>
+  </li>
+</ol>
+
+<h4 style="color:#d35400; font-size:15px;">📋 Usage Instructions:</h4>
+<div style="background-color:#e8f4fd; padding:12px; border-radius:5px; margin:10px 0; border-left:4px solid #3498db;">
+  <p style="margin:0; font-size:13px;">
+    <strong>Step-by-Step Usage:</strong><br>
+    1. <strong>Copy URL</strong> of a running job (e.g., https://cmssdt.cern.ch/jenkins/job/ib-run-relvals/243936/)<br>
+    2. <strong>Start this job</strong> with <code>JOB_URL=</code> parameter set to the copied URL<br>
+    3. <strong>Analyze output</strong> - look for processes running unusually long<br>
+    4. <strong>Optional kill</strong> - if a process should be terminated, restart with <code>KILL_PID=</code> parameter<br>
+    5. <strong>Verify</strong> - check that the process was successfully terminated
+  </p>
+</div>
+<hr style="border:1px solid #bdc3c7;"/>
+
+<p style="color:#34495e; font-size:13px;">
+💡 <i>This diagnostic and intervention tool provides controlled access to remote process management, enabling administrators to resolve hanging jobs while maintaining system stability and security boundaries.</i>
+</p>
 
 **Project is `enabled`.**
 
