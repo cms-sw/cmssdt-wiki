@@ -3199,7 +3199,97 @@ Not periodically build
 
 ## [check-cmsdev-disk](https://cmssdt.cern.ch/jenkins/job/check-cmsdev-disk)
 
-**Description:** This job cleans up disk space on cmsdev machines.
+**Description:** <h2 style="color:#c0392b; font-weight:bold;">💾 check-cmsdev-disk</h2>
+
+<p style="font-size:14px; color:#2c3e50;">
+<b>Description:</b> Monitors and manages disk space on CMS development (cmsdev) machines. Automatically identifies users consuming excessive disk space and sends cleanup notifications when thresholds are exceeded.
+</p>
+
+<h3 style="color:#8e44ad;">🎯 Purpose</h3>
+<p style="font-size:14px; line-height:1.6;">
+Proactively prevents disk space exhaustion on shared CMS development infrastructure by identifying heavy disk usage and notifying responsible users for cleanup actions.
+</p>
+
+<h3 style="color:#27ae60;">📌 Key Features</h3>
+<ul style="font-size:14px; line-height:1.6; padding-left:20px;">
+  <li>🔹 <strong>Automated disk monitoring</strong> across all active cmsdev machines</li>
+  <li>🔹 <strong>Threshold-based notifications</strong> with configurable limits</li>
+  <li>🔹 <strong>Parallel execution</strong> (4 concurrent processes) for efficient scanning</li>
+  <li>🔹 <strong>Intelligent user identification</strong> via CERN phonebook integration</li>
+  <li>🔹 <strong>Personalized email notifications</strong> with specific cleanup instructions</li>
+</ul>
+
+<h3 style="color:#3498db;">⚙️ Configuration Settings</h3>
+
+<div style="background-color:#f8f9fa; padding:15px; border-radius:5px; border-left:4px solid #3498db; margin:10px 0;">
+  <h4 style="margin-top:0; color:#2c3e50;">📊 Build Retention</h4>
+  <ul style="margin:5px 0;">
+    <li><strong>Days to Keep Builds:</strong> 2</li>
+    <li><strong>Max Builds to Keep:</strong> 10</li>
+  </ul>
+
+  <h4 style="color:#2c3e50;">🎛️ Job Parameters</h4>
+  <table style="width:100%; font-size:13px; border-collapse: collapse;">
+    <tr style="background-color:#e9ecef;">
+      <th style="border:1px solid #ddd; padding:8px;">Parameter</th>
+      <th style="border:1px solid #ddd; padding:8px;">Default Value</th>
+      <th style="border:1px solid #ddd; padding:8px;">Description</th>
+    </tr>
+    <tr>
+      <td style="border:1px solid #ddd; padding:8px;"><code>DISK_SPACE_USED_IN_PERCENT</code></td>
+      <td style="border:1px solid #ddd; padding:8px;">85%</td>
+      <td style="border:1px solid #ddd; padding:8px;">Disk space threshold (with % sign) triggering email notifications</td>
+    </tr>
+    <tr>
+      <td style="border:1px solid #ddd; padding:8px;"><code>SIZE_THRESHOLD</code></td>
+      <td style="border:1px solid #ddd; padding:8px;">50</td>
+      <td style="border:1px solid #ddd; padding:8px;">Size threshold in GB for individual user data triggering notifications</td>
+    </tr>
+  </table>
+
+  <h4 style="color:#2c3e50;">⏱️ Execution Settings</h4>
+  <ul style="margin:5px 0;">
+    <li><strong>Timeout Strategy:</strong> Absolute</li>
+    <li><strong>Timeout Duration:</strong> 180 minutes</li>
+  </ul>
+</div>
+
+<h3 style="color:#e67e22;">🔍 How It Works</h3>
+
+<h4 style="color:#d35400; font-size:15px;">🔄 Execution Flow:</h4>
+<ol style="font-size:14px; line-height:1.6; padding-left:20px;">
+  <li><strong>Machine Discovery</strong>: Identifies all active cmsdev machines (excluding temporarily offline nodes)</li>
+  <li><strong>Parallel Disk Check</strong>: Simultaneously checks disk usage on 4 machines at a time</li>
+  <li><strong>Threshold Evaluation</strong>: Compares usage against <code>DISK_SPACE_USED_IN_PERCENT</code></li>
+  <li><strong>User Data Analysis</strong>: Collects detailed usage statistics for machines exceeding threshold</li>
+  <li><strong>User Identification</strong>: Looks up user details via CERN phonebook for personalized notifications</li>
+  <li><strong>Notification Dispatch</strong>: Sends cleanup emails to users exceeding <code>SIZE_THRESHOLD</code></li>
+</ol>
+
+<h4 style="color:#d35400; font-size:15px;">📧 Notification Logic:</h4>
+<div style="background-color:#fff8e1; padding:12px; border-radius:5px; margin:10px 0; border-left:4px solid #ffc107;">
+  <p style="margin:0; font-size:13px;">
+    <strong>Triggers email when:</strong><br>
+    1. Machine disk usage > <code>DISK_SPACE_USED_IN_PERCENT</code><br>
+    2. User has > <code>SIZE_THRESHOLD</code> GB of data on that machine<br>
+    3. User contact information is available in CERN phonebook
+  </p>
+</div>
+
+<h3 style="color:#27ae60;">🎯 Benefits</h3>
+<ul style="font-size:14px; line-height:1.6; padding-left:20px;">
+  <li>✅ <strong>Prevents service disruption</strong> due to disk space exhaustion</li>
+  <li>✅ <strong>Proactive maintenance</strong> rather than reactive firefighting</li>
+  <li>✅ <strong>Fair usage enforcement</strong> across all developers</li>
+  <li>✅ <strong>Reduced administrative overhead</strong> through automation</li>
+  <li>✅ <strong>Educational approach</strong> with polite, informative notifications</li>
+</ul>
+
+<hr style="border:1px solid #bdc3c7;"/>
+
+<p style="color:#34495e; font-size:13px;">
+💡 <i>This maintenance job ensures sustainable disk usage across shared CMS development resources, promoting responsible data management through automated monitoring and user-friendly notifications.</i>
+</p>
 
 **Project is `enabled`.**
 
