@@ -3903,7 +3903,97 @@ Not periodically build
 
 ## [clean-build-docker-container](https://cmssdt.cern.ch/jenkins/job/clean-build-docker-container)
 
-**Description:** This job prevents running out of disk in the machines used to build container images (e.g., the ones used for running the build-docker-container job).
+**Description:** <h2 style="color:#c0392b; font-weight:bold;">🧹 clean-build-docker-container</h2>
+
+<p style="font-size:14px; color:#2c3e50;">
+<b>Description:</b> Weekly cleanup job that prevents disk space exhaustion on Docker build machines. Systematically removes unused Docker images, volumes, and Singularity cache files to maintain sufficient disk capacity for container image building operations.
+</p>
+
+<h3 style="color:#8e44ad;">🎯 Purpose</h3>
+<p style="font-size:14px; line-height:1.6;">
+Proactively manages disk space on Docker build infrastructure by removing accumulated temporary files, unused images, and cached data. Prevents build failures due to insufficient disk space on machines used for container image construction.
+</p>
+
+<h3 style="color:#27ae60;">📌 Key Features</h3>
+<ul style="font-size:14px; line-height:1.6; padding-left:20px;">
+  <li>🔹 <strong>Scheduled weekly cleanup</strong> - runs every Monday at 9:00 AM</li>
+  <li>🔹 <strong>Three-layer cleanup</strong> - targets Docker images, volumes, and Singularity cache</li>
+  <li>🔹 <strong>Automated confirmation</strong> - uses 'yes' command for non-interactive operation</li>
+  <li>🔹 <strong>Resource optimization</strong> - recovers disk space without manual intervention</li>
+  <li>🔹 <strong>Build prevention</strong> - maintains capacity for build-docker-container job operations</li>
+</ul>
+
+<h3 style="color:#3498db;">⚙️ Configuration Settings</h3>
+
+<div style="background-color:#f8f9fa; padding:15px; border-radius:5px; border-left:4px solid #3498db; margin:10px 0;">
+  <h4 style="margin-top:0; color:#2c3e50;">📊 Build Retention</h4>
+  <ul style="margin:5px 0;">
+    <li><strong>Strategy:</strong> Log Rotation</li>
+    <li><strong>Days to Keep Builds:</strong> 15</li>
+    <li><strong>Max Builds to Keep:</strong> 100</li>
+  </ul>
+
+  <h4 style="color:#2c3e50;">⚡ Execution Settings</h4>
+  <ul style="margin:5px 0;">
+    <li><strong>Schedule:</strong> Every Monday at 9:00 AM (H 9 * * 1)</li>
+    <li><strong>Execution Nodes:</strong> docker-build && amd64 machines</li>
+    <li><strong>Rebuild Options:</strong> Enabled</li>
+    <li><strong>Trigger:</strong> Build periodically</li>
+  </ul>
+</div>
+
+<h3 style="color:#e67e22;">🔍 How It Works</h3>
+
+<h4 style="color:#d35400; font-size:15px;">🔄 Three-Phase Cleanup Process:</h4>
+
+<ol style="font-size:14px; line-height:1.6; padding-left:20px;">
+  <li><strong>Docker Image Cleanup</strong>:
+    <div style="background-color:#f0f0f0; padding:8px; border-radius:3px; margin:5px 0; font-family:monospace; font-size:12px;">
+      yes | docker image prune -a
+    </div>
+    <p style="margin:5px 0; font-size:13px;">Removes all unused Docker images (dangling and unreferenced)</p>
+  </li>
+  
+  <li><strong>Docker System & Volume Cleanup</strong>:
+    <div style="background-color:#f0f0f0; padding:8px; border-radius:3px; margin:5px 0; font-family:monospace; font-size:12px;">
+      yes | docker system prune --volumes
+    </div>
+    <p style="margin:5px 0; font-size:13px;">Removes stopped containers, unused networks, build cache, and volumes</p>
+  </li>
+  
+  <li><strong>Singularity Cache Cleanup</strong>:
+    <div style="background-color:#f0f0f0; padding:8px; border-radius:3px; margin:5px 0; font-family:monospace; font-size:12px;">
+      yes | rm -rf /build/cmsbld/jenkins/workspace/.singularity
+    </div>
+    <p style="margin:5px 0; font-size:13px;">Deletes Singularity container cache directory</p>
+  </li>
+</ol>
+
+<h4 style="color:#d35400; font-size:15px;">📋 Cleanup Scope:</h4>
+<div style="background-color:#fff8e1; padding:12px; border-radius:5px; margin:10px 0; border-left:4px solid #ffc107;">
+  <p style="margin:0; font-size:13px;">
+    <strong>Targeted Cleanup Items:</strong><br>
+    1. <strong>Docker Images</strong>: All unused images (including those not tagged)<br>
+    2. <strong>Docker Volumes</strong>: Unused named volumes<br>
+    3. <strong>Docker System</strong>: Containers, networks, build cache<br>
+    4. <strong>Singularity</strong>: Complete cache directory removal<br>
+    5. <strong>Scope</strong>: Only affects unused resources; active containers remain
+  </p>
+</div>
+
+<h3 style="color:#c0392b;">⚠️ Critical Notes</h3>
+<ul style="font-size:14px; line-height:1.6; padding-left:20px; color:#7f8c8d;">
+  <li>❗ <strong>Forceful Cleanup</strong>: Uses 'yes |' to auto-confirm all removal prompts</li>
+  <li>⚠️ <strong>Permanent Deletion</strong>: Removed images/volumes cannot be recovered</li>
+  <li>🔒 <strong>Active Resource Protection</strong>: Only removes unused resources; running containers unaffected</li>
+  <li>⏰ <strong>Weekly Schedule</strong>: Monday morning timing minimizes impact on active builds</li>
+  <li>💾 <strong>Significant Space Recovery</strong>: Can free gigabytes of disk space from accumulated caches</li>
+</ul>
+<hr style="border:1px solid #bdc3c7;"/>
+
+<p style="color:#34495e; font-size:13px;">
+💡 <i>Scheduled disk maintenance job for Docker build infrastructure. Prevents resource exhaustion by systematically removing unused container images, volumes, and cache files on a weekly basis, ensuring reliable container build operations.</i>
+</p>
 
 **Project is `enabled`.**
 
