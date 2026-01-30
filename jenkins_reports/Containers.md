@@ -109,7 +109,113 @@ Not periodically build
 
 ## [check-docker-container](https://cmssdt.cern.ch/jenkins/job/check-docker-container)
 
-**Description:** This job checks for changes in the parent image. If there are changes, it triggers the `build-docker-container` job so that our based image is updated and uploaded to the registry.
+**Description:** <h2 style="color:#c0392b; font-weight:bold;">🐳 check-docker-container</h2>
+
+<p style="font-size:14px; color:#2c3e50;">
+<b>Description:</b> Monitors upstream Docker base images for changes and triggers rebuilds when updates are detected. Specifically checks for changes in parent images and orchestrates the update process by creating GitHub issues and triggering downstream build jobs.
+</p>
+
+<h3 style="color:#8e44ad;">🎯 Purpose</h3>
+<p style="font-size:14px; line-height:1.6;">
+Ensures CMS Docker containers remain up-to-date with their base images by automatically detecting upstream changes and initiating rebuild processes through GitHub issue creation and job triggering.
+</p>
+
+<h3 style="color:#27ae60;">📌 Key Features</h3>
+<ul style="font-size:14px; line-height:1.6; padding-left:20px;">
+  <li>🔹 <strong>Upstream change detection</strong> - monitors base image checksums for modifications</li>
+  <li>🔹 <strong>Multi-architecture support</strong> - handles x86_64, aarch64, and ppc64le architectures</li>
+  <li>🔹 <strong>GitHub integration</strong> - creates issues in cms-sw/cms-docker repository for tracking</li>
+  <li>🔹 <strong>Selective processing</strong> - can target specific tags or force rebuilds via parameters</li>
+  <li>🔹 <strong>Build state management</strong> - labels and tracks which images are queued for building</li>
+</ul>
+
+<h3 style="color:#3498db;">⚙️ Configuration Settings</h3>
+
+<div style="background-color:#f8f9fa; padding:15px; border-radius:5px; border-left:4px solid #3498db; margin:10px 0;">
+  <h4 style="margin-top:0; color:#2c3e50;">📊 Build Retention</h4>
+  <ul style="margin:5px 0;">
+    <li><strong>Strategy:</strong> Log Rotation</li>
+    <li><strong>Days to Keep Builds:</strong> 15</li>
+    <li><strong>Max Builds to Keep:</strong> 50</li>
+  </ul>
+
+  <h4 style="color:#2c3e50;">🎛️ Job Parameters</h4>
+  <table style="width:100%; font-size:13px; border-collapse: collapse;">
+    <tr style="background-color:#e9ecef;">
+      <th style="border:1px solid #ddd; padding:8px;">Parameter</th>
+      <th style="border:1px solid #ddd; padding:8px;">Type</th>
+      <th style="border:1px solid #ddd; padding:8px;">Default Value</th>
+      <th style="border:1px solid #ddd; padding:8px;">Description</th>
+    </tr>
+    <tr>
+      <td style="border:1px solid #ddd; padding:8px;"><code>REPOSITORY</code></td>
+      <td style="border:1px solid #ddd; padding:8px;">String</td>
+      <td style="border:1px solid #ddd; padding:8px;">cms</td>
+      <td style="border:1px solid #ddd; padding:8px;">Target Docker repository to check</td>
+    </tr>
+    <tr>
+      <td style="border:1px solid #ddd; padding:8px;"><code>FORCE_BUILD</code></td>
+      <td style="border:1px solid #ddd; padding:8px;">Boolean</td>
+      <td style="border:1px solid #ddd; padding:8px;">false</td>
+      <td style="border:1px solid #ddd; padding:8px;">Force rebuild regardless of changes</td>
+    </tr>
+    <tr>
+      <td style="border:1px solid #ddd; padding:8px;"><code>TAGS</code></td>
+      <td style="border:1px solid #ddd; padding:8px;">String</td>
+      <td style="border:1px solid #ddd; padding:8px;">(empty)</td>
+      <td style="border:1px solid #ddd; padding:8px;">Specific tags to process (default: all)</td>
+    </tr>
+  </table>
+
+  <h4 style="color:#2c3e50;">⚡ Execution Settings</h4>
+  <ul style="margin:5px 0;">
+    <li><strong>Concurrency Control:</strong> Prevent multiple jobs with identical REPOSITORY parameter</li>
+    <li><strong>Execution Nodes:</strong> Restricted to cmsdist machines</li>
+    <li><strong>Build Name Format:</strong> #${BUILD_NUMBER} ${REPOSITORY} ${TAGS}</li>
+  </ul>
+</div>
+
+<h3 style="color:#e67e22;">🔍 How It Works</h3>
+
+<h4 style="color:#d35400; font-size:15px;">🔄 Detection & Notification Logic:</h4>
+<ol style="font-size:14px; line-height:1.6; padding-left:20px;">
+  <li><strong>Base Image Comparison</strong>: Compares current base image checksums against stored values</li>
+  <li><strong>Architecture-Specific Processing</strong>:
+    <ul style="margin:5px 0 5px 20px;">
+      <li><strong>el8/el9 repositories</strong>: Check for AlmaLinux base image changes</li>
+      <li><strong>Other repositories</strong>: Check Dockerfile-based image changes</li>
+    </ul>
+  </li>
+  <li><strong>GitHub Issue Creation</strong>: When changes detected, creates issues in cms-sw/cms-docker with specific labels</li>
+  <li><strong>Build State Management</strong>: Updates issue labels to track queued/building states</li>
+  <li><strong>Duplicate Prevention</strong>: Checks for already-building architectures to avoid conflicts</li>
+</ol>
+
+<h4 style="color:#d35400; font-size:15px;">📋 Key Detection Logic:</h4>
+<div style="background-color:#fff8e1; padding:12px; border-radius:5px; margin:10px 0; border-left:4px solid #ffc107;">
+  <p style="margin:0; font-size:13px;">
+    <strong>Change Detection Criteria:</strong><br>
+    1. <strong>For el8/el9</strong>: Detects changes in <code>library/almalinux</code> base images<br>
+    2. <strong>For other repos</strong>: Detects changes in Dockerfile-based images (excluding bootstrap files)<br>
+    3. <strong>Identifies by</strong>: Architecture + checksum (first 10 chars) combination<br>
+    4. <strong>Creates GitHub issue</strong> with format: <code>[REPOSITORY][ARCH-checksum]</code>
+  </p>
+</div>
+
+<h3 style="color:#c0392b;">⚠️ Critical Notes</h3>
+<ul style="font-size:14px; line-height:1.6; padding-left:20px; color:#7f8c8d;">
+  <li>❗ <strong>GitHub Dependency</strong>: Requires GitHub API access for issue creation and labeling</li>
+  <li>⚠️ <strong>Concurrency Control</strong>: Only one job per repository can run simultaneously</li>
+  <li>🔧 <strong>Manual Override</strong>: Use <code>FORCE_BUILD=true</code> to bypass change detection</li>
+  <li>🏷️ <strong>Label Management</strong>: Uses GitHub labels for build state tracking (queued/building)</li>
+  <li>🔄 <strong>Downstream Trigger</strong>: Detection triggers <code>build-docker-container</code> job for actual rebuilds</li>
+</ul>
+
+<hr style="border:1px solid #bdc3c7;"/>
+
+<p style="color:#34495e; font-size:13px;">
+💡 <i>This monitoring job ensures CMS Docker containers stay synchronized with upstream base images through automated change detection and issue-based workflow orchestration.</i>
+</p>
 
 **Project is `enabled`.**
 
