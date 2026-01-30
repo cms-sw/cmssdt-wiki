@@ -1360,7 +1360,129 @@ Not periodically build
 
 ## [check-unused-cmsdist-packages](https://cmssdt.cern.ch/jenkins/job/check-unused-cmsdist-packages)
 
-**Description:** This job check for unused cmsdist files so that one can do the cleanup.
+**Description:** <h2 style="color:#c0392b; font-weight:bold;">🧹 check-unused-cmsdist-packages</h2>
+
+<p style="font-size:14px; color:#2c3e50;">
+<b>Description:</b> Identifies unused files in cmsdist branches to facilitate repository cleanup. This job analyzes CMS distribution specifications across multiple architectures and release queues to detect files that are no longer referenced or required by any active build configuration.
+</p>
+
+<h3 style="color:#8e44ad;">🎯 Purpose</h3>
+<p style="font-size:14px; line-height:1.6;">
+Performs repository cleanup analysis by identifying orphaned files in cmsdist branches. Helps maintain repository hygiene by detecting unused patch files, specification files, and package definitions that can be safely removed to reduce repository size and complexity.
+</p>
+
+<h3 style="color:#27ae60;">📌 Key Features</h3>
+<ul style="font-size:14px; line-height:1.6; padding-left:20px;">
+  <li>🔹 <strong>Cross-architecture analysis</strong> - processes multiple SCRAM architectures simultaneously</li>
+  <li>🔹 <strong>Multi-branch scanning</strong> - analyzes all active cmsdist branches in master release queue</li>
+  <li>🔹 <strong>Intelligent filtering</strong> - excludes archive and vectorization directories from analysis</li>
+  <li>🔹 <strong>Pip dependency validation</strong> - checks requirements.txt for unused pip package files</li>
+  <li>🔹 <strong>Artifact persistence</strong> - stores results for reuse across multiple executions</li>
+</ul>
+
+<h3 style="color:#3498db;">⚙️ Configuration Settings</h3>
+
+<div style="background-color:#f8f9fa; padding:15px; border-radius:5px; border-left:4px solid #3498db; margin:10px 0;">
+  <h4 style="margin-top:0; color:#2c3e50;">📊 Build Retention</h4>
+  <ul style="margin:5px 0;">
+    <li><strong>Strategy:</strong> Log Rotation</li>
+    <li><strong>Days to Keep Builds:</strong> 30</li>
+    <li><strong>Max Builds to Keep:</strong> 100</li>
+  </ul>
+
+  <h4 style="color:#2c3e50;">🎛️ Job Parameters</h4>
+  <table style="width:100%; font-size:13px; border-collapse: collapse;">
+    <tr style="background-color:#e9ecef;">
+      <th style="border:1px solid #ddd; padding:8px;">Parameter</th>
+      <th style="border:1px solid #ddd; padding:8px;">Type</th>
+      <th style="border:1px solid #ddd; padding:8px;">Description</th>
+    </tr>
+    <tr>
+      <td style="border:1px solid #ddd; padding:8px;"><code>ARCHITECTURE</code></td>
+      <td style="border:1px solid #ddd; padding:8px;">String</td>
+      <td style="border:1px solid #ddd; padding:8px;">Target architecture (determines execution node)</td>
+    </tr>
+    <tr>
+      <td style="border:1px solid #ddd; padding:8px;"><code>RELEASE_QUEUE</code></td>
+      <td style="border:1px solid #ddd; padding:8px;">String</td>
+      <td style="border:1px solid #ddd; padding:8px;">Specific release queue to analyze</td>
+    </tr>
+    <tr>
+      <td style="border:1px solid #ddd; padding:8px;"><code>UPLOAD_ID</code></td>
+      <td style="border:1px solid #ddd; padding:8px;">String</td>
+      <td style="border:1px solid #ddd; padding:8px;">Reuse previous analysis artifacts</td>
+    </tr>
+    <tr>
+      <td style="border:1px solid #ddd; padding:8px;"><code>DOCKER_IMG</code></td>
+      <td style="border:1px solid #ddd; padding:8px;">String</td>
+      <td style="border:1px solid #ddd; padding:8td;">Docker image for containerized execution</td>
+    </tr>
+  </table>
+
+  <h4 style="color:#2c3e50;">⚡ Execution Settings</h4>
+  <ul style="margin:5px 0;">
+    <li><strong>Node Selection Logic:</strong> Groovy script determines execution node based on ARCHITECTURE</li>
+    <li><strong>Build Name Format:</strong> #${BUILD_NUMBER} ${RELEASE_QUEUE} ${ARCHITECTURE} ${UPLOAD_ID}</li>
+    <li><strong>Parallel Execution:</strong> Triggers multiple sub-builds for different architectures</li>
+  </ul>
+</div>
+
+<h3 style="color:#e67e22;">🔍 How It Works</h3>
+
+<h4 style="color:#d35400; font-size:15px;">🔄 Two-Phase Execution Architecture:</h4>
+
+<strong>Phase 1: Orchestrator (Manual Trigger)</strong>
+<ol style="font-size:14px; line-height:1.6; padding-left:20px;">
+  <li><strong>Configuration Analysis</strong>: Parses cms-bot/config.map for active release configurations</li>
+  <li><strong>Property File Generation</strong>: Creates CMSSW_*.prop files for each architecture/release combination</li>
+  <li><strong>Parallel Triggering</strong>: Launches multiple sub-builds using generated property files</li>
+  <li><strong>Artifact Coordination</strong>: Manages UPLOAD_ID for result sharing across sub-builds</li>
+</ol>
+
+<strong>Phase 2: Worker (Individual Architecture Analysis)</strong>
+<ol style="font-size:14px; line-height:1.6; padding-left:20px;">
+  <li><strong>Artifact Collection</strong>: Retrieves previously generated usage data</li>
+  <li><strong>Branch Scanning</strong>: Clones each cmsdist branch to analyze file usage</li>
+  <li><strong>File Type Analysis</strong>: Examines .patch, .file, .spec, and spec files</li>
+  <li><strong>Dependency Validation</strong>: Cross-references pip files with requirements.txt</li>
+  <li><strong>Result Compilation</strong>: Generates unused.txt and unused_uniq.txt reports</li>
+</ol>
+
+<h4 style="color:#d35400; font-size:15px;">📋 Analysis Logic:</h4>
+<div style="background-color:#fff8e1; padding:12px; border-radius:5px; margin:10px 0; border-left:4px solid #ffc107;">
+  <p style="margin:0; font-size:13px;">
+    <strong>File Identification Rules:</strong><br>
+    1. <strong>File Types Scanned</strong>: .patch, .file, .spec, spec files<br>
+    2. <strong>Excluded Directories</strong>: /.git/, vectorization/, archive/<br>
+    3. <strong>Pip Validation</strong>: .file packages must appear in requirements.txt<br>
+    4. <strong>Usage Detection</strong>: Files not referenced in any build configuration<br>
+    5. <strong>Branch Coverage</strong>: All active cmsdist branches in master queue
+  </p>
+</div>
+
+<h3 style="color:#c0392b;">⚠️ Critical Notes</h3>
+<ul style="font-size:14px; line-height:1.6; padding-left:20px; color:#7f8c8d;">
+  <li>❗ <strong>Manual Trigger Required</strong>: Primary analysis only runs on manual job trigger</li>
+  <li>⚠️ <strong>Artifact Dependency</strong>: Worker phase requires artifacts from previous manual runs</li>
+  <li>🔍 <strong>Conservative Detection</strong>: May report false positives; manual verification recommended</li>
+  <li>🌐 <strong>GitHub Access Required</strong>: Needs access to cms-sw repositories for branch cloning</li>
+  <li>🔄 <strong>Idempotent Operation</strong>: Can reuse previous analysis with UPLOAD_ID parameter</li>
+</ul>
+
+<h3 style="color:#27ae60;">🎯 Benefits</h3>
+<ul style="font-size:14px; line-height:1.6; padding-left:20px;">
+  <li>✅ <strong>Repository optimization</strong> - Identifies files that can be safely removed</li>
+  <li>✅ <strong>Parallel processing</strong> - Efficient analysis across multiple architectures</li>
+  <li>✅ <strong>Historical comparison</strong> - Can compare current vs. previous analyses</li>
+  <li>✅ <strong>Comprehensive coverage</strong> - Analyzes all active release configurations</li>
+  <li>✅ <strong>Automated reporting</strong> - Generates actionable cleanup lists</li>
+</ul>
+
+<hr style="border:1px solid #bdc3c7;"/>
+
+<p style="color:#34495e; font-size:13px;">
+💡 <i>This cleanup analysis job helps maintain cmsdist repository efficiency by identifying orphaned files across all active branches and architectures, providing data-driven guidance for repository maintenance.</i>
+</p>
 
 **Project is `enabled`.**
 
