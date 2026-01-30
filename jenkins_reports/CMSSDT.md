@@ -3270,8 +3270,8 @@ Proactively prevents disk space exhaustion on shared CMS development infrastruct
 <div style="background-color:#fff8e1; padding:12px; border-radius:5px; margin:10px 0; border-left:4px solid #ffc107;">
   <p style="margin:0; font-size:13px;">
     <strong>Triggers email when:</strong><br>
-    1. Machine disk usage > <code>DISK_SPACE_USED_IN_PERCENT</code><br>
-    2. User has > <code>SIZE_THRESHOLD</code> GB of data on that machine<br>
+    1. Machine disk usage > <code>85%</code><br>
+    2. User has > <code>50</code> GB of data on that machine<br>
     3. User contact information is available in CERN phonebook
   </p>
 </div>
