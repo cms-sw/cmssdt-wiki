@@ -2081,50 +2081,6 @@ Not periodically build
 
 ---
 
-## [grid1187478](https://cmssdt.cern.ch/jenkins/job/grid1187478)
-
-**Description:** None
-
-**Project is `enabled`.**
-
-**Upstream projects:**
-
-**Downstream projects:**
-
-**Sub-projects:**
-
-**Triggers from:** []
-
-
-**Periodic builds:**
-```bash
-Not periodically build
-```
-
----
-
-## [grid1188740](https://cmssdt.cern.ch/jenkins/job/grid1188740)
-
-**Description:** None
-
-**Project is `enabled`.**
-
-**Upstream projects:**
-
-**Downstream projects:**
-
-**Sub-projects:**
-
-**Triggers from:** []
-
-
-**Periodic builds:**
-```bash
-Not periodically build
-```
-
----
-
 ## [grid1201821](https://cmssdt.cern.ch/jenkins/job/grid1201821)
 
 **Description:** None
