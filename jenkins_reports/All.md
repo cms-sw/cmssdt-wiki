@@ -2470,8 +2470,7 @@ Not periodically build
 
 ## [cleanup-docker-tags](https://cmssdt.cern.ch/jenkins/job/cleanup-docker-tags)
 
-**Description:** This job removes outdated tags from docker repository.
-<h2 style="color:#c0392b; font-weight:bold;">🏷️ cleanup-docker-tags</h2>
+**Description:** <h2 style="color:#c0392b; font-weight:bold;">🏷️ cleanup-docker-tags</h2>
 
 <p style="font-size:14px; color:#2c3e50;">
 <b>Description:</b> Daily maintenance job that removes outdated Docker image tags from container registries. Manages tag lifecycle by deleting old or unused tags to maintain registry efficiency and prevent tag proliferation.
@@ -2553,28 +2552,6 @@ Prevents Docker registry bloat by systematically removing obsolete image tags. E
     5. <strong>Execution</strong>: Direct script execution without Python path modifications
   </p>
 </div>
-
-<h3 style="color:#c0392b;">⚠️ Critical Notes</h3>
-<ul style="font-size:14px; line-height:1.6; padding-left:20px; color:#7f8c8d;">
-  <li>❗ <strong>Tag Deletion</strong>: Removes Docker image tags from registries permanently</li>
-  <li>⚠️ <strong>External Dependency</strong>: Relies on cms-docker repository script logic</li>
-  <li>🔒 <strong>Authentication Required</strong>: Needs registry credentials for tag deletion</li>
-  <li>🐍 <strong>Python Environment</strong>: Uses isolated Python environment for execution</li>
-  <li>🔍 <strong>Dry-run Recommendation</strong>: Test with DRY_RUN=true before production use</li>
-</ul>
-
-<h3 style="color:#27ae60;">🛠️ Dry Run Mode</h3>
-<div style="background-color:#e8f4fd; padding:12px; border-radius:5px; margin:10px 0; border-left:4px solid #3498db;">
-  <p style="margin:0; font-size:13px;">
-    <strong>Safe Testing Mode:</strong><br>
-    • <strong>Activation</strong>: Set <code>DRY_RUN=true</code> parameter<br>
-    • <strong>Effect</strong>: Adds <code>-n</code> flag to script execution<br>
-    • <strong>Output</strong>: Shows what would be deleted without actual removal<br>
-    • <strong>Purpose</strong>: Review deletion plan before execution<br>
-    • <strong>Use Case</strong>: Initial configuration testing or policy validation
-  </p>
-</div>
-
 <h3 style="color:#e67e22;">🎯 Benefits</h3>
 <ul style="font-size:14px; line-height:1.6; padding-left:20px;">
   <li>✅ <strong>Registry optimization</strong> - prevents tag proliferation and registry bloat</li>
