@@ -1903,7 +1903,135 @@ Not periodically build
 ## [cleanup-cms-sw-io-history](https://cmssdt.cern.ch/jenkins/job/cleanup-cms-sw-io-history)
 
 **Description:** This job cleanup the cms-sw/cms-sw.github.io repository history. Specially the data and _data directories history.
+<h2 style="color:#c0392b; font-weight:bold;">🗑️ cleanup-cms-sw-io-history</h2>
 
+<p style="font-size:14px; color:#2c3e50;">
+<b>Description:</b> Maintains the CMS GitHub Pages repository by resetting history for data directories while preserving current content. Specifically cleans the `data` and `_data` directories' Git history to manage repository size and optimize performance.
+</p>
+
+<h3 style="color:#8e44ad;">🎯 Purpose</h3>
+<p style="font-size:14px; line-height:1.6;">
+Performs controlled Git history rewriting for data-heavy directories in the cms-sw.github.io repository. Reduces repository bloat by resetting history while keeping current data intact, then triggers GitHub Pages regeneration.
+</p>
+
+<h3 style="color:#27ae60;">📌 Key Features</h3>
+<ul style="font-size:14px; line-height:1.6; padding-left:20px;">
+  <li>🔹 <strong>Scheduled weekly cleanup</strong> - runs every Sunday at 1:00 AM</li>
+  <li>🔹 <strong>Dual-branch strategy</strong> - uses 'code' branch as source, 'master' as target</li>
+  <li>🔹 <strong>History reset</strong> - completely replaces data directory history with fresh state</li>
+  <li>🔹 <strong>Force-push workflow</strong> - uses git push -f to rewrite branch history</li>
+  <li>🔹 <strong>Downstream triggering</strong> - automatically updates GitHub Pages after cleanup</li>
+</ul>
+
+<h3 style="color:#3498db;">⚙️ Configuration Settings</h3>
+
+<div style="background-color:#f8f9fa; padding:15px; border-radius:5px; border-left:4px solid #3498db; margin:10px 0;">
+  <h4 style="margin-top:0; color:#2c3e50;">📊 Build Retention</h4>
+  <ul style="margin:5px 0;">
+    <li><strong>Strategy:</strong> Log Rotation</li>
+    <li><strong>Days to Keep Builds:</strong> 30</li>
+    <li><strong>Max Builds to Keep:</strong> 20</li>
+  </ul>
+
+  <h4 style="color:#2c3e50;">⚡ Execution Settings</h4>
+  <ul style="margin:5px 0;">
+    <li><strong>Schedule:</strong> Every Sunday at 1:00 AM (H 1 * * 0)</li>
+    <li><strong>Execution Nodes:</strong> lxplus, lxplus-scripts, or cmsdev machines</li>
+    <li><strong>Trigger:</strong> Build periodically</li>
+    <li><strong>Workspace:</strong> Delete before build starts</li>
+    <li><strong>Downstream Job:</strong> Triggers update-github-pages on success</li>
+    <li><strong>Email:</strong> cms-sdt-logs@cern.ch for unstable builds</li>
+  </ul>
+</div>
+
+<h3 style="color:#e67e22;">🔍 How It Works</h3>
+
+<h4 style="color:#d35400; font-size:15px;">🔄 Four-Phase Cleanup Process:</h4>
+
+<ol style="font-size:14px; line-height:1.6; padding-left:20px;">
+  <li><strong>Repository Cloning</strong>:
+    <ul style="margin:5px 0 5px 20px;">
+      <li>Shallow clone of 'code' branch (source data)</li>
+      <li>Shallow clone of 'master' branch (target for cleanup)</li>
+      <li>Uses depth=1 to minimize transfer size</li>
+    </ul>
+  </li>
+  
+  <li><strong>Marker File Management</strong>:
+    <div style="background-color:#f0f0f0; padding:8px; border-radius:3px; margin:5px 0; font-family:monospace; font-size:12px;">
+      if [ ! -f data/history_cleanup ] ; then
+        touch data/history_cleanup
+        git add data/history_cleanup
+        git commit -a -m 'history cleanup file added'
+    </div>
+    <p style="margin:5px 0; font-size:13px;">Ensures clean working state by adding/removing marker file</p>
+  </li>
+  
+  <li><strong>Directory Synchronization</strong>:
+    <div style="background-color:#f0f0f0; padding:8px; border-radius:3px; margin:5px 0; font-family:monospace; font-size:12px;">
+      rm -rf GITHUB_IO_MASTER/.git
+      rsync -a GITHUB_IO_CODE/ GITHUB_IO_MASTER/
+    </div>
+    <p style="margin:5px 0; font-size:13px;">Replaces master content with code branch while preserving .git separately</p>
+  </li>
+  
+  <li><strong>History Rewriting</strong>:
+    <div style="background-color:#f0f0f0; padding:8px; border-radius:3px; margin:5px 0; font-family:monospace; font-size:12px;">
+      git add .
+      git commit -m "Hisory of data directories was reset at $(date)"
+      git push -f origin HEAD:master
+    </div>
+    <p style="margin:5px 0; font-size:13px;">Force-pushes rewritten history to master branch</p>
+  </li>
+</ol>
+
+<h4 style="color:#d35400; font-size:15px;">📋 Branch Strategy:</h4>
+<div style="background-color:#fff8e1; padding:12px; border-radius:5px; margin:10px 0; border-left:4px solid #ffc107;">
+  <p style="margin:0; font-size:13px;">
+    <strong>Two-Branch Architecture:</strong><br>
+    1. <strong>code branch</strong>: Contains current data files (source)<br>
+    2. <strong>master branch</strong>: GitHub Pages branch (target for cleanup)<br>
+    3. <strong>Workflow</strong>: Master gets fresh data from code, resetting its history<br>
+    4. <strong>Result</strong>: Master has clean history with current data files<br>
+    5. <strong>Benefit</strong>: Reduces repository size while maintaining content
+  </p>
+</div>
+
+<h3 style="color:#c0392b;">⚠️ Critical Notes</h3>
+<ul style="font-size:14px; line-height:1.6; padding-left:20px; color:#7f8c8d;">
+  <li>❗ <strong>Force Push Operation</strong>: Uses <code>git push -f</code> which rewrites branch history</li>
+  <li>⚠️ <strong>Irreversible History Loss</strong>: Previous commits in data directories are permanently removed</li>
+  <li>🔒 <strong>SSH Authentication Required</strong>: Uses git@github.com URLs for push access</li>
+  <li>🌐 <strong>GitHub Pages Impact</strong>: Triggers complete regeneration of static site</li>
+  <li>📧 <strong>Failure Notification</strong>: Email alerts sent for unstable builds</li>
+</ul>
+
+<h3 style="color:#27ae60;">🔄 Downstream Integration</h3>
+<div style="background-color:#e8f4fd; padding:12px; border-radius:5px; margin:10px 0; border-left:4px solid #3498db;">
+  <p style="margin:0; font-size:13px;">
+    <strong>Automatic Triggering:</strong><br>
+    • <strong>Success</strong>: Triggers <code>update-github-pages</code> job<br>
+    • <strong>Condition</strong>: Only if build is stable<br>
+    • <strong>Purpose</strong>: Ensures GitHub Pages are regenerated with cleaned repository<br>
+    • <strong>Timing</strong>: Immediate sequential execution<br>
+    • <strong>Monitoring</strong>: Both jobs can be tracked in Jenkins build chain
+  </p>
+</div>
+
+<h3 style="color:#e67e22;">🎯 Benefits</h3>
+<ul style="font-size:14px; line-height:1.6; padding-left:20px;">
+  <li>✅ <strong>Repository optimization</strong> - reduces Git history bloat from data files</li>
+  <li>✅ <strong>Performance improvement</strong> - faster clones and operations</li>
+  <li>✅ <strong>Automated maintenance</strong> - weekly schedule prevents accumulation</li>
+  <li>✅ <strong>Content preservation</strong> - keeps current data while removing history</li>
+  <li>✅ <strong>Integrated workflow</strong> - automatically triggers pages regeneration</li>
+</ul>
+
+<hr style="border:1px solid #bdc3c7;"/>
+
+<p style="color:#34495e; font-size:13px;">
+💡 <i>Scheduled Git history maintenance for CMS GitHub Pages repository. Resets history of data directories to manage repository size while preserving current content, followed by automatic GitHub Pages regeneration.</i>
+</p>
 
 **Project is `enabled`.**
 
