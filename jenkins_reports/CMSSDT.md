@@ -4721,6 +4721,136 @@ H 0 * * *
 ## [cleanup-docker-tags](https://cmssdt.cern.ch/jenkins/job/cleanup-docker-tags)
 
 **Description:** This job removes outdated tags from docker repository.
+<h2 style="color:#c0392b; font-weight:bold;">🏷️ cleanup-docker-tags</h2>
+
+<p style="font-size:14px; color:#2c3e50;">
+<b>Description:</b> Daily maintenance job that removes outdated Docker image tags from container registries. Manages tag lifecycle by deleting old or unused tags to maintain registry efficiency and prevent tag proliferation.
+</p>
+
+<h3 style="color:#8e44ad;">🎯 Purpose</h3>
+<p style="font-size:14px; line-height:1.6;">
+Prevents Docker registry bloat by systematically removing obsolete image tags. Ensures registry performance and manageability by applying tag retention policies and freeing storage space from unused Docker images.
+</p>
+
+<h3 style="color:#27ae60;">📌 Key Features</h3>
+<ul style="font-size:14px; line-height:1.6; padding-left:20px;">
+  <li>🔹 <strong>Daily scheduled execution</strong> - runs every day at midnight</li>
+  <li>🔹 <strong>Dry-run capability</strong> - preview deletion operations without execution</li>
+  <li>🔹 <strong>Python-based logic</strong> - uses dedicated docker_tag_delete.py script</li>
+  <li>🔹 <strong>CMS Docker integration</strong> - leverages cms-docker repository tools</li>
+  <li>🔹 <strong>Safe operation</strong> - configurable dry-run mode for testing</li>
+</ul>
+
+<h3 style="color:#3498db;">⚙️ Configuration Settings</h3>
+
+<div style="background-color:#f8f9fa; padding:15px; border-radius:5px; border-left:4px solid #3498db; margin:10px 0;">
+  <h4 style="margin-top:0; color:#2c3e50;">📊 Build Retention</h4>
+  <ul style="margin:5px 0;">
+    <li><strong>Strategy:</strong> Log Rotation</li>
+    <li><strong>Days to Keep Builds:</strong> 7</li>
+    <li><strong>Max Builds to Keep:</strong> 50</li>
+  </ul>
+
+  <h4 style="color:#2c3e50;">🎛️ Job Parameters</h4>
+  <table style="width:100%; font-size:13px; border-collapse: collapse;">
+    <tr style="background-color:#e9ecef;">
+      <th style="border:1px solid #ddd; padding:8px;">Parameter</th>
+      <th style="border:1px solid #ddd; padding:8px;">Description</th>
+    </tr>
+    <tr>
+      <td style="border:1px solid #ddd; padding:8px;"><code>DRY_RUN</code></td>
+      <td style="border:1px solid #ddd; padding:8td;">Boolean flag to simulate deletions without actual removal</td>
+    </tr>
+  </table>
+
+  <h4 style="color:#2c3e50;">⚡ Execution Settings</h4>
+  <ul style="margin:5px 0;">
+    <li><strong>Schedule:</strong> Daily at midnight (H 0 * * *)</li>
+    <li><strong>Execution Nodes:</strong> cmsdist machines</li>
+    <li><strong>Workspace:</strong> Delete before build starts</li>
+    <li><strong>Trigger:</strong> Build periodically</li>
+  </ul>
+</div>
+
+<h3 style="color:#e67e22;">🔍 How It Works</h3>
+
+<h4 style="color:#d35400; font-size:15px;">🔄 Two-Phase Execution:</h4>
+
+<ol style="font-size:14px; line-height:1.6; padding-left:20px;">
+  <li><strong>Repository Preparation</strong>:
+    <div style="background-color:#f0f0f0; padding:8px; border-radius:3px; margin:5px 0; font-family:monospace; font-size:12px;">
+      git clone --depth 1 https://github.com/cms-sw/cms-docker
+    </div>
+    <p style="margin:5px 0; font-size:13px;">Clones the latest CMS Docker utilities with minimal history</p>
+  </li>
+  
+  <li><strong>Tag Cleanup Execution</strong>:
+    <div style="background-color:#f0f0f0; padding:8px; border-radius:3px; margin:5px 0; font-family:monospace; font-size:12px;">
+      PYTHONPATH= ./cms-docker/bin/docker_tag_delete.py ${ARGS}
+    </div>
+    <p style="margin:5px 0; font-size:13px;">Executes the Python tag deletion script with appropriate arguments</p>
+  </li>
+</ol>
+
+<h4 style="color:#d35400; font-size:15px;">📋 Argument Handling:</h4>
+<div style="background-color:#fff8e1; padding:12px; border-radius:5px; margin:10px 0; border-left:4px solid #ffc107;">
+  <p style="margin:0; font-size:13px;">
+    <strong>Argument Logic:</strong><br>
+    1. <strong>Default mode</strong>: <code>ARGS=""</code> - performs actual deletion<br>
+    2. <strong>Dry-run mode</strong>: <code>ARGS="-n"</code> when <code>DRY_RUN=true</code><br>
+    3. <strong>Environment</strong>: <code>PYTHONPATH=</code> ensures clean Python environment<br>
+    4. <strong>Script location</strong>: <code>cms-docker/bin/docker_tag_delete.py</code><br>
+    5. <strong>Execution</strong>: Direct script execution without Python path modifications
+  </p>
+</div>
+
+<h3 style="color:#c0392b;">⚠️ Critical Notes</h3>
+<ul style="font-size:14px; line-height:1.6; padding-left:20px; color:#7f8c8d;">
+  <li>❗ <strong>Tag Deletion</strong>: Removes Docker image tags from registries permanently</li>
+  <li>⚠️ <strong>External Dependency</strong>: Relies on cms-docker repository script logic</li>
+  <li>🔒 <strong>Authentication Required</strong>: Needs registry credentials for tag deletion</li>
+  <li>🐍 <strong>Python Environment</strong>: Uses isolated Python environment for execution</li>
+  <li>🔍 <strong>Dry-run Recommendation</strong>: Test with DRY_RUN=true before production use</li>
+</ul>
+
+<h3 style="color:#27ae60;">🛠️ Dry Run Mode</h3>
+<div style="background-color:#e8f4fd; padding:12px; border-radius:5px; margin:10px 0; border-left:4px solid #3498db;">
+  <p style="margin:0; font-size:13px;">
+    <strong>Safe Testing Mode:</strong><br>
+    • <strong>Activation</strong>: Set <code>DRY_RUN=true</code> parameter<br>
+    • <strong>Effect</strong>: Adds <code>-n</code> flag to script execution<br>
+    • <strong>Output</strong>: Shows what would be deleted without actual removal<br>
+    • <strong>Purpose</strong>: Review deletion plan before execution<br>
+    • <strong>Use Case</strong>: Initial configuration testing or policy validation
+  </p>
+</div>
+
+<h3 style="color:#e67e22;">🎯 Benefits</h3>
+<ul style="font-size:14px; line-height:1.6; padding-left:20px;">
+  <li>✅ <strong>Registry optimization</strong> - prevents tag proliferation and registry bloat</li>
+  <li>✅ <strong>Storage efficiency</strong> - frees space from obsolete image tags</li>
+  <li>✅ <strong>Automated maintenance</strong> - daily execution ensures consistent cleanup</li>
+  <li>✅ <strong>Safe testing</strong> - dry-run mode allows risk-free evaluation</li>
+  <li>✅ <strong>Integration ready</strong> - uses established CMS Docker tooling</li>
+</ul>
+
+<h3 style="color:#c0392b;">🔧 Underlying Script Details</h3>
+<div style="background-color:#ffe6e6; padding:12px; border-radius:5px; margin:10px 0; border-left:4px solid #c0392b;">
+  <p style="margin:0; font-size:13px;">
+    <strong>docker_tag_delete.py Script (Expected Behavior):</strong><br>
+    1. <strong>Registry Analysis</strong>: Scans Docker registries for CMS images<br>
+    2. <strong>Tag Evaluation</strong>: Identifies tags meeting deletion criteria<br>
+    3. <strong>Policy Application</strong>: Applies retention rules (age, count, etc.)<br>
+    4. <strong>Deletion Execution</strong>: Removes selected tags from registry<br>
+    5. <strong>Logging</strong>: Records all operations for audit purposes
+  </p>
+</div>
+
+<hr style="border:1px solid #bdc3c7;"/>
+
+<p style="color:#34495e; font-size:13px;">
+💡 <i>Daily Docker registry maintenance job that removes outdated image tags using CMS Docker tooling. Features dry-run capability for safe testing and regular execution to maintain registry efficiency.</i>
+</p>
 
 **Project is `enabled`.**
 
