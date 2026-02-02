@@ -602,11 +602,11 @@ Systematically removes temporary pull request repositories associated with speci
 
 <h3 style="color:#27ae60;">📌 Key Features</h3>
 <ul style="font-size:14px; line-height:1.6; padding-left:20px;">
-  <li>🔹 <strong>Targeted cleanup</strong> - removes specific PR repository patterns</li>
-  <li>🔹 <strong>Validation safety</strong> - verifies parameter format before execution</li>
-  <li>🔹 <strong>Direct filesystem operation</strong> - executes on cmsrep server itself</li>
-  <li>🔹 <strong>Pattern-based matching</strong> - uses wildcards to match multiple repositories</li>
-  <li>🔹 <strong>Single-purpose design</strong> - focused cleanup for PR repositories only</li>
+  <li> <strong>Targeted cleanup</strong> - removes specific PR repository patterns</li>
+  <li> <strong>Validation safety</strong> - verifies parameter format before execution</li>
+  <li> <strong>Direct filesystem operation</strong> - executes on cmsrep server itself</li>
+  <li> <strong>Pattern-based matching</strong> - uses wildcards to match multiple repositories</li>
+  <li> <strong>Single-purpose design</strong> - focused cleanup for PR repositories only</li>
 </ul>
 
 <h3 style="color:#3498db;">⚙️ Configuration Settings</h3>
