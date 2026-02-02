@@ -589,7 +589,118 @@ Not periodically build
 
 ## [cleanup-cmsrep](https://cmssdt.cern.ch/jenkins/job/cleanup-cmsrep)
 
-**Description:** This cleans up old cms.weekN.PR_* repositories from cmsrep.cern.ch server.
+**Description:** <h2 style="color:#c0392b; font-weight:bold;">🗑️ cleanup-cmsrep</h2>
+
+<p style="font-size:14px; color:#2c3e50;">
+<b>Description:</b> Cleans up obsolete pull request repositories from the CMS RPM repository server. Removes old <code>cms.weekN.PR_*</code> directories to manage disk space on the cmsrep.cern.ch server.
+</p>
+
+<h3 style="color:#8e44ad;">🎯 Purpose</h3>
+<p style="font-size:14px; line-height:1.6;">
+Systematically removes temporary pull request repositories associated with specific CMS weekly builds. Prevents disk space accumulation by deleting PR repositories that are no longer needed after pull request testing or merging.
+</p>
+
+<h3 style="color:#27ae60;">📌 Key Features</h3>
+<ul style="font-size:14px; line-height:1.6; padding-left:20px;">
+  <li>🔹 <strong>Targeted cleanup</strong> - removes specific PR repository patterns</li>
+  <li>🔹 <strong>Validation safety</strong> - verifies parameter format before execution</li>
+  <li>🔹 <strong>Direct filesystem operation</strong> - executes on cmsrep server itself</li>
+  <li>🔹 <strong>Pattern-based matching</strong> - uses wildcards to match multiple repositories</li>
+  <li>🔹 <strong>Single-purpose design</strong> - focused cleanup for PR repositories only</li>
+</ul>
+
+<h3 style="color:#3498db;">⚙️ Configuration Settings</h3>
+
+<div style="background-color:#f8f9fa; padding:15px; border-radius:5px; border-left:4px solid #3498db; margin:10px 0;">
+  <h4 style="margin-top:0; color:#2c3e50;">📊 Build Retention</h4>
+  <ul style="margin:5px 0;">
+    <li><strong>Days to Keep Builds:</strong> 30</li>
+    <li><strong>Max Builds to Keep:</strong> 50</li>
+  </ul>
+
+  <h4 style="color:#2c3e50;">🎛️ Job Parameters</h4>
+  <table style="width:100%; font-size:13px; border-collapse: collapse;">
+    <tr style="background-color:#e9ecef;">
+      <th style="border:1px solid #ddd; padding:8px;">Parameter</th>
+      <th style="border:1px solid #ddd; padding:8px;">Description</th>
+    </tr>
+    <tr>
+      <td style="border:1px solid #ddd; padding:8px;"><code>CMS_WEEK</code></td>
+      <td style="border:1px solid #ddd; padding:8td;">CMS weekly repository name (e.g., week0, week1, week2, etc.)</td>
+    </tr>
+  </table>
+
+  <h4 style="color:#2c3e50;">⚡ Execution Settings</h4>
+  <ul style="margin:5px 0;">
+    <li><strong>Execution Nodes:</strong> cmsrep server only</li>
+    <li><strong>Workspace:</strong> Delete before build starts</li>
+  </ul>
+</div>
+
+<h3 style="color:#e67e22;">🔍 How It Works</h3>
+
+<h4 style="color:#d35400; font-size:15px;">🔄 Two-Step Cleanup Process:</h4>
+
+<ol style="font-size:14px; line-height:1.6; padding-left:20px;">
+  <li><strong>Parameter Validation</strong>:
+    <div style="background-color:#f0f0f0; padding:8px; border-radius:3px; margin:5px 0; font-family:monospace; font-size:12px;">
+      if [ $(echo ${CMS_WEEK} | grep '^week[0-9]$' | wc -l) -eq 0 ] ; then exit 1; fi
+    </div>
+    <p style="margin:5px 0; font-size:13px;">Ensures <code>CMS_WEEK</code> parameter matches pattern <code>week[0-9]</code></p>
+  </li>
+  
+  <li><strong>Repository Cleanup</strong>:
+    <div style="background-color:#f0f0f0; padding:8px; border-radius:3px; margin:5px 0; font-family:monospace; font-size:12px;">
+      cd /data/cmssw/repos
+      for repo in $(ls -d cms.${CMS_WEEK}.PR_*) ; do
+        rm -rf $repo
+      done
+    </div>
+    <p style="margin:5px 0; font-size:13px;">Recursively deletes all matching PR repositories in the target week</p>
+  </li>
+</ol>
+
+<h4 style="color:#d35400; font-size:15px;">📋 Target Directory Structure:</h4>
+<div style="background-color:#fff8e1; padding:12px; border-radius:5px; margin:10px 0; border-left:4px solid #ffc107;">
+  <p style="margin:0; font-size:13px;">
+    <strong>Directory Layout:</strong><br>
+    <code>/data/cmssw/repos/</code> - Base repository directory<br>
+    <code>cms.week0.PR_12345/</code> - Example PR repository<br>
+    <code>cms.week0.PR_67890/</code> - Another PR repository<br>
+    <code>cms.week1.PR_12345/</code> - PR repository in different week<br><br>
+    <strong>Cleanup Scope:</strong> All <code>cms.${CMS_WEEK}.PR_*</code> directories<br>
+    <strong>Preserved:</strong> Other repository types and different weeks
+  </p>
+</div>
+
+<h3 style="color:#27ae60;">🛠️ Usage Guidelines</h3>
+<div style="background-color:#e8f4fd; padding:12px; border-radius:5px; margin:10px 0; border-left:4px solid #3498db;">
+  <p style="margin:0; font-size:13px;">
+    <strong>Typical Use Cases:</strong><br>
+    1. <strong>Weekly maintenance</strong>: Clean up old PR repositories after week rotation<br>
+    2. <strong>Disk space recovery</strong>: Free space when server approaches capacity<br>
+    3. <strong>Repository management</strong>: Remove completed/abandoned PR repositories<br><br>
+    <strong>Parameter Examples:</strong><br>
+    • <code>CMS_WEEK=week0</code> - Cleans PR repos from week0<br>
+    • <code>CMS_WEEK=week1</code> - Cleans PR repos from week1<br>
+    • <code>CMS_WEEK=week2</code> - Cleans PR repos from week2
+  </p>
+</div>
+
+<h3 style="color:#e67e22;">🎯 Benefits</h3>
+<ul style="font-size:14px; line-height:1.6; padding-left:20px;">
+  <li>✅ <strong>Disk space management</strong> - prevents accumulation of obsolete PR repositories</li>
+  <li>✅ <strong>Targeted cleanup</strong> - only affects specific weekly PR directories</li>
+  <li>✅ <strong>Safety mechanisms</strong> - parameter validation prevents accidental deletions</li>
+  <li>✅ <strong>Simple operation</strong> - minimal logic for reliable execution</li>
+  <li>✅ <strong>Repository hygiene</strong> - maintains clean server filesystem</li>
+</ul>
+
+<hr style="border:1px solid #bdc3c7;"/>
+
+<p style="color:#34495e; font-size:13px;">
+💡 <i>Targeted cleanup job for CMS RPM repository server. Removes pull request repositories from specific weekly directories to manage disk space and maintain repository hygiene on cmsrep.cern.ch.</i>
+</p>
 
 **Project is `enabled`.**
 
