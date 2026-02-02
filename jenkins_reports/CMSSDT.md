@@ -4451,7 +4451,125 @@ H 1 * * 0
 
 ## [cleanup-cmssdt](https://cmssdt.cern.ch/jenkins/job/cleanup-cmssdt)
 
-**Description:** This job cleans up disk space on cmssdt.
+**Description:** <h2 style="color:#c0392b; font-weight:bold;">🗑️ cleanup-cmssdt</h2>
+
+<p style="font-size:14px; color:#2c3e50;">
+<b>Description:</b> Daily disk space maintenance job for the CMSSDT server. Executes automated cleanup routines and monitors disk usage, sending alerts when space utilization exceeds critical thresholds.
+</p>
+
+<h3 style="color:#8e44ad;">🎯 Purpose</h3>
+<p style="font-size:14px; line-height:1.6;">
+Performs regular disk cleanup and monitoring on the cmssdt server to prevent space exhaustion. Combines automated cleanup operations with proactive alerting to ensure system reliability and availability.
+</p>
+
+<h3 style="color:#27ae60;">📌 Key Features</h3>
+<ul style="font-size:14px; line-height:1.6; padding-left:20px;">
+  <li>🔹 <strong>Daily scheduled execution</strong> - runs every day at midnight</li>
+  <li>🔹 <strong>Dual functionality</strong> - cleanup operations + disk monitoring</li>
+  <li>🔹 <strong>Dry-run capability</strong> - optional simulation mode for testing</li>
+  <li>🔹 <strong>Proactive alerting</strong> - emails when disk usage exceeds 80%</li>
+  <li>🔹 <strong>Built-in reporting</strong> - includes disk usage statistics before and after</li>
+</ul>
+
+<h3 style="color:#3498db;">⚙️ Configuration Settings</h3>
+
+<div style="background-color:#f8f9fa; padding:15px; border-radius:5px; border-left:4px solid #3498db; margin:10px 0;">
+  <h4 style="margin-top:0; color:#2c3e50;">📊 Build Retention</h4>
+  <ul style="margin:5px 0;">
+    <li><strong>Days to Keep Builds:</strong> 15</li>
+    <li><strong>Max Builds to Keep:</strong> 10</li>
+  </ul>
+
+  <h4 style="color:#2c3e50;">🎛️ Job Parameters</h4>
+  <table style="width:100%; font-size:13px; border-collapse: collapse;">
+    <tr style="background-color:#e9ecef;">
+      <th style="border:1px solid #ddd; padding:8px;">Parameter</th>
+      <th style="border:1px solid #ddd; padding:8px;">Description</th>
+    </tr>
+    <tr>
+      <td style="border:1px solid #ddd; padding:8px;"><code>DRY_RUN</code></td>
+      <td style="border:1px solid #ddd; padding:8td;">Optional parameter to simulate cleanup without actual deletion</td>
+    </tr>
+  </table>
+
+  <h4 style="color:#2c3e50;">⚡ Execution Settings</h4>
+  <ul style="margin:5px 0;">
+    <li><strong>Schedule:</strong> Daily at midnight (H 0 * * *)</li>
+    <li><strong>Execution Nodes:</strong> cmssdt server only</li>
+    <li><strong>Workspace:</strong> Delete before build starts</li>
+    <li><strong>Trigger:</strong> Build periodically</li>
+  </ul>
+</div>
+
+<h3 style="color:#e67e22;">🔍 How It Works</h3>
+
+<h4 style="color:#d35400; font-size:15px;">🔄 Three-Phase Execution:</h4>
+
+<ol style="font-size:14px; line-height:1.6; padding-left:20px;">
+  <li><strong>Initial Disk Status</strong>:
+    <div style="background-color:#f0f0f0; padding:8px; border-radius:3px; margin:5px 0; font-family:monospace; font-size:12px;">
+      df -h
+    </div>
+    <p style="margin:5px 0; font-size:13px;">Captures disk usage statistics before cleanup for comparison</p>
+  </li>
+  
+  <li><strong>Cleanup Execution</strong>:
+    <div style="background-color:#f0f0f0; padding:8px; border-radius:3px; margin:5px 0; font-family:monospace; font-size:12px;">
+      ${CMS_BOT_DIR}/cleanup-cmssdt $DRY_RUN
+    </div>
+    <p style="margin:5px 0; font-size:13px;">Executes the main cleanup script from cms-bot directory</p>
+  </li>
+  
+  <li><strong>Monitoring & Alerting</strong>:
+    <div style="background-color:#f0f0f0; padding:8px; border-radius:3px; margin:5px 0; font-family:monospace; font-size:12px;">
+      if [ `df -h | grep ' /data$' | awk '{print $5}' | sed 's|%||'` -gt 80 ] ; then
+        echo -e "${BUILD_URL}\n$(df -h)" | mail -s '[CMSSDT] Disk getting full' cms-sdt-logs@cern.ch
+      fi
+    </div>
+    <p style="margin:5px 0; font-size:13px;">Monitors /data partition and sends email alert if usage >80%</p>
+  </li>
+</ol>
+
+<h4 style="color:#d35400; font-size:15px;">📋 Alerting Logic:</h4>
+<div style="background-color:#fff8e1; padding:12px; border-radius:5px; margin:10px 0; border-left:4px solid #ffc107;">
+  <p style="margin:0; font-size:13px;">
+    <strong>Monitoring Target:</strong> <code>/data</code> partition specifically<br>
+    <strong>Threshold:</strong> 80% disk usage<br>
+    <strong>Alert Content:</strong><br>
+    • Jenkins build URL for reference<br>
+    • Current disk usage statistics (df -h output)<br>
+    <strong>Recipient:</strong> cms-sdt-logs@cern.ch<br>
+    <strong>Subject:</strong> [CMSSDT] Disk getting full<br>
+    <strong>Trigger:</strong> Post-cleanup usage check
+  </p>
+</div>
+
+<h3 style="color:#27ae60;">🛠️ Dry Run Mode</h3>
+<div style="background-color:#e8f4fd; padding:12px; border-radius:5px; margin:10px 0; border-left:4px solid #3498db;">
+  <p style="margin:0; font-size:13px;">
+    <strong>Testing Without Risk:</strong><br>
+    • <strong>Purpose:</strong> Simulate cleanup operations without actual deletion<br>
+    • <strong>Usage:</strong> Provide <code>DRY_RUN</code> parameter value<br>
+    • <strong>Benefit:</strong> Review what would be cleaned before execution<br>
+    • <strong>Monitoring:</strong> Alert logic still functions in dry-run mode<br>
+    • <strong>Typical Use:</strong> Testing cleanup scripts or evaluating impact
+  </p>
+</div>
+
+<h3 style="color:#e67e22;">🎯 Benefits</h3>
+<ul style="font-size:14px; line-height:1.6; padding-left:20px;">
+  <li>✅ <strong>Preventative maintenance</strong> - regular cleanup prevents space crises</li>
+  <li>✅ <strong>Proactive alerting</strong> - notification before critical levels reached</li>
+  <li>✅ <strong>Audit trail</strong> - disk usage captured before and after cleanup</li>
+  <li>✅ <strong>Safe testing</strong> - dry-run mode allows risk-free evaluation</li>
+  <li>✅ <strong>Automated scheduling</strong> - daily execution ensures consistent maintenance</li>
+</ul>
+
+<hr style="border:1px solid #bdc3c7;"/>
+
+<p style="color:#34495e; font-size:13px;">
+💡 <i>Daily disk maintenance and monitoring job for CMSSDT server. Combines automated cleanup operations with proactive alerting to prevent disk space exhaustion and ensure system reliability.</i>
+</p>
 
 **Project is `enabled`.**
 
