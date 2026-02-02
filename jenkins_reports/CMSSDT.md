@@ -4198,8 +4198,7 @@ Not periodically build
 
 ## [cleanup-cms-sw-io-history](https://cmssdt.cern.ch/jenkins/job/cleanup-cms-sw-io-history)
 
-**Description:** This job cleanup the cms-sw/cms-sw.github.io repository history. Specially the data and _data directories history.
-<h2 style="color:#c0392b; font-weight:bold;">🗑️ cleanup-cms-sw-io-history</h2>
+**Description:** <h2 style="color:#c0392b; font-weight:bold;">🗑️ cleanup-cms-sw-io-history</h2>
 
 <p style="font-size:14px; color:#2c3e50;">
 <b>Description:</b> Maintains the CMS GitHub Pages repository by resetting history for data directories while preserving current content. Specifically cleans the `data` and `_data` directories' Git history to manage repository size and optimize performance.
@@ -4224,7 +4223,6 @@ Performs controlled Git history rewriting for data-heavy directories in the cms-
 <div style="background-color:#f8f9fa; padding:15px; border-radius:5px; border-left:4px solid #3498db; margin:10px 0;">
   <h4 style="margin-top:0; color:#2c3e50;">📊 Build Retention</h4>
   <ul style="margin:5px 0;">
-    <li><strong>Strategy:</strong> Log Rotation</li>
     <li><strong>Days to Keep Builds:</strong> 30</li>
     <li><strong>Max Builds to Keep:</strong> 20</li>
   </ul>
@@ -4292,15 +4290,6 @@ Performs controlled Git history rewriting for data-heavy directories in the cms-
     5. <strong>Benefit</strong>: Reduces repository size while maintaining content
   </p>
 </div>
-
-<h3 style="color:#c0392b;">⚠️ Critical Notes</h3>
-<ul style="font-size:14px; line-height:1.6; padding-left:20px; color:#7f8c8d;">
-  <li>❗ <strong>Force Push Operation</strong>: Uses <code>git push -f</code> which rewrites branch history</li>
-  <li>⚠️ <strong>Irreversible History Loss</strong>: Previous commits in data directories are permanently removed</li>
-  <li>🔒 <strong>SSH Authentication Required</strong>: Uses git@github.com URLs for push access</li>
-  <li>🌐 <strong>GitHub Pages Impact</strong>: Triggers complete regeneration of static site</li>
-  <li>📧 <strong>Failure Notification</strong>: Email alerts sent for unstable builds</li>
-</ul>
 
 <h3 style="color:#27ae60;">🔄 Downstream Integration</h3>
 <div style="background-color:#e8f4fd; padding:12px; border-radius:5px; margin:10px 0; border-left:4px solid #3498db;">
