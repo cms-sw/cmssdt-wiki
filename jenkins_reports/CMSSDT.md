@@ -4039,7 +4039,143 @@ Not periodically build
 
 ## [cleanup-auto-build](https://cmssdt.cern.ch/jenkins/job/cleanup-auto-build)
 
-**Description:** This job deletes the release build areas after three days.
+**Description:** <h2 style="color:#c0392b; font-weight:bold;">🗑️ cleanup-auto-build</h2>
+
+<p style="font-size:14px; color:#2c3e50;">
+<b>Description:</b> Manages automated cleanup of release build areas after 3 days. Removes workspace directories from remote build machines to prevent disk space accumulation from completed auto-build jobs.
+</p>
+
+<h3 style="color:#8e44ad;">🎯 Purpose</h3>
+<p style="font-size:14px; line-height:1.6;">
+Systematically cleans up build directories from remote machines after the standard 3-day retention period. Ensures efficient disk space utilization across build infrastructure while maintaining traceability through artifact preservation.
+</p>
+
+<h3 style="color:#27ae60;">📌 Key Features</h3>
+<ul style="font-size:14px; line-height:1.6; padding-left:20px;">
+  <li>🔹 <strong>Time-based cleanup</strong> - targets build areas older than 3 days</li>
+  <li>🔹 <strong>Remote execution</strong> - runs cleanup scripts on target build machines</li>
+  <li>🔹 <strong>Status reporting</strong> - updates GitHub issue status with cleanup results</li>
+  <li>🔹 <strong>Artifact preservation</strong> - uploads logs before directory deletion</li>
+  <li>🔹 <strong>Email notifications</strong> - alerts cms-sdt-logs@cern.ch on failures</li>
+</ul>
+
+<h3 style="color:#3498db;">⚙️ Configuration Settings</h3>
+
+<div style="background-color:#f8f9fa; padding:15px; border-radius:5px; border-left:4px solid #3498db; margin:10px 0;">
+  <h4 style="margin-top:0; color:#2c3e50;">📊 Build Retention</h4>
+  <ul style="margin:5px 0;">
+    <li><strong>Days to Keep Builds:</strong> 30</li>
+    <li><strong>Max Builds to Keep:</strong> 20</li>
+  </ul>
+
+  <h4 style="color:#2c3e50;">🎛️ Job Parameters</h4>
+  <table style="width:100%; font-size:13px; border-collapse: collapse;">
+    <tr style="background-color:#e9ecef;">
+      <th style="border:1px solid #ddd; padding:8px;">Parameter</th>
+      <th style="border:1px solid #ddd; padding:8px;">Description</th>
+    </tr>
+    <tr>
+      <td style="border:1px solid #ddd; padding:8px;"><code>CMSSW_X_Y_Z</code></td>
+      <td style="border:1px solid #ddd; padding:8td;">Release version to cleanup (e.g., CMSSW_11_0_0)</td>
+    </tr>
+    <tr>
+      <td style="border:1px solid #ddd; padding:8px;"><code>ARCHITECTURE</code></td>
+      <td style="border:1px solid #ddd; padding:8td;">Target architecture (e.g., slc7_amd64_gcc820)</td>
+    </tr>
+    <tr>
+      <td style="border:1px solid #ddd; padding:8px;"><code>ISSUE_NUMBER</code></td>
+      <td style="border:1px solid #ddd; padding:8td;">GitHub issue number for status reporting</td>
+    </tr>
+    <tr>
+      <td style="border:1px solid #ddd; padding:8px;"><code>MACHINE_NAME</code></td>
+      <td style="border:1px solid #ddd; padding:8td;">Remote build machine hostname</td>
+    </tr>
+    <tr>
+      <td style="border:1px solid #ddd; padding:8px;"><code>DRY_RUN_PARAM</code></td>
+      <td style="border:1px solid #ddd; padding:8td;">Optional dry-run flag</td>
+    </tr>
+  </table>
+
+  <h4 style="color:#2c3e50;">⚡ Execution Settings</h4>
+  <ul style="margin:5px 0;">
+    <li><strong>Build Name:</strong> #${CMSSW_X_Y_Z} - ${ARCHITECTURE} Issue ${ISSUE_NUMBER}</li>
+    <li><strong>Concurrency:</strong> Max 4 total builds, 0 per node</li>
+    <li><strong>Execution Nodes:</strong> cmssdt or lxplus-scripts machines</li>
+    <li><strong>Workspace:</strong> Delete before build starts</li>
+    <li><strong>Email:</strong> cms-sdt-logs@cern.ch for unstable builds</li>
+  </ul>
+</div>
+
+<h3 style="color:#e67e22;">🔍 How It Works</h3>
+
+<h4 style="color:#d35400; font-size:15px;">🔄 Cleanup Workflow:</h4>
+<ol style="font-size:14px; line-height:1.6; padding-left:20px;">
+  <li><strong>Environment Setup</strong>:
+    <ul style="margin:5px 0 5px 20px;">
+      <li>Clones cms-bot repository with cleanup scripts</li>
+      <li>Defines remote workspace path: <code>/build/cmsbld/jenkins/workspace/auto-builds/CMSSW_X_Y_Z-ARCHITECTURE/</code></li>
+    </ul>
+  </li>
+  <li><strong>Directory Verification</strong>:
+    <ul style="margin:5px 0 5px 20px;">
+      <li>Checks if build directory exists on remote machine</li>
+      <li>If missing → logs "Build directory already deleted"</li>
+      <li>If present → proceeds with cleanup</li>
+    </ul>
+  </li>
+  <li><strong>Remote Execution</strong>:
+    <ul style="margin:5px 0 5px 20px;">
+      <li>Transfers cleanup script to remote machine via rsync</li>
+      <li>Executes cleanup-auto-build script on target machine</li>
+      <li>Passes release, architecture, and build directory parameters</li>
+    </ul>
+  </li>
+  <li><strong>Status Reporting</strong>:
+    <ul style="margin:5px 0 5px 20px;">
+      <li>Checks for "ALL_OK" in cleanup log</li>
+      <li>Reports status to GitHub issue via report-build-release-status</li>
+      <li>Uploads cleanup log as Jenkins artifact</li>
+    </ul>
+  </li>
+</ol>
+
+<h4 style="color:#d35400; font-size:15px;">📋 Key Operations:</h4>
+<div style="background-color:#f0f0f0; padding:10px; border-radius:5px; margin:10px 0; font-family:monospace; font-size:12px;">
+# Check if directory exists<br>
+ssh $SSH_OPTS $BLD_USER@$MACHINE_NAME ls -d $REMOTE_WORKSPACE<br><br>
+# Execute remote cleanup<br>
+ssh $BLD_USER@$MACHINE_NAME $REMOTE_WORKSPACE/cleanup-auto-build $CMSSW_X_Y_Z $ARCHITECTURE $BUILD_DIR
+</div>
+
+<h3 style="color:#27ae60;">🛠️ Status Reporting</h3>
+<div style="background-color:#e8f4fd; padding:12px; border-radius:5px; margin:10px 0; border-left:4px solid #3498db;">
+  <p style="margin:0; font-size:13px;">
+    <strong>Success Scenario:</strong><br>
+    • Log contains "ALL_OK"<br>
+    • GitHub issue marked with CLEANUP_OK<br>
+    • Email notification: None (unless configured otherwise)<br><br>
+    <strong>Failure Scenario:</strong><br>
+    • Log contains errors<br>
+    • GitHub issue marked with CLEANUP_ERROR<br>
+    • Email sent to cms-sdt-logs@cern.ch<br>
+    • Cleanup log preserved as Jenkins artifact
+  </p>
+</div>
+
+<h3 style="color:#e67e22;">🎯 Benefits</h3>
+<ul style="font-size:14px; line-height:1.6; padding-left:20px;">
+  <li>✅ <strong>Disk space management</strong> - prevents accumulation of old build artifacts</li>
+  <li>✅ <strong>Automated scheduling</strong> - integrates with auto-build lifecycle</li>
+  <li>✅ <strong>Audit trail</strong> - logs preserved even after directory deletion</li>
+  <li>✅ <strong>Status transparency</strong> - GitHub issue updates for tracking</li>
+  <li>✅ <strong>Safe execution</strong> - verifies directory existence before attempting cleanup</li>
+</ul>
+
+<hr style="border:1px solid #bdc3c7;"/>
+
+<p style="color:#34495e; font-size:13px;">
+💡 <i>Post-build cleanup job that removes release build directories from remote machines after 3 days. Maintains disk space efficiency while preserving logs and providing status updates through GitHub issue integration.</i>
+</p>
 
 **Project is `enabled`.**
 
