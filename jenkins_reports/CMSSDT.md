@@ -724,6 +724,157 @@ Not periodically build
 ## [cleanup-cvmfs-ci](https://cmssdt.cern.ch/jenkins/job/cleanup-cvmfs-ci)
 
 **Description:** This job cleans up old cms.weekN.PR_* repositories from cmsrep.cern.ch server.
+<h2 style="color:#c0392b; font-weight:bold;">🗑️ cleanup-cvmfs-ci</h2>
+
+<p style="font-size:14px; color:#2c3e50;">
+<b>Description:</b> Manages CVMFS (CernVM File System) cleanup for CMS continuous integration repositories. Removes specified weekly directories from the CVMFS repository while handling transaction safety, publishing, and garbage collection operations.
+</p>
+
+<h3 style="color:#8e44ad;">🎯 Purpose</h3>
+<p style="font-size:14px; line-height:1.6;">
+Performs controlled removal of weekly CI repositories from CVMFS with proper transaction management and garbage collection. Ensures safe filesystem operations while freeing space in the CVMFS repository used for CMS continuous integration.
+</p>
+
+<h3 style="color:#27ae60;">📌 Key Features</h3>
+<ul style="font-size:14px; line-height:1.6; padding-left:20px;">
+  <li>🔹 <strong>CVMFS transaction management</strong> - handles publishing and rollback safely</li>
+  <li>🔹 <strong>Weekly directory cleanup</strong> - removes specified week directories</li>
+  <li>🔹 <strong>Garbage collection</strong> - recovers space after directory removal</li>
+  <li>🔹 <strong>Lock recovery</strong> - handles stuck publishing locks automatically</li>
+  <li>🔹 <strong>Parameter validation</strong> - ensures proper week format before execution</li>
+</ul>
+
+<h3 style="color:#3498db;">⚙️ Configuration Settings</h3>
+
+<div style="background-color:#f8f9fa; padding:15px; border-radius:5px; border-left:4px solid #3498db; margin:10px 0;">
+  <h4 style="margin-top:0; color:#2c3e50;">📊 Build Retention</h4>
+  <ul style="margin:5px 0;">
+    <li><strong>Strategy:</strong> Log Rotation</li>
+    <li><strong>Days to Keep Builds:</strong> 30</li>
+    <li><strong>Max Builds to Keep:</strong> 50</li>
+  </ul>
+
+  <h4 style="color:#2c3e50;">🎛️ Job Parameters</h4>
+  <table style="width:100%; font-size:13px; border-collapse: collapse;">
+    <tr style="background-color:#e9ecef;">
+      <th style="border:1px solid #ddd; padding:8px;">Parameter</th>
+      <th style="border:1px solid #ddd; padding:8px;">Description</th>
+    </tr>
+    <tr>
+      <td style="border:1px solid #ddd; padding:8px;"><code>CMS_WEEK</code></td>
+      <td style="border:1px solid #ddd; padding:8td;">CMS weekly repository name (e.g., week0, week1, week2, etc.)</td>
+    </tr>
+  </table>
+
+  <h4 style="color:#2c3e50;">⚡ Execution Settings</h4>
+  <ul style="margin:5px 0;">
+    <li><strong>Execution Nodes:</strong> cvmfs-server && publish && cms-ci nodes</li>
+    <li><strong>Workspace:</strong> Delete before build starts</li>
+    <li><strong>Timeout:</strong> 240 minutes (4 hours) absolute timeout</li>
+    <li><strong>Environment:</strong> Uses CVMFS_REPOSITORY environment variable</li>
+  </ul>
+</div>
+
+<h3 style="color:#e67e22;">🔍 How It Works</h3>
+
+<h4 style="color:#d35400; font-size:15px;">🔄 Four-Phase CVMFS Cleanup:</h4>
+
+<ol style="font-size:14px; line-height:1.6; padding-left:20px;">
+  <li><strong>Parameter Validation</strong>:
+    <div style="background-color:#f0f0f0; padding:8px; border-radius:3px; margin:5px 0; font-family:monospace; font-size:12px;">
+      if [ $(echo ${CMS_WEEK} | grep '^week[0-9]$' | wc -l) -eq 0 ] ; then exit 1; fi
+    </div>
+    <p style="margin:5px 0; font-size:13px;">Validates week parameter format (week0-week9)</p>
+  </li>
+  
+  <li><strong>CVMFS Transaction Start</strong>:
+    <div style="background-color:#f0f0f0; padding:8px; border-radius:3px; margin:5px 0; font-family:monospace; font-size:12px;">
+      cvmfs_server transaction $CVMFS_REPOSITORY || ((cvmfs_server abort -f $CVMFS_REPOSITORY || rm -fR /var/spool/cvmfs/$CVMFS_REPOSITORY/is_publishing.lock) && cvmfs_server transaction $CVMFS_REPOSITORY)
+    </div>
+    <p style="margin:5px 0; font-size:13px;">Initiates transaction with lock recovery fallback</p>
+  </li>
+  
+  <li><strong>Directory Removal</strong>:
+    <div style="background-color:#f0f0f0; padding:8px; border-radius:3px; margin:5px 0; font-family:monospace; font-size:12px;">
+      rm -rf /cvmfs/$CVMFS_REPOSITORY/${CMS_WEEK}
+    </div>
+    <p style="margin:5px 0; font-size:13px;">Deletes specified weekly directory from CVMFS</p>
+  </li>
+  
+  <li><strong>Publish & Garbage Collection</strong>:
+    <div style="background-color:#f0f0f0; padding:8px; border-radius:3px; margin:5px 0; font-family:monospace; font-size:12px;">
+      time cvmfs_server publish $CVMFS_REPOSITORY
+      time cvmfs_server gc -f $CVMFS_REPOSITORY
+    </div>
+    <p style="margin:5px 0; font-size:13px;">Commits changes and performs garbage collection</p>
+  </li>
+</ol>
+
+<h4 style="color:#d35400; font-size:15px;">📋 CVMFS Operations Detail:</h4>
+<div style="background-color:#fff8e1; padding:12px; border-radius:5px; margin:10px 0; border-left:4px solid #ffc107;">
+  <p style="margin:0; font-size:13px;">
+    <strong>Transaction Safety:</strong><br>
+    1. <strong>Initial attempt</strong>: <code>cvmfs_server transaction</code><br>
+    2. <strong>Failure recovery</strong>: Abort any existing transaction<br>
+    3. <strong>Lock cleanup</strong>: Remove stuck publishing lock if needed<br>
+    4. <strong>Retry</strong>: Attempt transaction again after cleanup<br><br>
+    <strong>Directory Structure:</strong><br>
+    • <code>/cvmfs/$CVMFS_REPOSITORY/week0/</code> - Target for deletion<br>
+    • <code>/cvmfs/$CVMFS_REPOSITORY/week1/</code> - Another example<br>
+    • <code>/var/spool/cvmfs/$CVMFS_REPOSITORY/is_publishing.lock</code> - Lock file
+  </p>
+</div>
+
+<h3 style="color:#c0392b;">⚠️ Critical Notes</h3>
+<ul style="font-size:14px; line-height:1.6; padding-left:20px; color:#7f8c8d;">
+  <li>❗ <strong>CVMFS Expertise Required</strong>: Uses advanced CVMFS server commands</li>
+  <li>⚠️ <strong>Forceful Operations</strong>: Uses <code>rm -rf</code> and <code>gc -f</code></li>
+  <li>🔒 <strong>Lock Recovery</strong>: Automatically handles stuck publishing locks</li>
+  <li>⏱️ <strong>Extended Timeout</strong>: 4-hour timeout for potentially slow GC operations</li>
+  <li>📁 <strong>Week Limitation</strong>: Only supports weeks 0-9 (single digit)</li>
+</ul>
+
+<h3 style="color:#27ae60;">🛠️ CVMFS Command Flow</h3>
+<div style="background-color:#e8f4fd; padding:12px; border-radius:5px; margin:10px 0; border-left:4px solid #3498db;">
+  <p style="margin:0; font-size:13px;">
+    <strong>Command Sequence:</strong><br>
+    1. <strong>Transaction</strong>: Begin CVMFS write transaction<br>
+    2. <strong>Cleanup</strong>: Delete target week directory<br>
+    3. <strong>Publish</strong>: Commit changes to repository (timed)<br>
+    4. <strong>Garbage Collection</strong>: Reclaim freed space (timed)<br><br>
+    <strong>Timing Information:</strong><br>
+    • <code>time</code> command tracks publish and GC duration<br>
+    • Useful for performance monitoring and debugging<br>
+    • Helps identify slow operations requiring optimization
+  </p>
+</div>
+
+<h3 style="color:#e67e22;">🎯 Benefits</h3>
+<ul style="font-size:14px; line-height:1.6; padding-left:20px;">
+  <li>✅ <strong>Space recovery</strong> - frees CVMFS repository space efficiently</li>
+  <li>✅ <strong>Transaction safety</strong> - ensures atomic operations with rollback</li>
+  <li>✅ <strong>Automated lock recovery</strong> - handles stuck transactions automatically</li>
+  <li>✅ <strong>Performance monitoring</strong> - times critical operations</li>
+  <li>✅ <strong>CVMFS integration</strong> - uses native CVMFS tools for reliable cleanup</li>
+</ul>
+
+<h3 style="color:#c0392b;">🚨 Safety Features</h3>
+<div style="background-color:#ffe6e6; padding:12px; border-radius:5px; margin:10px 0; border-left:4px solid #c0392b;">
+  <p style="margin:0; font-size:13px;">
+    <strong>Built-in Safety Mechanisms:</strong><br>
+    1. <strong>Parameter Validation</strong>: Prevents incorrect week specifications<br>
+    2. <strong>Transaction Management</strong>: Ensures atomic operations<br>
+    3. <strong>Lock Recovery</strong>: Cleans up stuck publishing states<br>
+    4. <strong>Timeout Protection</strong>: 4-hour limit prevents indefinite hangs<br>
+    5. <strong>Garbage Collection</strong>: Proper space reclamation after deletion
+  </p>
+</div>
+
+<hr style="border:1px solid #bdc3c7;"/>
+
+<p style="color:#34495e; font-size:13px;">
+💡 <i>CVMFS repository maintenance job for CMS CI infrastructure. Safely removes weekly directories with proper transaction management, publishing, and garbage collection to maintain repository performance and availability.</i>
+</p>
 
 **Project is `enabled`.**
 
