@@ -4674,9 +4674,9 @@ Monitors GitHub PR comments and triggers appropriate Jenkins job actions. Acts a
 
 <h3 style="color:#27ae60;">📌 Key Features</h3>
 <ul style="font-size:14px; line-height:1.6; padding-left:20px;">
-  <li>🔹 <strong>Real-time GitHub webhook processing</strong> for PR comments</li>
-  <li>🔹 <strong>Automated job scheduling/killing</strong> based on comment commands (e.g., "please test")</li>
-  <li>🔹 <strong>Built-in retry mechanism</strong> (3 retries) for transient failures</li>
+  <li> <strong>Real-time GitHub webhook processing</strong> for PR comments</li>
+  <li> <strong>Automated job scheduling/killing</strong> based on comment commands (e.g., "please test")</li>
+  <li> <strong>Built-in retry mechanism</strong> (3 retries) for transient failures</li>
 </ul>
 
 <h3 style="color:#e67e22;">🔍 Troubleshooting if this job fails:</h3>
