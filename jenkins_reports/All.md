@@ -1780,11 +1780,11 @@ Systematically cleans up build directories from remote machines after the standa
     </tr>
     <tr>
       <td style="border:1px solid #ddd; padding:8px;"><code>CMSSW_X_Y_Z</code></td>
-      <td style="border:1px solid #ddd; padding:8td;">Release version to cleanup (e.g., CMSSW_11_0_0)</td>
+      <td style="border:1px solid #ddd; padding:8td;">Release version to cleanup (e.g., CMSSW_16_0_0)</td>
     </tr>
     <tr>
       <td style="border:1px solid #ddd; padding:8px;"><code>ARCHITECTURE</code></td>
-      <td style="border:1px solid #ddd; padding:8td;">Target architecture (e.g., slc7_amd64_gcc820)</td>
+      <td style="border:1px solid #ddd; padding:8td;">Target architecture (e.g., el8_amd64_gcc14)</td>
     </tr>
     <tr>
       <td style="border:1px solid #ddd; padding:8px;"><code>ISSUE_NUMBER</code></td>
