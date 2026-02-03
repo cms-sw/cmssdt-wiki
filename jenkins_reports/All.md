@@ -2645,7 +2645,154 @@ H 0 * * *
 
 ## [cms-auto-build-container](https://cmssdt.cern.ch/jenkins/job/cms-auto-build-container)
 
-**Description:** None
+**Description:** <h2 style="color:#c0392b; font-weight:bold;">🔧 cms-auto-build-container</h2>
+
+<p style="font-size:14px; color:#2c3e50;">
+<b>Description:</b> Orchestration job that coordinates automated Docker container builds across multiple repository types. Generates configuration files and triggers parallel container checking jobs for different operating system repositories.
+</p>
+
+<h3 style="color:#8e44ad;">🎯 Purpose</h3>
+<p style="font-size:14px; line-height:1.6;">
+Coordinates and initiates automated Docker container build workflows for different Linux distributions (EL8, EL9, EL10). Acts as a scheduler and orchestrator that distributes container checking tasks across parallel executions.
+</p>
+
+<h3 style="color:#27ae60;">📌 Key Features</h3>
+<ul style="font-size:14px; line-height:1.6; padding-left:20px;">
+  <li>🔹 <strong>Multi-repository orchestration</strong> - manages builds for el8, el9, el10 repositories</li>
+  <li>🔹 <strong>Property file generation</strong> - creates configuration files for downstream jobs</li>
+  <li>🔹 <strong>Parallel triggering</strong> - initiates multiple check-docker-container jobs simultaneously</li>
+  <li>🔹 <strong>Daily scheduling</strong> - runs automatically every day at 10:00 AM</li>
+  <li>🔹 <strong>Result aggregation</strong> - monitors and reports on all triggered builds</li>
+</ul>
+
+<h3 style="color:#3498db;">⚙️ Configuration Settings</h3>
+
+<div style="background-color:#f8f9fa; padding:15px; border-radius:5px; border-left:4px solid #3498db; margin:10px 0;">
+  <h4 style="margin-top:0; color:#2c3e50;">📊 Build Retention</h4>
+  <ul style="margin:5px 0;">
+    <li><strong>Strategy:</strong> Log Rotation</li>
+    <li><strong>Days to Keep Builds:</strong> 30</li>
+    <li><strong>Max Builds to Keep:</strong> 200</li>
+  </ul>
+
+  <h4 style="color:#2c3e50;">🎛️ Job Parameters</h4>
+  <table style="width:100%; font-size:13px; border-collapse: collapse;">
+    <tr style="background-color:#e9ecef;">
+      <th style="border:1px solid #ddd; padding:8px;">Parameter</th>
+      <th style="border:1px solid #ddd; padding:8px;">Default Value</th>
+      <th style="border:1px solid #ddd; padding:8px;">Description</th>
+    </tr>
+    <tr>
+      <td style="border:1px solid #ddd; padding:8px;"><code>REPOSITORIES</code></td>
+      <td style="border:1px solid #ddd; padding:8px;">el8 el9 el10</td>
+      <td style="border:1px solid #ddd; padding:8td;">Space-separated list of repository types to process</td>
+    </tr>
+  </table>
+
+  <h4 style="color:#2c3e50;">⚡ Execution Settings</h4>
+  <ul style="margin:5px 0;">
+    <li><strong>Schedule:</strong> Daily at 10:00 AM (H 10 * * *)</li>
+    <li><strong>Execution Nodes:</strong> Jenkins master only</li>
+    <li><strong>Trigger:</strong> Build periodically</li>
+  </ul>
+</div>
+
+<h3 style="color:#e67e22;">🔍 How It Works</h3>
+
+<h4 style="color:#d35400; font-size:15px;">🔄 Three-Phase Orchestration:</h4>
+
+<ol style="font-size:14px; line-height:1.6; padding-left:20px;">
+  <li><strong>Configuration Generation</strong>:
+    <div style="background-color:#f0f0f0; padding:8px; border-radius:3px; margin:5px 0; font-family:monospace; font-size:12px;">
+      rm -f *.txt
+      for r in $REPOSITORIES ; do
+        echo "REPOSITORY=$r" > $r.txt
+      done
+    </div>
+    <p style="margin:5px 0; font-size:13px;">Creates property files (el8.txt, el9.txt, el10.txt) for each repository</p>
+  </li>
+  
+  <li><strong>Parallel Job Triggering</strong>:
+    <ul style="margin:5px 0 5px 20px;">
+      <li>Triggers <code>check-docker-container</code> job for each property file</li>
+      <li>Executes jobs in parallel using Jenkins property file triggering</li>
+      <li>Each job receives <code>REPOSITORY=elX</code> parameter from corresponding .txt file</li>
+    </ul>
+  </li>
+  
+  <li><strong>Result Monitoring</strong>:
+    <ul style="margin:5px 0 5px 20px;">
+      <li>Blocks until all triggered jobs complete</li>
+      <li>Aggregates results from all parallel executions</li>
+      <li>Sets overall build status based on worst-performing downstream job</li>
+    </ul>
+  </li>
+</ol>
+
+<h4 style="color:#d35400; font-size:15px;">📋 Trigger Configuration:</h4>
+<div style="background-color:#fff8e1; padding:12px; border-radius:5px; margin:10px 0; border-left:4px solid #ffc107;">
+  <p style="margin:0; font-size:13px;">
+    <strong>Job Triggering Logic:</strong><br>
+    1. <strong>Target Job</strong>: check-docker-container<br>
+    2. <strong>File Pattern</strong>: *.txt (matches el8.txt, el9.txt, el10.txt)<br>
+    3. <strong>Blocking</strong>: Waits for all triggered jobs to complete<br>
+    4. <strong>Status Mapping</strong>:<br>
+       • Failure if any downstream job fails<br>
+       • Unstable if any downstream job is unstable<br>
+       • Success only if all downstream jobs succeed<br>
+    5. <strong>Empty Handling</strong>: No trigger if no .txt files exist
+  </p>
+</div>
+
+<h3 style="color:#c0392b;">⚠️ Critical Notes</h3>
+<ul style="font-size:14px; line-height:1.6; padding-left:20px; color:#7f8c8d;">
+  <li>❗ <strong>Orchestrator Only</strong>: This job doesn't build containers directly, it coordinates other jobs</li>
+  <li>⚠️ <strong>Master Node Requirement</strong>: Must run on Jenkins master for triggering capabilities</li>
+  <li>🔗 <strong>Downstream Dependency</strong>: Requires check-docker-container job to exist and function</li>
+  <li>⚡ <strong>Parallel Execution</strong>: Multiple check-docker-container jobs run simultaneously</li>
+  <li>📅 <strong>Fixed Schedule</strong>: Daily execution may need adjustment based on workload</li>
+</ul>
+
+<h3 style="color:#27ae60;">🛠️ Repository Management</h3>
+<div style="background-color:#e8f4fd; padding:12px; border-radius:5px; margin:10px 0; border-left:4px solid #3498db;">
+  <p style="margin:0; font-size:13px;">
+    <strong>Supported Repositories:</strong><br>
+    • <strong>el8</strong>: Enterprise Linux 8 based containers<br>
+    • <strong>el9</strong>: Enterprise Linux 9 based containers<br>
+    • <strong>el10</strong>: Enterprise Linux 10 based containers<br><br>
+    <strong>Customization:</strong><br>
+    • Modify <code>REPOSITORIES</code> parameter to change which repos are checked<br>
+    • Add new repository types by extending the parameter list<br>
+    • Remove repositories by editing the default value or providing custom parameter
+  </p>
+</div>
+
+<h3 style="color:#e67e22;">🎯 Benefits</h3>
+<ul style="font-size:14px; line-height:1.6; padding-left:20px;">
+  <li>✅ <strong>Centralized coordination</strong> - single point for container build scheduling</li>
+  <li>✅ <strong>Parallel efficiency</strong> - multiple repository checks run simultaneously</li>
+  <li>✅ <strong>Flexible configuration</strong> - easily adjust which repositories are processed</li>
+  <li>✅ <strong>Automated scheduling</strong> - daily execution ensures regular checks</li>
+  <li>✅ <strong>Result aggregation</strong> - unified status from multiple downstream jobs</li>
+</ul>
+
+<h3 style="color:#c0392b;">🔗 Downstream Impact</h3>
+<div style="background-color:#ffe6e6; padding:12px; border-radius:5px; margin:10px 0; border-left:4px solid #c0392b;">
+  <p style="margin:0; font-size:13px;">
+    <strong>Effect on check-docker-container Jobs:</strong><br>
+    1. <strong>Trigger</strong>: Each repository triggers one check-docker-container job<br>
+    2. <strong>Parameters</strong>: REPOSITORY parameter set to el8/el9/el10<br>
+    3. <strong>Timing</strong>: All jobs start approximately simultaneously<br>
+    4. <strong>Resource Usage</strong>: May cause concurrent load on Docker build infrastructure<br>
+    5. <strong>Monitoring</strong>: All downstream jobs appear as triggered builds in Jenkins
+  </p>
+</div>
+
+<hr style="border:1px solid #bdc3c7;"/>
+
+<p style="color:#34495e; font-size:13px;">
+💡 <i>Container build orchestrator that schedules and coordinates Docker container checks across multiple Linux distribution repositories. Acts as a daily scheduler that initiates parallel container inspection workflows.</i>
+</p>
 
 **Project is `enabled`.**
 
