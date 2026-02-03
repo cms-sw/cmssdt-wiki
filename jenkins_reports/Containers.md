@@ -541,8 +541,7 @@ H 10 * * *
 
 ## [cms-containers-checks-tags](https://cmssdt.cern.ch/jenkins/job/cms-containers-checks-tags)
 
-**Description:** This project search for tags.yaml files in cms-sw/cms-docker repostory and create new image tags if needed
-<h2 style="color:#c0392b; font-weight:bold;">🏷️ cms-containers-checks-tags</h2>
+**Description:** <h2 style="color:#c0392b; font-weight:bold;">🏷️ cms-containers-checks-tags</h2>
 
 <p style="font-size:14px; color:#2c3e50;">
 <b>Description:</b> Automated Docker image tag management job that processes tags.yaml files from the cms-sw/cms-docker repository. Creates new image tags by applying tag inheritance rules and triggers container retagging jobs when needed.
@@ -576,12 +575,10 @@ Manages Docker image tag inheritance and propagation by reading tag definitions 
   <table style="width:100%; font-size:13px; border-collapse: collapse;">
     <tr style="background-color:#e9ecef;">
       <th style="border:1px solid #ddd; padding:8px;">Parameter</th>
-      <th style="border:1px solid #ddd; padding:8px;">Default</th>
       <th style="border:1px solid #ddd; padding:8px;">Description</th>
     </tr>
     <tr>
       <td style="border:1px solid #ddd; padding:8px;"><code>CONTAINER</code></td>
-      <td style="border:1px solid #ddd; padding:8px;">(empty)</td>
       <td style="border:1px solid #ddd; padding:8td;">Specific container to process (e.g., cc7, slc6, cc8) or all containers</td>
     </tr>
   </table>
