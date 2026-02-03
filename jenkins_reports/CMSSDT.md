@@ -900,6 +900,207 @@ Not periodically build
 
 **Description:** This job builds a cmssw external package ( e.g. crab , SCRAMV1 ) using the master cmsdist/pkgtools branches.
 It then trigger the cvmfs installation job to install the newly build packages.
+<h2 style="color:#c0392b; font-weight:bold;">📦 cms-build-package</h2>
+
+<p style="font-size:14px; color:#2c3e50;">
+<b>Description:</b> Specialized job for building CMS software packages (crab, SCRAM, etc.) using cmsdist and pkgtools. Supports building, uploading to repositories, and deploying to CVMFS with controlled access permissions.
+</p>
+
+<h3 style="color:#8e44ad;">🎯 Purpose</h3>
+<p style="font-size:14px; line-height:1.6;">
+Builds CMS external packages from source, optionally uploads them to the CMS RPM repository, and can deploy them to CVMFS for system-wide availability. Used for maintaining core CMS tooling packages outside of CMSSW releases.
+</p>
+
+<h3 style="color:#27ae60;">📌 Key Features</h3>
+<ul style="font-size:14px; line-height:1.6; padding-left:20px;">
+  <li>🔹 <strong>Restricted access</strong> - Limited to specific CMS users with credentials</li>
+  <li>🔹 <strong>Multi-package support</strong> - Builds crab, SCRAM, git tools, and other CMS utilities</li>
+  <li>🔹 <strong>Three-stage workflow</strong> - Build → Upload → Deploy (optional)</li>
+  <li>🔹 <strong>CVMFS integration</strong> - Can deploy built packages to /cvmfs/cms.cern.ch</li>
+  <li>🔹 <strong>Docker-based builds</strong> - Uses containerized build environment via docker_launcher.sh</li>
+</ul>
+
+<h3 style="color:#3498db;">⚙️ Configuration Settings</h3>
+
+<div style="background-color:#f8f9fa; padding:15px; border-radius:5px; border-left:4px solid #3498db; margin:10px 0;">
+  <h4 style="margin-top:0; color:#2c3e50;">📊 Build Retention & Security</h4>
+  <ul style="margin:5px 0;">
+    <li><strong>Strategy:</strong> Log Rotation</li>
+    <li><strong>Days to Keep Builds:</strong> 180</li>
+    <li><strong>Max Builds to Keep:</strong> 100</li>
+    <li><strong>Priority:</strong> 1 (highest priority)</li>
+    <li><strong>Access Control:</strong> Restricted to specific CMS users (Belforte, dmapelli, tseethon)</li>
+    <li><strong>Permissions:</strong> Build, configure, delete, workspace access, SCM tagging</li>
+  </ul>
+
+  <h4 style="color:#2c3e50;">🎛️ Job Parameters</h4>
+  <table style="width:100%; font-size:13px; border-collapse: collapse;">
+    <tr style="background-color:#e9ecef;">
+      <th style="border:1px solid #ddd; padding:8px;">Parameter</th>
+      <th style="border:1px solid #ddd; padding:8px;">Type</th>
+      <th style="border:1px solid #ddd; padding:8px;">Options/Default</th>
+      <th style="border:1px solid #ddd; padding:8px;">Description</th>
+    </tr>
+    <tr>
+      <td style="border:1px solid #ddd; padding:8px;"><code>CMS_PACKAGE</code></td>
+      <td style="border:1px solid #ddd; padding:8px;">Choice</td>
+      <td style="border:1px solid #ddd; padding:8px;">crab, cmssw-osenv, SCRAMV1, SCRAMV2, etc.</td>
+      <td style="border:1px solid #ddd; padding:8td;">Package to build (10+ options)</td>
+    </tr>
+    <tr>
+      <td style="border:1px solid #ddd; padding:8px;"><code>UPLOAD</code></td>
+      <td style="border:1px solid #ddd; padding:8px;">Boolean</td>
+      <td style="border:1px solid #ddd; padding:8px;">false</td>
+      <td style="border:1px solid #ddd; padding:8td;">Upload built package to cmsrep</td>
+    </tr>
+    <tr>
+      <td style="border:1px solid #ddd; padding:8px;"><code>DEPLOY_ON_CVMFS</code></td>
+      <td style="border:1px solid #ddd; padding:8px;">Boolean</td>
+      <td style="border:1px solid #ddd; padding:8px;">false</td>
+      <td style="border:1px solid #ddd; padding:8td;">Deploy uploaded package to CVMFS</td>
+    </tr>
+    <tr>
+      <td style="border:1px solid #ddd; padding:8px;"><code>CMSSW_BRANCH</code></td>
+      <td style="border:1px solid #ddd; padding:8px;">String</td>
+      <td style="border:1px solid #ddd; padding:8px;">master</td>
+      <td style="border:1px solid #ddd; padding:8td;">CMSSW branch for configuration</td>
+    </tr>
+  </table>
+
+  <h4 style="color:#2c3e50;">⚡ Execution Settings</h4>
+  <ul style="margin:5px 0;">
+    <li><strong>Execution Nodes:</strong> cmsdev machines</li>
+    <li><strong>Workspace:</strong> Delete before build starts</li>
+    <li><strong>Build Name:</strong> #${BUILD_NUMBER} ${CMS_PACKAGE}</li>
+  </ul>
+</div>
+
+<h3 style="color:#e67e22;">🔍 How It Works</h3>
+
+<h4 style="color:#d35400; font-size:15px;">🔄 Four-Phase Package Workflow:</h4>
+
+<ol style="font-size:14px; line-height:1.6; padding-left:20px;">
+  <li><strong>Environment Setup</strong>:
+    <ul style="margin:5px 0 5px 20px;">
+      <li>Clones cms-bot for configuration</li>
+      <li>Determines architecture and Docker image from config.map</li>
+      <li>Clones cmsdist and pkgtools from appropriate branches</li>
+      <li>Disables debug subpackages unless ENABLE_DEBUG is set</li>
+    </ul>
+  </li>
+  
+  <li><strong>Package Building</strong>:
+    <div style="background-color:#f0f0f0; padding:8px; border-radius:3px; margin:5px 0; font-family:monospace; font-size:12px;">
+      PYTHONPATH= ${WORKSPACE}/cms-bot/docker_launcher.sh ${WORKSPACE}/pkgtools/cmsBuild ${CMSBUILD_OPTS} build ${CMS_PACKAGE}
+    </div>
+    <p style="margin:5px 0; font-size:13px;">Builds package using docker_launcher with optimized job count</p>
+  </li>
+  
+  <li><strong>Upload Phase (Optional)</strong>:
+    <ul style="margin:5px 0 5px 20px;">
+      <li>If UPLOAD=true: Uploads built RPMs to cmsrep repository</li>
+      <li>Special handling: cms-common auto-uploads without CVMFS trigger</li>
+      <li>Creates cvmfs-install properties file if DEPLOY_ON_CVMFS=true</li>
+    </ul>
+  </li>
+  
+  <li><strong>CVMFS Deployment (Optional)</strong>:
+    <ul style="margin:5px 0 5px 20px;">
+      <li>If DEPLOY_ON_CVMFS=true: Triggers cvmfs-cms-install-cms job</li>
+      <li>Uses properties file with PACKAGE and ARCHITECTURE</li>
+      <li>Only triggers if cvmfs-install file created successfully</li>
+    </ul>
+  </li>
+</ol>
+
+<h4 style="color:#d35400; font-size:15px;">📋 Build Configuration:</h4>
+<div style="background-color:#fff8e1; padding:12px; border-radius:5px; margin:10px 0; border-left:4px solid #ffc107;">
+  <p style="margin:0; font-size:13px;">
+    <strong>Build Parameters:</strong><br>
+    1. <strong>Architecture:</strong> Determined from config.map based on CMSSW_BRANCH<br>
+    2. <strong>Job Count:</strong> $(nproc)/2 (half of available CPU cores)<br>
+    3. <strong>Build Directory:</strong> ${WORKSPACE}/w<br>
+    4. <strong>Docker Options:</strong> Uses docker_launcher.sh for containerized build<br>
+    5. <strong>Package Selection:</strong> From predefined list of CMS utilities<br>
+    6. <strong>Special Cases:</strong> cms-common has automatic upload behavior
+  </p>
+</div>
+
+<h3 style="color:#c0392b;">⚠️ Critical Notes</h3>
+<ul style="font-size:14px; line-height:1.6; padding-left:20px; color:#7f8c8d;">
+  <li>❗ <strong>Restricted Access</strong>: Only specific CMS users can run this job</li>
+  <li>⚠️ <strong>Production Impact</strong>: Can deploy packages to production CVMFS</li>
+  <li>🔒 <strong>Credentials Required</strong>: Needs upload and SCM tagging permissions</li>
+  <li>🏗️ <strong>Complex Dependencies</strong>: Requires cmsdist, pkgtools, and cms-bot repositories</li>
+  <li>🐳 <strong>Docker Dependency</strong>: Relies on docker_launcher.sh for builds</li>
+</ul>
+
+<h3 style="color:#27ae60;">🛠️ Supported Packages</h3>
+<div style="background-color:#e8f4fd; padding:12px; border-radius:5px; margin:10px 0; border-left:4px solid #3498db;">
+  <p style="margin:0; font-size:13px;">
+    <strong>Available Package Options:</strong><br>
+    • <strong>crab</strong>: CMS Remote Analysis Builder<br>
+    • <strong>cmssw-osenv</strong>: CMSSW OS environment utilities<br>
+    • <strong>SCRAMV1/SCRAMV2</strong>: CMS build tools (versions 1 and 2)<br>
+    • <strong>cms-git-tools</strong>: Git utilities for CMS workflow<br>
+    • <strong>cms-common</strong>: Common CMS utilities (auto-upload)<br>
+    • <strong>dasgoclient</strong>: DAS (Data Aggregation Service) client<br>
+    • <strong>cms-cat</strong>: CMS catalog tools<br>
+    • <strong>cmssw-wm-tools</strong>: Workload management tools<br>
+    • <strong>cmsLHEtoEOSManager</strong>: LHE file management tools
+  </p>
+</div>
+
+<h3 style="color:#e67e22;">🎯 Workflow Combinations</h3>
+
+<table style="width:100%; font-size:13px; border-collapse: collapse; margin:15px 0;">
+  <thead style="background-color:#f1f2f6;">
+    <tr>
+      <th style="border:1px solid #ddd; padding:8px;">UPLOAD</th>
+      <th style="border:1px solid #ddd; padding:8px;">DEPLOY_ON_CVMFS</th>
+      <th style="border:1px solid #ddd; padding:8px;">Result</th>
+      <th style="border:1px solid #ddd; padding:8px;">Downstream Trigger</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="border:1px solid #ddd; padding:8px;">false</td>
+      <td style="border:1px solid #ddd; padding:8px;">false</td>
+      <td style="border:1px solid #ddd; padding:8px;">Build only (local test)</td>
+      <td style="border:1px solid #ddd; padding:8px;">None</td>
+    </tr>
+    <tr>
+      <td style="border:1px solid #ddd; padding:8px;">true</td>
+      <td style="border:1px solid #ddd; padding:8px;">false</td>
+      <td style="border:1px solid #ddd; padding:8px;">Build + upload to cmsrep</td>
+      <td style="border:1px solid #ddd; padding:8px;">None</td>
+    </tr>
+    <tr>
+      <td style="border:1px solid #ddd; padding:8px;">true</td>
+      <td style="border:1px solid #ddd; padding:8px;">true</td>
+      <td style="border:1px solid #ddd; padding:8px;">Build + upload + CVMFS deploy</td>
+      <td style="border:1px solid #ddd; padding:8px;">cvmfs-cms-install-cms</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 style="color:#c0392b;">🔗 Downstream Integration</h3>
+<div style="background-color:#ffe6e6; padding:12px; border-radius:5px; margin:10px 0; border-left:4px solid #c0392b;">
+  <p style="margin:0; font-size:13px;">
+    <strong>cvmfs-cms-install-cms Trigger:</strong><br>
+    1. <strong>Condition:</strong> Only when DEPLOY_ON_CVMFS=true AND UPLOAD=true<br>
+    2. <strong>Properties File:</strong> cvmfs-install with PACKAGE and ARCHITECTURE<br>
+    3. <strong>Safety:</strong> Won't trigger if properties file missing<br>
+    4. <strong>Exception:</strong> cms-common package disables CVMFS deploy automatically<br>
+    5. <strong>Purpose:</strong> Installs uploaded package to /cvmfs/cms.cern.ch
+  </p>
+</div>
+
+<hr style="border:1px solid #bdc3c7;"/>
+
+<p style="color:#34495e; font-size:13px;">
+💡 <i>Restricted-access package build job for CMS infrastructure tools. Provides controlled building, repository upload, and CVMFS deployment capabilities for essential CMS utilities outside the main CMSSW framework.</i>
+</p>
 
 **Project is `enabled`.**
 
