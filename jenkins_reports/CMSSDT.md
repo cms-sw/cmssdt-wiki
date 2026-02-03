@@ -5320,6 +5320,189 @@ Not periodically build
 ## [cms-containers-checks-tags](https://cmssdt.cern.ch/jenkins/job/cms-containers-checks-tags)
 
 **Description:** This project search for tags.yaml files in cms-sw/cms-docker repostory and create new image tags if needed
+<h2 style="color:#c0392b; font-weight:bold;">🏷️ cms-containers-checks-tags</h2>
+
+<p style="font-size:14px; color:#2c3e50;">
+<b>Description:</b> Automated Docker image tag management job that processes tags.yaml files from the cms-sw/cms-docker repository. Creates new image tags by applying tag inheritance rules and triggers container retagging jobs when needed.
+</p>
+
+<h3 style="color:#8e44ad;">🎯 Purpose</h3>
+<p style="font-size:14px; line-height:1.6;">
+Manages Docker image tag inheritance and propagation by reading tag definitions from YAML files. Automatically creates new image tags based on source→destination mappings and coordinates downstream container retagging operations.
+</p>
+
+<h3 style="color:#27ae60;">📌 Key Features</h3>
+<ul style="font-size:14px; line-height:1.6; padding-left:20px;">
+  <li>🔹 <strong>YAML-based tag definitions</strong> - Processes tags.yaml files for tag inheritance rules</li>
+  <li>🔹 <strong>Selective container processing</strong> - Can target specific containers or process all</li>
+  <li>🔹 <strong>Automated tag generation</strong> - Creates new tags based on source→destination mappings</li>
+  <li>🔹 <strong>Property file generation</strong> - Creates configuration files for downstream retagging jobs</li>
+  <li>🔹 <strong>Daily scheduling</strong> - Runs automatically every day at 2:00 AM</li>
+</ul>
+
+<h3 style="color:#3498db;">⚙️ Configuration Settings</h3>
+
+<div style="background-color:#f8f9fa; padding:15px; border-radius:5px; border-left:4px solid #3498db; margin:10px 0;">
+  <h4 style="margin-top:0; color:#2c3e50;">📊 Build Retention</h4>
+  <ul style="margin:5px 0;">
+    <li><strong>Strategy:</strong> Log Rotation</li>
+    <li><strong>Days to Keep Builds:</strong> 7</li>
+    <li><strong>Max Builds to Keep:</strong> 30</li>
+  </ul>
+
+  <h4 style="color:#2c3e50;">🎛️ Job Parameters</h4>
+  <table style="width:100%; font-size:13px; border-collapse: collapse;">
+    <tr style="background-color:#e9ecef;">
+      <th style="border:1px solid #ddd; padding:8px;">Parameter</th>
+      <th style="border:1px solid #ddd; padding:8px;">Default</th>
+      <th style="border:1px solid #ddd; padding:8px;">Description</th>
+    </tr>
+    <tr>
+      <td style="border:1px solid #ddd; padding:8px;"><code>CONTAINER</code></td>
+      <td style="border:1px solid #ddd; padding:8px;">(empty)</td>
+      <td style="border:1px solid #ddd; padding:8td;">Specific container to process (e.g., cc7, slc6, cc8) or all containers</td>
+    </tr>
+  </table>
+
+  <h4 style="color:#2c3e50;">⚡ Execution Settings</h4>
+  <ul style="margin:5px 0;">
+    <li><strong>Schedule:</strong> Daily at 2:00 AM (H 2 * * *)</li>
+    <li><strong>Execution Nodes:</strong> cmssdt machines</li>
+    <li><strong>Build Name:</strong> #${BUILD_NUMBER} ${CONTAINER}</li>
+    <li><strong>Workspace:</strong> Delete before build starts</li>
+    <li><strong>Trigger:</strong> Build periodically</li>
+  </ul>
+</div>
+
+<h3 style="color:#e67e22;">🔍 How It Works</h3>
+
+<h4 style="color:#d35400; font-size:15px;">🔄 Three-Phase Tag Processing:</h4>
+
+<ol style="font-size:14px; line-height:1.6; padding-left:20px;">
+  <li><strong>Repository & Container Selection</strong>:
+    <div style="background-color:#f0f0f0; padding:8px; border-radius:3px; margin:5px 0; font-family:monospace; font-size:12px;">
+      if [ "${CONTAINER}" = "" ] ; then
+        CONTAINER="cms-docker"
+      else
+        CONTAINER="cms-docker/${CONTAINER}"
+      fi
+      git clone --depth 1 git@github.com:cms-sw/cms-docker
+    </div>
+    <p style="margin:5px 0; font-size:13px;">Determines target path and clones cms-docker repository</p>
+  </li>
+  
+  <li><strong>YAML File Processing</strong>:
+    <div style="background-color:#f0f0f0; padding:8px; border-radius:3px; margin:5px 0; font-family:monospace; font-size:12px;">
+      for tag in $(find ${CONTAINER} -name 'tags.yaml' -type f) ; do
+        repo=$(echo $tag | cut -d/ -f2)
+        grep '^\s*[a-zA-Z]' $tag | while IFS= read -r line ; do
+          # Parse source→destination mappings
+    </div>
+    <p style="margin:5px 0; font-size:13px;">Finds and processes all tags.yaml files, extracts tag mappings</p>
+  </li>
+  
+  <li><strong>Tag Generation & File Creation</strong>:
+    <div style="background-color:#f0f0f0; padding:8px; border-radius:3px; margin:5px 0; font-family:monospace; font-size:12px;">
+      pfile=$(echo cmssw-${repo}-${des} | tr '/:' '--').txt
+      PYTHONPATH="" ./cms-docker/bin/retag-image.py -r cmssw/${repo} \
+         -s ${src} -d ${des} > ${pfile}
+    </div>
+    <p style="margin:5px 0; font-size:13px;">Generates property files for each tag mapping using retag-image.py</p>
+  </li>
+</ol>
+
+<h4 style="color:#d35400; font-size:15px;">📋 YAML Processing Logic:</h4>
+<div style="background-color:#fff8e1; padding:12px; border-radius:5px; margin:10px 0; border-left:4px solid #ffc107;">
+  <p style="margin:0; font-size:13px;">
+    <strong>tags.yaml Format Example:</strong><br>
+    <code>destination_tag: source_tag</code><br>
+    <code>latest: 1.0.0</code><br>
+    <code>stable: latest</code><br><br>
+    <strong>Processing Steps:</strong><br>
+    1. <strong>Find files</strong>: Locates tags.yaml in container directories<br>
+    2. <strong>Extract repo</strong>: Gets container name from path (2nd component)<br>
+    3. <strong>Parse mappings</strong>: Reads each source→destination line<br>
+    4. <strong>Generate files</strong>: Creates cmssw-repo-dest.txt property files<br>
+    5. <strong>File naming</strong>: Converts special chars (/, :) to double dashes (--)<br>
+    6. <strong>Validation</strong>: Only keeps files with SOURCE_IMAGE= content
+  </p>
+</div>
+
+<h3 style="color:#c0392b;">⚠️ Critical Notes</h3>
+<ul style="font-size:14px; line-height:1.6; padding-left:20px; color:#7f8c8d;">
+  <li>❗ <strong>GitHub SSH Access</strong>: Uses git@github.com URLs requiring SSH keys</li>
+  <li>⚠️ <strong>File Validation</strong>: Only property files with SOURCE_IMAGE= are kept</li>
+  <li>🔒 <strong>Error Handling</strong>: Creates err.log on failures and exits with code 1</li>
+  <li>🐍 <strong>Python Script Dependency</strong>: Relies on cms-docker/bin/retag-image.py</li>
+  <li>📁 <strong>Special Character Handling</strong>: Converts / and : to -- in filenames</li>
+</ul>
+
+<h3 style="color:#27ae60;">🛠️ Container Targeting Options</h3>
+<div style="background-color:#e8f4fd; padding:12px; border-radius:5px; margin:10px 0; border-left:4px solid #3498db;">
+  <p style="margin:0; font-size:13px;">
+    <strong>CONTAINER Parameter Usage:</strong><br>
+    • <strong>Empty</strong>: Processes all containers in cms-docker repository<br>
+    • <strong>Specific container</strong> (e.g., <code>cc7</code>): Processes only cms-docker/cc7/<br>
+    • <strong>Path structure</strong>: Converts to cms-docker/${CONTAINER}/ for find command<br><br>
+    <strong>Example Container Types:</strong><br>
+    • cc7 (CentOS 7 based containers)<br>
+    • slc6 (Scientific Linux CERN 6)<br>
+    • cc8 (CentOS 8 based containers)<br>
+    • Other CMS Docker container configurations
+  </p>
+</div>
+
+<h3 style="color:#e67e22;">🔗 Downstream Triggering</h3>
+
+<h4 style="color:#d35400; font-size:15px;">📋 Generated Property Files:</h4>
+<table style="width:100%; font-size:13px; border-collapse: collapse; margin:10px 0;">
+  <thead style="background-color:#f1f2f6;">
+    <tr>
+      <th style="border:1px solid #ddd; padding:8px;">Generated File</th>
+      <th style="border:1px solid #ddd; padding:8px;">Example Content</th>
+      <th style="border:1px solid #ddd; padding:8px;">Purpose</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="border:1px solid #ddd; padding:8px;"><code>cmssw-cc7-latest.txt</code></td>
+      <td style="border:1px solid #ddd; padding:8px; font-family:monospace; font-size:11px;">SOURCE_IMAGE=cmssw/cc7:1.0.0<br>TARGET_IMAGE=cmssw/cc7:latest</td>
+      <td style="border:1px solid #ddd; padding:8px;">Tags cc7:1.0.0 as cc7:latest</td>
+    </tr>
+    <tr>
+      <td style="border:1px solid #ddd; padding:8px;"><code>cmssw-slc6-stable.txt</code></td>
+      <td style="border:1px solid #ddd; padding:8px; font-family:monospace; font-size:11px;">SOURCE_IMAGE=cmssw/slc6:latest<br>TARGET_IMAGE=cmssw/slc6:stable</td>
+      <td style="border:1px solid #ddd; padding:8px;">Tags slc6:latest as slc6:stable</td>
+    </tr>
+  </tbody>
+</table>
+
+<h4 style="color:#d35400; font-size:15px;">🎯 Downstream Job Trigger:</h4>
+<div style="background-color:#ffe6e6; padding:12px; border-radius:5px; margin:10px 0; border-left:4px solid #c0392b;">
+  <p style="margin:0; font-size:13px;">
+    <strong>cms-tag-container Triggering:</strong><br>
+    1. <strong>Target Job</strong>: cms-tag-container<br>
+    2. <strong>File Pattern</strong>: cmssw-*.txt (matches all generated property files)<br>
+    3. <strong>Trigger Logic</strong>: One build per property file<br>
+    4. <strong>Empty Handling</strong>: No trigger if no .txt files generated<br>
+    5. <strong>Purpose</strong>: Each triggered job performs the actual Docker retagging operation
+  </p>
+</div>
+
+<h3 style="color:#27ae60;">🎯 Benefits</h3>
+<ul style="font-size:14px; line-height:1.6; padding-left:20px;">
+  <li>✅ <strong>Declarative tag management</strong> - YAML files define tag relationships</li>
+  <li>✅ <strong>Automated propagation</strong> - New tags automatically created from sources</li>
+  <li>✅ <strong>Selective processing</strong> - Can target specific containers or process all</li>
+  <li>✅ <strong>Parallel execution</strong> - Triggers multiple retagging jobs simultaneously</li>
+  <li>✅ <strong>Daily maintenance</strong> - Ensures tag consistency with regular execution</li>
+</ul>
+
+<hr style="border:1px solid #bdc3c7;"/>
+
+<p style="color:#34495e; font-size:13px;">
+💡 <i>Automated Docker tag management system that processes YAML-based tag definitions and coordinates container retagging operations. Maintains tag inheritance and consistency across CMS Docker containers through declarative configuration.</i>
+</p>
 
 **Project is `enabled`.**
 
