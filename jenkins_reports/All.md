@@ -2893,12 +2893,10 @@ Not periodically build
 
 ## [cms-build-package](https://cmssdt.cern.ch/jenkins/job/cms-build-package)
 
-**Description:** This job builds a cmssw external package ( e.g. crab , SCRAMV1 ) using the master cmsdist/pkgtools branches.
-It then trigger the cvmfs installation job to install the newly build packages.
-<h2 style="color:#c0392b; font-weight:bold;">📦 cms-build-package</h2>
+**Description:** <h2 style="color:#c0392b; font-weight:bold;">📦 cms-build-package</h2>
 
 <p style="font-size:14px; color:#2c3e50;">
-<b>Description:</b> Specialized job for building CMS software packages (crab, SCRAM, etc.) using cmsdist and pkgtools. Supports building, uploading to repositories, and deploying to CVMFS with controlled access permissions.
+<b>Description:</b> Specialized job for building CMS software packages (crab, SCRAMV1, etc.) using cmsdist and pkgtools. Supports building, uploading to repositories, and deploying to CVMFS with controlled access permissions.
 </p>
 
 <h3 style="color:#8e44ad;">🎯 Purpose</h3>
@@ -2908,11 +2906,11 @@ Builds CMS external packages from source, optionally uploads them to the CMS RPM
 
 <h3 style="color:#27ae60;">📌 Key Features</h3>
 <ul style="font-size:14px; line-height:1.6; padding-left:20px;">
-  <li>🔹 <strong>Restricted access</strong> - Limited to specific CMS users with credentials</li>
-  <li>🔹 <strong>Multi-package support</strong> - Builds crab, SCRAM, git tools, and other CMS utilities</li>
-  <li>🔹 <strong>Three-stage workflow</strong> - Build → Upload → Deploy (optional)</li>
-  <li>🔹 <strong>CVMFS integration</strong> - Can deploy built packages to /cvmfs/cms.cern.ch</li>
-  <li>🔹 <strong>Docker-based builds</strong> - Uses containerized build environment via docker_launcher.sh</li>
+  <li> <strong>Restricted access</strong> - Limited to specific CMS users with credentials</li>
+  <li> <strong>Multi-package support</strong> - Builds crab, SCRAM, git tools, and other CMS utilities</li>
+  <li> <strong>Three-stage workflow</strong> - Build → Upload → Deploy (optional)</li>
+  <li> <strong>CVMFS integration</strong> - Can deploy built packages to /cvmfs/cms.cern.ch</li>
+  <li> <strong>Docker-based builds</strong> - Uses containerized build environment via docker_launcher.sh</li>
 </ul>
 
 <h3 style="color:#3498db;">⚙️ Configuration Settings</h3>
