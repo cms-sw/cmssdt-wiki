@@ -10296,11 +10296,14 @@ Not periodically build
 
 ## [test-os](https://cmssdt.cern.ch/jenkins/job/test-os)
 
-**Description:** This job generates property files for triggering os test jobs (e.g., test-os-cs8, test-os-alma8, etc) for any  os_arch_compiler combination.
+**Description:** <b>For now disabled this job. It was setup to test various OS (almalinux, rocky, ubi, rhel, centos stream etc.).<br/>
+We have been running this job for few years now and have not find any issues using various OS. So I think we can stop this job now.
+</b><br/><br/>
+This job generates property files for triggering os test jobs (e.g., test-os-cs8, test-os-alma8, etc) for any  os_arch_compiler combination.
 <br>
 The operating systems tested are rhel8, rocky8, ubi8, el8, cs8, alma8 and lxplus8 os.
 
-**Project is `enabled`.**
+**Project is `disabled`.**
 
 **Upstream projects:**
 
