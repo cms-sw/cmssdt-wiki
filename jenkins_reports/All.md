@@ -10044,7 +10044,7 @@ Not periodically build
 
 ## [run-pr-vtune-profiling](https://cmssdt.cern.ch/jenkins/job/run-pr-vtune-profiling)
 
-**Description:** Profiling jobs that are submitted manually for each CMSSW release. The performance is summarized on https://cms-reco-profiling.web.cern.ch/. Managed by cms-offline-conveners-reco@cern.ch.
+**Description:** None
 
 **Project is `enabled`.**
 
