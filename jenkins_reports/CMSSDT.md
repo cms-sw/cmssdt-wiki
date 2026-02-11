@@ -2023,6 +2023,30 @@ Not periodically build
 
 ---
 
+## [ib-run-eventallocmon-profiling](https://cmssdt.cern.ch/jenkins/job/ib-run-eventallocmon-profiling)
+
+**Description:** Runs FastTimerService and Igprof on the RECO and PAT steps for high pileup workflow.
+
+
+
+**Project is `enabled`.**
+
+**Upstream projects:**
+
+**Downstream projects:**
+
+**Sub-projects:**
+
+**Triggers from:** []
+
+
+**Periodic builds:**
+```bash
+Not periodically build
+```
+
+---
+
 ## [ib-run-gpu-qa](https://cmssdt.cern.ch/jenkins/job/ib-run-gpu-qa)
 
 **Description:** None
