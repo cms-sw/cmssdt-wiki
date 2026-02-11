@@ -30,6 +30,33 @@ Not periodically build
 
 ---
 
+## [das-query](https://cmssdt.cern.ch/jenkins/job/das-query)
+
+**Description:** Job to run das client and cache the results in github to be used by IBs.
+Ignore any failed job if a newer job has succeeded.
+Retry if last run is failed.
+
+**Project is `disabled`.**
+
+**Upstream projects:**
+* [das-query](#das-query):
+
+**Downstream projects:**
+* [das-query](#das-query):
+
+**Sub-projects:**
+* [das-query](#das-query):
+
+**Triggers from:** []
+
+
+**Periodic builds:**
+```bash
+H 9,21 * * *
+```
+
+---
+
 ## [git-notify-build-results](https://cmssdt.cern.ch/jenkins/job/git-notify-build-results)
 
 **Description:** Triggered when new IB results are available and send a Mattermost notification if there are new failures
