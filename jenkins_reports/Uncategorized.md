@@ -2108,50 +2108,6 @@ Not periodically build
 
 ---
 
-## [grid1301593](https://cmssdt.cern.ch/jenkins/job/grid1301593)
-
-**Description:** None
-
-**Project is `enabled`.**
-
-**Upstream projects:**
-
-**Downstream projects:**
-
-**Sub-projects:**
-
-**Triggers from:** []
-
-
-**Periodic builds:**
-```bash
-Not periodically build
-```
-
----
-
-## [grid1301679](https://cmssdt.cern.ch/jenkins/job/grid1301679)
-
-**Description:** None
-
-**Project is `enabled`.**
-
-**Upstream projects:**
-
-**Downstream projects:**
-
-**Sub-projects:**
-
-**Triggers from:** []
-
-
-**Periodic builds:**
-```bash
-Not periodically build
-```
-
----
-
 ## [grid1313630](https://cmssdt.cern.ch/jenkins/job/grid1313630)
 
 **Description:** None
@@ -3120,28 +3076,6 @@ Not periodically build
 
 ---
 
-## [ngt-nvidia-h100-04](https://cmssdt.cern.ch/jenkins/job/ngt-nvidia-h100-04)
-
-**Description:** None
-
-**Project is `enabled`.**
-
-**Upstream projects:**
-
-**Downstream projects:**
-
-**Sub-projects:**
-
-**Triggers from:** []
-
-
-**Periodic builds:**
-```bash
-Not periodically build
-```
-
----
-
 ## [ngt-nvidia-l40s-01](https://cmssdt.cern.ch/jenkins/job/ngt-nvidia-l40s-01)
 
 **Description:** None
@@ -3209,28 +3143,6 @@ Not periodically build
 ---
 
 ## [ngt-nvidia-l40s-04](https://cmssdt.cern.ch/jenkins/job/ngt-nvidia-l40s-04)
-
-**Description:** None
-
-**Project is `enabled`.**
-
-**Upstream projects:**
-
-**Downstream projects:**
-
-**Sub-projects:**
-
-**Triggers from:** []
-
-
-**Periodic builds:**
-```bash
-Not periodically build
-```
-
----
-
-## [p2-hlt-test](https://cmssdt.cern.ch/jenkins/job/p2-hlt-test)
 
 **Description:** None
 
