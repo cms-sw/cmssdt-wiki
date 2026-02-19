@@ -6382,7 +6382,6 @@ Not periodically build
 **Project is `enabled`.**
 
 **Upstream projects:**
-* [ib-run-profiling](#ib-run-profiling):
 
 **Downstream projects:**
 
@@ -7128,7 +7127,6 @@ Not periodically build
 * [ib-run-pr-profiling](#ib-run-pr-profiling):
 
 **Downstream projects:**
-* [ib-run-allocmon-profiling](#ib-run-allocmon-profiling):
 * [ib-run-eventallocmon-profiling](#ib-run-eventallocmon-profiling):
 * [run-vtune-profiling](#run-vtune-profiling):
 * [sync-profile-data](#sync-profile-data):
