@@ -2375,6 +2375,28 @@ Not periodically build
 
 ---
 
+## [ib-run-pr-vtune-profiling](https://cmssdt.cern.ch/jenkins/job/ib-run-pr-vtune-profiling)
+
+**Description:** None
+
+**Project is `enabled`.**
+
+**Upstream projects:**
+
+**Downstream projects:**
+
+**Sub-projects:**
+
+**Triggers from:** []
+
+
+**Periodic builds:**
+```bash
+Not periodically build
+```
+
+---
+
 ## [ib-run-pr-wait-deployment](https://cmssdt.cern.ch/jenkins/job/ib-run-pr-wait-deployment)
 
 **Description:** Same puprose as `ib-any-integration`, just different script is called.<br>
@@ -2442,6 +2464,28 @@ Not periodically build
 
 **Downstream projects:**
 * [sync-profile-data](#sync-profile-data):
+
+**Sub-projects:**
+
+**Triggers from:** []
+
+
+**Periodic builds:**
+```bash
+Not periodically build
+```
+
+---
+
+## [ib-run-vtune-profiling](https://cmssdt.cern.ch/jenkins/job/ib-run-vtune-profiling)
+
+**Description:** Profiling jobs that are submitted manually for each CMSSW release. The performance is summarized on https://cms-reco-profiling.web.cern.ch/. Managed by cms-offline-conveners-reco@cern.ch.
+
+**Project is `enabled`.**
+
+**Upstream projects:**
+
+**Downstream projects:**
 
 **Sub-projects:**
 
