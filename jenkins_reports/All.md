@@ -6959,6 +6959,36 @@ Not periodically build
 
 ---
 
+## [ib-run-pr-ib-profiling](https://cmssdt.cern.ch/jenkins/job/ib-run-pr-ib-profiling)
+
+**Description:** Build mutiple  a pull requests. 
+Same puprose as `ib-any-integration`, just different script is called.
+
+
+
+
+**Project is `enabled`.**
+
+**Upstream projects:**
+
+**Downstream projects:**
+* [run-pr-vtune-profiling](#run-pr-vtune-profiling):
+* [update-circle-dataset](#update-circle-dataset):
+
+**Sub-projects:**
+* [update-circle-dataset](#update-circle-dataset):
+* [run-pr-vtune-profiling](#run-pr-vtune-profiling):
+
+**Triggers from:** []
+
+
+**Periodic builds:**
+```bash
+Not periodically build
+```
+
+---
+
 ## [ib-run-pr-profiling](https://cmssdt.cern.ch/jenkins/job/ib-run-pr-profiling)
 
 **Description:** Build mutiple  a pull requests. 
@@ -10049,6 +10079,7 @@ Not periodically build
 **Project is `enabled`.**
 
 **Upstream projects:**
+* [ib-run-pr-ib-profiling](#ib-run-pr-ib-profiling):
 * [ib-run-pr-profiling](#ib-run-pr-profiling):
 
 **Downstream projects:**
@@ -10627,6 +10658,7 @@ H 0 * * *
 **Upstream projects:**
 * [ib-run-hlt-p2-timing](#ib-run-hlt-p2-timing):
 * [ib-run-pr-hlt_p2_timing](#ib-run-pr-hlt_p2_timing):
+* [ib-run-pr-ib-profiling](#ib-run-pr-ib-profiling):
 * [ib-run-pr-profiling](#ib-run-pr-profiling):
 * [sync-profile-data](#sync-profile-data):
 
