@@ -2253,12 +2253,12 @@ Same puprose as `ib-any-integration`, just different script is called.
 **Upstream projects:**
 
 **Downstream projects:**
-* [run-vtune-profiling](#run-vtune-profiling):
+* [run-pr-vtune-profiling](#run-pr-vtune-profiling):
 * [update-circle-dataset](#update-circle-dataset):
 
 **Sub-projects:**
 * [update-circle-dataset](#update-circle-dataset):
-* [run-vtune-profiling](#run-vtune-profiling):
+* [run-pr-vtune-profiling](#run-pr-vtune-profiling):
 
 **Triggers from:** []
 
@@ -2842,6 +2842,7 @@ Not periodically build
 **Project is `enabled`.**
 
 **Upstream projects:**
+* [ib-run-pr-ib-profiling](#ib-run-pr-ib-profiling):
 * [ib-run-pr-profiling](#ib-run-pr-profiling):
 
 **Downstream projects:**
@@ -2865,7 +2866,6 @@ Not periodically build
 **Project is `enabled`.**
 
 **Upstream projects:**
-* [ib-run-pr-ib-profiling](#ib-run-pr-ib-profiling):
 * [ib-run-profiling](#ib-run-profiling):
 
 **Downstream projects:**
