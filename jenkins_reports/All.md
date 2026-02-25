@@ -6959,7 +6959,7 @@ Not periodically build
 
 ---
 
-## [ib-run-pr-ib-profiling](https://cmssdt.cern.ch/jenkins/job/ib-run-pr-ib-profiling)
+## [ib-run-pr-ib_profiling](https://cmssdt.cern.ch/jenkins/job/ib-run-pr-ib_profiling)
 
 **Description:** Build mutiple  a pull requests. 
 Same puprose as `ib-any-integration`, just different script is called.
@@ -6989,7 +6989,7 @@ Not periodically build
 
 ---
 
-## [ib-run-pr-ib-vtune-profiling](https://cmssdt.cern.ch/jenkins/job/ib-run-pr-ib-vtune-profiling)
+## [ib-run-pr-ib_vtune_profiling](https://cmssdt.cern.ch/jenkins/job/ib-run-pr-ib_vtune_profiling)
 
 **Description:** Profiling jobs that are submitted manually for each CMSSW release. The performance is summarized on https://cms-reco-profiling.web.cern.ch/. Managed by cms-offline-conveners-reco@cern.ch.
 
@@ -7136,7 +7136,7 @@ Not periodically build
 
 ---
 
-## [ib-run-pr-vtune-profiling](https://cmssdt.cern.ch/jenkins/job/ib-run-pr-vtune-profiling)
+## [ib-run-pr-vtune_profiling](https://cmssdt.cern.ch/jenkins/job/ib-run-pr-vtune_profiling)
 
 **Description:** None
 
@@ -10145,7 +10145,7 @@ Not periodically build
 **Project is `enabled`.**
 
 **Upstream projects:**
-* [ib-run-pr-ib-profiling](#ib-run-pr-ib-profiling):
+* [ib-run-pr-ib_profiling](#ib-run-pr-ib_profiling):
 * [ib-run-pr-profiling](#ib-run-pr-profiling):
 
 **Downstream projects:**
@@ -10724,7 +10724,7 @@ H 0 * * *
 **Upstream projects:**
 * [ib-run-hlt-p2-timing](#ib-run-hlt-p2-timing):
 * [ib-run-pr-hlt_p2_timing](#ib-run-pr-hlt_p2_timing):
-* [ib-run-pr-ib-profiling](#ib-run-pr-ib-profiling):
+* [ib-run-pr-ib_profiling](#ib-run-pr-ib_profiling):
 * [ib-run-pr-profiling](#ib-run-pr-profiling):
 * [sync-profile-data](#sync-profile-data):
 
