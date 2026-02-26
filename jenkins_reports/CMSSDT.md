@@ -1044,6 +1044,7 @@ Builds CMS external packages from source, optionally uploads them to the CMS RPM
     • <strong>cms-common</strong>: Common CMS utilities (auto-upload)<br>
     • <strong>dasgoclient</strong>: DAS (Data Aggregation Service) client<br>
     • <strong>cms-cat</strong>: CMS catalog tools<br>
+    • <strong>prmon</strong>: HSF rocess monitoring tool<br>
     • <strong>cmssw-wm-tools</strong>: Workload management tools<br>
     • <strong>cmsLHEtoEOSManager</strong>: LHE file management tools
   </p>
