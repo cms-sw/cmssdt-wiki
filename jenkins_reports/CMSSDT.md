@@ -5751,6 +5751,28 @@ Not periodically build
 
 ---
 
+## [cmsbuild-access](https://cmssdt.cern.ch/jenkins/job/cmsbuild-access)
+
+**Description:** None
+
+**Project is `enabled`.**
+
+**Upstream projects:**
+
+**Downstream projects:**
+
+**Sub-projects:**
+
+**Triggers from:** []
+
+
+**Periodic builds:**
+```bash
+H 14 * * *
+```
+
+---
+
 ## [cmspkg-clone](https://cmssdt.cern.ch/jenkins/job/cmspkg-clone)
 
 **Description:** None
