@@ -1926,7 +1926,6 @@ Not periodically build
 **Project is `enabled`.**
 
 **Upstream projects:**
-* [ib-run-profiling](#ib-run-profiling):
 
 **Downstream projects:**
 
@@ -2033,7 +2032,6 @@ Not periodically build
 **Project is `enabled`.**
 
 **Upstream projects:**
-* [ib-run-profiling](#ib-run-profiling):
 
 **Downstream projects:**
 
@@ -2481,7 +2479,6 @@ Not periodically build
 **Project is `enabled`.**
 
 **Upstream projects:**
-* [ib-run-profiling](#ib-run-profiling):
 
 **Downstream projects:**
 
@@ -7015,9 +7012,6 @@ Not periodically build
 **Upstream projects:**
 
 **Downstream projects:**
-* [ib-run-allocmon-profiling](#ib-run-allocmon-profiling):
-* [ib-run-eventallocmon-profiling](#ib-run-eventallocmon-profiling):
-* [ib-run-vtune-profiling](#ib-run-vtune-profiling):
 * [sync-profile-data](#sync-profile-data):
 
 **Sub-projects:**
