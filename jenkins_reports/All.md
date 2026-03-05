@@ -9042,6 +9042,28 @@ H H/8 * * *
 
 ---
 
+## [jenkins-test-vtune-connect](https://cmssdt.cern.ch/jenkins/job/jenkins-test-vtune-connect)
+
+**Description:** None
+
+**Project is `enabled`.**
+
+**Upstream projects:**
+
+**Downstream projects:**
+
+**Sub-projects:**
+
+**Triggers from:** []
+
+
+**Periodic builds:**
+```bash
+Not periodically build
+```
+
+---
+
 ## [jenkins-test-ws-trigger-job](https://cmssdt.cern.ch/jenkins/job/jenkins-test-ws-trigger-job)
 
 **Description:** None
