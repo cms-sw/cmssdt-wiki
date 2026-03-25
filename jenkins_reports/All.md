@@ -11136,7 +11136,7 @@ H 7 * * *
 
 ## [web-update-cmssdt-ib](https://cmssdt.cern.ch/jenkins/job/web-update-cmssdt-ib)
 
-**Description:** None
+**Description:** Job used to transpile cmssdt ib page from ECMAscript6 to regular javascript and push changes to github.
 
 **Project is `enabled`.**
 
