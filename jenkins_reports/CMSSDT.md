@@ -3431,6 +3431,7 @@ H 7 * * *
 **Project is `enabled`.**
 
 **Upstream projects:**
+* [github-push-hook](#github-push-hook):
 
 **Downstream projects:**
 
@@ -6486,6 +6487,7 @@ This job is also triggered via github web hook. Please do not add/remove any par
 * [git-notify-build-results](#git-notify-build-results):
 * [git-reference-cvmfs](#git-reference-cvmfs):
 * [update-cmssw-l2-histroy](#update-cmssw-l2-histroy):
+* [web-update-cmssdt-ib](#web-update-cmssdt-ib):
 * [web-update-logReader](#web-update-logReader):
 
 **Sub-projects:**
@@ -6497,6 +6499,7 @@ This job is also triggered via github web hook. Please do not add/remove any par
 * [auto-forward-port](#auto-forward-port):
 * [update-cmssw-l2-histroy](#update-cmssw-l2-histroy):
 * [git-notify-build-results](#git-notify-build-results):
+* [web-update-cmssdt-ib](#web-update-cmssdt-ib):
 
 **Triggers from:** []
 
