@@ -5404,7 +5404,7 @@ Monitors GitHub PR comments and triggers appropriate Jenkins job actions. Acts a
 
 **Sub-projects:**
 * [ib-schedule-pr-tests](#ib-schedule-pr-tests):
-* [abort-pr-tests ](#abort-pr-tests ):
+* [abort-pr-tests](#abort-pr-tests):
 * [run-pr-code-checks](#run-pr-code-checks):
 * [query-new-data-repo-issues](#query-new-data-repo-issues):
 * [cms-bot](#cms-bot):
@@ -6464,14 +6464,12 @@ This job is also triggered via github web hook. Please do not add/remove any par
 * [git-notify-build-results](#git-notify-build-results):
 * [git-reference-cvmfs](#git-reference-cvmfs):
 * [update-cmssw-l2-histroy](#update-cmssw-l2-histroy):
-* [web-update-cmssdt-ib](#web-update-cmssdt-ib):
 * [web-update-logReader](#web-update-logReader):
 
 **Sub-projects:**
 * [deploy-cms-repo](#deploy-cms-repo):
 * [git-reference-cvmfs](#git-reference-cvmfs):
 * [git-mirror-repository](#git-mirror-repository):
-* [web-update-cmssdt-ib](#web-update-cmssdt-ib):
 * [cms-containers-checks-tags](#cms-containers-checks-tags):
 * [web-update-logReader](#web-update-logReader):
 * [auto-forward-port](#auto-forward-port):
@@ -6989,7 +6987,7 @@ better to wait for the service to get healthy.
 * [abort-pr-tests](#abort-pr-tests):
 * [pr-publish-cmssw](#pr-publish-cmssw):
 * [ib-run-pr-wait-deployment](#ib-run-pr-wait-deployment):
-* [update-das-queries ](#update-das-queries ):
+* [update-das-queries](#update-das-queries):
 
 **Triggers from:** []
 
@@ -7296,8 +7294,8 @@ delay and may cause this job to timeout.
 
 **Sub-projects:**
 * [ib-run-addons](#ib-run-addons):
-* [ib-run-qa ](#ib-run-qa ):
-* [ib-run-relvals ](#ib-run-relvals ):
+* [ib-run-qa](#ib-run-qa):
+* [ib-run-relvals](#ib-run-relvals):
 * [ib-schedule-additional-tests](#ib-schedule-additional-tests):
 * [summary-of-merged-prs](#summary-of-merged-prs):
 
@@ -7848,8 +7846,8 @@ and <a href="https://cmssdt.cern.ch/jenkins/job/test-docker">test-docker</a> job
 
 **Sub-projects:**
 * [workspace-cleanup-slave](#workspace-cleanup-slave):
-* [check-docker ](#check-docker ):
-* [check-zombie ](#check-zombie ):
+* [check-docker](#check-docker):
+* [check-zombie](#check-zombie):
 
 **Triggers from:** []
 
@@ -8211,29 +8209,6 @@ Not periodically build
 
 **Sub-projects:**
 * [upload-release](#upload-release):
-
-**Triggers from:** []
-
-
-**Periodic builds:**
-```bash
-Not periodically build
-```
-
----
-
-## [web-update-cmssdt-ib](https://cmssdt.cern.ch/jenkins/job/web-update-cmssdt-ib)
-
-**Description:** Job used to transpile cmssdt ib page from ECMAscript6 to regular javascript and push changes to github.
-
-**Project is `enabled`.**
-
-**Upstream projects:**
-* [github-push-hook](#github-push-hook):
-
-**Downstream projects:**
-
-**Sub-projects:**
 
 **Triggers from:** []
 
