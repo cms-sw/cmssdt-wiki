@@ -4116,10 +4116,8 @@ H * * * *
 * [cvmfs-cms-check-and-update-premixPUlist](#cvmfs-cms-check-and-update-premixPUlist):
 
 **Downstream projects:**
-* [cvmfs-cms-sync-eos-dir](#cvmfs-cms-sync-eos-dir):
 
 **Sub-projects:**
-* [cvmfs-cms-sync-eos-dir](#cvmfs-cms-sync-eos-dir):
 
 **Triggers from:** []
 
@@ -4484,31 +4482,6 @@ Not periodically build
 **Periodic builds:**
 ```bash
 H */2 * * *
-```
-
----
-
-## [cvmfs-cms-sync-eos-dir](https://cmssdt.cern.ch/jenkins/job/cvmfs-cms-sync-eos-dir)
-
-**Description:** This job syncs an EOS directory on to CVMFS
-
-
-
-**Project is `enabled`.**
-
-**Upstream projects:**
-* [cvmfs-cms-check-eos-dir](#cvmfs-cms-check-eos-dir):
-
-**Downstream projects:**
-
-**Sub-projects:**
-
-**Triggers from:** []
-
-
-**Periodic builds:**
-```bash
-Not periodically build
 ```
 
 ---
