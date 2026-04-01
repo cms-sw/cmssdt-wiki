@@ -874,3 +874,27 @@ Not periodically build
 
 ---
 
+## [cvmfs-cms-sync-eos-dir](https://cmssdt.cern.ch/jenkins/job/cvmfs-cms-sync-eos-dir)
+
+**Description:** This job syncs an EOS directory on to CVMFS
+
+
+
+**Project is `enabled`.**
+
+**Upstream projects:**
+
+**Downstream projects:**
+
+**Sub-projects:**
+
+**Triggers from:** []
+
+
+**Periodic builds:**
+```bash
+Not periodically build
+```
+
+---
+
