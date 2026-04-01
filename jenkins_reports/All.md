@@ -4116,8 +4116,10 @@ H * * * *
 * [cvmfs-cms-check-and-update-premixPUlist](#cvmfs-cms-check-and-update-premixPUlist):
 
 **Downstream projects:**
+* [cvmfs-cms-sync-eos-dir](#cvmfs-cms-sync-eos-dir):
 
 **Sub-projects:**
+* [cvmfs-cms-sync-eos-dir](#cvmfs-cms-sync-eos-dir):
 
 **Triggers from:** []
 
@@ -4495,6 +4497,7 @@ H */2 * * *
 **Project is `enabled`.**
 
 **Upstream projects:**
+* [cvmfs-cms-check-eos-dir](#cvmfs-cms-check-eos-dir):
 
 **Downstream projects:**
 
