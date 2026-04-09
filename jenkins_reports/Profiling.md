@@ -118,7 +118,6 @@ Not periodically build
 
 **Upstream projects:**
 * [ib-run-pr-ib_profiling](#ib-run-pr-ib_profiling):
-* [ib-run-pr-profiling](#ib-run-pr-profiling):
 
 **Downstream projects:**
 
@@ -147,12 +146,10 @@ Same puprose as `ib-any-integration`, just different script is called.
 **Upstream projects:**
 
 **Downstream projects:**
-* [ib-run-pr-ib_vtune_profiling](#ib-run-pr-ib_vtune_profiling):
 * [update-circle-dataset](#update-circle-dataset):
 
 **Sub-projects:**
 * [update-circle-dataset](#update-circle-dataset):
-* [ib-run-pr-ib_vtune_profiling](#ib-run-pr-ib_vtune_profiling):
 
 **Triggers from:** []
 
