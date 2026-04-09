@@ -60,5 +60,6 @@
   * [Grid](jenkins_reports/Grid.md)
   * [Jenkins Tests](jenkins_reports/Jenkins-Tests.md)
   * [Openstack](jenkins_reports/Openstack.md)
+  * [Profiling](jenkins_reports/Profiling.md)
   * [Uncategorized](jenkins_reports/Uncategorized.md)
 * [Jenkins Jobs](https://cmssdt.cern.ch/SDT/html/jreports.html)
