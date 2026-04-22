@@ -10293,7 +10293,7 @@ as deploys on the web server. It is used to generate <a href="https://cmssdt.cer
   </li>
 </ul>
 
-**Project is `disabled`.**
+**Project is `enabled`.**
 
 **Upstream projects:**
 * [ib-validation](#ib-validation):
