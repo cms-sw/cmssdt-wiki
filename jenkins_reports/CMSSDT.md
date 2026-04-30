@@ -3664,6 +3664,7 @@ Only retry the failed sub-jobs, not this placeholder job.
 **Project is `enabled`.**
 
 **Upstream projects:**
+* [github-push-hook](#github-push-hook):
 
 **Downstream projects:**
 * [auto-forward-port-branch](#auto-forward-port-branch):
@@ -6485,6 +6486,7 @@ This job is also triggered via github web hook. Please do not add/remove any par
 * [github-webhook](#github-webhook):
 
 **Downstream projects:**
+* [auto-forward-port](#auto-forward-port):
 * [cms-containers-checks-tags](#cms-containers-checks-tags):
 * [deploy-cms-repo](#deploy-cms-repo):
 * [git-mirror-repository](#git-mirror-repository):
@@ -6503,6 +6505,7 @@ This job is also triggered via github web hook. Please do not add/remove any par
 * [update-cmssw-l2-histroy](#update-cmssw-l2-histroy):
 * [git-notify-build-results](#git-notify-build-results):
 * [web-update-cmssdt-ib](#web-update-cmssdt-ib):
+* [auto-forward-port](#auto-forward-port):
 
 **Triggers from:** []
 
