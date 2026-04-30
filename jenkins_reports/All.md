@@ -170,6 +170,72 @@ Not periodically build
 
 ---
 
+## [auto-forward-port](https://cmssdt.cern.ch/jenkins/job/auto-forward-port)
+
+**Description:** <h2 style="color:#2980b9; font-weight:bold;">🔄 auto-forward-port</h2>
+
+<p style="font-size:14px; color:#2c3e50;">
+This is triggered by github webhook for each cmssw/cmsdist branch merge event. This is just a place holder job to trigger one sub-job per destionation branch for which the forward porting should be done. If this fails then this means that one of its sub-job failed. There is no need to re-try this job. Retry the failed sub-jobs only.
+</p>
+
+<h3 style="color:#8e44ad;">🎯 Purpose</h3>
+<p style="font-size:14px; line-height:1.6;">
+The auto-forward-port job is automatically triggered by GitHub webhook events whenever a branch in a repository (e.g., cms-sw/cmssw or cms-sw/cmsdist) is merged. Its primary role is not to perform the forward porting itself, but to spawn sub-jobs—one per destination branch that requires forward porting.
+</p>
+
+<h3 style="color:#27ae60;">📌 Behavior</h3>
+
+<p style="font-size:14px;"><strong>Receives two parameters:</strong></p>
+<ul style="font-size:14px; line-height:1.6; padding-left:20px;">
+  <li>REPOSITORY – the GitHub repository name (e.g., cms-sw/cmssw)</li>
+  <li>BRANCH – the source branch to forward-port (e.g., CMSSW_7_6_X)</li>
+</ul>
+
+<p style="font-size:14px; line-height:1.6;">
+Reads the mapping of destination branches from forward_ports_map.GIT_REPO_FWPORTS.
+</p>
+
+<p style="font-size:14px;"><strong>For each destination branch:</strong></p>
+<ul style="font-size:14px; line-height:1.6; padding-left:20px;">
+  <li>Creates a parameter file containing REPOSITORY, SOURCE_BRANCH, and DESTINATION_BRANCH.</li>
+  <li>Triggers the corresponding forward-port sub-job.</li>
+</ul>
+
+<h3 style="color:#c0392b;">⚠️ Failure Handling</h3>
+<p style="font-size:14px; line-height:1.6;">
+If this job fails, it only indicates a sub-job failure.  
+Only retry the failed sub-jobs, not this placeholder job.
+</p>
+
+<h3 style="color:#16a085;">🛠 Job Configuration Highlights</h3>
+<ul style="font-size:14px; line-height:1.6; padding-left:20px;">
+  <li>Maximum 5 total builds; 1 per node; prevents duplicate builds for the same REPOSITORY and BRANCH.</li>
+  <li>30 minutes to prevent stuck builds.</li>
+  <li>Keep builds for 7 days or up to 100 builds.</li>
+  <li>Runs on nodes labeled cmssdt or lxplus-scripts.</li>
+</ul>
+
+
+**Project is `enabled`.**
+
+**Upstream projects:**
+
+**Downstream projects:**
+* [auto-forward-port-branch](#auto-forward-port-branch):
+
+**Sub-projects:**
+* [auto-forward-port-branch](#auto-forward-port-branch):
+
+**Triggers from:** []
+
+
+**Periodic builds:**
+```bash
+Not periodically build
+```
+
+---
+
 ## [auto-forward-port-branch](https://cmssdt.cern.ch/jenkins/job/auto-forward-port-branch)
 
 **Description:** <h2 style="color:#9b59b6; font-weight:bold;">🔀 auto-forward-port-branch</h2>
@@ -205,6 +271,7 @@ In case of Root master use "ours" strategy to port forward.
 **Project is `enabled`.**
 
 **Upstream projects:**
+* [auto-forward-port](#auto-forward-port):
 
 **Downstream projects:**
 
