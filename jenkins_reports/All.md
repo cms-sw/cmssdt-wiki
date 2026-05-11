@@ -6160,9 +6160,11 @@ H 10,22 * * *
 
 **Downstream projects:**
 * [ib-run-baseline](#ib-run-baseline):
+* [ib-run-hlt-p2-timing](#ib-run-hlt-p2-timing):
 
 **Sub-projects:**
 * [ib-run-baseline](#ib-run-baseline):
+* [ib-run-hlt-p2-timing](#ib-run-hlt-p2-timing):
 
 **Triggers from:** []
 
@@ -6630,6 +6632,7 @@ Not periodically build
 **Project is `enabled`.**
 
 **Upstream projects:**
+* [ib-check-baseline-requests](#ib-check-baseline-requests):
 
 **Downstream projects:**
 * [update-circle-dataset](#update-circle-dataset):
