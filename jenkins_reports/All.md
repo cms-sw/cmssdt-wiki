@@ -8946,6 +8946,28 @@ Not periodically build
 
 ---
 
+## [jenkins-test-priority](https://cmssdt.cern.ch/jenkins/job/jenkins-test-priority)
+
+**Description:** None
+
+**Project is `enabled`.**
+
+**Upstream projects:**
+
+**Downstream projects:**
+
+**Sub-projects:**
+
+**Triggers from:** []
+
+
+**Periodic builds:**
+```bash
+Not periodically build
+```
+
+---
+
 ## [jenkins-test-retry](https://cmssdt.cern.ch/jenkins/job/jenkins-test-retry)
 
 **Description:** This job retries a build given the job name and the build number to retry.<br>
@@ -8961,6 +8983,28 @@ This job is expected to fail if the same build has been retried more than 3 time
 
 **Sub-projects:**
 * [${JOB_TO_RETRY}](#${JOB_TO_RETRY}):
+
+**Triggers from:** []
+
+
+**Periodic builds:**
+```bash
+Not periodically build
+```
+
+---
+
+## [jenkins-test-run-priority-job](https://cmssdt.cern.ch/jenkins/job/jenkins-test-run-priority-job)
+
+**Description:** None
+
+**Project is `enabled`.**
+
+**Upstream projects:**
+
+**Downstream projects:**
+
+**Sub-projects:**
 
 **Triggers from:** []
 

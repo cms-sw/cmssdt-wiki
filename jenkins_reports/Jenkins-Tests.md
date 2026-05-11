@@ -846,6 +846,50 @@ Not periodically build
 
 ---
 
+## [jenkins-test-priority](https://cmssdt.cern.ch/jenkins/job/jenkins-test-priority)
+
+**Description:** None
+
+**Project is `enabled`.**
+
+**Upstream projects:**
+
+**Downstream projects:**
+
+**Sub-projects:**
+
+**Triggers from:** []
+
+
+**Periodic builds:**
+```bash
+Not periodically build
+```
+
+---
+
+## [jenkins-test-run-priority-job](https://cmssdt.cern.ch/jenkins/job/jenkins-test-run-priority-job)
+
+**Description:** None
+
+**Project is `enabled`.**
+
+**Upstream projects:**
+
+**Downstream projects:**
+
+**Sub-projects:**
+
+**Triggers from:** []
+
+
+**Periodic builds:**
+```bash
+Not periodically build
+```
+
+---
+
 ## [jenkins-test-vtune-connect](https://cmssdt.cern.ch/jenkins/job/jenkins-test-vtune-connect)
 
 **Description:** None
