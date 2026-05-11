@@ -8953,6 +8953,7 @@ Not periodically build
 **Project is `enabled`.**
 
 **Upstream projects:**
+* [jenkins-test-run-priority-job](#jenkins-test-run-priority-job):
 
 **Downstream projects:**
 
@@ -9003,8 +9004,10 @@ Not periodically build
 **Upstream projects:**
 
 **Downstream projects:**
+* [jenkins-test-priority](#jenkins-test-priority):
 
 **Sub-projects:**
+* [jenkins-test-priority](#jenkins-test-priority):
 
 **Triggers from:** []
 
