@@ -61,5 +61,6 @@
   * [Jenkins Tests](jenkins_reports/Jenkins-Tests.md)
   * [Openstack](jenkins_reports/Openstack.md)
   * [Profiling](jenkins_reports/Profiling.md)
+  * [bits](jenkins_reports/bits.md)
   * [Uncategorized](jenkins_reports/Uncategorized.md)
 * [Jenkins Jobs](https://cmssdt.cern.ch/SDT/html/jreports.html)
