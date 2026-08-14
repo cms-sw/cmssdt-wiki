@@ -231,31 +231,6 @@ Not periodically build
 
 ---
 
-## [ib-run-profiling-mem](https://cmssdt.cern.ch/jenkins/job/ib-run-profiling-mem)
-
-**Description:** Runs Jemalloc memory profiling on the RECO and PAT steps for high pileup workflow.
-
-
-
-**Project is `enabled`.**
-
-**Upstream projects:**
-
-**Downstream projects:**
-* [sync-profile-data](#sync-profile-data):
-
-**Sub-projects:**
-
-**Triggers from:** []
-
-
-**Periodic builds:**
-```bash
-Not periodically build
-```
-
----
-
 ## [ib-run-profiling-mem-GC](https://cmssdt.cern.ch/jenkins/job/ib-run-profiling-mem-GC)
 
 **Description:** Runs FastTimerService and Igprof on the RECO and PAT steps for high pileup workflow.

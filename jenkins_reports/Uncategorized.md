@@ -52,6 +52,52 @@ Not periodically build
 
 ---
 
+## [cmspkg-test](https://cmssdt.cern.ch/jenkins/job/cmspkg-test)
+
+**Description:** None
+
+**Project is `disabled`.**
+
+**Upstream projects:**
+
+**Downstream projects:**
+
+**Sub-projects:**
+
+**Triggers from:** []
+
+
+**Periodic builds:**
+```bash
+Not periodically build
+```
+
+---
+
+## [compare-material-budget](https://cmssdt.cern.ch/jenkins/job/compare-material-budget)
+
+**Description:** Comopare results of material budget of two releases using Validation/Geometry/test/TrackerMaterialBudgetComparison.C macro
+
+
+**Project is `disabled`.**
+
+**Upstream projects:**
+* [ib-run-material-budget](#ib-run-material-budget):
+
+**Downstream projects:**
+
+**Sub-projects:**
+
+**Triggers from:** []
+
+
+**Periodic builds:**
+```bash
+Not periodically build
+```
+
+---
+
 ## [cvmfs-cleanup-containers](https://cmssdt.cern.ch/jenkins/job/cvmfs-cleanup-containers)
 
 **Description:** None
@@ -74,29 +120,47 @@ Not periodically build
 
 ---
 
-## [das-query](https://cmssdt.cern.ch/jenkins/job/das-query)
+## [cvmfs_publish_remote_dir](https://cmssdt.cern.ch/jenkins/job/cvmfs_publish_remote_dir)
 
-**Description:** Job to run das client and cache the results in github to be used by IBs.
-Ignore any failed job if a newer job has succeeded.
-Retry if last run is failed.
+**Description:** This jobs install an IB on /cvmfs/cms-ib.cern.ch.
 
 **Project is `disabled`.**
 
 **Upstream projects:**
-* [das-query](#das-query):
 
 **Downstream projects:**
-* [das-query](#das-query):
 
 **Sub-projects:**
-* [das-query](#das-query):
 
 **Triggers from:** []
 
 
 **Periodic builds:**
 ```bash
-H 9,21 * * *
+Not periodically build
+```
+
+---
+
+## [docker-dmwm-CMSKubernetes](https://cmssdt.cern.ch/jenkins/job/docker-dmwm-CMSKubernetes)
+
+**Description:** None
+
+**Project is `disabled`.**
+
+**Upstream projects:**
+* [github-webhook](#github-webhook):
+
+**Downstream projects:**
+
+**Sub-projects:**
+
+**Triggers from:** []
+
+
+**Periodic builds:**
+```bash
+Not periodically build
 ```
 
 ---
@@ -111,6 +175,76 @@ H 9,21 * * *
 * [github-push-hook](#github-push-hook):
 
 **Downstream projects:**
+
+**Sub-projects:**
+
+**Triggers from:** []
+
+
+**Periodic builds:**
+```bash
+Not periodically build
+```
+
+---
+
+## [GitHub-refactor-cmssw](https://cmssdt.cern.ch/jenkins/job/GitHub-refactor-cmssw)
+
+**Description:** Refactors the CMSSW repo.
+
+**Project is `disabled`.**
+
+**Upstream projects:**
+
+**Downstream projects:**
+* [GitHub-refactor-cmssw-module](#GitHub-refactor-cmssw-module):
+
+**Sub-projects:**
+* [GitHub-refactor-cmssw-module](#GitHub-refactor-cmssw-module):
+
+**Triggers from:** []
+
+
+**Periodic builds:**
+```bash
+Not periodically build
+```
+
+---
+
+## [GitHub-refactor-cmssw-module](https://cmssdt.cern.ch/jenkins/job/GitHub-refactor-cmssw-module)
+
+**Description:** Refactors one module of CMSSW and makes an PR.
+
+**Project is `disabled`.**
+
+**Upstream projects:**
+* [GitHub-refactor-cmssw](#GitHub-refactor-cmssw):
+
+**Downstream projects:**
+
+**Sub-projects:**
+
+**Triggers from:** []
+
+
+**Periodic builds:**
+```bash
+Not periodically build
+```
+
+---
+
+## [ib-run-material-budget](https://cmssdt.cern.ch/jenkins/job/ib-run-material-budget)
+
+**Description:** Runs Validation/Geometry/test/runP_Tracker_cfg.py and MaterialBudget.C for an IB
+
+**Project is `disabled`.**
+
+**Upstream projects:**
+
+**Downstream projects:**
+* [compare-material-budget](#compare-material-budget):
 
 **Sub-projects:**
 
@@ -3165,6 +3299,28 @@ Not periodically build
 **Description:** None
 
 **Project is `enabled`.**
+
+**Upstream projects:**
+
+**Downstream projects:**
+
+**Sub-projects:**
+
+**Triggers from:** []
+
+
+**Periodic builds:**
+```bash
+Not periodically build
+```
+
+---
+
+## [material-budget-ref](https://cmssdt.cern.ch/jenkins/job/material-budget-ref)
+
+**Description:** Runs Validation/Geometry/test/runP_Tracker_cfg.py and MaterialBudget.C for an IB
+
+**Project is `disabled`.**
 
 **Upstream projects:**
 

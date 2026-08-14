@@ -336,7 +336,7 @@ Not periodically build
 
 ---
 
-## [jenkins-test-bootstrap](https://cmssdt.cern.ch/jenkins/job/jenkins-test-bootstrap)
+## [jenkins-test-bootstrap-new](https://cmssdt.cern.ch/jenkins/job/jenkins-test-bootstrap-new)
 
 **Description:** Test new bootstrap for cmssw
 
@@ -1092,10 +1092,8 @@ H * * * *
 **Upstream projects:**
 
 **Downstream projects:**
-* [kill-stuck-pr-test](#kill-stuck-pr-test):
 
 **Sub-projects:**
-* [kill-stuck-pr-test](#kill-stuck-pr-test):
 
 **Triggers from:** []
 

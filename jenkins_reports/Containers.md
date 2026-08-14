@@ -86,12 +86,12 @@ it can also be safely removed.
 * [docker-issue-comment](#docker-issue-comment):
 * [docker-packages-info](#docker-packages-info):
 * [run-container-tests](#run-container-tests):
-* [test-containter-singularity](#test-containter-singularity):
+* [test-nasted-containter](#test-nasted-containter):
 
 **Sub-projects:**
 * [docker-packages-info](#docker-packages-info):
+* [test-nasted-containter](#test-nasted-containter):
 * [cms-containers-run-cmssw-test](#cms-containers-run-cmssw-test):
-* [test-containter-singularity](#test-containter-singularity):
 * [run-container-tests](#run-container-tests):
 * [cms-containers-checks-tags](#cms-containers-checks-tags):
 * [docker-packages-info](#docker-packages-info):
@@ -773,7 +773,7 @@ Not periodically build
 
 **Description:** None
 
-**Project is `enabled`.**
+**Project is `disabled`.**
 
 **Upstream projects:**
 
@@ -820,7 +820,7 @@ Not periodically build
 
 **Description:** None
 
-**Project is `enabled`.**
+**Project is `disabled`.**
 
 **Upstream projects:**
 

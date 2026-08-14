@@ -8,6 +8,28 @@
 
 # Projects:
 
+## [build-ib-bits](https://cmssdt.cern.ch/jenkins/job/build-ib-bits)
+
+**Description:** None
+
+**Project is `enabled`.**
+
+**Upstream projects:**
+
+**Downstream projects:**
+
+**Sub-projects:**
+
+**Triggers from:** []
+
+
+**Periodic builds:**
+```bash
+Not periodically build
+```
+
+---
+
 ## [check-cms-container-certificates](https://cmssdt.cern.ch/jenkins/job/check-cms-container-certificates)
 
 **Description:** <h2 style="color:#2980b9; font-weight:bold;">🐳 check-cms-container-certificates</h2>
@@ -1121,6 +1143,29 @@ Not periodically build
 
 ---
 
+## [cmsLHEtoEOSManager-version](https://cmssdt.cern.ch/jenkins/job/cmsLHEtoEOSManager-version)
+
+**Description:** None
+
+**Project is `enabled`.**
+
+**Upstream projects:**
+* [ib-schedule](#ib-schedule):
+
+**Downstream projects:**
+
+**Sub-projects:**
+
+**Triggers from:** []
+
+
+**Periodic builds:**
+```bash
+Not periodically build
+```
+
+---
+
 ## [cmsrep-eos-backup](https://cmssdt.cern.ch/jenkins/job/cmsrep-eos-backup)
 
 **Description:** Copy unused Os/archs RPMs to EOS
@@ -1262,6 +1307,54 @@ Not periodically build
 ```bash
 #Run once on Thursday at 23h05
 H 19  * *  2
+```
+
+---
+
+## [cvmfs-ib-cleanup-week](https://cmssdt.cern.ch/jenkins/job/cvmfs-ib-cleanup-week)
+
+**Description:** None
+
+**Project is `enabled`.**
+
+**Upstream projects:**
+* [ib-tag-and-schdule](#ib-tag-and-schdule):
+
+**Downstream projects:**
+* [cvmfs-ib-cleanup-week-dir](#cvmfs-ib-cleanup-week-dir):
+
+**Sub-projects:**
+* [cvmfs-ib-cleanup-week-dir](#cvmfs-ib-cleanup-week-dir):
+
+**Triggers from:** []
+
+
+**Periodic builds:**
+```bash
+Not periodically build
+```
+
+---
+
+## [cvmfs-ib-cleanup-week-dir](https://cmssdt.cern.ch/jenkins/job/cvmfs-ib-cleanup-week-dir)
+
+**Description:** None
+
+**Project is `enabled`.**
+
+**Upstream projects:**
+* [cvmfs-ib-cleanup-week](#cvmfs-ib-cleanup-week):
+
+**Downstream projects:**
+
+**Sub-projects:**
+
+**Triggers from:** []
+
+
+**Periodic builds:**
+```bash
+Not periodically build
 ```
 
 ---
@@ -1426,13 +1519,15 @@ Not periodically build
 
 ---
 
-## [cvmfs_publish_remote_dir](https://cmssdt.cern.ch/jenkins/job/cvmfs_publish_remote_dir)
+## [deploy-das-results](https://cmssdt.cern.ch/jenkins/job/deploy-das-results)
 
-**Description:** This jobs install an IB on /cvmfs/cms-ib.cern.ch.
+**Description:** Deply https://github.com/cms-sw/cms-sw.github.io/blob/master/das_queries under CVMFS cms-ib.cern.ch so that IB/PR jobs can use it instead of hitting github
 
 **Project is `enabled`.**
 
 **Upstream projects:**
+* [das-query](#das-query):
+* [update-ibeos-cache](#update-ibeos-cache):
 
 **Downstream projects:**
 
@@ -1957,6 +2052,10 @@ Not periodically build
 <br>
 <br>
 Note: CRAB is the CMS Computing tool to submit CMSSW users' analysis jobs to distributed computing resources (https://twiki.cern.ch/twiki/bin/view/CMSPublic/SWGuideCrab).
+<br>
+IF crab jobs fail then try to find the crab job id e.g. see job log and search for TASK_ID= (e.g. 260628_050447:cmsbot_crab_Jenkins_CMSSW_13_2_X_2026-06-28-0000_el8_amd64_gcc11_10157)<br>
+and search this task ID on https://cmsweb.cern.ch/crabserver/ui . If it shows that job was not process due crab was not able to get valid proxy for at least 5-days from myproxy.cern.ch <br>
+then please login as cmsbuild and run "crab createmyproxy --days=300" in cmssw env (make sure that we have a valid certificate for 300 days)
 
 **Project is `enabled`.**
 
@@ -2381,31 +2480,6 @@ Not periodically build
 
 ---
 
-## [ib-run-profiling-mem](https://cmssdt.cern.ch/jenkins/job/ib-run-profiling-mem)
-
-**Description:** Runs Jemalloc memory profiling on the RECO and PAT steps for high pileup workflow.
-
-
-
-**Project is `enabled`.**
-
-**Upstream projects:**
-
-**Downstream projects:**
-* [sync-profile-data](#sync-profile-data):
-
-**Sub-projects:**
-
-**Triggers from:** []
-
-
-**Periodic builds:**
-```bash
-Not periodically build
-```
-
----
-
 ## [ib-run-profiling-mem-GC](https://cmssdt.cern.ch/jenkins/job/ib-run-profiling-mem-GC)
 
 **Description:** Runs FastTimerService and Igprof on the RECO and PAT steps for high pileup workflow.
@@ -2567,58 +2641,11 @@ Not periodically build
 
 ---
 
-## [kill-stuck-pr-test](https://cmssdt.cern.ch/jenkins/job/kill-stuck-pr-test)
-
-**Description:** Kill stuck PR testing job and update PR accordingly
-
-**Project is `enabled`.**
-
-**Upstream projects:**
-* [jenkins-elasticsearch-monitor](#jenkins-elasticsearch-monitor):
-
-**Downstream projects:**
-* [abort-jenkins-job](#abort-jenkins-job):
-
-**Sub-projects:**
-* [abort-jenkins-job](#abort-jenkins-job):
-
-**Triggers from:** []
-
-
-**Periodic builds:**
-```bash
-Not periodically build
-```
-
----
-
 ## [lxr-repair-table](https://cmssdt.cern.ch/jenkins/job/lxr-repair-table)
 
 **Description:** Run this if there is any MySQL table to repair e.g. if lxr-remove-idex fails with error <br/>
 ERROR 144 (HY000) at line 3: Table './lxr/lxr_usages' is marked as crashed and last (automatic?) repair failed<br/>
 then run it with LXR_TABLE=lxr_usages
-
-**Project is `enabled`.**
-
-**Upstream projects:**
-
-**Downstream projects:**
-
-**Sub-projects:**
-
-**Triggers from:** []
-
-
-**Periodic builds:**
-```bash
-Not periodically build
-```
-
----
-
-## [ngt-create-session](https://cmssdt.cern.ch/jenkins/job/ngt-create-session)
-
-**Description:** Job to create NGT Session and add it a jenkins agent
 
 **Project is `enabled`.**
 
@@ -2954,7 +2981,6 @@ Not periodically build
 * [ib-run-igprof](#ib-run-igprof):
 * [ib-run-profiling](#ib-run-profiling):
 * [ib-run-profiling-gpu](#ib-run-profiling-gpu):
-* [ib-run-profiling-mem](#ib-run-profiling-mem):
 * [ib-run-profiling-mem-GC](#ib-run-profiling-mem-GC):
 
 **Downstream projects:**
@@ -2963,7 +2989,7 @@ Not periodically build
 **Sub-projects:**
 * [update-circle-dataset](#update-circle-dataset):
 
-**Triggers from:** ['ib-run-igprof', 'ib-run-profiling', 'ib-run-profiling-mem', 'ib-run-profiling-mem-GC']
+**Triggers from:** ['ib-run-igprof', 'ib-run-profiling', 'ib-run-profiling-mem-GC']
 
 
 **Periodic builds:**
@@ -2973,7 +2999,7 @@ Not periodically build
 
 ---
 
-## [test-containter-singularity](https://cmssdt.cern.ch/jenkins/job/test-containter-singularity)
+## [test-nasted-containter](https://cmssdt.cern.ch/jenkins/job/test-nasted-containter)
 
 **Description:** None
 
@@ -2981,10 +3007,13 @@ Not periodically build
 
 **Upstream projects:**
 * [build-docker-container](#build-docker-container):
+* [test-nasted-containter](#test-nasted-containter):
 
 **Downstream projects:**
+* [test-nasted-containter](#test-nasted-containter):
 
 **Sub-projects:**
+* [test-nasted-containter](#test-nasted-containter):
 
 **Triggers from:** []
 
@@ -3179,28 +3208,6 @@ Not periodically build
 
 ---
 
-## [tmp-node-get-config](https://cmssdt.cern.ch/jenkins/job/tmp-node-get-config)
-
-**Description:** None
-
-**Project is `enabled`.**
-
-**Upstream projects:**
-
-**Downstream projects:**
-
-**Sub-projects:**
-
-**Triggers from:** []
-
-
-**Periodic builds:**
-```bash
-Not periodically build
-```
-
----
-
 ## [update-circle-dataset](https://cmssdt.cern.ch/jenkins/job/update-circle-dataset)
 
 **Description:** None
@@ -3246,6 +3253,28 @@ Not periodically build
 **Periodic builds:**
 ```bash
 Not periodically build
+```
+
+---
+
+## [update-cmsbot-grid-certificate](https://cmssdt.cern.ch/jenkins/job/update-cmsbot-grid-certificate)
+
+**Description:** None
+
+**Project is `enabled`.**
+
+**Upstream projects:**
+
+**Downstream projects:**
+
+**Sub-projects:**
+
+**Triggers from:** []
+
+
+**Periodic builds:**
+```bash
+H H * * *
 ```
 
 ---
@@ -3448,7 +3477,6 @@ Kills running Jenkins jobs for a given pull request, except the upstream job tha
 
 **Upstream projects:**
 * [abort-pr-tests](#abort-pr-tests):
-* [kill-stuck-pr-test](#kill-stuck-pr-test):
 * [run-pr-code-checks](#run-pr-code-checks):
 
 **Downstream projects:**
@@ -3889,12 +3917,12 @@ it can also be safely removed.
 * [docker-issue-comment](#docker-issue-comment):
 * [docker-packages-info](#docker-packages-info):
 * [run-container-tests](#run-container-tests):
-* [test-containter-singularity](#test-containter-singularity):
+* [test-nasted-containter](#test-nasted-containter):
 
 **Sub-projects:**
 * [docker-packages-info](#docker-packages-info):
+* [test-nasted-containter](#test-nasted-containter):
 * [cms-containers-run-cmssw-test](#cms-containers-run-cmssw-test):
-* [test-containter-singularity](#test-containter-singularity):
 * [run-container-tests](#run-container-tests):
 * [cms-containers-checks-tags](#cms-containers-checks-tags):
 * [docker-packages-info](#docker-packages-info):
@@ -5637,30 +5665,6 @@ Not periodically build
 
 ---
 
-## [cms-containers-schedule-cmssw-test](https://cmssdt.cern.ch/jenkins/job/cms-containers-schedule-cmssw-test)
-
-**Description:** None
-
-**Project is `enabled`.**
-
-**Upstream projects:**
-
-**Downstream projects:**
-* [cms-containers-run-cmssw-test](#cms-containers-run-cmssw-test):
-
-**Sub-projects:**
-* [cms-containers-run-cmssw-test](#cms-containers-run-cmssw-test):
-
-**Triggers from:** []
-
-
-**Periodic builds:**
-```bash
-Not periodically build
-```
-
----
-
 ## [cms-prs-cache](https://cmssdt.cern.ch/jenkins/job/cms-prs-cache)
 
 **Description:** This job collects metadata for pull requests since reading github directly when necessary might become time consuming or rejected by github
@@ -5780,28 +5784,6 @@ Not periodically build
 
 ---
 
-## [cmspkg-test](https://cmssdt.cern.ch/jenkins/job/cmspkg-test)
-
-**Description:** None
-
-**Project is `enabled`.**
-
-**Upstream projects:**
-
-**Downstream projects:**
-
-**Sub-projects:**
-
-**Triggers from:** []
-
-
-**Periodic builds:**
-```bash
-Not periodically build
-```
-
----
-
 ## [cmsrep-webhook](https://cmssdt.cern.ch/jenkins/job/cmsrep-webhook)
 
 **Description:** This is cms bot job which is triggered by github webhooks ( https://cmssdt.cern.ch/SDT/cgi-bin/github_webhook ) for every valid comment added to github PRs.
@@ -5826,28 +5808,6 @@ Also it runsevery 30mins to make sure any webhooks were not missed.
 * [cvmfs-cms-install-COMP-python](#cvmfs-cms-install-COMP-python):
 * [ib-install-cvmfs](#ib-install-cvmfs):
 * [cvmfs-install-pr](#cvmfs-install-pr):
-
-**Triggers from:** []
-
-
-**Periodic builds:**
-```bash
-Not periodically build
-```
-
----
-
-## [cmssw-container](https://cmssdt.cern.ch/jenkins/job/cmssw-container)
-
-**Description:** None
-
-**Project is `enabled`.**
-
-**Upstream projects:**
-
-**Downstream projects:**
-
-**Sub-projects:**
 
 **Triggers from:** []
 
@@ -5928,30 +5888,6 @@ Not periodically build
 
 ---
 
-## [compare-material-budget](https://cmssdt.cern.ch/jenkins/job/compare-material-budget)
-
-**Description:** Comopare results of material budget of two releases using Validation/Geometry/test/TrackerMaterialBudgetComparison.C macro
-
-
-**Project is `enabled`.**
-
-**Upstream projects:**
-* [ib-run-material-budget](#ib-run-material-budget):
-
-**Downstream projects:**
-
-**Sub-projects:**
-
-**Triggers from:** []
-
-
-**Periodic builds:**
-```bash
-Not periodically build
-```
-
----
-
 ## [compare-root-files-short-matrix](https://cmssdt.cern.ch/jenkins/job/compare-root-files-short-matrix)
 
 **Description:** Download the files of the baseline IB and compare them with the results of the ones of a pull request.
@@ -5974,6 +5910,35 @@ Rate of failure of this job is very low and when failed then just re-try it and 
 **Periodic builds:**
 ```bash
 Not periodically build
+```
+
+---
+
+## [das-query](https://cmssdt.cern.ch/jenkins/job/das-query)
+
+**Description:** Job to run das client and cache the results in github to be used by IBs.
+Ignore any failed job if a newer job has succeeded.
+Retry if last run is failed.
+
+**Project is `enabled`.**
+
+**Upstream projects:**
+* [das-query](#das-query):
+
+**Downstream projects:**
+* [das-query](#das-query):
+* [deploy-das-results](#deploy-das-results):
+
+**Sub-projects:**
+* [das-query](#das-query):
+* [deploy-das-results](#deploy-das-results):
+
+**Triggers from:** []
+
+
+**Periodic builds:**
+```bash
+H 9,21 * * *
 ```
 
 ---
@@ -6033,29 +5998,6 @@ It is later used to serve <a href="http://cmsdoxygen.web.cern.ch/cmsdoxygen/">CM
 **Project is `enabled`.**
 
 **Upstream projects:**
-
-**Downstream projects:**
-
-**Sub-projects:**
-
-**Triggers from:** []
-
-
-**Periodic builds:**
-```bash
-Not periodically build
-```
-
----
-
-## [docker-dmwm-CMSKubernetes](https://cmssdt.cern.ch/jenkins/job/docker-dmwm-CMSKubernetes)
-
-**Description:** None
-
-**Project is `enabled`.**
-
-**Upstream projects:**
-* [github-webhook](#github-webhook):
 
 **Downstream projects:**
 
@@ -6476,53 +6418,6 @@ H */6 * * *
 
 ---
 
-## [GitHub-refactor-cmssw](https://cmssdt.cern.ch/jenkins/job/GitHub-refactor-cmssw)
-
-**Description:** Refactors the CMSSW repo.
-
-**Project is `enabled`.**
-
-**Upstream projects:**
-
-**Downstream projects:**
-* [GitHub-refactor-cmssw-module](#GitHub-refactor-cmssw-module):
-
-**Sub-projects:**
-* [GitHub-refactor-cmssw-module](#GitHub-refactor-cmssw-module):
-
-**Triggers from:** []
-
-
-**Periodic builds:**
-```bash
-Not periodically build
-```
-
----
-
-## [GitHub-refactor-cmssw-module](https://cmssdt.cern.ch/jenkins/job/GitHub-refactor-cmssw-module)
-
-**Description:** Refactors one module of CMSSW and makes an PR.
-
-**Project is `enabled`.**
-
-**Upstream projects:**
-* [GitHub-refactor-cmssw](#GitHub-refactor-cmssw):
-
-**Downstream projects:**
-
-**Sub-projects:**
-
-**Triggers from:** []
-
-
-**Periodic builds:**
-```bash
-Not periodically build
-```
-
----
-
 ## [github-webhook](https://cmssdt.cern.ch/jenkins/job/github-webhook)
 
 **Description:** This is cms bot job which is triggered by github webhooks ( https://cmssdt.cern.ch/SDT/cgi-bin/github_webhook ) for every valid comment added to github PRs.
@@ -6878,29 +6773,6 @@ Not periodically build
 
 ---
 
-## [ib-run-material-budget](https://cmssdt.cern.ch/jenkins/job/ib-run-material-budget)
-
-**Description:** Runs Validation/Geometry/test/runP_Tracker_cfg.py and MaterialBudget.C for an IB
-
-**Project is `enabled`.**
-
-**Upstream projects:**
-
-**Downstream projects:**
-* [compare-material-budget](#compare-material-budget):
-
-**Sub-projects:**
-
-**Triggers from:** []
-
-
-**Periodic builds:**
-```bash
-Not periodically build
-```
-
----
-
 ## [ib-run-pr-crab](https://cmssdt.cern.ch/jenkins/job/ib-run-pr-crab)
 
 **Description:** PR Unit Test for CRAB updates.
@@ -7130,9 +7002,11 @@ This was created to avoid the issue with <a href="https://wiki.jenkins.io/displa
 **Upstream projects:**
 
 **Downstream projects:**
+* [cmsLHEtoEOSManager-version](#cmsLHEtoEOSManager-version):
 * [ib-tag-and-schdule](#ib-tag-and-schdule):
 
 **Sub-projects:**
+* [cmsLHEtoEOSManager-version](#cmsLHEtoEOSManager-version):
 * [ib-tag-and-schdule](#ib-tag-and-schdule):
 
 **Triggers from:** []
@@ -7223,10 +7097,12 @@ This job re-tries itself on failure. So there is no need to re-try it manually (
 * [build-any-ib](#build-any-ib):
 * [cleanup-cmsrep](#cleanup-cmsrep):
 * [cleanup-cvmfs-ci](#cleanup-cvmfs-ci):
+* [cvmfs-ib-cleanup-week](#cvmfs-ib-cleanup-week):
 * [ib-install-cvmfs](#ib-install-cvmfs):
 
 **Sub-projects:**
 * [build-any-ib](#build-any-ib):
+* [cvmfs-ib-cleanup-week](#cvmfs-ib-cleanup-week):
 * [ib-install-cvmfs](#ib-install-cvmfs):
 * [cleanup-cmsrep,cleanup-cvmfs-ci](#cleanup-cmsrep,cleanup-cvmfs-ci):
 
@@ -7486,28 +7362,6 @@ Not periodically build
 
 ---
 
-## [material-budget-ref](https://cmssdt.cern.ch/jenkins/job/material-budget-ref)
-
-**Description:** Runs Validation/Geometry/test/runP_Tracker_cfg.py and MaterialBudget.C for an IB
-
-**Project is `enabled`.**
-
-**Upstream projects:**
-
-**Downstream projects:**
-
-**Sub-projects:**
-
-**Triggers from:** []
-
-
-**Periodic builds:**
-```bash
-Not periodically build
-```
-
----
-
 ## [monitor-openstack-vms](https://cmssdt.cern.ch/jenkins/job/monitor-openstack-vms)
 
 **Description:** This job run periodically to monitor the running state of vms in openstack , if stopped , creates an email alert.
@@ -7578,31 +7432,6 @@ It also notifies about the blacklisted nodes.
 **Periodic builds:**
 ```bash
 H 16 * * *
-```
-
----
-
-## [process-deprecate-releases](https://cmssdt.cern.ch/jenkins/job/process-deprecate-releases)
-
-**Description:** This job marks selected realeases depricated in realease map. Grid jobs will not use depricated release and posibly uninstall it.
-This is useful if a specific release contains and needs to be removed.
-
-
-
-**Project is `enabled`.**
-
-**Upstream projects:**
-
-**Downstream projects:**
-
-**Sub-projects:**
-
-**Triggers from:** []
-
-
-**Periodic builds:**
-```bash
-Not periodically build
 ```
 
 ---
@@ -8073,8 +7902,10 @@ Not periodically build
 * [lfn-to-ibeos](#lfn-to-ibeos):
 
 **Downstream projects:**
+* [deploy-das-results](#deploy-das-results):
 
 **Sub-projects:**
+* [deploy-das-results](#deploy-das-results):
 
 **Triggers from:** []
 

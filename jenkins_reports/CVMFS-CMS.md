@@ -240,6 +240,28 @@ H * * * *
 
 ---
 
+## [cvmfs-cms-check-and-update-sw](https://cmssdt.cern.ch/jenkins/job/cvmfs-cms-check-and-update-sw)
+
+**Description:** Job to deploy CAT-related software to /cvmfs/cms-griddata.cern.ch/cat/sw
+
+**Project is `enabled`.**
+
+**Upstream projects:**
+
+**Downstream projects:**
+
+**Sub-projects:**
+
+**Triggers from:** []
+
+
+**Periodic builds:**
+```bash
+H H * * *
+```
+
+---
+
 ## [cvmfs-cms-check-eos-dir](https://cmssdt.cern.ch/jenkins/job/cvmfs-cms-check-eos-dir)
 
 **Description:** This job checks/compares EOS directory with cvmfs nd trigger the sync if there are changes
@@ -772,7 +794,7 @@ H H * * *
 
 ## [cvmfs-cms-check-and-update-metadata](https://cmssdt.cern.ch/jenkins/job/cvmfs-cms-check-and-update-metadata)
 
-**Description:** Job to deploy the contents of https://gitlab.cern.ch/cms-analysis-corrections to /cvmfs/cms-griddata.cern.ch/cat
+**Description:** Job to deploy the contents of https://gitlab.cern.ch/cms-analysis-corrections to /cvmfs/cms-griddata.cern.ch/cat/metadata
 
 **Project is `enabled`.**
 
