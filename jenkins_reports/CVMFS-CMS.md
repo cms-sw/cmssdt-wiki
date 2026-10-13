@@ -494,30 +494,6 @@ Not periodically build
 
 ---
 
-## [cvmfs-cms-reseed-architecture](https://cmssdt.cern.ch/jenkins/job/cvmfs-cms-reseed-architecture)
-
-**Description:** This job is to reseed a already installed architecture.
-This is needed when we have updated the packages to be seeded from the system installation.
-
-
-**Project is `enabled`.**
-
-**Upstream projects:**
-
-**Downstream projects:**
-
-**Sub-projects:**
-
-**Triggers from:** []
-
-
-**Periodic builds:**
-```bash
-Not periodically build
-```
-
----
-
 ## [cvmfs-cms-rsync-gitlab-repo](https://cmssdt.cern.ch/jenkins/job/cvmfs-cms-rsync-gitlab-repo)
 
 **Description:** This deploys a gitlab repository under /cvmfs/cms.cern.ch/rsync/repository/name<br/>

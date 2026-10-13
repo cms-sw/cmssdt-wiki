@@ -3347,10 +3347,8 @@ Not periodically build
 **Upstream projects:**
 
 **Downstream projects:**
-* [s3-speet-test](#s3-speet-test):
 
 **Sub-projects:**
-* [s3-speet-test](#s3-speet-test):
 
 **Triggers from:** []
 

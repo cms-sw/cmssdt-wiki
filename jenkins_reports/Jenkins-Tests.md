@@ -336,7 +336,7 @@ Not periodically build
 
 ---
 
-## [jenkins-test-bootstrap-new](https://cmssdt.cern.ch/jenkins/job/jenkins-test-bootstrap-new)
+## [jenkins-test-bootstrap](https://cmssdt.cern.ch/jenkins/job/jenkins-test-bootstrap)
 
 **Description:** Test new bootstrap for cmssw
 
@@ -1041,6 +1041,8 @@ H/5 * * * *
 
 **Upstream projects:**
 * [grid-shutdown-node](#grid-shutdown-node):
+* [ngt-check-pods](#ngt-check-pods):
+* [ngt-delete-pod](#ngt-delete-pod):
 * [openstack-delete-vms](#openstack-delete-vms):
 
 **Downstream projects:**

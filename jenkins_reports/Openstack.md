@@ -16,6 +16,8 @@
 
 **Upstream projects:**
 * [grid-shutdown-node](#grid-shutdown-node):
+* [ngt-check-pods](#ngt-check-pods):
+* [ngt-delete-pod](#ngt-delete-pod):
 * [openstack-delete-vms](#openstack-delete-vms):
 
 **Downstream projects:**
