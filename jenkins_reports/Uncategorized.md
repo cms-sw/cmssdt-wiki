@@ -8,6 +8,28 @@
 
 # Projects:
 
+## [build_using_bits](https://cmssdt.cern.ch/jenkins/job/build_using_bits)
+
+**Description:** None
+
+**Project is `disabled`.**
+
+**Upstream projects:**
+
+**Downstream projects:**
+
+**Sub-projects:**
+
+**Triggers from:** []
+
+
+**Periodic builds:**
+```bash
+Not periodically build
+```
+
+---
+
 ## [cms-spack-build-singularity](https://cmssdt.cern.ch/jenkins/job/cms-spack-build-singularity)
 
 **Description:** None
