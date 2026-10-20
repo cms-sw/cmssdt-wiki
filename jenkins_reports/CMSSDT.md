@@ -30,6 +30,28 @@ Not periodically build
 
 ---
 
+## [build-package-using-bits](https://cmssdt.cern.ch/jenkins/job/build-package-using-bits)
+
+**Description:** None
+
+**Project is `enabled`.**
+
+**Upstream projects:**
+
+**Downstream projects:**
+
+**Sub-projects:**
+
+**Triggers from:** []
+
+
+**Periodic builds:**
+```bash
+Not periodically build
+```
+
+---
+
 ## [check-cms-container-certificates](https://cmssdt.cern.ch/jenkins/job/check-cms-container-certificates)
 
 **Description:** <h2 style="color:#2980b9; font-weight:bold;">🐳 check-cms-container-certificates</h2>
