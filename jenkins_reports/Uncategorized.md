@@ -30,6 +30,28 @@ Not periodically build
 
 ---
 
+## [cleanup-s3-packages](https://cmssdt.cern.ch/jenkins/job/cleanup-s3-packages)
+
+**Description:** None
+
+**Project is `disabled`.**
+
+**Upstream projects:**
+
+**Downstream projects:**
+
+**Sub-projects:**
+
+**Triggers from:** []
+
+
+**Periodic builds:**
+```bash
+Not periodically build
+```
+
+---
+
 ## [cms-spack-build-singularity](https://cmssdt.cern.ch/jenkins/job/cms-spack-build-singularity)
 
 **Description:** None
