@@ -93,9 +93,9 @@ it can also be safely removed.
 * [test-nasted-containter](#test-nasted-containter):
 * [cms-containers-run-cmssw-test](#cms-containers-run-cmssw-test):
 * [run-container-tests](#run-container-tests):
-* [cms-containers-checks-tags](#cms-containers-checks-tags):
 * [docker-packages-info](#docker-packages-info):
 * [check-docker-container](#check-docker-container):
+* [cms-containers-checks-tags](#cms-containers-checks-tags):
 
 **Triggers from:** []
 
