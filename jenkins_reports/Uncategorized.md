@@ -209,6 +209,29 @@ Not periodically build
 
 ---
 
+## [dxr-cmssw-index](https://cmssdt.cern.ch/jenkins/job/dxr-cmssw-index)
+
+**Description:** Index <a href="https://cmssdt.cern.ch/dxr">CMSSW</a> documentation using DXR. 
+
+**Project is `disabled`.**
+
+**Upstream projects:**
+* [ib-run-cfipython](#ib-run-cfipython):
+
+**Downstream projects:**
+
+**Sub-projects:**
+
+**Triggers from:** []
+
+
+**Periodic builds:**
+```bash
+Not periodically build
+```
+
+---
+
 ## [git-notify-build-results](https://cmssdt.cern.ch/jenkins/job/git-notify-build-results)
 
 **Description:** Triggered when new IB results are available and send a Mattermost notification if there are new failures

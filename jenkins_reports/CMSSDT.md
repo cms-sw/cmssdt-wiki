@@ -6059,29 +6059,6 @@ H 0 * * *
 
 ---
 
-## [dxr-cmssw-index](https://cmssdt.cern.ch/jenkins/job/dxr-cmssw-index)
-
-**Description:** Index <a href="https://cmssdt.cern.ch/dxr">CMSSW</a> documentation using DXR. 
-
-**Project is `enabled`.**
-
-**Upstream projects:**
-* [ib-run-cfipython](#ib-run-cfipython):
-
-**Downstream projects:**
-
-**Sub-projects:**
-
-**Triggers from:** []
-
-
-**Periodic builds:**
-```bash
-Not periodically build
-```
-
----
-
 ## [eos-premixPUlist-list](https://cmssdt.cern.ch/jenkins/job/eos-premixPUlist-list)
 
 **Description:** None
