@@ -10499,9 +10499,9 @@ H 22 * * *
 
 ## [send-test-log-scans](https://cmssdt.cern.ch/jenkins/job/send-test-log-scans)
 
-**Description:** None
+**Description:** Sends the test-log scan files (…-scan.json.gz) from /data/sdt/buildlogs to the chatbot VM (cmssdt-chatbot.cern.ch). Files already sent are skipped.
 
-**Project is `enabled`.**
+**Project is `disabled`.**
 
 **Upstream projects:**
 
@@ -10514,7 +10514,7 @@ H 22 * * *
 
 **Periodic builds:**
 ```bash
-Not periodically build
+H/15 * * * *
 ```
 
 ---
