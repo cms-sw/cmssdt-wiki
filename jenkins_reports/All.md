@@ -10501,7 +10501,7 @@ H 22 * * *
 
 **Description:** Sends the test-log scan files (…-scan.json.gz) from /data/sdt/buildlogs to the chatbot VM (cmssdt-chatbot.cern.ch). Files already sent are skipped.
 
-**Project is `enabled`.**
+**Project is `disabled`.**
 
 **Upstream projects:**
 
