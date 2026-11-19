@@ -2948,6 +2948,28 @@ Not periodically build
 
 ---
 
+## [send-test-log-scans](https://cmssdt.cern.ch/jenkins/job/send-test-log-scans)
+
+**Description:** Sends the test-log scan files (…-scan.json.gz) from /data/sdt/buildlogs to the chatbot VM (cmssdt-chatbot.cern.ch). Files already sent are skipped.
+
+**Project is `enabled`.**
+
+**Upstream projects:**
+
+**Downstream projects:**
+
+**Sub-projects:**
+
+**Triggers from:** []
+
+
+**Periodic builds:**
+```bash
+H/15 * * * *
+```
+
+---
+
 ## [set-shifter](https://cmssdt.cern.ch/jenkins/job/set-shifter)
 
 **Description:** Run this job at the start of your shift to receive MM pings from failed builds/tests
