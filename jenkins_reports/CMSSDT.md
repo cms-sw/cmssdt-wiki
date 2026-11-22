@@ -918,6 +918,28 @@ Not periodically build
 
 ---
 
+## [cleanup-s3-packages](https://cmssdt.cern.ch/jenkins/job/cleanup-s3-packages)
+
+**Description:** None
+
+**Project is `enabled`.**
+
+**Upstream projects:**
+
+**Downstream projects:**
+
+**Sub-projects:**
+
+**Triggers from:** []
+
+
+**Periodic builds:**
+```bash
+Not periodically build
+```
+
+---
+
 ## [cms-build-package](https://cmssdt.cern.ch/jenkins/job/cms-build-package)
 
 **Description:** <h2 style="color:#c0392b; font-weight:bold;">📦 cms-build-package</h2>
