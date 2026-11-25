@@ -335,6 +335,28 @@ Not periodically build
 
 ---
 
+## [bits-build](https://cmssdt.cern.ch/jenkins/job/bits-build)
+
+**Description:** None
+
+**Project is `enabled`.**
+
+**Upstream projects:**
+
+**Downstream projects:**
+
+**Sub-projects:**
+
+**Triggers from:** []
+
+
+**Periodic builds:**
+```bash
+Not periodically build
+```
+
+---
+
 ## [bits-pkg-build](https://cmssdt.cern.ch/jenkins/job/bits-pkg-build)
 
 **Description:** None
